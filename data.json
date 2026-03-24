@@ -306,10 +306,10 @@
       "date": "Mardi 18 aout",
       "routeIcon": "fa-mountain-sun",
       "routeDesc": "Galway → Burren → Cliffs → Doolin · 1h46 de route",
-      "morning": "<strong>50 min</strong> de Galway jusqu'a <strong>Aillwee Cave</strong> dans le Burren. Grotte + spectacle de rapaces (2h sur place). Puis <strong>26 min</strong> vers le <strong>Poulnabrone Dolmen</strong> — arret photo au milieu du paysage lunaire. <strong>~20 min</strong> jusqu'aux <strong>Cliffs of Moher</strong> en fin d'apres-midi (moins de monde). Balade le long des falaises (spectaculaire !). Puis <strong>10 min</strong> jusqu'a Doolin pour la nuit.",
+      "morning": "<strong>1h06</strong> de Galway jusqu'a <strong>Caherconnell</strong> dans le Burren. Fort en pierre millenaire + demonstration de chiens de berger (1h30 sur place). Puis <strong>8 min</strong> vers le <strong>Poulnabrone Dolmen</strong> — arret photo au milieu du paysage lunaire. <strong>~20 min</strong> jusqu'aux <strong>Cliffs of Moher</strong> en fin d'apres-midi (moins de monde). Balade le long des falaises (spectaculaire !). Puis <strong>10 min</strong> jusqu'a Doolin pour la nuit.",
       "night": "Nuit a Doolin",
       "nightInfo": "<strong>Ou dormir :</strong> <strong>Doolin</strong> = 2 hameaux : Fisherstreet (Gus O'Connor's) et Roadford (McGann's, McDermott's). Choisir un B&B a pied des pubs pour la musique trad le soir. <strong>Sheedy's of Doolin</strong> (#1 TripAdvisor, cadre soigne), <strong>Daly's House B&B</strong> (prime depuis 2012, a pied des pubs et du cliff walk), <strong>Fisherman's Rest</strong> (50m de Gus O'Connor's). Option budget : <strong>Aille River Hostel</strong> (chambres familiales en-suite, ~80-100 EUR). Doolin est petit, reserver tot ! Sessions musique des 20-21h, enfants bienvenus en debut de soiree.",
-      "rainyDay": "<strong>Doolin Cave</strong> (plus grande stalactite libre d'Europe, visite guidee 45 min, 125 marches — ok des 7-8 ans, limite pour le 5 ans) · Aillwee Cave est deja au programme et couvre bien la pluie",
+      "rainyDay": "<strong>Doolin Cave</strong> (plus grande stalactite libre d'Europe, visite guidee 45 min, 125 marches — ok des 7-8 ans, limite pour le 5 ans) · <strong>Aillwee Cave</strong> (grotte + rapaces, famille ~71 EUR, 50 min de Galway) si pluie persistante",
       "distance": "~65 km",
       "driveTime": "~1h46",
       "highlight": "Journee phare",
@@ -318,17 +318,17 @@
         "lng": -9.4265
       },
       "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Cliffs-Of-Moher-OBriens-From-South.JPG",
-      "mapDesc": "Aillwee Cave, Poulnabrone, Cliffs of Moher, Doolin",
+      "mapDesc": "Caherconnell, Poulnabrone, Cliffs of Moher, Doolin",
       "stops": [
         {
-          "name": "Aillwee Cave & rapaces",
-          "desc": "Grotte calcaire + spectacle de vol de rapaces (aigles, faucons). Les enfants adorent ! Famille ~71 EUR (grotte + rapaces). Les enfants peuvent tenir les oiseaux !",
-          "icon": "fa-hill-rockslide",
+          "name": "Caherconnell Fort & chiens de berger",
+          "desc": "Fort en pierre millenaire + demonstration de border collies avec moutons (4.9/5 TripAdvisor). Les enfants adorent ! Famille ~28 EUR. Caresser les chiens et agneaux apres le show.",
+          "icon": "fa-dog",
           "iconClass": "nature",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/0/02/Aillwee_cave.jpg",
-          "gmaps": "https://maps.google.com/?q=53.089167,-9.143815",
-          "web": "https://aillweeburrenexperience.ie/",
-          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212514-d214756-Reviews-Aillwee_Cave-Ballyvaughan_The_Burren_County_Clare.html",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/5/53/Caherconnell_stone_fort.jpg",
+          "gmaps": "https://maps.google.com/?q=53.0158,-9.1253",
+          "web": "https://caherconnell.com/",
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g1645258-d1237930-Reviews-Caherconnell_Stone_Fort_Sheepdog_Demonstrations-Caherconnell_The_Burren_County_C.html",
           "routard": "https://www.routard.com/guide_voyage_lieu/3409-burren.htm"
         },
         {
@@ -370,43 +370,43 @@
       "schedule": [
         { "time": "9h00", "label": "Depart de Galway", "icon": "fa-car", "duration": null },
         {
-          "time": "9h50",
-          "label": "Aillwee Cave + spectacle rapaces",
-          "icon": "fa-hill-rockslide",
-          "duration": "2h"
+          "time": "10h06",
+          "label": "Caherconnell Fort + demo chiens de berger",
+          "icon": "fa-dog",
+          "duration": "1h30"
         },
-        { "time": "12h00", "label": "Route vers Poulnabrone", "icon": "fa-car", "duration": null },
+        { "time": "11h36", "label": "Route vers Poulnabrone", "icon": "fa-car", "duration": null },
         {
-          "time": "12h30",
+          "time": "11h45",
           "label": "Poulnabrone Dolmen (arret photo)",
           "icon": "fa-landmark",
           "duration": "20min"
         },
         {
-          "time": "13h00",
+          "time": "12h15",
           "label": "Pique-nique dans le Burren",
           "icon": "fa-utensils",
           "duration": "45min"
         },
-        { "time": "14h00", "label": "Route vers les Cliffs", "icon": "fa-car", "duration": null },
+        { "time": "13h15", "label": "Route vers les Cliffs", "icon": "fa-car", "duration": null },
         {
-          "time": "14h20",
+          "time": "13h35",
           "label": "Cliffs of Moher (balade le long des falaises)",
           "icon": "fa-mountain-sun",
           "duration": "1h30"
         },
-        { "time": "16h00", "label": "Route vers Doolin", "icon": "fa-car", "duration": null },
+        { "time": "15h05", "label": "Route vers Doolin", "icon": "fa-car", "duration": null },
         {
-          "time": "16h10",
+          "time": "15h15",
           "label": "Installation a Doolin",
           "icon": "fa-bed",
           "duration": "30min"
         },
         {
-          "time": "17h00",
+          "time": "15h45",
           "label": "Balade vers le port de Doolin",
           "icon": "fa-camera",
-          "duration": "45min"
+          "duration": "1h15"
         },
         { "time": "18h30", "label": "Diner a Doolin", "icon": "fa-utensils", "duration": "1h30" },
         {
@@ -418,31 +418,31 @@
       ],
       "budget": {
         "entries": [
-          { "label": "Aillwee Cave + rapaces (famille)", "amount": 71 },
+          { "label": "Caherconnell Fort + demo (famille)", "amount": 28 },
           { "label": "Parking Cliffs of Moher (fermier)", "amount": 2 },
           { "label": "Pique-nique / dejeuner", "amount": 20 },
           { "label": "Diner a Doolin", "amount": 60 },
           { "label": "Carburant", "amount": 10 }
         ],
-        "total": 163,
+        "total": 120,
         "notes": "Parking fermier 800m avant les Cliffs (direction Liscannor) a 2 EUR/vehicule au lieu de 8 EUR/pers au parking officiel. Economie de 30 EUR pour une famille de 4."
       },
       "dayRoute": [
         [53.2718, -9.053],
-        [53.0892, -9.1438],
+        [53.0158, -9.1253],
         [53.0487, -9.14],
         [52.9719, -9.4265],
         [53.016, -9.377]
       ],
       "practicalTips": [
         {
-          "stop": "Aillwee Cave & rapaces",
-          "icon": "fa-hill-rockslide",
+          "stop": "Caherconnell Fort & chiens de berger",
+          "icon": "fa-dog",
           "tips": [
-            "Reserver en ligne pour eviter l'attente (surtout en aout)",
-            "Prevoir un pull : 10 degres dans la grotte",
-            "Les enfants peuvent tenir les rapaces sur le bras (moment fort !)",
-            "Combo grotte + rapaces plus avantageux qu'achete separement"
+            "Demonstrations regulieres — arriver pour le debut d'un creneau",
+            "Les enfants peuvent caresser les border collies et les agneaux apres le show",
+            "Fort en pierre de ~1000 ans, exceptionnellement bien conserve",
+            "4.9/5 sur TripAdvisor — unanimement adore par les familles"
           ]
         },
         {

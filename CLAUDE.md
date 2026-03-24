@@ -23,7 +23,7 @@ Voyage en famille (2 adultes + 2 enfants de 5 et 8 ans) en Irlande, cote ouest /
 | ---- | --------- | ---------------------------------------------------- | -------------------- | ---------------- |
 | J1   | Dim 16/08 | Airport → Dublin                                     | **30 min**           | Dublin           |
 | J2   | Lun 17/08 | Dublin → Galway (via dejeuner Athlone)               | **2h34** (1h30+1h04) | Galway           |
-| J3   | Mar 18/08 | Galway → Aillwee → Poulnabrone → Cliffs → Doolin     | **1h46**             | Doolin           |
+| J3   | Mar 18/08 | Galway → Caherconnell → Poulnabrone → Cliffs → Doolin | **1h44**             | Doolin           |
 | J4   | Mer 19/08 | Doolin → Lahinch → Galway                            | **~1h19**            | Galway (2e nuit) |
 | J5   | Jeu 20/08 | Galway → Roundstone → Clifden → Sky Road             | **~1h31**            | Clifden          |
 | J6   | Ven 21/08 | Clifden → Athlone (via Maam Cross)                   | **~2h06**            | Athlone          |
@@ -35,7 +35,7 @@ Voyage en famille (2 adultes + 2 enfants de 5 et 8 ans) en Irlande, cote ouest /
 ```
 J1: Airport→Dublin(30)
 J2: Dublin→Athlone(90) + Athlone→Galway(64) — autoroute M6, dejeuner a Athlone
-J3: Galway→Aillwee(50) + Aillwee→Poulnabrone(26) + Poulnabrone→Cliffs(~20) + Cliffs→Doolin(10)
+J3: Galway→Caherconnell(66) + Caherconnell→Poulnabrone(8) + Poulnabrone→Cliffs(~20) + Cliffs→Doolin(10)
 J4: Doolin→Ennistymon(14) + Ennistymon→Galway(~65)
 J5: Galway→Clifden(67) + SkyRoad(24)
 J6: Clifden→Athlone(126) via Maam Cross
@@ -54,7 +54,7 @@ J7: Athlone→Trim(74) + Trim→Tara(20) + Tara→Airport(42)
 
 ### Sites visites
 
-**Incontournables gardes** : Galway (Latin Quarter, Salthill, Atlantaquaria), Cliffs of Moher, Connemara (Roundstone, Dog's Bay, Clifden, Sky Road), Burren (Aillwee Cave, Poulnabrone Dolmen), Trim Castle, Hill of Tara
+**Incontournables gardes** : Galway (Latin Quarter, Salthill, Atlantaquaria), Cliffs of Moher, Connemara (Roundstone, Dog's Bay, Clifden, Sky Road), Burren (Caherconnell Stone Fort, Poulnabrone Dolmen), Trim Castle, Hill of Tara
 
 **Sacrifies** : Newgrange (trop loin du trajet principal), Kylemore Abbey (ajoute trop de route au J6), Bunratty Castle (1h30 de detour), Cong (detour), Clonmacnoise (detour), Brigit's Garden
 
@@ -126,7 +126,7 @@ Le resultat contient `duration` (secondes) et `distance` (metres).
 ## Conseils cles issus des forums et TripAdvisor
 
 - **Cliffs of Moher** : parking officiel 8 EUR/pers (!). Parking fermier 800m avant (dir. Liscannor) = 2 EUR/vehicule. Arriver apres 16h. Coupe-vent obligatoire. Zone balisee avec enfants.
-- **Aillwee Cave** : famille ~71 EUR (grotte + rapaces). Les enfants peuvent tenir les oiseaux.
+- **Caherconnell Fort** : famille ~28 EUR (fort + demo chiens de berger). 4.9/5 TripAdvisor. Les enfants caressent les border collies et agneaux.
 - **Sky Road** : Upper Sky Road = meilleures vues. Ideal au coucher du soleil (17-18h). Route etroite.
 - **Dog's Bay** : sable blanc corallien, eau turquoise. Tour de la presqu'ile 2h a pied.
 - **Trim Castle** : famille ~10 EUR. Visite guidee donjon 45 min obligatoire. Brochure FR.
@@ -142,7 +142,7 @@ Le resultat contient `duration` (secondes) et `distance` (metres).
 
 - Heritage Card : 40 EUR/adulte, enfants < 12 ans gratuit
 - Cliffs of Moher : 8 EUR/pers parking officiel (ou 2 EUR/vehicule parking fermier)
-- Aillwee Cave + rapaces : famille ~71 EUR
+- Caherconnell Fort + demo : famille ~28 EUR
 - Kylemore Abbey : famille 45 EUR
 - Newgrange : famille 48 EUR (Heritage Card acceptee)
 - Trim Castle : famille ~10 EUR
