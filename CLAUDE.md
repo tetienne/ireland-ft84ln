@@ -79,7 +79,7 @@ ireland-trip/
 ### Comment modifier l'itineraire
 
 1. Editer `data.json` (champs `days`, `stops`, `route`, `pois`, `tips`, `blogs`)
-2. Regenerer `data.js` : `echo "const TRIP_DATA = $(cat data.json);" > data.js`
+2. Regenerer `data.js` : `npm run sync-data` (aussi execute automatiquement par le pre-commit hook)
 3. Ouvrir `index.html` dans un navigateur (fonctionne en file://)
 
 ### Comment verifier un temps de trajet

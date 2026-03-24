@@ -15,6 +15,13 @@ repos:
         language: system
         types_or: [javascript, css, html, json, markdown]
 
+      - id: sync-data
+        name: Sync data.js from data.json
+        entry: npm run sync-data
+        language: system
+        files: ^data\.json$
+        pass_filenames: false
+
       - id: eslint
         name: ESLint
         entry: npx eslint --fix
