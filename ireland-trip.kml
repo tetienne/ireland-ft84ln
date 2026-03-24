@@ -4,122 +4,55 @@
 <name>Ireland Road Trip 2026</name>
 <description>Wild Atlantic Way en famille — 16-23 aout 2026</description>
 <Style id="pin-day1">
-  <IconStyle>
-    <color>ffC06515</color>
-    <scale>1.0</scale>
-    <Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
-  </IconStyle>
-  <LabelStyle><color>ffC06515</color></LabelStyle>
+  <IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/paddle/blu-blank.png</href></Icon></IconStyle>
 </Style>
 <Style id="line-day1">
-  <LineStyle>
-    <color>aaC06515</color>
-    <width>4</width>
-  </LineStyle>
+  <LineStyle><color>ffff0000</color><width>4</width></LineStyle>
 </Style>
 <Style id="pin-day2">
-  <IconStyle>
-    <color>ff327D2E</color>
-    <scale>1.0</scale>
-    <Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
-  </IconStyle>
-  <LabelStyle><color>ff327D2E</color></LabelStyle>
+  <IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href></Icon></IconStyle>
 </Style>
 <Style id="line-day2">
-  <LineStyle>
-    <color>aa327D2E</color>
-    <width>4</width>
-  </LineStyle>
+  <LineStyle><color>ff00aa00</color><width>4</width></LineStyle>
 </Style>
 <Style id="pin-day3">
-  <IconStyle>
-    <color>ff006CEF</color>
-    <scale>1.0</scale>
-    <Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
-  </IconStyle>
-  <LabelStyle><color>ff006CEF</color></LabelStyle>
+  <IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/paddle/orange-blank.png</href></Icon></IconStyle>
 </Style>
 <Style id="line-day3">
-  <LineStyle>
-    <color>aa006CEF</color>
-    <width>4</width>
-  </LineStyle>
+  <LineStyle><color>ff0080ff</color><width>4</width></LineStyle>
 </Style>
 <Style id="pin-day4">
-  <IconStyle>
-    <color>ff25A8F9</color>
-    <scale>1.0</scale>
-    <Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
-  </IconStyle>
-  <LabelStyle><color>ff25A8F9</color></LabelStyle>
+  <IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/paddle/ylw-blank.png</href></Icon></IconStyle>
 </Style>
 <Style id="line-day4">
-  <LineStyle>
-    <color>aa25A8F9</color>
-    <width>4</width>
-  </LineStyle>
+  <LineStyle><color>ff00ffff</color><width>4</width></LineStyle>
 </Style>
 <Style id="pin-day5">
-  <IconStyle>
-    <color>ff8F8300</color>
-    <scale>1.0</scale>
-    <Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
-  </IconStyle>
-  <LabelStyle><color>ff8F8300</color></LabelStyle>
+  <IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/paddle/ltblu-blank.png</href></Icon></IconStyle>
 </Style>
 <Style id="line-day5">
-  <LineStyle>
-    <color>aa8F8300</color>
-    <width>4</width>
-  </LineStyle>
+  <LineStyle><color>ffffffaa</color><width>4</width></LineStyle>
 </Style>
 <Style id="pin-day6">
-  <IconStyle>
-    <color>ff9A1B6A</color>
-    <scale>1.0</scale>
-    <Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
-  </IconStyle>
-  <LabelStyle><color>ff9A1B6A</color></LabelStyle>
+  <IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/paddle/purple-blank.png</href></Icon></IconStyle>
 </Style>
 <Style id="line-day6">
-  <LineStyle>
-    <color>aa9A1B6A</color>
-    <width>4</width>
-  </LineStyle>
+  <LineStyle><color>ffff00ff</color><width>4</width></LineStyle>
 </Style>
 <Style id="pin-day7">
-  <IconStyle>
-    <color>ff2828C6</color>
-    <scale>1.0</scale>
-    <Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
-  </IconStyle>
-  <LabelStyle><color>ff2828C6</color></LabelStyle>
+  <IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-blank.png</href></Icon></IconStyle>
 </Style>
 <Style id="line-day7">
-  <LineStyle>
-    <color>aa2828C6</color>
-    <width>4</width>
-  </LineStyle>
+  <LineStyle><color>ff0000ff</color><width>4</width></LineStyle>
 </Style>
 <Style id="pin-day8">
-  <IconStyle>
-    <color>ff7A6E54</color>
-    <scale>1.0</scale>
-    <Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
-  </IconStyle>
-  <LabelStyle><color>ff7A6E54</color></LabelStyle>
+  <IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/paddle/pink-blank.png</href></Icon></IconStyle>
 </Style>
 <Style id="line-day8">
-  <LineStyle>
-    <color>aa7A6E54</color>
-    <width>4</width>
-  </LineStyle>
+  <LineStyle><color>ffff00aa</color><width>4</width></LineStyle>
 </Style>
 <Style id="hotel">
-  <IconStyle>
-    <scale>1.0</scale>
-    <Icon><href>http://maps.google.com/mapfiles/kml/paddle/ylw-stars.png</href></Icon>
-  </IconStyle>
+  <IconStyle><Icon><href>http://maps.google.com/mapfiles/kml/paddle/ylw-stars.png</href></Icon></IconStyle>
 </Style>
 <Folder>
   <name>J1 — Bienvenue a Dublin</name>
