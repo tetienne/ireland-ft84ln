@@ -281,6 +281,14 @@ body {
 }
 .day-narrative.night-info i { color: var(--atlantic-light); }
 
+.day-narrative.rainy-day {
+  background: linear-gradient(135deg, rgba(100,130,160,0.08) 0%, rgba(100,130,160,0.02) 100%);
+  border-left: 3px solid #7a9bb5;
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+}
+.day-narrative.rainy-day i { color: #7a9bb5; }
+
 .day-footer {
   display: flex; gap: 1.5rem; margin-top: 1.2rem; padding-top: 1rem;
   border-top: 1px solid var(--cream-dark); font-size: 0.75rem; color: var(--stone); flex-wrap: wrap;

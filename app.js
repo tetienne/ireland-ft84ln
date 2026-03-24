@@ -59,6 +59,7 @@ function renderRoadBook(days) {
           ${day.stops.map(stop => renderStop(stop)).join('')}
         </ul>
         ${day.nightInfo ? `<div class="day-narrative night-info"><i class="fa-solid fa-moon"></i> ${day.nightInfo}</div>` : ''}
+        ${day.rainyDay ? `<div class="day-narrative rainy-day"><i class="fa-solid fa-cloud-rain"></i> <strong>Plan B pluie :</strong> ${day.rainyDay}</div>` : ''}
         <div class="day-footer">
           ${day.night ? `<span><i class="fa-solid fa-bed"></i> ${day.night}</span>` : ''}
           ${day.distance ? `<span><i class="fa-solid fa-car"></i> ${day.distance}</span>` : ''}
