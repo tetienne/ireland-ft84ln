@@ -21,6 +21,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Minify CSS and JS
+        run: |
+          npx --yes csso-cli style.css -o style.css
+          npx --yes terser app.js -o app.js -c -m
+          npx --yes terser data.js -o data.js -c -m
+          npx --yes terser sw.js -o sw.js -c -m
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
