@@ -15,6 +15,8 @@
   "days": [
     {
       "day": 1,
+      "shortLabel": "Dublin",
+      "counties": ["Dublin"],
       "title": "Bienvenue a Dublin",
       "date": "Dimanche 16 aout",
       "routeIcon": "fa-plane-arrival",
@@ -155,6 +157,8 @@
     },
     {
       "day": 2,
+      "shortLabel": "Galway",
+      "counties": ["Dublin", "Westmeath", "Galway"],
       "title": "Cap a l'Ouest — Galway !",
       "date": "Lundi 17 aout",
       "routeIcon": "fa-road",
@@ -302,6 +306,8 @@
     },
     {
       "day": 3,
+      "shortLabel": "Moher",
+      "counties": ["Galway", "Clare"],
       "title": "Burren & Falaises de Moher",
       "date": "Mardi 18 aout",
       "routeIcon": "fa-mountain-sun",
@@ -478,6 +484,8 @@
     },
     {
       "day": 4,
+      "shortLabel": "Clare",
+      "counties": ["Clare", "Galway"],
       "title": "Cote du Clare & retour Galway",
       "date": "Mercredi 19 aout",
       "routeIcon": "fa-umbrella-beach",
@@ -651,6 +659,8 @@
     },
     {
       "day": 5,
+      "shortLabel": "Connemara",
+      "counties": ["Galway"],
       "title": "Connemara & Sky Road",
       "date": "Jeudi 20 aout",
       "routeIcon": "fa-panorama",
@@ -812,6 +822,8 @@
     },
     {
       "day": 6,
+      "shortLabel": "Athlone",
+      "counties": ["Galway", "Westmeath"],
       "title": "Connemara sauvage & retour Est",
       "date": "Vendredi 21 aout",
       "routeIcon": "fa-road",
@@ -957,6 +969,8 @@
     },
     {
       "day": 7,
+      "shortLabel": "Trim",
+      "counties": ["Westmeath", "Meath", "Dublin"],
       "title": "Chateaux & colline sacree",
       "date": "Samedi 22 aout",
       "routeIcon": "fa-chess-rook",
@@ -1114,6 +1128,8 @@
     },
     {
       "day": 8,
+      "shortLabel": "Retour",
+      "counties": ["Dublin"],
       "title": "Retour vers Nimes",
       "date": "Dimanche 23 aout",
       "routeIcon": "fa-plane-departure",

@@ -1,10 +1,13 @@
 // ─── Load data and render everything ───
 // Works both with a server (fetch) and without (inline script tag)
 function boot(data) {
-  renderHero(data.trip);
+  computeBudgetTotals(data.days);
+  const stats = computeStats(data);
+  const todayDayNum = getTodayDayNum(data.days);
+  renderHero(data.trip, stats);
   renderRoadBook(data.days);
   initDayPanels(data.days);
-  renderDayNav(data.days);
+  renderDayNav(data.days, todayDayNum);
   renderDashboard(data.days);
   if (data.tips) renderTips(data.tips);
   if (data.blogs) renderBlogs(data.blogs);
@@ -12,7 +15,7 @@ function boot(data) {
   initScrollAnimations();
   initNavbar();
   initPrintButton();
-  initDeepLinks();
+  initDeepLinks(todayDayNum);
 }
 
 // Try fetch first, fallback to global TRIP_DATA (set via <script src="data.js">)
@@ -27,10 +30,37 @@ if (typeof TRIP_DATA !== "undefined") {
     });
 }
 
+// ─── COMPUTED STATS ───
+function computeStats(data) {
+  const days = data.days;
+
+  const kilometres = days.reduce((sum, d) => {
+    if (!d.distance) return sum;
+    const num = parseInt(d.distance.replace(/[^0-9]/g, ""), 10);
+    return sum + (isNaN(num) ? 0 : num);
+  }, 0);
+
+  const comtes = new Set(days.flatMap((d) => d.counties || [])).size;
+
+  return {
+    jours: days.length,
+    voyageurs: data.trip.stats.voyageurs,
+    kilometres: `~${kilometres}`,
+    comtes,
+  };
+}
+
+function computeBudgetTotals(days) {
+  days.forEach((day) => {
+    if (day.budget && day.budget.entries) {
+      day.budget.total = day.budget.entries.reduce((sum, e) => sum + (e.amount || 0), 0);
+    }
+  });
+}
+
 // ─── HERO ───
-function renderHero(trip) {
+function renderHero(trip, stats) {
   document.querySelector(".hero-eyebrow").textContent = `${trip.family} · ${trip.period}`;
-  const stats = trip.stats;
   const meta = document.querySelector(".hero-meta");
   meta.innerHTML = [
     { v: stats.jours, l: "Jours" },
@@ -308,41 +338,28 @@ function initDayPanels(days) {
 }
 
 // ─── STICKY DAY NAV ───
-function getTodayDayNum() {
-  // Trip dates: 16-23 Aug 2026
-  const tripDates = [
-    new Date(2026, 7, 16),
-    new Date(2026, 7, 17),
-    new Date(2026, 7, 18),
-    new Date(2026, 7, 19),
-    new Date(2026, 7, 20),
-    new Date(2026, 7, 21),
-    new Date(2026, 7, 22),
-    new Date(2026, 7, 23),
-  ];
+function getTodayDayNum(days) {
+  const frMonths = {
+    janvier: 0, fevrier: 1, mars: 2, avril: 3, mai: 4, juin: 5,
+    juillet: 6, aout: 7, septembre: 8, octobre: 9, novembre: 10, decembre: 11,
+  };
   const now = new Date();
   const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  for (let i = 0; i < tripDates.length; i++) {
-    if (today.getTime() === tripDates[i].getTime()) return i + 1;
+
+  for (const day of days) {
+    const match = day.date.match(/(\d+)\s+(\w+)/);
+    if (!match) continue;
+    const month = frMonths[match[2].toLowerCase()];
+    if (month === undefined) continue;
+    const tripDate = new Date(2026, month, parseInt(match[1], 10));
+    if (today.getTime() === tripDate.getTime()) return day.day;
   }
   return null;
 }
 
-function renderDayNav(days) {
+function renderDayNav(days, todayNum) {
   const nav = document.getElementById("dayNav");
   if (!nav) return;
-
-  const todayNum = getTodayDayNum();
-  const shortLabels = {
-    1: "Dublin",
-    2: "Galway",
-    3: "Moher",
-    4: "Clare",
-    5: "Connemara",
-    6: "Athlone",
-    7: "Trim",
-    8: "Retour",
-  };
 
   nav.innerHTML = days
     .map((day) => {
@@ -350,7 +367,7 @@ function renderDayNav(days) {
       const todayBadge = isToday ? ' <span class="pill-today">Auj.</span>' : "";
       return `<button class="day-nav-pill" data-day="${day.day}">
         <span class="pill-day">J${day.day}</span>
-        <span class="pill-label">${shortLabels[day.day] || ""}</span>${todayBadge}
+        <span class="pill-label">${day.shortLabel || ""}</span>${todayBadge}
       </button>`;
     })
     .join("");
@@ -402,9 +419,8 @@ function renderDayNav(days) {
 }
 
 // ─── DEEP LINKS ───
-function initDeepLinks() {
+function initDeepLinks(todayNum) {
   const hash = window.location.hash;
-  const todayNum = getTodayDayNum();
 
   if (hash && hash.startsWith("#jour-")) {
     const card = document.getElementById(hash.slice(1));
