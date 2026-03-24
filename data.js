@@ -22,7 +22,7 @@ const TRIP_DATA = {
       "isoDate": "2026-08-16",
       "routeIcon": "fa-plane-arrival",
       "routeDesc": "Arrivee Nimes → Dublin · Vol FR9777",
-      "morning": "Vol Ryanair FR9777, depart 11h10 de Nimes, arrivee <strong>12h40 a Dublin</strong>. Immigration + bagages (~20 min), puis comptoir <strong>NewWay</strong> pour la voiture a 13h. Route directe vers le centre de Dublin (<strong>30 min</strong>). Installation et debut de la decouverte a pied.",
+      "morning": "Vol Ryanair FR9777, depart 11h10 de Nimes, arrivee <strong>12h40 a Dublin</strong>. Immigration + bagages (~20 min), puis comptoir <strong>NewWay</strong> pour la voiture a 13h. Route directe vers le centre de Dublin (<strong>30 min</strong>). Installation et apres-midi tranquille : balade dans <strong>Temple Bar</strong> puis <strong>St Stephen's Green</strong> avec les enfants.",
       "night": "Nuit a Dublin centre",
       "nightInfo": "<strong>Ou dormir :</strong> Eviter Temple Bar (bruyant, cher). Privilegier <strong>Ballsbridge</strong> (calme, bus frequents). Nuit de transit : un aparthotel ou B&B suffit. <strong>Staycity Aparthotels</strong> (cuisinette, proche St Patrick's, ~130 EUR), <strong>Bewleys Hotel Ballsbridge</strong> (chambres familiales, bon rapport qualite/prix), <strong>Donnybrook Hall</strong> (victorien, chambres communicantes). Alternative budget : loger a <strong>Howth</strong> ou <strong>Dun Laoghaire</strong> (20-30 min en DART).",
       "distance": "~15 km",
@@ -32,26 +32,15 @@ const TRIP_DATA = {
         "lat": 53.3498,
         "lng": -6.2603
       },
-      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/a/a3/The_Dubhlinn_Gardens_Dublin_Castle_01.JPG",
-      "mapDesc": "Arrivee, Dublin Castle, Temple Bar, St Stephen's Green",
+      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Temple_Bar_street_scenes%2C_Dublin.jpg/960px-Temple_Bar_street_scenes%2C_Dublin.jpg",
+      "mapDesc": "Arrivee, Temple Bar, St Stephen's Green",
       "stops": [
-        {
-          "name": "Dublin Castle",
-          "desc": "Chateau historique, siege du pouvoir pendant 700 ans. State Apartments magnifiques. Visite guidee obligatoire (~3,50 EUR). Brochure en francais disponible.",
-          "icon": "fa-chess-rook",
-          "iconClass": "castle",
-          "photo": "img/03b9b18fb9.webp",
-          "gmaps": "https://maps.google.com/?q=53.3429,-6.2675",
-          "web": "https://dublincastle.ie/",
-          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186605-d214882-Reviews-Dublin_Castle-Dublin_County_Dublin.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/dublin/dublin-s-castle"
-        },
         {
           "name": "Temple Bar",
           "desc": "Quartier emblematique aux facades colorees. Ambiance musicale, pubs traditionnels. Plus sympa pour une balade photo en journee qu'en soiree avec enfants.",
           "icon": "fa-music",
           "iconClass": "culture",
-          "photo": "img/da04077369.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Temple_Bar_street_scenes%2C_Dublin.jpg/960px-Temple_Bar_street_scenes%2C_Dublin.jpg",
           "gmaps": "https://maps.google.com/?q=53.3456,-6.2628",
           "web": "https://www.lovetemplebar.com/",
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186605-d188821-Reviews-Temple_Bar-Dublin_County_Dublin.html",
@@ -62,7 +51,7 @@ const TRIP_DATA = {
           "desc": "Parc victorien avec lac, canards et aire de jeux. Pause parfaite apres le voyage. Aire de jeux avec toboggan a la cathedrale St Patrick juste a cote.",
           "icon": "fa-tree",
           "iconClass": "nature",
-          "photo": "img/e7e576eed6.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Dublin_Stephen%27s_Green-44_edit.jpg/960px-Dublin_Stephen%27s_Green-44_edit.jpg",
           "gmaps": "https://maps.google.com/?q=53.3381,-6.2592",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186605-d189054-Reviews-St_Stephens_Green-Dublin_County_Dublin.html",
@@ -100,42 +89,30 @@ const TRIP_DATA = {
           "icon": "fa-bed",
           "duration": "30min"
         },
-        { "time": "14h30", "label": "Dublin Castle", "icon": "fa-chess-rook", "duration": "1h" },
-        { "time": "15h30", "label": "Balade Temple Bar", "icon": "fa-music", "duration": "45min" },
+        { "time": "14h30", "label": "Balade Temple Bar", "icon": "fa-music", "duration": "1h" },
         {
-          "time": "16h15",
+          "time": "15h30",
           "label": "St Stephen's Green (aire de jeux)",
           "icon": "fa-tree",
-          "duration": "1h"
+          "duration": "1h30"
         },
-        { "time": "17h30", "label": "Retour hotel, repos", "icon": "fa-bed", "duration": "30min" },
+        { "time": "17h00", "label": "Retour hotel, repos", "icon": "fa-bed", "duration": "1h" },
         { "time": "18h30", "label": "Diner en ville", "icon": "fa-utensils", "duration": "1h30" }
       ],
       "budget": {
         "entries": [
-          { "label": "Dublin Castle (2 adultes, enfants gratuits)", "amount": 7 },
           { "label": "Diner en famille", "amount": 60 },
           { "label": "Parking hotel (estimation)", "amount": 18 }
         ],
-        "total": 85,
-        "notes": "Journee legere, arrivee en milieu de journee. Temple Bar et St Stephen's Green sont gratuits."
+        "total": 78,
+        "notes": "Journee legere, arrivee en milieu de journee. Temple Bar et St Stephen's Green sont gratuits. Dublin Castle ferme mai-dec 2026 (presidence UE)."
       },
       "dayRoute": [
         [53.4264, -6.2499],
-        [53.3429, -6.2675],
         [53.3456, -6.2628],
         [53.3381, -6.2592]
       ],
       "practicalTips": [
-        {
-          "stop": "Dublin Castle",
-          "icon": "fa-chess-rook",
-          "tips": [
-            "Visite guidee obligatoire pour les State Apartments (~3,50 EUR/adulte)",
-            "Brochure en francais disponible a l'accueil",
-            "Les Dubhlinn Gardens a cote sont gratuits et agreable pour les enfants"
-          ]
-        },
         {
           "stop": "Temple Bar",
           "icon": "fa-music",
@@ -175,7 +152,7 @@ const TRIP_DATA = {
         "lat": 53.2718,
         "lng": -9.053
       },
-      "mapImg": "img/47c55c39e7.webp",
+      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Shop_Street%2C_Galway.jpg",
       "mapDesc": "Autoroute M6, dejeuner Athlone, arrivee Galway",
       "stops": [
         {
@@ -183,7 +160,7 @@ const TRIP_DATA = {
           "desc": "Plus vieux pub d'Irlande (900 ap. J.-C. !). Dejeuner au bord du Shannon, murs en torchis d'epoque.",
           "icon": "fa-beer-mug-empty",
           "iconClass": "culture",
-          "photo": "img/c051e26ccc.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Sean%27s_Bar%2C_Athlone%2C_2025.jpg/960px-Sean%27s_Bar%2C_Athlone%2C_2025.jpg",
           "gmaps": "https://maps.google.com/?q=53.4232,-7.9408",
           "web": "https://www.seansbar.ie/",
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212091-d1580894-Reviews-Sean_s_Bar-Athlone_County_Westmeath.html",
@@ -194,7 +171,7 @@ const TRIP_DATA = {
           "desc": "Parc au bord du Shannon avec aire de jeux. Les enfants se degourdissent apres la route.",
           "icon": "fa-tree",
           "iconClass": "nature",
-          "photo": "img/e6b41e4858.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b1/BurgessPark.png",
           "gmaps": "https://maps.google.com/?q=53.4250,-7.9380",
           "web": null,
           "tripadvisor": null,
@@ -205,7 +182,7 @@ const TRIP_DATA = {
           "desc": "Coeur vibrant : musiciens de rue, facades colorees, boutiques. Spanish Arch et Long Walk.",
           "icon": "fa-guitar",
           "iconClass": "culture",
-          "photo": "img/47c55c39e7.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Shop_Street%2C_Galway.jpg",
           "gmaps": "https://maps.google.com/?q=53.2719,-9.0530",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186609-d4909613-Reviews-Galway_s_Latin_Quarter-Galway_County_Galway_Western_Ireland.html",
@@ -324,7 +301,7 @@ const TRIP_DATA = {
         "lat": 52.9719,
         "lng": -9.4265
       },
-      "mapImg": "img/51978d8c29.webp",
+      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Cliffs-Of-Moher-OBriens-From-South.JPG",
       "mapDesc": "Caherconnell, Poulnabrone, Cliffs of Moher, Doolin",
       "stops": [
         {
@@ -332,7 +309,7 @@ const TRIP_DATA = {
           "desc": "Fort en pierre millenaire + demonstration de border collies avec moutons (4.9/5 TripAdvisor). Les enfants adorent ! Famille ~28 EUR. Caresser les chiens et agneaux apres le show.",
           "icon": "fa-dog",
           "iconClass": "nature",
-          "photo": "img/193ceee8fd.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/d/da/Caherconnell_Fort.jpg",
           "gmaps": "https://maps.google.com/?q=53.0158,-9.1253",
           "web": "https://caherconnell.com/",
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g1645258-d1237930-Reviews-Caherconnell_Stone_Fort_Sheepdog_Demonstrations-Caherconnell_The_Burren_County_C.html",
@@ -343,7 +320,7 @@ const TRIP_DATA = {
           "desc": "Dolmen de 4200-2900 av. J.-C. au milieu du paysage lunaire du Burren. Acces libre.",
           "icon": "fa-landmark",
           "iconClass": "monument",
-          "photo": "img/33f7eda447.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/7/75/Paulnabrone.jpg",
           "gmaps": "https://maps.google.com/?q=53.0487,-9.1400",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186595-d526251-Reviews-Poulnabrone_Dolmen-County_Clare.html",
@@ -354,7 +331,7 @@ const TRIP_DATA = {
           "desc": "Falaises de 214m sur 8 km. Centre Atlantic Edge. Macareux en aout. Arriver en fin de journee ! Parking officiel : 8 EUR/pers. <strong>Bon plan</strong> : parking fermier 800m avant (direction Liscannor) a 2 EUR/vehicule. Coupe-vent indispensable. Rester dans la zone balisee avec les enfants.",
           "icon": "fa-mountain-sun",
           "iconClass": "nature",
-          "photo": "img/51978d8c29.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Cliffs-Of-Moher-OBriens-From-South.JPG",
           "gmaps": "https://maps.google.com/?q=52.9719,-9.4265",
           "web": "https://www.cliffsofmoher.ie/",
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g1184916-d214806-Reviews-Cliffs_of_Moher-Liscannor_County_Clare.html",
@@ -367,7 +344,7 @@ const TRIP_DATA = {
           "desc": "Village mythique de la musique traditionnelle. Pubs legendaires. Enfants bienvenus.",
           "icon": "fa-music",
           "iconClass": "culture",
-          "photo": "img/e92d85d7d4.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/f/f7/095_Fisher_Street_in_Doolin.jpg",
           "gmaps": "https://maps.google.com/?q=53.016,-9.377",
           "web": "https://doolin.ie/",
           "tripadvisor": "https://www.tripadvisor.com/Tourism-g214506-Doolin_The_Burren_County_Clare-Vacations.html",
@@ -502,7 +479,7 @@ const TRIP_DATA = {
         "lat": 53.258,
         "lng": -9.0847
       },
-      "mapImg": "img/10db5424f4.webp",
+      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lahinch_Beach%2C_March_2012.JPG",
       "mapDesc": "Doolin, Ennistymon, Lahinch, Salthill, Atlantaquaria",
       "stops": [
         {
@@ -510,7 +487,7 @@ const TRIP_DATA = {
           "desc": "Cascade en plein centre du bourg colore. Arret rapide sur la route.",
           "icon": "fa-water",
           "iconClass": "nature",
-          "photo": "img/c2686f7f1e.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Ennistymon_-_Falls.jpg",
           "gmaps": "https://maps.google.com/?q=52.94,-9.29",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212534-d18936468-Reviews-Ennistymon_Falls-Ennistymon_County_Clare.html",
@@ -521,7 +498,7 @@ const TRIP_DATA = {
           "desc": "Grande plage de sable surveillee en ete. Capitale du surf en Irlande. Parfaite pour les enfants. Aire de jeux juste a cote de la plage. Section baignade surveillee separee du surf. Cours de surf famille possibles des 8 ans.",
           "icon": "fa-water",
           "iconClass": "beach",
-          "photo": "img/10db5424f4.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lahinch_Beach%2C_March_2012.JPG",
           "gmaps": "https://maps.google.com/?q=52.937,-9.345",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212533-d3458853-Reviews-Lahinch_Beach-Lahinch_County_Clare.html",
@@ -532,7 +509,7 @@ const TRIP_DATA = {
           "desc": "Front de mer de 2 km. Tradition de « kicker la plaque ». Plongeoir de Blackrock.",
           "icon": "fa-person-swimming",
           "iconClass": "beach",
-          "photo": "img/6f82821671.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Sea_Divingboard_Salthill_Galway_Ireland_2008.jpg/960px-Sea_Divingboard_Salthill_Galway_Ireland_2008.jpg",
           "gmaps": "https://maps.google.com/?q=53.2580,-9.0847",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186609-d215937-Reviews-Salthill_Promenade-Galway_County_Galway_Western_Ireland.html",
@@ -543,7 +520,7 @@ const TRIP_DATA = {
           "desc": "Aquarium national d'Irlande. Bassin tactile (raies, crabes) a hauteur d'enfant. ~1h de visite. <strong>Ideal en plan B pluie</strong> — petit mais les enfants de 5-8 ans adorent les bassins tactiles. Famille ~45 EUR. Ferme le lundi. Dernier acces 16h en semaine.",
           "icon": "fa-fish",
           "iconClass": "family",
-          "photo": "img/5f1d902a76.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/National_Aquarium_of_Ireland.jpg/960px-National_Aquarium_of_Ireland.jpg",
           "gmaps": "https://maps.google.com/?q=53.2598,-9.0741",
           "web": "https://nationalaquarium.ie/",
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186609-d215896-Reviews-Galway_Atlantaquaria-Galway_County_Galway_Western_Ireland.html",
@@ -677,7 +654,7 @@ const TRIP_DATA = {
         "lat": 53.494,
         "lng": -10.093
       },
-      "mapImg": "img/c2f4fb368b.webp",
+      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sky_Road_Clifden.jpg",
       "mapDesc": "Roundstone, Dog's Bay, Clifden, Sky Road",
       "stops": [
         {
@@ -685,7 +662,7 @@ const TRIP_DATA = {
           "desc": "Village de pecheurs idyllique du Connemara. Atelier de bodhran de Malachy Kearns, l'un des derniers fabricants artisanaux d'Irlande.",
           "icon": "fa-palette",
           "iconClass": "culture",
-          "photo": "img/45bbcfb588.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/3/31/Cloch_na_R%C3%B3n_-_geograph.org.uk_-_12397.jpg",
           "gmaps": "https://maps.google.com/?q=53.3957,-9.9203",
           "web": null,
           "tripadvisor": null,
@@ -696,7 +673,7 @@ const TRIP_DATA = {
           "desc": "Plages jumelles de sable blanc corallien. Eau turquoise. Parmi les plus belles d'Irlande. Tour de la presqu'ile possible en 2h a pied.",
           "icon": "fa-umbrella-beach",
           "iconClass": "beach",
-          "photo": "img/9882d9c27f.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Dog%27s_Bay_Beach%2C_from_the_headland_-_geograph.org.uk_-_1297055.jpg",
           "gmaps": "https://maps.google.com/?q=53.3779,-9.9636",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g551539-d7106495-Reviews-Dog_s_Bay_Beach-Roundstone_County_Galway_Western_Ireland.html",
@@ -708,7 +685,7 @@ const TRIP_DATA = {
           "desc": "Boucle panoramique de 12 km au-dessus de Clifden. Vues epoustouflantes sur l'ocean et les iles. Privilegier la Upper Sky Road pour les plus belles vues. <strong>Ideal au coucher du soleil</strong> (vers 17-18h). Route etroite, rouler lentement.",
           "icon": "fa-panorama",
           "iconClass": "nature",
-          "photo": "img/c2f4fb368b.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sky_Road_Clifden.jpg",
           "gmaps": "https://maps.google.com/?q=53.5007,-10.0965",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g211883-d4442921-Reviews-Sky_Road-Clifden_County_Galway_Western_Ireland.html",
@@ -719,7 +696,7 @@ const TRIP_DATA = {
           "desc": "Capitale du Connemara. Rues colorees, bons restaurants, ambiance detendue.",
           "icon": "fa-mug-hot",
           "iconClass": "food",
-          "photo": "img/c130cb18d6.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b8/ClifdenOverview.JPG",
           "gmaps": "https://maps.google.com/?q=53.4333,-10.0167",
           "web": null,
           "tripadvisor": null,
@@ -840,7 +817,7 @@ const TRIP_DATA = {
         "lat": 53.4233,
         "lng": -7.9424
       },
-      "mapImg": "img/c130cb18d6.webp",
+      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/b/b8/ClifdenOverview.JPG",
       "mapDesc": "Letterfrack, Connemara, Maam Cross, Athlone",
       "stops": [
         {
@@ -848,7 +825,7 @@ const TRIP_DATA = {
           "desc": "3 sentiers : Sruffaunboy (1,5 km, tres facile, platelage bois), Lower Diamond Hill (3 km, faisable des 5-6 ans), Upper (3,8 km, sommet 442m). Gratuit. Demonstrations de chiens de berger en saison.",
           "icon": "fa-mountain-sun",
           "iconClass": "nature",
-          "photo": "img/802e462117.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Connemara_National_Park_Diamond_Hill.jpg/960px-Connemara_National_Park_Diamond_Hill.jpg",
           "gmaps": "https://maps.google.com/?q=53.5520,-9.9440",
           "web": "https://www.connemaranationalpark.ie/",
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186609-d546269-Reviews-Connemara_National_Park_Visitor_Centre-Galway_County_Galway_Western_Ireland.html",
@@ -861,11 +838,11 @@ const TRIP_DATA = {
           "desc": "Croisiere en replique de drakkar viking sur le Shannon (75 min). Les enfants peuvent piloter le bateau ! Casques et epees vikings en vente. Prevoir 75 min.",
           "icon": "fa-ship",
           "iconClass": "culture",
-          "photo": "img/f6096bdf27.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Athlone_On_The_Shannon_River.jpg/960px-Athlone_On_The_Shannon_River.jpg",
           "gmaps": "https://maps.google.com/?q=53.4232,-7.9408",
           "web": "https://www.vikingtoursireland.ie/",
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212091-d1119252-Reviews-Viking_Tours-Athlone_County_Westmeath.html",
-          "routard": null
+          "routard": "https://www.routard.com/fr/mag/reportage/a/les-lakelands-l-irlande-secrete"
         }
       ],
       "schedule": [
@@ -986,7 +963,7 @@ const TRIP_DATA = {
         "lat": 53.5455,
         "lng": -6.7882
       },
-      "mapImg": "img/3ea7462e25.webp",
+      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Trim_Castle_6.jpg",
       "mapDesc": "Trim Castle, Hill of Tara, hotel aeroport",
       "stops": [
         {
@@ -994,7 +971,7 @@ const TRIP_DATA = {
           "desc": "Plus grand chateau anglo-normand d'Irlande (XIIe). Donjon de 20m, decor de Braveheart. Impressionnant ! Famille 2A+2E ~10 EUR. Visite guidee du donjon 45 min (obligatoire). Brochure en francais. Jardins et enceinte gratuits, belle balade le long de la Boyne.",
           "icon": "fa-chess-rook",
           "iconClass": "castle",
-          "photo": "img/3ea7462e25.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Trim_Castle_6.jpg",
           "gmaps": "https://maps.google.com/?q=53.5455,-6.7882",
           "web": "https://heritageireland.ie/places-to-visit/trim-castle/",
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g644237-d525404-Reviews-Trim_Castle-Trim_County_Meath.html",
@@ -1006,7 +983,7 @@ const TRIP_DATA = {
           "desc": "Colline sacree des Hauts Rois d'Irlande. Vue sur 40% de l'ile. Pierre du Destin (Lia Fail). Gratuit (Heritage Card). Centre d'interpretation. Les enfants adorent devaler les collines. 30-45 min suffisent.",
           "icon": "fa-crown",
           "iconClass": "monument",
-          "photo": "img/86152267a5.webp",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/County_Meath_-_Hill_of_Tara_-_20180222160412.jpg/960px-County_Meath_-_Hill_of_Tara_-_20180222160412.jpg",
           "gmaps": "https://maps.google.com/?q=53.5789,-6.6113",
           "web": "https://heritageireland.ie/places-to-visit/hill-of-tara/",
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186628-d526324-Reviews-Hill_of_Tara_Temair-County_Meath.html",
@@ -1246,14 +1223,6 @@ const TRIP_DATA = {
   ],
   "pois": {
     "castles": [
-      {
-        "name": "Dublin Castle",
-        "desc": "Chateau medieval au coeur de Dublin ancien siege du pouvoir britannique",
-        "lat": 53.3429,
-        "lng": -6.2674,
-        "web": "https://www.dublincastle.ie/",
-        "gmaps": "https://maps.google.com/?q=53.3429"
-      },
       {
         "name": "Malahide Castle",
         "desc": "Chateau normand du XIIe siecle entoure de jardins botaniques",

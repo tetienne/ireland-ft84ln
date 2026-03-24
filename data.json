@@ -22,7 +22,7 @@
       "isoDate": "2026-08-16",
       "routeIcon": "fa-plane-arrival",
       "routeDesc": "Arrivee Nimes → Dublin · Vol FR9777",
-      "morning": "Vol Ryanair FR9777, depart 11h10 de Nimes, arrivee <strong>12h40 a Dublin</strong>. Immigration + bagages (~20 min), puis comptoir <strong>NewWay</strong> pour la voiture a 13h. Route directe vers le centre de Dublin (<strong>30 min</strong>). Installation et debut de la decouverte a pied.",
+      "morning": "Vol Ryanair FR9777, depart 11h10 de Nimes, arrivee <strong>12h40 a Dublin</strong>. Immigration + bagages (~20 min), puis comptoir <strong>NewWay</strong> pour la voiture a 13h. Route directe vers le centre de Dublin (<strong>30 min</strong>). Installation et apres-midi tranquille : balade dans <strong>Temple Bar</strong> puis <strong>St Stephen's Green</strong> avec les enfants.",
       "night": "Nuit a Dublin centre",
       "nightInfo": "<strong>Ou dormir :</strong> Eviter Temple Bar (bruyant, cher). Privilegier <strong>Ballsbridge</strong> (calme, bus frequents). Nuit de transit : un aparthotel ou B&B suffit. <strong>Staycity Aparthotels</strong> (cuisinette, proche St Patrick's, ~130 EUR), <strong>Bewleys Hotel Ballsbridge</strong> (chambres familiales, bon rapport qualite/prix), <strong>Donnybrook Hall</strong> (victorien, chambres communicantes). Alternative budget : loger a <strong>Howth</strong> ou <strong>Dun Laoghaire</strong> (20-30 min en DART).",
       "distance": "~15 km",
@@ -32,20 +32,9 @@
         "lat": 53.3498,
         "lng": -6.2603
       },
-      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/a/a3/The_Dubhlinn_Gardens_Dublin_Castle_01.JPG",
-      "mapDesc": "Arrivee, Dublin Castle, Temple Bar, St Stephen's Green",
+      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Temple_Bar_street_scenes%2C_Dublin.jpg/960px-Temple_Bar_street_scenes%2C_Dublin.jpg",
+      "mapDesc": "Arrivee, Temple Bar, St Stephen's Green",
       "stops": [
-        {
-          "name": "Dublin Castle",
-          "desc": "Chateau historique, siege du pouvoir pendant 700 ans. State Apartments magnifiques. Visite guidee obligatoire (~3,50 EUR). Brochure en francais disponible.",
-          "icon": "fa-chess-rook",
-          "iconClass": "castle",
-          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Dubhlinn_Gardens_Dublin_Castle_01.JPG/960px-The_Dubhlinn_Gardens_Dublin_Castle_01.JPG",
-          "gmaps": "https://maps.google.com/?q=53.3429,-6.2675",
-          "web": "https://dublincastle.ie/",
-          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186605-d214882-Reviews-Dublin_Castle-Dublin_County_Dublin.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/dublin/dublin-s-castle"
-        },
         {
           "name": "Temple Bar",
           "desc": "Quartier emblematique aux facades colorees. Ambiance musicale, pubs traditionnels. Plus sympa pour une balade photo en journee qu'en soiree avec enfants.",
@@ -100,42 +89,30 @@
           "icon": "fa-bed",
           "duration": "30min"
         },
-        { "time": "14h30", "label": "Dublin Castle", "icon": "fa-chess-rook", "duration": "1h" },
-        { "time": "15h30", "label": "Balade Temple Bar", "icon": "fa-music", "duration": "45min" },
+        { "time": "14h30", "label": "Balade Temple Bar", "icon": "fa-music", "duration": "1h" },
         {
-          "time": "16h15",
+          "time": "15h30",
           "label": "St Stephen's Green (aire de jeux)",
           "icon": "fa-tree",
-          "duration": "1h"
+          "duration": "1h30"
         },
-        { "time": "17h30", "label": "Retour hotel, repos", "icon": "fa-bed", "duration": "30min" },
+        { "time": "17h00", "label": "Retour hotel, repos", "icon": "fa-bed", "duration": "1h" },
         { "time": "18h30", "label": "Diner en ville", "icon": "fa-utensils", "duration": "1h30" }
       ],
       "budget": {
         "entries": [
-          { "label": "Dublin Castle (2 adultes, enfants gratuits)", "amount": 7 },
           { "label": "Diner en famille", "amount": 60 },
           { "label": "Parking hotel (estimation)", "amount": 18 }
         ],
-        "total": 85,
-        "notes": "Journee legere, arrivee en milieu de journee. Temple Bar et St Stephen's Green sont gratuits."
+        "total": 78,
+        "notes": "Journee legere, arrivee en milieu de journee. Temple Bar et St Stephen's Green sont gratuits. Dublin Castle ferme mai-dec 2026 (presidence UE)."
       },
       "dayRoute": [
         [53.4264, -6.2499],
-        [53.3429, -6.2675],
         [53.3456, -6.2628],
         [53.3381, -6.2592]
       ],
       "practicalTips": [
-        {
-          "stop": "Dublin Castle",
-          "icon": "fa-chess-rook",
-          "tips": [
-            "Visite guidee obligatoire pour les State Apartments (~3,50 EUR/adulte)",
-            "Brochure en francais disponible a l'accueil",
-            "Les Dubhlinn Gardens a cote sont gratuits et agreable pour les enfants"
-          ]
-        },
         {
           "stop": "Temple Bar",
           "icon": "fa-music",
@@ -865,7 +842,7 @@
           "gmaps": "https://maps.google.com/?q=53.4232,-7.9408",
           "web": "https://www.vikingtoursireland.ie/",
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212091-d1119252-Reviews-Viking_Tours-Athlone_County_Westmeath.html",
-          "routard": null
+          "routard": "https://www.routard.com/fr/mag/reportage/a/les-lakelands-l-irlande-secrete"
         }
       ],
       "schedule": [
@@ -1246,14 +1223,6 @@
   ],
   "pois": {
     "castles": [
-      {
-        "name": "Dublin Castle",
-        "desc": "Chateau medieval au coeur de Dublin ancien siege du pouvoir britannique",
-        "lat": 53.3429,
-        "lng": -6.2674,
-        "web": "https://www.dublincastle.ie/",
-        "gmaps": "https://maps.google.com/?q=53.3429"
-      },
       {
         "name": "Malahide Castle",
         "desc": "Chateau normand du XIIe siecle entoure de jardins botaniques",
