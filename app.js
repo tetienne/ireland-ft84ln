@@ -146,7 +146,7 @@ function renderRoadBook(days) {
 
 function renderStop(stop) {
   const photoHtml = stop.photo
-    ? `<div class="stop-photo" style="background-image:url('${stop.photo}')"></div>`
+    ? `<div class="stop-photo"><img src="${stop.photo}" alt="${stop.title}" loading="lazy"></div>`
     : "";
 
   const links = [];
