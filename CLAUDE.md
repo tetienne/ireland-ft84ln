@@ -1,13 +1,16 @@
 # Ireland Road Trip 2026 — Projet de voyage
 
 ## Contexte
+
 Voyage en famille (2 adultes + 2 enfants de 5 et 8 ans) en Irlande, cote ouest / Wild Atlantic Way.
+
 - **Dates** : 16-23 aout 2026 (7 nuits, 8 jours)
 - **Vol aller** : Ryanair FR9777, Nimes (FNI) → Dublin (DUB), 11h10-12h40
 - **Vol retour** : Ryanair FR9776, Dublin (DUB) → Nimes (FNI), 07h10-10h30
 - **Voiture** : NewWay, Dublin Airport, 16/08 13h00 → 23/08 07h00
 
 ## Contraintes strictes
+
 - **Max ~2h de conduite par jour** (tolerance ~2h15-2h30 si trajet coupe en segments < 1h15)
 - **Derniere nuit obligatoirement < 30 min de l'aeroport** (hotel type Crowne Plaza Dublin Airport)
 - **Arrivee aeroport J8 a 5h30** (reveil ~5h00)
@@ -16,18 +19,19 @@ Voyage en famille (2 adultes + 2 enfants de 5 et 8 ans) en Irlande, cote ouest /
 
 ## Itineraire final v2 (temps OSRM verifies — optimise J5/J6)
 
-| Jour | Date | Trajet | Conduite | Nuit |
-|------|------|--------|----------|------|
-| J1 | Dim 16/08 | Airport → Dublin | **30 min** | Dublin |
-| J2 | Lun 17/08 | Dublin → Galway (via dejeuner Athlone) | **2h34** (1h30+1h04) | Galway |
-| J3 | Mar 18/08 | Galway → Aillwee → Poulnabrone → Cliffs → Doolin | **1h46** | Doolin |
-| J4 | Mer 19/08 | Doolin → Lahinch → Galway | **~1h19** | Galway (2e nuit) |
-| J5 | Jeu 20/08 | Galway → Roundstone → Clifden → Sky Road | **~1h31** | Clifden |
-| J6 | Ven 21/08 | Clifden → Athlone (via Maam Cross) | **~2h06** | Athlone |
-| J7 | Sam 22/08 | Athlone → Trim Castle → Hill of Tara → Airport hotel | **2h16** | Airport hotel |
-| J8 | Dim 23/08 | Hotel → Terminal | **5 min** | — |
+| Jour | Date      | Trajet                                               | Conduite             | Nuit             |
+| ---- | --------- | ---------------------------------------------------- | -------------------- | ---------------- |
+| J1   | Dim 16/08 | Airport → Dublin                                     | **30 min**           | Dublin           |
+| J2   | Lun 17/08 | Dublin → Galway (via dejeuner Athlone)               | **2h34** (1h30+1h04) | Galway           |
+| J3   | Mar 18/08 | Galway → Aillwee → Poulnabrone → Cliffs → Doolin     | **1h46**             | Doolin           |
+| J4   | Mer 19/08 | Doolin → Lahinch → Galway                            | **~1h19**            | Galway (2e nuit) |
+| J5   | Jeu 20/08 | Galway → Roundstone → Clifden → Sky Road             | **~1h31**            | Clifden          |
+| J6   | Ven 21/08 | Clifden → Athlone (via Maam Cross)                   | **~2h06**            | Athlone          |
+| J7   | Sam 22/08 | Athlone → Trim Castle → Hill of Tara → Airport hotel | **2h16**             | Airport hotel    |
+| J8   | Dim 23/08 | Hotel → Terminal                                     | **5 min**            | —                |
 
 ### Detail des troncons OSRM (minutes)
+
 ```
 J1: Airport→Dublin(30)
 J2: Dublin→Athlone(90) + Athlone→Galway(64) — autoroute M6, dejeuner a Athlone
@@ -39,6 +43,7 @@ J7: Athlone→Trim(74) + Trim→Tara(20) + Tara→Airport(42)
 ```
 
 ### Nuits (7 au total)
+
 1. Dublin centre (1 nuit)
 2. Galway (1ere nuit) — meme logement que nuit 4
 3. Doolin (1 nuit)
@@ -48,11 +53,13 @@ J7: Athlone→Trim(74) + Trim→Tara(20) + Tara→Airport(42)
 7. Hotel aeroport Dublin (1 nuit)
 
 ### Sites visites
+
 **Incontournables gardes** : Galway (Latin Quarter, Salthill, Atlantaquaria), Cliffs of Moher, Connemara (Roundstone, Dog's Bay, Clifden, Sky Road), Burren (Aillwee Cave, Poulnabrone Dolmen), Trim Castle, Hill of Tara
 
 **Sacrifies** : Newgrange (trop loin du trajet principal), Kylemore Abbey (ajoute trop de route au J6), Bunratty Castle (1h30 de detour), Cong (detour), Clonmacnoise (detour), Brigit's Garden
 
 **Recuperables si le timing le permet** :
+
 - Kylemore Abbey : J6 matin avant de quitter Clifden (Clifden→Kylemore 19 min, ajoute ~40 min A/R)
 - Parc National Connemara / Diamond Hill : J6 matin a Letterfrack (a cote de Kylemore)
 - Newgrange : si J7 on fait Athlone→Trim→Newgrange→Airport au lieu de Trim→Tara (2h32 au lieu de 2h16)
@@ -70,24 +77,30 @@ ireland-trip/
 ```
 
 ### Comment modifier l'itineraire
+
 1. Editer `data.json` (champs `days`, `stops`, `route`, `pois`, `tips`, `blogs`)
 2. Regenerer `data.js` : `echo "const TRIP_DATA = $(cat data.json);" > data.js`
 3. Ouvrir `index.html` dans un navigateur (fonctionne en file://)
 
 ### Comment verifier un temps de trajet
+
 Utiliser l'API OSRM (gratuite, pas de cle) :
+
 ```bash
 curl -s "https://router.project-osrm.org/route/v1/driving/LNG1,LAT1;LNG2,LAT2?overview=false"
 ```
+
 Le resultat contient `duration` (secondes) et `distance` (metres).
 
 ### Carte Leaflet
+
 - Fond de carte : CartoDB Voyager (OpenStreetMap)
 - Marqueurs numerotes J1-J8 pour chaque etape
 - POIs secondaires : chateaux (orange), monasteres (mauve), plages (bleu), panoramas (vert)
 - Polyline doree en pointilles pour l'itineraire
 
 ## Blogs de reference
+
 - [Planete3w](https://www.planete3w.fr/road-trip-1-semaine-en-irlande-notre-itineraire/) — couple, 7 jours
 - [Les Love Trotteurs](https://www.leslovetrotteurs.com/une-semaine-en-irlande/) — famille, 7 jours
 - [e-Zabel](https://www.e-zabel.fr/irlande-en-famille/) — famille 2 enfants, 9 jours
@@ -96,6 +109,7 @@ Le resultat contient `duration` (secondes) et `distance` (metres).
 - [Causey Farm](https://www.causey.ie/) — experience "Be Irish for a Day" (alternative J7)
 
 ## Forum Routard — fils de reference
+
 - [7 jours en Irlande, itineraire ok ?](https://www.routard.com/forums/t/7-jours-en-irlande-itineraire-ok-selon-vous/171118)
 - [7 jours quel circuit ?](https://www.routard.com/forums/t/7-jours-en-irlande-quel-circuit/118977)
 - [7 jours en aout](https://www.routard.com/forum_message/3392086/itineraire_de_7_jours_en_irlande_en_aout.htm)
@@ -110,6 +124,7 @@ Le resultat contient `duration` (secondes) et `distance` (metres).
 - [12 jours famille cote ouest](https://www.routard.com/forums/t/12-jours-en-famille-en-irlande-votre-avis-sur-notre-parcours/82260)
 
 ## Conseils cles issus des forums et TripAdvisor
+
 - **Cliffs of Moher** : parking officiel 8 EUR/pers (!). Parking fermier 800m avant (dir. Liscannor) = 2 EUR/vehicule. Arriver apres 16h. Coupe-vent obligatoire. Zone balisee avec enfants.
 - **Aillwee Cave** : famille ~71 EUR (grotte + rapaces). Les enfants peuvent tenir les oiseaux.
 - **Sky Road** : Upper Sky Road = meilleures vues. Ideal au coucher du soleil (17-18h). Route etroite.
@@ -124,6 +139,7 @@ Le resultat contient `duration` (secondes) et `distance` (metres).
 - **Galway** : 2-3h de visite suffisent. McDonagh's = fish & chips legendaire. Tig Coili/Crane Bar pour la musique.
 
 ## Tarifs verifies (2025-2026)
+
 - Heritage Card : 40 EUR/adulte, enfants < 12 ans gratuit
 - Cliffs of Moher : 8 EUR/pers parking officiel (ou 2 EUR/vehicule parking fermier)
 - Aillwee Cave + rapaces : famille ~71 EUR

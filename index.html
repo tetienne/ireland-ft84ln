@@ -1,105 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ireland Road Trip 2026 — Wild Atlantic Way</title>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ireland Road Trip 2026 — Wild Atlantic Way</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="nav-bar" id="navbar">
+      <span class="nav-logo">Ireland 2026</span>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#map-section">Carte</a></li>
+        <li><a href="#roadbook">Road Book</a></li>
+        <li><a href="#tips">Conseils</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+      </ul>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
-<!-- NAV -->
-<nav class="nav-bar" id="navbar">
-  <span class="nav-logo">Ireland 2026</span>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#map-section">Carte</a></li>
-    <li><a href="#roadbook">Road Book</a></li>
-    <li><a href="#tips">Conseils</a></li>
-    <li><a href="#blogs">Blogs</a></li>
-  </ul>
-  <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-pattern"></div>
+      <div class="celtic-corner celtic-corner--tl">
+        <svg viewBox="0 0 100 100" fill="none" stroke="rgba(200,148,46,0.8)" stroke-width="1.5">
+          <path d="M10,90 Q10,10 90,10" />
+          <path d="M20,90 Q20,20 90,20" />
+          <path d="M10,90 C10,50 50,10 90,10" stroke-dasharray="4,4" />
+          <circle cx="10" cy="90" r="4" fill="rgba(200,148,46,0.5)" />
+          <circle cx="90" cy="10" r="4" fill="rgba(200,148,46,0.5)" />
+        </svg>
+      </div>
+      <div class="celtic-corner celtic-corner--tr">
+        <svg viewBox="0 0 100 100" fill="none" stroke="rgba(200,148,46,0.8)" stroke-width="1.5">
+          <path d="M10,90 Q10,10 90,10" />
+          <path d="M20,90 Q20,20 90,20" />
+          <path d="M10,90 C10,50 50,10 90,10" stroke-dasharray="4,4" />
+          <circle cx="10" cy="90" r="4" fill="rgba(200,148,46,0.5)" />
+          <circle cx="90" cy="10" r="4" fill="rgba(200,148,46,0.5)" />
+        </svg>
+      </div>
+      <div class="celtic-corner celtic-corner--bl">
+        <svg viewBox="0 0 100 100" fill="none" stroke="rgba(200,148,46,0.8)" stroke-width="1.5">
+          <path d="M10,90 Q10,10 90,10" />
+          <path d="M20,90 Q20,20 90,20" />
+          <path d="M10,90 C10,50 50,10 90,10" stroke-dasharray="4,4" />
+          <circle cx="10" cy="90" r="4" fill="rgba(200,148,46,0.5)" />
+          <circle cx="90" cy="10" r="4" fill="rgba(200,148,46,0.5)" />
+        </svg>
+      </div>
+      <div class="celtic-corner celtic-corner--br">
+        <svg viewBox="0 0 100 100" fill="none" stroke="rgba(200,148,46,0.8)" stroke-width="1.5">
+          <path d="M10,90 Q10,10 90,10" />
+          <path d="M20,90 Q20,20 90,20" />
+          <path d="M10,90 C10,50 50,10 90,10" stroke-dasharray="4,4" />
+          <circle cx="10" cy="90" r="4" fill="rgba(200,148,46,0.5)" />
+          <circle cx="90" cy="10" r="4" fill="rgba(200,148,46,0.5)" />
+        </svg>
+      </div>
+      <div class="hero-content">
+        <div class="hero-eyebrow"></div>
+        <h1 class="hero-title">Ireland<em>Road Trip</em></h1>
+        <p class="hero-subtitle">Wild Atlantic Way en famille</p>
+        <div class="hero-divider"></div>
+        <div class="hero-meta"></div>
+      </div>
+      <a href="#map-section" class="hero-scroll"
+        ><span>Explorer</span><i class="fa-solid fa-chevron-down"></i
+      ></a>
+    </section>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-pattern"></div>
-  <div class="celtic-corner celtic-corner--tl"><svg viewBox="0 0 100 100" fill="none" stroke="rgba(200,148,46,0.8)" stroke-width="1.5"><path d="M10,90 Q10,10 90,10"/><path d="M20,90 Q20,20 90,20"/><path d="M10,90 C10,50 50,10 90,10" stroke-dasharray="4,4"/><circle cx="10" cy="90" r="4" fill="rgba(200,148,46,0.5)"/><circle cx="90" cy="10" r="4" fill="rgba(200,148,46,0.5)"/></svg></div>
-  <div class="celtic-corner celtic-corner--tr"><svg viewBox="0 0 100 100" fill="none" stroke="rgba(200,148,46,0.8)" stroke-width="1.5"><path d="M10,90 Q10,10 90,10"/><path d="M20,90 Q20,20 90,20"/><path d="M10,90 C10,50 50,10 90,10" stroke-dasharray="4,4"/><circle cx="10" cy="90" r="4" fill="rgba(200,148,46,0.5)"/><circle cx="90" cy="10" r="4" fill="rgba(200,148,46,0.5)"/></svg></div>
-  <div class="celtic-corner celtic-corner--bl"><svg viewBox="0 0 100 100" fill="none" stroke="rgba(200,148,46,0.8)" stroke-width="1.5"><path d="M10,90 Q10,10 90,10"/><path d="M20,90 Q20,20 90,20"/><path d="M10,90 C10,50 50,10 90,10" stroke-dasharray="4,4"/><circle cx="10" cy="90" r="4" fill="rgba(200,148,46,0.5)"/><circle cx="90" cy="10" r="4" fill="rgba(200,148,46,0.5)"/></svg></div>
-  <div class="celtic-corner celtic-corner--br"><svg viewBox="0 0 100 100" fill="none" stroke="rgba(200,148,46,0.8)" stroke-width="1.5"><path d="M10,90 Q10,10 90,10"/><path d="M20,90 Q20,20 90,20"/><path d="M10,90 C10,50 50,10 90,10" stroke-dasharray="4,4"/><circle cx="10" cy="90" r="4" fill="rgba(200,148,46,0.5)"/><circle cx="90" cy="10" r="4" fill="rgba(200,148,46,0.5)"/></svg></div>
-  <div class="hero-content">
-    <div class="hero-eyebrow"></div>
-    <h1 class="hero-title">Ireland<em>Road Trip</em></h1>
-    <p class="hero-subtitle">Wild Atlantic Way en famille</p>
-    <div class="hero-divider"></div>
-    <div class="hero-meta"></div>
-  </div>
-  <a href="#map-section" class="hero-scroll"><span>Explorer</span><i class="fa-solid fa-chevron-down"></i></a>
-</section>
+    <!-- MAP -->
+    <section class="map-section" id="map-section">
+      <div class="map-header">
+        <h2>Notre Itineraire</h2>
+        <p>De Dublin aux falaises de l'Atlantique</p>
+      </div>
+      <div id="map"></div>
+      <div class="map-legend">
+        <h4><i class="fa-solid fa-filter"></i> Filtrer</h4>
+        <div class="map-legend-item">
+          <div class="legend-line" style="background: #c8942e"></div>
+          <span>Itineraire</span>
+        </div>
+        <div class="map-legend-item">
+          <div class="legend-dot" style="background: #1a5632"></div>
+          <span>Etape du jour</span>
+        </div>
+        <div id="mapFilters">
+          <!-- Generated by app.js -->
+        </div>
+      </div>
+    </section>
 
-<!-- MAP -->
-<section class="map-section" id="map-section">
-  <div class="map-header">
-    <h2>Notre Itineraire</h2>
-    <p>De Dublin aux falaises de l'Atlantique</p>
-  </div>
-  <div id="map"></div>
-  <div class="map-legend">
-    <h4><i class="fa-solid fa-filter"></i> Filtrer</h4>
-    <div class="map-legend-item"><div class="legend-line" style="background:#c8942e;"></div><span>Itineraire</span></div>
-    <div class="map-legend-item"><div class="legend-dot" style="background:#1a5632;"></div><span>Etape du jour</span></div>
-    <div id="mapFilters">
-      <!-- Generated by app.js -->
-    </div>
-  </div>
-</section>
+    <!-- ROAD BOOK -->
+    <section class="roadbook" id="roadbook">
+      <div class="roadbook-header">
+        <h2>Road Book</h2>
+        <p>Jour par jour, etape par etape</p>
+        <div class="line"></div>
+      </div>
+      <div class="timeline">
+        <!-- Generated from data.json by app.js -->
+      </div>
+    </section>
 
-<!-- ROAD BOOK -->
-<section class="roadbook" id="roadbook">
-  <div class="roadbook-header">
-    <h2>Road Book</h2>
-    <p>Jour par jour, etape par etape</p>
-    <div class="line"></div>
-  </div>
-  <div class="timeline">
-    <!-- Generated from data.json by app.js -->
-  </div>
-</section>
+    <!-- TIPS -->
+    <section class="tips-section" id="tips">
+      <div class="tips-header">
+        <h2>Conseils pratiques</h2>
+        <p>Ce que les blogueurs francais recommandent unanimement</p>
+        <div class="line"></div>
+      </div>
+      <div class="tips-grid"></div>
+    </section>
 
-<!-- TIPS -->
-<section class="tips-section" id="tips">
-  <div class="tips-header">
-    <h2>Conseils pratiques</h2>
-    <p>Ce que les blogueurs francais recommandent unanimement</p>
-    <div class="line"></div>
-  </div>
-  <div class="tips-grid"></div>
-</section>
+    <!-- BLOGS -->
+    <section class="blogs-section" id="blogs">
+      <div class="blogs-header">
+        <h2>Blogs & recits de voyage</h2>
+        <p>Retours d'experience de familles francaises en Irlande</p>
+        <div class="line"></div>
+      </div>
+      <div class="blogs-grid"></div>
+    </section>
 
-<!-- BLOGS -->
-<section class="blogs-section" id="blogs">
-  <div class="blogs-header">
-    <h2>Blogs & recits de voyage</h2>
-    <p>Retours d'experience de familles francaises en Irlande</p>
-    <div class="line"></div>
-  </div>
-  <div class="blogs-grid"></div>
-</section>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-shamrock">&#9752;</div>
+      <p>Ireland Road Trip 2026 &mdash; Wild Atlantic Way en famille</p>
+      <p class="family">Famille Etienne &middot; 16–23 Aout 2026</p>
+    </footer>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer-shamrock">&#9752;</div>
-  <p>Ireland Road Trip 2026 &mdash; Wild Atlantic Way en famille</p>
-  <p class="family">Famille Etienne &middot; 16–23 Aout 2026</p>
-</footer>
-
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="data.js"></script>
-<script src="app.js"></script>
-</body>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>

@@ -67,14 +67,44 @@
         }
       ],
       "schedule": [
-        { "time": "11h10", "label": "Vol FR9777 Nimes - Dublin", "icon": "fa-plane", "duration": "2h30" },
-        { "time": "12h40", "label": "Arrivee Dublin, immigration + bagages", "icon": "fa-plane-arrival", "duration": "20min" },
-        { "time": "13h00", "label": "Comptoir NewWay, recuperation voiture", "icon": "fa-car", "duration": "30min" },
-        { "time": "13h30", "label": "Route vers Dublin centre", "icon": "fa-car", "duration": "30min" },
-        { "time": "14h00", "label": "Installation hotel / B&B", "icon": "fa-bed", "duration": "30min" },
+        {
+          "time": "11h10",
+          "label": "Vol FR9777 Nimes - Dublin",
+          "icon": "fa-plane",
+          "duration": "2h30"
+        },
+        {
+          "time": "12h40",
+          "label": "Arrivee Dublin, immigration + bagages",
+          "icon": "fa-plane-arrival",
+          "duration": "20min"
+        },
+        {
+          "time": "13h00",
+          "label": "Comptoir NewWay, recuperation voiture",
+          "icon": "fa-car",
+          "duration": "30min"
+        },
+        {
+          "time": "13h30",
+          "label": "Route vers Dublin centre",
+          "icon": "fa-car",
+          "duration": "30min"
+        },
+        {
+          "time": "14h00",
+          "label": "Installation hotel / B&B",
+          "icon": "fa-bed",
+          "duration": "30min"
+        },
         { "time": "14h30", "label": "Dublin Castle", "icon": "fa-chess-rook", "duration": "1h" },
         { "time": "15h30", "label": "Balade Temple Bar", "icon": "fa-music", "duration": "45min" },
-        { "time": "16h15", "label": "St Stephen's Green (aire de jeux)", "icon": "fa-tree", "duration": "1h" },
+        {
+          "time": "16h15",
+          "label": "St Stephen's Green (aire de jeux)",
+          "icon": "fa-tree",
+          "duration": "1h"
+        },
         { "time": "17h30", "label": "Retour hotel, repos", "icon": "fa-bed", "duration": "30min" },
         { "time": "18h30", "label": "Diner en ville", "icon": "fa-utensils", "duration": "1h30" }
       ],
@@ -178,16 +208,61 @@
         }
       ],
       "schedule": [
-        { "time": "9h30", "label": "Depart de Dublin (autoroute M6)", "icon": "fa-car", "duration": null },
-        { "time": "11h00", "label": "Arrivee Athlone, dejeuner Sean's Bar", "icon": "fa-utensils", "duration": "1h15" },
-        { "time": "12h15", "label": "Balade Burgess Park (aire de jeux)", "icon": "fa-tree", "duration": "30min" },
-        { "time": "12h45", "label": "Route Athlone - Galway (M6)", "icon": "fa-car", "duration": null },
-        { "time": "13h50", "label": "Arrivee Galway, installation", "icon": "fa-bed", "duration": "30min" },
-        { "time": "14h30", "label": "Balade Latin Quarter & Shop Street", "icon": "fa-guitar", "duration": "1h30" },
-        { "time": "16h00", "label": "Spanish Arch & Long Walk", "icon": "fa-camera", "duration": "45min" },
+        {
+          "time": "9h30",
+          "label": "Depart de Dublin (autoroute M6)",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "11h00",
+          "label": "Arrivee Athlone, dejeuner Sean's Bar",
+          "icon": "fa-utensils",
+          "duration": "1h15"
+        },
+        {
+          "time": "12h15",
+          "label": "Balade Burgess Park (aire de jeux)",
+          "icon": "fa-tree",
+          "duration": "30min"
+        },
+        {
+          "time": "12h45",
+          "label": "Route Athlone - Galway (M6)",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "13h50",
+          "label": "Arrivee Galway, installation",
+          "icon": "fa-bed",
+          "duration": "30min"
+        },
+        {
+          "time": "14h30",
+          "label": "Balade Latin Quarter & Shop Street",
+          "icon": "fa-guitar",
+          "duration": "1h30"
+        },
+        {
+          "time": "16h00",
+          "label": "Spanish Arch & Long Walk",
+          "icon": "fa-camera",
+          "duration": "45min"
+        },
         { "time": "17h00", "label": "Temps libre, repos", "icon": "fa-bed", "duration": "1h" },
-        { "time": "18h00", "label": "Diner chez McDonagh's", "icon": "fa-utensils", "duration": "1h" },
-        { "time": "19h30", "label": "Soiree musique trad (Tig Coili ou Crane Bar)", "icon": "fa-music", "duration": "1h30" }
+        {
+          "time": "18h00",
+          "label": "Diner chez McDonagh's",
+          "icon": "fa-utensils",
+          "duration": "1h"
+        },
+        {
+          "time": "19h30",
+          "label": "Soiree musique trad (Tig Coili ou Crane Bar)",
+          "icon": "fa-music",
+          "duration": "1h30"
+        }
       ],
       "budget": {
         "entries": [
@@ -201,8 +276,8 @@
       "dayRoute": [
         [53.3498, -6.2603],
         [53.4232, -7.9408],
-        [53.4250, -7.9380],
-        [53.2719, -9.0530]
+        [53.425, -7.938],
+        [53.2719, -9.053]
       ],
       "practicalTips": [
         {
@@ -292,17 +367,52 @@
       ],
       "schedule": [
         { "time": "9h00", "label": "Depart de Galway", "icon": "fa-car", "duration": null },
-        { "time": "9h50", "label": "Aillwee Cave + spectacle rapaces", "icon": "fa-hill-rockslide", "duration": "2h" },
+        {
+          "time": "9h50",
+          "label": "Aillwee Cave + spectacle rapaces",
+          "icon": "fa-hill-rockslide",
+          "duration": "2h"
+        },
         { "time": "12h00", "label": "Route vers Poulnabrone", "icon": "fa-car", "duration": null },
-        { "time": "12h30", "label": "Poulnabrone Dolmen (arret photo)", "icon": "fa-landmark", "duration": "20min" },
-        { "time": "13h00", "label": "Pique-nique dans le Burren", "icon": "fa-utensils", "duration": "45min" },
+        {
+          "time": "12h30",
+          "label": "Poulnabrone Dolmen (arret photo)",
+          "icon": "fa-landmark",
+          "duration": "20min"
+        },
+        {
+          "time": "13h00",
+          "label": "Pique-nique dans le Burren",
+          "icon": "fa-utensils",
+          "duration": "45min"
+        },
         { "time": "14h00", "label": "Route vers les Cliffs", "icon": "fa-car", "duration": null },
-        { "time": "14h20", "label": "Cliffs of Moher (balade le long des falaises)", "icon": "fa-mountain-sun", "duration": "1h30" },
+        {
+          "time": "14h20",
+          "label": "Cliffs of Moher (balade le long des falaises)",
+          "icon": "fa-mountain-sun",
+          "duration": "1h30"
+        },
         { "time": "16h00", "label": "Route vers Doolin", "icon": "fa-car", "duration": null },
-        { "time": "16h10", "label": "Installation a Doolin", "icon": "fa-bed", "duration": "30min" },
-        { "time": "17h00", "label": "Balade vers le port de Doolin", "icon": "fa-camera", "duration": "45min" },
+        {
+          "time": "16h10",
+          "label": "Installation a Doolin",
+          "icon": "fa-bed",
+          "duration": "30min"
+        },
+        {
+          "time": "17h00",
+          "label": "Balade vers le port de Doolin",
+          "icon": "fa-camera",
+          "duration": "45min"
+        },
         { "time": "18h30", "label": "Diner a Doolin", "icon": "fa-utensils", "duration": "1h30" },
-        { "time": "20h30", "label": "Session musique trad (Gus O'Connor's)", "icon": "fa-music", "duration": "1h" }
+        {
+          "time": "20h30",
+          "label": "Session musique trad (Gus O'Connor's)",
+          "icon": "fa-music",
+          "duration": "1h"
+        }
       ],
       "budget": {
         "entries": [
@@ -316,11 +426,11 @@
         "notes": "Parking fermier 800m avant les Cliffs (direction Liscannor) a 2 EUR/vehicule au lieu de 8 EUR/pers au parking officiel. Economie de 30 EUR pour une famille de 4."
       },
       "dayRoute": [
-        [53.2718, -9.0530],
+        [53.2718, -9.053],
         [53.0892, -9.1438],
-        [53.0487, -9.1400],
+        [53.0487, -9.14],
         [52.9719, -9.4265],
-        [53.0160, -9.3770]
+        [53.016, -9.377]
       ],
       "practicalTips": [
         {
@@ -378,7 +488,7 @@
       "driveTime": "~1h19",
       "highlight": null,
       "mapCenter": {
-        "lat": 53.2580,
+        "lat": 53.258,
         "lng": -9.0847
       },
       "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lahinch_Beach%2C_March_2012.JPG",
@@ -430,17 +540,62 @@
         }
       ],
       "schedule": [
-        { "time": "10h00", "label": "Balade au port de Doolin, vue Iles d'Aran", "icon": "fa-camera", "duration": "45min" },
+        {
+          "time": "10h00",
+          "label": "Balade au port de Doolin, vue Iles d'Aran",
+          "icon": "fa-camera",
+          "duration": "45min"
+        },
         { "time": "10h45", "label": "Route vers Ennistymon", "icon": "fa-car", "duration": null },
-        { "time": "11h00", "label": "Cascades d'Ennistymon (arret rapide)", "icon": "fa-water", "duration": "15min" },
+        {
+          "time": "11h00",
+          "label": "Cascades d'Ennistymon (arret rapide)",
+          "icon": "fa-water",
+          "duration": "15min"
+        },
         { "time": "11h15", "label": "Route vers Lahinch", "icon": "fa-car", "duration": null },
-        { "time": "11h30", "label": "Lahinch Beach (baignade, jeux, pique-nique)", "icon": "fa-umbrella-beach", "duration": "2h30" },
-        { "time": "14h00", "label": "Route vers Galway (N85/M18)", "icon": "fa-car", "duration": null },
-        { "time": "15h00", "label": "Arrivee Galway, Salthill Promenade", "icon": "fa-person-swimming", "duration": "1h" },
-        { "time": "16h00", "label": "Atlantaquaria (optionnel, si pluie)", "icon": "fa-fish", "duration": "1h" },
-        { "time": "17h30", "label": "Repos a l'hebergement", "icon": "fa-bed", "duration": "30min" },
-        { "time": "18h30", "label": "Diner chez McDonagh's ou Latin Quarter", "icon": "fa-utensils", "duration": "1h" },
-        { "time": "20h00", "label": "Soiree musicale (2e soir a Galway)", "icon": "fa-music", "duration": "1h" }
+        {
+          "time": "11h30",
+          "label": "Lahinch Beach (baignade, jeux, pique-nique)",
+          "icon": "fa-umbrella-beach",
+          "duration": "2h30"
+        },
+        {
+          "time": "14h00",
+          "label": "Route vers Galway (N85/M18)",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "15h00",
+          "label": "Arrivee Galway, Salthill Promenade",
+          "icon": "fa-person-swimming",
+          "duration": "1h"
+        },
+        {
+          "time": "16h00",
+          "label": "Atlantaquaria (optionnel, si pluie)",
+          "icon": "fa-fish",
+          "duration": "1h"
+        },
+        {
+          "time": "17h30",
+          "label": "Repos a l'hebergement",
+          "icon": "fa-bed",
+          "duration": "30min"
+        },
+        {
+          "time": "18h30",
+          "label": "Diner chez McDonagh's ou Latin Quarter",
+          "icon": "fa-utensils",
+          "duration": "1h"
+        },
+        {
+          "time": "20h00",
+          "label": "Soiree musicale (2e soir a Galway)",
+          "icon": "fa-music",
+          "duration": "1h"
+        }
       ],
       "budget": {
         "entries": [
@@ -453,12 +608,12 @@
         "notes": "Budget Atlantaquaria optionnel (uniquement si pluie). Ferme le lundi (pas un probleme, on est mercredi). Sans Atlantaquaria : 85 EUR."
       },
       "dayRoute": [
-        [53.0160, -9.3770],
-        [52.9400, -9.2900],
-        [52.9370, -9.3450],
-        [53.2580, -9.0847],
+        [53.016, -9.377],
+        [52.94, -9.29],
+        [52.937, -9.345],
+        [53.258, -9.0847],
         [53.2598, -9.0741],
-        [53.2719, -9.0530]
+        [53.2719, -9.053]
       ],
       "practicalTips": [
         {
@@ -558,15 +713,50 @@
         }
       ],
       "schedule": [
-        { "time": "10h00", "label": "Depart Galway, route vers Roundstone", "icon": "fa-car", "duration": null },
-        { "time": "10h45", "label": "Arret Roundstone (village, atelier bodhran)", "icon": "fa-palette", "duration": "30min" },
-        { "time": "11h30", "label": "Dog's Bay (plage de sable blanc)", "icon": "fa-umbrella-beach", "duration": "1h" },
+        {
+          "time": "10h00",
+          "label": "Depart Galway, route vers Roundstone",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "10h45",
+          "label": "Arret Roundstone (village, atelier bodhran)",
+          "icon": "fa-palette",
+          "duration": "30min"
+        },
+        {
+          "time": "11h30",
+          "label": "Dog's Bay (plage de sable blanc)",
+          "icon": "fa-umbrella-beach",
+          "duration": "1h"
+        },
         { "time": "12h30", "label": "Route vers Clifden", "icon": "fa-car", "duration": null },
         { "time": "13h00", "label": "Dejeuner a Clifden", "icon": "fa-utensils", "duration": "1h" },
-        { "time": "14h00", "label": "Balade dans Clifden", "icon": "fa-camera", "duration": "30min" },
-        { "time": "14h30", "label": "Connemara Pony Show (si 3e jeudi d'aout)", "icon": "fa-camera", "duration": "1h30" },
-        { "time": "16h30", "label": "Sky Road (boucle panoramique)", "icon": "fa-panorama", "duration": "1h" },
-        { "time": "17h30", "label": "Retour Clifden, installation", "icon": "fa-bed", "duration": "30min" },
+        {
+          "time": "14h00",
+          "label": "Balade dans Clifden",
+          "icon": "fa-camera",
+          "duration": "30min"
+        },
+        {
+          "time": "14h30",
+          "label": "Connemara Pony Show (si 3e jeudi d'aout)",
+          "icon": "fa-camera",
+          "duration": "1h30"
+        },
+        {
+          "time": "16h30",
+          "label": "Sky Road (boucle panoramique)",
+          "icon": "fa-panorama",
+          "duration": "1h"
+        },
+        {
+          "time": "17h30",
+          "label": "Retour Clifden, installation",
+          "icon": "fa-bed",
+          "duration": "30min"
+        },
         { "time": "18h30", "label": "Diner a Clifden", "icon": "fa-utensils", "duration": "1h15" }
       ],
       "budget": {
@@ -579,7 +769,7 @@
         "notes": "Journee economique : Dog's Bay, Sky Road et Roundstone sont gratuits. Le Connemara Pony Show est gratuit aussi."
       },
       "dayRoute": [
-        [53.2719, -9.0530],
+        [53.2719, -9.053],
         [53.3957, -9.9203],
         [53.3779, -9.9636],
         [53.4333, -10.0167],
@@ -661,16 +851,61 @@
         }
       ],
       "schedule": [
-        { "time": "9h30", "label": "Parc National Connemara / Diamond Hill", "icon": "fa-mountain-sun", "duration": "1h30" },
-        { "time": "11h00", "label": "Retour Clifden, dernier cafe", "icon": "fa-mug-hot", "duration": "30min" },
-        { "time": "11h30", "label": "Depart Clifden vers l'est (via Maam Cross)", "icon": "fa-car", "duration": null },
-        { "time": "12h30", "label": "Pause cafe Oughterard", "icon": "fa-mug-hot", "duration": "20min" },
-        { "time": "12h50", "label": "Route Oughterard - Athlone", "icon": "fa-car", "duration": null },
-        { "time": "14h00", "label": "Arrivee Athlone, installation", "icon": "fa-bed", "duration": "30min" },
+        {
+          "time": "9h30",
+          "label": "Parc National Connemara / Diamond Hill",
+          "icon": "fa-mountain-sun",
+          "duration": "1h30"
+        },
+        {
+          "time": "11h00",
+          "label": "Retour Clifden, dernier cafe",
+          "icon": "fa-mug-hot",
+          "duration": "30min"
+        },
+        {
+          "time": "11h30",
+          "label": "Depart Clifden vers l'est (via Maam Cross)",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "12h30",
+          "label": "Pause cafe Oughterard",
+          "icon": "fa-mug-hot",
+          "duration": "20min"
+        },
+        {
+          "time": "12h50",
+          "label": "Route Oughterard - Athlone",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "14h00",
+          "label": "Arrivee Athlone, installation",
+          "icon": "fa-bed",
+          "duration": "30min"
+        },
         { "time": "14h30", "label": "Dejeuner a Athlone", "icon": "fa-utensils", "duration": "1h" },
-        { "time": "16h00", "label": "Viking Tours (croisiere Shannon)", "icon": "fa-ship", "duration": "1h15" },
-        { "time": "17h30", "label": "Balade au bord du Shannon", "icon": "fa-camera", "duration": "30min" },
-        { "time": "18h30", "label": "Diner pub au bord de l'eau", "icon": "fa-utensils", "duration": "1h15" }
+        {
+          "time": "16h00",
+          "label": "Viking Tours (croisiere Shannon)",
+          "icon": "fa-ship",
+          "duration": "1h15"
+        },
+        {
+          "time": "17h30",
+          "label": "Balade au bord du Shannon",
+          "icon": "fa-camera",
+          "duration": "30min"
+        },
+        {
+          "time": "18h30",
+          "label": "Diner pub au bord de l'eau",
+          "icon": "fa-utensils",
+          "duration": "1h15"
+        }
       ],
       "budget": {
         "entries": [
@@ -685,9 +920,9 @@
       },
       "dayRoute": [
         [53.4333, -10.0167],
-        [53.5520, -9.9440],
+        [53.552, -9.944],
         [53.4333, -10.0167],
-        [53.4300, -9.4300],
+        [53.43, -9.43],
         [53.4232, -7.9408]
       ],
       "practicalTips": [
@@ -759,17 +994,67 @@
       ],
       "schedule": [
         { "time": "9h00", "label": "Depart d'Athlone", "icon": "fa-car", "duration": null },
-        { "time": "10h15", "label": "Trim Castle (visite guidee donjon)", "icon": "fa-chess-rook", "duration": "1h" },
-        { "time": "11h15", "label": "Balade remparts et jardins de Trim", "icon": "fa-camera", "duration": "30min" },
+        {
+          "time": "10h15",
+          "label": "Trim Castle (visite guidee donjon)",
+          "icon": "fa-chess-rook",
+          "duration": "1h"
+        },
+        {
+          "time": "11h15",
+          "label": "Balade remparts et jardins de Trim",
+          "icon": "fa-camera",
+          "duration": "30min"
+        },
         { "time": "11h45", "label": "Route vers Hill of Tara", "icon": "fa-car", "duration": null },
-        { "time": "12h05", "label": "Hill of Tara (colline sacree, Pierre du Destin)", "icon": "fa-crown", "duration": "45min" },
-        { "time": "13h00", "label": "Dejeuner dans les environs", "icon": "fa-utensils", "duration": "1h" },
-        { "time": "14h00", "label": "Route vers hotel aeroport", "icon": "fa-car", "duration": null },
-        { "time": "14h45", "label": "Arrivee hotel aeroport, installation", "icon": "fa-bed", "duration": "30min" },
-        { "time": "15h15", "label": "Piscine hotel (si disponible)", "icon": "fa-person-swimming", "duration": "1h30" },
-        { "time": "17h00", "label": "Preparation valises et passeports", "icon": "fa-suitcase", "duration": "45min" },
-        { "time": "18h00", "label": "Diner a l'hotel ou environs", "icon": "fa-utensils", "duration": "1h" },
-        { "time": "19h30", "label": "Coucher tot (reveil 5h00 !)", "icon": "fa-bed", "duration": null }
+        {
+          "time": "12h05",
+          "label": "Hill of Tara (colline sacree, Pierre du Destin)",
+          "icon": "fa-crown",
+          "duration": "45min"
+        },
+        {
+          "time": "13h00",
+          "label": "Dejeuner dans les environs",
+          "icon": "fa-utensils",
+          "duration": "1h"
+        },
+        {
+          "time": "14h00",
+          "label": "Route vers hotel aeroport",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "14h45",
+          "label": "Arrivee hotel aeroport, installation",
+          "icon": "fa-bed",
+          "duration": "30min"
+        },
+        {
+          "time": "15h15",
+          "label": "Piscine hotel (si disponible)",
+          "icon": "fa-person-swimming",
+          "duration": "1h30"
+        },
+        {
+          "time": "17h00",
+          "label": "Preparation valises et passeports",
+          "icon": "fa-suitcase",
+          "duration": "45min"
+        },
+        {
+          "time": "18h00",
+          "label": "Diner a l'hotel ou environs",
+          "icon": "fa-utensils",
+          "duration": "1h"
+        },
+        {
+          "time": "19h30",
+          "label": "Coucher tot (reveil 5h00 !)",
+          "icon": "fa-bed",
+          "duration": null
+        }
       ],
       "budget": {
         "entries": [
@@ -854,23 +1139,49 @@
       ],
       "schedule": [
         { "time": "5h00", "label": "Reveil", "icon": "fa-bed", "duration": null },
-        { "time": "5h15", "label": "Hotel - Terminal (passage couvert)", "icon": "fa-car", "duration": "10min" },
-        { "time": "5h30", "label": "Restitution voiture NewWay", "icon": "fa-car", "duration": "15min" },
-        { "time": "5h45", "label": "Enregistrement et securite", "icon": "fa-plane-departure", "duration": "45min" },
-        { "time": "6h30", "label": "Attente en zone d'embarquement", "icon": "fa-clock", "duration": "30min" },
-        { "time": "7h10", "label": "Vol FR9776 Dublin - Nimes", "icon": "fa-plane", "duration": "2h20" },
-        { "time": "10h30", "label": "Arrivee a Nimes (heure locale)", "icon": "fa-plane-arrival", "duration": null }
+        {
+          "time": "5h15",
+          "label": "Hotel - Terminal (passage couvert)",
+          "icon": "fa-car",
+          "duration": "10min"
+        },
+        {
+          "time": "5h30",
+          "label": "Restitution voiture NewWay",
+          "icon": "fa-car",
+          "duration": "15min"
+        },
+        {
+          "time": "5h45",
+          "label": "Enregistrement et securite",
+          "icon": "fa-plane-departure",
+          "duration": "45min"
+        },
+        {
+          "time": "6h30",
+          "label": "Attente en zone d'embarquement",
+          "icon": "fa-clock",
+          "duration": "30min"
+        },
+        {
+          "time": "7h10",
+          "label": "Vol FR9776 Dublin - Nimes",
+          "icon": "fa-plane",
+          "duration": "2h20"
+        },
+        {
+          "time": "10h30",
+          "label": "Arrivee a Nimes (heure locale)",
+          "icon": "fa-plane-arrival",
+          "duration": null
+        }
       ],
       "budget": {
-        "entries": [
-          { "label": "Petit-dejeuner (si non inclus)", "amount": 20 }
-        ],
+        "entries": [{ "label": "Petit-dejeuner (si non inclus)", "amount": 20 }],
         "total": 20,
         "notes": "Verifier si le petit-dejeuner est inclus dans la nuit d'hotel. Sinon, prevoir des provisions la veille."
       },
-      "dayRoute": [
-        [53.4264, -6.2499]
-      ],
+      "dayRoute": [[53.4264, -6.2499]],
       "practicalTips": [
         {
           "stop": "Vol Dublin - Nimes",
@@ -897,7 +1208,7 @@
     [53.017, -9.378],
     [52.94, -9.29],
     [52.937, -9.345],
-    [53.2580, -9.0847],
+    [53.258, -9.0847],
     [53.2718, -9.053],
     [53.398, -9.922],
     [53.387, -9.963],
