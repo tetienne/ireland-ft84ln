@@ -1,5 +1,27 @@
+// ─── DATE FORMATTING ───
+function parseIsoDate(isoStr) {
+  const [y, m, d] = isoStr.split("-").map(Number);
+  return new Date(y, m - 1, d);
+}
+
+function formatDateLong(isoStr) {
+  const dt = parseIsoDate(isoStr);
+  const formatted = new Intl.DateTimeFormat("fr-FR", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+  }).format(dt);
+  return formatted.charAt(0).toUpperCase() + formatted.slice(1);
+}
+
+function formatPeriod(startIso, endIso) {
+  const s = parseIsoDate(startIso);
+  const e = parseIsoDate(endIso);
+  const month = new Intl.DateTimeFormat("fr-FR", { month: "long" }).format(s);
+  return `${s.getDate()}\u2013${e.getDate()} ${month} ${s.getFullYear()}`;
+}
+
 // ─── Load data and render everything ───
-// Works both with a server (fetch) and without (inline script tag)
 function boot(data) {
   computeBudgetTotals(data.days);
   const stats = computeStats(data);
@@ -16,6 +38,10 @@ function boot(data) {
   initNavbar();
   initPrintButton();
   initDeepLinks(todayDayNum);
+  const footerEl = document.getElementById("footerFamily");
+  if (footerEl) {
+    footerEl.innerHTML = `${data.trip.family} &middot; ${formatPeriod(data.trip.startDate, data.trip.endDate)}`;
+  }
 }
 
 // Try fetch first, fallback to global TRIP_DATA (set via <script src="data.js">)
@@ -60,7 +86,7 @@ function computeBudgetTotals(days) {
 
 // ─── HERO ───
 function renderHero(trip, stats) {
-  document.querySelector(".hero-eyebrow").textContent = `${trip.family} · ${trip.period}`;
+  document.querySelector(".hero-eyebrow").textContent = `${trip.family} · ${formatPeriod(trip.startDate, trip.endDate)}`;
   const meta = document.querySelector(".hero-meta");
   meta.innerHTML = [
     { v: stats.jours, l: "Jours" },
@@ -90,7 +116,7 @@ function renderRoadBook(days) {
       <div class="day-content">
         <div class="day-top">
           <h3 class="day-title">${day.title}</h3>
-          <span class="day-date">${day.date}</span>
+          <span class="day-date">${formatDateLong(day.isoDate)}</span>
         </div>
         <p class="day-route">
           <i class="fa-solid ${day.routeIcon}"></i> ${day.routeDesc}
@@ -339,20 +365,10 @@ function initDayPanels(days) {
 
 // ─── STICKY DAY NAV ───
 function getTodayDayNum(days) {
-  const frMonths = {
-    janvier: 0, fevrier: 1, mars: 2, avril: 3, mai: 4, juin: 5,
-    juillet: 6, aout: 7, septembre: 8, octobre: 9, novembre: 10, decembre: 11,
-  };
   const now = new Date();
-  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-
+  const todayStr = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
   for (const day of days) {
-    const match = day.date.match(/(\d+)\s+(\w+)/);
-    if (!match) continue;
-    const month = frMonths[match[2].toLowerCase()];
-    if (month === undefined) continue;
-    const tripDate = new Date(2026, month, parseInt(match[1], 10));
-    if (today.getTime() === tripDate.getTime()) return day.day;
+    if (day.isoDate === todayStr) return day.day;
   }
   return null;
 }
@@ -454,7 +470,7 @@ function renderDashboard(days) {
         : "";
       return `<tr data-scroll-day="${day.day}">
         <td class="dash-day">J${day.day}</td>
-        <td>${day.date}</td>
+        <td>${formatDateLong(day.isoDate)}</td>
         <td>${day.routeDesc}</td>
         <td>${day.night || "-"}</td>
         <td>${day.driveTime || "-"}</td>
