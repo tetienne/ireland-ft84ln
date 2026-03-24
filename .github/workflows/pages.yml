@@ -29,6 +29,7 @@ jobs:
         with:
           path: img
           key: images-${{ hashFiles('data.json', 'scripts/optimize-images.mjs') }}
+          restore-keys: images-
       - name: Optimize images
         run: |
           npm install --no-save sharp
