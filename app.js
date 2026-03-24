@@ -9,6 +9,7 @@ function boot(data) {
   initMap(data);
   initScrollAnimations();
   initNavbar();
+  initPrintButton();
 }
 
 // Try fetch first, fallback to global TRIP_DATA (set via <script src="data.js">)
@@ -412,6 +413,20 @@ function initFilters(map, poiLayers) {
   toggleRow.appendChild(allBtn);
   toggleRow.appendChild(noneBtn);
   container.appendChild(toggleRow);
+}
+
+// ─── PRINT ───
+function initPrintButton() {
+  const header = document.querySelector('.roadbook-header');
+  if (!header) return;
+  const btn = document.createElement('button');
+  btn.className = 'print-btn';
+  btn.innerHTML = '<i class="fa-solid fa-print"></i> Imprimer le road book';
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    window.print();
+  });
+  header.appendChild(btn);
 }
 
 // ─── NAVBAR ───

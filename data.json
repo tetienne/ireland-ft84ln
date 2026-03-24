@@ -1660,6 +1660,21 @@
       "icon": "fa-clock",
       "title": "Horaires & affluence",
       "text": "Sites ferment a <strong>17h</strong>. Cliffs of Moher : arriver en <strong>fin de journee</strong> pour eviter la foule. Newgrange : reserver <strong>30 jours a l'avance</strong>."
+    },
+    {
+      "icon": "fa-utensils",
+      "title": "Bonnes adresses",
+      "text": "<strong>Galway :</strong> McDonagh's (fish & chips legendaire), Tig Coili et Crane Bar (musique trad). <strong>Doolin :</strong> Gus O'Connor's, McGann's, McDermott's (sessions live des 20-21h, enfants bienvenus tot)."
+    },
+    {
+      "icon": "fa-road",
+      "title": "Conduite a gauche",
+      "text": "Sens <strong>horaire aux ronds-points</strong>. Routes etroites en Connemara et dans le Burren : croisements frequents avec <strong>pulling places</strong> (refuges). Prenez votre temps, la signalisation est bonne."
+    },
+    {
+      "icon": "fa-wifi",
+      "title": "Connectivite mobile",
+      "text": "<strong>4G correcte</strong> partout sauf zones isolees du Connemara. Free Mobile fonctionne en <strong>roaming EU</strong> sans surcout. Pensez a telecharger les <strong>cartes hors-ligne</strong> (Google Maps) avant de partir."
     }
   ],
   "blogs": [
@@ -1799,6 +1814,24 @@
       "title": "Itineraires conseilles Irlande",
       "source": "Guide Routard",
       "url": "https://www.routard.com/fr/guide/a/itineraires-conseilles/europe/irlande",
+      "type": "forum"
+    },
+    {
+      "title": "Sky Road : dans quel sens ?",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forums/t/sens-pour-emprunter-la-sky-road/99789",
+      "type": "forum"
+    },
+    {
+      "title": "Dublin avec 2 enfants de 5 et 3 ans",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forum_message/4595128/dublin_avec_2_enfants_de_5_et_3_ans.htm",
+      "type": "forum"
+    },
+    {
+      "title": "12 jours en famille sur la cote ouest",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forums/t/12-jours-en-famille-en-irlande-votre-avis-sur-notre-parcours/82260",
       "type": "forum"
     }
   ],

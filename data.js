@@ -1,1 +1,1864 @@
-const TRIP_DATA = {"trip": {"title": "Ireland", "subtitle": "Road Trip", "tagline": "Wild Atlantic Way en famille", "family": "Famille Etienne", "period": "16–23 Aout 2026", "stats": {"jours": 8, "voyageurs": 4, "kilometres": "~800", "comtes": 5}}, "days": [{"day": 1, "title": "Bienvenue a Dublin", "date": "Dimanche 16 aout", "routeIcon": "fa-plane-arrival", "routeDesc": "Arrivee Nimes → Dublin · Vol FR9777", "morning": "Vol Ryanair FR9777, depart 11h10 de Nimes, arrivee <strong>12h40 a Dublin</strong>. Immigration + bagages (~20 min), puis comptoir <strong>NewWay</strong> pour la voiture a 13h. Route directe vers le centre de Dublin (<strong>30 min</strong>). Installation et debut de la decouverte a pied.", "night": "Nuit a Dublin centre", "nightInfo": "<strong>Ou dormir :</strong> B&B ou hotel a Dublin centre (Temple Bar, Merrion Square). Privilegiez un logement avec parking (15-20 EUR/jour en ville). Alternative : Airbnb avec cuisine pour un premier diner tranquille.", "distance": "~15 km", "driveTime": "~30 min", "highlight": null, "mapCenter": {"lat": 53.3498, "lng": -6.2603}, "mapImg": "https://upload.wikimedia.org/wikipedia/commons/a/a3/The_Dubhlinn_Gardens_Dublin_Castle_01.JPG", "mapDesc": "Arrivee, Dublin Castle, Temple Bar, St Stephen's Green", "stops": [{"name": "Dublin Castle", "desc": "Chateau historique, siege du pouvoir pendant 700 ans. State Apartments magnifiques. Visite guidee obligatoire (~3,50 EUR). Brochure en francais disponible.", "icon": "fa-chess-rook", "iconClass": "castle", "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Dubhlinn_Gardens_Dublin_Castle_01.JPG/960px-The_Dubhlinn_Gardens_Dublin_Castle_01.JPG", "gmaps": "https://maps.google.com/?q=53.3429,-6.2675", "web": "https://dublincastle.ie/", "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186605-d214882-Reviews-Dublin_Castle-Dublin_County_Dublin.html", "routard": "https://www.routard.com/fr/guide/europe/irlande/dublin/dublin-s-castle"}, {"name": "Temple Bar", "desc": "Quartier emblematique aux facades colorees. Ambiance musicale, pubs traditionnels. Plus sympa pour une balade photo en journee qu'en soiree avec enfants.", "icon": "fa-music", "iconClass": "culture", "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Temple_Bar_street_scenes%2C_Dublin.jpg/960px-Temple_Bar_street_scenes%2C_Dublin.jpg", "gmaps": "https://maps.google.com/?q=53.3456,-6.2628", "web": "https://www.lovetemplebar.com/", "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186605-d188821-Reviews-Temple_Bar-Dublin_County_Dublin.html", "routard": "https://www.routard.com/fr/guide/europe/irlande/dublin/temple-bar"}, {"name": "St Stephen's Green", "desc": "Parc victorien avec lac, canards et aire de jeux. Pause parfaite apres le voyage. Aire de jeux avec toboggan a la cathedrale St Patrick juste a cote.", "icon": "fa-tree", "iconClass": "nature", "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Dublin_Stephen%27s_Green-44_edit.jpg/960px-Dublin_Stephen%27s_Green-44_edit.jpg", "gmaps": "https://maps.google.com/?q=53.3381,-6.2592", "web": null, "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186605-d189054-Reviews-St_Stephens_Green-Dublin_County_Dublin.html", "routard": null}], "schedule": [{"time": "11h10", "label": "Vol FR9777 Nimes - Dublin", "icon": "fa-plane", "duration": "2h30"}, {"time": "12h40", "label": "Arrivee Dublin, immigration + bagages", "icon": "fa-plane-arrival", "duration": "20min"}, {"time": "13h00", "label": "Comptoir NewWay, recuperation voiture", "icon": "fa-car", "duration": "30min"}, {"time": "13h30", "label": "Route vers Dublin centre", "icon": "fa-car", "duration": "30min"}, {"time": "14h00", "label": "Installation hotel / B&B", "icon": "fa-bed", "duration": "30min"}, {"time": "14h30", "label": "Dublin Castle", "icon": "fa-chess-rook", "duration": "1h"}, {"time": "15h30", "label": "Balade Temple Bar", "icon": "fa-music", "duration": "45min"}, {"time": "16h15", "label": "St Stephen's Green (aire de jeux)", "icon": "fa-tree", "duration": "1h"}, {"time": "17h30", "label": "Retour hotel, repos", "icon": "fa-bed", "duration": "30min"}, {"time": "18h30", "label": "Diner en ville", "icon": "fa-utensils", "duration": "1h30"}], "budget": {"entries": [{"label": "Dublin Castle (2 adultes, enfants gratuits)", "amount": 7}, {"label": "Diner en famille", "amount": 60}, {"label": "Parking hotel (estimation)", "amount": 18}], "total": 85, "notes": "Journee legere, arrivee en milieu de journee. Temple Bar et St Stephen's Green sont gratuits."}, "dayRoute": [[53.4264, -6.2499], [53.3429, -6.2675], [53.3456, -6.2628], [53.3381, -6.2592]], "practicalTips": [{"stop": "Dublin Castle", "icon": "fa-chess-rook", "tips": ["Visite guidee obligatoire pour les State Apartments (~3,50 EUR/adulte)", "Brochure en francais disponible a l'accueil", "Les Dubhlinn Gardens a cote sont gratuits et agreable pour les enfants"]}, {"stop": "Temple Bar", "icon": "fa-music", "tips": ["Plus agreable en journee avec les enfants (artistes de rue, facades colorees)", "Le soir c'est tres anime et bruyant, pas ideal pour les petits", "Eviter les restaurants touristiques de Temple Bar, souvent chers et moyens"]}, {"stop": "St Stephen's Green", "icon": "fa-tree", "tips": ["Aire de jeux avec toboggan pres de la cathedrale St Patrick", "Canards sur le lac, les enfants adorent", "Parc ferme a la tombee de la nuit"]}]}, {"day": 2, "title": "Cap a l'Ouest — Galway !", "date": "Lundi 17 aout", "routeIcon": "fa-road", "routeDesc": "Dublin → Galway (via Athlone) · 2h34 de route", "morning": "Depart de Dublin vers 9h30 apres un bon Irish Breakfast. <strong>1h30</strong> d'autoroute M6 jusqu'a <strong>Athlone</strong> pour un dejeuner au bord du Shannon (Sean's Bar, plus vieux pub d'Irlande !). Balade digestive au Burgess Park (aire de jeux). Puis <strong>1h04</strong> de M6 jusqu'a <strong>Galway</strong>. Arrivee vers 15h. Fin de journee a pied dans le <strong>Latin Quarter</strong> : musiciens de rue, facades colorees, ambiance festive. Les enfants adorent Shop Street.", "night": "Nuit a Galway (1ere nuit)", "nightInfo": "<strong>Ou dormir :</strong> Galway centre ou Salthill (2 nuits au meme endroit !). Salthill est plus calme avec les enfants (promenade en bord de mer, aquarium a 5 min). Restaurants : <strong>McDonagh's</strong> (fish & chips legendaire), <strong>Ard Bia at Nimmos</strong>. Soiree pub avec musique live (Tig Coili, The Crane Bar — enfants acceptes en debut de soiree).", "rainyDay": "<strong>Galway City Museum</strong> (gratuit, interactif, bateau suspendu au plafond, 30-45 min) · <strong>Leisureland Salthill</strong> (piscine interieure, toboggan de 65m, piscine pirate pour les petits)", "distance": "~209 km", "driveTime": "~2h34 (2 segments : 1h30 + 1h04)", "highlight": null, "mapCenter": {"lat": 53.2718, "lng": -9.053}, "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Shop_Street%2C_Galway.jpg", "mapDesc": "Autoroute M6, dejeuner Athlone, arrivee Galway", "stops": [{"name": "Sean's Bar, Athlone", "desc": "Plus vieux pub d'Irlande (900 ap. J.-C. !). Dejeuner au bord du Shannon, murs en torchis d'epoque.", "icon": "fa-beer-mug-empty", "iconClass": "culture", "photo": null, "gmaps": "https://maps.google.com/?q=53.4232,-7.9408", "web": "https://www.seansbar.ie/", "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212091-d1580894-Reviews-Sean_s_Bar-Athlone_County_Westmeath.html", "routard": null}, {"name": "Burgess Park", "desc": "Parc au bord du Shannon avec aire de jeux. Les enfants se degourdissent apres la route.", "icon": "fa-tree", "iconClass": "nature", "photo": null, "gmaps": "https://maps.google.com/?q=53.4250,-7.9380", "web": null, "tripadvisor": null, "routard": null}, {"name": "Galway Latin Quarter & Shop Street", "desc": "Coeur vibrant : musiciens de rue, facades colorees, boutiques. Spanish Arch et Long Walk.", "icon": "fa-guitar", "iconClass": "culture", "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Shop_Street%2C_Galway.jpg", "gmaps": "https://maps.google.com/?q=53.2719,-9.0530", "web": null, "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186609-d4909613-Reviews-Galway_s_Latin_Quarter-Galway_County_Galway_Western_Ireland.html", "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-galway/galway-gaillimh"}], "schedule": [{"time": "9h30", "label": "Depart de Dublin (autoroute M6)", "icon": "fa-car", "duration": null}, {"time": "11h00", "label": "Arrivee Athlone, dejeuner Sean's Bar", "icon": "fa-utensils", "duration": "1h15"}, {"time": "12h15", "label": "Balade Burgess Park (aire de jeux)", "icon": "fa-tree", "duration": "30min"}, {"time": "12h45", "label": "Route Athlone - Galway (M6)", "icon": "fa-car", "duration": null}, {"time": "13h50", "label": "Arrivee Galway, installation", "icon": "fa-bed", "duration": "30min"}, {"time": "14h30", "label": "Balade Latin Quarter & Shop Street", "icon": "fa-guitar", "duration": "1h30"}, {"time": "16h00", "label": "Spanish Arch & Long Walk", "icon": "fa-camera", "duration": "45min"}, {"time": "17h00", "label": "Temps libre, repos", "icon": "fa-bed", "duration": "1h"}, {"time": "18h00", "label": "Diner chez McDonagh's", "icon": "fa-utensils", "duration": "1h"}, {"time": "19h30", "label": "Soiree musique trad (Tig Coili ou Crane Bar)", "icon": "fa-music", "duration": "1h30"}], "budget": {"entries": [{"label": "Dejeuner famille Athlone (Sean's Bar)", "amount": 45}, {"label": "Carburant Dublin - Galway", "amount": 15}, {"label": "Diner Galway (McDonagh's)", "amount": 55}], "total": 115, "notes": "Sean's Bar est family-friendly en journee. McDonagh's a deux formules : restaurant (plus cher) et take-away (moins cher, meme poisson)."}, "dayRoute": [[53.3498, -6.2603], [53.4232, -7.9408], [53.425, -7.938], [53.2719, -9.053]], "practicalTips": [{"stop": "Sean's Bar, Athlone", "icon": "fa-beer-mug-empty", "tips": ["Plus vieux pub d'Irlande (900 ap. J.-C.), interessant meme pour un dejeuner rapide", "Family-friendly en journee, menu enfants disponible", "Parking gratuit a proximite dans le centre d'Athlone"]}, {"stop": "Galway Latin Quarter & Shop Street", "icon": "fa-guitar", "tips": ["Shop Street est pietonne, les enfants peuvent se promener librement", "Musiciens de rue surtout l'apres-midi et en debut de soiree", "McDonagh's take-away : meme poisson frais, file plus rapide, moins cher que le restaurant"]}]}, {"day": 3, "title": "Burren & Falaises de Moher", "date": "Mardi 18 aout", "routeIcon": "fa-mountain-sun", "routeDesc": "Galway → Burren → Cliffs → Doolin · 1h46 de route", "morning": "<strong>50 min</strong> de Galway jusqu'a <strong>Aillwee Cave</strong> dans le Burren. Grotte + spectacle de rapaces (2h sur place). Puis <strong>26 min</strong> vers le <strong>Poulnabrone Dolmen</strong> — arret photo au milieu du paysage lunaire. <strong>~20 min</strong> jusqu'aux <strong>Cliffs of Moher</strong> en fin d'apres-midi (moins de monde). Balade le long des falaises (spectaculaire !). Puis <strong>10 min</strong> jusqu'a Doolin pour la nuit.", "night": "Nuit a Doolin", "nightInfo": "<strong>Ou dormir :</strong> <strong>Doolin</strong>, village intime avec les 3 pubs les plus celebres d'Irlande pour la musique trad (Gus O'Connor's, McGann's, McDermott's). Les enfants sont bienvenus. B&B chaleureux. Ambiance magique le soir avec les sessions musicales. Grotte de Doolin aussi a voir (stalactite geante de 7,3m, 45 min). Sessions musique des 20-21h, enfants bienvenus en debut de soiree.", "rainyDay": "<strong>Doolin Cave</strong> (plus grande stalactite libre d'Europe, visite guidee 45 min, 125 marches — ok des 7-8 ans, limite pour le 5 ans) · Aillwee Cave est deja au programme et couvre bien la pluie", "distance": "~65 km", "driveTime": "~1h46", "highlight": "Journee phare", "mapCenter": {"lat": 52.9719, "lng": -9.4265}, "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Cliffs-Of-Moher-OBriens-From-South.JPG", "mapDesc": "Aillwee Cave, Poulnabrone, Cliffs of Moher, Doolin", "stops": [{"name": "Aillwee Cave & rapaces", "desc": "Grotte calcaire + spectacle de vol de rapaces (aigles, faucons). Les enfants adorent ! Famille ~71 EUR (grotte + rapaces). Les enfants peuvent tenir les oiseaux !", "icon": "fa-hill-rockslide", "iconClass": "nature", "photo": "https://upload.wikimedia.org/wikipedia/commons/0/02/Aillwee_cave.jpg", "gmaps": "https://maps.google.com/?q=53.089167,-9.143815", "web": "https://aillweeburrenexperience.ie/", "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212514-d214756-Reviews-Aillwee_Cave-Ballyvaughan_The_Burren_County_Clare.html", "routard": "https://www.routard.com/guide_voyage_lieu/3409-burren.htm"}, {"name": "Poulnabrone Dolmen", "desc": "Dolmen de 4200-2900 av. J.-C. au milieu du paysage lunaire du Burren. Acces libre.", "icon": "fa-landmark", "iconClass": "monument", "photo": "https://upload.wikimedia.org/wikipedia/commons/7/75/Paulnabrone.jpg", "gmaps": "https://maps.google.com/?q=53.0487,-9.1400", "web": null, "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186595-d526251-Reviews-Poulnabrone_Dolmen-County_Clare.html", "routard": "https://www.routard.com/guide_voyage_lieu/3409-burren.htm"}, {"name": "Cliffs of Moher", "desc": "Falaises de 214m sur 8 km. Centre Atlantic Edge. Macareux en aout. Arriver en fin de journee ! Parking officiel : 8 EUR/pers. <strong>Bon plan</strong> : parking fermier 800m avant (direction Liscannor) a 2 EUR/vehicule. Coupe-vent indispensable. Rester dans la zone balisee avec les enfants.", "icon": "fa-mountain-sun", "iconClass": "nature", "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Cliffs-Of-Moher-OBriens-From-South.JPG", "gmaps": "https://maps.google.com/?q=52.9719,-9.4265", "web": "https://www.cliffsofmoher.ie/", "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g1184916-d214806-Reviews-Cliffs_of_Moher-Liscannor_County_Clare.html", "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/falaises-de-moher-cliffs-of-moher"}, {"name": "Doolin", "desc": "Village mythique de la musique traditionnelle. Pubs legendaires. Enfants bienvenus.", "icon": "fa-music", "iconClass": "culture", "photo": "https://upload.wikimedia.org/wikipedia/commons/f/f7/095_Fisher_Street_in_Doolin.jpg", "gmaps": "https://maps.google.com/?q=53.016,-9.377", "web": "https://doolin.ie/", "tripadvisor": "https://www.tripadvisor.com/Tourism-g214506-Doolin_The_Burren_County_Clare-Vacations.html", "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/doolin-dulainn"}], "schedule": [{"time": "9h00", "label": "Depart de Galway", "icon": "fa-car", "duration": null}, {"time": "9h50", "label": "Aillwee Cave + spectacle rapaces", "icon": "fa-hill-rockslide", "duration": "2h"}, {"time": "12h00", "label": "Route vers Poulnabrone", "icon": "fa-car", "duration": null}, {"time": "12h30", "label": "Poulnabrone Dolmen (arret photo)", "icon": "fa-landmark", "duration": "20min"}, {"time": "13h00", "label": "Pique-nique dans le Burren", "icon": "fa-utensils", "duration": "45min"}, {"time": "14h00", "label": "Route vers les Cliffs", "icon": "fa-car", "duration": null}, {"time": "14h20", "label": "Cliffs of Moher (balade le long des falaises)", "icon": "fa-mountain-sun", "duration": "1h30"}, {"time": "16h00", "label": "Route vers Doolin", "icon": "fa-car", "duration": null}, {"time": "16h10", "label": "Installation a Doolin", "icon": "fa-bed", "duration": "30min"}, {"time": "17h00", "label": "Balade vers le port de Doolin", "icon": "fa-camera", "duration": "45min"}, {"time": "18h30", "label": "Diner a Doolin", "icon": "fa-utensils", "duration": "1h30"}, {"time": "20h30", "label": "Session musique trad (Gus O'Connor's)", "icon": "fa-music", "duration": "1h"}], "budget": {"entries": [{"label": "Aillwee Cave + rapaces (famille)", "amount": 71}, {"label": "Parking Cliffs of Moher (fermier)", "amount": 2}, {"label": "Pique-nique / dejeuner", "amount": 20}, {"label": "Diner a Doolin", "amount": 60}, {"label": "Carburant", "amount": 10}], "total": 163, "notes": "Parking fermier 800m avant les Cliffs (direction Liscannor) a 2 EUR/vehicule au lieu de 8 EUR/pers au parking officiel. Economie de 30 EUR pour une famille de 4."}, "dayRoute": [[53.2718, -9.053], [53.0892, -9.1438], [53.0487, -9.14], [52.9719, -9.4265], [53.016, -9.377]], "practicalTips": [{"stop": "Aillwee Cave & rapaces", "icon": "fa-hill-rockslide", "tips": ["Reserver en ligne pour eviter l'attente (surtout en aout)", "Prevoir un pull : 10 degres dans la grotte", "Les enfants peuvent tenir les rapaces sur le bras (moment fort !)", "Combo grotte + rapaces plus avantageux qu'achete separement"]}, {"stop": "Poulnabrone Dolmen", "icon": "fa-landmark", "tips": ["Acces libre et gratuit, petit parking a cote", "Sol irregulier : bonnes chaussures recommandees", "Arret rapide (15-20 min suffisent)"]}, {"stop": "Cliffs of Moher", "icon": "fa-mountain-sun", "tips": ["Parking fermier 800m avant (dir. Liscannor) : 2 EUR/vehicule", "Coupe-vent indispensable, meme en aout", "Rester dans la zone balisee avec les enfants (pas de barriere par endroits)", "Arriver apres 16h pour moins de monde", "Macareux visibles en aout pres de O'Brien's Tower"]}, {"stop": "Doolin", "icon": "fa-music", "tips": ["Sessions musique des 20h-21h (Gus O'Connor's, McGann's, McDermott's)", "Enfants bienvenus en debut de soiree dans les pubs", "Reserver le B&B a l'avance, Doolin est tres demande en aout"]}]}, {"day": 4, "title": "Cote du Clare & retour Galway", "date": "Mercredi 19 aout", "routeIcon": "fa-umbrella-beach", "routeDesc": "Doolin → Lahinch → Galway · ~1h19 de route", "morning": "<strong>Matin tranquille</strong> a Doolin : balade vers le port, vue sur les Iles d'Aran. Puis petite route cotiere (<strong>14 min</strong>) via les <strong>cascades d'Ennistymon</strong> jusqu'a <strong>Lahinch Beach</strong> — grande plage surveillee, parfaite pour les enfants. Pique-nique ou fish & chips sur la plage. <strong>Apres-midi</strong> : <strong>~1h</strong> de route vers Galway via N85/M18. Arrivee a Galway vers 16h. <strong>Salthill Promenade</strong> avec les enfants, tradition de « kicker la plaque » au bout. <strong>Atlantaquaria</strong> en option si la meteo est maussade (petit aquarium, ~1h, bassin tactile — dernier accès 16h). Soiree : diner chez McDonagh's et deuxieme soiree musicale dans les pubs.", "night": "Nuit a Galway (2e nuit)", "nightInfo": "<strong>Retour au meme logement !</strong> Pas de valises a refaire. Soiree tranquille a Salthill ou dans le Latin Quarter. Avantage des 2 nuits : on profite de Galway sans se presser.", "rainyDay": "<strong>Atlantaquaria</strong> (bassin tactile, ~1h, famille ~45 EUR, ferme lundi) · <strong>Galway City Museum</strong> (gratuit, 30-45 min) · <strong>Leisureland Salthill</strong> (piscine/toboggan)", "distance": "~75 km", "driveTime": "~1h19", "highlight": null, "mapCenter": {"lat": 53.258, "lng": -9.0847}, "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lahinch_Beach%2C_March_2012.JPG", "mapDesc": "Doolin, Ennistymon, Lahinch, Salthill, Atlantaquaria", "stops": [{"name": "Cascades d'Ennistymon", "desc": "Cascade en plein centre du bourg colore. Arret rapide sur la route.", "icon": "fa-water", "iconClass": "nature", "photo": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Ennistymon_-_Falls.jpg", "gmaps": "https://maps.google.com/?q=52.94,-9.29", "web": null, "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212534-d18936468-Reviews-Ennistymon_Falls-Ennistymon_County_Clare.html", "routard": null}, {"name": "Lahinch Beach", "desc": "Grande plage de sable surveillee en ete. Capitale du surf en Irlande. Parfaite pour les enfants. Aire de jeux juste a cote de la plage. Section baignade surveillee separee du surf. Cours de surf famille possibles des 8 ans.", "icon": "fa-water", "iconClass": "beach", "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lahinch_Beach%2C_March_2012.JPG", "gmaps": "https://maps.google.com/?q=52.937,-9.345", "web": null, "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212533-d3458853-Reviews-Lahinch_Beach-Lahinch_County_Clare.html", "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/lahinch-an-leacht"}, {"name": "Salthill Promenade", "desc": "Front de mer de 2 km. Tradition de « kicker la plaque ». Plongeoir de Blackrock.", "icon": "fa-person-swimming", "iconClass": "beach", "photo": null, "gmaps": "https://maps.google.com/?q=53.2580,-9.0847", "web": null, "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186609-d215937-Reviews-Salthill_Promenade-Galway_County_Galway_Western_Ireland.html", "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-galway/salthill"}, {"name": "Galway Atlantaquaria", "desc": "Aquarium national d'Irlande. Bassin tactile (raies, crabes) a hauteur d'enfant. ~1h de visite. <strong>Ideal en plan B pluie</strong> — petit mais les enfants de 5-8 ans adorent les bassins tactiles. Famille ~45 EUR. Ferme le lundi. Dernier acces 16h en semaine.", "icon": "fa-fish", "iconClass": "family", "photo": null, "gmaps": "https://maps.google.com/?q=53.2598,-9.0741", "web": "https://nationalaquarium.ie/", "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186609-d215896-Reviews-Galway_Atlantaquaria-Galway_County_Galway_Western_Ireland.html", "routard": null}], "schedule": [{"time": "10h00", "label": "Balade au port de Doolin, vue Iles d'Aran", "icon": "fa-camera", "duration": "45min"}, {"time": "10h45", "label": "Route vers Ennistymon", "icon": "fa-car", "duration": null}, {"time": "11h00", "label": "Cascades d'Ennistymon (arret rapide)", "icon": "fa-water", "duration": "15min"}, {"time": "11h15", "label": "Route vers Lahinch", "icon": "fa-car", "duration": null}, {"time": "11h30", "label": "Lahinch Beach (baignade, jeux, pique-nique)", "icon": "fa-umbrella-beach", "duration": "2h30"}, {"time": "14h00", "label": "Route vers Galway (N85/M18)", "icon": "fa-car", "duration": null}, {"time": "15h00", "label": "Arrivee Galway, Salthill Promenade", "icon": "fa-person-swimming", "duration": "1h"}, {"time": "16h00", "label": "Atlantaquaria (optionnel, si pluie)", "icon": "fa-fish", "duration": "1h"}, {"time": "17h30", "label": "Repos a l'hebergement", "icon": "fa-bed", "duration": "30min"}, {"time": "18h30", "label": "Diner chez McDonagh's ou Latin Quarter", "icon": "fa-utensils", "duration": "1h"}, {"time": "20h00", "label": "Soiree musicale (2e soir a Galway)", "icon": "fa-music", "duration": "1h"}], "budget": {"entries": [{"label": "Dejeuner pique-nique / fish & chips Lahinch", "amount": 25}, {"label": "Atlantaquaria (optionnel, famille)", "amount": 45}, {"label": "Diner Galway", "amount": 50}, {"label": "Carburant", "amount": 10}], "total": 130, "notes": "Budget Atlantaquaria optionnel (uniquement si pluie). Ferme le lundi (pas un probleme, on est mercredi). Sans Atlantaquaria : 85 EUR."}, "dayRoute": [[53.016, -9.377], [52.94, -9.29], [52.937, -9.345], [53.258, -9.0847], [53.2598, -9.0741], [53.2719, -9.053]], "practicalTips": [{"stop": "Lahinch Beach", "icon": "fa-water", "tips": ["Section baignade surveillee separee de la zone surf", "Aire de jeux juste a cote de la plage", "Cours de surf possibles des 8 ans (reserver la veille)", "Fish & chips sur place ou pique-nique sur l'herbe"]}, {"stop": "Salthill Promenade", "icon": "fa-person-swimming", "tips": ["Tradition locale : kicker la plaque au bout de la promenade", "Promenade de 2 km, plongeoir de Blackrock pour les plus courageux", "Glaces chez Salthill Stores"]}, {"stop": "Galway Atlantaquaria", "icon": "fa-fish", "tips": ["Ideal en plan B pluie (petit mais bien fait)", "Bassins tactiles a hauteur d'enfant (raies, crabes)", "Ferme le lundi, dernier acces 16h en semaine", "Prevoir environ 1h de visite"]}]}, {"day": 5, "title": "Connemara & Sky Road", "date": "Jeudi 20 aout", "routeIcon": "fa-panorama", "routeDesc": "Galway → Roundstone → Clifden → Sky Road · ~1h31 de route", "morning": "Depart de Galway vers 10h. Route scenique (<strong>1h07</strong>) vers <strong>Clifden</strong> via la cote du Connemara. Arret a <strong>Roundstone</strong>, village de pecheurs idyllique (atelier de bodhran). Puis <strong>Dog's Bay</strong> — plage de sable blanc corallien, eau turquoise. Dejeuner a Clifden (Mitchell's, Lowry's). <strong>Apres-midi</strong> : <strong>Sky Road</strong>, boucle panoramique de 12 km (<strong>24 min</strong> + arrets photos). Vues epoustouflantes sur l'ocean et les iles. <em>Le Connemara Pony Show a lieu le 3e jeudi d'aout a Clifden — ca pourrait etre aujourd'hui !</em>", "night": "Nuit a Clifden", "nightInfo": "<strong>Ou dormir :</strong> <strong>Clifden</strong>, « capitale du Connemara ». Ville coloree avec bons restaurants. Station House Hotel bien place. Soiree a pied dans les rues animees. <strong>Connemara Pony Show</strong> : le 3e jeudi d'aout a Clifden, evenement incontournable si les dates coincident !", "rainyDay": "<strong>Killary Fjord Boat</strong> depuis Leenane (40 min de Clifden, 90 min de croisiere en bateau couvert sur le seul fjord d'Irlande — les enfants peuvent « piloter », atmospherique sous la pluie, famille ~60 EUR) · <strong>Dan O'Hara's Homestead</strong> (7 km de Clifden, partie musee interieure + AV, tracteur si ca se degage)", "distance": "~85 km", "driveTime": "~1h31", "highlight": "Journee paysages", "mapCenter": {"lat": 53.494, "lng": -10.093}, "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sky_Road_Clifden.jpg", "mapDesc": "Roundstone, Dog's Bay, Clifden, Sky Road", "stops": [{"name": "Roundstone", "desc": "Village de pecheurs idyllique du Connemara. Atelier de bodhran de Malachy Kearns, l'un des derniers fabricants artisanaux d'Irlande.", "icon": "fa-palette", "iconClass": "culture", "photo": "https://upload.wikimedia.org/wikipedia/commons/3/31/Cloch_na_R%C3%B3n_-_geograph.org.uk_-_12397.jpg", "gmaps": "https://maps.google.com/?q=53.3957,-9.9203", "web": null, "tripadvisor": null, "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron"}, {"name": "Dog's Bay & Gurteen Bay", "desc": "Plages jumelles de sable blanc corallien. Eau turquoise. Parmi les plus belles d'Irlande. Tour de la presqu'ile possible en 2h a pied.", "icon": "fa-umbrella-beach", "iconClass": "beach", "photo": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Dog%27s_Bay_Beach%2C_from_the_headland_-_geograph.org.uk_-_1297055.jpg", "gmaps": "https://maps.google.com/?q=53.3779,-9.9636", "web": null, "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g551539-d7106495-Reviews-Dog_s_Bay_Beach-Roundstone_County_Galway_Western_Ireland.html", "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron/dog-s-bay-strand"}, {"name": "Sky Road", "desc": "Boucle panoramique de 12 km au-dessus de Clifden. Vues epoustouflantes sur l'ocean et les iles. Privilegier la Upper Sky Road pour les plus belles vues. <strong>Ideal au coucher du soleil</strong> (vers 17-18h). Route etroite, rouler lentement.", "icon": "fa-panorama", "iconClass": "nature", "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sky_Road_Clifden.jpg", "gmaps": "https://maps.google.com/?q=53.5007,-10.0965", "web": null, "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g211883-d4442921-Reviews-Sky_Road-Clifden_County_Galway_Western_Ireland.html", "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan"}, {"name": "Clifden", "desc": "Capitale du Connemara. Rues colorees, bons restaurants, ambiance detendue.", "icon": "fa-mug-hot", "iconClass": "food", "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b8/ClifdenOverview.JPG", "gmaps": "https://maps.google.com/?q=53.4333,-10.0167", "web": null, "tripadvisor": null, "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan"}], "schedule": [{"time": "10h00", "label": "Depart Galway, route vers Roundstone", "icon": "fa-car", "duration": null}, {"time": "10h45", "label": "Arret Roundstone (village, atelier bodhran)", "icon": "fa-palette", "duration": "30min"}, {"time": "11h30", "label": "Dog's Bay (plage de sable blanc)", "icon": "fa-umbrella-beach", "duration": "1h"}, {"time": "12h30", "label": "Route vers Clifden", "icon": "fa-car", "duration": null}, {"time": "13h00", "label": "Dejeuner a Clifden", "icon": "fa-utensils", "duration": "1h"}, {"time": "14h00", "label": "Balade dans Clifden", "icon": "fa-camera", "duration": "30min"}, {"time": "14h30", "label": "Connemara Pony Show (si 3e jeudi d'aout)", "icon": "fa-camera", "duration": "1h30"}, {"time": "16h30", "label": "Sky Road (boucle panoramique)", "icon": "fa-panorama", "duration": "1h"}, {"time": "17h30", "label": "Retour Clifden, installation", "icon": "fa-bed", "duration": "30min"}, {"time": "18h30", "label": "Diner a Clifden", "icon": "fa-utensils", "duration": "1h15"}], "budget": {"entries": [{"label": "Dejeuner Clifden (Mitchell's ou Lowry's)", "amount": 45}, {"label": "Diner Clifden", "amount": 50}, {"label": "Carburant", "amount": 12}], "total": 107, "notes": "Journee economique : Dog's Bay, Sky Road et Roundstone sont gratuits. Le Connemara Pony Show est gratuit aussi."}, "dayRoute": [[53.2719, -9.053], [53.3957, -9.9203], [53.3779, -9.9636], [53.4333, -10.0167], [53.5007, -10.0965], [53.4333, -10.0167]], "practicalTips": [{"stop": "Roundstone", "icon": "fa-palette", "tips": ["Atelier de bodhran de Malachy Kearns : visite rapide et gratuite", "Petit port photogenique, ideal pour une pause"]}, {"stop": "Dog's Bay & Gurteen Bay", "icon": "fa-umbrella-beach", "tips": ["Sable blanc corallien, parmi les plus belles plages d'Irlande", "Parking gratuit en haut de la plage", "Tour de la presqu'ile possible en 2h a pied (boucle facile)", "Eau froide meme en aout, prevoir des serviettes chaudes"]}, {"stop": "Sky Road", "icon": "fa-panorama", "tips": ["Prendre la Upper Sky Road pour les plus belles vues", "Ideal au coucher du soleil (vers 17-18h en aout)", "Route etroite : rouler lentement et se ranger pour laisser passer", "Plusieurs points d'arret photo avec vue sur les iles"]}]}, {"day": 6, "title": "Connemara sauvage & retour Est", "date": "Vendredi 21 aout", "routeIcon": "fa-road", "routeDesc": "Clifden → Athlone · ~2h06 de route", "morning": "<strong>Matin</strong> : derniere balade a Clifden ou detour par <strong>Letterfrack</strong> et le <strong>Parc National du Connemara</strong> (sentier Diamond Hill, 1h30 facile, vue a 360°). Dejeuner a Clifden. <strong>Apres-midi</strong> : route vers l'est via <strong>Maam Cross</strong> et les paysages de lacs et tourbieres (<strong>~2h06</strong>). Pause cafe a <strong>Oughterard</strong> a mi-chemin (~1h de Clifden) — vrai village avec cafes et commerces, ideal pour couper le trajet. Arrivee a <strong>Athlone</strong> vers 17h. Balade au bord du Shannon, croisiere Viking (75 min, replique de drakkar, epees et chapeaux pour les enfants !). Diner dans un pub au bord de l'eau. <strong>Sean's Bar</strong> pour les parents apres le coucher des enfants.", "night": "Nuit a Athlone", "nightInfo": "<strong>Ou dormir :</strong> Athlone, ville agreable au bord du Shannon. Radisson Blu ou Sheraton. <strong>Etape strategique</strong> : demain c'est la journee histoire (Trim Castle, Hill of Tara) puis l'hotel aeroport. <strong>⚠️ Athlone Castle ferme pour renovation jusqu'a automne 2026</strong> — ne comptez pas dessus.", "rainyDay": "Si Viking Tours annule (bateau ouvert) : <strong>Sean's Bar</strong> (plus vieux pub du monde, 10 min de curiosite avec les enfants) · Privilegiez plutot les activites couvertes du matin au Connemara (Killary Fjord, Dan O'Hara) avant de prendre la route", "distance": "~164 km", "driveTime": "~2h06", "highlight": null, "mapCenter": {"lat": 53.4233, "lng": -7.9424}, "mapImg": "https://upload.wikimedia.org/wikipedia/commons/b/b8/ClifdenOverview.JPG", "mapDesc": "Letterfrack, Connemara, Maam Cross, Athlone", "stops": [{"name": "Parc National du Connemara", "desc": "3 sentiers : Sruffaunboy (1,5 km, tres facile, platelage bois), Lower Diamond Hill (3 km, faisable des 5-6 ans), Upper (3,8 km, sommet 442m). Gratuit. Demonstrations de chiens de berger en saison.", "icon": "fa-mountain-sun", "iconClass": "nature", "photo": null, "gmaps": "https://maps.google.com/?q=53.5520,-9.9440", "web": "https://www.connemaranationalpark.ie/", "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186609-d546269-Reviews-Connemara_National_Park_Visitor_Centre-Galway_County_Galway_Western_Ireland.html", "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/letterfrack"}, {"name": "Viking Tours Athlone", "desc": "Croisiere en replique de drakkar viking sur le Shannon (75 min). Les enfants peuvent piloter le bateau ! Casques et epees vikings en vente. Prevoir 75 min.", "icon": "fa-ship", "iconClass": "culture", "photo": null, "gmaps": "https://maps.google.com/?q=53.4232,-7.9408", "web": "https://www.vikingtoursireland.ie/", "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212091-d1119252-Reviews-Viking_Tours-Athlone_County_Westmeath.html", "routard": null}], "schedule": [{"time": "9h30", "label": "Parc National Connemara / Diamond Hill", "icon": "fa-mountain-sun", "duration": "1h30"}, {"time": "11h00", "label": "Retour Clifden, dernier cafe", "icon": "fa-mug-hot", "duration": "30min"}, {"time": "11h30", "label": "Depart Clifden vers l'est (via Maam Cross)", "icon": "fa-car", "duration": null}, {"time": "12h30", "label": "Pause cafe Oughterard", "icon": "fa-mug-hot", "duration": "20min"}, {"time": "12h50", "label": "Route Oughterard - Athlone", "icon": "fa-car", "duration": null}, {"time": "14h00", "label": "Arrivee Athlone, installation", "icon": "fa-bed", "duration": "30min"}, {"time": "14h30", "label": "Dejeuner a Athlone", "icon": "fa-utensils", "duration": "1h"}, {"time": "16h00", "label": "Viking Tours (croisiere Shannon)", "icon": "fa-ship", "duration": "1h15"}, {"time": "17h30", "label": "Balade au bord du Shannon", "icon": "fa-camera", "duration": "30min"}, {"time": "18h30", "label": "Diner pub au bord de l'eau", "icon": "fa-utensils", "duration": "1h15"}], "budget": {"entries": [{"label": "Connemara National Park (gratuit)", "amount": 0}, {"label": "Carburant Clifden - Athlone", "amount": 25}, {"label": "Dejeuner Athlone", "amount": 40}, {"label": "Viking Tours (famille)", "amount": 50}, {"label": "Diner Athlone", "amount": 50}], "total": 165, "notes": "Reserver Viking Tours en ligne. Si le bateau est annule (pluie/vent), Sean's Bar est une alternative amusante pour un passage rapide avec les enfants."}, "dayRoute": [[53.4333, -10.0167], [53.552, -9.944], [53.4333, -10.0167], [53.43, -9.43], [53.4232, -7.9408]], "practicalTips": [{"stop": "Parc National du Connemara", "icon": "fa-mountain-sun", "tips": ["Sentier Sruffaunboy (1,5 km, platelage bois) : faisable avec un enfant de 5 ans", "Lower Diamond Hill (3 km) : faisable des 5-6 ans avec pauses", "Upper Diamond Hill (sommet 442m) : plutot pour le 8 ans, 2h A/R", "Gratuit, parking gratuit aussi", "Demonstrations de chiens de berger en saison"]}, {"stop": "Viking Tours Athlone", "icon": "fa-ship", "tips": ["Reserver en ligne a l'avance (places limitees)", "Les enfants peuvent piloter le bateau (moment fort)", "Casques et epees vikings en vente a bord", "75 min de croisiere, prevoir coupe-vent", "Bateau ouvert : annulation possible si mauvais temps"]}]}, {"day": 7, "title": "Chateaux & colline sacree", "date": "Samedi 22 aout", "routeIcon": "fa-chess-rook", "routeDesc": "Athlone → Trim Castle → Hill of Tara → Airport · 2h15 de route", "morning": "Depart d'Athlone vers 9h. <strong>1h12</strong> de route jusqu'a <strong>Trim Castle</strong>, le plus grand chateau normand d'Irlande (decor de Braveheart !). Visite du donjon et des remparts (1h). Puis <strong>21 min</strong> jusqu'a <strong>Hill of Tara</strong>, colline sacree des Hauts Rois d'Irlande — vue sur 40% de l'ile, Pierre du Destin (45 min). Dejeuner dans le coin. Puis <strong>42 min</strong> vers l'hotel de l'aeroport. Arrivee en debut d'apres-midi.", "night": "Nuit hotel aeroport Dublin", "nightInfo": "<strong>Ou dormir :</strong> Hotel <strong>a cote du terminal</strong>. <strong>Crowne Plaza Dublin Airport</strong> (passage couvert vers T1 !), Carlton Hotel, ou Holiday Inn Express. Preparez valises et passeports ce soir. <strong>Reveil a 5h00</strong>. Certains hotels ont piscine — parfait pour occuper les enfants l'apres-midi.", "distance": "~155 km", "driveTime": "~2h15", "highlight": null, "mapCenter": {"lat": 53.5455, "lng": -6.7882}, "mapImg": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Trim_Castle_6.jpg", "mapDesc": "Trim Castle, Hill of Tara, hotel aeroport", "stops": [{"name": "Trim Castle", "desc": "Plus grand chateau anglo-normand d'Irlande (XIIe). Donjon de 20m, decor de Braveheart. Impressionnant ! Famille 2A+2E ~10 EUR. Visite guidee du donjon 45 min (obligatoire). Brochure en francais. Jardins et enceinte gratuits, belle balade le long de la Boyne.", "icon": "fa-chess-rook", "iconClass": "castle", "photo": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Trim_Castle_6.jpg", "gmaps": "https://maps.google.com/?q=53.5455,-6.7882", "web": "https://heritageireland.ie/places-to-visit/trim-castle/", "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g644237-d525404-Reviews-Trim_Castle-Trim_County_Meath.html", "routard": "https://www.routard.com/fr/guide/europe/irlande/environs-de-dublin/trim-castle"}, {"name": "Hill of Tara", "desc": "Colline sacree des Hauts Rois d'Irlande. Vue sur 40% de l'ile. Pierre du Destin (Lia Fail). Gratuit (Heritage Card). Centre d'interpretation. Les enfants adorent devaler les collines. 30-45 min suffisent.", "icon": "fa-crown", "iconClass": "monument", "photo": null, "gmaps": "https://maps.google.com/?q=53.5789,-6.6113", "web": "https://heritageireland.ie/places-to-visit/hill-of-tara/", "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186628-d526324-Reviews-Hill_of_Tara_Temair-County_Meath.html", "routard": null}], "schedule": [{"time": "9h00", "label": "Depart d'Athlone", "icon": "fa-car", "duration": null}, {"time": "10h15", "label": "Trim Castle (visite guidee donjon)", "icon": "fa-chess-rook", "duration": "1h"}, {"time": "11h15", "label": "Balade remparts et jardins de Trim", "icon": "fa-camera", "duration": "30min"}, {"time": "11h45", "label": "Route vers Hill of Tara", "icon": "fa-car", "duration": null}, {"time": "12h05", "label": "Hill of Tara (colline sacree, Pierre du Destin)", "icon": "fa-crown", "duration": "45min"}, {"time": "13h00", "label": "Dejeuner dans les environs", "icon": "fa-utensils", "duration": "1h"}, {"time": "14h00", "label": "Route vers hotel aeroport", "icon": "fa-car", "duration": null}, {"time": "14h45", "label": "Arrivee hotel aeroport, installation", "icon": "fa-bed", "duration": "30min"}, {"time": "15h15", "label": "Piscine hotel (si disponible)", "icon": "fa-person-swimming", "duration": "1h30"}, {"time": "17h00", "label": "Preparation valises et passeports", "icon": "fa-suitcase", "duration": "45min"}, {"time": "18h00", "label": "Diner a l'hotel ou environs", "icon": "fa-utensils", "duration": "1h"}, {"time": "19h30", "label": "Coucher tot (reveil 5h00 !)", "icon": "fa-bed", "duration": null}], "budget": {"entries": [{"label": "Trim Castle (famille 2A+2E)", "amount": 10}, {"label": "Hill of Tara (gratuit, Heritage Card)", "amount": 0}, {"label": "Dejeuner en route", "amount": 40}, {"label": "Carburant Athlone - Dublin", "amount": 20}, {"label": "Hotel aeroport (type Crowne Plaza)", "amount": 140}], "total": 210, "notes": "Heritage Card (40 EUR/adulte) rentable si vous visitez aussi Newgrange ou d'autres sites Heritage Ireland. Trim Castle seul : pas rentable."}, "dayRoute": [[53.4232, -7.9408], [53.5455, -6.7882], [53.5789, -6.6113], [53.4264, -6.2499]], "practicalTips": [{"stop": "Trim Castle", "icon": "fa-chess-rook", "tips": ["Visite guidee du donjon obligatoire (45 min), depart toutes les heures", "Brochure en francais disponible a l'accueil", "Jardins et enceinte exterieure gratuits, belle balade le long de la Boyne", "Decor de Braveheart : les enfants adorent l'anecdote"]}, {"stop": "Hill of Tara", "icon": "fa-crown", "tips": ["Gratuit (Heritage Card acceptee pour le centre d'interpretation)", "Les enfants adorent devaler les collines en courant", "Vue sur 40% de l'Irlande par temps clair", "30-45 min suffisent"]}, {"stop": "Hotel aeroport", "icon": "fa-bed", "tips": ["Crowne Plaza : passage couvert vers le Terminal 1", "Preparer valises et passeports ce soir (reveil a 5h00)", "Verifier si l'hotel a une piscine pour occuper les enfants", "Commander le petit-dejeuner en chambre la veille si depart tres tot"]}]}, {"day": 8, "title": "Retour vers Nimes", "date": "Dimanche 23 aout", "routeIcon": "fa-plane-departure", "routeDesc": "Dublin → Nimes · Vol FR9776", "morning": "Reveil <strong>5h00</strong>. Hotel → terminal en 5-10 min (passage couvert si Crowne Plaza). Restitution voiture <strong>NewWay</strong>. Enregistrement et securite. <strong>Arrivee a Nimes a 10h30</strong> — slan abhaile !", "night": null, "nightInfo": null, "distance": null, "driveTime": "5 min", "highlight": null, "mapCenter": {"lat": 53.4264, "lng": -6.2499}, "mapImg": "", "mapDesc": "Vol retour vers Nimes", "stops": [{"name": "Vol Dublin → Nimes", "desc": "Depart 07h10, arrivee 10h30. Fin d'une semaine irlandaise inoubliable !", "icon": "fa-plane", "iconClass": "city", "photo": null, "gmaps": null, "web": null, "tripadvisor": null, "routard": null}], "schedule": [{"time": "5h00", "label": "Reveil", "icon": "fa-bed", "duration": null}, {"time": "5h15", "label": "Hotel - Terminal (passage couvert)", "icon": "fa-car", "duration": "10min"}, {"time": "5h30", "label": "Restitution voiture NewWay", "icon": "fa-car", "duration": "15min"}, {"time": "5h45", "label": "Enregistrement et securite", "icon": "fa-plane-departure", "duration": "45min"}, {"time": "6h30", "label": "Attente en zone d'embarquement", "icon": "fa-clock", "duration": "30min"}, {"time": "7h10", "label": "Vol FR9776 Dublin - Nimes", "icon": "fa-plane", "duration": "2h20"}, {"time": "10h30", "label": "Arrivee a Nimes (heure locale)", "icon": "fa-plane-arrival", "duration": null}], "budget": {"entries": [{"label": "Petit-dejeuner (si non inclus)", "amount": 20}], "total": 20, "notes": "Verifier si le petit-dejeuner est inclus dans la nuit d'hotel. Sinon, prevoir des provisions la veille."}, "dayRoute": [[53.4264, -6.2499]], "practicalTips": [{"stop": "Vol Dublin - Nimes", "icon": "fa-plane", "tips": ["Crowne Plaza : passage couvert vers le Terminal 1, pas besoin de navette", "Restitution NewWay : rendre la voiture plein fait, garder le recu", "Arriver au terminal 2h avant le vol (5h10 au plus tard)", "Ryanair : respecter les dimensions bagages cabine pour eviter les frais", "Prevoir de quoi occuper les enfants dans l'avion (cahiers, tablette)"]}]}], "route": [[53.4264, -6.2499], [53.3498, -6.2603], [53.4233, -7.9424], [53.2718, -9.053], [53.078, -9.065], [53.0487, -9.1398], [52.9719, -9.4265], [53.017, -9.378], [52.94, -9.29], [52.937, -9.345], [53.258, -9.0847], [53.2718, -9.053], [53.398, -9.922], [53.387, -9.963], [53.488, -10.02], [53.494, -10.093], [53.488, -10.02], [53.552, -9.944], [53.4233, -7.9424], [53.5455, -6.7882], [53.5789, -6.6113], [53.4264, -6.2499]], "pois": {"castles": [{"name": "Dublin Castle", "desc": "Chateau medieval au coeur de Dublin ancien siege du pouvoir britannique", "lat": 53.3429, "lng": -6.2674, "web": "https://www.dublincastle.ie/", "gmaps": "https://maps.google.com/?q=53.3429"}, {"name": "Malahide Castle", "desc": "Chateau normand du XIIe siecle entoure de jardins botaniques", "lat": 53.4449, "lng": -6.1632, "web": "https://www.malahidecastleandgardens.ie/", "gmaps": "https://maps.google.com/?q=53.4449"}, {"name": "Trim Castle", "desc": "Plus grand chateau anglo-normand d'Irlande lieu de tournage de Braveheart", "lat": 53.5456, "lng": -6.7883, "web": "https://heritageireland.ie/places-to-visit/trim-castle/", "gmaps": "https://maps.google.com/?q=53.5456"}, {"name": "Kilkenny Castle", "desc": "Chateau normand du XIIe siecle dominant la ville medievale de Kilkenny", "lat": 52.6504, "lng": -7.2494, "web": "https://kilkennycastle.ie/", "gmaps": "https://maps.google.com/?q=52.6504"}, {"name": "Bunratty Castle", "desc": "Chateau du XVe siecle celebre pour ses banquets medievaux et son folk park", "lat": 52.6983, "lng": -8.813, "web": "https://www.bunrattycastle.ie/", "gmaps": "https://maps.google.com/?q=52.6983"}, {"name": "Dunguaire Castle", "desc": "Tour fortifiee du XVIe siecle au bord de la baie de Galway", "lat": 53.142, "lng": -8.9307, "web": "https://www.dunguairecastle.com/", "gmaps": "https://maps.google.com/?q=53.1420"}, {"name": "Ashford Castle", "desc": "Chateau du XIIIe siecle transforme en hotel de luxe 5 etoiles", "lat": 53.5326, "lng": -9.3416, "web": "https://ashfordcastle.com/", "gmaps": "https://maps.google.com/?q=53.5326"}, {"name": "Aughnanure Castle", "desc": "Tour fortifiee du XVIe siecle des O'Flaherty", "lat": 53.4261, "lng": -9.3354, "web": "https://heritageireland.ie/places-to-visit/aughnanure-castle/", "gmaps": "https://maps.google.com/?q=53.4261"}, {"name": "Knappogue Castle", "desc": "Chateau du XVe siecle restaure celebre pour ses banquets medievaux", "lat": 52.7939, "lng": -8.8316, "web": "https://www.knappoguecastle.ie/", "gmaps": "https://maps.google.com/?q=52.7939"}, {"name": "Rock of Cashel", "desc": "Ensemble spectaculaire de ruines medievales sur un promontoire rocheux", "lat": 52.5201, "lng": -7.8909, "web": "https://heritageireland.ie/places-to-visit/rock-of-cashel/", "gmaps": "https://maps.google.com/?q=52.5201"}, {"name": "Blarney Castle", "desc": "Celebre pour la Pierre de Blarney qui donnerait le don de l'eloquence", "lat": 51.9289, "lng": -8.5707, "web": "https://www.blarneycastle.ie/", "gmaps": "https://maps.google.com/?q=51.9289"}, {"name": "Ross Castle", "desc": "Tour fortifiee du XVe siecle au bord du lac de Killarney", "lat": 52.0371, "lng": -9.5272, "web": "https://heritageireland.ie/places-to-visit/ross-castle/", "gmaps": "https://maps.google.com/?q=52.0371"}, {"name": "Cahir Castle", "desc": "Un des plus grands et mieux conserves chateaux d'Irlande", "lat": 52.3745, "lng": -7.9273, "web": "https://heritageireland.ie/places-to-visit/cahir-castle/", "gmaps": "https://maps.google.com/?q=52.3745"}, {"name": "Dunluce Castle", "desc": "Ruines spectaculaires perchees sur une falaise de basalte", "lat": 55.2107, "lng": -6.5796, "web": "https://www.communities-ni.gov.uk/topics/historic-environment", "gmaps": "https://maps.google.com/?q=55.2107"}, {"name": "Kilkea Castle", "desc": "Un des plus anciens chateaux habites d'Irlande", "lat": 52.8978, "lng": -6.9392, "web": "https://www.kilkeacastle.ie/", "gmaps": "https://maps.google.com/?q=52.8978"}, {"name": "Birr Castle", "desc": "Chateau du XVIIe siecle celebre pour ses jardins et son telescope geant", "lat": 53.0961, "lng": -7.9138, "web": "https://birrcastle.com/", "gmaps": "https://maps.google.com/?q=53.0961"}, {"name": "Portumna Castle", "desc": "Manoir semi-fortifie du debut XVIIe Renaissance", "lat": 53.0866, "lng": -8.2206, "web": "https://heritageireland.ie/places-to-visit/portumna-castle-and-gardens/", "gmaps": "https://maps.google.com/?q=53.0866"}, {"name": "Athenry Castle", "desc": "Donjon anglo-normand du XIIIe siecle bien conserve", "lat": 53.2966, "lng": -8.7449, "web": "https://heritageireland.ie/places-to-visit/athenry-castle/", "gmaps": "https://maps.google.com/?q=53.2966"}, {"name": "Dromoland Castle", "desc": "Chateau du XVIe siecle transforme en hotel 5 etoiles", "lat": 52.7385, "lng": -8.8753, "web": "https://www.dromoland.ie/", "gmaps": "https://maps.google.com/?q=52.7385"}, {"name": "Leap Castle", "desc": "Repute chateau le plus hante d'Irlande", "lat": 53.0281, "lng": -7.8085, "web": "https://leapcastle.net/", "gmaps": "https://maps.google.com/?q=53.0281"}, {"name": "King John's Castle", "desc": "Forteresse du XIIIe siecle sur King's Island a Limerick", "lat": 52.6692, "lng": -8.6246, "web": "https://www.kingjohnscastle.com/", "gmaps": "https://maps.google.com/?q=52.6692"}], "monasteries": [{"name": "Clonmacnoise", "desc": "Site monastique du VIe siecle au bord du Shannon", "lat": 53.3266, "lng": -7.9862, "web": "https://heritageireland.ie/places-to-visit/clonmacnoise/", "gmaps": "https://maps.google.com/?q=53.3266"}, {"name": "Newgrange", "desc": "Tumulus neolithique de 5000 ans plus ancien que les pyramides", "lat": 53.6947, "lng": -6.4755, "web": "https://www.newgrange.com/", "gmaps": "https://maps.google.com/?q=53.6947"}, {"name": "Knowth", "desc": "Tumulus neolithique plus grande collection d'art megalithique d'Europe", "lat": 53.7017, "lng": -6.494, "web": "https://heritageireland.ie/places-to-visit/knowth/", "gmaps": "https://maps.google.com/?q=53.7017"}, {"name": "Glendalough", "desc": "Cite monastique du VIe siecle dans une vallee glaciaire du Wicklow", "lat": 53.0114, "lng": -6.3296, "web": "https://heritageireland.ie/places-to-visit/glendalough/", "gmaps": "https://maps.google.com/?q=53.0114"}, {"name": "Kylemore Abbey", "desc": "Abbaye benedictine du XIXe siecle au bord d'un lac dans le Connemara", "lat": 53.5614, "lng": -9.8897, "web": "https://www.kylemoreabbey.com/", "gmaps": "https://maps.google.com/?q=53.5614"}, {"name": "Corcomroe Abbey", "desc": "Abbaye cistercienne du XIIIe siecle dans le Burren", "lat": 53.1167, "lng": -9.05, "web": "https://heritageireland.ie/places-to-visit/corcomroe-abbey/", "gmaps": "https://maps.google.com/?q=53.1167"}, {"name": "Cong Abbey", "desc": "Abbaye augustinienne du XIIe siecle celebre par The Quiet Man", "lat": 53.5337, "lng": -9.2826, "web": "https://www.discoverireland.ie/mayo/cong-abbey", "gmaps": "https://maps.google.com/?q=53.5337"}, {"name": "Ross Errilly Friary", "desc": "Couvent franciscain parmi les mieux preserves d'Irlande", "lat": 53.4745, "lng": -9.1255, "web": "https://heritageireland.ie/places-to-visit/ross-errilly-friary/", "gmaps": "https://maps.google.com/?q=53.4745"}, {"name": "Jerpoint Abbey", "desc": "Abbaye cistercienne du XIIe siecle avec sculptures romanes", "lat": 52.5393, "lng": -7.1621, "web": "https://heritageireland.ie/places-to-visit/jerpoint-abbey/", "gmaps": "https://maps.google.com/?q=52.5393"}, {"name": "Monasterboice", "desc": "Site monastique du Ve siecle celebre pour ses hautes croix celtiques", "lat": 53.7777, "lng": -6.4173, "web": "https://www.discoverireland.ie/louth/monasterboice-monastic-site", "gmaps": "https://maps.google.com/?q=53.7777"}, {"name": "Hill of Tara", "desc": "Ancien siege des Hauts Rois d'Irlande site ceremoniel", "lat": 53.5789, "lng": -6.6115, "web": "https://heritageireland.ie/places-to-visit/hill-of-tara/", "gmaps": "https://maps.google.com/?q=53.5789"}, {"name": "Skellig Michael", "desc": "Monastere du VIe siecle sur un rocher isole site UNESCO", "lat": 51.7704, "lng": -10.5386, "web": "https://heritageireland.ie/places-to-visit/skellig-michael/", "gmaps": "https://maps.google.com/?q=51.7704"}, {"name": "Gallarus Oratory", "desc": "Oratoire paleochretien en pierre seche sur la peninsule de Dingle", "lat": 52.1738, "lng": -10.3532, "web": "https://heritageireland.ie/places-to-visit/gallarus-oratory/", "gmaps": "https://maps.google.com/?q=52.1738"}, {"name": "Fore Abbey", "desc": "Prieure benedictin medieval des Seven Wonders of Fore", "lat": 53.6802, "lng": -7.2292, "web": "https://www.discoverireland.ie/westmeath/fore-abbey", "gmaps": "https://maps.google.com/?q=53.6802"}, {"name": "Clonfert Cathedral", "desc": "Cathedrale du XIIe siecle plus beau portail roman d'Irlande", "lat": 53.2406, "lng": -8.0581, "web": "https://www.discoverireland.ie/galway/clonfert-cathedral", "gmaps": "https://maps.google.com/?q=53.2406"}], "nature": [{"name": "Cliffs of Moher", "desc": "Falaises de 214 m le site naturel le plus visite d'Irlande", "lat": 52.9715, "lng": -9.4309, "web": "https://www.cliffsofmoher.ie/", "gmaps": "https://maps.google.com/?q=52.9715"}, {"name": "Poulnabrone Dolmen", "desc": "Dolmen neolithique iconique du Burren", "lat": 53.0487, "lng": -9.1398, "web": "https://www.discoverireland.ie/clare/poulnabrone-dolmen", "gmaps": "https://maps.google.com/?q=53.0487"}, {"name": "The Burren", "desc": "Paysage karstique unique de 250 km2", "lat": 53.05, "lng": -9.05, "web": "https://www.burrengeopark.ie/", "gmaps": "https://maps.google.com/?q=53.0500"}, {"name": "Sky Road", "desc": "Route panoramique spectaculaire au-dessus de la baie de Clifden", "lat": 53.4933, "lng": -10.1167, "web": "https://www.discoverireland.ie/galway/sky-road", "gmaps": "https://maps.google.com/?q=53.4933"}, {"name": "Black Head", "desc": "Cap rocheux a l'extremite nord du Burren", "lat": 53.1528, "lng": -9.2667, "web": "https://www.thewildatlanticway.com/sight/black-head/", "gmaps": "https://maps.google.com/?q=53.1528"}, {"name": "Loop Head", "desc": "Cap sauvage a l'extremite de la peninsule du Clare", "lat": 52.5618, "lng": -9.931, "web": "https://www.loophead.ie/", "gmaps": "https://maps.google.com/?q=52.5618"}, {"name": "Killary Harbour", "desc": "Unique fjord d'Irlande 16 km de long", "lat": 53.5974, "lng": -9.8558, "web": "https://www.discoverireland.ie/galway/killary-harbour", "gmaps": "https://maps.google.com/?q=53.5974"}, {"name": "Diamond Hill", "desc": "Randonnee emblematique du parc national du Connemara", "lat": 53.5468, "lng": -9.9475, "web": "https://www.connemaranationalpark.ie/", "gmaps": "https://maps.google.com/?q=53.5468"}, {"name": "Slieve League", "desc": "Parmi les plus hautes falaises maritimes d'Europe 601 m", "lat": 54.6368, "lng": -8.6816, "web": "https://www.sliabhliag.com/", "gmaps": "https://maps.google.com/?q=54.6368"}, {"name": "Giant's Causeway", "desc": "40 000 colonnes de basalte hexagonales site UNESCO", "lat": 55.2408, "lng": -6.5116, "web": "https://www.nationaltrust.org.uk/giants-causeway", "gmaps": "https://maps.google.com/?q=55.2408"}, {"name": "Dark Hedges", "desc": "Allee de hetres du XVIIIe siecle decor de Game of Thrones", "lat": 55.1329, "lng": -6.3803, "web": "https://www.nationaltrust.org.uk/visit/northern-ireland/the-dark-hedges", "gmaps": "https://maps.google.com/?q=55.1329"}, {"name": "Ring of Kerry", "desc": "Circuit panoramique de 179 km autour de la peninsule d'Iveragh", "lat": 51.945, "lng": -9.93, "web": "https://www.ringofkerrytourism.com/", "gmaps": "https://maps.google.com/?q=51.9450"}, {"name": "Dingle Peninsula", "desc": "Peninsule sauvage entre montagne et ocean", "lat": 52.1342, "lng": -10.0587, "web": "https://www.dingle-peninsula.ie/", "gmaps": "https://maps.google.com/?q=52.1342"}, {"name": "Conor Pass", "desc": "Col de montagne le plus haut d'Irlande 456 m", "lat": 52.1566, "lng": -9.9968, "web": "https://www.discoverireland.ie/kerry/conor-pass", "gmaps": "https://maps.google.com/?q=52.1566"}, {"name": "Ladies View", "desc": "Point de vue legendaire surplombant les lacs de Killarney", "lat": 51.9647, "lng": -9.7264, "web": "https://www.discoverireland.ie/kerry/ladies-view", "gmaps": "https://maps.google.com/?q=51.9647"}, {"name": "Gap of Dunloe", "desc": "Gorge etroite spectaculaire entre les MacGillycuddy's Reeks", "lat": 51.9908, "lng": -9.6531, "web": "https://www.discoverireland.ie/kerry/gap-of-dunloe", "gmaps": "https://maps.google.com/?q=51.9908"}, {"name": "Mizen Head", "desc": "Point le plus au sud-ouest de l'Irlande continentale", "lat": 51.4498, "lng": -9.8189, "web": "https://mizenhead.ie/", "gmaps": "https://maps.google.com/?q=51.4498"}, {"name": "Powerscourt Waterfall", "desc": "Plus haute cascade d'Irlande 121 m dans le Wicklow", "lat": 53.147, "lng": -6.2134, "web": "https://powerscourt.com/waterfall", "gmaps": "https://maps.google.com/?q=53.1470"}, {"name": "Glenveagh National Park", "desc": "Plus grand parc national d'Irlande 170 km2", "lat": 55.0395, "lng": -7.9578, "web": "https://www.glenveaghnationalpark.ie/", "gmaps": "https://maps.google.com/?q=55.0395"}], "beaches": [{"name": "Dog's Bay", "desc": "Double plage de sable blanc corallien pres de Roundstone", "lat": 53.3793, "lng": -10.055, "web": "https://www.discoverireland.ie/galway/dogs-bay-beach", "gmaps": "https://maps.google.com/?q=53.3793"}, {"name": "Lahinch Beach", "desc": "Station balneaire populaire et spot de surf du Clare", "lat": 52.9345, "lng": -9.3509, "web": "https://www.discoverireland.ie/clare/lahinch-beach", "gmaps": "https://maps.google.com/?q=52.9345"}, {"name": "Fanore Beach", "desc": "Plage sauvage au pied du Burren", "lat": 53.1175, "lng": -9.2862, "web": "https://www.discoverireland.ie/clare/fanore-beach", "gmaps": "https://maps.google.com/?q=53.1175"}, {"name": "Kilkee Beach", "desc": "Plage en fer a cheval protegee ideal familles", "lat": 52.6818, "lng": -9.6493, "web": "https://www.discoverireland.ie/clare/kilkee-beach", "gmaps": "https://maps.google.com/?q=52.6818"}, {"name": "Coral Beach", "desc": "Plage unique composee de corail maerl eaux turquoise", "lat": 53.2492, "lng": -9.7, "web": "https://www.discoverireland.ie/galway/coral-beach", "gmaps": "https://maps.google.com/?q=53.2492"}, {"name": "Mannin Bay", "desc": "Plage de sable blanc corallien dans le Connemara", "lat": 53.4467, "lng": -10.0614, "web": "https://www.discoverireland.ie/galway/mannin-bay", "gmaps": "https://maps.google.com/?q=53.4467"}, {"name": "Glassilaun Beach", "desc": "Plage secrete de sable blanc au fond du Killary Fjord", "lat": 53.6149, "lng": -9.8749, "web": "https://www.discoverireland.ie/galway/glassilaun-beach", "gmaps": "https://maps.google.com/?q=53.6149"}, {"name": "Inch Beach", "desc": "Longue plage de sable de 5 km sur la peninsule de Dingle", "lat": 52.1314, "lng": -9.9695, "web": "https://www.discoverireland.ie/kerry/inch-beach", "gmaps": "https://maps.google.com/?q=52.1314"}, {"name": "Derrynane Beach", "desc": "Plage abritee cadre sublime du Ring of Kerry", "lat": 51.762, "lng": -10.1268, "web": "https://www.discoverireland.ie/kerry/derrynane-beach", "gmaps": "https://maps.google.com/?q=51.7620"}, {"name": "Keem Bay", "desc": "Plage isolee au bout d'Achill Island", "lat": 53.968, "lng": -10.1925, "web": "https://www.discoverireland.ie/mayo/keem-bay", "gmaps": "https://maps.google.com/?q=53.9680"}, {"name": "Barleycove Beach", "desc": "Plage sauvage de sable dore pres de Mizen Head", "lat": 51.469, "lng": -9.7769, "web": "https://www.discoverireland.ie/cork/barleycove-beach", "gmaps": "https://maps.google.com/?q=51.4690"}], "towns": [{"name": "Dublin", "desc": "Capitale de l'Irlande patrimoine viking georgien et culture contemporaine", "lat": 53.3498, "lng": -6.2603, "web": "https://www.visitdublin.com/", "gmaps": "https://maps.google.com/?q=53.3498"}, {"name": "Galway", "desc": "Capitale culturelle de l'ouest musique traditionnelle et festivals", "lat": 53.2707, "lng": -9.0568, "web": "https://www.galwaytourism.ie/", "gmaps": "https://maps.google.com/?q=53.2707"}, {"name": "Killarney", "desc": "Porte d'entree du Ring of Kerry et du parc national", "lat": 52.0599, "lng": -9.5044, "web": "https://www.killarney.ie/", "gmaps": "https://maps.google.com/?q=52.0599"}, {"name": "Dingle", "desc": "Port de peche colore sur la peninsule de Dingle", "lat": 52.1409, "lng": -10.2686, "web": "https://www.dingle-peninsula.ie/", "gmaps": "https://maps.google.com/?q=52.1409"}, {"name": "Doolin", "desc": "Village musical celebre pour ses sessions traditionnelles", "lat": 52.9717, "lng": -9.3993, "web": "https://www.doolin.ie/", "gmaps": "https://maps.google.com/?q=52.9717"}, {"name": "Clifden", "desc": "Capitale du Connemara ville coloree", "lat": 53.4883, "lng": -10.0185, "web": "https://www.visitclifden.com/", "gmaps": "https://maps.google.com/?q=53.4883"}, {"name": "Roundstone", "desc": "Village de pecheurs pittoresque du Connemara", "lat": 53.3959, "lng": -9.9217, "web": "https://www.discoverireland.ie/galway/roundstone", "gmaps": "https://maps.google.com/?q=53.3959"}, {"name": "Kinvara", "desc": "Village charmant porte d'entree du Burren", "lat": 53.1393, "lng": -8.9364, "web": "https://www.discoverireland.ie/galway/kinvara", "gmaps": "https://maps.google.com/?q=53.1393"}, {"name": "Westport", "desc": "Ville georgienne elegante au pied du Croagh Patrick", "lat": 53.801, "lng": -9.5175, "web": "https://www.westportireland.ie/", "gmaps": "https://maps.google.com/?q=53.8010"}, {"name": "Kinsale", "desc": "Capital gastronomique de l'Irlande port colore", "lat": 51.7059, "lng": -8.531, "web": "https://www.kinsale.ie/", "gmaps": "https://maps.google.com/?q=51.7059"}, {"name": "Cobh", "desc": "Dernier port d'escale du Titanic maisons victoriennes colorees", "lat": 51.8514, "lng": -8.2967, "web": "https://www.visitcobh.com/", "gmaps": "https://maps.google.com/?q=51.8514"}, {"name": "Kenmare", "desc": "Ville pittoresque jonction du Ring of Kerry et du Ring of Beara", "lat": 51.8806, "lng": -9.5839, "web": "https://www.kenmare.com/", "gmaps": "https://maps.google.com/?q=51.8806"}, {"name": "Adare", "desc": "Plus joli village d'Irlande chaumieres et abbayes", "lat": 52.5643, "lng": -8.7888, "web": "https://www.discoverireland.ie/limerick/adare", "gmaps": "https://maps.google.com/?q=52.5643"}, {"name": "Kilkenny", "desc": "Ville medievale par excellence ruelles cathedrale et brasserie", "lat": 52.6541, "lng": -7.2448, "web": "https://www.visitkilkenny.ie/", "gmaps": "https://maps.google.com/?q=52.6541"}], "museums": [{"name": "Dublinia", "desc": "Musee interactif sur le Dublin viking et medieval", "lat": 53.3435, "lng": -6.2718, "web": "https://www.dublinia.ie/", "gmaps": "https://maps.google.com/?q=53.3435"}, {"name": "EPIC The Irish Emigration Museum", "desc": "Musee prime racontant l'histoire de la diaspora irlandaise", "lat": 53.348, "lng": -6.2479, "web": "https://epicchq.com/", "gmaps": "https://maps.google.com/?q=53.3480"}, {"name": "National Museum of Ireland", "desc": "Collections nationales d'archeologie art et histoire naturelle", "lat": 53.3403, "lng": -6.2546, "web": "https://www.museum.ie/", "gmaps": "https://maps.google.com/?q=53.3403"}, {"name": "Titanic Belfast", "desc": "Musee interactif de 6 etages sur le lieu de construction du Titanic", "lat": 54.6081, "lng": -5.9099, "web": "https://www.titanicbelfast.com/", "gmaps": "https://maps.google.com/?q=54.6081"}, {"name": "Ulster Museum", "desc": "Musee national d'Irlande du Nord art histoire et archeologie", "lat": 54.5854, "lng": -5.929, "web": "https://www.nmni.com/ulster-museum", "gmaps": "https://maps.google.com/?q=54.5854"}, {"name": "GPO Witness History", "desc": "Musee immersif dans le bureau de poste de l'insurrection de 1916", "lat": 53.3494, "lng": -6.2604, "web": "https://www.gpomuseum.ie/", "gmaps": "https://maps.google.com/?q=53.3494"}, {"name": "Kilmainham Gaol", "desc": "Prison historique des leaders de l'insurrection de 1916", "lat": 53.3419, "lng": -6.31, "web": "https://kilmainhamgaolmuseum.ie/", "gmaps": "https://maps.google.com/?q=53.3419"}]}, "tips": [{"icon": "fa-car", "title": "Voiture automatique", "text": "Louez une <strong>boite automatique</strong>. Conduite a gauche + boite manuelle = galere. Tous les blogs sont unanimes."}, {"icon": "fa-cloud-rain", "title": "Meteo & vetements", "text": "<strong>K-way obligatoire</strong> pour toute la famille, meme en aout (14-20°C, pluie frequente). Prevoyez des couches superposables et des chaussures impermeables."}, {"icon": "fa-bed", "title": "B&B irlandais", "text": "Les <strong>B&B</strong> offrent le meilleur rapport qualite/prix : 70-85 EUR/nuit, avec <strong>full Irish breakfast</strong> copieux inclus. Reservez tot en aout !"}, {"icon": "fa-ticket", "title": "Heritage Card", "text": "La <strong>Heritage Card</strong> (40 EUR/adulte, enfants < 12 ans gratuits) donne acces illimite a 40+ sites : Trim Castle, Clonmacnoise, Newgrange... Rentable des 3 visites."}, {"icon": "fa-mobile-screen", "title": "GPS & navigation", "text": "<strong>Google Maps</strong> suffit. Pas besoin du GPS payant du loueur. Telechargez les cartes hors-ligne avant de partir."}, {"icon": "fa-beer-mug-empty", "title": "Enfants dans les pubs", "text": "Les pubs irlandais <strong>accueillent les enfants</strong> en journee et debut de soiree. Menus enfants, fish & chips, musique trad live."}, {"icon": "fa-mountain", "title": "Sites gratuits", "text": "Connemara NP, Hill of Tara, Burren : <strong>gratuits</strong>. Cliffs of Moher : 15 EUR/adulte (enfants < 12 gratuits). Trim Castle : famille 13 EUR."}, {"icon": "fa-clock", "title": "Horaires & affluence", "text": "Sites ferment a <strong>17h</strong>. Cliffs of Moher : arriver en <strong>fin de journee</strong> pour eviter la foule. Newgrange : reserver <strong>30 jours a l'avance</strong>."}], "blogs": [{"title": "Road trip 1 semaine en Irlande", "source": "Planete3w", "url": "https://www.planete3w.fr/road-trip-1-semaine-en-irlande-notre-itineraire/", "type": "couple"}, {"title": "Une semaine en Irlande en famille", "source": "Les Love Trotteurs", "url": "https://www.leslovetrotteurs.com/une-semaine-en-irlande/", "type": "famille"}, {"title": "Irlande en famille : road trip avec deux enfants", "source": "e-Zabel", "url": "https://www.e-zabel.fr/irlande-en-famille/", "type": "famille"}, {"title": "L'Irlande avec des enfants", "source": "Kid Friendly", "url": "https://www.kidfriendly.fr/archives/2018/04/22/36340955.html", "type": "famille"}, {"title": "1 semaine autour de Galway en famille", "source": "Voyages et Enfants", "url": "https://www.voyagesetenfants.com/1-semaine-autour-de-galway-en-irlande-connemara-moher-et-buren/", "type": "famille"}, {"title": "Voyage en Irlande en famille", "source": "Marie-Eve et famille", "url": "https://marieeveetfamille.com/voyage-irlande-en-famille/", "type": "famille"}, {"title": "L'Irlande avec des enfants (expatriee)", "source": "Trip and Twins", "url": "https://tripandtwins.com/irlande-avec-des-enfants/", "type": "famille"}, {"title": "Circuit randos ouest Irlande en famille", "source": "Voyages et Enfants", "url": "https://www.voyagesetenfants.com/voyage-famille-irlande-rando/", "type": "famille"}, {"title": "7 jours en Irlande, itineraire ok selon vous ?", "source": "Forum Routard", "url": "https://www.routard.com/forums/t/7-jours-en-irlande-itineraire-ok-selon-vous/171118", "type": "forum"}, {"title": "7 jours en Irlande : quel circuit ?", "source": "Forum Routard", "url": "https://www.routard.com/forums/t/7-jours-en-irlande-quel-circuit/118977", "type": "forum"}, {"title": "Itineraire 7 jours en Irlande en aout", "source": "Forum Routard", "url": "https://www.routard.com/forum_message/3392086/itineraire_de_7_jours_en_irlande_en_aout.htm", "type": "forum"}, {"title": "7 jours en Irlande en partant de Dublin", "source": "Forum Routard", "url": "https://www.routard.com/forums/t/7-jours-en-irlande-en-partant-de-dublin/243352", "type": "forum"}, {"title": "Premier sejour 7 jours : Kerry et Connemara", "source": "Forum Routard", "url": "https://www.routard.com/forums/t/recommandation-ditineraires-pour-un-premier-sejour-de-7-jours-en-irlande-kerry-et-connemara/415143", "type": "forum"}, {"title": "Road trip 7 jours en Irlande, possible ?", "source": "Forum Routard", "url": "https://www.routard.com/forum_message/3092210/road_trip_en_7_jours_en_irlande_possible.htm", "type": "forum"}, {"title": "Doolin, Burren et Cliffs of Moher", "source": "Forum Routard", "url": "https://www.routard.com/forums/t/doolin-burren-et-clif-of-moher/97406", "type": "forum"}, {"title": "Que faire dans les alentours de Clifden ?", "source": "Forum Routard", "url": "https://www.routard.com/forums/t/que-faire-dans-les-alentours-de-clifden/87046", "type": "forum"}, {"title": "Organisation 2 jours a Clifden/Galway", "source": "Forum Routard", "url": "https://www.routard.com/forums/t/organisation-2-jours-a-clifden-galway-en-irlande/143589", "type": "forum"}, {"title": "Galway et Connemara", "source": "Forum Routard", "url": "https://www.routard.com/forums/t/galway-et-connemara/70000", "type": "forum"}, {"title": "Que faire dans la region du Burren ?", "source": "Forum Routard", "url": "https://www.routard.com/forum_message/3253442/que_faire_dans_la_region_du_burren.htm", "type": "forum"}, {"title": "Wild Atlantic Way en Irlande", "source": "Forum Routard", "url": "https://www.routard.com/forums/t/wild-atlantic-way-en-irlande/218378", "type": "forum"}, {"title": "12 jours sur la cote ouest fin aout", "source": "Forum Routard", "url": "https://www.routard.com/forum_message/4550978/12_jours_sur_la_cote_ouest_fin_aout___premier_voyage_en_irlande___besoin_de_conseils.htm", "type": "forum"}, {"title": "Sejour Connemara", "source": "Forum Routard", "url": "https://www.routard.com/forums/t/sejour-connemara/35523", "type": "forum"}, {"title": "Itineraires conseilles Irlande", "source": "Guide Routard", "url": "https://www.routard.com/fr/guide/a/itineraires-conseilles/europe/irlande", "type": "forum"}], "poiConfig": {"castles": {"color": "#c86432", "icon": "fa-chess-rook"}, "monasteries": {"color": "#7a5a6a", "icon": "fa-place-of-worship"}, "nature": {"color": "#5a8a3a", "icon": "fa-mountain-sun"}, "beaches": {"color": "#2a5a8c", "icon": "fa-umbrella-beach"}, "towns": {"color": "#e8b84a", "icon": "fa-city"}, "museums": {"color": "#3a2f28", "icon": "fa-museum"}}};
+const TRIP_DATA = {
+  "trip": {
+    "title": "Ireland",
+    "subtitle": "Road Trip",
+    "tagline": "Wild Atlantic Way en famille",
+    "family": "Famille Etienne",
+    "period": "16–23 Aout 2026",
+    "stats": {
+      "jours": 8,
+      "voyageurs": 4,
+      "kilometres": "~800",
+      "comtes": 5
+    }
+  },
+  "days": [
+    {
+      "day": 1,
+      "title": "Bienvenue a Dublin",
+      "date": "Dimanche 16 aout",
+      "routeIcon": "fa-plane-arrival",
+      "routeDesc": "Arrivee Nimes → Dublin · Vol FR9777",
+      "morning": "Vol Ryanair FR9777, depart 11h10 de Nimes, arrivee <strong>12h40 a Dublin</strong>. Immigration + bagages (~20 min), puis comptoir <strong>NewWay</strong> pour la voiture a 13h. Route directe vers le centre de Dublin (<strong>30 min</strong>). Installation et debut de la decouverte a pied.",
+      "night": "Nuit a Dublin centre",
+      "nightInfo": "<strong>Ou dormir :</strong> B&B ou hotel a Dublin centre (Temple Bar, Merrion Square). Privilegiez un logement avec parking (15-20 EUR/jour en ville). Alternative : Airbnb avec cuisine pour un premier diner tranquille.",
+      "distance": "~15 km",
+      "driveTime": "~30 min",
+      "highlight": null,
+      "mapCenter": {
+        "lat": 53.3498,
+        "lng": -6.2603
+      },
+      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/a/a3/The_Dubhlinn_Gardens_Dublin_Castle_01.JPG",
+      "mapDesc": "Arrivee, Dublin Castle, Temple Bar, St Stephen's Green",
+      "stops": [
+        {
+          "name": "Dublin Castle",
+          "desc": "Chateau historique, siege du pouvoir pendant 700 ans. State Apartments magnifiques. Visite guidee obligatoire (~3,50 EUR). Brochure en francais disponible.",
+          "icon": "fa-chess-rook",
+          "iconClass": "castle",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/The_Dubhlinn_Gardens_Dublin_Castle_01.JPG/960px-The_Dubhlinn_Gardens_Dublin_Castle_01.JPG",
+          "gmaps": "https://maps.google.com/?q=53.3429,-6.2675",
+          "web": "https://dublincastle.ie/",
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186605-d214882-Reviews-Dublin_Castle-Dublin_County_Dublin.html",
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/dublin/dublin-s-castle"
+        },
+        {
+          "name": "Temple Bar",
+          "desc": "Quartier emblematique aux facades colorees. Ambiance musicale, pubs traditionnels. Plus sympa pour une balade photo en journee qu'en soiree avec enfants.",
+          "icon": "fa-music",
+          "iconClass": "culture",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Temple_Bar_street_scenes%2C_Dublin.jpg/960px-Temple_Bar_street_scenes%2C_Dublin.jpg",
+          "gmaps": "https://maps.google.com/?q=53.3456,-6.2628",
+          "web": "https://www.lovetemplebar.com/",
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186605-d188821-Reviews-Temple_Bar-Dublin_County_Dublin.html",
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/dublin/temple-bar"
+        },
+        {
+          "name": "St Stephen's Green",
+          "desc": "Parc victorien avec lac, canards et aire de jeux. Pause parfaite apres le voyage. Aire de jeux avec toboggan a la cathedrale St Patrick juste a cote.",
+          "icon": "fa-tree",
+          "iconClass": "nature",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Dublin_Stephen%27s_Green-44_edit.jpg/960px-Dublin_Stephen%27s_Green-44_edit.jpg",
+          "gmaps": "https://maps.google.com/?q=53.3381,-6.2592",
+          "web": null,
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186605-d189054-Reviews-St_Stephens_Green-Dublin_County_Dublin.html",
+          "routard": null
+        }
+      ],
+      "schedule": [
+        { "time": "11h10", "label": "Vol FR9777 Nimes - Dublin", "icon": "fa-plane", "duration": "2h30" },
+        { "time": "12h40", "label": "Arrivee Dublin, immigration + bagages", "icon": "fa-plane-arrival", "duration": "20min" },
+        { "time": "13h00", "label": "Comptoir NewWay, recuperation voiture", "icon": "fa-car", "duration": "30min" },
+        { "time": "13h30", "label": "Route vers Dublin centre", "icon": "fa-car", "duration": "30min" },
+        { "time": "14h00", "label": "Installation hotel / B&B", "icon": "fa-bed", "duration": "30min" },
+        { "time": "14h30", "label": "Dublin Castle", "icon": "fa-chess-rook", "duration": "1h" },
+        { "time": "15h30", "label": "Balade Temple Bar", "icon": "fa-music", "duration": "45min" },
+        { "time": "16h15", "label": "St Stephen's Green (aire de jeux)", "icon": "fa-tree", "duration": "1h" },
+        { "time": "17h30", "label": "Retour hotel, repos", "icon": "fa-bed", "duration": "30min" },
+        { "time": "18h30", "label": "Diner en ville", "icon": "fa-utensils", "duration": "1h30" }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Dublin Castle (2 adultes, enfants gratuits)", "amount": 7 },
+          { "label": "Diner en famille", "amount": 60 },
+          { "label": "Parking hotel (estimation)", "amount": 18 }
+        ],
+        "total": 85,
+        "notes": "Journee legere, arrivee en milieu de journee. Temple Bar et St Stephen's Green sont gratuits."
+      },
+      "dayRoute": [
+        [53.4264, -6.2499],
+        [53.3429, -6.2675],
+        [53.3456, -6.2628],
+        [53.3381, -6.2592]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Dublin Castle",
+          "icon": "fa-chess-rook",
+          "tips": [
+            "Visite guidee obligatoire pour les State Apartments (~3,50 EUR/adulte)",
+            "Brochure en francais disponible a l'accueil",
+            "Les Dubhlinn Gardens a cote sont gratuits et agreable pour les enfants"
+          ]
+        },
+        {
+          "stop": "Temple Bar",
+          "icon": "fa-music",
+          "tips": [
+            "Plus agreable en journee avec les enfants (artistes de rue, facades colorees)",
+            "Le soir c'est tres anime et bruyant, pas ideal pour les petits",
+            "Eviter les restaurants touristiques de Temple Bar, souvent chers et moyens"
+          ]
+        },
+        {
+          "stop": "St Stephen's Green",
+          "icon": "fa-tree",
+          "tips": [
+            "Aire de jeux avec toboggan pres de la cathedrale St Patrick",
+            "Canards sur le lac, les enfants adorent",
+            "Parc ferme a la tombee de la nuit"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Cap a l'Ouest — Galway !",
+      "date": "Lundi 17 aout",
+      "routeIcon": "fa-road",
+      "routeDesc": "Dublin → Galway (via Athlone) · 2h34 de route",
+      "morning": "Depart de Dublin vers 9h30 apres un bon Irish Breakfast. <strong>1h30</strong> d'autoroute M6 jusqu'a <strong>Athlone</strong> pour un dejeuner au bord du Shannon (Sean's Bar, plus vieux pub d'Irlande !). Balade digestive au Burgess Park (aire de jeux). Puis <strong>1h04</strong> de M6 jusqu'a <strong>Galway</strong>. Arrivee vers 15h. Fin de journee a pied dans le <strong>Latin Quarter</strong> : musiciens de rue, facades colorees, ambiance festive. Les enfants adorent Shop Street.",
+      "night": "Nuit a Galway (1ere nuit)",
+      "nightInfo": "<strong>Ou dormir :</strong> Galway centre ou Salthill (2 nuits au meme endroit !). Salthill est plus calme avec les enfants (promenade en bord de mer, aquarium a 5 min). Restaurants : <strong>McDonagh's</strong> (fish & chips legendaire), <strong>Ard Bia at Nimmos</strong>. Soiree pub avec musique live (Tig Coili, The Crane Bar — enfants acceptes en debut de soiree).",
+      "rainyDay": "<strong>Galway City Museum</strong> (gratuit, interactif, bateau suspendu au plafond, 30-45 min) · <strong>Leisureland Salthill</strong> (piscine interieure, toboggan de 65m, piscine pirate pour les petits)",
+      "distance": "~209 km",
+      "driveTime": "~2h34 (2 segments : 1h30 + 1h04)",
+      "highlight": null,
+      "mapCenter": {
+        "lat": 53.2718,
+        "lng": -9.053
+      },
+      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Shop_Street%2C_Galway.jpg",
+      "mapDesc": "Autoroute M6, dejeuner Athlone, arrivee Galway",
+      "stops": [
+        {
+          "name": "Sean's Bar, Athlone",
+          "desc": "Plus vieux pub d'Irlande (900 ap. J.-C. !). Dejeuner au bord du Shannon, murs en torchis d'epoque.",
+          "icon": "fa-beer-mug-empty",
+          "iconClass": "culture",
+          "photo": null,
+          "gmaps": "https://maps.google.com/?q=53.4232,-7.9408",
+          "web": "https://www.seansbar.ie/",
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212091-d1580894-Reviews-Sean_s_Bar-Athlone_County_Westmeath.html",
+          "routard": null
+        },
+        {
+          "name": "Burgess Park",
+          "desc": "Parc au bord du Shannon avec aire de jeux. Les enfants se degourdissent apres la route.",
+          "icon": "fa-tree",
+          "iconClass": "nature",
+          "photo": null,
+          "gmaps": "https://maps.google.com/?q=53.4250,-7.9380",
+          "web": null,
+          "tripadvisor": null,
+          "routard": null
+        },
+        {
+          "name": "Galway Latin Quarter & Shop Street",
+          "desc": "Coeur vibrant : musiciens de rue, facades colorees, boutiques. Spanish Arch et Long Walk.",
+          "icon": "fa-guitar",
+          "iconClass": "culture",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Shop_Street%2C_Galway.jpg",
+          "gmaps": "https://maps.google.com/?q=53.2719,-9.0530",
+          "web": null,
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186609-d4909613-Reviews-Galway_s_Latin_Quarter-Galway_County_Galway_Western_Ireland.html",
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-galway/galway-gaillimh"
+        }
+      ],
+      "schedule": [
+        { "time": "9h30", "label": "Depart de Dublin (autoroute M6)", "icon": "fa-car", "duration": null },
+        { "time": "11h00", "label": "Arrivee Athlone, dejeuner Sean's Bar", "icon": "fa-utensils", "duration": "1h15" },
+        { "time": "12h15", "label": "Balade Burgess Park (aire de jeux)", "icon": "fa-tree", "duration": "30min" },
+        { "time": "12h45", "label": "Route Athlone - Galway (M6)", "icon": "fa-car", "duration": null },
+        { "time": "13h50", "label": "Arrivee Galway, installation", "icon": "fa-bed", "duration": "30min" },
+        { "time": "14h30", "label": "Balade Latin Quarter & Shop Street", "icon": "fa-guitar", "duration": "1h30" },
+        { "time": "16h00", "label": "Spanish Arch & Long Walk", "icon": "fa-camera", "duration": "45min" },
+        { "time": "17h00", "label": "Temps libre, repos", "icon": "fa-bed", "duration": "1h" },
+        { "time": "18h00", "label": "Diner chez McDonagh's", "icon": "fa-utensils", "duration": "1h" },
+        { "time": "19h30", "label": "Soiree musique trad (Tig Coili ou Crane Bar)", "icon": "fa-music", "duration": "1h30" }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Dejeuner famille Athlone (Sean's Bar)", "amount": 45 },
+          { "label": "Carburant Dublin - Galway", "amount": 15 },
+          { "label": "Diner Galway (McDonagh's)", "amount": 55 }
+        ],
+        "total": 115,
+        "notes": "Sean's Bar est family-friendly en journee. McDonagh's a deux formules : restaurant (plus cher) et take-away (moins cher, meme poisson)."
+      },
+      "dayRoute": [
+        [53.3498, -6.2603],
+        [53.4232, -7.9408],
+        [53.4250, -7.9380],
+        [53.2719, -9.0530]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Sean's Bar, Athlone",
+          "icon": "fa-beer-mug-empty",
+          "tips": [
+            "Plus vieux pub d'Irlande (900 ap. J.-C.), interessant meme pour un dejeuner rapide",
+            "Family-friendly en journee, menu enfants disponible",
+            "Parking gratuit a proximite dans le centre d'Athlone"
+          ]
+        },
+        {
+          "stop": "Galway Latin Quarter & Shop Street",
+          "icon": "fa-guitar",
+          "tips": [
+            "Shop Street est pietonne, les enfants peuvent se promener librement",
+            "Musiciens de rue surtout l'apres-midi et en debut de soiree",
+            "McDonagh's take-away : meme poisson frais, file plus rapide, moins cher que le restaurant"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Burren & Falaises de Moher",
+      "date": "Mardi 18 aout",
+      "routeIcon": "fa-mountain-sun",
+      "routeDesc": "Galway → Burren → Cliffs → Doolin · 1h46 de route",
+      "morning": "<strong>50 min</strong> de Galway jusqu'a <strong>Aillwee Cave</strong> dans le Burren. Grotte + spectacle de rapaces (2h sur place). Puis <strong>26 min</strong> vers le <strong>Poulnabrone Dolmen</strong> — arret photo au milieu du paysage lunaire. <strong>~20 min</strong> jusqu'aux <strong>Cliffs of Moher</strong> en fin d'apres-midi (moins de monde). Balade le long des falaises (spectaculaire !). Puis <strong>10 min</strong> jusqu'a Doolin pour la nuit.",
+      "night": "Nuit a Doolin",
+      "nightInfo": "<strong>Ou dormir :</strong> <strong>Doolin</strong>, village intime avec les 3 pubs les plus celebres d'Irlande pour la musique trad (Gus O'Connor's, McGann's, McDermott's). Les enfants sont bienvenus. B&B chaleureux. Ambiance magique le soir avec les sessions musicales. Grotte de Doolin aussi a voir (stalactite geante de 7,3m, 45 min). Sessions musique des 20-21h, enfants bienvenus en debut de soiree.",
+      "rainyDay": "<strong>Doolin Cave</strong> (plus grande stalactite libre d'Europe, visite guidee 45 min, 125 marches — ok des 7-8 ans, limite pour le 5 ans) · Aillwee Cave est deja au programme et couvre bien la pluie",
+      "distance": "~65 km",
+      "driveTime": "~1h46",
+      "highlight": "Journee phare",
+      "mapCenter": {
+        "lat": 52.9719,
+        "lng": -9.4265
+      },
+      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Cliffs-Of-Moher-OBriens-From-South.JPG",
+      "mapDesc": "Aillwee Cave, Poulnabrone, Cliffs of Moher, Doolin",
+      "stops": [
+        {
+          "name": "Aillwee Cave & rapaces",
+          "desc": "Grotte calcaire + spectacle de vol de rapaces (aigles, faucons). Les enfants adorent ! Famille ~71 EUR (grotte + rapaces). Les enfants peuvent tenir les oiseaux !",
+          "icon": "fa-hill-rockslide",
+          "iconClass": "nature",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/0/02/Aillwee_cave.jpg",
+          "gmaps": "https://maps.google.com/?q=53.089167,-9.143815",
+          "web": "https://aillweeburrenexperience.ie/",
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212514-d214756-Reviews-Aillwee_Cave-Ballyvaughan_The_Burren_County_Clare.html",
+          "routard": "https://www.routard.com/guide_voyage_lieu/3409-burren.htm"
+        },
+        {
+          "name": "Poulnabrone Dolmen",
+          "desc": "Dolmen de 4200-2900 av. J.-C. au milieu du paysage lunaire du Burren. Acces libre.",
+          "icon": "fa-landmark",
+          "iconClass": "monument",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/7/75/Paulnabrone.jpg",
+          "gmaps": "https://maps.google.com/?q=53.0487,-9.1400",
+          "web": null,
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186595-d526251-Reviews-Poulnabrone_Dolmen-County_Clare.html",
+          "routard": "https://www.routard.com/guide_voyage_lieu/3409-burren.htm"
+        },
+        {
+          "name": "Cliffs of Moher",
+          "desc": "Falaises de 214m sur 8 km. Centre Atlantic Edge. Macareux en aout. Arriver en fin de journee ! Parking officiel : 8 EUR/pers. <strong>Bon plan</strong> : parking fermier 800m avant (direction Liscannor) a 2 EUR/vehicule. Coupe-vent indispensable. Rester dans la zone balisee avec les enfants.",
+          "icon": "fa-mountain-sun",
+          "iconClass": "nature",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Cliffs-Of-Moher-OBriens-From-South.JPG",
+          "gmaps": "https://maps.google.com/?q=52.9719,-9.4265",
+          "web": "https://www.cliffsofmoher.ie/",
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g1184916-d214806-Reviews-Cliffs_of_Moher-Liscannor_County_Clare.html",
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/falaises-de-moher-cliffs-of-moher"
+        },
+        {
+          "name": "Doolin",
+          "desc": "Village mythique de la musique traditionnelle. Pubs legendaires. Enfants bienvenus.",
+          "icon": "fa-music",
+          "iconClass": "culture",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/f/f7/095_Fisher_Street_in_Doolin.jpg",
+          "gmaps": "https://maps.google.com/?q=53.016,-9.377",
+          "web": "https://doolin.ie/",
+          "tripadvisor": "https://www.tripadvisor.com/Tourism-g214506-Doolin_The_Burren_County_Clare-Vacations.html",
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/doolin-dulainn"
+        }
+      ],
+      "schedule": [
+        { "time": "9h00", "label": "Depart de Galway", "icon": "fa-car", "duration": null },
+        { "time": "9h50", "label": "Aillwee Cave + spectacle rapaces", "icon": "fa-hill-rockslide", "duration": "2h" },
+        { "time": "12h00", "label": "Route vers Poulnabrone", "icon": "fa-car", "duration": null },
+        { "time": "12h30", "label": "Poulnabrone Dolmen (arret photo)", "icon": "fa-landmark", "duration": "20min" },
+        { "time": "13h00", "label": "Pique-nique dans le Burren", "icon": "fa-utensils", "duration": "45min" },
+        { "time": "14h00", "label": "Route vers les Cliffs", "icon": "fa-car", "duration": null },
+        { "time": "14h20", "label": "Cliffs of Moher (balade le long des falaises)", "icon": "fa-mountain-sun", "duration": "1h30" },
+        { "time": "16h00", "label": "Route vers Doolin", "icon": "fa-car", "duration": null },
+        { "time": "16h10", "label": "Installation a Doolin", "icon": "fa-bed", "duration": "30min" },
+        { "time": "17h00", "label": "Balade vers le port de Doolin", "icon": "fa-camera", "duration": "45min" },
+        { "time": "18h30", "label": "Diner a Doolin", "icon": "fa-utensils", "duration": "1h30" },
+        { "time": "20h30", "label": "Session musique trad (Gus O'Connor's)", "icon": "fa-music", "duration": "1h" }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Aillwee Cave + rapaces (famille)", "amount": 71 },
+          { "label": "Parking Cliffs of Moher (fermier)", "amount": 2 },
+          { "label": "Pique-nique / dejeuner", "amount": 20 },
+          { "label": "Diner a Doolin", "amount": 60 },
+          { "label": "Carburant", "amount": 10 }
+        ],
+        "total": 163,
+        "notes": "Parking fermier 800m avant les Cliffs (direction Liscannor) a 2 EUR/vehicule au lieu de 8 EUR/pers au parking officiel. Economie de 30 EUR pour une famille de 4."
+      },
+      "dayRoute": [
+        [53.2718, -9.0530],
+        [53.0892, -9.1438],
+        [53.0487, -9.1400],
+        [52.9719, -9.4265],
+        [53.0160, -9.3770]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Aillwee Cave & rapaces",
+          "icon": "fa-hill-rockslide",
+          "tips": [
+            "Reserver en ligne pour eviter l'attente (surtout en aout)",
+            "Prevoir un pull : 10 degres dans la grotte",
+            "Les enfants peuvent tenir les rapaces sur le bras (moment fort !)",
+            "Combo grotte + rapaces plus avantageux qu'achete separement"
+          ]
+        },
+        {
+          "stop": "Poulnabrone Dolmen",
+          "icon": "fa-landmark",
+          "tips": [
+            "Acces libre et gratuit, petit parking a cote",
+            "Sol irregulier : bonnes chaussures recommandees",
+            "Arret rapide (15-20 min suffisent)"
+          ]
+        },
+        {
+          "stop": "Cliffs of Moher",
+          "icon": "fa-mountain-sun",
+          "tips": [
+            "Parking fermier 800m avant (dir. Liscannor) : 2 EUR/vehicule",
+            "Coupe-vent indispensable, meme en aout",
+            "Rester dans la zone balisee avec les enfants (pas de barriere par endroits)",
+            "Arriver apres 16h pour moins de monde",
+            "Macareux visibles en aout pres de O'Brien's Tower"
+          ]
+        },
+        {
+          "stop": "Doolin",
+          "icon": "fa-music",
+          "tips": [
+            "Sessions musique des 20h-21h (Gus O'Connor's, McGann's, McDermott's)",
+            "Enfants bienvenus en debut de soiree dans les pubs",
+            "Reserver le B&B a l'avance, Doolin est tres demande en aout"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Cote du Clare & retour Galway",
+      "date": "Mercredi 19 aout",
+      "routeIcon": "fa-umbrella-beach",
+      "routeDesc": "Doolin → Lahinch → Galway · ~1h19 de route",
+      "morning": "<strong>Matin tranquille</strong> a Doolin : balade vers le port, vue sur les Iles d'Aran. Puis petite route cotiere (<strong>14 min</strong>) via les <strong>cascades d'Ennistymon</strong> jusqu'a <strong>Lahinch Beach</strong> — grande plage surveillee, parfaite pour les enfants. Pique-nique ou fish & chips sur la plage. <strong>Apres-midi</strong> : <strong>~1h</strong> de route vers Galway via N85/M18. Arrivee a Galway vers 16h. <strong>Salthill Promenade</strong> avec les enfants, tradition de « kicker la plaque » au bout. <strong>Atlantaquaria</strong> en option si la meteo est maussade (petit aquarium, ~1h, bassin tactile — dernier accès 16h). Soiree : diner chez McDonagh's et deuxieme soiree musicale dans les pubs.",
+      "night": "Nuit a Galway (2e nuit)",
+      "nightInfo": "<strong>Retour au meme logement !</strong> Pas de valises a refaire. Soiree tranquille a Salthill ou dans le Latin Quarter. Avantage des 2 nuits : on profite de Galway sans se presser.",
+      "rainyDay": "<strong>Atlantaquaria</strong> (bassin tactile, ~1h, famille ~45 EUR, ferme lundi) · <strong>Galway City Museum</strong> (gratuit, 30-45 min) · <strong>Leisureland Salthill</strong> (piscine/toboggan)",
+      "distance": "~75 km",
+      "driveTime": "~1h19",
+      "highlight": null,
+      "mapCenter": {
+        "lat": 53.2580,
+        "lng": -9.0847
+      },
+      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lahinch_Beach%2C_March_2012.JPG",
+      "mapDesc": "Doolin, Ennistymon, Lahinch, Salthill, Atlantaquaria",
+      "stops": [
+        {
+          "name": "Cascades d'Ennistymon",
+          "desc": "Cascade en plein centre du bourg colore. Arret rapide sur la route.",
+          "icon": "fa-water",
+          "iconClass": "nature",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Ennistymon_-_Falls.jpg",
+          "gmaps": "https://maps.google.com/?q=52.94,-9.29",
+          "web": null,
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212534-d18936468-Reviews-Ennistymon_Falls-Ennistymon_County_Clare.html",
+          "routard": null
+        },
+        {
+          "name": "Lahinch Beach",
+          "desc": "Grande plage de sable surveillee en ete. Capitale du surf en Irlande. Parfaite pour les enfants. Aire de jeux juste a cote de la plage. Section baignade surveillee separee du surf. Cours de surf famille possibles des 8 ans.",
+          "icon": "fa-water",
+          "iconClass": "beach",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lahinch_Beach%2C_March_2012.JPG",
+          "gmaps": "https://maps.google.com/?q=52.937,-9.345",
+          "web": null,
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212533-d3458853-Reviews-Lahinch_Beach-Lahinch_County_Clare.html",
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/lahinch-an-leacht"
+        },
+        {
+          "name": "Salthill Promenade",
+          "desc": "Front de mer de 2 km. Tradition de « kicker la plaque ». Plongeoir de Blackrock.",
+          "icon": "fa-person-swimming",
+          "iconClass": "beach",
+          "photo": null,
+          "gmaps": "https://maps.google.com/?q=53.2580,-9.0847",
+          "web": null,
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186609-d215937-Reviews-Salthill_Promenade-Galway_County_Galway_Western_Ireland.html",
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-galway/salthill"
+        },
+        {
+          "name": "Galway Atlantaquaria",
+          "desc": "Aquarium national d'Irlande. Bassin tactile (raies, crabes) a hauteur d'enfant. ~1h de visite. <strong>Ideal en plan B pluie</strong> — petit mais les enfants de 5-8 ans adorent les bassins tactiles. Famille ~45 EUR. Ferme le lundi. Dernier acces 16h en semaine.",
+          "icon": "fa-fish",
+          "iconClass": "family",
+          "photo": null,
+          "gmaps": "https://maps.google.com/?q=53.2598,-9.0741",
+          "web": "https://nationalaquarium.ie/",
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186609-d215896-Reviews-Galway_Atlantaquaria-Galway_County_Galway_Western_Ireland.html",
+          "routard": null
+        }
+      ],
+      "schedule": [
+        { "time": "10h00", "label": "Balade au port de Doolin, vue Iles d'Aran", "icon": "fa-camera", "duration": "45min" },
+        { "time": "10h45", "label": "Route vers Ennistymon", "icon": "fa-car", "duration": null },
+        { "time": "11h00", "label": "Cascades d'Ennistymon (arret rapide)", "icon": "fa-water", "duration": "15min" },
+        { "time": "11h15", "label": "Route vers Lahinch", "icon": "fa-car", "duration": null },
+        { "time": "11h30", "label": "Lahinch Beach (baignade, jeux, pique-nique)", "icon": "fa-umbrella-beach", "duration": "2h30" },
+        { "time": "14h00", "label": "Route vers Galway (N85/M18)", "icon": "fa-car", "duration": null },
+        { "time": "15h00", "label": "Arrivee Galway, Salthill Promenade", "icon": "fa-person-swimming", "duration": "1h" },
+        { "time": "16h00", "label": "Atlantaquaria (optionnel, si pluie)", "icon": "fa-fish", "duration": "1h" },
+        { "time": "17h30", "label": "Repos a l'hebergement", "icon": "fa-bed", "duration": "30min" },
+        { "time": "18h30", "label": "Diner chez McDonagh's ou Latin Quarter", "icon": "fa-utensils", "duration": "1h" },
+        { "time": "20h00", "label": "Soiree musicale (2e soir a Galway)", "icon": "fa-music", "duration": "1h" }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Dejeuner pique-nique / fish & chips Lahinch", "amount": 25 },
+          { "label": "Atlantaquaria (optionnel, famille)", "amount": 45 },
+          { "label": "Diner Galway", "amount": 50 },
+          { "label": "Carburant", "amount": 10 }
+        ],
+        "total": 130,
+        "notes": "Budget Atlantaquaria optionnel (uniquement si pluie). Ferme le lundi (pas un probleme, on est mercredi). Sans Atlantaquaria : 85 EUR."
+      },
+      "dayRoute": [
+        [53.0160, -9.3770],
+        [52.9400, -9.2900],
+        [52.9370, -9.3450],
+        [53.2580, -9.0847],
+        [53.2598, -9.0741],
+        [53.2719, -9.0530]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Lahinch Beach",
+          "icon": "fa-water",
+          "tips": [
+            "Section baignade surveillee separee de la zone surf",
+            "Aire de jeux juste a cote de la plage",
+            "Cours de surf possibles des 8 ans (reserver la veille)",
+            "Fish & chips sur place ou pique-nique sur l'herbe"
+          ]
+        },
+        {
+          "stop": "Salthill Promenade",
+          "icon": "fa-person-swimming",
+          "tips": [
+            "Tradition locale : kicker la plaque au bout de la promenade",
+            "Promenade de 2 km, plongeoir de Blackrock pour les plus courageux",
+            "Glaces chez Salthill Stores"
+          ]
+        },
+        {
+          "stop": "Galway Atlantaquaria",
+          "icon": "fa-fish",
+          "tips": [
+            "Ideal en plan B pluie (petit mais bien fait)",
+            "Bassins tactiles a hauteur d'enfant (raies, crabes)",
+            "Ferme le lundi, dernier acces 16h en semaine",
+            "Prevoir environ 1h de visite"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "title": "Connemara & Sky Road",
+      "date": "Jeudi 20 aout",
+      "routeIcon": "fa-panorama",
+      "routeDesc": "Galway → Roundstone → Clifden → Sky Road · ~1h31 de route",
+      "morning": "Depart de Galway vers 10h. Route scenique (<strong>1h07</strong>) vers <strong>Clifden</strong> via la cote du Connemara. Arret a <strong>Roundstone</strong>, village de pecheurs idyllique (atelier de bodhran). Puis <strong>Dog's Bay</strong> — plage de sable blanc corallien, eau turquoise. Dejeuner a Clifden (Mitchell's, Lowry's). <strong>Apres-midi</strong> : <strong>Sky Road</strong>, boucle panoramique de 12 km (<strong>24 min</strong> + arrets photos). Vues epoustouflantes sur l'ocean et les iles. <em>Le Connemara Pony Show a lieu le 3e jeudi d'aout a Clifden — ca pourrait etre aujourd'hui !</em>",
+      "night": "Nuit a Clifden",
+      "nightInfo": "<strong>Ou dormir :</strong> <strong>Clifden</strong>, « capitale du Connemara ». Ville coloree avec bons restaurants. Station House Hotel bien place. Soiree a pied dans les rues animees. <strong>Connemara Pony Show</strong> : le 3e jeudi d'aout a Clifden, evenement incontournable si les dates coincident !",
+      "rainyDay": "<strong>Killary Fjord Boat</strong> depuis Leenane (40 min de Clifden, 90 min de croisiere en bateau couvert sur le seul fjord d'Irlande — les enfants peuvent « piloter », atmospherique sous la pluie, famille ~60 EUR) · <strong>Dan O'Hara's Homestead</strong> (7 km de Clifden, partie musee interieure + AV, tracteur si ca se degage)",
+      "distance": "~85 km",
+      "driveTime": "~1h31",
+      "highlight": "Journee paysages",
+      "mapCenter": {
+        "lat": 53.494,
+        "lng": -10.093
+      },
+      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sky_Road_Clifden.jpg",
+      "mapDesc": "Roundstone, Dog's Bay, Clifden, Sky Road",
+      "stops": [
+        {
+          "name": "Roundstone",
+          "desc": "Village de pecheurs idyllique du Connemara. Atelier de bodhran de Malachy Kearns, l'un des derniers fabricants artisanaux d'Irlande.",
+          "icon": "fa-palette",
+          "iconClass": "culture",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/3/31/Cloch_na_R%C3%B3n_-_geograph.org.uk_-_12397.jpg",
+          "gmaps": "https://maps.google.com/?q=53.3957,-9.9203",
+          "web": null,
+          "tripadvisor": null,
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron"
+        },
+        {
+          "name": "Dog's Bay & Gurteen Bay",
+          "desc": "Plages jumelles de sable blanc corallien. Eau turquoise. Parmi les plus belles d'Irlande. Tour de la presqu'ile possible en 2h a pied.",
+          "icon": "fa-umbrella-beach",
+          "iconClass": "beach",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Dog%27s_Bay_Beach%2C_from_the_headland_-_geograph.org.uk_-_1297055.jpg",
+          "gmaps": "https://maps.google.com/?q=53.3779,-9.9636",
+          "web": null,
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g551539-d7106495-Reviews-Dog_s_Bay_Beach-Roundstone_County_Galway_Western_Ireland.html",
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron/dog-s-bay-strand"
+        },
+        {
+          "name": "Sky Road",
+          "desc": "Boucle panoramique de 12 km au-dessus de Clifden. Vues epoustouflantes sur l'ocean et les iles. Privilegier la Upper Sky Road pour les plus belles vues. <strong>Ideal au coucher du soleil</strong> (vers 17-18h). Route etroite, rouler lentement.",
+          "icon": "fa-panorama",
+          "iconClass": "nature",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sky_Road_Clifden.jpg",
+          "gmaps": "https://maps.google.com/?q=53.5007,-10.0965",
+          "web": null,
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g211883-d4442921-Reviews-Sky_Road-Clifden_County_Galway_Western_Ireland.html",
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan"
+        },
+        {
+          "name": "Clifden",
+          "desc": "Capitale du Connemara. Rues colorees, bons restaurants, ambiance detendue.",
+          "icon": "fa-mug-hot",
+          "iconClass": "food",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b8/ClifdenOverview.JPG",
+          "gmaps": "https://maps.google.com/?q=53.4333,-10.0167",
+          "web": null,
+          "tripadvisor": null,
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan"
+        }
+      ],
+      "schedule": [
+        { "time": "10h00", "label": "Depart Galway, route vers Roundstone", "icon": "fa-car", "duration": null },
+        { "time": "10h45", "label": "Arret Roundstone (village, atelier bodhran)", "icon": "fa-palette", "duration": "30min" },
+        { "time": "11h30", "label": "Dog's Bay (plage de sable blanc)", "icon": "fa-umbrella-beach", "duration": "1h" },
+        { "time": "12h30", "label": "Route vers Clifden", "icon": "fa-car", "duration": null },
+        { "time": "13h00", "label": "Dejeuner a Clifden", "icon": "fa-utensils", "duration": "1h" },
+        { "time": "14h00", "label": "Balade dans Clifden", "icon": "fa-camera", "duration": "30min" },
+        { "time": "14h30", "label": "Connemara Pony Show (si 3e jeudi d'aout)", "icon": "fa-camera", "duration": "1h30" },
+        { "time": "16h30", "label": "Sky Road (boucle panoramique)", "icon": "fa-panorama", "duration": "1h" },
+        { "time": "17h30", "label": "Retour Clifden, installation", "icon": "fa-bed", "duration": "30min" },
+        { "time": "18h30", "label": "Diner a Clifden", "icon": "fa-utensils", "duration": "1h15" }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Dejeuner Clifden (Mitchell's ou Lowry's)", "amount": 45 },
+          { "label": "Diner Clifden", "amount": 50 },
+          { "label": "Carburant", "amount": 12 }
+        ],
+        "total": 107,
+        "notes": "Journee economique : Dog's Bay, Sky Road et Roundstone sont gratuits. Le Connemara Pony Show est gratuit aussi."
+      },
+      "dayRoute": [
+        [53.2719, -9.0530],
+        [53.3957, -9.9203],
+        [53.3779, -9.9636],
+        [53.4333, -10.0167],
+        [53.5007, -10.0965],
+        [53.4333, -10.0167]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Roundstone",
+          "icon": "fa-palette",
+          "tips": [
+            "Atelier de bodhran de Malachy Kearns : visite rapide et gratuite",
+            "Petit port photogenique, ideal pour une pause"
+          ]
+        },
+        {
+          "stop": "Dog's Bay & Gurteen Bay",
+          "icon": "fa-umbrella-beach",
+          "tips": [
+            "Sable blanc corallien, parmi les plus belles plages d'Irlande",
+            "Parking gratuit en haut de la plage",
+            "Tour de la presqu'ile possible en 2h a pied (boucle facile)",
+            "Eau froide meme en aout, prevoir des serviettes chaudes"
+          ]
+        },
+        {
+          "stop": "Sky Road",
+          "icon": "fa-panorama",
+          "tips": [
+            "Prendre la Upper Sky Road pour les plus belles vues",
+            "Ideal au coucher du soleil (vers 17-18h en aout)",
+            "Route etroite : rouler lentement et se ranger pour laisser passer",
+            "Plusieurs points d'arret photo avec vue sur les iles"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "title": "Connemara sauvage & retour Est",
+      "date": "Vendredi 21 aout",
+      "routeIcon": "fa-road",
+      "routeDesc": "Clifden → Athlone · ~2h06 de route",
+      "morning": "<strong>Matin</strong> : derniere balade a Clifden ou detour par <strong>Letterfrack</strong> et le <strong>Parc National du Connemara</strong> (sentier Diamond Hill, 1h30 facile, vue a 360°). Dejeuner a Clifden. <strong>Apres-midi</strong> : route vers l'est via <strong>Maam Cross</strong> et les paysages de lacs et tourbieres (<strong>~2h06</strong>). Pause cafe a <strong>Oughterard</strong> a mi-chemin (~1h de Clifden) — vrai village avec cafes et commerces, ideal pour couper le trajet. Arrivee a <strong>Athlone</strong> vers 17h. Balade au bord du Shannon, croisiere Viking (75 min, replique de drakkar, epees et chapeaux pour les enfants !). Diner dans un pub au bord de l'eau. <strong>Sean's Bar</strong> pour les parents apres le coucher des enfants.",
+      "night": "Nuit a Athlone",
+      "nightInfo": "<strong>Ou dormir :</strong> Athlone, ville agreable au bord du Shannon. Radisson Blu ou Sheraton. <strong>Etape strategique</strong> : demain c'est la journee histoire (Trim Castle, Hill of Tara) puis l'hotel aeroport. <strong>⚠️ Athlone Castle ferme pour renovation jusqu'a automne 2026</strong> — ne comptez pas dessus.",
+      "rainyDay": "Si Viking Tours annule (bateau ouvert) : <strong>Sean's Bar</strong> (plus vieux pub du monde, 10 min de curiosite avec les enfants) · Privilegiez plutot les activites couvertes du matin au Connemara (Killary Fjord, Dan O'Hara) avant de prendre la route",
+      "distance": "~164 km",
+      "driveTime": "~2h06",
+      "highlight": null,
+      "mapCenter": {
+        "lat": 53.4233,
+        "lng": -7.9424
+      },
+      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/b/b8/ClifdenOverview.JPG",
+      "mapDesc": "Letterfrack, Connemara, Maam Cross, Athlone",
+      "stops": [
+        {
+          "name": "Parc National du Connemara",
+          "desc": "3 sentiers : Sruffaunboy (1,5 km, tres facile, platelage bois), Lower Diamond Hill (3 km, faisable des 5-6 ans), Upper (3,8 km, sommet 442m). Gratuit. Demonstrations de chiens de berger en saison.",
+          "icon": "fa-mountain-sun",
+          "iconClass": "nature",
+          "photo": null,
+          "gmaps": "https://maps.google.com/?q=53.5520,-9.9440",
+          "web": "https://www.connemaranationalpark.ie/",
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186609-d546269-Reviews-Connemara_National_Park_Visitor_Centre-Galway_County_Galway_Western_Ireland.html",
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/letterfrack"
+        },
+        {
+          "name": "Viking Tours Athlone",
+          "desc": "Croisiere en replique de drakkar viking sur le Shannon (75 min). Les enfants peuvent piloter le bateau ! Casques et epees vikings en vente. Prevoir 75 min.",
+          "icon": "fa-ship",
+          "iconClass": "culture",
+          "photo": null,
+          "gmaps": "https://maps.google.com/?q=53.4232,-7.9408",
+          "web": "https://www.vikingtoursireland.ie/",
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212091-d1119252-Reviews-Viking_Tours-Athlone_County_Westmeath.html",
+          "routard": null
+        }
+      ],
+      "schedule": [
+        { "time": "9h30", "label": "Parc National Connemara / Diamond Hill", "icon": "fa-mountain-sun", "duration": "1h30" },
+        { "time": "11h00", "label": "Retour Clifden, dernier cafe", "icon": "fa-mug-hot", "duration": "30min" },
+        { "time": "11h30", "label": "Depart Clifden vers l'est (via Maam Cross)", "icon": "fa-car", "duration": null },
+        { "time": "12h30", "label": "Pause cafe Oughterard", "icon": "fa-mug-hot", "duration": "20min" },
+        { "time": "12h50", "label": "Route Oughterard - Athlone", "icon": "fa-car", "duration": null },
+        { "time": "14h00", "label": "Arrivee Athlone, installation", "icon": "fa-bed", "duration": "30min" },
+        { "time": "14h30", "label": "Dejeuner a Athlone", "icon": "fa-utensils", "duration": "1h" },
+        { "time": "16h00", "label": "Viking Tours (croisiere Shannon)", "icon": "fa-ship", "duration": "1h15" },
+        { "time": "17h30", "label": "Balade au bord du Shannon", "icon": "fa-camera", "duration": "30min" },
+        { "time": "18h30", "label": "Diner pub au bord de l'eau", "icon": "fa-utensils", "duration": "1h15" }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Connemara National Park (gratuit)", "amount": 0 },
+          { "label": "Carburant Clifden - Athlone", "amount": 25 },
+          { "label": "Dejeuner Athlone", "amount": 40 },
+          { "label": "Viking Tours (famille)", "amount": 50 },
+          { "label": "Diner Athlone", "amount": 50 }
+        ],
+        "total": 165,
+        "notes": "Reserver Viking Tours en ligne. Si le bateau est annule (pluie/vent), Sean's Bar est une alternative amusante pour un passage rapide avec les enfants."
+      },
+      "dayRoute": [
+        [53.4333, -10.0167],
+        [53.5520, -9.9440],
+        [53.4333, -10.0167],
+        [53.4300, -9.4300],
+        [53.4232, -7.9408]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Parc National du Connemara",
+          "icon": "fa-mountain-sun",
+          "tips": [
+            "Sentier Sruffaunboy (1,5 km, platelage bois) : faisable avec un enfant de 5 ans",
+            "Lower Diamond Hill (3 km) : faisable des 5-6 ans avec pauses",
+            "Upper Diamond Hill (sommet 442m) : plutot pour le 8 ans, 2h A/R",
+            "Gratuit, parking gratuit aussi",
+            "Demonstrations de chiens de berger en saison"
+          ]
+        },
+        {
+          "stop": "Viking Tours Athlone",
+          "icon": "fa-ship",
+          "tips": [
+            "Reserver en ligne a l'avance (places limitees)",
+            "Les enfants peuvent piloter le bateau (moment fort)",
+            "Casques et epees vikings en vente a bord",
+            "75 min de croisiere, prevoir coupe-vent",
+            "Bateau ouvert : annulation possible si mauvais temps"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "title": "Chateaux & colline sacree",
+      "date": "Samedi 22 aout",
+      "routeIcon": "fa-chess-rook",
+      "routeDesc": "Athlone → Trim Castle → Hill of Tara → Airport · 2h15 de route",
+      "morning": "Depart d'Athlone vers 9h. <strong>1h12</strong> de route jusqu'a <strong>Trim Castle</strong>, le plus grand chateau normand d'Irlande (decor de Braveheart !). Visite du donjon et des remparts (1h). Puis <strong>21 min</strong> jusqu'a <strong>Hill of Tara</strong>, colline sacree des Hauts Rois d'Irlande — vue sur 40% de l'ile, Pierre du Destin (45 min). Dejeuner dans le coin. Puis <strong>42 min</strong> vers l'hotel de l'aeroport. Arrivee en debut d'apres-midi.",
+      "night": "Nuit hotel aeroport Dublin",
+      "nightInfo": "<strong>Ou dormir :</strong> Hotel <strong>a cote du terminal</strong>. <strong>Crowne Plaza Dublin Airport</strong> (passage couvert vers T1 !), Carlton Hotel, ou Holiday Inn Express. Preparez valises et passeports ce soir. <strong>Reveil a 5h00</strong>. Certains hotels ont piscine — parfait pour occuper les enfants l'apres-midi.",
+      "distance": "~155 km",
+      "driveTime": "~2h15",
+      "highlight": null,
+      "mapCenter": {
+        "lat": 53.5455,
+        "lng": -6.7882
+      },
+      "mapImg": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Trim_Castle_6.jpg",
+      "mapDesc": "Trim Castle, Hill of Tara, hotel aeroport",
+      "stops": [
+        {
+          "name": "Trim Castle",
+          "desc": "Plus grand chateau anglo-normand d'Irlande (XIIe). Donjon de 20m, decor de Braveheart. Impressionnant ! Famille 2A+2E ~10 EUR. Visite guidee du donjon 45 min (obligatoire). Brochure en francais. Jardins et enceinte gratuits, belle balade le long de la Boyne.",
+          "icon": "fa-chess-rook",
+          "iconClass": "castle",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Trim_Castle_6.jpg",
+          "gmaps": "https://maps.google.com/?q=53.5455,-6.7882",
+          "web": "https://heritageireland.ie/places-to-visit/trim-castle/",
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g644237-d525404-Reviews-Trim_Castle-Trim_County_Meath.html",
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/environs-de-dublin/trim-castle"
+        },
+        {
+          "name": "Hill of Tara",
+          "desc": "Colline sacree des Hauts Rois d'Irlande. Vue sur 40% de l'ile. Pierre du Destin (Lia Fail). Gratuit (Heritage Card). Centre d'interpretation. Les enfants adorent devaler les collines. 30-45 min suffisent.",
+          "icon": "fa-crown",
+          "iconClass": "monument",
+          "photo": null,
+          "gmaps": "https://maps.google.com/?q=53.5789,-6.6113",
+          "web": "https://heritageireland.ie/places-to-visit/hill-of-tara/",
+          "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186628-d526324-Reviews-Hill_of_Tara_Temair-County_Meath.html",
+          "routard": null
+        }
+      ],
+      "schedule": [
+        { "time": "9h00", "label": "Depart d'Athlone", "icon": "fa-car", "duration": null },
+        { "time": "10h15", "label": "Trim Castle (visite guidee donjon)", "icon": "fa-chess-rook", "duration": "1h" },
+        { "time": "11h15", "label": "Balade remparts et jardins de Trim", "icon": "fa-camera", "duration": "30min" },
+        { "time": "11h45", "label": "Route vers Hill of Tara", "icon": "fa-car", "duration": null },
+        { "time": "12h05", "label": "Hill of Tara (colline sacree, Pierre du Destin)", "icon": "fa-crown", "duration": "45min" },
+        { "time": "13h00", "label": "Dejeuner dans les environs", "icon": "fa-utensils", "duration": "1h" },
+        { "time": "14h00", "label": "Route vers hotel aeroport", "icon": "fa-car", "duration": null },
+        { "time": "14h45", "label": "Arrivee hotel aeroport, installation", "icon": "fa-bed", "duration": "30min" },
+        { "time": "15h15", "label": "Piscine hotel (si disponible)", "icon": "fa-person-swimming", "duration": "1h30" },
+        { "time": "17h00", "label": "Preparation valises et passeports", "icon": "fa-suitcase", "duration": "45min" },
+        { "time": "18h00", "label": "Diner a l'hotel ou environs", "icon": "fa-utensils", "duration": "1h" },
+        { "time": "19h30", "label": "Coucher tot (reveil 5h00 !)", "icon": "fa-bed", "duration": null }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Trim Castle (famille 2A+2E)", "amount": 10 },
+          { "label": "Hill of Tara (gratuit, Heritage Card)", "amount": 0 },
+          { "label": "Dejeuner en route", "amount": 40 },
+          { "label": "Carburant Athlone - Dublin", "amount": 20 },
+          { "label": "Hotel aeroport (type Crowne Plaza)", "amount": 140 }
+        ],
+        "total": 210,
+        "notes": "Heritage Card (40 EUR/adulte) rentable si vous visitez aussi Newgrange ou d'autres sites Heritage Ireland. Trim Castle seul : pas rentable."
+      },
+      "dayRoute": [
+        [53.4232, -7.9408],
+        [53.5455, -6.7882],
+        [53.5789, -6.6113],
+        [53.4264, -6.2499]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Trim Castle",
+          "icon": "fa-chess-rook",
+          "tips": [
+            "Visite guidee du donjon obligatoire (45 min), depart toutes les heures",
+            "Brochure en francais disponible a l'accueil",
+            "Jardins et enceinte exterieure gratuits, belle balade le long de la Boyne",
+            "Decor de Braveheart : les enfants adorent l'anecdote"
+          ]
+        },
+        {
+          "stop": "Hill of Tara",
+          "icon": "fa-crown",
+          "tips": [
+            "Gratuit (Heritage Card acceptee pour le centre d'interpretation)",
+            "Les enfants adorent devaler les collines en courant",
+            "Vue sur 40% de l'Irlande par temps clair",
+            "30-45 min suffisent"
+          ]
+        },
+        {
+          "stop": "Hotel aeroport",
+          "icon": "fa-bed",
+          "tips": [
+            "Crowne Plaza : passage couvert vers le Terminal 1",
+            "Preparer valises et passeports ce soir (reveil a 5h00)",
+            "Verifier si l'hotel a une piscine pour occuper les enfants",
+            "Commander le petit-dejeuner en chambre la veille si depart tres tot"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "title": "Retour vers Nimes",
+      "date": "Dimanche 23 aout",
+      "routeIcon": "fa-plane-departure",
+      "routeDesc": "Dublin → Nimes · Vol FR9776",
+      "morning": "Reveil <strong>5h00</strong>. Hotel → terminal en 5-10 min (passage couvert si Crowne Plaza). Restitution voiture <strong>NewWay</strong>. Enregistrement et securite. <strong>Arrivee a Nimes a 10h30</strong> — slan abhaile !",
+      "night": null,
+      "nightInfo": null,
+      "distance": null,
+      "driveTime": "5 min",
+      "highlight": null,
+      "mapCenter": {
+        "lat": 53.4264,
+        "lng": -6.2499
+      },
+      "mapImg": "",
+      "mapDesc": "Vol retour vers Nimes",
+      "stops": [
+        {
+          "name": "Vol Dublin → Nimes",
+          "desc": "Depart 07h10, arrivee 10h30. Fin d'une semaine irlandaise inoubliable !",
+          "icon": "fa-plane",
+          "iconClass": "city",
+          "photo": null,
+          "gmaps": null,
+          "web": null,
+          "tripadvisor": null,
+          "routard": null
+        }
+      ],
+      "schedule": [
+        { "time": "5h00", "label": "Reveil", "icon": "fa-bed", "duration": null },
+        { "time": "5h15", "label": "Hotel - Terminal (passage couvert)", "icon": "fa-car", "duration": "10min" },
+        { "time": "5h30", "label": "Restitution voiture NewWay", "icon": "fa-car", "duration": "15min" },
+        { "time": "5h45", "label": "Enregistrement et securite", "icon": "fa-plane-departure", "duration": "45min" },
+        { "time": "6h30", "label": "Attente en zone d'embarquement", "icon": "fa-clock", "duration": "30min" },
+        { "time": "7h10", "label": "Vol FR9776 Dublin - Nimes", "icon": "fa-plane", "duration": "2h20" },
+        { "time": "10h30", "label": "Arrivee a Nimes (heure locale)", "icon": "fa-plane-arrival", "duration": null }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Petit-dejeuner (si non inclus)", "amount": 20 }
+        ],
+        "total": 20,
+        "notes": "Verifier si le petit-dejeuner est inclus dans la nuit d'hotel. Sinon, prevoir des provisions la veille."
+      },
+      "dayRoute": [
+        [53.4264, -6.2499]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Vol Dublin - Nimes",
+          "icon": "fa-plane",
+          "tips": [
+            "Crowne Plaza : passage couvert vers le Terminal 1, pas besoin de navette",
+            "Restitution NewWay : rendre la voiture plein fait, garder le recu",
+            "Arriver au terminal 2h avant le vol (5h10 au plus tard)",
+            "Ryanair : respecter les dimensions bagages cabine pour eviter les frais",
+            "Prevoir de quoi occuper les enfants dans l'avion (cahiers, tablette)"
+          ]
+        }
+      ]
+    }
+  ],
+  "route": [
+    [53.4264, -6.2499],
+    [53.3498, -6.2603],
+    [53.4233, -7.9424],
+    [53.2718, -9.053],
+    [53.078, -9.065],
+    [53.0487, -9.1398],
+    [52.9719, -9.4265],
+    [53.017, -9.378],
+    [52.94, -9.29],
+    [52.937, -9.345],
+    [53.2580, -9.0847],
+    [53.2718, -9.053],
+    [53.398, -9.922],
+    [53.387, -9.963],
+    [53.488, -10.02],
+    [53.494, -10.093],
+    [53.488, -10.02],
+    [53.552, -9.944],
+    [53.4233, -7.9424],
+    [53.5455, -6.7882],
+    [53.5789, -6.6113],
+    [53.4264, -6.2499]
+  ],
+  "pois": {
+    "castles": [
+      {
+        "name": "Dublin Castle",
+        "desc": "Chateau medieval au coeur de Dublin ancien siege du pouvoir britannique",
+        "lat": 53.3429,
+        "lng": -6.2674,
+        "web": "https://www.dublincastle.ie/",
+        "gmaps": "https://maps.google.com/?q=53.3429"
+      },
+      {
+        "name": "Malahide Castle",
+        "desc": "Chateau normand du XIIe siecle entoure de jardins botaniques",
+        "lat": 53.4449,
+        "lng": -6.1632,
+        "web": "https://www.malahidecastleandgardens.ie/",
+        "gmaps": "https://maps.google.com/?q=53.4449"
+      },
+      {
+        "name": "Trim Castle",
+        "desc": "Plus grand chateau anglo-normand d'Irlande lieu de tournage de Braveheart",
+        "lat": 53.5456,
+        "lng": -6.7883,
+        "web": "https://heritageireland.ie/places-to-visit/trim-castle/",
+        "gmaps": "https://maps.google.com/?q=53.5456"
+      },
+      {
+        "name": "Kilkenny Castle",
+        "desc": "Chateau normand du XIIe siecle dominant la ville medievale de Kilkenny",
+        "lat": 52.6504,
+        "lng": -7.2494,
+        "web": "https://kilkennycastle.ie/",
+        "gmaps": "https://maps.google.com/?q=52.6504"
+      },
+      {
+        "name": "Bunratty Castle",
+        "desc": "Chateau du XVe siecle celebre pour ses banquets medievaux et son folk park",
+        "lat": 52.6983,
+        "lng": -8.813,
+        "web": "https://www.bunrattycastle.ie/",
+        "gmaps": "https://maps.google.com/?q=52.6983"
+      },
+      {
+        "name": "Dunguaire Castle",
+        "desc": "Tour fortifiee du XVIe siecle au bord de la baie de Galway",
+        "lat": 53.142,
+        "lng": -8.9307,
+        "web": "https://www.dunguairecastle.com/",
+        "gmaps": "https://maps.google.com/?q=53.1420"
+      },
+      {
+        "name": "Ashford Castle",
+        "desc": "Chateau du XIIIe siecle transforme en hotel de luxe 5 etoiles",
+        "lat": 53.5326,
+        "lng": -9.3416,
+        "web": "https://ashfordcastle.com/",
+        "gmaps": "https://maps.google.com/?q=53.5326"
+      },
+      {
+        "name": "Aughnanure Castle",
+        "desc": "Tour fortifiee du XVIe siecle des O'Flaherty",
+        "lat": 53.4261,
+        "lng": -9.3354,
+        "web": "https://heritageireland.ie/places-to-visit/aughnanure-castle/",
+        "gmaps": "https://maps.google.com/?q=53.4261"
+      },
+      {
+        "name": "Knappogue Castle",
+        "desc": "Chateau du XVe siecle restaure celebre pour ses banquets medievaux",
+        "lat": 52.7939,
+        "lng": -8.8316,
+        "web": "https://www.knappoguecastle.ie/",
+        "gmaps": "https://maps.google.com/?q=52.7939"
+      },
+      {
+        "name": "Rock of Cashel",
+        "desc": "Ensemble spectaculaire de ruines medievales sur un promontoire rocheux",
+        "lat": 52.5201,
+        "lng": -7.8909,
+        "web": "https://heritageireland.ie/places-to-visit/rock-of-cashel/",
+        "gmaps": "https://maps.google.com/?q=52.5201"
+      },
+      {
+        "name": "Blarney Castle",
+        "desc": "Celebre pour la Pierre de Blarney qui donnerait le don de l'eloquence",
+        "lat": 51.9289,
+        "lng": -8.5707,
+        "web": "https://www.blarneycastle.ie/",
+        "gmaps": "https://maps.google.com/?q=51.9289"
+      },
+      {
+        "name": "Ross Castle",
+        "desc": "Tour fortifiee du XVe siecle au bord du lac de Killarney",
+        "lat": 52.0371,
+        "lng": -9.5272,
+        "web": "https://heritageireland.ie/places-to-visit/ross-castle/",
+        "gmaps": "https://maps.google.com/?q=52.0371"
+      },
+      {
+        "name": "Cahir Castle",
+        "desc": "Un des plus grands et mieux conserves chateaux d'Irlande",
+        "lat": 52.3745,
+        "lng": -7.9273,
+        "web": "https://heritageireland.ie/places-to-visit/cahir-castle/",
+        "gmaps": "https://maps.google.com/?q=52.3745"
+      },
+      {
+        "name": "Dunluce Castle",
+        "desc": "Ruines spectaculaires perchees sur une falaise de basalte",
+        "lat": 55.2107,
+        "lng": -6.5796,
+        "web": "https://www.communities-ni.gov.uk/topics/historic-environment",
+        "gmaps": "https://maps.google.com/?q=55.2107"
+      },
+      {
+        "name": "Kilkea Castle",
+        "desc": "Un des plus anciens chateaux habites d'Irlande",
+        "lat": 52.8978,
+        "lng": -6.9392,
+        "web": "https://www.kilkeacastle.ie/",
+        "gmaps": "https://maps.google.com/?q=52.8978"
+      },
+      {
+        "name": "Birr Castle",
+        "desc": "Chateau du XVIIe siecle celebre pour ses jardins et son telescope geant",
+        "lat": 53.0961,
+        "lng": -7.9138,
+        "web": "https://birrcastle.com/",
+        "gmaps": "https://maps.google.com/?q=53.0961"
+      },
+      {
+        "name": "Portumna Castle",
+        "desc": "Manoir semi-fortifie du debut XVIIe Renaissance",
+        "lat": 53.0866,
+        "lng": -8.2206,
+        "web": "https://heritageireland.ie/places-to-visit/portumna-castle-and-gardens/",
+        "gmaps": "https://maps.google.com/?q=53.0866"
+      },
+      {
+        "name": "Athenry Castle",
+        "desc": "Donjon anglo-normand du XIIIe siecle bien conserve",
+        "lat": 53.2966,
+        "lng": -8.7449,
+        "web": "https://heritageireland.ie/places-to-visit/athenry-castle/",
+        "gmaps": "https://maps.google.com/?q=53.2966"
+      },
+      {
+        "name": "Dromoland Castle",
+        "desc": "Chateau du XVIe siecle transforme en hotel 5 etoiles",
+        "lat": 52.7385,
+        "lng": -8.8753,
+        "web": "https://www.dromoland.ie/",
+        "gmaps": "https://maps.google.com/?q=52.7385"
+      },
+      {
+        "name": "Leap Castle",
+        "desc": "Repute chateau le plus hante d'Irlande",
+        "lat": 53.0281,
+        "lng": -7.8085,
+        "web": "https://leapcastle.net/",
+        "gmaps": "https://maps.google.com/?q=53.0281"
+      },
+      {
+        "name": "King John's Castle",
+        "desc": "Forteresse du XIIIe siecle sur King's Island a Limerick",
+        "lat": 52.6692,
+        "lng": -8.6246,
+        "web": "https://www.kingjohnscastle.com/",
+        "gmaps": "https://maps.google.com/?q=52.6692"
+      }
+    ],
+    "monasteries": [
+      {
+        "name": "Clonmacnoise",
+        "desc": "Site monastique du VIe siecle au bord du Shannon",
+        "lat": 53.3266,
+        "lng": -7.9862,
+        "web": "https://heritageireland.ie/places-to-visit/clonmacnoise/",
+        "gmaps": "https://maps.google.com/?q=53.3266"
+      },
+      {
+        "name": "Newgrange",
+        "desc": "Tumulus neolithique de 5000 ans plus ancien que les pyramides",
+        "lat": 53.6947,
+        "lng": -6.4755,
+        "web": "https://www.newgrange.com/",
+        "gmaps": "https://maps.google.com/?q=53.6947"
+      },
+      {
+        "name": "Knowth",
+        "desc": "Tumulus neolithique plus grande collection d'art megalithique d'Europe",
+        "lat": 53.7017,
+        "lng": -6.494,
+        "web": "https://heritageireland.ie/places-to-visit/knowth/",
+        "gmaps": "https://maps.google.com/?q=53.7017"
+      },
+      {
+        "name": "Glendalough",
+        "desc": "Cite monastique du VIe siecle dans une vallee glaciaire du Wicklow",
+        "lat": 53.0114,
+        "lng": -6.3296,
+        "web": "https://heritageireland.ie/places-to-visit/glendalough/",
+        "gmaps": "https://maps.google.com/?q=53.0114"
+      },
+      {
+        "name": "Kylemore Abbey",
+        "desc": "Abbaye benedictine du XIXe siecle au bord d'un lac dans le Connemara",
+        "lat": 53.5614,
+        "lng": -9.8897,
+        "web": "https://www.kylemoreabbey.com/",
+        "gmaps": "https://maps.google.com/?q=53.5614"
+      },
+      {
+        "name": "Corcomroe Abbey",
+        "desc": "Abbaye cistercienne du XIIIe siecle dans le Burren",
+        "lat": 53.1167,
+        "lng": -9.05,
+        "web": "https://heritageireland.ie/places-to-visit/corcomroe-abbey/",
+        "gmaps": "https://maps.google.com/?q=53.1167"
+      },
+      {
+        "name": "Cong Abbey",
+        "desc": "Abbaye augustinienne du XIIe siecle celebre par The Quiet Man",
+        "lat": 53.5337,
+        "lng": -9.2826,
+        "web": "https://www.discoverireland.ie/mayo/cong-abbey",
+        "gmaps": "https://maps.google.com/?q=53.5337"
+      },
+      {
+        "name": "Ross Errilly Friary",
+        "desc": "Couvent franciscain parmi les mieux preserves d'Irlande",
+        "lat": 53.4745,
+        "lng": -9.1255,
+        "web": "https://heritageireland.ie/places-to-visit/ross-errilly-friary/",
+        "gmaps": "https://maps.google.com/?q=53.4745"
+      },
+      {
+        "name": "Jerpoint Abbey",
+        "desc": "Abbaye cistercienne du XIIe siecle avec sculptures romanes",
+        "lat": 52.5393,
+        "lng": -7.1621,
+        "web": "https://heritageireland.ie/places-to-visit/jerpoint-abbey/",
+        "gmaps": "https://maps.google.com/?q=52.5393"
+      },
+      {
+        "name": "Monasterboice",
+        "desc": "Site monastique du Ve siecle celebre pour ses hautes croix celtiques",
+        "lat": 53.7777,
+        "lng": -6.4173,
+        "web": "https://www.discoverireland.ie/louth/monasterboice-monastic-site",
+        "gmaps": "https://maps.google.com/?q=53.7777"
+      },
+      {
+        "name": "Hill of Tara",
+        "desc": "Ancien siege des Hauts Rois d'Irlande site ceremoniel",
+        "lat": 53.5789,
+        "lng": -6.6115,
+        "web": "https://heritageireland.ie/places-to-visit/hill-of-tara/",
+        "gmaps": "https://maps.google.com/?q=53.5789"
+      },
+      {
+        "name": "Skellig Michael",
+        "desc": "Monastere du VIe siecle sur un rocher isole site UNESCO",
+        "lat": 51.7704,
+        "lng": -10.5386,
+        "web": "https://heritageireland.ie/places-to-visit/skellig-michael/",
+        "gmaps": "https://maps.google.com/?q=51.7704"
+      },
+      {
+        "name": "Gallarus Oratory",
+        "desc": "Oratoire paleochretien en pierre seche sur la peninsule de Dingle",
+        "lat": 52.1738,
+        "lng": -10.3532,
+        "web": "https://heritageireland.ie/places-to-visit/gallarus-oratory/",
+        "gmaps": "https://maps.google.com/?q=52.1738"
+      },
+      {
+        "name": "Fore Abbey",
+        "desc": "Prieure benedictin medieval des Seven Wonders of Fore",
+        "lat": 53.6802,
+        "lng": -7.2292,
+        "web": "https://www.discoverireland.ie/westmeath/fore-abbey",
+        "gmaps": "https://maps.google.com/?q=53.6802"
+      },
+      {
+        "name": "Clonfert Cathedral",
+        "desc": "Cathedrale du XIIe siecle plus beau portail roman d'Irlande",
+        "lat": 53.2406,
+        "lng": -8.0581,
+        "web": "https://www.discoverireland.ie/galway/clonfert-cathedral",
+        "gmaps": "https://maps.google.com/?q=53.2406"
+      }
+    ],
+    "nature": [
+      {
+        "name": "Cliffs of Moher",
+        "desc": "Falaises de 214 m le site naturel le plus visite d'Irlande",
+        "lat": 52.9715,
+        "lng": -9.4309,
+        "web": "https://www.cliffsofmoher.ie/",
+        "gmaps": "https://maps.google.com/?q=52.9715"
+      },
+      {
+        "name": "Poulnabrone Dolmen",
+        "desc": "Dolmen neolithique iconique du Burren",
+        "lat": 53.0487,
+        "lng": -9.1398,
+        "web": "https://www.discoverireland.ie/clare/poulnabrone-dolmen",
+        "gmaps": "https://maps.google.com/?q=53.0487"
+      },
+      {
+        "name": "The Burren",
+        "desc": "Paysage karstique unique de 250 km2",
+        "lat": 53.05,
+        "lng": -9.05,
+        "web": "https://www.burrengeopark.ie/",
+        "gmaps": "https://maps.google.com/?q=53.0500"
+      },
+      {
+        "name": "Sky Road",
+        "desc": "Route panoramique spectaculaire au-dessus de la baie de Clifden",
+        "lat": 53.4933,
+        "lng": -10.1167,
+        "web": "https://www.discoverireland.ie/galway/sky-road",
+        "gmaps": "https://maps.google.com/?q=53.4933"
+      },
+      {
+        "name": "Black Head",
+        "desc": "Cap rocheux a l'extremite nord du Burren",
+        "lat": 53.1528,
+        "lng": -9.2667,
+        "web": "https://www.thewildatlanticway.com/sight/black-head/",
+        "gmaps": "https://maps.google.com/?q=53.1528"
+      },
+      {
+        "name": "Loop Head",
+        "desc": "Cap sauvage a l'extremite de la peninsule du Clare",
+        "lat": 52.5618,
+        "lng": -9.931,
+        "web": "https://www.loophead.ie/",
+        "gmaps": "https://maps.google.com/?q=52.5618"
+      },
+      {
+        "name": "Killary Harbour",
+        "desc": "Unique fjord d'Irlande 16 km de long",
+        "lat": 53.5974,
+        "lng": -9.8558,
+        "web": "https://www.discoverireland.ie/galway/killary-harbour",
+        "gmaps": "https://maps.google.com/?q=53.5974"
+      },
+      {
+        "name": "Diamond Hill",
+        "desc": "Randonnee emblematique du parc national du Connemara",
+        "lat": 53.5468,
+        "lng": -9.9475,
+        "web": "https://www.connemaranationalpark.ie/",
+        "gmaps": "https://maps.google.com/?q=53.5468"
+      },
+      {
+        "name": "Slieve League",
+        "desc": "Parmi les plus hautes falaises maritimes d'Europe 601 m",
+        "lat": 54.6368,
+        "lng": -8.6816,
+        "web": "https://www.sliabhliag.com/",
+        "gmaps": "https://maps.google.com/?q=54.6368"
+      },
+      {
+        "name": "Giant's Causeway",
+        "desc": "40 000 colonnes de basalte hexagonales site UNESCO",
+        "lat": 55.2408,
+        "lng": -6.5116,
+        "web": "https://www.nationaltrust.org.uk/giants-causeway",
+        "gmaps": "https://maps.google.com/?q=55.2408"
+      },
+      {
+        "name": "Dark Hedges",
+        "desc": "Allee de hetres du XVIIIe siecle decor de Game of Thrones",
+        "lat": 55.1329,
+        "lng": -6.3803,
+        "web": "https://www.nationaltrust.org.uk/visit/northern-ireland/the-dark-hedges",
+        "gmaps": "https://maps.google.com/?q=55.1329"
+      },
+      {
+        "name": "Ring of Kerry",
+        "desc": "Circuit panoramique de 179 km autour de la peninsule d'Iveragh",
+        "lat": 51.945,
+        "lng": -9.93,
+        "web": "https://www.ringofkerrytourism.com/",
+        "gmaps": "https://maps.google.com/?q=51.9450"
+      },
+      {
+        "name": "Dingle Peninsula",
+        "desc": "Peninsule sauvage entre montagne et ocean",
+        "lat": 52.1342,
+        "lng": -10.0587,
+        "web": "https://www.dingle-peninsula.ie/",
+        "gmaps": "https://maps.google.com/?q=52.1342"
+      },
+      {
+        "name": "Conor Pass",
+        "desc": "Col de montagne le plus haut d'Irlande 456 m",
+        "lat": 52.1566,
+        "lng": -9.9968,
+        "web": "https://www.discoverireland.ie/kerry/conor-pass",
+        "gmaps": "https://maps.google.com/?q=52.1566"
+      },
+      {
+        "name": "Ladies View",
+        "desc": "Point de vue legendaire surplombant les lacs de Killarney",
+        "lat": 51.9647,
+        "lng": -9.7264,
+        "web": "https://www.discoverireland.ie/kerry/ladies-view",
+        "gmaps": "https://maps.google.com/?q=51.9647"
+      },
+      {
+        "name": "Gap of Dunloe",
+        "desc": "Gorge etroite spectaculaire entre les MacGillycuddy's Reeks",
+        "lat": 51.9908,
+        "lng": -9.6531,
+        "web": "https://www.discoverireland.ie/kerry/gap-of-dunloe",
+        "gmaps": "https://maps.google.com/?q=51.9908"
+      },
+      {
+        "name": "Mizen Head",
+        "desc": "Point le plus au sud-ouest de l'Irlande continentale",
+        "lat": 51.4498,
+        "lng": -9.8189,
+        "web": "https://mizenhead.ie/",
+        "gmaps": "https://maps.google.com/?q=51.4498"
+      },
+      {
+        "name": "Powerscourt Waterfall",
+        "desc": "Plus haute cascade d'Irlande 121 m dans le Wicklow",
+        "lat": 53.147,
+        "lng": -6.2134,
+        "web": "https://powerscourt.com/waterfall",
+        "gmaps": "https://maps.google.com/?q=53.1470"
+      },
+      {
+        "name": "Glenveagh National Park",
+        "desc": "Plus grand parc national d'Irlande 170 km2",
+        "lat": 55.0395,
+        "lng": -7.9578,
+        "web": "https://www.glenveaghnationalpark.ie/",
+        "gmaps": "https://maps.google.com/?q=55.0395"
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Dog's Bay",
+        "desc": "Double plage de sable blanc corallien pres de Roundstone",
+        "lat": 53.3793,
+        "lng": -10.055,
+        "web": "https://www.discoverireland.ie/galway/dogs-bay-beach",
+        "gmaps": "https://maps.google.com/?q=53.3793"
+      },
+      {
+        "name": "Lahinch Beach",
+        "desc": "Station balneaire populaire et spot de surf du Clare",
+        "lat": 52.9345,
+        "lng": -9.3509,
+        "web": "https://www.discoverireland.ie/clare/lahinch-beach",
+        "gmaps": "https://maps.google.com/?q=52.9345"
+      },
+      {
+        "name": "Fanore Beach",
+        "desc": "Plage sauvage au pied du Burren",
+        "lat": 53.1175,
+        "lng": -9.2862,
+        "web": "https://www.discoverireland.ie/clare/fanore-beach",
+        "gmaps": "https://maps.google.com/?q=53.1175"
+      },
+      {
+        "name": "Kilkee Beach",
+        "desc": "Plage en fer a cheval protegee ideal familles",
+        "lat": 52.6818,
+        "lng": -9.6493,
+        "web": "https://www.discoverireland.ie/clare/kilkee-beach",
+        "gmaps": "https://maps.google.com/?q=52.6818"
+      },
+      {
+        "name": "Coral Beach",
+        "desc": "Plage unique composee de corail maerl eaux turquoise",
+        "lat": 53.2492,
+        "lng": -9.7,
+        "web": "https://www.discoverireland.ie/galway/coral-beach",
+        "gmaps": "https://maps.google.com/?q=53.2492"
+      },
+      {
+        "name": "Mannin Bay",
+        "desc": "Plage de sable blanc corallien dans le Connemara",
+        "lat": 53.4467,
+        "lng": -10.0614,
+        "web": "https://www.discoverireland.ie/galway/mannin-bay",
+        "gmaps": "https://maps.google.com/?q=53.4467"
+      },
+      {
+        "name": "Glassilaun Beach",
+        "desc": "Plage secrete de sable blanc au fond du Killary Fjord",
+        "lat": 53.6149,
+        "lng": -9.8749,
+        "web": "https://www.discoverireland.ie/galway/glassilaun-beach",
+        "gmaps": "https://maps.google.com/?q=53.6149"
+      },
+      {
+        "name": "Inch Beach",
+        "desc": "Longue plage de sable de 5 km sur la peninsule de Dingle",
+        "lat": 52.1314,
+        "lng": -9.9695,
+        "web": "https://www.discoverireland.ie/kerry/inch-beach",
+        "gmaps": "https://maps.google.com/?q=52.1314"
+      },
+      {
+        "name": "Derrynane Beach",
+        "desc": "Plage abritee cadre sublime du Ring of Kerry",
+        "lat": 51.762,
+        "lng": -10.1268,
+        "web": "https://www.discoverireland.ie/kerry/derrynane-beach",
+        "gmaps": "https://maps.google.com/?q=51.7620"
+      },
+      {
+        "name": "Keem Bay",
+        "desc": "Plage isolee au bout d'Achill Island",
+        "lat": 53.968,
+        "lng": -10.1925,
+        "web": "https://www.discoverireland.ie/mayo/keem-bay",
+        "gmaps": "https://maps.google.com/?q=53.9680"
+      },
+      {
+        "name": "Barleycove Beach",
+        "desc": "Plage sauvage de sable dore pres de Mizen Head",
+        "lat": 51.469,
+        "lng": -9.7769,
+        "web": "https://www.discoverireland.ie/cork/barleycove-beach",
+        "gmaps": "https://maps.google.com/?q=51.4690"
+      }
+    ],
+    "towns": [
+      {
+        "name": "Dublin",
+        "desc": "Capitale de l'Irlande patrimoine viking georgien et culture contemporaine",
+        "lat": 53.3498,
+        "lng": -6.2603,
+        "web": "https://www.visitdublin.com/",
+        "gmaps": "https://maps.google.com/?q=53.3498"
+      },
+      {
+        "name": "Galway",
+        "desc": "Capitale culturelle de l'ouest musique traditionnelle et festivals",
+        "lat": 53.2707,
+        "lng": -9.0568,
+        "web": "https://www.galwaytourism.ie/",
+        "gmaps": "https://maps.google.com/?q=53.2707"
+      },
+      {
+        "name": "Killarney",
+        "desc": "Porte d'entree du Ring of Kerry et du parc national",
+        "lat": 52.0599,
+        "lng": -9.5044,
+        "web": "https://www.killarney.ie/",
+        "gmaps": "https://maps.google.com/?q=52.0599"
+      },
+      {
+        "name": "Dingle",
+        "desc": "Port de peche colore sur la peninsule de Dingle",
+        "lat": 52.1409,
+        "lng": -10.2686,
+        "web": "https://www.dingle-peninsula.ie/",
+        "gmaps": "https://maps.google.com/?q=52.1409"
+      },
+      {
+        "name": "Doolin",
+        "desc": "Village musical celebre pour ses sessions traditionnelles",
+        "lat": 52.9717,
+        "lng": -9.3993,
+        "web": "https://www.doolin.ie/",
+        "gmaps": "https://maps.google.com/?q=52.9717"
+      },
+      {
+        "name": "Clifden",
+        "desc": "Capitale du Connemara ville coloree",
+        "lat": 53.4883,
+        "lng": -10.0185,
+        "web": "https://www.visitclifden.com/",
+        "gmaps": "https://maps.google.com/?q=53.4883"
+      },
+      {
+        "name": "Roundstone",
+        "desc": "Village de pecheurs pittoresque du Connemara",
+        "lat": 53.3959,
+        "lng": -9.9217,
+        "web": "https://www.discoverireland.ie/galway/roundstone",
+        "gmaps": "https://maps.google.com/?q=53.3959"
+      },
+      {
+        "name": "Kinvara",
+        "desc": "Village charmant porte d'entree du Burren",
+        "lat": 53.1393,
+        "lng": -8.9364,
+        "web": "https://www.discoverireland.ie/galway/kinvara",
+        "gmaps": "https://maps.google.com/?q=53.1393"
+      },
+      {
+        "name": "Westport",
+        "desc": "Ville georgienne elegante au pied du Croagh Patrick",
+        "lat": 53.801,
+        "lng": -9.5175,
+        "web": "https://www.westportireland.ie/",
+        "gmaps": "https://maps.google.com/?q=53.8010"
+      },
+      {
+        "name": "Kinsale",
+        "desc": "Capital gastronomique de l'Irlande port colore",
+        "lat": 51.7059,
+        "lng": -8.531,
+        "web": "https://www.kinsale.ie/",
+        "gmaps": "https://maps.google.com/?q=51.7059"
+      },
+      {
+        "name": "Cobh",
+        "desc": "Dernier port d'escale du Titanic maisons victoriennes colorees",
+        "lat": 51.8514,
+        "lng": -8.2967,
+        "web": "https://www.visitcobh.com/",
+        "gmaps": "https://maps.google.com/?q=51.8514"
+      },
+      {
+        "name": "Kenmare",
+        "desc": "Ville pittoresque jonction du Ring of Kerry et du Ring of Beara",
+        "lat": 51.8806,
+        "lng": -9.5839,
+        "web": "https://www.kenmare.com/",
+        "gmaps": "https://maps.google.com/?q=51.8806"
+      },
+      {
+        "name": "Adare",
+        "desc": "Plus joli village d'Irlande chaumieres et abbayes",
+        "lat": 52.5643,
+        "lng": -8.7888,
+        "web": "https://www.discoverireland.ie/limerick/adare",
+        "gmaps": "https://maps.google.com/?q=52.5643"
+      },
+      {
+        "name": "Kilkenny",
+        "desc": "Ville medievale par excellence ruelles cathedrale et brasserie",
+        "lat": 52.6541,
+        "lng": -7.2448,
+        "web": "https://www.visitkilkenny.ie/",
+        "gmaps": "https://maps.google.com/?q=52.6541"
+      }
+    ],
+    "museums": [
+      {
+        "name": "Dublinia",
+        "desc": "Musee interactif sur le Dublin viking et medieval",
+        "lat": 53.3435,
+        "lng": -6.2718,
+        "web": "https://www.dublinia.ie/",
+        "gmaps": "https://maps.google.com/?q=53.3435"
+      },
+      {
+        "name": "EPIC The Irish Emigration Museum",
+        "desc": "Musee prime racontant l'histoire de la diaspora irlandaise",
+        "lat": 53.348,
+        "lng": -6.2479,
+        "web": "https://epicchq.com/",
+        "gmaps": "https://maps.google.com/?q=53.3480"
+      },
+      {
+        "name": "National Museum of Ireland",
+        "desc": "Collections nationales d'archeologie art et histoire naturelle",
+        "lat": 53.3403,
+        "lng": -6.2546,
+        "web": "https://www.museum.ie/",
+        "gmaps": "https://maps.google.com/?q=53.3403"
+      },
+      {
+        "name": "Titanic Belfast",
+        "desc": "Musee interactif de 6 etages sur le lieu de construction du Titanic",
+        "lat": 54.6081,
+        "lng": -5.9099,
+        "web": "https://www.titanicbelfast.com/",
+        "gmaps": "https://maps.google.com/?q=54.6081"
+      },
+      {
+        "name": "Ulster Museum",
+        "desc": "Musee national d'Irlande du Nord art histoire et archeologie",
+        "lat": 54.5854,
+        "lng": -5.929,
+        "web": "https://www.nmni.com/ulster-museum",
+        "gmaps": "https://maps.google.com/?q=54.5854"
+      },
+      {
+        "name": "GPO Witness History",
+        "desc": "Musee immersif dans le bureau de poste de l'insurrection de 1916",
+        "lat": 53.3494,
+        "lng": -6.2604,
+        "web": "https://www.gpomuseum.ie/",
+        "gmaps": "https://maps.google.com/?q=53.3494"
+      },
+      {
+        "name": "Kilmainham Gaol",
+        "desc": "Prison historique des leaders de l'insurrection de 1916",
+        "lat": 53.3419,
+        "lng": -6.31,
+        "web": "https://kilmainhamgaolmuseum.ie/",
+        "gmaps": "https://maps.google.com/?q=53.3419"
+      }
+    ]
+  },
+  "tips": [
+    {
+      "icon": "fa-car",
+      "title": "Voiture automatique",
+      "text": "Louez une <strong>boite automatique</strong>. Conduite a gauche + boite manuelle = galere. Tous les blogs sont unanimes."
+    },
+    {
+      "icon": "fa-cloud-rain",
+      "title": "Meteo & vetements",
+      "text": "<strong>K-way obligatoire</strong> pour toute la famille, meme en aout (14-20°C, pluie frequente). Prevoyez des couches superposables et des chaussures impermeables."
+    },
+    {
+      "icon": "fa-bed",
+      "title": "B&B irlandais",
+      "text": "Les <strong>B&B</strong> offrent le meilleur rapport qualite/prix : 70-85 EUR/nuit, avec <strong>full Irish breakfast</strong> copieux inclus. Reservez tot en aout !"
+    },
+    {
+      "icon": "fa-ticket",
+      "title": "Heritage Card",
+      "text": "La <strong>Heritage Card</strong> (40 EUR/adulte, enfants < 12 ans gratuits) donne acces illimite a 40+ sites : Trim Castle, Clonmacnoise, Newgrange... Rentable des 3 visites."
+    },
+    {
+      "icon": "fa-mobile-screen",
+      "title": "GPS & navigation",
+      "text": "<strong>Google Maps</strong> suffit. Pas besoin du GPS payant du loueur. Telechargez les cartes hors-ligne avant de partir."
+    },
+    {
+      "icon": "fa-beer-mug-empty",
+      "title": "Enfants dans les pubs",
+      "text": "Les pubs irlandais <strong>accueillent les enfants</strong> en journee et debut de soiree. Menus enfants, fish & chips, musique trad live."
+    },
+    {
+      "icon": "fa-mountain",
+      "title": "Sites gratuits",
+      "text": "Connemara NP, Hill of Tara, Burren : <strong>gratuits</strong>. Cliffs of Moher : 15 EUR/adulte (enfants < 12 gratuits). Trim Castle : famille 13 EUR."
+    },
+    {
+      "icon": "fa-clock",
+      "title": "Horaires & affluence",
+      "text": "Sites ferment a <strong>17h</strong>. Cliffs of Moher : arriver en <strong>fin de journee</strong> pour eviter la foule. Newgrange : reserver <strong>30 jours a l'avance</strong>."
+    },
+    {
+      "icon": "fa-utensils",
+      "title": "Bonnes adresses",
+      "text": "<strong>Galway :</strong> McDonagh's (fish & chips legendaire), Tig Coili et Crane Bar (musique trad). <strong>Doolin :</strong> Gus O'Connor's, McGann's, McDermott's (sessions live des 20-21h, enfants bienvenus tot)."
+    },
+    {
+      "icon": "fa-road",
+      "title": "Conduite a gauche",
+      "text": "Sens <strong>horaire aux ronds-points</strong>. Routes etroites en Connemara et dans le Burren : croisements frequents avec <strong>pulling places</strong> (refuges). Prenez votre temps, la signalisation est bonne."
+    },
+    {
+      "icon": "fa-wifi",
+      "title": "Connectivite mobile",
+      "text": "<strong>4G correcte</strong> partout sauf zones isolees du Connemara. Free Mobile fonctionne en <strong>roaming EU</strong> sans surcout. Pensez a telecharger les <strong>cartes hors-ligne</strong> (Google Maps) avant de partir."
+    }
+  ],
+  "blogs": [
+    {
+      "title": "Road trip 1 semaine en Irlande",
+      "source": "Planete3w",
+      "url": "https://www.planete3w.fr/road-trip-1-semaine-en-irlande-notre-itineraire/",
+      "type": "couple"
+    },
+    {
+      "title": "Une semaine en Irlande en famille",
+      "source": "Les Love Trotteurs",
+      "url": "https://www.leslovetrotteurs.com/une-semaine-en-irlande/",
+      "type": "famille"
+    },
+    {
+      "title": "Irlande en famille : road trip avec deux enfants",
+      "source": "e-Zabel",
+      "url": "https://www.e-zabel.fr/irlande-en-famille/",
+      "type": "famille"
+    },
+    {
+      "title": "L'Irlande avec des enfants",
+      "source": "Kid Friendly",
+      "url": "https://www.kidfriendly.fr/archives/2018/04/22/36340955.html",
+      "type": "famille"
+    },
+    {
+      "title": "1 semaine autour de Galway en famille",
+      "source": "Voyages et Enfants",
+      "url": "https://www.voyagesetenfants.com/1-semaine-autour-de-galway-en-irlande-connemara-moher-et-buren/",
+      "type": "famille"
+    },
+    {
+      "title": "Voyage en Irlande en famille",
+      "source": "Marie-Eve et famille",
+      "url": "https://marieeveetfamille.com/voyage-irlande-en-famille/",
+      "type": "famille"
+    },
+    {
+      "title": "L'Irlande avec des enfants (expatriee)",
+      "source": "Trip and Twins",
+      "url": "https://tripandtwins.com/irlande-avec-des-enfants/",
+      "type": "famille"
+    },
+    {
+      "title": "Circuit randos ouest Irlande en famille",
+      "source": "Voyages et Enfants",
+      "url": "https://www.voyagesetenfants.com/voyage-famille-irlande-rando/",
+      "type": "famille"
+    },
+    {
+      "title": "7 jours en Irlande, itineraire ok selon vous ?",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forums/t/7-jours-en-irlande-itineraire-ok-selon-vous/171118",
+      "type": "forum"
+    },
+    {
+      "title": "7 jours en Irlande : quel circuit ?",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forums/t/7-jours-en-irlande-quel-circuit/118977",
+      "type": "forum"
+    },
+    {
+      "title": "Itineraire 7 jours en Irlande en aout",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forum_message/3392086/itineraire_de_7_jours_en_irlande_en_aout.htm",
+      "type": "forum"
+    },
+    {
+      "title": "7 jours en Irlande en partant de Dublin",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forums/t/7-jours-en-irlande-en-partant-de-dublin/243352",
+      "type": "forum"
+    },
+    {
+      "title": "Premier sejour 7 jours : Kerry et Connemara",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forums/t/recommandation-ditineraires-pour-un-premier-sejour-de-7-jours-en-irlande-kerry-et-connemara/415143",
+      "type": "forum"
+    },
+    {
+      "title": "Road trip 7 jours en Irlande, possible ?",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forum_message/3092210/road_trip_en_7_jours_en_irlande_possible.htm",
+      "type": "forum"
+    },
+    {
+      "title": "Doolin, Burren et Cliffs of Moher",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forums/t/doolin-burren-et-clif-of-moher/97406",
+      "type": "forum"
+    },
+    {
+      "title": "Que faire dans les alentours de Clifden ?",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forums/t/que-faire-dans-les-alentours-de-clifden/87046",
+      "type": "forum"
+    },
+    {
+      "title": "Organisation 2 jours a Clifden/Galway",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forums/t/organisation-2-jours-a-clifden-galway-en-irlande/143589",
+      "type": "forum"
+    },
+    {
+      "title": "Galway et Connemara",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forums/t/galway-et-connemara/70000",
+      "type": "forum"
+    },
+    {
+      "title": "Que faire dans la region du Burren ?",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forum_message/3253442/que_faire_dans_la_region_du_burren.htm",
+      "type": "forum"
+    },
+    {
+      "title": "Wild Atlantic Way en Irlande",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forums/t/wild-atlantic-way-en-irlande/218378",
+      "type": "forum"
+    },
+    {
+      "title": "12 jours sur la cote ouest fin aout",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forum_message/4550978/12_jours_sur_la_cote_ouest_fin_aout___premier_voyage_en_irlande___besoin_de_conseils.htm",
+      "type": "forum"
+    },
+    {
+      "title": "Sejour Connemara",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forums/t/sejour-connemara/35523",
+      "type": "forum"
+    },
+    {
+      "title": "Itineraires conseilles Irlande",
+      "source": "Guide Routard",
+      "url": "https://www.routard.com/fr/guide/a/itineraires-conseilles/europe/irlande",
+      "type": "forum"
+    },
+    {
+      "title": "Sky Road : dans quel sens ?",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forums/t/sens-pour-emprunter-la-sky-road/99789",
+      "type": "forum"
+    },
+    {
+      "title": "Dublin avec 2 enfants de 5 et 3 ans",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forum_message/4595128/dublin_avec_2_enfants_de_5_et_3_ans.htm",
+      "type": "forum"
+    },
+    {
+      "title": "12 jours en famille sur la cote ouest",
+      "source": "Forum Routard",
+      "url": "https://www.routard.com/forums/t/12-jours-en-famille-en-irlande-votre-avis-sur-notre-parcours/82260",
+      "type": "forum"
+    }
+  ],
+  "poiConfig": {
+    "castles": {
+      "color": "#c86432",
+      "icon": "fa-chess-rook"
+    },
+    "monasteries": {
+      "color": "#7a5a6a",
+      "icon": "fa-place-of-worship"
+    },
+    "nature": {
+      "color": "#5a8a3a",
+      "icon": "fa-mountain-sun"
+    },
+    "beaches": {
+      "color": "#2a5a8c",
+      "icon": "fa-umbrella-beach"
+    },
+    "towns": {
+      "color": "#e8b84a",
+      "icon": "fa-city"
+    },
+    "museums": {
+      "color": "#3a2f28",
+      "icon": "fa-museum"
+    }
+  }
+};
