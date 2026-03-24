@@ -24,6 +24,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Cache optimized images
+        uses: actions/cache@v4
+        with:
+          path: img
+          key: images-${{ hashFiles('data.json', 'scripts/optimize-images.mjs') }}
       - name: Optimize images
         run: |
           npm install --no-save sharp
