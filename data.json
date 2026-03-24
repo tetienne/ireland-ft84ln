@@ -65,6 +65,62 @@
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186605-d189054-Reviews-St_Stephens_Green-Dublin_County_Dublin.html",
           "routard": null
         }
+      ],
+      "schedule": [
+        { "time": "11h10", "label": "Vol FR9777 Nimes - Dublin", "icon": "fa-plane", "duration": "2h30" },
+        { "time": "12h40", "label": "Arrivee Dublin, immigration + bagages", "icon": "fa-plane-arrival", "duration": "20min" },
+        { "time": "13h00", "label": "Comptoir NewWay, recuperation voiture", "icon": "fa-car", "duration": "30min" },
+        { "time": "13h30", "label": "Route vers Dublin centre", "icon": "fa-car", "duration": "30min" },
+        { "time": "14h00", "label": "Installation hotel / B&B", "icon": "fa-bed", "duration": "30min" },
+        { "time": "14h30", "label": "Dublin Castle", "icon": "fa-chess-rook", "duration": "1h" },
+        { "time": "15h30", "label": "Balade Temple Bar", "icon": "fa-music", "duration": "45min" },
+        { "time": "16h15", "label": "St Stephen's Green (aire de jeux)", "icon": "fa-tree", "duration": "1h" },
+        { "time": "17h30", "label": "Retour hotel, repos", "icon": "fa-bed", "duration": "30min" },
+        { "time": "18h30", "label": "Diner en ville", "icon": "fa-utensils", "duration": "1h30" }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Dublin Castle (2 adultes, enfants gratuits)", "amount": 7 },
+          { "label": "Diner en famille", "amount": 60 },
+          { "label": "Parking hotel (estimation)", "amount": 18 }
+        ],
+        "total": 85,
+        "notes": "Journee legere, arrivee en milieu de journee. Temple Bar et St Stephen's Green sont gratuits."
+      },
+      "dayRoute": [
+        [53.4264, -6.2499],
+        [53.3429, -6.2675],
+        [53.3456, -6.2628],
+        [53.3381, -6.2592]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Dublin Castle",
+          "icon": "fa-chess-rook",
+          "tips": [
+            "Visite guidee obligatoire pour les State Apartments (~3,50 EUR/adulte)",
+            "Brochure en francais disponible a l'accueil",
+            "Les Dubhlinn Gardens a cote sont gratuits et agreable pour les enfants"
+          ]
+        },
+        {
+          "stop": "Temple Bar",
+          "icon": "fa-music",
+          "tips": [
+            "Plus agreable en journee avec les enfants (artistes de rue, facades colorees)",
+            "Le soir c'est tres anime et bruyant, pas ideal pour les petits",
+            "Eviter les restaurants touristiques de Temple Bar, souvent chers et moyens"
+          ]
+        },
+        {
+          "stop": "St Stephen's Green",
+          "icon": "fa-tree",
+          "tips": [
+            "Aire de jeux avec toboggan pres de la cathedrale St Patrick",
+            "Canards sur le lac, les enfants adorent",
+            "Parc ferme a la tombee de la nuit"
+          ]
+        }
       ]
     },
     {
@@ -119,6 +175,53 @@
           "web": null,
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186609-d4909613-Reviews-Galway_s_Latin_Quarter-Galway_County_Galway_Western_Ireland.html",
           "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-galway/galway-gaillimh"
+        }
+      ],
+      "schedule": [
+        { "time": "9h30", "label": "Depart de Dublin (autoroute M6)", "icon": "fa-car", "duration": null },
+        { "time": "11h00", "label": "Arrivee Athlone, dejeuner Sean's Bar", "icon": "fa-utensils", "duration": "1h15" },
+        { "time": "12h15", "label": "Balade Burgess Park (aire de jeux)", "icon": "fa-tree", "duration": "30min" },
+        { "time": "12h45", "label": "Route Athlone - Galway (M6)", "icon": "fa-car", "duration": null },
+        { "time": "13h50", "label": "Arrivee Galway, installation", "icon": "fa-bed", "duration": "30min" },
+        { "time": "14h30", "label": "Balade Latin Quarter & Shop Street", "icon": "fa-guitar", "duration": "1h30" },
+        { "time": "16h00", "label": "Spanish Arch & Long Walk", "icon": "fa-camera", "duration": "45min" },
+        { "time": "17h00", "label": "Temps libre, repos", "icon": "fa-bed", "duration": "1h" },
+        { "time": "18h00", "label": "Diner chez McDonagh's", "icon": "fa-utensils", "duration": "1h" },
+        { "time": "19h30", "label": "Soiree musique trad (Tig Coili ou Crane Bar)", "icon": "fa-music", "duration": "1h30" }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Dejeuner famille Athlone (Sean's Bar)", "amount": 45 },
+          { "label": "Carburant Dublin - Galway", "amount": 15 },
+          { "label": "Diner Galway (McDonagh's)", "amount": 55 }
+        ],
+        "total": 115,
+        "notes": "Sean's Bar est family-friendly en journee. McDonagh's a deux formules : restaurant (plus cher) et take-away (moins cher, meme poisson)."
+      },
+      "dayRoute": [
+        [53.3498, -6.2603],
+        [53.4232, -7.9408],
+        [53.4250, -7.9380],
+        [53.2719, -9.0530]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Sean's Bar, Athlone",
+          "icon": "fa-beer-mug-empty",
+          "tips": [
+            "Plus vieux pub d'Irlande (900 ap. J.-C.), interessant meme pour un dejeuner rapide",
+            "Family-friendly en journee, menu enfants disponible",
+            "Parking gratuit a proximite dans le centre d'Athlone"
+          ]
+        },
+        {
+          "stop": "Galway Latin Quarter & Shop Street",
+          "icon": "fa-guitar",
+          "tips": [
+            "Shop Street est pietonne, les enfants peuvent se promener librement",
+            "Musiciens de rue surtout l'apres-midi et en debut de soiree",
+            "McDonagh's take-away : meme poisson frais, file plus rapide, moins cher que le restaurant"
+          ]
         }
       ]
     },
@@ -186,6 +289,79 @@
           "tripadvisor": "https://www.tripadvisor.com/Tourism-g214506-Doolin_The_Burren_County_Clare-Vacations.html",
           "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/doolin-dulainn"
         }
+      ],
+      "schedule": [
+        { "time": "9h00", "label": "Depart de Galway", "icon": "fa-car", "duration": null },
+        { "time": "9h50", "label": "Aillwee Cave + spectacle rapaces", "icon": "fa-hill-rockslide", "duration": "2h" },
+        { "time": "12h00", "label": "Route vers Poulnabrone", "icon": "fa-car", "duration": null },
+        { "time": "12h30", "label": "Poulnabrone Dolmen (arret photo)", "icon": "fa-landmark", "duration": "20min" },
+        { "time": "13h00", "label": "Pique-nique dans le Burren", "icon": "fa-utensils", "duration": "45min" },
+        { "time": "14h00", "label": "Route vers les Cliffs", "icon": "fa-car", "duration": null },
+        { "time": "14h20", "label": "Cliffs of Moher (balade le long des falaises)", "icon": "fa-mountain-sun", "duration": "1h30" },
+        { "time": "16h00", "label": "Route vers Doolin", "icon": "fa-car", "duration": null },
+        { "time": "16h10", "label": "Installation a Doolin", "icon": "fa-bed", "duration": "30min" },
+        { "time": "17h00", "label": "Balade vers le port de Doolin", "icon": "fa-camera", "duration": "45min" },
+        { "time": "18h30", "label": "Diner a Doolin", "icon": "fa-utensils", "duration": "1h30" },
+        { "time": "20h30", "label": "Session musique trad (Gus O'Connor's)", "icon": "fa-music", "duration": "1h" }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Aillwee Cave + rapaces (famille)", "amount": 71 },
+          { "label": "Parking Cliffs of Moher (fermier)", "amount": 2 },
+          { "label": "Pique-nique / dejeuner", "amount": 20 },
+          { "label": "Diner a Doolin", "amount": 60 },
+          { "label": "Carburant", "amount": 10 }
+        ],
+        "total": 163,
+        "notes": "Parking fermier 800m avant les Cliffs (direction Liscannor) a 2 EUR/vehicule au lieu de 8 EUR/pers au parking officiel. Economie de 30 EUR pour une famille de 4."
+      },
+      "dayRoute": [
+        [53.2718, -9.0530],
+        [53.0892, -9.1438],
+        [53.0487, -9.1400],
+        [52.9719, -9.4265],
+        [53.0160, -9.3770]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Aillwee Cave & rapaces",
+          "icon": "fa-hill-rockslide",
+          "tips": [
+            "Reserver en ligne pour eviter l'attente (surtout en aout)",
+            "Prevoir un pull : 10 degres dans la grotte",
+            "Les enfants peuvent tenir les rapaces sur le bras (moment fort !)",
+            "Combo grotte + rapaces plus avantageux qu'achete separement"
+          ]
+        },
+        {
+          "stop": "Poulnabrone Dolmen",
+          "icon": "fa-landmark",
+          "tips": [
+            "Acces libre et gratuit, petit parking a cote",
+            "Sol irregulier : bonnes chaussures recommandees",
+            "Arret rapide (15-20 min suffisent)"
+          ]
+        },
+        {
+          "stop": "Cliffs of Moher",
+          "icon": "fa-mountain-sun",
+          "tips": [
+            "Parking fermier 800m avant (dir. Liscannor) : 2 EUR/vehicule",
+            "Coupe-vent indispensable, meme en aout",
+            "Rester dans la zone balisee avec les enfants (pas de barriere par endroits)",
+            "Arriver apres 16h pour moins de monde",
+            "Macareux visibles en aout pres de O'Brien's Tower"
+          ]
+        },
+        {
+          "stop": "Doolin",
+          "icon": "fa-music",
+          "tips": [
+            "Sessions musique des 20h-21h (Gus O'Connor's, McGann's, McDermott's)",
+            "Enfants bienvenus en debut de soiree dans les pubs",
+            "Reserver le B&B a l'avance, Doolin est tres demande en aout"
+          ]
+        }
       ]
     },
     {
@@ -251,6 +427,68 @@
           "web": "https://nationalaquarium.ie/",
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186609-d215896-Reviews-Galway_Atlantaquaria-Galway_County_Galway_Western_Ireland.html",
           "routard": null
+        }
+      ],
+      "schedule": [
+        { "time": "10h00", "label": "Balade au port de Doolin, vue Iles d'Aran", "icon": "fa-camera", "duration": "45min" },
+        { "time": "10h45", "label": "Route vers Ennistymon", "icon": "fa-car", "duration": null },
+        { "time": "11h00", "label": "Cascades d'Ennistymon (arret rapide)", "icon": "fa-water", "duration": "15min" },
+        { "time": "11h15", "label": "Route vers Lahinch", "icon": "fa-car", "duration": null },
+        { "time": "11h30", "label": "Lahinch Beach (baignade, jeux, pique-nique)", "icon": "fa-umbrella-beach", "duration": "2h30" },
+        { "time": "14h00", "label": "Route vers Galway (N85/M18)", "icon": "fa-car", "duration": null },
+        { "time": "15h00", "label": "Arrivee Galway, Salthill Promenade", "icon": "fa-person-swimming", "duration": "1h" },
+        { "time": "16h00", "label": "Atlantaquaria (optionnel, si pluie)", "icon": "fa-fish", "duration": "1h" },
+        { "time": "17h30", "label": "Repos a l'hebergement", "icon": "fa-bed", "duration": "30min" },
+        { "time": "18h30", "label": "Diner chez McDonagh's ou Latin Quarter", "icon": "fa-utensils", "duration": "1h" },
+        { "time": "20h00", "label": "Soiree musicale (2e soir a Galway)", "icon": "fa-music", "duration": "1h" }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Dejeuner pique-nique / fish & chips Lahinch", "amount": 25 },
+          { "label": "Atlantaquaria (optionnel, famille)", "amount": 45 },
+          { "label": "Diner Galway", "amount": 50 },
+          { "label": "Carburant", "amount": 10 }
+        ],
+        "total": 130,
+        "notes": "Budget Atlantaquaria optionnel (uniquement si pluie). Ferme le lundi (pas un probleme, on est mercredi). Sans Atlantaquaria : 85 EUR."
+      },
+      "dayRoute": [
+        [53.0160, -9.3770],
+        [52.9400, -9.2900],
+        [52.9370, -9.3450],
+        [53.2580, -9.0847],
+        [53.2598, -9.0741],
+        [53.2719, -9.0530]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Lahinch Beach",
+          "icon": "fa-water",
+          "tips": [
+            "Section baignade surveillee separee de la zone surf",
+            "Aire de jeux juste a cote de la plage",
+            "Cours de surf possibles des 8 ans (reserver la veille)",
+            "Fish & chips sur place ou pique-nique sur l'herbe"
+          ]
+        },
+        {
+          "stop": "Salthill Promenade",
+          "icon": "fa-person-swimming",
+          "tips": [
+            "Tradition locale : kicker la plaque au bout de la promenade",
+            "Promenade de 2 km, plongeoir de Blackrock pour les plus courageux",
+            "Glaces chez Salthill Stores"
+          ]
+        },
+        {
+          "stop": "Galway Atlantaquaria",
+          "icon": "fa-fish",
+          "tips": [
+            "Ideal en plan B pluie (petit mais bien fait)",
+            "Bassins tactiles a hauteur d'enfant (raies, crabes)",
+            "Ferme le lundi, dernier acces 16h en semaine",
+            "Prevoir environ 1h de visite"
+          ]
         }
       ]
     },
@@ -318,6 +556,65 @@
           "tripadvisor": null,
           "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan"
         }
+      ],
+      "schedule": [
+        { "time": "10h00", "label": "Depart Galway, route vers Roundstone", "icon": "fa-car", "duration": null },
+        { "time": "10h45", "label": "Arret Roundstone (village, atelier bodhran)", "icon": "fa-palette", "duration": "30min" },
+        { "time": "11h30", "label": "Dog's Bay (plage de sable blanc)", "icon": "fa-umbrella-beach", "duration": "1h" },
+        { "time": "12h30", "label": "Route vers Clifden", "icon": "fa-car", "duration": null },
+        { "time": "13h00", "label": "Dejeuner a Clifden", "icon": "fa-utensils", "duration": "1h" },
+        { "time": "14h00", "label": "Balade dans Clifden", "icon": "fa-camera", "duration": "30min" },
+        { "time": "14h30", "label": "Connemara Pony Show (si 3e jeudi d'aout)", "icon": "fa-camera", "duration": "1h30" },
+        { "time": "16h30", "label": "Sky Road (boucle panoramique)", "icon": "fa-panorama", "duration": "1h" },
+        { "time": "17h30", "label": "Retour Clifden, installation", "icon": "fa-bed", "duration": "30min" },
+        { "time": "18h30", "label": "Diner a Clifden", "icon": "fa-utensils", "duration": "1h15" }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Dejeuner Clifden (Mitchell's ou Lowry's)", "amount": 45 },
+          { "label": "Diner Clifden", "amount": 50 },
+          { "label": "Carburant", "amount": 12 }
+        ],
+        "total": 107,
+        "notes": "Journee economique : Dog's Bay, Sky Road et Roundstone sont gratuits. Le Connemara Pony Show est gratuit aussi."
+      },
+      "dayRoute": [
+        [53.2719, -9.0530],
+        [53.3957, -9.9203],
+        [53.3779, -9.9636],
+        [53.4333, -10.0167],
+        [53.5007, -10.0965],
+        [53.4333, -10.0167]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Roundstone",
+          "icon": "fa-palette",
+          "tips": [
+            "Atelier de bodhran de Malachy Kearns : visite rapide et gratuite",
+            "Petit port photogenique, ideal pour une pause"
+          ]
+        },
+        {
+          "stop": "Dog's Bay & Gurteen Bay",
+          "icon": "fa-umbrella-beach",
+          "tips": [
+            "Sable blanc corallien, parmi les plus belles plages d'Irlande",
+            "Parking gratuit en haut de la plage",
+            "Tour de la presqu'ile possible en 2h a pied (boucle facile)",
+            "Eau froide meme en aout, prevoir des serviettes chaudes"
+          ]
+        },
+        {
+          "stop": "Sky Road",
+          "icon": "fa-panorama",
+          "tips": [
+            "Prendre la Upper Sky Road pour les plus belles vues",
+            "Ideal au coucher du soleil (vers 17-18h en aout)",
+            "Route etroite : rouler lentement et se ranger pour laisser passer",
+            "Plusieurs points d'arret photo avec vue sur les iles"
+          ]
+        }
       ]
     },
     {
@@ -362,6 +659,60 @@
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g212091-d1119252-Reviews-Viking_Tours-Athlone_County_Westmeath.html",
           "routard": null
         }
+      ],
+      "schedule": [
+        { "time": "9h30", "label": "Parc National Connemara / Diamond Hill", "icon": "fa-mountain-sun", "duration": "1h30" },
+        { "time": "11h00", "label": "Retour Clifden, dernier cafe", "icon": "fa-mug-hot", "duration": "30min" },
+        { "time": "11h30", "label": "Depart Clifden vers l'est (via Maam Cross)", "icon": "fa-car", "duration": null },
+        { "time": "12h30", "label": "Pause cafe Oughterard", "icon": "fa-mug-hot", "duration": "20min" },
+        { "time": "12h50", "label": "Route Oughterard - Athlone", "icon": "fa-car", "duration": null },
+        { "time": "14h00", "label": "Arrivee Athlone, installation", "icon": "fa-bed", "duration": "30min" },
+        { "time": "14h30", "label": "Dejeuner a Athlone", "icon": "fa-utensils", "duration": "1h" },
+        { "time": "16h00", "label": "Viking Tours (croisiere Shannon)", "icon": "fa-ship", "duration": "1h15" },
+        { "time": "17h30", "label": "Balade au bord du Shannon", "icon": "fa-camera", "duration": "30min" },
+        { "time": "18h30", "label": "Diner pub au bord de l'eau", "icon": "fa-utensils", "duration": "1h15" }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Connemara National Park (gratuit)", "amount": 0 },
+          { "label": "Carburant Clifden - Athlone", "amount": 25 },
+          { "label": "Dejeuner Athlone", "amount": 40 },
+          { "label": "Viking Tours (famille)", "amount": 50 },
+          { "label": "Diner Athlone", "amount": 50 }
+        ],
+        "total": 165,
+        "notes": "Reserver Viking Tours en ligne. Si le bateau est annule (pluie/vent), Sean's Bar est une alternative amusante pour un passage rapide avec les enfants."
+      },
+      "dayRoute": [
+        [53.4333, -10.0167],
+        [53.5520, -9.9440],
+        [53.4333, -10.0167],
+        [53.4300, -9.4300],
+        [53.4232, -7.9408]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Parc National du Connemara",
+          "icon": "fa-mountain-sun",
+          "tips": [
+            "Sentier Sruffaunboy (1,5 km, platelage bois) : faisable avec un enfant de 5 ans",
+            "Lower Diamond Hill (3 km) : faisable des 5-6 ans avec pauses",
+            "Upper Diamond Hill (sommet 442m) : plutot pour le 8 ans, 2h A/R",
+            "Gratuit, parking gratuit aussi",
+            "Demonstrations de chiens de berger en saison"
+          ]
+        },
+        {
+          "stop": "Viking Tours Athlone",
+          "icon": "fa-ship",
+          "tips": [
+            "Reserver en ligne a l'avance (places limitees)",
+            "Les enfants peuvent piloter le bateau (moment fort)",
+            "Casques et epees vikings en vente a bord",
+            "75 min de croisiere, prevoir coupe-vent",
+            "Bateau ouvert : annulation possible si mauvais temps"
+          ]
+        }
       ]
     },
     {
@@ -405,6 +756,69 @@
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186628-d526324-Reviews-Hill_of_Tara_Temair-County_Meath.html",
           "routard": null
         }
+      ],
+      "schedule": [
+        { "time": "9h00", "label": "Depart d'Athlone", "icon": "fa-car", "duration": null },
+        { "time": "10h15", "label": "Trim Castle (visite guidee donjon)", "icon": "fa-chess-rook", "duration": "1h" },
+        { "time": "11h15", "label": "Balade remparts et jardins de Trim", "icon": "fa-camera", "duration": "30min" },
+        { "time": "11h45", "label": "Route vers Hill of Tara", "icon": "fa-car", "duration": null },
+        { "time": "12h05", "label": "Hill of Tara (colline sacree, Pierre du Destin)", "icon": "fa-crown", "duration": "45min" },
+        { "time": "13h00", "label": "Dejeuner dans les environs", "icon": "fa-utensils", "duration": "1h" },
+        { "time": "14h00", "label": "Route vers hotel aeroport", "icon": "fa-car", "duration": null },
+        { "time": "14h45", "label": "Arrivee hotel aeroport, installation", "icon": "fa-bed", "duration": "30min" },
+        { "time": "15h15", "label": "Piscine hotel (si disponible)", "icon": "fa-person-swimming", "duration": "1h30" },
+        { "time": "17h00", "label": "Preparation valises et passeports", "icon": "fa-suitcase", "duration": "45min" },
+        { "time": "18h00", "label": "Diner a l'hotel ou environs", "icon": "fa-utensils", "duration": "1h" },
+        { "time": "19h30", "label": "Coucher tot (reveil 5h00 !)", "icon": "fa-bed", "duration": null }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Trim Castle (famille 2A+2E)", "amount": 10 },
+          { "label": "Hill of Tara (gratuit, Heritage Card)", "amount": 0 },
+          { "label": "Dejeuner en route", "amount": 40 },
+          { "label": "Carburant Athlone - Dublin", "amount": 20 },
+          { "label": "Hotel aeroport (type Crowne Plaza)", "amount": 140 }
+        ],
+        "total": 210,
+        "notes": "Heritage Card (40 EUR/adulte) rentable si vous visitez aussi Newgrange ou d'autres sites Heritage Ireland. Trim Castle seul : pas rentable."
+      },
+      "dayRoute": [
+        [53.4232, -7.9408],
+        [53.5455, -6.7882],
+        [53.5789, -6.6113],
+        [53.4264, -6.2499]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Trim Castle",
+          "icon": "fa-chess-rook",
+          "tips": [
+            "Visite guidee du donjon obligatoire (45 min), depart toutes les heures",
+            "Brochure en francais disponible a l'accueil",
+            "Jardins et enceinte exterieure gratuits, belle balade le long de la Boyne",
+            "Decor de Braveheart : les enfants adorent l'anecdote"
+          ]
+        },
+        {
+          "stop": "Hill of Tara",
+          "icon": "fa-crown",
+          "tips": [
+            "Gratuit (Heritage Card acceptee pour le centre d'interpretation)",
+            "Les enfants adorent devaler les collines en courant",
+            "Vue sur 40% de l'Irlande par temps clair",
+            "30-45 min suffisent"
+          ]
+        },
+        {
+          "stop": "Hotel aeroport",
+          "icon": "fa-bed",
+          "tips": [
+            "Crowne Plaza : passage couvert vers le Terminal 1",
+            "Preparer valises et passeports ce soir (reveil a 5h00)",
+            "Verifier si l'hotel a une piscine pour occuper les enfants",
+            "Commander le petit-dejeuner en chambre la veille si depart tres tot"
+          ]
+        }
       ]
     },
     {
@@ -436,6 +850,38 @@
           "web": null,
           "tripadvisor": null,
           "routard": null
+        }
+      ],
+      "schedule": [
+        { "time": "5h00", "label": "Reveil", "icon": "fa-bed", "duration": null },
+        { "time": "5h15", "label": "Hotel - Terminal (passage couvert)", "icon": "fa-car", "duration": "10min" },
+        { "time": "5h30", "label": "Restitution voiture NewWay", "icon": "fa-car", "duration": "15min" },
+        { "time": "5h45", "label": "Enregistrement et securite", "icon": "fa-plane-departure", "duration": "45min" },
+        { "time": "6h30", "label": "Attente en zone d'embarquement", "icon": "fa-clock", "duration": "30min" },
+        { "time": "7h10", "label": "Vol FR9776 Dublin - Nimes", "icon": "fa-plane", "duration": "2h20" },
+        { "time": "10h30", "label": "Arrivee a Nimes (heure locale)", "icon": "fa-plane-arrival", "duration": null }
+      ],
+      "budget": {
+        "entries": [
+          { "label": "Petit-dejeuner (si non inclus)", "amount": 20 }
+        ],
+        "total": 20,
+        "notes": "Verifier si le petit-dejeuner est inclus dans la nuit d'hotel. Sinon, prevoir des provisions la veille."
+      },
+      "dayRoute": [
+        [53.4264, -6.2499]
+      ],
+      "practicalTips": [
+        {
+          "stop": "Vol Dublin - Nimes",
+          "icon": "fa-plane",
+          "tips": [
+            "Crowne Plaza : passage couvert vers le Terminal 1, pas besoin de navette",
+            "Restitution NewWay : rendre la voiture plein fait, garder le recu",
+            "Arriver au terminal 2h avant le vol (5h10 au plus tard)",
+            "Ryanair : respecter les dimensions bagages cabine pour eviter les frais",
+            "Prevoir de quoi occuper les enfants dans l'avion (cahiers, tablette)"
+          ]
         }
       ]
     }

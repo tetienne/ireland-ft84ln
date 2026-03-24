@@ -295,6 +295,105 @@ body {
 }
 .day-footer span i { margin-right: 0.3rem; color: var(--gold); }
 
+/* ═══ DAY DETAIL PILLS & PANELS ═══ */
+.day-pills {
+  display: flex; gap: 0.5rem; margin-top: 1rem; padding-top: 1rem;
+  border-top: 1px solid var(--cream-dark);
+}
+.day-pills button {
+  flex: 1; display: flex; align-items: center; justify-content: center; gap: 0.4rem;
+  padding: 0.5rem 0.3rem; border: 1px solid var(--cream-dark); border-radius: 8px;
+  background: var(--cream); font-family: 'DM Sans', sans-serif; font-size: 0.7rem;
+  font-weight: 500; color: var(--stone); cursor: pointer; transition: all 0.2s;
+}
+.day-pills button:hover { background: var(--cream-dark); color: var(--emerald-deep); }
+.day-pills button.active { background: var(--emerald-deep); color: var(--cream); border-color: var(--emerald-deep); }
+.day-pills button i { font-size: 0.75rem; }
+
+.day-panel {
+  max-height: 0; overflow: hidden; opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+}
+.day-panel.open { max-height: 800px; opacity: 1; padding-top: 1rem; }
+
+/* Schedule timeline */
+.schedule-timeline { list-style: none; position: relative; padding-left: 1.2rem; }
+.schedule-timeline::before {
+  content: ''; position: absolute; left: 0; top: 8px; bottom: 8px;
+  width: 2px; background: var(--cream-dark); border-radius: 1px;
+}
+.schedule-item {
+  position: relative; display: flex; align-items: baseline; gap: 0.6rem;
+  padding: 0.35rem 0; font-size: 0.8rem;
+}
+.schedule-item::before {
+  content: ''; position: absolute; left: -1.2rem; top: 0.55rem;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gold); border: 2px solid var(--cream);
+  transform: translateX(-3px);
+}
+.schedule-item.drive { opacity: 0.55; }
+.schedule-item.drive::before { background: var(--stone); width: 6px; height: 6px; }
+.schedule-time {
+  font-family: 'DM Sans', sans-serif; font-weight: 600; color: var(--emerald-deep);
+  min-width: 3.2rem; flex-shrink: 0;
+}
+.schedule-label { color: var(--peat); flex: 1; }
+.schedule-label i { color: var(--gold); margin-right: 0.3rem; font-size: 0.7rem; }
+.schedule-duration {
+  font-size: 0.65rem; font-weight: 600; color: var(--stone);
+  background: var(--cream-dark); padding: 1px 6px; border-radius: 3px; white-space: nowrap;
+}
+
+/* Budget table */
+.budget-table { width: 100%; }
+.budget-row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 0.3rem 0; font-size: 0.8rem; color: var(--peat);
+  border-bottom: 1px dotted var(--cream-dark);
+}
+.budget-row:last-of-type { border-bottom: none; }
+.budget-row.total {
+  font-weight: 700; color: var(--emerald-deep); border-top: 2px solid var(--gold);
+  border-bottom: none; margin-top: 0.3rem; padding-top: 0.5rem;
+}
+.budget-row.total .budget-amount { color: var(--gold); font-size: 0.95rem; }
+.budget-amount { font-weight: 600; white-space: nowrap; }
+.budget-notes {
+  font-size: 0.75rem; font-style: italic; color: var(--stone);
+  margin-top: 0.5rem; padding: 0.4rem 0.6rem; border-radius: 6px;
+  background: linear-gradient(135deg, rgba(200,148,46,0.06) 0%, rgba(200,148,46,0.02) 100%);
+}
+.budget-notes i { color: var(--gold); margin-right: 0.3rem; }
+
+/* Day map */
+.day-map-container {
+  height: 250px; border-radius: 10px; overflow: hidden;
+  border: 1px solid var(--cream-dark);
+}
+.day-map-container .leaflet-control-attribution { font-size: 9px; }
+
+/* Practical tips */
+.tips-group { margin-bottom: 0.8rem; }
+.tips-group:last-child { margin-bottom: 0; }
+.tips-group-header {
+  display: flex; align-items: center; gap: 0.5rem;
+  font-size: 0.85rem; font-weight: 600; color: var(--emerald-deep);
+  margin-bottom: 0.3rem;
+}
+.tips-group-header i { font-size: 0.75rem; color: var(--gold); }
+.tips-group ul {
+  list-style: none; padding-left: 0.2rem;
+}
+.tips-group li {
+  position: relative; padding-left: 1rem; font-size: 0.78rem; line-height: 1.5;
+  color: var(--peat); margin-bottom: 0.15rem;
+}
+.tips-group li::before {
+  content: '\2713'; position: absolute; left: 0; color: var(--emerald-light);
+  font-size: 0.7rem; font-weight: 700;
+}
+
 /* ═══════════════ TIPS ═══════════════ */
 .tips-section {
   background: var(--emerald-deep);
@@ -493,6 +592,14 @@ body {
   /* Day narratives */
   .day-narrative { font-size: 0.78rem; padding: 0.6rem 0.8rem; }
   .day-footer { gap: 0.8rem; font-size: 0.7rem; flex-direction: column; gap: 0.4rem; }
+
+  /* Day pills - mobile: icons only */
+  .day-pills { gap: 0.35rem; }
+  .day-pills button { padding: 0.45rem 0.2rem; font-size: 0; }
+  .day-pills button i { font-size: 0.8rem; }
+  .day-map-container { height: 200px; }
+  .schedule-item { font-size: 0.75rem; }
+  .budget-row { font-size: 0.75rem; }
 
   /* Tips */
   .tips-section { padding: 2.5rem 1rem; }

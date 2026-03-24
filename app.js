@@ -3,6 +3,7 @@
 function boot(data) {
   renderHero(data.trip);
   renderRoadBook(data.days);
+  initDayPanels(data.days);
   if (data.tips) renderTips(data.tips);
   if (data.blogs) renderBlogs(data.blogs);
   initMap(data);
@@ -66,6 +67,8 @@ function renderRoadBook(days) {
           ${day.driveTime ? `<span><i class="fa-solid fa-clock"></i> ${day.driveTime}</span>` : ''}
           ${day.highlight ? `<span><i class="fa-solid fa-star"></i> ${day.highlight}</span>` : ''}
         </div>
+        ${renderDayPills(day)}
+        ${renderDayPanels(day)}
       </div>
     </div>
   `).join('');
@@ -96,6 +99,130 @@ function renderStop(stop) {
       </div>
     </li>
   `;
+}
+
+// ─── DAY DETAIL PILLS & PANELS ───
+function renderDayPills(day) {
+  const has = day.schedule || day.budget || day.dayRoute || day.practicalTips;
+  if (!has) return '';
+  const pills = [];
+  if (day.schedule) pills.push(`<button data-panel="schedule" title="Planning"><i class="fa-solid fa-clock"></i> <span>Planning</span></button>`);
+  if (day.budget) pills.push(`<button data-panel="budget" title="Budget"><i class="fa-solid fa-coins"></i> <span>Budget</span></button>`);
+  if (day.dayRoute) pills.push(`<button data-panel="map" title="Carte"><i class="fa-solid fa-map"></i> <span>Carte</span></button>`);
+  if (day.practicalTips) pills.push(`<button data-panel="tips" title="Tips"><i class="fa-solid fa-lightbulb"></i> <span>Tips</span></button>`);
+  return `<div class="day-pills">${pills.join('')}</div>`;
+}
+
+function renderDayPanels(day) {
+  let panels = '';
+  if (day.schedule) panels += `<div class="day-panel" data-panel="schedule">${renderSchedule(day.schedule)}</div>`;
+  if (day.budget) panels += `<div class="day-panel" data-panel="budget">${renderBudget(day.budget)}</div>`;
+  if (day.dayRoute) panels += `<div class="day-panel" data-panel="map"><div class="day-map-container" data-day="${day.day}"></div></div>`;
+  if (day.practicalTips) panels += `<div class="day-panel" data-panel="tips">${renderPracticalTips(day.practicalTips)}</div>`;
+  return panels;
+}
+
+function renderSchedule(schedule) {
+  const items = schedule.map(s => {
+    const isDrive = s.icon === 'fa-car' || s.icon === 'fa-plane' || s.icon === 'fa-plane-arrival' || s.icon === 'fa-plane-departure';
+    const dur = s.duration ? `<span class="schedule-duration">${s.duration}</span>` : '';
+    return `
+      <li class="schedule-item${isDrive ? ' drive' : ''}">
+        <span class="schedule-time">${s.time}</span>
+        <span class="schedule-label"><i class="fa-solid ${s.icon}"></i> ${s.label}</span>
+        ${dur}
+      </li>`;
+  }).join('');
+  return `<ul class="schedule-timeline">${items}</ul>`;
+}
+
+function renderBudget(budget) {
+  const rows = budget.entries.map(e =>
+    `<div class="budget-row"><span>${e.label}</span><span class="budget-amount">${e.amount} &euro;</span></div>`
+  ).join('');
+  const total = `<div class="budget-row total"><span>Total journee</span><span class="budget-amount">${budget.total} &euro;</span></div>`;
+  const notes = budget.notes ? `<div class="budget-notes"><i class="fa-solid fa-lightbulb"></i> ${budget.notes}</div>` : '';
+  return `<div class="budget-table">${rows}${total}</div>${notes}`;
+}
+
+function renderPracticalTips(tips) {
+  return tips.map(group => {
+    const items = group.tips.map(t => `<li>${t}</li>`).join('');
+    return `
+      <div class="tips-group">
+        <div class="tips-group-header"><i class="fa-solid ${group.icon}"></i> ${group.stop}</div>
+        <ul>${items}</ul>
+      </div>`;
+  }).join('');
+}
+
+function extractCoords(gmapsUrl) {
+  if (!gmapsUrl) return null;
+  const match = gmapsUrl.match(/q=([-\d.]+),([-\d.]+)/);
+  return match ? [parseFloat(match[1]), parseFloat(match[2])] : null;
+}
+
+const dayMapsInitialized = new Set();
+
+function initSingleDayMap(card, days) {
+  const dayNum = parseInt(card.dataset.day);
+  if (dayMapsInitialized.has(dayNum)) return;
+  dayMapsInitialized.add(dayNum);
+
+  const container = card.querySelector('.day-map-container');
+  if (!container) return;
+
+  const day = days.find(d => d.day === dayNum);
+  if (!day || !day.dayRoute) return;
+
+  const map = L.map(container, { zoomControl: true, scrollWheelZoom: false, dragging: true });
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OSM &copy; CARTO', subdomains: 'abcd', maxZoom: 19
+  }).addTo(map);
+
+  // Route polyline
+  L.polyline(day.dayRoute, { color: '#c8942e', weight: 3, opacity: 0.7, dashArray: '8, 6', lineCap: 'round' }).addTo(map);
+
+  // Stop markers from gmaps URLs
+  day.stops.forEach(stop => {
+    const coords = extractCoords(stop.gmaps);
+    if (!coords) return;
+    const icon = L.divIcon({
+      className: 'poi-marker',
+      html: `<div class="poi-marker-inner" style="background:var(--emerald)"><i class="fa-solid ${stop.icon}" style="font-size:10px"></i></div>`,
+      iconSize: [24, 24], iconAnchor: [12, 12]
+    });
+    L.marker(coords, { icon }).addTo(map).bindPopup(`<strong>${stop.name}</strong>`);
+  });
+
+  // Fit bounds
+  const bounds = L.latLngBounds(day.dayRoute);
+  map.fitBounds(bounds.pad(0.15));
+}
+
+function initDayPanels(days) {
+  document.querySelectorAll('.day-pills button').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const card = btn.closest('.day-card');
+      const target = btn.dataset.panel;
+      const panel = card.querySelector(`.day-panel[data-panel="${target}"]`);
+      const wasActive = btn.classList.contains('active');
+
+      // Close all panels in this card
+      card.querySelectorAll('.day-pills button').forEach(b => b.classList.remove('active'));
+      card.querySelectorAll('.day-panel').forEach(p => p.classList.remove('open'));
+
+      if (!wasActive) {
+        btn.classList.add('active');
+        panel.classList.add('open');
+        // Lazy-init map
+        if (target === 'map') {
+          setTimeout(() => initSingleDayMap(card, days), 100);
+        }
+      }
+    });
+  });
 }
 
 // ─── MAP ───
