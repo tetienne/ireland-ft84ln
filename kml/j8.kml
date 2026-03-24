@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns:ns0="http://www.opengis.net/kml/2.2" xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>J8 — Retour vers Nimes</name>
+    <ns0:Placemark>
+      <ns0:name>Vol Dublin → Nimes</ns0:name>
+      <ns0:description>Depart 07h10, arrivee 10h30. Fin d'une semaine irlandaise inoubliable !</ns0:description>
+      <ns0:Point>
+        <ns0:coordinates>-6.2499,53.4264,0</ns0:coordinates>
+      </ns0:Point>
+    </ns0:Placemark>
+  </Document>
+</kml>

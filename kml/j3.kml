@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns:ns0="http://www.opengis.net/kml/2.2" xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>J3 — Burren &amp; Falaises de Moher</name>
+    <ns0:Placemark>
+      <ns0:name>Caherconnell Fort &amp; chiens de berger</ns0:name>
+      <ns0:description>Fort en pierre millenaire + demonstration de border collies avec moutons (4.9/5 TripAdvisor). Les enfants adorent ! Famille ~28 EUR. Caresser les chiens et agneaux apres le show.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://caherconnell.com/"&gt;Site web&lt;/a&gt; | &lt;a href="https://www.tripadvisor.fr/Attraction_Review-g1645258-d1237930-Reviews-Caherconnell_Stone_Fort_Sheepdog_Demonstrations-Caherconnell_The_Burren_County_C.html"&gt;TripAdvisor&lt;/a&gt; | &lt;a href="https://www.routard.com/guide_voyage_lieu/3409-burren.htm"&gt;Routard&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Caherconnell+Stone+Fort+Ireland"&gt;Google Maps&lt;/a&gt;</ns0:description>
+      <ns0:address>Caherconnell Stone Fort, Ireland</ns0:address>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Poulnabrone Dolmen</ns0:name>
+      <ns0:description>Dolmen de 4200-2900 av. J.-C. au milieu du paysage lunaire du Burren. Acces libre.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://www.tripadvisor.fr/Attraction_Review-g186595-d526251-Reviews-Poulnabrone_Dolmen-County_Clare.html"&gt;TripAdvisor&lt;/a&gt; | &lt;a href="https://www.routard.com/guide_voyage_lieu/3409-burren.htm"&gt;Routard&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Poulnabrone+Dolmen+Ireland"&gt;Google Maps&lt;/a&gt;</ns0:description>
+      <ns0:address>Poulnabrone Dolmen, Ireland</ns0:address>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Cliffs of Moher</ns0:name>
+      <ns0:description>Falaises de 214m sur 8 km. Centre Atlantic Edge. Macareux en aout. Arriver en fin de journee ! Parking officiel : 8 EUR/pers. &lt;strong&gt;Bon plan&lt;/strong&gt; : parking fermier 800m avant (direction Liscannor) a 2 EUR/vehicule. Coupe-vent indispensable. Rester dans la zone balisee avec les enfants.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://www.cliffsofmoher.ie/"&gt;Site web&lt;/a&gt; | &lt;a href="https://www.tripadvisor.fr/Attraction_Review-g1184916-d214806-Reviews-Cliffs_of_Moher-Liscannor_County_Clare.html"&gt;TripAdvisor&lt;/a&gt; | &lt;a href="https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/falaises-de-moher-cliffs-of-moher"&gt;Routard&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Cliffs+of+Moher+Ireland"&gt;Google Maps&lt;/a&gt;</ns0:description>
+      <ns0:address>Cliffs of Moher, Ireland</ns0:address>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Doolin</ns0:name>
+      <ns0:description>Village mythique de la musique traditionnelle. Pubs legendaires. Enfants bienvenus.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://doolin.ie/"&gt;Site web&lt;/a&gt; | &lt;a href="https://www.tripadvisor.fr/Tourism-g214506-Doolin_The_Burren_County_Clare-Vacations.html"&gt;TripAdvisor&lt;/a&gt; | &lt;a href="https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/doolin-dulainn"&gt;Routard&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Doolin+Ireland"&gt;Google Maps&lt;/a&gt;</ns0:description>
+      <ns0:address>Doolin, County Clare, Ireland</ns0:address>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Route J3</ns0:name>
+      <ns0:LineString>
+        <ns0:tessellate>1</ns0:tessellate>
+        <ns0:coordinates>-9.053,53.2718,0 -9.1253,53.0158,0 -9.14,53.0487,0 -9.4265,52.9719,0 -9.377,53.016,0</ns0:coordinates>
+      </ns0:LineString>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Nuit a Doolin</ns0:name>
+      <ns0:Point>
+        <ns0:coordinates>-9.377,53.016,0</ns0:coordinates>
+      </ns0:Point>
+    </ns0:Placemark>
+  </Document>
+</kml>

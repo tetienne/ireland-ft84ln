@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns:ns0="http://www.opengis.net/kml/2.2" xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>J4 — Cote du Clare &amp; retour Galway</name>
+    <ns0:Placemark>
+      <ns0:name>Cascades d'Ennistymon</ns0:name>
+      <ns0:description>Cascade en plein centre du bourg colore. Arret rapide sur la route.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://www.tripadvisor.fr/Attraction_Review-g212534-d18936468-Reviews-Ennistymon_Falls-Ennistymon_County_Clare.html"&gt;TripAdvisor&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Ennistymon+Falls+Ireland"&gt;Google Maps&lt;/a&gt;</ns0:description>
+      <ns0:address>Ennistymon Falls, Ireland</ns0:address>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Lahinch Beach</ns0:name>
+      <ns0:description>Grande plage de sable surveillee en ete. Capitale du surf en Irlande. Parfaite pour les enfants. Aire de jeux juste a cote de la plage. Section baignade surveillee separee du surf. Cours de surf famille possibles des 8 ans.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://www.tripadvisor.fr/Attraction_Review-g212533-d3458853-Reviews-Lahinch_Beach-Lahinch_County_Clare.html"&gt;TripAdvisor&lt;/a&gt; | &lt;a href="https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/lahinch-an-leacht"&gt;Routard&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Lahinch+Beach+Ireland"&gt;Google Maps&lt;/a&gt;</ns0:description>
+      <ns0:address>Lahinch Beach, Ireland</ns0:address>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Salthill Promenade</ns0:name>
+      <ns0:description>Front de mer de 2 km. Tradition de « kicker la plaque ». Plongeoir de Blackrock.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://www.tripadvisor.fr/Attraction_Review-g186609-d215937-Reviews-Salthill_Promenade-Galway_County_Galway_Western_Ireland.html"&gt;TripAdvisor&lt;/a&gt; | &lt;a href="https://www.routard.com/fr/guide/europe/irlande/comte-de-galway/salthill"&gt;Routard&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Salthill+Promenade+Galway+Ireland"&gt;Google Maps&lt;/a&gt;</ns0:description>
+      <ns0:address>Salthill Promenade, Galway, Ireland</ns0:address>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Galway Atlantaquaria</ns0:name>
+      <ns0:description>Aquarium national d'Irlande. Bassin tactile (raies, crabes) a hauteur d'enfant. ~1h de visite. &lt;strong&gt;Ideal en plan B pluie&lt;/strong&gt; — petit mais les enfants de 5-8 ans adorent les bassins tactiles. Famille ~45 EUR. Ferme le lundi. Dernier acces 16h en semaine.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://nationalaquarium.ie/"&gt;Site web&lt;/a&gt; | &lt;a href="https://www.tripadvisor.fr/Attraction_Review-g186609-d215896-Reviews-Galway_Atlantaquaria-Galway_County_Galway_Western_Ireland.html"&gt;TripAdvisor&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Galway+Atlantaquaria+Ireland"&gt;Google Maps&lt;/a&gt;</ns0:description>
+      <ns0:address>Galway Atlantaquaria, Salthill, Ireland</ns0:address>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Route J4</ns0:name>
+      <ns0:LineString>
+        <ns0:tessellate>1</ns0:tessellate>
+        <ns0:coordinates>-9.377,53.016,0 -9.29,52.94,0 -9.345,52.937,0 -9.0847,53.258,0 -9.0741,53.2598,0 -9.053,53.2719,0</ns0:coordinates>
+      </ns0:LineString>
+    </ns0:Placemark>
+    <ns0:Placemark>
+      <ns0:name>Nuit a Galway (2e nuit)</ns0:name>
+      <ns0:Point>
+        <ns0:coordinates>-9.053,53.2719,0</ns0:coordinates>
+      </ns0:Point>
+    </ns0:Placemark>
+  </Document>
+</kml>
