@@ -21,7 +21,7 @@ const TRIP_DATA = {
       "routeDesc": "Arrivee Nimes → Dublin · Vol FR9777",
       "morning": "Vol Ryanair FR9777, depart 11h10 de Nimes, arrivee <strong>12h40 a Dublin</strong>. Immigration + bagages (~20 min), puis comptoir <strong>NewWay</strong> pour la voiture a 13h. Route directe vers le centre de Dublin (<strong>30 min</strong>). Installation et debut de la decouverte a pied.",
       "night": "Nuit a Dublin centre",
-      "nightInfo": "<strong>Ou dormir :</strong> B&B ou hotel a Dublin centre (Temple Bar, Merrion Square). Privilegiez un logement avec parking (15-20 EUR/jour en ville). Alternative : Airbnb avec cuisine pour un premier diner tranquille.",
+      "nightInfo": "<strong>Ou dormir :</strong> Eviter Temple Bar (bruyant, cher). Privilegier <strong>Ballsbridge</strong> (calme, bus frequents). Nuit de transit : un aparthotel ou B&B suffit. <strong>Staycity Aparthotels</strong> (cuisinette, proche St Patrick's, ~130 EUR), <strong>Bewleys Hotel Ballsbridge</strong> (chambres familiales, bon rapport qualite/prix), <strong>Donnybrook Hall</strong> (victorien, chambres communicantes). Alternative budget : loger a <strong>Howth</strong> ou <strong>Dun Laoghaire</strong> (20-30 min en DART).",
       "distance": "~15 km",
       "driveTime": "~30 min",
       "highlight": null,
@@ -67,14 +67,44 @@ const TRIP_DATA = {
         }
       ],
       "schedule": [
-        { "time": "11h10", "label": "Vol FR9777 Nimes - Dublin", "icon": "fa-plane", "duration": "2h30" },
-        { "time": "12h40", "label": "Arrivee Dublin, immigration + bagages", "icon": "fa-plane-arrival", "duration": "20min" },
-        { "time": "13h00", "label": "Comptoir NewWay, recuperation voiture", "icon": "fa-car", "duration": "30min" },
-        { "time": "13h30", "label": "Route vers Dublin centre", "icon": "fa-car", "duration": "30min" },
-        { "time": "14h00", "label": "Installation hotel / B&B", "icon": "fa-bed", "duration": "30min" },
+        {
+          "time": "11h10",
+          "label": "Vol FR9777 Nimes - Dublin",
+          "icon": "fa-plane",
+          "duration": "2h30"
+        },
+        {
+          "time": "12h40",
+          "label": "Arrivee Dublin, immigration + bagages",
+          "icon": "fa-plane-arrival",
+          "duration": "20min"
+        },
+        {
+          "time": "13h00",
+          "label": "Comptoir NewWay, recuperation voiture",
+          "icon": "fa-car",
+          "duration": "30min"
+        },
+        {
+          "time": "13h30",
+          "label": "Route vers Dublin centre",
+          "icon": "fa-car",
+          "duration": "30min"
+        },
+        {
+          "time": "14h00",
+          "label": "Installation hotel / B&B",
+          "icon": "fa-bed",
+          "duration": "30min"
+        },
         { "time": "14h30", "label": "Dublin Castle", "icon": "fa-chess-rook", "duration": "1h" },
         { "time": "15h30", "label": "Balade Temple Bar", "icon": "fa-music", "duration": "45min" },
-        { "time": "16h15", "label": "St Stephen's Green (aire de jeux)", "icon": "fa-tree", "duration": "1h" },
+        {
+          "time": "16h15",
+          "label": "St Stephen's Green (aire de jeux)",
+          "icon": "fa-tree",
+          "duration": "1h"
+        },
         { "time": "17h30", "label": "Retour hotel, repos", "icon": "fa-bed", "duration": "30min" },
         { "time": "18h30", "label": "Diner en ville", "icon": "fa-utensils", "duration": "1h30" }
       ],
@@ -131,7 +161,7 @@ const TRIP_DATA = {
       "routeDesc": "Dublin → Galway (via Athlone) · 2h34 de route",
       "morning": "Depart de Dublin vers 9h30 apres un bon Irish Breakfast. <strong>1h30</strong> d'autoroute M6 jusqu'a <strong>Athlone</strong> pour un dejeuner au bord du Shannon (Sean's Bar, plus vieux pub d'Irlande !). Balade digestive au Burgess Park (aire de jeux). Puis <strong>1h04</strong> de M6 jusqu'a <strong>Galway</strong>. Arrivee vers 15h. Fin de journee a pied dans le <strong>Latin Quarter</strong> : musiciens de rue, facades colorees, ambiance festive. Les enfants adorent Shop Street.",
       "night": "Nuit a Galway (1ere nuit)",
-      "nightInfo": "<strong>Ou dormir :</strong> Galway centre ou Salthill (2 nuits au meme endroit !). Salthill est plus calme avec les enfants (promenade en bord de mer, aquarium a 5 min). Restaurants : <strong>McDonagh's</strong> (fish & chips legendaire), <strong>Ard Bia at Nimmos</strong>. Soiree pub avec musique live (Tig Coili, The Crane Bar — enfants acceptes en debut de soiree).",
+      "nightInfo": "<strong>Ou dormir :</strong> <strong>Salthill</strong> fait l'unanimite pour les familles (promenade, plage, parking gratuit en B&B, sortie naturelle vers Connemara/Burren). 2 nuits au meme endroit ! <strong>Westwinds Guestlodge</strong> (sur la promenade, vue baie, chambres familiales, ~106-130 EUR), <strong>Amber Bay B&B</strong> (reference Routard, vue baie), <strong>St Judes B&B</strong> (4 etoiles, parking). Preciser les 2 nuits non consecutives a la reservation. Restaurants : <strong>McDonagh's</strong> (fish &amp; chips legendaire), <strong>Ard Bia at Nimmos</strong>. Soiree pub avec musique live (Tig Coili, The Crane Bar, enfants acceptes en debut de soiree).",
       "rainyDay": "<strong>Galway City Museum</strong> (gratuit, interactif, bateau suspendu au plafond, 30-45 min) · <strong>Leisureland Salthill</strong> (piscine interieure, toboggan de 65m, piscine pirate pour les petits)",
       "distance": "~209 km",
       "driveTime": "~2h34 (2 segments : 1h30 + 1h04)",
@@ -178,16 +208,61 @@ const TRIP_DATA = {
         }
       ],
       "schedule": [
-        { "time": "9h30", "label": "Depart de Dublin (autoroute M6)", "icon": "fa-car", "duration": null },
-        { "time": "11h00", "label": "Arrivee Athlone, dejeuner Sean's Bar", "icon": "fa-utensils", "duration": "1h15" },
-        { "time": "12h15", "label": "Balade Burgess Park (aire de jeux)", "icon": "fa-tree", "duration": "30min" },
-        { "time": "12h45", "label": "Route Athlone - Galway (M6)", "icon": "fa-car", "duration": null },
-        { "time": "13h50", "label": "Arrivee Galway, installation", "icon": "fa-bed", "duration": "30min" },
-        { "time": "14h30", "label": "Balade Latin Quarter & Shop Street", "icon": "fa-guitar", "duration": "1h30" },
-        { "time": "16h00", "label": "Spanish Arch & Long Walk", "icon": "fa-camera", "duration": "45min" },
+        {
+          "time": "9h30",
+          "label": "Depart de Dublin (autoroute M6)",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "11h00",
+          "label": "Arrivee Athlone, dejeuner Sean's Bar",
+          "icon": "fa-utensils",
+          "duration": "1h15"
+        },
+        {
+          "time": "12h15",
+          "label": "Balade Burgess Park (aire de jeux)",
+          "icon": "fa-tree",
+          "duration": "30min"
+        },
+        {
+          "time": "12h45",
+          "label": "Route Athlone - Galway (M6)",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "13h50",
+          "label": "Arrivee Galway, installation",
+          "icon": "fa-bed",
+          "duration": "30min"
+        },
+        {
+          "time": "14h30",
+          "label": "Balade Latin Quarter & Shop Street",
+          "icon": "fa-guitar",
+          "duration": "1h30"
+        },
+        {
+          "time": "16h00",
+          "label": "Spanish Arch & Long Walk",
+          "icon": "fa-camera",
+          "duration": "45min"
+        },
         { "time": "17h00", "label": "Temps libre, repos", "icon": "fa-bed", "duration": "1h" },
-        { "time": "18h00", "label": "Diner chez McDonagh's", "icon": "fa-utensils", "duration": "1h" },
-        { "time": "19h30", "label": "Soiree musique trad (Tig Coili ou Crane Bar)", "icon": "fa-music", "duration": "1h30" }
+        {
+          "time": "18h00",
+          "label": "Diner chez McDonagh's",
+          "icon": "fa-utensils",
+          "duration": "1h"
+        },
+        {
+          "time": "19h30",
+          "label": "Soiree musique trad (Tig Coili ou Crane Bar)",
+          "icon": "fa-music",
+          "duration": "1h30"
+        }
       ],
       "budget": {
         "entries": [
@@ -201,8 +276,8 @@ const TRIP_DATA = {
       "dayRoute": [
         [53.3498, -6.2603],
         [53.4232, -7.9408],
-        [53.4250, -7.9380],
-        [53.2719, -9.0530]
+        [53.425, -7.938],
+        [53.2719, -9.053]
       ],
       "practicalTips": [
         {
@@ -233,7 +308,7 @@ const TRIP_DATA = {
       "routeDesc": "Galway → Burren → Cliffs → Doolin · 1h46 de route",
       "morning": "<strong>50 min</strong> de Galway jusqu'a <strong>Aillwee Cave</strong> dans le Burren. Grotte + spectacle de rapaces (2h sur place). Puis <strong>26 min</strong> vers le <strong>Poulnabrone Dolmen</strong> — arret photo au milieu du paysage lunaire. <strong>~20 min</strong> jusqu'aux <strong>Cliffs of Moher</strong> en fin d'apres-midi (moins de monde). Balade le long des falaises (spectaculaire !). Puis <strong>10 min</strong> jusqu'a Doolin pour la nuit.",
       "night": "Nuit a Doolin",
-      "nightInfo": "<strong>Ou dormir :</strong> <strong>Doolin</strong>, village intime avec les 3 pubs les plus celebres d'Irlande pour la musique trad (Gus O'Connor's, McGann's, McDermott's). Les enfants sont bienvenus. B&B chaleureux. Ambiance magique le soir avec les sessions musicales. Grotte de Doolin aussi a voir (stalactite geante de 7,3m, 45 min). Sessions musique des 20-21h, enfants bienvenus en debut de soiree.",
+      "nightInfo": "<strong>Ou dormir :</strong> <strong>Doolin</strong> = 2 hameaux : Fisherstreet (Gus O'Connor's) et Roadford (McGann's, McDermott's). Choisir un B&B a pied des pubs pour la musique trad le soir. <strong>Sheedy's of Doolin</strong> (#1 TripAdvisor, cadre soigne), <strong>Daly's House B&B</strong> (prime depuis 2012, a pied des pubs et du cliff walk), <strong>Fisherman's Rest</strong> (50m de Gus O'Connor's). Option budget : <strong>Aille River Hostel</strong> (chambres familiales en-suite, ~80-100 EUR). Doolin est petit, reserver tot ! Sessions musique des 20-21h, enfants bienvenus en debut de soiree.",
       "rainyDay": "<strong>Doolin Cave</strong> (plus grande stalactite libre d'Europe, visite guidee 45 min, 125 marches — ok des 7-8 ans, limite pour le 5 ans) · Aillwee Cave est deja au programme et couvre bien la pluie",
       "distance": "~65 km",
       "driveTime": "~1h46",
@@ -292,17 +367,52 @@ const TRIP_DATA = {
       ],
       "schedule": [
         { "time": "9h00", "label": "Depart de Galway", "icon": "fa-car", "duration": null },
-        { "time": "9h50", "label": "Aillwee Cave + spectacle rapaces", "icon": "fa-hill-rockslide", "duration": "2h" },
+        {
+          "time": "9h50",
+          "label": "Aillwee Cave + spectacle rapaces",
+          "icon": "fa-hill-rockslide",
+          "duration": "2h"
+        },
         { "time": "12h00", "label": "Route vers Poulnabrone", "icon": "fa-car", "duration": null },
-        { "time": "12h30", "label": "Poulnabrone Dolmen (arret photo)", "icon": "fa-landmark", "duration": "20min" },
-        { "time": "13h00", "label": "Pique-nique dans le Burren", "icon": "fa-utensils", "duration": "45min" },
+        {
+          "time": "12h30",
+          "label": "Poulnabrone Dolmen (arret photo)",
+          "icon": "fa-landmark",
+          "duration": "20min"
+        },
+        {
+          "time": "13h00",
+          "label": "Pique-nique dans le Burren",
+          "icon": "fa-utensils",
+          "duration": "45min"
+        },
         { "time": "14h00", "label": "Route vers les Cliffs", "icon": "fa-car", "duration": null },
-        { "time": "14h20", "label": "Cliffs of Moher (balade le long des falaises)", "icon": "fa-mountain-sun", "duration": "1h30" },
+        {
+          "time": "14h20",
+          "label": "Cliffs of Moher (balade le long des falaises)",
+          "icon": "fa-mountain-sun",
+          "duration": "1h30"
+        },
         { "time": "16h00", "label": "Route vers Doolin", "icon": "fa-car", "duration": null },
-        { "time": "16h10", "label": "Installation a Doolin", "icon": "fa-bed", "duration": "30min" },
-        { "time": "17h00", "label": "Balade vers le port de Doolin", "icon": "fa-camera", "duration": "45min" },
+        {
+          "time": "16h10",
+          "label": "Installation a Doolin",
+          "icon": "fa-bed",
+          "duration": "30min"
+        },
+        {
+          "time": "17h00",
+          "label": "Balade vers le port de Doolin",
+          "icon": "fa-camera",
+          "duration": "45min"
+        },
         { "time": "18h30", "label": "Diner a Doolin", "icon": "fa-utensils", "duration": "1h30" },
-        { "time": "20h30", "label": "Session musique trad (Gus O'Connor's)", "icon": "fa-music", "duration": "1h" }
+        {
+          "time": "20h30",
+          "label": "Session musique trad (Gus O'Connor's)",
+          "icon": "fa-music",
+          "duration": "1h"
+        }
       ],
       "budget": {
         "entries": [
@@ -316,11 +426,11 @@ const TRIP_DATA = {
         "notes": "Parking fermier 800m avant les Cliffs (direction Liscannor) a 2 EUR/vehicule au lieu de 8 EUR/pers au parking officiel. Economie de 30 EUR pour une famille de 4."
       },
       "dayRoute": [
-        [53.2718, -9.0530],
+        [53.2718, -9.053],
         [53.0892, -9.1438],
-        [53.0487, -9.1400],
+        [53.0487, -9.14],
         [52.9719, -9.4265],
-        [53.0160, -9.3770]
+        [53.016, -9.377]
       ],
       "practicalTips": [
         {
@@ -372,13 +482,13 @@ const TRIP_DATA = {
       "routeDesc": "Doolin → Lahinch → Galway · ~1h19 de route",
       "morning": "<strong>Matin tranquille</strong> a Doolin : balade vers le port, vue sur les Iles d'Aran. Puis petite route cotiere (<strong>14 min</strong>) via les <strong>cascades d'Ennistymon</strong> jusqu'a <strong>Lahinch Beach</strong> — grande plage surveillee, parfaite pour les enfants. Pique-nique ou fish & chips sur la plage. <strong>Apres-midi</strong> : <strong>~1h</strong> de route vers Galway via N85/M18. Arrivee a Galway vers 16h. <strong>Salthill Promenade</strong> avec les enfants, tradition de « kicker la plaque » au bout. <strong>Atlantaquaria</strong> en option si la meteo est maussade (petit aquarium, ~1h, bassin tactile — dernier accès 16h). Soiree : diner chez McDonagh's et deuxieme soiree musicale dans les pubs.",
       "night": "Nuit a Galway (2e nuit)",
-      "nightInfo": "<strong>Retour au meme logement !</strong> Pas de valises a refaire. Soiree tranquille a Salthill ou dans le Latin Quarter. Avantage des 2 nuits : on profite de Galway sans se presser.",
+      "nightInfo": "<strong>Retour au meme logement a Salthill !</strong> Pas de valises a refaire. Soiree tranquille a Salthill ou dans le Latin Quarter. Avantage des 2 nuits : on profite de Galway sans se presser.",
       "rainyDay": "<strong>Atlantaquaria</strong> (bassin tactile, ~1h, famille ~45 EUR, ferme lundi) · <strong>Galway City Museum</strong> (gratuit, 30-45 min) · <strong>Leisureland Salthill</strong> (piscine/toboggan)",
       "distance": "~75 km",
       "driveTime": "~1h19",
       "highlight": null,
       "mapCenter": {
-        "lat": 53.2580,
+        "lat": 53.258,
         "lng": -9.0847
       },
       "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lahinch_Beach%2C_March_2012.JPG",
@@ -430,17 +540,62 @@ const TRIP_DATA = {
         }
       ],
       "schedule": [
-        { "time": "10h00", "label": "Balade au port de Doolin, vue Iles d'Aran", "icon": "fa-camera", "duration": "45min" },
+        {
+          "time": "10h00",
+          "label": "Balade au port de Doolin, vue Iles d'Aran",
+          "icon": "fa-camera",
+          "duration": "45min"
+        },
         { "time": "10h45", "label": "Route vers Ennistymon", "icon": "fa-car", "duration": null },
-        { "time": "11h00", "label": "Cascades d'Ennistymon (arret rapide)", "icon": "fa-water", "duration": "15min" },
+        {
+          "time": "11h00",
+          "label": "Cascades d'Ennistymon (arret rapide)",
+          "icon": "fa-water",
+          "duration": "15min"
+        },
         { "time": "11h15", "label": "Route vers Lahinch", "icon": "fa-car", "duration": null },
-        { "time": "11h30", "label": "Lahinch Beach (baignade, jeux, pique-nique)", "icon": "fa-umbrella-beach", "duration": "2h30" },
-        { "time": "14h00", "label": "Route vers Galway (N85/M18)", "icon": "fa-car", "duration": null },
-        { "time": "15h00", "label": "Arrivee Galway, Salthill Promenade", "icon": "fa-person-swimming", "duration": "1h" },
-        { "time": "16h00", "label": "Atlantaquaria (optionnel, si pluie)", "icon": "fa-fish", "duration": "1h" },
-        { "time": "17h30", "label": "Repos a l'hebergement", "icon": "fa-bed", "duration": "30min" },
-        { "time": "18h30", "label": "Diner chez McDonagh's ou Latin Quarter", "icon": "fa-utensils", "duration": "1h" },
-        { "time": "20h00", "label": "Soiree musicale (2e soir a Galway)", "icon": "fa-music", "duration": "1h" }
+        {
+          "time": "11h30",
+          "label": "Lahinch Beach (baignade, jeux, pique-nique)",
+          "icon": "fa-umbrella-beach",
+          "duration": "2h30"
+        },
+        {
+          "time": "14h00",
+          "label": "Route vers Galway (N85/M18)",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "15h00",
+          "label": "Arrivee Galway, Salthill Promenade",
+          "icon": "fa-person-swimming",
+          "duration": "1h"
+        },
+        {
+          "time": "16h00",
+          "label": "Atlantaquaria (optionnel, si pluie)",
+          "icon": "fa-fish",
+          "duration": "1h"
+        },
+        {
+          "time": "17h30",
+          "label": "Repos a l'hebergement",
+          "icon": "fa-bed",
+          "duration": "30min"
+        },
+        {
+          "time": "18h30",
+          "label": "Diner chez McDonagh's ou Latin Quarter",
+          "icon": "fa-utensils",
+          "duration": "1h"
+        },
+        {
+          "time": "20h00",
+          "label": "Soiree musicale (2e soir a Galway)",
+          "icon": "fa-music",
+          "duration": "1h"
+        }
       ],
       "budget": {
         "entries": [
@@ -453,12 +608,12 @@ const TRIP_DATA = {
         "notes": "Budget Atlantaquaria optionnel (uniquement si pluie). Ferme le lundi (pas un probleme, on est mercredi). Sans Atlantaquaria : 85 EUR."
       },
       "dayRoute": [
-        [53.0160, -9.3770],
-        [52.9400, -9.2900],
-        [52.9370, -9.3450],
-        [53.2580, -9.0847],
+        [53.016, -9.377],
+        [52.94, -9.29],
+        [52.937, -9.345],
+        [53.258, -9.0847],
         [53.2598, -9.0741],
-        [53.2719, -9.0530]
+        [53.2719, -9.053]
       ],
       "practicalTips": [
         {
@@ -500,7 +655,7 @@ const TRIP_DATA = {
       "routeDesc": "Galway → Roundstone → Clifden → Sky Road · ~1h31 de route",
       "morning": "Depart de Galway vers 10h. Route scenique (<strong>1h07</strong>) vers <strong>Clifden</strong> via la cote du Connemara. Arret a <strong>Roundstone</strong>, village de pecheurs idyllique (atelier de bodhran). Puis <strong>Dog's Bay</strong> — plage de sable blanc corallien, eau turquoise. Dejeuner a Clifden (Mitchell's, Lowry's). <strong>Apres-midi</strong> : <strong>Sky Road</strong>, boucle panoramique de 12 km (<strong>24 min</strong> + arrets photos). Vues epoustouflantes sur l'ocean et les iles. <em>Le Connemara Pony Show a lieu le 3e jeudi d'aout a Clifden — ca pourrait etre aujourd'hui !</em>",
       "night": "Nuit a Clifden",
-      "nightInfo": "<strong>Ou dormir :</strong> <strong>Clifden</strong>, « capitale du Connemara ». Ville coloree avec bons restaurants. Station House Hotel bien place. Soiree a pied dans les rues animees. <strong>Connemara Pony Show</strong> : le 3e jeudi d'aout a Clifden, evenement incontournable si les dates coincident !",
+      "nightInfo": "<strong>Ou dormir :</strong> <strong>Clifden</strong>, « capitale du Connemara ». <strong>Faul House B&B</strong> (eleveur de poneys du Connemara, les enfants voient les chevaux !), <strong>Bayview House B&B</strong> (debut Sky Road, vue baie, ideal pour le coucher de soleil), <strong>Atlantic View B&B</strong> (calme, pancakes maison). Formule classique : chambre double + twin communicante. <strong>Connemara Pony Show</strong> : le 3e jeudi d'aout a Clifden, evenement incontournable si les dates coincident !",
       "rainyDay": "<strong>Killary Fjord Boat</strong> depuis Leenane (40 min de Clifden, 90 min de croisiere en bateau couvert sur le seul fjord d'Irlande — les enfants peuvent « piloter », atmospherique sous la pluie, famille ~60 EUR) · <strong>Dan O'Hara's Homestead</strong> (7 km de Clifden, partie musee interieure + AV, tracteur si ca se degage)",
       "distance": "~85 km",
       "driveTime": "~1h31",
@@ -558,15 +713,50 @@ const TRIP_DATA = {
         }
       ],
       "schedule": [
-        { "time": "10h00", "label": "Depart Galway, route vers Roundstone", "icon": "fa-car", "duration": null },
-        { "time": "10h45", "label": "Arret Roundstone (village, atelier bodhran)", "icon": "fa-palette", "duration": "30min" },
-        { "time": "11h30", "label": "Dog's Bay (plage de sable blanc)", "icon": "fa-umbrella-beach", "duration": "1h" },
+        {
+          "time": "10h00",
+          "label": "Depart Galway, route vers Roundstone",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "10h45",
+          "label": "Arret Roundstone (village, atelier bodhran)",
+          "icon": "fa-palette",
+          "duration": "30min"
+        },
+        {
+          "time": "11h30",
+          "label": "Dog's Bay (plage de sable blanc)",
+          "icon": "fa-umbrella-beach",
+          "duration": "1h"
+        },
         { "time": "12h30", "label": "Route vers Clifden", "icon": "fa-car", "duration": null },
         { "time": "13h00", "label": "Dejeuner a Clifden", "icon": "fa-utensils", "duration": "1h" },
-        { "time": "14h00", "label": "Balade dans Clifden", "icon": "fa-camera", "duration": "30min" },
-        { "time": "14h30", "label": "Connemara Pony Show (si 3e jeudi d'aout)", "icon": "fa-camera", "duration": "1h30" },
-        { "time": "16h30", "label": "Sky Road (boucle panoramique)", "icon": "fa-panorama", "duration": "1h" },
-        { "time": "17h30", "label": "Retour Clifden, installation", "icon": "fa-bed", "duration": "30min" },
+        {
+          "time": "14h00",
+          "label": "Balade dans Clifden",
+          "icon": "fa-camera",
+          "duration": "30min"
+        },
+        {
+          "time": "14h30",
+          "label": "Connemara Pony Show (si 3e jeudi d'aout)",
+          "icon": "fa-camera",
+          "duration": "1h30"
+        },
+        {
+          "time": "16h30",
+          "label": "Sky Road (boucle panoramique)",
+          "icon": "fa-panorama",
+          "duration": "1h"
+        },
+        {
+          "time": "17h30",
+          "label": "Retour Clifden, installation",
+          "icon": "fa-bed",
+          "duration": "30min"
+        },
         { "time": "18h30", "label": "Diner a Clifden", "icon": "fa-utensils", "duration": "1h15" }
       ],
       "budget": {
@@ -579,7 +769,7 @@ const TRIP_DATA = {
         "notes": "Journee economique : Dog's Bay, Sky Road et Roundstone sont gratuits. Le Connemara Pony Show est gratuit aussi."
       },
       "dayRoute": [
-        [53.2719, -9.0530],
+        [53.2719, -9.053],
         [53.3957, -9.9203],
         [53.3779, -9.9636],
         [53.4333, -10.0167],
@@ -625,7 +815,7 @@ const TRIP_DATA = {
       "routeDesc": "Clifden → Athlone · ~2h06 de route",
       "morning": "<strong>Matin</strong> : derniere balade a Clifden ou detour par <strong>Letterfrack</strong> et le <strong>Parc National du Connemara</strong> (sentier Diamond Hill, 1h30 facile, vue a 360°). Dejeuner a Clifden. <strong>Apres-midi</strong> : route vers l'est via <strong>Maam Cross</strong> et les paysages de lacs et tourbieres (<strong>~2h06</strong>). Pause cafe a <strong>Oughterard</strong> a mi-chemin (~1h de Clifden) — vrai village avec cafes et commerces, ideal pour couper le trajet. Arrivee a <strong>Athlone</strong> vers 17h. Balade au bord du Shannon, croisiere Viking (75 min, replique de drakkar, epees et chapeaux pour les enfants !). Diner dans un pub au bord de l'eau. <strong>Sean's Bar</strong> pour les parents apres le coucher des enfants.",
       "night": "Nuit a Athlone",
-      "nightInfo": "<strong>Ou dormir :</strong> Athlone, ville agreable au bord du Shannon. Radisson Blu ou Sheraton. <strong>Etape strategique</strong> : demain c'est la journee histoire (Trim Castle, Hill of Tara) puis l'hotel aeroport. <strong>⚠️ Athlone Castle ferme pour renovation jusqu'a automne 2026</strong> — ne comptez pas dessus.",
+      "nightInfo": "<strong>Ou dormir :</strong> Athlone, ville agreable au bord du Shannon. <strong>Shannonside House B&B</strong> (#1 TripAdvisor, bord du Shannon, parking gratuit, ~90-125 EUR), <strong>Arch House Apartments</strong> (2 min du chateau, appartement 2 chambres avec cuisine, ~107 EUR, ideal apres une longue route), <strong>Radisson Blu</strong> (piscine interieure, enfants gratuits &lt;12 ans, ~116-165 EUR). <strong>Etape strategique</strong> : demain c'est la journee histoire (Trim Castle, Hill of Tara) puis l'hotel aeroport. <strong>⚠️ Athlone Castle ferme pour renovation jusqu'a automne 2026</strong> — ne comptez pas dessus.",
       "rainyDay": "Si Viking Tours annule (bateau ouvert) : <strong>Sean's Bar</strong> (plus vieux pub du monde, 10 min de curiosite avec les enfants) · Privilegiez plutot les activites couvertes du matin au Connemara (Killary Fjord, Dan O'Hara) avant de prendre la route",
       "distance": "~164 km",
       "driveTime": "~2h06",
@@ -661,16 +851,61 @@ const TRIP_DATA = {
         }
       ],
       "schedule": [
-        { "time": "9h30", "label": "Parc National Connemara / Diamond Hill", "icon": "fa-mountain-sun", "duration": "1h30" },
-        { "time": "11h00", "label": "Retour Clifden, dernier cafe", "icon": "fa-mug-hot", "duration": "30min" },
-        { "time": "11h30", "label": "Depart Clifden vers l'est (via Maam Cross)", "icon": "fa-car", "duration": null },
-        { "time": "12h30", "label": "Pause cafe Oughterard", "icon": "fa-mug-hot", "duration": "20min" },
-        { "time": "12h50", "label": "Route Oughterard - Athlone", "icon": "fa-car", "duration": null },
-        { "time": "14h00", "label": "Arrivee Athlone, installation", "icon": "fa-bed", "duration": "30min" },
+        {
+          "time": "9h30",
+          "label": "Parc National Connemara / Diamond Hill",
+          "icon": "fa-mountain-sun",
+          "duration": "1h30"
+        },
+        {
+          "time": "11h00",
+          "label": "Retour Clifden, dernier cafe",
+          "icon": "fa-mug-hot",
+          "duration": "30min"
+        },
+        {
+          "time": "11h30",
+          "label": "Depart Clifden vers l'est (via Maam Cross)",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "12h30",
+          "label": "Pause cafe Oughterard",
+          "icon": "fa-mug-hot",
+          "duration": "20min"
+        },
+        {
+          "time": "12h50",
+          "label": "Route Oughterard - Athlone",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "14h00",
+          "label": "Arrivee Athlone, installation",
+          "icon": "fa-bed",
+          "duration": "30min"
+        },
         { "time": "14h30", "label": "Dejeuner a Athlone", "icon": "fa-utensils", "duration": "1h" },
-        { "time": "16h00", "label": "Viking Tours (croisiere Shannon)", "icon": "fa-ship", "duration": "1h15" },
-        { "time": "17h30", "label": "Balade au bord du Shannon", "icon": "fa-camera", "duration": "30min" },
-        { "time": "18h30", "label": "Diner pub au bord de l'eau", "icon": "fa-utensils", "duration": "1h15" }
+        {
+          "time": "16h00",
+          "label": "Viking Tours (croisiere Shannon)",
+          "icon": "fa-ship",
+          "duration": "1h15"
+        },
+        {
+          "time": "17h30",
+          "label": "Balade au bord du Shannon",
+          "icon": "fa-camera",
+          "duration": "30min"
+        },
+        {
+          "time": "18h30",
+          "label": "Diner pub au bord de l'eau",
+          "icon": "fa-utensils",
+          "duration": "1h15"
+        }
       ],
       "budget": {
         "entries": [
@@ -685,9 +920,9 @@ const TRIP_DATA = {
       },
       "dayRoute": [
         [53.4333, -10.0167],
-        [53.5520, -9.9440],
+        [53.552, -9.944],
         [53.4333, -10.0167],
-        [53.4300, -9.4300],
+        [53.43, -9.43],
         [53.4232, -7.9408]
       ],
       "practicalTips": [
@@ -723,7 +958,7 @@ const TRIP_DATA = {
       "routeDesc": "Athlone → Trim Castle → Hill of Tara → Airport · 2h15 de route",
       "morning": "Depart d'Athlone vers 9h. <strong>1h12</strong> de route jusqu'a <strong>Trim Castle</strong>, le plus grand chateau normand d'Irlande (decor de Braveheart !). Visite du donjon et des remparts (1h). Puis <strong>21 min</strong> jusqu'a <strong>Hill of Tara</strong>, colline sacree des Hauts Rois d'Irlande — vue sur 40% de l'ile, Pierre du Destin (45 min). Dejeuner dans le coin. Puis <strong>42 min</strong> vers l'hotel de l'aeroport. Arrivee en debut d'apres-midi.",
       "night": "Nuit hotel aeroport Dublin",
-      "nightInfo": "<strong>Ou dormir :</strong> Hotel <strong>a cote du terminal</strong>. <strong>Crowne Plaza Dublin Airport</strong> (passage couvert vers T1 !), Carlton Hotel, ou Holiday Inn Express. Preparez valises et passeports ce soir. <strong>Reveil a 5h00</strong>. Certains hotels ont piscine — parfait pour occuper les enfants l'apres-midi.",
+      "nightInfo": "<strong>Ou dormir :</strong> <strong>Maldron Hotel Dublin Airport</strong> (dans l'enceinte, 267m des terminaux, accessible a pied, navette gratuite des 4h, ~120-180 EUR). Alternatives : <strong>Radisson Blu</strong> (petit-dej \"Grab &amp; Run\" pour vols matinaux), <strong>Carlton Hotel</strong> (formule Park &amp; Fly). <strong>Astuce :</strong> rendre la voiture NewWay le soir du 22 pour eliminer le stress du matin (confirmer les horaires matinaux de NewWay au +353 1 844 4199). Preparez valises et passeports ce soir. <strong>Reveil a 5h00</strong>.",
       "distance": "~155 km",
       "driveTime": "~2h15",
       "highlight": null,
@@ -759,17 +994,67 @@ const TRIP_DATA = {
       ],
       "schedule": [
         { "time": "9h00", "label": "Depart d'Athlone", "icon": "fa-car", "duration": null },
-        { "time": "10h15", "label": "Trim Castle (visite guidee donjon)", "icon": "fa-chess-rook", "duration": "1h" },
-        { "time": "11h15", "label": "Balade remparts et jardins de Trim", "icon": "fa-camera", "duration": "30min" },
+        {
+          "time": "10h15",
+          "label": "Trim Castle (visite guidee donjon)",
+          "icon": "fa-chess-rook",
+          "duration": "1h"
+        },
+        {
+          "time": "11h15",
+          "label": "Balade remparts et jardins de Trim",
+          "icon": "fa-camera",
+          "duration": "30min"
+        },
         { "time": "11h45", "label": "Route vers Hill of Tara", "icon": "fa-car", "duration": null },
-        { "time": "12h05", "label": "Hill of Tara (colline sacree, Pierre du Destin)", "icon": "fa-crown", "duration": "45min" },
-        { "time": "13h00", "label": "Dejeuner dans les environs", "icon": "fa-utensils", "duration": "1h" },
-        { "time": "14h00", "label": "Route vers hotel aeroport", "icon": "fa-car", "duration": null },
-        { "time": "14h45", "label": "Arrivee hotel aeroport, installation", "icon": "fa-bed", "duration": "30min" },
-        { "time": "15h15", "label": "Piscine hotel (si disponible)", "icon": "fa-person-swimming", "duration": "1h30" },
-        { "time": "17h00", "label": "Preparation valises et passeports", "icon": "fa-suitcase", "duration": "45min" },
-        { "time": "18h00", "label": "Diner a l'hotel ou environs", "icon": "fa-utensils", "duration": "1h" },
-        { "time": "19h30", "label": "Coucher tot (reveil 5h00 !)", "icon": "fa-bed", "duration": null }
+        {
+          "time": "12h05",
+          "label": "Hill of Tara (colline sacree, Pierre du Destin)",
+          "icon": "fa-crown",
+          "duration": "45min"
+        },
+        {
+          "time": "13h00",
+          "label": "Dejeuner dans les environs",
+          "icon": "fa-utensils",
+          "duration": "1h"
+        },
+        {
+          "time": "14h00",
+          "label": "Route vers hotel aeroport",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "14h45",
+          "label": "Arrivee hotel aeroport, installation",
+          "icon": "fa-bed",
+          "duration": "30min"
+        },
+        {
+          "time": "15h15",
+          "label": "Piscine hotel (si disponible)",
+          "icon": "fa-person-swimming",
+          "duration": "1h30"
+        },
+        {
+          "time": "17h00",
+          "label": "Preparation valises et passeports",
+          "icon": "fa-suitcase",
+          "duration": "45min"
+        },
+        {
+          "time": "18h00",
+          "label": "Diner a l'hotel ou environs",
+          "icon": "fa-utensils",
+          "duration": "1h"
+        },
+        {
+          "time": "19h30",
+          "label": "Coucher tot (reveil 5h00 !)",
+          "icon": "fa-bed",
+          "duration": null
+        }
       ],
       "budget": {
         "entries": [
@@ -854,23 +1139,49 @@ const TRIP_DATA = {
       ],
       "schedule": [
         { "time": "5h00", "label": "Reveil", "icon": "fa-bed", "duration": null },
-        { "time": "5h15", "label": "Hotel - Terminal (passage couvert)", "icon": "fa-car", "duration": "10min" },
-        { "time": "5h30", "label": "Restitution voiture NewWay", "icon": "fa-car", "duration": "15min" },
-        { "time": "5h45", "label": "Enregistrement et securite", "icon": "fa-plane-departure", "duration": "45min" },
-        { "time": "6h30", "label": "Attente en zone d'embarquement", "icon": "fa-clock", "duration": "30min" },
-        { "time": "7h10", "label": "Vol FR9776 Dublin - Nimes", "icon": "fa-plane", "duration": "2h20" },
-        { "time": "10h30", "label": "Arrivee a Nimes (heure locale)", "icon": "fa-plane-arrival", "duration": null }
+        {
+          "time": "5h15",
+          "label": "Hotel - Terminal (passage couvert)",
+          "icon": "fa-car",
+          "duration": "10min"
+        },
+        {
+          "time": "5h30",
+          "label": "Restitution voiture NewWay",
+          "icon": "fa-car",
+          "duration": "15min"
+        },
+        {
+          "time": "5h45",
+          "label": "Enregistrement et securite",
+          "icon": "fa-plane-departure",
+          "duration": "45min"
+        },
+        {
+          "time": "6h30",
+          "label": "Attente en zone d'embarquement",
+          "icon": "fa-clock",
+          "duration": "30min"
+        },
+        {
+          "time": "7h10",
+          "label": "Vol FR9776 Dublin - Nimes",
+          "icon": "fa-plane",
+          "duration": "2h20"
+        },
+        {
+          "time": "10h30",
+          "label": "Arrivee a Nimes (heure locale)",
+          "icon": "fa-plane-arrival",
+          "duration": null
+        }
       ],
       "budget": {
-        "entries": [
-          { "label": "Petit-dejeuner (si non inclus)", "amount": 20 }
-        ],
+        "entries": [{ "label": "Petit-dejeuner (si non inclus)", "amount": 20 }],
         "total": 20,
         "notes": "Verifier si le petit-dejeuner est inclus dans la nuit d'hotel. Sinon, prevoir des provisions la veille."
       },
-      "dayRoute": [
-        [53.4264, -6.2499]
-      ],
+      "dayRoute": [[53.4264, -6.2499]],
       "practicalTips": [
         {
           "stop": "Vol Dublin - Nimes",
@@ -897,7 +1208,7 @@ const TRIP_DATA = {
     [53.017, -9.378],
     [52.94, -9.29],
     [52.937, -9.345],
-    [53.2580, -9.0847],
+    [53.258, -9.0847],
     [53.2718, -9.053],
     [53.398, -9.922],
     [53.387, -9.963],
