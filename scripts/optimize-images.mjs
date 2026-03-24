@@ -13,8 +13,8 @@ const OUT_DIR = "img";
 const DATA_JSON = "data.json";
 const DATA_JS = "data.js";
 const USER_AGENT = "IrelandTripSiteBuilder/1.0 (GitHub Actions; contact: github)";
-const DELAY_MS = 500;
-const MAX_RETRIES = 3;
+const DELAY_MS = 1500;
+const MAX_RETRIES = 5;
 
 async function main() {
   const data = JSON.parse(await readFile(DATA_JSON, "utf8"));
@@ -57,7 +57,7 @@ async function main() {
           headers: { "User-Agent": USER_AGENT },
         });
         if (res.status !== 429) break;
-        const wait = (attempt + 1) * 2000;
+        const wait = (attempt + 1) * 3000;
         console.warn(`  429 for ${url.slice(-40)}, retry in ${wait}ms...`);
         await new Promise((r) => setTimeout(r, wait));
       }
