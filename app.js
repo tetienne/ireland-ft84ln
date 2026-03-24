@@ -4,12 +4,15 @@ function boot(data) {
   renderHero(data.trip);
   renderRoadBook(data.days);
   initDayPanels(data.days);
+  renderDayNav(data.days);
+  renderDashboard(data.days);
   if (data.tips) renderTips(data.tips);
   if (data.blogs) renderBlogs(data.blogs);
   initMap(data);
   initScrollAnimations();
   initNavbar();
   initPrintButton();
+  initDeepLinks();
 }
 
 // Try fetch first, fallback to global TRIP_DATA (set via <script src="data.js">)
@@ -52,7 +55,7 @@ function renderRoadBook(days) {
   timeline.innerHTML = days
     .map(
       (day) => `
-    <div class="day-card" data-day="${day.day}">
+    <div class="day-card" id="jour-${day.day}" data-day="${day.day}">
       <div class="day-number">J${day.day}</div>
       <div class="day-content">
         <div class="day-top">
@@ -93,6 +96,18 @@ function renderStop(stop) {
     links.push(
       `<a href="${stop.gmaps}" target="_blank" class="link-map"><i class="fa-solid fa-map-pin"></i> Maps</a>`,
     );
+
+  // Navigation links: extract coords from gmaps URL
+  const coords = extractCoords(stop.gmaps);
+  if (coords) {
+    links.push(
+      `<a href="https://waze.com/ul?ll=${coords[0]},${coords[1]}&navigate=yes" target="_blank" class="link-waze"><i class="fa-solid fa-car"></i> Waze</a>`,
+    );
+    links.push(
+      `<a href="https://www.google.com/maps/dir/?api=1&destination=${coords[0]},${coords[1]}&travelmode=walking" target="_blank" class="link-walk"><i class="fa-solid fa-person-walking"></i> A pied</a>`,
+    );
+  }
+
   if (stop.web)
     links.push(
       `<a href="${stop.web}" target="_blank" class="link-web"><i class="fa-solid fa-globe"></i> Site officiel</a>`,
@@ -292,6 +307,188 @@ function initDayPanels(days) {
   });
 }
 
+// ─── STICKY DAY NAV ───
+function getTodayDayNum() {
+  // Trip dates: 16-23 Aug 2026
+  const tripDates = [
+    new Date(2026, 7, 16),
+    new Date(2026, 7, 17),
+    new Date(2026, 7, 18),
+    new Date(2026, 7, 19),
+    new Date(2026, 7, 20),
+    new Date(2026, 7, 21),
+    new Date(2026, 7, 22),
+    new Date(2026, 7, 23),
+  ];
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  for (let i = 0; i < tripDates.length; i++) {
+    if (today.getTime() === tripDates[i].getTime()) return i + 1;
+  }
+  return null;
+}
+
+function renderDayNav(days) {
+  const nav = document.getElementById("dayNav");
+  if (!nav) return;
+
+  const todayNum = getTodayDayNum();
+  const shortLabels = {
+    1: "Dublin",
+    2: "Galway",
+    3: "Moher",
+    4: "Clare",
+    5: "Connemara",
+    6: "Athlone",
+    7: "Trim",
+    8: "Retour",
+  };
+
+  nav.innerHTML = days
+    .map((day) => {
+      const isToday = day.day === todayNum;
+      const todayBadge = isToday ? ' <span class="pill-today">Auj.</span>' : "";
+      return `<button class="day-nav-pill" data-day="${day.day}">
+        <span class="pill-day">J${day.day}</span>
+        <span class="pill-label">${shortLabels[day.day] || ""}</span>${todayBadge}
+      </button>`;
+    })
+    .join("");
+
+  // Click handler: scroll to day card
+  nav.querySelectorAll(".day-nav-pill").forEach((pill) => {
+    pill.addEventListener("click", () => {
+      const dayNum = pill.dataset.day;
+      const card = document.getElementById(`jour-${dayNum}`);
+      if (card) {
+        card.scrollIntoView({ behavior: "smooth", block: "start" });
+        history.replaceState(null, "", `#jour-${dayNum}`);
+      }
+    });
+  });
+
+  // IntersectionObserver: highlight active day on scroll
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const dayNum = entry.target.dataset.day;
+          nav.querySelectorAll(".day-nav-pill").forEach((p) => p.classList.remove("active"));
+          const activePill = nav.querySelector(`.day-nav-pill[data-day="${dayNum}"]`);
+          if (activePill) {
+            activePill.classList.add("active");
+            activePill.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+          }
+          history.replaceState(null, "", `#jour-${dayNum}`);
+        }
+      });
+    },
+    { threshold: 0.3, rootMargin: "-80px 0px -60% 0px" },
+  );
+  document.querySelectorAll(".day-card").forEach((card) => observer.observe(card));
+
+  // Mobile: show on scroll up, hide on scroll down
+  let lastScrollY = window.scrollY;
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (window.innerWidth > 480) return;
+      const currentY = window.scrollY;
+      nav.classList.toggle("nav-hidden", currentY > lastScrollY && currentY > 200);
+      lastScrollY = currentY;
+    },
+    { passive: true },
+  );
+}
+
+// ─── DEEP LINKS ───
+function initDeepLinks() {
+  const hash = window.location.hash;
+  const todayNum = getTodayDayNum();
+
+  if (hash && hash.startsWith("#jour-")) {
+    const card = document.getElementById(hash.slice(1));
+    if (card) {
+      setTimeout(() => card.scrollIntoView({ behavior: "smooth", block: "start" }), 300);
+    }
+  } else if (todayNum) {
+    const card = document.getElementById(`jour-${todayNum}`);
+    if (card) {
+      setTimeout(() => card.scrollIntoView({ behavior: "smooth", block: "start" }), 300);
+    }
+  }
+}
+
+// ─── DASHBOARD ───
+function renderDashboard(days) {
+  const grid = document.querySelector(".dashboard-grid");
+  if (!grid) return;
+
+  let totalBudget = 0;
+  days.forEach((day) => {
+    if (day.budget) totalBudget += day.budget.total;
+  });
+
+  // Desktop table
+  const rows = days
+    .map((day) => {
+      const budget = day.budget ? `${day.budget.total} \u20ac` : "-";
+      const highlight = day.highlight
+        ? `<span class="dash-highlight"><i class="fa-solid fa-star"></i> ${day.highlight}</span>`
+        : "";
+      return `<tr data-scroll-day="${day.day}">
+        <td class="dash-day">J${day.day}</td>
+        <td>${day.date}</td>
+        <td>${day.routeDesc}</td>
+        <td>${day.night || "-"}</td>
+        <td>${day.driveTime || "-"}</td>
+        <td>${budget}</td>
+        <td>${highlight}</td>
+      </tr>`;
+    })
+    .join("");
+
+  const table = `<table class="dashboard-table">
+    <thead><tr>
+      <th>Jour</th><th>Date</th><th>Trajet</th><th>Nuit</th><th>Conduite</th><th>Budget</th><th></th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+    <tfoot><tr>
+      <td colspan="5">Budget total estime</td>
+      <td>${totalBudget} \u20ac</td>
+      <td></td>
+    </tr></tfoot>
+  </table>`;
+
+  // Mobile cards
+  const cards = days
+    .map((day) => {
+      const budget = day.budget ? `${day.budget.total} \u20ac` : "";
+      return `<div class="dash-card" data-scroll-day="${day.day}">
+        <div class="dash-card-day">J${day.day}</div>
+        <div class="dash-card-title">${day.title}</div>
+        <div class="dash-card-meta">
+          ${day.night ? `<span><i class="fa-solid fa-bed"></i> ${day.night}</span>` : ""}
+          ${day.driveTime ? `<span><i class="fa-solid fa-clock"></i> ${day.driveTime}</span>` : ""}
+          ${budget ? `<span><i class="fa-solid fa-coins"></i> ${budget}</span>` : ""}
+        </div>
+      </div>`;
+    })
+    .join("");
+
+  const totalHtml = `<div class="dashboard-total"><i class="fa-solid fa-coins"></i> Budget total : ${totalBudget} \u20ac</div>`;
+
+  grid.innerHTML = table + `<div class="dashboard-cards">${cards}</div>` + totalHtml;
+
+  // Click row/card to scroll to day
+  grid.querySelectorAll("[data-scroll-day]").forEach((el) => {
+    el.addEventListener("click", () => {
+      const card = document.getElementById(`jour-${el.dataset.scrollDay}`);
+      if (card) card.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+}
+
 // ─── MAP ───
 function initMap(data) {
   const map = L.map("map", { zoomControl: false, scrollWheelZoom: true }).setView(
@@ -410,16 +607,8 @@ function initMap(data) {
   const allPoints = data.days.map((d) => [d.mapCenter.lat, d.mapCenter.lng]);
   map.fitBounds(L.latLngBounds(allPoints).pad(0.15));
 
-  // Click day card → fly to map
-  document.querySelectorAll(".day-card").forEach((card) => {
-    card.style.cursor = "pointer";
-    card.addEventListener("click", () => {
-      const dayNum = parseInt(card.dataset.day);
-      const d = data.days[dayNum - 1];
-      map.flyTo([d.mapCenter.lat, d.mapCenter.lng], 11, { duration: 1.2 });
-      document.getElementById("map-section").scrollIntoView({ behavior: "smooth" });
-    });
-  });
+  // (#6) Removed: day-card click no longer hijacks scroll to map.
+  // Cards are not clickable at all now; navigation is via the sticky day nav.
 
   // Expose for debugging
   window._map = map;

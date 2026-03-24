@@ -380,6 +380,220 @@ body {
   background: var(--gold);
   margin: 1.2rem auto 0;
 }
+/* ═══ STICKY DAY NAV ═══ */
+.day-nav {
+  position: sticky;
+  top: 56px;
+  z-index: 100;
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.6rem 0;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  background: rgba(250, 246, 239, 0.85);
+  backdrop-filter: blur(10px);
+  justify-content: center;
+}
+.day-nav::-webkit-scrollbar {
+  display: none;
+}
+.day-nav-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 20px;
+  background: var(--white);
+  color: var(--peat);
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  flex-shrink: 0;
+}
+.day-nav-pill:hover {
+  background: var(--emerald);
+  color: var(--cream);
+}
+.day-nav-pill.active {
+  background: var(--emerald);
+  color: var(--cream);
+  box-shadow: 0 2px 8px rgba(26, 86, 50, 0.25);
+}
+.day-nav-pill .pill-day {
+  font-weight: 700;
+}
+.day-nav-pill .pill-today {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--white);
+  font-size: 0.55rem;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ═══ DASHBOARD ═══ */
+.dashboard-section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.dashboard-header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 900;
+  color: var(--emerald-deep);
+}
+.dashboard-header p {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--stone);
+  margin-top: 0.5rem;
+}
+.dashboard-header .line {
+  width: 60px;
+  height: 2px;
+  background: var(--gold);
+  margin: 1.2rem auto 0;
+}
+.dashboard-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.85rem;
+}
+.dashboard-table thead th {
+  background: var(--emerald-deep);
+  color: var(--cream);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.7rem 0.8rem;
+  text-align: left;
+}
+.dashboard-table thead th:first-child {
+  border-radius: 10px 0 0 0;
+}
+.dashboard-table thead th:last-child {
+  border-radius: 0 10px 0 0;
+}
+.dashboard-table tbody tr {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.dashboard-table tbody tr:hover {
+  background: var(--cream-dark);
+}
+.dashboard-table td {
+  padding: 0.65rem 0.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  vertical-align: middle;
+}
+.dashboard-table .dash-day {
+  font-weight: 700;
+  color: var(--emerald);
+}
+.dashboard-table .dash-highlight {
+  color: var(--gold);
+  font-size: 0.75rem;
+}
+.dashboard-table tfoot td {
+  font-weight: 700;
+  background: rgba(26, 86, 50, 0.06);
+  border-top: 2px solid var(--emerald);
+  padding: 0.8rem;
+}
+.dashboard-table tfoot td:first-child {
+  border-radius: 0 0 0 10px;
+}
+.dashboard-table tfoot td:last-child {
+  border-radius: 0 0 10px 0;
+}
+
+/* Dashboard mobile cards */
+.dashboard-cards {
+  display: none;
+}
+.dash-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: background 0.15s;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 0.8rem;
+}
+.dash-card:hover {
+  background: var(--cream-dark);
+}
+.dash-card-day {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: var(--emerald);
+  grid-row: 1 / 3;
+  display: flex;
+  align-items: center;
+}
+.dash-card-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--emerald-deep);
+}
+.dash-card-meta {
+  font-size: 0.75rem;
+  color: var(--stone);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.dash-card-meta i {
+  margin-right: 0.2rem;
+}
+.dashboard-total {
+  margin-top: 1rem;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--emerald);
+}
+
+/* ═══ NAV LINKS: Waze & Walk ═══ */
+.stop-links a.link-waze {
+  background: rgba(51, 204, 255, 0.1);
+  color: #33ccff;
+}
+.stop-links a.link-waze:hover {
+  background: #33ccff;
+  color: #fff;
+}
+.stop-links a.link-walk {
+  background: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+}
+.stop-links a.link-walk:hover {
+  background: #4caf50;
+  color: #fff;
+}
+
 .print-btn {
   display: inline-flex;
   align-items: center;
@@ -1488,11 +1702,14 @@ body {
     font-size: 0.75rem;
   }
   .stop-links {
-    gap: 0.3rem;
+    gap: 0.4rem;
   }
   .stop-links a {
-    font-size: 0.6rem;
-    padding: 2px 5px;
+    font-size: 0.7rem;
+    padding: 0.5rem 0.7rem;
+    min-height: 44px;
+    min-width: 44px;
+    justify-content: center;
   }
 
   /* Day narratives */
@@ -1594,6 +1811,44 @@ body {
   .nav-logo {
     font-size: 0.95rem;
   }
+
+  /* Day nav - show on scroll up, hide on scroll down */
+  .day-nav {
+    top: 46px;
+    justify-content: flex-start;
+    padding: 0.5rem 0.75rem;
+    gap: 0.3rem;
+    transition: transform 0.3s;
+  }
+  .day-nav.nav-hidden {
+    transform: translateY(-100%);
+  }
+  .day-nav-pill {
+    font-size: 0.65rem;
+    padding: 0.35rem 0.6rem;
+  }
+  .day-nav-pill .pill-label {
+    display: none;
+  }
+
+  /* Dashboard: cards instead of table */
+  .dashboard-section {
+    padding: 2rem 0.75rem;
+  }
+  .dashboard-header {
+    margin-bottom: 2rem;
+  }
+  .dashboard-header h2 {
+    font-size: 1.6rem;
+  }
+  .dashboard-table {
+    display: none;
+  }
+  .dashboard-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
 }
 
 /* ═══════════════ LEAFLET CUSTOM ═══════════════ */
@@ -1676,8 +1931,10 @@ body {
   .nav-bar,
   #map-section,
   #blogs,
+  #dashboard,
   .site-footer,
   .day-pills,
+  .day-nav,
   .stop-photo,
   .stop-links,
   .day-map-container,
