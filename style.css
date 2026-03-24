@@ -215,8 +215,10 @@ body {
 }
 .day-stop:hover { background: var(--cream-dark); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
 .stop-photo {
-  width: 120px; min-height: 90px; flex-shrink: 0;
-  background-size: cover; background-position: center; position: relative;
+  width: 180px; flex-shrink: 0; position: relative; overflow: hidden;
+}
+.stop-photo img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
 }
 .stop-photo::after {
   content: ''; position: absolute; inset: 0;
@@ -390,7 +392,7 @@ body {
   .day-title { font-size: 1.15rem; }
   .roadbook { padding: 3rem 1rem; }
   .celtic-corner { width: 60px; height: 60px; }
-  .stop-photo { width: 80px; min-height: 70px; }
+  .stop-photo { width: 120px; }
   .nav-links { display: none; }
   .nav-bar { justify-content: center; }
 }
