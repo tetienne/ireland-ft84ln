@@ -22,7 +22,7 @@
       "isoDate": "2026-08-16",
       "routeIcon": "fa-plane-arrival",
       "routeDesc": "Arrivee Nimes → Dublin · Vol FR9777",
-      "morning": "Vol Ryanair FR9777, depart 11h10 de Nimes, arrivee <strong>12h40 a Dublin</strong>. Immigration + bagages (~20 min), puis comptoir <strong>NewWay</strong> pour la voiture a 13h. Route directe vers le centre de Dublin (<strong>30 min</strong>). Installation et apres-midi tranquille : balade dans <a href=\"https://www.google.com/maps/search/?api=1&query=Temple+Bar+Dublin+Ireland\" target=\"_blank\"><strong>Temple Bar</strong></a> puis <a href=\"https://www.google.com/maps/search/?api=1&query=St+Stephen's+Green+Dublin+Ireland\" target=\"_blank\"><strong>St Stephen's Green</strong></a> avec les enfants.",
+      "morning": "Vol Ryanair FR9777, depart 11h10 de Nimes, arrivee <strong>12h40 a Dublin</strong>. Immigration + bagages (~20 min), puis comptoir <strong>NewWay</strong> pour la voiture a 13h. Route directe vers le centre de Dublin (<strong>30 min</strong>). Installation et apres-midi tranquille : balade dans <a href=\"https://www.google.com/maps/search/?api=1&query=Temple+Bar+Dublin+Ireland\" target=\"_blank\"><strong>Temple Bar</strong></a> puis <a href=\"https://www.google.com/maps/search/?api=1&query=St+Stephen's+Green+Dublin+Ireland\" target=\"_blank\"><strong>St Stephen's Green</strong></a> avec les enfants. <em>Option</em> : <a href=\"https://www.google.com/maps/search/?api=1&query=Book+of+Kells+Trinity+College+Dublin+Ireland\" target=\"_blank\"><strong>Book of Kells</strong></a> a Trinity College (manuscrit du IXe siecle + Long Room — billets horodates ~18 EUR/adulte, enfants gratuits, 45 min).",
       "night": "Nuit a Dublin centre",
       "nightInfo": "<strong>Ou dormir :</strong> Eviter Temple Bar (bruyant, cher). Privilegier <a href=\"https://www.google.com/maps/search/?api=1&query=Ballsbridge+Dublin+Ireland\" target=\"_blank\"><strong>Ballsbridge</strong></a> (calme, bus frequents). Nuit de transit : un aparthotel ou B&B suffit. <a href=\"https://www.google.com/maps/search/?api=1&query=Staycity+Aparthotels+Dublin+Ireland\" target=\"_blank\"><strong>Staycity Aparthotels</strong></a> (cuisinette, proche St Patrick's, ~130 EUR), <a href=\"https://www.google.com/maps/search/?api=1&query=Bewleys+Hotel+Ballsbridge+Dublin+Ireland\" target=\"_blank\"><strong>Bewleys Hotel Ballsbridge</strong></a> (chambres familiales, bon rapport qualite/prix), <a href=\"https://www.google.com/maps/search/?api=1&query=Donnybrook+Hall+Dublin+Ireland\" target=\"_blank\"><strong>Donnybrook Hall</strong></a> (victorien, chambres communicantes). Alternative budget : loger a <a href=\"https://www.google.com/maps/search/?api=1&query=Howth+Dublin+Ireland\" target=\"_blank\"><strong>Howth</strong></a> ou <a href=\"https://www.google.com/maps/search/?api=1&query=Dun+Laoghaire+Dublin+Ireland\" target=\"_blank\"><strong>Dun Laoghaire</strong></a> (20-30 min en DART).",
       "distance": "~15 km",
@@ -105,7 +105,7 @@
           { "label": "Parking hotel (estimation)", "amount": 18 }
         ],
         "total": 78,
-        "notes": "Journee legere, arrivee en milieu de journee. Temple Bar et St Stephen's Green sont gratuits. Dublin Castle ferme mai-dec 2026 (presidence UE)."
+        "notes": "Journee legere, arrivee en milieu de journee. Temple Bar et St Stephen's Green sont gratuits. Dublin Castle ferme mai-dec 2026 (presidence UE). Option : Book of Kells ~36 EUR (2 adultes)."
       },
       "dayRoute": [
         [53.4264, -6.2499],
