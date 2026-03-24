@@ -678,6 +678,14 @@ body {
   background: var(--atlantic-light);
   color: #fff;
 }
+.stop-links a.link-trail {
+  background: rgba(46, 125, 50, 0.1);
+  color: #2e7d32;
+}
+.stop-links a.link-trail:hover {
+  background: #2e7d32;
+  color: #fff;
+}
 
 .day-narrative {
   font-size: 0.82rem;

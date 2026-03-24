@@ -105,6 +105,14 @@ function renderStop(stop) {
     links.push(
       `<a href="${stop.routard}" target="_blank" class="link-routard"><i class="fa-solid fa-book-open"></i> Routard</a>`,
     );
+  if (stop.alltrails)
+    links.push(
+      `<a href="${stop.alltrails}" target="_blank" class="link-trail"><i class="fa-solid fa-person-hiking"></i> AllTrails</a>`,
+    );
+  if (stop.trailMap)
+    links.push(
+      `<a href="${stop.trailMap}" target="_blank" class="link-trail"><i class="fa-solid fa-map"></i> Carte rando</a>`,
+    );
   const linksHtml = links.length ? `<div class="stop-links">${links.join("")}</div>` : "";
 
   return `

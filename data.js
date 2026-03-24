@@ -351,7 +351,9 @@ const TRIP_DATA = {
           "gmaps": "https://maps.google.com/?q=52.9719,-9.4265",
           "web": "https://www.cliffsofmoher.ie/",
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g1184916-d214806-Reviews-Cliffs_of_Moher-Liscannor_County_Clare.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/falaises-de-moher-cliffs-of-moher"
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/falaises-de-moher-cliffs-of-moher",
+          "alltrails": "https://www.alltrails.com/trail/ireland/county-clare/cliffs-of-moher-hag-s-head",
+          "trailMap": "https://www.sportireland.ie/sites/default/files/media/document/2020-05/cliffs-of-moher-coastal-walk-map.pdf"
         },
         {
           "name": "Doolin",
@@ -687,7 +689,8 @@ const TRIP_DATA = {
           "gmaps": "https://maps.google.com/?q=53.3779,-9.9636",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g551539-d7106495-Reviews-Dog_s_Bay_Beach-Roundstone_County_Galway_Western_Ireland.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron/dog-s-bay-strand"
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron/dog-s-bay-strand",
+          "alltrails": "https://www.alltrails.com/trail/ireland/county-galway/dog-s-bay-beach"
         },
         {
           "name": "Sky Road",
@@ -836,7 +839,9 @@ const TRIP_DATA = {
           "gmaps": "https://maps.google.com/?q=53.5520,-9.9440",
           "web": "https://www.connemaranationalpark.ie/",
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g186609-d546269-Reviews-Connemara_National_Park_Visitor_Centre-Galway_County_Galway_Western_Ireland.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/letterfrack"
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/letterfrack",
+          "alltrails": "https://www.alltrails.com/trail/ireland/county-galway/connemara-and-diamond-hill-loop",
+          "trailMap": "https://www.nationalparks.ie/app/uploads/2022/09/Diamond-Hill-Trails-Map.pdf"
         },
         {
           "name": "Viking Tours Athlone",
@@ -978,7 +983,8 @@ const TRIP_DATA = {
           "gmaps": "https://maps.google.com/?q=53.5455,-6.7882",
           "web": "https://heritageireland.ie/places-to-visit/trim-castle/",
           "tripadvisor": "https://www.tripadvisor.com/Attraction_Review-g644237-d525404-Reviews-Trim_Castle-Trim_County_Meath.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/environs-de-dublin/trim-castle"
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/environs-de-dublin/trim-castle",
+          "alltrails": "https://www.alltrails.com/trail/ireland/county-meath/trim-castle-to-priory-of-st-john-the-baptist"
         },
         {
           "name": "Hill of Tara",
