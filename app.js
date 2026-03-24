@@ -38,6 +38,7 @@ function boot(data) {
   initNavbar();
   initPrintButton();
   initDeepLinks(todayDayNum);
+  fetchWeather(data.days);
   const footerEl = document.getElementById("footerFamily");
   if (footerEl) {
     footerEl.innerHTML = `${data.trip.family} &middot; ${formatPeriod(data.trip.startDate, data.trip.endDate)}`;
@@ -117,6 +118,7 @@ function renderRoadBook(days) {
         <div class="day-top">
           <h3 class="day-title">${day.title}</h3>
           <span class="day-date">${formatDateLong(day.isoDate)}</span>
+          <span class="weather-badge"></span>
         </div>
         <p class="day-route">
           <i class="fa-solid ${day.routeIcon}"></i> ${day.routeDesc}
@@ -771,9 +773,10 @@ function initPrintButton() {
 
 // ─── NAVBAR ───
 function initNavbar() {
+  const navbar = document.getElementById("navbar");
   window.addEventListener("scroll", () => {
-    document.getElementById("navbar").classList.toggle("scrolled", window.scrollY > 100);
-  });
+    navbar.classList.toggle("scrolled", window.scrollY > 100);
+  }, { passive: true });
 
   // Hamburger menu
   const hamburger = document.getElementById("navHamburger");
@@ -790,4 +793,120 @@ function initNavbar() {
       });
     });
   }
+}
+
+// ─── WEATHER (Open-Meteo historical averages) ───
+const WEATHER_TABLE = [
+  { max: 1, icon: "fa-sun", label: "Ensoleillé" },
+  { max: 3, icon: "fa-cloud-sun", label: "Nuageux" },
+  { max: 48, icon: "fa-cloud", label: "Couvert" },
+  { max: 67, icon: "fa-cloud-rain", label: "Pluie" },
+  { max: 77, icon: "fa-snowflake", label: "Neige" },
+  { max: 82, icon: "fa-cloud-showers-heavy", label: "Averses" },
+];
+
+function weatherInfo(code) {
+  const entry = WEATHER_TABLE.find((e) => code <= e.max) || { icon: "fa-cloud-bolt", label: "Orage" };
+  return entry;
+}
+
+function fetchWeather(days) {
+  const entries = days
+    .filter((d) => d.mapCenter)
+    .map((d) => ({
+      day: d.day,
+      date: d.isoDate,
+      lat: d.mapCenter.lat,
+      lng: d.mapCenter.lng,
+    }));
+
+  const now = new Date();
+  const forecastLimit = new Date(now);
+  forecastLimit.setDate(forecastLimit.getDate() + 15);
+
+  // Build requests, deduplicating identical coordinates + date
+  const seen = new Map();
+  const requests = [];
+
+  entries.forEach(({ day, date, lat, lng }) => {
+    const tripDate = parseIsoDate(date);
+    const useForecast = tripDate <= forecastLimit;
+    const refYear = tripDate.getFullYear() - 1;
+    const queryDate = useForecast ? date : date.replace(/^\d{4}/, String(refYear));
+    const cacheKey = `weather_${lat}_${lng}_${queryDate}`;
+
+    if (seen.has(cacheKey)) {
+      seen.get(cacheKey).push(day);
+      return;
+    }
+    seen.set(cacheKey, [day]);
+
+    const cached = sessionStorage.getItem(cacheKey);
+    if (cached) {
+      applyWeather(JSON.parse(cached), seen.get(cacheKey));
+      return;
+    }
+
+    let url;
+    if (useForecast) {
+      url =
+        `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}` +
+        `&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max` +
+        `&start_date=${date}&end_date=${date}&timezone=Europe%2FDublin`;
+    } else {
+      url =
+        `https://archive-api.open-meteo.com/v1/archive?latitude=${lat}&longitude=${lng}` +
+        `&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_sum` +
+        `&start_date=${queryDate}&end_date=${queryDate}&timezone=Europe%2FDublin`;
+    }
+
+    requests.push({ url, cacheKey, useForecast, refYear });
+  });
+
+  // Fetch in small batches to avoid 429 rate limits
+  const BATCH_SIZE = 3;
+  function fetchBatch(i) {
+    const batch = requests.slice(i, i + BATCH_SIZE);
+    if (!batch.length) return;
+    Promise.allSettled(
+      batch.map(({ url, cacheKey, useForecast, refYear }) =>
+        fetch(url)
+          .then((r) => r.json())
+          .then((data) => {
+            if (!data.daily) return;
+            const result = { daily: data.daily, useForecast, refYear };
+            try { sessionStorage.setItem(cacheKey, JSON.stringify(result)); } catch (_) {}
+            applyWeather(result, seen.get(cacheKey));
+          })
+      )
+    )
+      .then(() => fetchBatch(i + BATCH_SIZE))
+      .catch((err) => console.warn("Weather fetch failed:", err));
+  }
+  fetchBatch(0);
+}
+
+function applyWeather({ daily, useForecast, refYear }, dayNums) {
+  const code = daily.weather_code[0];
+  const tMax = Math.round(daily.temperature_2m_max[0]);
+  const tMin = Math.round(daily.temperature_2m_min[0]);
+  const { icon, label } = weatherInfo(code);
+
+  let html = `<i class="fa-solid ${icon}"></i> ${tMin}–${tMax}°C`;
+  if (useForecast && daily.precipitation_probability_max?.[0] != null) {
+    html += ` · <i class="fa-solid fa-droplet"></i> ${daily.precipitation_probability_max[0]}%`;
+  } else if (!useForecast && daily.precipitation_sum?.[0] > 0) {
+    html += ` · <i class="fa-solid fa-droplet"></i> ${daily.precipitation_sum[0].toFixed(1)} mm`;
+  }
+  if (!useForecast) html += ` <span class="weather-ref">(réf. ${refYear})</span>`;
+
+  const title = useForecast ? `Prévision : ${label}` : `Météo réelle ${refYear} : ${label}`;
+
+  dayNums.forEach((day) => {
+    const badge = document.querySelector(`#jour-${day} .weather-badge`);
+    if (!badge) return;
+    badge.innerHTML = html;
+    badge.title = title;
+    badge.classList.add("loaded");
+  });
 }

@@ -723,6 +723,29 @@ body {
   color: var(--gold);
   letter-spacing: 0.05em;
 }
+.weather-badge {
+  display: none;
+  font-size: 0.7rem;
+  color: var(--atlantic-light);
+  background: rgba(26, 58, 92, 0.06);
+  padding: 0.2rem 0.6rem;
+  border-radius: 1rem;
+  white-space: nowrap;
+}
+.weather-badge.loaded {
+  display: inline-block;
+}
+.weather-badge i {
+  margin-right: 0.15rem;
+}
+.weather-badge .fa-droplet {
+  color: var(--atlantic-light);
+  font-size: 0.6rem;
+}
+.weather-ref {
+  opacity: 0.6;
+  font-size: 0.6rem;
+}
 .day-route {
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
