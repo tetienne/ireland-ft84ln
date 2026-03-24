@@ -24,6 +24,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Optimize images
+        run: |
+          npm install --no-save sharp
+          node scripts/optimize-images.mjs
       - name: Minify CSS and JS
         run: |
           npx --yes csso-cli style.css -o style.css
