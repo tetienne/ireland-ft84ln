@@ -1,39 +1,39 @@
-<?xml version='1.0' encoding='utf-8'?>
-<kml xmlns:ns0="http://www.opengis.net/kml/2.2" xmlns="http://www.opengis.net/kml/2.2">
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>J5 — Connemara &amp; Sky Road</name>
-    <ns0:Placemark>
-      <ns0:name>Roundstone</ns0:name>
-      <ns0:description>Village de pecheurs idyllique du Connemara. Atelier de bodhran de Malachy Kearns, l'un des derniers fabricants artisanaux d'Irlande.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron"&gt;Routard&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Roundstone+Connemara+Ireland"&gt;Google Maps&lt;/a&gt;</ns0:description>
-      <ns0:address>Roundstone, Connemara, Ireland</ns0:address>
-    </ns0:Placemark>
-    <ns0:Placemark>
-      <ns0:name>Dog's Bay &amp; Gurteen Bay</ns0:name>
-      <ns0:description>Plages jumelles de sable blanc corallien. Eau turquoise. Parmi les plus belles d'Irlande. Tour de la presqu'ile possible en 2h a pied.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://www.tripadvisor.fr/Attraction_Review-g551539-d7106495-Reviews-Dog_s_Bay_Beach-Roundstone_County_Galway_Western_Ireland.html"&gt;TripAdvisor&lt;/a&gt; | &lt;a href="https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron/dog-s-bay-strand"&gt;Routard&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Dog's+Bay+Roundstone+Ireland"&gt;Google Maps&lt;/a&gt;</ns0:description>
-      <ns0:address>Dog's Bay, Roundstone, Ireland</ns0:address>
-    </ns0:Placemark>
-    <ns0:Placemark>
-      <ns0:name>Sky Road</ns0:name>
-      <ns0:description>Boucle panoramique de 12 km au-dessus de Clifden. Vues epoustouflantes sur l'ocean et les iles. Privilegier la Upper Sky Road pour les plus belles vues. &lt;strong&gt;Ideal au coucher du soleil&lt;/strong&gt; (vers 17-18h). Route etroite, rouler lentement.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://www.tripadvisor.fr/Attraction_Review-g211883-d4442921-Reviews-Sky_Road-Clifden_County_Galway_Western_Ireland.html"&gt;TripAdvisor&lt;/a&gt; | &lt;a href="https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan"&gt;Routard&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Sky+Road+Clifden+Ireland"&gt;Google Maps&lt;/a&gt;</ns0:description>
-      <ns0:address>Sky Road, Clifden, Ireland</ns0:address>
-    </ns0:Placemark>
-    <ns0:Placemark>
-      <ns0:name>Clifden</ns0:name>
-      <ns0:description>Capitale du Connemara. Rues colorees, bons restaurants, ambiance detendue.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan"&gt;Routard&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Clifden+Ireland"&gt;Google Maps&lt;/a&gt;</ns0:description>
-      <ns0:address>Clifden, Connemara, Ireland</ns0:address>
-    </ns0:Placemark>
-    <ns0:Placemark>
-      <ns0:name>Route J5</ns0:name>
-      <ns0:LineString>
-        <ns0:tessellate>1</ns0:tessellate>
-        <ns0:coordinates>-9.053,53.2719,0 -9.9203,53.3957,0 -9.9636,53.3779,0 -10.0167,53.4333,0 -10.0965,53.5007,0 -10.0167,53.4333,0</ns0:coordinates>
-      </ns0:LineString>
-    </ns0:Placemark>
-    <ns0:Placemark>
-      <ns0:name>Nuit a Clifden</ns0:name>
-      <ns0:Point>
-        <ns0:coordinates>-10.0167,53.4333,0</ns0:coordinates>
-      </ns0:Point>
-    </ns0:Placemark>
+    <Placemark>
+      <name>Roundstone</name>
+      <description>Village de pecheurs idyllique du Connemara. Atelier de bodhran de Malachy Kearns, l'un des derniers fabricants artisanaux d'Irlande.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron"&gt;Routard&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Roundstone+Connemara+Ireland"&gt;Google Maps&lt;/a&gt;</description>
+      <address>Roundstone, Connemara, Ireland</address>
+    </Placemark>
+    <Placemark>
+      <name>Dog's Bay &amp; Gurteen Bay</name>
+      <description>Plages jumelles de sable blanc corallien. Eau turquoise. Parmi les plus belles d'Irlande. Tour de la presqu'ile possible en 2h a pied.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://www.tripadvisor.fr/Attraction_Review-g551539-d7106495-Reviews-Dog_s_Bay_Beach-Roundstone_County_Galway_Western_Ireland.html"&gt;TripAdvisor&lt;/a&gt; | &lt;a href="https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron/dog-s-bay-strand"&gt;Routard&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Dog's+Bay+Roundstone+Ireland"&gt;Google Maps&lt;/a&gt;</description>
+      <address>Dog's Bay, Roundstone, Ireland</address>
+    </Placemark>
+    <Placemark>
+      <name>Sky Road</name>
+      <description>Boucle panoramique de 12 km au-dessus de Clifden. Vues epoustouflantes sur l'ocean et les iles. Privilegier la Upper Sky Road pour les plus belles vues. &lt;strong&gt;Ideal au coucher du soleil&lt;/strong&gt; (vers 17-18h). Route etroite, rouler lentement.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://www.tripadvisor.fr/Attraction_Review-g211883-d4442921-Reviews-Sky_Road-Clifden_County_Galway_Western_Ireland.html"&gt;TripAdvisor&lt;/a&gt; | &lt;a href="https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan"&gt;Routard&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Sky+Road+Clifden+Ireland"&gt;Google Maps&lt;/a&gt;</description>
+      <address>Sky Road, Clifden, Ireland</address>
+    </Placemark>
+    <Placemark>
+      <name>Clifden</name>
+      <description>Capitale du Connemara. Rues colorees, bons restaurants, ambiance detendue.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan"&gt;Routard&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Clifden+Ireland"&gt;Google Maps&lt;/a&gt;</description>
+      <address>Clifden, Connemara, Ireland</address>
+    </Placemark>
+    <Placemark>
+      <name>Route J5</name>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>-9.053,53.2719,0 -9.9203,53.3957,0 -9.9636,53.3779,0 -10.0167,53.4333,0 -10.0965,53.5007,0 -10.0167,53.4333,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Nuit a Clifden</name>
+      <Point>
+        <coordinates>-10.0167,53.4333,0</coordinates>
+      </Point>
+    </Placemark>
   </Document>
 </kml>

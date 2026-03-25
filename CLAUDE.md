@@ -17,52 +17,51 @@ Voyage en famille (2 adultes + 2 enfants de 5 et 8 ans) en Irlande, cote ouest /
 - Pas de fermes pedagogiques (on a les memes en France)
 - Privilegier les experiences **typiquement irlandaises**
 
-## Itineraire final v2 (temps OSRM verifies — optimise J5/J6)
+## Itineraire final v3 (temps OSRM verifies — Connemara d'abord, Lahinch, Birr Castle)
 
-| Jour | Date      | Trajet                                               | Conduite             | Nuit             |
-| ---- | --------- | ---------------------------------------------------- | -------------------- | ---------------- |
-| J1   | Dim 16/08 | Airport → Dublin                                     | **30 min**           | Dublin           |
-| J2   | Lun 17/08 | Dublin → Galway (via dejeuner Athlone)               | **2h34** (1h30+1h04) | Galway           |
-| J3   | Mar 18/08 | Galway → Caherconnell → Poulnabrone → Cliffs → Doolin | **1h44**             | Doolin           |
-| J4   | Mer 19/08 | Doolin → Lahinch → Galway                            | **~1h19**            | Galway (2e nuit) |
-| J5   | Jeu 20/08 | Galway → Roundstone → Clifden → Sky Road             | **~1h31**            | Clifden          |
-| J6   | Ven 21/08 | Clifden → Athlone (via Maam Cross)                   | **~2h06**            | Athlone          |
-| J7   | Sam 22/08 | Athlone → Trim Castle → Hill of Tara → Airport hotel | **2h16**             | Airport hotel    |
-| J8   | Dim 23/08 | Hotel → Terminal                                     | **5 min**            | —                |
+| Jour | Date      | Trajet                                                   | Conduite   | Nuit             |
+| ---- | --------- | -------------------------------------------------------- | ---------- | ---------------- |
+| J1   | Dim 16/08 | Airport → Dublin                                         | **21 min** | Dublin           |
+| J2   | Lun 17/08 | Dublin → Athlone (dej) → Galway                         | **2h35**   | Galway           |
+| J3   | Mar 18/08 | Galway → Roundstone → Dog's Bay → Clifden → Sky Road    | **2h27**   | Clifden          |
+| J4   | Mer 19/08 | Clifden → Kylemore Abbey → Connemara NP → Galway        | **~1h46**  | Galway (2e nuit) |
+| J5   | Jeu 20/08 | Galway → Caherconnell → Poulnabrone → Cliffs → Lahinch  | **1h58**   | Lahinch          |
+| J6   | Ven 21/08 | Lahinch (plage) → Ennis (dej) → Birr Castle             | **2h04**   | Birr             |
+| J7   | Sam 22/08 | Birr → Trim Castle → Hill of Tara → Airport hotel        | **2h34**   | Airport hotel    |
+| J8   | Dim 23/08 | Hotel → Terminal                                         | **5 min**  | —                |
 
 ### Detail des troncons OSRM (minutes)
 
 ```
-J1: Airport→Dublin(30)
-J2: Dublin→Athlone(90) + Athlone→Galway(64) — autoroute M6, dejeuner a Athlone
-J3: Galway→Caherconnell(66) + Caherconnell→Poulnabrone(8) + Poulnabrone→Cliffs(~20) + Cliffs→Doolin(10)
-J4: Doolin→Ennistymon(14) + Ennistymon→Galway(~65)
-J5: Galway→Clifden(67) + SkyRoad(24)
-J6: Clifden→Athlone(126) via Maam Cross
-J7: Athlone→Trim(74) + Trim→Tara(20) + Tara→Airport(42)
+J1: Airport→Dublin(21)
+J2: Dublin→Athlone(92) + Athlone→Galway(63) — autoroute M6, dejeuner a Athlone
+J3: Galway→Roundstone(72) + Roundstone→Dog'sBay(7) + Dog'sBay→Clifden(38) + SkyRoad(~30)
+J4: Clifden→Kylemore(20) + Kylemore→ConNP(5) + ConNP→Galway(~75)
+J5: Galway→Caherconnell(66) + Caherconnell→Poulnabrone(8) + Poulnabrone→Cliffs(32) + Cliffs→Lahinch(12)
+J6: Lahinch→Ennis(32) + Ennis→Birr(92)
+J7: Birr→Trim(91) + Trim→Tara(21) + Tara→Airport(42)
 ```
 
 ### Nuits (7 au total)
 
 1. Dublin centre (1 nuit)
 2. Galway (1ere nuit) — meme logement que nuit 4
-3. Doolin (1 nuit)
+3. Clifden (1 nuit)
 4. Galway (2e nuit) — retour au meme logement
-5. Clifden (1 nuit)
-6. Athlone (1 nuit)
+5. Lahinch (1 nuit)
+6. Birr (1 nuit)
 7. Hotel aeroport Dublin (1 nuit)
 
 ### Sites visites
 
-**Incontournables gardes** : Galway (Latin Quarter, Salthill, Atlantaquaria), Cliffs of Moher, Connemara (Roundstone, Dog's Bay, Clifden, Sky Road), Burren (Caherconnell Stone Fort, Poulnabrone Dolmen), Trim Castle, Hill of Tara
+**Incontournables** : Galway (Latin Quarter, Salthill, Atlantaquaria), Kylemore Abbey, Connemara NP / Diamond Hill, Connemara (Roundstone, Dog's Bay, Clifden, Sky Road), Cliffs of Moher, Burren (Caherconnell Stone Fort, Poulnabrone Dolmen), Lahinch Beach, Birr Castle Demesne, Trim Castle, Hill of Tara
 
-**Sacrifies** : Newgrange (trop loin du trajet principal), Kylemore Abbey (ajoute trop de route au J6), Bunratty Castle (1h30 de detour), Cong (detour), Clonmacnoise (detour), Brigit's Garden
+**Sacrifies** : Newgrange (trop loin du trajet principal), Bunratty Castle (detour), Cong (detour), Clonmacnoise (detour), Brigit's Garden, Doolin (sans interet sans la musique trad)
 
 **Recuperables si le timing le permet** :
 
-- Kylemore Abbey : J6 matin avant de quitter Clifden (Clifden→Kylemore 19 min, ajoute ~40 min A/R)
-- Parc National Connemara / Diamond Hill : J6 matin a Letterfrack (a cote de Kylemore)
-- Newgrange : si J7 on fait Athlone→Trim→Newgrange→Airport au lieu de Trim→Tara (2h32 au lieu de 2h16)
+- Newgrange : si J7 on fait Birr→Trim→Newgrange→Airport au lieu de Trim→Tara
+- Iles d'Aran : ferry depuis Doolin ou Rossaveal si une journee se libere
 
 ## Structure du site web
 
@@ -133,10 +132,10 @@ Le resultat contient `duration` (secondes) et `distance` (metres).
 - **Hill of Tara** : gratuit (Heritage Card). Les enfants adorent devaler les collines. 30-45 min.
 - **Atlantaquaria** : bassins a hauteur d'enfant, bassin tactile. ~1h de visite.
 - **Connemara NP / Diamond Hill** : 3 sentiers (1,5 km facile → 3,8 km sommet). Gratuit.
-- **Viking Tours Athlone** : enfants peuvent piloter le bateau. 75 min. Casques/epees en vente.
+- **Kylemore Abbey** : arriver tot (cars des 10h). Jardins victoriens + eglise gothique miniature. Famille ~45 EUR.
 - **Lahinch Beach** : aire de jeux a cote, section baignade surveillee, cours surf des 8 ans.
-- **Doolin** : sessions musique des 20-21h (Gus O'Connor's, McGann's, McDermott's). Enfants bienvenus tot.
-- **Galway** : 2-3h de visite suffisent. McDonagh's = fish & chips legendaire. Tig Coili/Crane Bar pour la musique.
+- **Birr Castle Demesne** : Treehouse Playground (enorme), Grand Telescope, I Spy Science Trail. Famille ~30 EUR. Ferme 18h.
+- **Galway** : 2-3h de visite suffisent. McDonagh's = fish & chips legendaire. Salthill Promenade + kicker la plaque.
 
 ## Tarifs verifies (2025-2026)
 
@@ -149,3 +148,4 @@ Le resultat contient `duration` (secondes) et `distance` (metres).
 - Connemara National Park : gratuit
 - Hill of Tara : gratuit (Heritage Card)
 - Atlantaquaria : ~15 EUR/adulte, reduction enfants
+- Birr Castle Demesne : famille ~30 EUR
