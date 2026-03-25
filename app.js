@@ -538,14 +538,14 @@ function initMap(data) {
   }).addTo(map);
 
   const dayColors = [
-    "#1a5632",
-    "#2d7a4a",
-    "#1a3a5c",
-    "#2a5a8c",
-    "#7a5a6a",
-    "#c8942e",
-    "#1a5632",
-    "#3a2f28",
+    "#e63946",
+    "#2a9d8f",
+    "#264653",
+    "#e9c46a",
+    "#f4a261",
+    "#6a4c93",
+    "#1982c4",
+    "#8ac926",
   ];
 
   // Day markers
@@ -570,22 +570,38 @@ function initMap(data) {
       );
   });
 
-  // Route polyline
-  L.polyline(data.route, {
-    color: "#c8942e",
-    weight: 6,
-    opacity: 0.15,
-    smoothFactor: 1.5,
-    lineCap: "round",
-  }).addTo(map);
-  L.polyline(data.route, {
-    color: "#c8942e",
-    weight: 3,
-    opacity: 0.7,
-    smoothFactor: 1.5,
-    dashArray: "8, 6",
-    lineCap: "round",
-  }).addTo(map);
+  // Route polylines — one per day with distinct color
+  const routesByDay = data.routesByDay || (data.route ? [data.route] : []);
+  routesByDay.forEach((segment, i) => {
+    if (segment.length < 2) return;
+    const color = dayColors[i] || "#c8942e";
+    L.polyline(segment, {
+      color,
+      weight: 5,
+      opacity: 0.25,
+      smoothFactor: 1.5,
+      lineCap: "round",
+    }).addTo(map);
+    L.polyline(segment, {
+      color,
+      weight: 3,
+      opacity: 0.85,
+      smoothFactor: 1.5,
+      dashArray: "8, 6",
+      lineCap: "round",
+    }).addTo(map);
+  });
+
+  // Day legend
+  const dayLegend = document.getElementById("dayLegend");
+  if (dayLegend) {
+    dayLegend.innerHTML = data.days
+      .map(
+        (d, i) =>
+          `<div class="map-legend-item"><div class="legend-dot" style="background:${dayColors[i]}"></div><span>J${d.day} ${d.shortLabel}</span></div>`,
+      )
+      .join("");
+  }
 
   // POI markers — grouped in LayerGroups for filtering
   const defaultPoiConfig = {
