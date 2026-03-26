@@ -120,12 +120,12 @@ function renderRoadBook(days) {
   timeline.innerHTML = days
     .map(
       (day) => `
-    <div class="day-card" id="jour-${day.day}" data-day="${day.day}">
+    <article class="day-card" id="jour-${day.day}" data-day="${day.day}">
       <div class="day-number" style="background:${DAY_COLORS[day.day - 1]}">J${day.day}</div>
       <div class="day-content">
         <div class="day-top">
           <h3 class="day-title">${day.title}</h3>
-          <span class="day-date">${formatDateLong(day.isoDate)}</span>
+          <time class="day-date" datetime="${day.isoDate}">${formatDateLong(day.isoDate)}</time>
           <span class="weather-badge"></span>
         </div>
         <p class="day-route">
@@ -146,7 +146,7 @@ function renderRoadBook(days) {
         ${renderDayPills(day)}
         ${renderDayPanels(day)}
       </div>
-    </div>
+    </article>
   `,
     )
     .join("");
@@ -704,11 +704,11 @@ function renderTips(tips) {
   grid.innerHTML = tips
     .map(
       (tip) => `
-    <div class="tip-card">
+    <article class="tip-card">
       <div class="tip-icon"><i class="fa-solid ${tip.icon}"></i></div>
       <h4>${tip.title}</h4>
       <p>${tip.text}</p>
-    </div>
+    </article>
   `,
     )
     .join("");
