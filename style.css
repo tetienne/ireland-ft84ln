@@ -774,6 +774,21 @@ body {
   color: #c86432;
 }
 
+.hike-badge {
+  display: inline-block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--emerald-deep);
+  background: rgba(45, 134, 89, 0.12);
+  padding: 0.1em 0.5em;
+  border-radius: 9em;
+  vertical-align: middle;
+  margin-right: 0.4em;
+}
+
 .stop-info {
   flex: 1;
   min-width: 0;
@@ -1884,6 +1899,11 @@ body {
   .day-narrative.night-info,
   .day-footer span:has(.fa-bed) {
     display: none !important;
+  }
+
+  .hike-badge {
+    border: 1px solid var(--emerald-deep);
+    background: transparent !important;
   }
 
   /* Hide all panels except schedule */

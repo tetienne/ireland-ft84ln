@@ -202,7 +202,7 @@ function renderStop(stop) {
       <div class="stop-body">
         <div class="stop-icon ${stop.iconClass}"><i class="fa-solid ${stop.icon}"></i></div>
         <div class="stop-info">
-          <h4>${stop.name}</h4>
+          <h4>${stop.alltrails || stop.trailMap ? '<span class="hike-badge"><i class="fa-solid fa-person-hiking"></i> Rando</span> ' : ""}${stop.name}</h4>
           <p>${stop.desc}</p>
           ${linksHtml}
         </div>
