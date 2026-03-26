@@ -552,79 +552,94 @@ function initMap(data) {
   }).addTo(map);
 
   const dayColors = DAY_COLORS;
+  const dayLayerGroups = [];
 
-  // Day markers
+  // Day markers + polylines, grouped per day for filtering
+  const routesByDay = data.routesByDay || (data.route ? [data.route] : []);
   data.days.forEach((d, i) => {
+    const group = L.layerGroup();
+    const color = dayColors[i];
+
     const icon = L.divIcon({
       className: "day-marker",
-      html: `<div class="day-marker-inner" style="background:${dayColors[i]}">${d.day}</div>`,
+      html: `<div class="day-marker-inner" style="background:${color}">${d.day}</div>`,
       iconSize: [36, 36],
       iconAnchor: [18, 18],
     });
     const imgHtml = d.mapImg ? `<img src="${d.mapImg}" alt="${d.title}">` : "";
     L.marker([d.mapCenter.lat, d.mapCenter.lng], { icon })
-      .addTo(map)
       .bindPopup(
         `
         ${imgHtml}
-        <div class="popup-tag" style="background:${dayColors[i]}20; color:${dayColors[i]}">Jour ${d.day}</div>
+        <div class="popup-tag" style="background:${color}20; color:${color}">Jour ${d.day}</div>
         <h3>${d.title}</h3>
         <p style="color:#666; margin:0">${d.mapDesc}</p>
       `,
         { maxWidth: 280 },
-      );
+      )
+      .addTo(group);
+
+    const segment = routesByDay[i];
+    if (segment && segment.length >= 2) {
+      L.polyline(segment, {
+        color,
+        weight: 5,
+        opacity: 0.25,
+        smoothFactor: 1.5,
+        lineCap: "round",
+      }).addTo(group);
+      L.polyline(segment, {
+        color,
+        weight: 3,
+        opacity: 0.85,
+        smoothFactor: 1.5,
+        dashArray: "8, 6",
+        lineCap: "round",
+      }).addTo(group);
+    }
+
+    group.addTo(map);
+    dayLayerGroups.push(group);
   });
 
-  // Route polylines — one per day with distinct color
-  const routesByDay = data.routesByDay || (data.route ? [data.route] : []);
-  routesByDay.forEach((segment, i) => {
-    if (segment.length < 2) return;
-    const color = dayColors[i] || "#c8942e";
-    L.polyline(segment, {
-      color,
-      weight: 5,
-      opacity: 0.25,
-      smoothFactor: 1.5,
-      lineCap: "round",
-    }).addTo(map);
-    L.polyline(segment, {
-      color,
-      weight: 3,
-      opacity: 0.85,
-      smoothFactor: 1.5,
-      dashArray: "8, 6",
-      lineCap: "round",
-    }).addTo(map);
-  });
-
-  // Day legend
+  // Day filter legend
   const dayLegend = document.getElementById("dayLegend");
   if (dayLegend) {
     dayLegend.innerHTML = data.days
       .map(
         (d, i) =>
-          `<div class="map-legend-item"><div class="legend-dot" style="background:${dayColors[i]}"></div><span>J${d.day} ${d.shortLabel}</span></div>`,
+          `<div class="map-legend-item active" data-day-index="${i}"><div class="legend-dot" style="background:${dayColors[i]}"></div><span>J${d.day} ${d.shortLabel}</span></div>`,
       )
       .join("");
+    dayLegend.querySelectorAll(".map-legend-item").forEach((item) => {
+      item.addEventListener("click", () => {
+        const idx = parseInt(item.dataset.dayIndex);
+        const group = dayLayerGroups[idx];
+        item.classList.toggle("active");
+        if (item.classList.contains("active")) {
+          map.addLayer(group);
+        } else {
+          map.removeLayer(group);
+        }
+      });
+    });
   }
 
-  // POI markers — grouped in LayerGroups for filtering
+  // POI markers (always visible, no filter)
   const defaultPoiConfig = {
-    castles: { color: "#c86432", icon: "fa-chess-rook", label: "Chateaux" },
-    monasteries: { color: "#7a5a6a", icon: "fa-place-of-worship", label: "Monasteres / Histoire" },
-    nature: { color: "#5a8a3a", icon: "fa-mountain-sun", label: "Nature / Panoramas" },
-    beaches: { color: "#2a5a8c", icon: "fa-umbrella-beach", label: "Plages" },
-    towns: { color: "#e8b84a", icon: "fa-city", label: "Villes / Villages" },
-    museums: { color: "#3a2f28", icon: "fa-museum", label: "Musees" },
-    panoramas: { color: "#5a8a3a", icon: "fa-binoculars", label: "Panoramas" },
+    castles: { color: "#c86432", icon: "fa-chess-rook" },
+    monasteries: { color: "#7a5a6a", icon: "fa-place-of-worship" },
+    nature: { color: "#5a8a3a", icon: "fa-mountain-sun" },
+    beaches: { color: "#2a5a8c", icon: "fa-umbrella-beach" },
+    towns: { color: "#e8b84a", icon: "fa-city" },
+    museums: { color: "#3a2f28", icon: "fa-museum" },
+    panoramas: { color: "#5a8a3a", icon: "fa-binoculars" },
   };
   const poiConfig = { ...defaultPoiConfig, ...(data.poiConfig || {}) };
-  const poiLayers = {};
 
   Object.entries(data.pois).forEach(([category, pois]) => {
     const cfg = poiConfig[category] || defaultPoiConfig[category];
     if (!cfg) return;
-    const layerGroup = L.layerGroup();
     pois.forEach((poi) => {
       const icon = L.divIcon({
         className: "poi-marker",
@@ -649,14 +664,9 @@ function initMap(data) {
           `<h3>${poi.name}</h3><p style="color:#666;margin:0 0 4px">${poi.desc}</p>${linksHtml}`,
           { maxWidth: 280 },
         )
-        .addTo(layerGroup);
+        .addTo(map);
     });
-    layerGroup.addTo(map);
-    poiLayers[category] = { layer: layerGroup, cfg, count: pois.length };
   });
-
-  // Wire up filter buttons in legend
-  initFilters(map, poiLayers);
 
   // Fit bounds
   const allPoints = data.days.map((d) => [d.mapCenter.lat, d.mapCenter.lng]);
@@ -724,58 +734,6 @@ function renderBlogs(blogs) {
     `;
     })
     .join("");
-}
-
-// ─── MAP FILTERS ───
-function initFilters(map, poiLayers) {
-  const container = document.getElementById("mapFilters");
-  if (!container) return;
-  container.innerHTML = "";
-
-  Object.entries(poiLayers).forEach(([cat, { layer, cfg, count }]) => {
-    const btn = document.createElement("button");
-    btn.className = "filter-btn active";
-    btn.dataset.category = cat;
-    btn.innerHTML = `<span class="filter-dot" style="background:${cfg.color}"></span>${cfg.label || cat} <span class="filter-count">${count}</span>`;
-    btn.addEventListener("click", () => {
-      btn.classList.toggle("active");
-      if (btn.classList.contains("active")) {
-        map.addLayer(layer);
-      } else {
-        map.removeLayer(layer);
-      }
-    });
-    container.appendChild(btn);
-  });
-
-  // "All" / "None" buttons
-  const allBtn = document.createElement("button");
-  allBtn.className = "filter-toggle";
-  allBtn.textContent = "Tout";
-  allBtn.addEventListener("click", () => {
-    container.querySelectorAll(".filter-btn").forEach((b) => {
-      b.classList.add("active");
-      const cat = b.dataset.category;
-      if (poiLayers[cat]) map.addLayer(poiLayers[cat].layer);
-    });
-  });
-
-  const noneBtn = document.createElement("button");
-  noneBtn.className = "filter-toggle";
-  noneBtn.textContent = "Aucun";
-  noneBtn.addEventListener("click", () => {
-    container.querySelectorAll(".filter-btn").forEach((b) => {
-      b.classList.remove("active");
-      const cat = b.dataset.category;
-      if (poiLayers[cat]) map.removeLayer(poiLayers[cat].layer);
-    });
-  });
-
-  const toggleRow = document.createElement("div");
-  toggleRow.className = "filter-toggles";
-  toggleRow.appendChild(allBtn);
-  toggleRow.appendChild(noneBtn);
-  container.appendChild(toggleRow);
 }
 
 // ─── PRINT ───

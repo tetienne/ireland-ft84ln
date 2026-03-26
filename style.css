@@ -266,6 +266,11 @@ body {
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 0.35rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+.map-legend-item:not(.active) {
+  opacity: 0.35;
 }
 .legend-dot {
   width: 10px;
@@ -278,77 +283,6 @@ body {
   height: 3px;
   border-radius: 2px;
   flex-shrink: 0;
-}
-
-/* Filter buttons */
-#mapFilters {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  margin-top: 0.6rem;
-}
-.filter-btn {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 6px;
-  padding: 5px 8px;
-  color: rgba(250, 246, 239, 0.4);
-  font-size: 0.72rem;
-  font-family: "DM Sans", sans-serif;
-  cursor: pointer;
-  transition: all 0.2s;
-  width: 100%;
-  text-align: left;
-}
-.filter-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-.filter-btn.active {
-  color: var(--cream);
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-}
-.filter-btn:not(.active) {
-  opacity: 0.45;
-}
-.filter-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-.filter-count {
-  margin-left: auto;
-  font-size: 0.6rem;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 1px 5px;
-  border-radius: 3px;
-  font-weight: 600;
-}
-.filter-toggles {
-  display: flex;
-  gap: 4px;
-  margin-top: 4px;
-}
-.filter-toggle {
-  flex: 1;
-  background: rgba(200, 148, 46, 0.15);
-  border: 1px solid rgba(200, 148, 46, 0.3);
-  border-radius: 4px;
-  padding: 3px 0;
-  color: var(--gold-light);
-  font-size: 0.65rem;
-  font-family: "DM Sans", sans-serif;
-  font-weight: 600;
-  cursor: pointer;
-  text-align: center;
-  transition: all 0.2s;
-}
-.filter-toggle:hover {
-  background: rgba(200, 148, 46, 0.3);
 }
 
 /* ═══════════════ ROAD BOOK ═══════════════ */
@@ -1555,17 +1489,6 @@ body {
     width: 100%;
     margin-bottom: 0.3rem;
   }
-  #mapFilters {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .filter-btn {
-    width: auto;
-  }
-  .filter-toggles {
-    width: 100%;
-  }
-
   /* Tips & blogs grids */
   .tips-grid {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
