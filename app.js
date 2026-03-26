@@ -1,3 +1,15 @@
+// ─── DAY COLOR PALETTE (shared across roadbook, map, mini-maps) ───
+const DAY_COLORS = [
+  "#1a5632",
+  "#1a3a5c",
+  "#2a9d8f",
+  "#7a5a6a",
+  "#c8942e",
+  "#c86432",
+  "#2a5a8c",
+  "#3a2f28",
+];
+
 // ─── DATE FORMATTING ───
 function parseIsoDate(isoStr) {
   const [y, m, d] = isoStr.split("-").map(Number);
@@ -87,7 +99,8 @@ function computeBudgetTotals(days) {
 
 // ─── HERO ───
 function renderHero(trip, stats) {
-  document.querySelector(".hero-eyebrow").textContent = `${trip.family} · ${formatPeriod(trip.startDate, trip.endDate)}`;
+  document.querySelector(".hero-eyebrow").textContent =
+    `${trip.family} · ${formatPeriod(trip.startDate, trip.endDate)}`;
   const meta = document.querySelector(".hero-meta");
   meta.innerHTML = [
     { v: stats.jours, l: "Jours" },
@@ -113,7 +126,7 @@ function renderRoadBook(days) {
     .map(
       (day) => `
     <div class="day-card" id="jour-${day.day}" data-day="${day.day}">
-      <div class="day-number">J${day.day}</div>
+      <div class="day-number" style="background:${DAY_COLORS[day.day - 1]}">J${day.day}</div>
       <div class="day-content">
         <div class="day-top">
           <h3 class="day-title">${day.title}</h3>
@@ -315,7 +328,7 @@ function initSingleDayMap(card, days) {
 
   // Route polyline
   L.polyline(day.dayRoute, {
-    color: "#c8942e",
+    color: DAY_COLORS[dayNum - 1],
     weight: 3,
     opacity: 0.7,
     dashArray: "8, 6",
@@ -323,12 +336,13 @@ function initSingleDayMap(card, days) {
   }).addTo(map);
 
   // Stop markers from gmaps URLs
+  const dayColor = DAY_COLORS[dayNum - 1];
   day.stops.forEach((stop) => {
     const coords = extractCoords(stop.gmaps);
     if (!coords) return;
     const icon = L.divIcon({
       className: "poi-marker",
-      html: `<div class="poi-marker-inner" style="background:var(--emerald)"><i class="fa-solid ${stop.icon}" style="font-size:10px"></i></div>`,
+      html: `<div class="poi-marker-inner" style="background:${dayColor}"><i class="fa-solid ${stop.icon}" style="font-size:10px"></i></div>`,
       iconSize: [24, 24],
       iconAnchor: [12, 12],
     });
@@ -537,16 +551,7 @@ function initMap(data) {
     maxZoom: 19,
   }).addTo(map);
 
-  const dayColors = [
-    "#e63946",
-    "#2a9d8f",
-    "#264653",
-    "#e9c46a",
-    "#f4a261",
-    "#6a4c93",
-    "#1982c4",
-    "#8ac926",
-  ];
+  const dayColors = DAY_COLORS;
 
   // Day markers
   data.days.forEach((d, i) => {
@@ -790,9 +795,13 @@ function initPrintButton() {
 // ─── NAVBAR ───
 function initNavbar() {
   const navbar = document.getElementById("navbar");
-  window.addEventListener("scroll", () => {
-    navbar.classList.toggle("scrolled", window.scrollY > 100);
-  }, { passive: true });
+  window.addEventListener(
+    "scroll",
+    () => {
+      navbar.classList.toggle("scrolled", window.scrollY > 100);
+    },
+    { passive: true },
+  );
 
   // Hamburger menu
   const hamburger = document.getElementById("navHamburger");
@@ -822,7 +831,10 @@ const WEATHER_TABLE = [
 ];
 
 function weatherInfo(code) {
-  const entry = WEATHER_TABLE.find((e) => code <= e.max) || { icon: "fa-cloud-bolt", label: "Orage" };
+  const entry = WEATHER_TABLE.find((e) => code <= e.max) || {
+    icon: "fa-cloud-bolt",
+    label: "Orage",
+  };
   return entry;
 }
 
@@ -891,10 +903,14 @@ function fetchWeather(days) {
           .then((data) => {
             if (!data.daily) return;
             const result = { daily: data.daily, useForecast, refYear };
-            try { sessionStorage.setItem(cacheKey, JSON.stringify(result)); } catch (_) {}
+            try {
+              sessionStorage.setItem(cacheKey, JSON.stringify(result));
+            } catch {
+              /* ignore quota errors */
+            }
             applyWeather(result, seen.get(cacheKey));
-          })
-      )
+          }),
+      ),
     )
       .then(() => fetchBatch(i + BATCH_SIZE))
       .catch((err) => console.warn("Weather fetch failed:", err));
