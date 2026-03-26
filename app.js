@@ -611,15 +611,31 @@ function initMap(data) {
           `<div class="map-legend-item active" data-day-index="${i}"><div class="legend-dot" style="background:${dayColors[i]}"></div><span>J${d.day} ${d.shortLabel}</span></div>`,
       )
       .join("");
-    dayLegend.querySelectorAll(".map-legend-item").forEach((item) => {
+    const allItems = dayLegend.querySelectorAll(".map-legend-item");
+    let soloIndex = -1;
+
+    allItems.forEach((item) => {
       item.addEventListener("click", () => {
         const idx = parseInt(item.dataset.dayIndex);
-        const group = dayLayerGroups[idx];
-        item.classList.toggle("active");
-        if (item.classList.contains("active")) {
-          map.addLayer(group);
+        if (soloIndex === idx) {
+          // Re-click on soloed day: show all
+          soloIndex = -1;
+          allItems.forEach((it, j) => {
+            it.classList.add("active");
+            map.addLayer(dayLayerGroups[j]);
+          });
         } else {
-          map.removeLayer(group);
+          // Solo this day
+          soloIndex = idx;
+          allItems.forEach((it, j) => {
+            if (j === idx) {
+              it.classList.add("active");
+              map.addLayer(dayLayerGroups[j]);
+            } else {
+              it.classList.remove("active");
+              map.removeLayer(dayLayerGroups[j]);
+            }
+          });
         }
       });
     });
