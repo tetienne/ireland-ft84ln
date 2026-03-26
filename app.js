@@ -412,24 +412,45 @@ function renderDayNav(days, todayNum) {
   });
 
   // IntersectionObserver: highlight active day on scroll
+  const visibleCards = new Map();
+  const targetLine = 100; // px from viewport top — approximate "reading position"
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const dayNum = entry.target.dataset.day;
-          nav.querySelectorAll(".day-nav-pill").forEach((p) => p.classList.remove("active"));
-          const activePill = nav.querySelector(`.day-nav-pill[data-day="${dayNum}"]`);
-          if (activePill) {
-            activePill.classList.add("active");
-            activePill.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-          }
-          history.replaceState(null, "", `#jour-${dayNum}`);
+        visibleCards.set(entry.target, entry.isIntersecting);
+      });
+      let best = null;
+      let bestDist = Infinity;
+      visibleCards.forEach((visible, card) => {
+        if (!visible) return;
+        const dist = Math.abs(card.getBoundingClientRect().top - targetLine);
+        if (dist < bestDist) {
+          bestDist = dist;
+          best = card;
         }
       });
+      if (best) {
+        const dayNum = best.dataset.day;
+        nav.querySelectorAll(".day-nav-pill").forEach((p) => p.classList.remove("active"));
+        const activePill = nav.querySelector(`.day-nav-pill[data-day="${dayNum}"]`);
+        if (activePill) {
+          activePill.classList.add("active");
+          const navRect = nav.getBoundingClientRect();
+          const pillRect = activePill.getBoundingClientRect();
+          nav.scrollBy({
+            left: pillRect.left - navRect.left - navRect.width / 2 + pillRect.width / 2,
+            behavior: "smooth",
+          });
+        }
+        history.replaceState(null, "", `#jour-${dayNum}`);
+      }
     },
-    { threshold: 0.3, rootMargin: "-80px 0px -60% 0px" },
+    { threshold: 0, rootMargin: "-80px 0px 0px 0px" },
   );
-  document.querySelectorAll(".day-card").forEach((card) => observer.observe(card));
+  document.querySelectorAll(".day-card").forEach((card) => {
+    visibleCards.set(card, false);
+    observer.observe(card);
+  });
 
   // Mobile: show on scroll up, hide on scroll down
   let lastScrollY = window.scrollY;
