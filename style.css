@@ -1768,7 +1768,7 @@ body {
   /* Day nav - show on scroll up, hide on scroll down */
   .day-nav {
     top: 46px;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 0.5rem 0.75rem;
     gap: 0.3rem;
     transition: transform 0.3s;
