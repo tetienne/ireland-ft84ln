@@ -1864,12 +1864,13 @@ body {
 
 /* ═══════════════ PRINT ═══════════════ */
 @media print {
-  /* Hide non-essential sections */
+  /* Hide everything except roadbook */
   .hero,
   .nav-bar,
   #map-section,
   #blogs,
   #dashboard,
+  #tips,
   .site-footer,
   .day-pills,
   .day-nav,
@@ -1878,80 +1879,26 @@ body {
   .day-map-container,
   .rainy-day,
   .print-btn,
-  .hero-scroll {
+  .hero-scroll,
+  .weather-badge,
+  .day-narrative.night-info,
+  .day-footer span:has(.fa-bed) {
     display: none !important;
   }
 
-  /* Force schedule and tips panels visible */
-  .day-panel[data-panel="schedule"],
+  /* Hide all panels except schedule */
+  .day-panel[data-panel="budget"],
+  .day-panel[data-panel="map"],
   .day-panel[data-panel="tips"] {
+    display: none !important;
+  }
+
+  /* Force schedule panel visible */
+  .day-panel[data-panel="schedule"] {
     display: block !important;
     max-height: none !important;
     opacity: 1 !important;
     overflow: visible !important;
-  }
-  .day-panel.open {
-    display: block !important;
-  }
-
-  /* Hide budget and map panels */
-  .day-panel[data-panel="budget"],
-  .day-panel[data-panel="map"] {
-    display: none !important;
-  }
-
-  /* Layout */
-  body {
-    background: #fff !important;
-    color: #000 !important;
-    font-size: 11pt;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-  .roadbook {
-    padding: 0 !important;
-    max-width: 100% !important;
-  }
-  .roadbook-header {
-    margin-bottom: 1.5rem !important;
-  }
-
-  /* Day cards */
-  .day-card {
-    break-inside: avoid;
-    page-break-inside: avoid;
-    box-shadow: none !important;
-    border: 1px solid #ddd !important;
-    margin-bottom: 1rem !important;
-  }
-  .day-card .day-content {
-    background: #fff !important;
-  }
-  .day-number {
-    print-color-adjust: exact;
-    -webkit-print-color-adjust: exact;
-  }
-
-  /* Timeline line */
-  .timeline::before {
-    display: none !important;
-  }
-
-  /* Tips section */
-  .tips-section {
-    background: #fff !important;
-    color: #000 !important;
-    padding: 1rem 0 !important;
-  }
-  .tips-section * {
-    color: #333 !important;
-  }
-  .tip-card {
-    background: #f9f9f9 !important;
-    border: 1px solid #ddd !important;
-  }
-  .tip-icon {
-    background: #eee !important;
   }
 
   /* Disable animations */
@@ -1961,8 +1908,225 @@ body {
     animation: none !important;
     transition: none !important;
   }
+
+  /* Page setup */
+  @page {
+    margin: 1.2cm 1.5cm;
+    size: A4;
+  }
+
+  body {
+    background: #fff !important;
+    color: #222 !important;
+    font-size: 9.5pt;
+    line-height: 1.4;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* Roadbook container */
+  .roadbook {
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+  .roadbook-header {
+    margin-bottom: 0.8rem !important;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.4rem;
+  }
+  .roadbook-header h2 {
+    font-size: 14pt !important;
+    margin: 0 !important;
+  }
+  .roadbook-header .line {
+    display: none !important;
+  }
+
+  /* Timeline strip */
+  .timeline {
+    padding: 0 !important;
+  }
+  .timeline::before {
+    display: none !important;
+  }
+
+  /* Day cards: compact, no decorations */
   .day-card {
+    position: relative;
+    padding-left: 0 !important;
+    margin-bottom: 0.6rem !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-bottom: 1px solid #ccc !important;
+    border-radius: 0 !important;
     opacity: 1 !important;
     transform: none !important;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Day number: inline badge instead of absolute circle */
+  .day-number {
+    position: static !important;
+    display: inline-block !important;
+    width: auto !important;
+    height: auto !important;
+    border-radius: 3px !important;
+    padding: 1px 8px !important;
+    font-size: 9pt !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    margin-right: 0.4rem;
+    vertical-align: middle;
+    box-shadow: none !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .day-content {
+    background: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0.3rem 0 0.5rem !important;
+  }
+
+  /* Day header: single line */
+  .day-top {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.2rem;
+    flex-wrap: nowrap;
+  }
+  .day-title {
+    font-size: 11pt !important;
+    margin: 0 !important;
+    white-space: nowrap;
+  }
+  .day-date {
+    font-size: 8pt !important;
+    color: #666 !important;
+    margin: 0 !important;
+  }
+
+  /* Route line */
+  .day-route {
+    font-size: 8.5pt !important;
+    color: #444 !important;
+    margin: 0.15rem 0 0.3rem !important;
+    padding: 0 !important;
+  }
+
+  /* Morning narrative */
+  .day-narrative.morning {
+    font-size: 8.5pt !important;
+    color: #444 !important;
+    margin: 0.2rem 0 !important;
+    padding: 0.15rem 0 !important;
+    border: none !important;
+    background: none !important;
+  }
+
+  /* Stops: compact list */
+  .day-stops {
+    gap: 0.15rem !important;
+    margin: 0.3rem 0 !important;
+  }
+  .day-stop {
+    background: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+  }
+  .stop-body {
+    padding: 0.15rem 0 !important;
+    gap: 0.4rem !important;
+  }
+  .stop-icon {
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 3px !important;
+    font-size: 0.55rem !important;
+    margin-top: 1px !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .stop-info h4 {
+    font-size: 9pt !important;
+    margin-bottom: 0 !important;
+    color: #111 !important;
+  }
+  .stop-info p {
+    font-size: 8pt !important;
+    line-height: 1.3 !important;
+    color: #444 !important;
+    margin: 0 !important;
+  }
+
+  /* Day footer: keep drive time/distance, compact */
+  .day-footer {
+    margin-top: 0.3rem !important;
+    padding-top: 0.2rem !important;
+    border-top: 1px dotted #ccc !important;
+    font-size: 8pt !important;
+    gap: 1rem !important;
+    color: #555 !important;
+  }
+  .day-footer span i {
+    color: #555 !important;
+  }
+
+  /* Schedule panel: compact timeline */
+  .day-panel[data-panel="schedule"] {
+    margin-top: 0.3rem;
+    padding: 0.3rem 0 0 !important;
+    border-top: 1px dotted #ccc;
+  }
+  .schedule-timeline {
+    padding-left: 0.8rem !important;
+  }
+  .schedule-timeline::before {
+    width: 1px !important;
+    background: #999 !important;
+  }
+  .schedule-item {
+    padding: 0.15rem 0 !important;
+    font-size: 8pt !important;
+    gap: 0.4rem !important;
+  }
+  .schedule-item::before {
+    width: 5px !important;
+    height: 5px !important;
+    background: #666 !important;
+    border: 1px solid #fff !important;
+    left: -0.8rem !important;
+    top: 0.4rem !important;
+  }
+  .schedule-item.drive {
+    opacity: 0.6 !important;
+  }
+  .schedule-item.drive::before {
+    width: 4px !important;
+    height: 4px !important;
+    background: #999 !important;
+  }
+  .schedule-time {
+    font-size: 8pt !important;
+    color: #222 !important;
+    min-width: 2.5rem !important;
+  }
+  .schedule-label {
+    font-size: 8pt !important;
+    color: #333 !important;
+  }
+  .schedule-label i {
+    font-size: 7pt !important;
+    color: #666 !important;
+  }
+  .schedule-duration {
+    font-size: 7pt !important;
+    background: #eee !important;
+    color: #555 !important;
+    padding: 0 4px !important;
   }
 }
