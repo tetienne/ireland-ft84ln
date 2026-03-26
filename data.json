@@ -558,7 +558,7 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Dog's+Bay+Roundstone+Ireland",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g551539-d7106495-Reviews-Dog_s_Bay_Beach-Roundstone_County_Galway_Western_Ireland.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron/dog-s-bay-strand",
+          "routard": null,
           "alltrails": "https://www.alltrails.com/trail/ireland/county-galway/dog-s-bay-beach",
           "parking": {
             "location": "Petit parking au bout d'une route etroite (~10 places)",
@@ -892,7 +892,7 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Kylemore+Abbey+Ireland",
           "web": "https://www.kylemoreabbey.com/",
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186609-d214807-Reviews-Kylemore_Abbey_Victorian_Walled_Garden-Galway_County_Galway_Western_Ireland.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/letterfrack/kylemore-abbey",
+          "routard": null,
           "parking": {
             "location": "Grand parking visiteurs sur site",
             "cost": "Gratuit (inclus dans l'entree)"
@@ -1644,7 +1644,7 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Ennis+Ireland",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.fr/Tourism-g186583-Ennis_County_Clare-Vacations.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/ennis-inis",
+          "routard": null,
           "parking": {
             "location": "Parking Abbey Street ou Temple Gate Hotel",
             "cost": "~1-2 EUR/h",
