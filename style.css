@@ -27,7 +27,7 @@ body {
   font-family: "DM Sans", sans-serif;
   background: var(--cream);
   color: var(--peat);
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 /* ═══════════════ HERO ═══════════════ */
