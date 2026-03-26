@@ -331,8 +331,8 @@ function initSingleDayMap(card, days) {
     color: DAY_COLORS[dayNum - 1],
     weight: 3,
     opacity: 0.7,
-    dashArray: "8, 6",
     lineCap: "round",
+    lineJoin: "round",
   }).addTo(map);
 
   // Stop markers from gmaps URLs
@@ -583,18 +583,11 @@ function initMap(data) {
     if (segment && segment.length >= 2) {
       L.polyline(segment, {
         color,
-        weight: 5,
-        opacity: 0.25,
-        smoothFactor: 1.5,
+        weight: 4,
+        opacity: 0.7,
+        smoothFactor: 1,
         lineCap: "round",
-      }).addTo(group);
-      L.polyline(segment, {
-        color,
-        weight: 3,
-        opacity: 0.85,
-        smoothFactor: 1.5,
-        dashArray: "8, 6",
-        lineCap: "round",
+        lineJoin: "round",
       }).addTo(group);
     }
 
