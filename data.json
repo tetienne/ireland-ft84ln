@@ -44,7 +44,13 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Temple+Bar+Dublin+Ireland",
           "web": "https://www.lovetemplebar.com/",
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186605-d188821-Reviews-Temple_Bar-Dublin_County_Dublin.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/dublin/temple-bar"
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/dublin/temple-bar",
+          "parking": {
+            "location": "Q-Park Fleet Street, Fleet St, Dublin 2",
+            "cost": "~4 EUR/h",
+            "tip": "Temple Bar est pieton. Laisser la voiture a l'hotel et marcher.",
+            "gmaps": "https://www.google.com/maps/search/?api=1&query=Q-Park+Fleet+Street+Dublin"
+          }
         },
         {
           "name": "St Stephen's Green",
@@ -55,7 +61,12 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=St+Stephen's+Green+Dublin+Ireland",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186605-d189054-Reviews-St_Stephens_Green-Dublin_County_Dublin.html",
-          "routard": null
+          "routard": null,
+          "parking": {
+            "location": "Q-Park sous le Shopping Centre, entree Glover's Alley",
+            "cost": "~3 EUR/h",
+            "gmaps": "https://www.google.com/maps/search/?api=1&query=Q-Park+St+Stephens+Green+Dublin"
+          }
         }
       ],
       "schedule": [
@@ -204,7 +215,11 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Sean's+Bar+Athlone+Ireland",
           "web": "https://www.seansbar.ie/",
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g212091-d1580894-Reviews-Sean_s_Bar-Athlone_County_Westmeath.html",
-          "routard": null
+          "routard": null,
+          "parking": {
+            "location": "Parking on-street pres du Shannon ou Town Centre car park",
+            "cost": "~1.50 EUR/h"
+          }
         },
         {
           "name": "Burgess Park",
@@ -226,7 +241,13 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Galway+Latin+Quarter+%26+Shop+Street+Galway+Ireland",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186609-d4909613-Reviews-Galway_s_Latin_Quarter-Galway_County_Galway_Western_Ireland.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-galway/galway-gaillimh"
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-galway/galway-gaillimh",
+          "parking": {
+            "location": "Claddagh Car Park (Spanish Arch) ou Q-Park Eyre Square",
+            "cost": "2.50-3.20 EUR/h",
+            "tip": "Depuis Salthill, prendre le bus 401/402 (15 min) plutot que la voiture.",
+            "gmaps": "https://www.google.com/maps/search/?api=1&query=Claddagh+Car+Park+Galway"
+          }
         }
       ],
       "schedule": [
@@ -522,7 +543,11 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Roundstone+Connemara+Ireland",
           "web": null,
           "tripadvisor": null,
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron"
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron",
+          "parking": {
+            "location": "Parking gratuit le long du port",
+            "cost": "Gratuit"
+          }
         },
         {
           "name": "Dog's Bay & Gurteen Bay",
@@ -534,7 +559,12 @@
           "web": null,
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g551539-d7106495-Reviews-Dog_s_Bay_Beach-Roundstone_County_Galway_Western_Ireland.html",
           "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron/dog-s-bay-strand",
-          "alltrails": "https://www.alltrails.com/trail/ireland/county-galway/dog-s-bay-beach"
+          "alltrails": "https://www.alltrails.com/trail/ireland/county-galway/dog-s-bay-beach",
+          "parking": {
+            "location": "Petit parking au bout d'une route etroite (~10 places)",
+            "cost": "Gratuit",
+            "tip": "Arrive tot (avant 10h) ou tard (apres 16h) en aout. Si plein, essayer Gurteen Bay a cote."
+          }
         },
         {
           "name": "Clifden",
@@ -545,7 +575,12 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Clifden+Ireland",
           "web": null,
           "tripadvisor": null,
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan"
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan",
+          "parking": {
+            "location": "Parking gratuit derriere l'Office de Tourisme, ou SuperValu",
+            "cost": "Gratuit",
+            "gmaps": "https://www.google.com/maps/search/?api=1&query=Tourist+Office+Car+Park+Clifden"
+          }
         },
         {
           "name": "Sky Road",
@@ -556,7 +591,12 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Sky+Road+Clifden+Ireland",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g211883-d4442921-Reviews-Sky_Road-Clifden_County_Galway_Western_Ireland.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan"
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan",
+          "parking": {
+            "location": "Lay-bys et parking WAW Discovery Point au sommet",
+            "cost": "Gratuit",
+            "tip": "Route etroite, utiliser les lay-bys. Ne pas s'arreter dans les virages."
+          }
         }
       ],
       "schedule": [
@@ -852,7 +892,11 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Kylemore+Abbey+Ireland",
           "web": "https://www.kylemoreabbey.com/",
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186609-d214807-Reviews-Kylemore_Abbey_Victorian_Walled_Garden-Galway_County_Galway_Western_Ireland.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/letterfrack/kylemore-abbey"
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/letterfrack/kylemore-abbey",
+          "parking": {
+            "location": "Grand parking visiteurs sur site",
+            "cost": "Gratuit (inclus dans l'entree)"
+          }
         },
         {
           "name": "Parc National du Connemara / Diamond Hill",
@@ -865,7 +909,11 @@
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186609-d546269-Reviews-Connemara_National_Park_Visitor_Centre-Galway_County_Galway_Western_Ireland.html",
           "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/letterfrack",
           "alltrails": "https://www.alltrails.com/trail/ireland/county-galway/connemara-and-diamond-hill-loop",
-          "trailMap": "https://www.nationalparks.ie/app/uploads/2022/09/Diamond-Hill-Trails-Map.pdf"
+          "trailMap": "https://www.nationalparks.ie/app/uploads/2022/09/Diamond-Hill-Trails-Map.pdf",
+          "parking": {
+            "location": "Grand parking au Centre des Visiteurs, Letterfrack",
+            "cost": "Gratuit"
+          }
         },
         {
           "name": "Salthill Promenade",
@@ -876,7 +924,12 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Salthill+Promenade+Galway+Ireland",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186609-d215937-Reviews-Salthill_Promenade-Galway_County_Galway_Western_Ireland.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-galway/salthill"
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-galway/salthill",
+          "parking": {
+            "location": "Parkings gratuits aux extremites de la promenade",
+            "cost": "Gratuit",
+            "tip": "Se remplit vite en aout par beau temps. Depuis l'hebergement Salthill, y aller a pied."
+          }
         },
         {
           "name": "Galway Atlantaquaria",
@@ -887,7 +940,11 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Galway+Atlantaquaria+Ireland",
           "web": "https://nationalaquarium.ie/",
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186609-d215896-Reviews-Galway_Atlantaquaria-Galway_County_Galway_Western_Ireland.html",
-          "routard": null
+          "routard": null,
+          "parking": {
+            "location": "Parking gratuit sur place, Seapoint Promenade",
+            "cost": "Gratuit"
+          }
         }
       ],
       "schedule": [
@@ -1229,7 +1286,11 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Caherconnell+Stone+Fort+Ireland",
           "web": "https://caherconnell.com/",
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g1645258-d1237930-Reviews-Caherconnell_Stone_Fort_Sheepdog_Demonstrations-Caherconnell_The_Burren_County_C.html",
-          "routard": "https://www.routard.com/guide_voyage_lieu/3409-burren.htm"
+          "routard": "https://www.routard.com/guide_voyage_lieu/3409-burren.htm",
+          "parking": {
+            "location": "Parking visiteurs dedie sur la R480",
+            "cost": "Gratuit"
+          }
         },
         {
           "name": "Poulnabrone Dolmen",
@@ -1240,7 +1301,11 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Poulnabrone+Dolmen+Ireland",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186595-d526251-Reviews-Poulnabrone_Dolmen-County_Clare.html",
-          "routard": "https://www.routard.com/guide_voyage_lieu/3409-burren.htm"
+          "routard": "https://www.routard.com/guide_voyage_lieu/3409-burren.htm",
+          "parking": {
+            "location": "Parking dedie, signale depuis la R480 (250m a pied)",
+            "cost": "Gratuit"
+          }
         },
         {
           "name": "Cliffs of Moher",
@@ -1253,7 +1318,13 @@
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g1184916-d214806-Reviews-Cliffs_of_Moher-Liscannor_County_Clare.html",
           "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/falaises-de-moher-cliffs-of-moher",
           "alltrails": "https://www.alltrails.com/trail/ireland/county-clare/cliffs-of-moher-hag-s-head",
-          "trailMap": "https://www.sportireland.ie/sites/default/files/media/document/2020-05/cliffs-of-moher-coastal-walk-map.pdf"
+          "trailMap": "https://www.sportireland.ie/sites/default/files/media/document/2020-05/cliffs-of-moher-coastal-walk-map.pdf",
+          "parking": {
+            "location": "Parking officiel au Visitor Centre (reserver en ligne !)",
+            "cost": "7 EUR/adulte en ligne, enfants gratuits",
+            "tip": "Alternative : parking fermier 800m avant (dir. Liscannor), 2-5 EUR/vehicule en cash. Avec enfants, le centre officiel est plus sur (chemins clotures).",
+            "gmaps": "https://www.google.com/maps/search/?api=1&query=Cliffs+of+Moher+Visitor+Centre+Parking"
+          }
         },
         {
           "name": "Lahinch Beach",
@@ -1264,7 +1335,12 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Lahinch+Beach+Ireland",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g212533-d3458853-Reviews-Lahinch_Beach-Lahinch_County_Clare.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/lahinch-an-leacht"
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/lahinch-an-leacht",
+          "parking": {
+            "location": "Pay-and-display sur la promenade ou parking gratuit au sud",
+            "cost": "~2 EUR/h (promenade)",
+            "tip": "Se remplit vite en aout. Si logement a Lahinch, y aller a pied."
+          }
         }
       ],
       "schedule": [
@@ -1359,7 +1435,7 @@
           }
         ],
         "total": 115,
-        "notes": "Parking fermier 800m avant les Cliffs (direction Liscannor) a 2 EUR/vehicule au lieu de 8 EUR/pers au parking officiel. Economie de 30 EUR pour une famille de 4."
+        "notes": "Parking fermier 800m avant les Cliffs (direction Liscannor) a 2-5 EUR/vehicule au lieu de 10 EUR/adulte au parking officiel (ou 7 EUR en ligne, enfants gratuits). Economie de 10-25 EUR pour une famille."
       },
       "dayRoute": [
         [53.2718, -9.0529],
@@ -1553,7 +1629,11 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Lahinch+Beach+Ireland",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g212533-d3458853-Reviews-Lahinch_Beach-Lahinch_County_Clare.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/lahinch-an-leacht"
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/lahinch-an-leacht",
+          "parking": {
+            "location": "Pay-and-display sur la promenade ou parking gratuit au sud",
+            "cost": "~2 EUR/h (promenade)"
+          }
         },
         {
           "name": "Ennis",
@@ -1564,7 +1644,12 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Ennis+Ireland",
           "web": null,
           "tripadvisor": "https://www.tripadvisor.fr/Tourism-g186583-Ennis_County_Clare-Vacations.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/ennis-inis"
+          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/ennis-inis",
+          "parking": {
+            "location": "Parking Abbey Street ou Temple Gate Hotel",
+            "cost": "~1-2 EUR/h",
+            "gmaps": "https://www.google.com/maps/search/?api=1&query=Abbey+Street+Car+Park+Ennis"
+          }
         },
         {
           "name": "Birr Castle Demesne",
@@ -1575,7 +1660,12 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Birr+Castle+Demesne+Ireland",
           "web": "https://birrcastle.com/",
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186594-d214826-Reviews-Birr_Castle_Demesne-Birr_County_Offaly.html",
-          "routard": null
+          "routard": null,
+          "parking": {
+            "location": "Marian Hall car park, en face de l'entree sur Rosse Row",
+            "cost": "1 EUR/2h",
+            "gmaps": "https://www.google.com/maps/search/?api=1&query=Marian+Hall+Car+Park+Birr"
+          }
         }
       ],
       "schedule": [
@@ -1871,7 +1961,12 @@
           "web": "https://heritageireland.ie/places-to-visit/trim-castle/",
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g644237-d525404-Reviews-Trim_Castle-Trim_County_Meath.html",
           "routard": "https://www.routard.com/fr/guide/europe/irlande/environs-de-dublin/trim-castle",
-          "alltrails": "https://www.alltrails.com/trail/ireland/county-meath/trim-castle-to-priory-of-st-john-the-baptist"
+          "alltrails": "https://www.alltrails.com/trail/ireland/county-meath/trim-castle-to-priory-of-st-john-the-baptist",
+          "parking": {
+            "location": "Tower View Car Park (le plus proche, vue sur le donjon)",
+            "cost": "~2 EUR/jour",
+            "gmaps": "https://www.google.com/maps/search/?api=1&query=Tower+View+Car+Park+Trim"
+          }
         },
         {
           "name": "Hill of Tara",
@@ -1882,7 +1977,11 @@
           "gmaps": "https://www.google.com/maps/search/?api=1&query=Hill+of+Tara+Ireland",
           "web": "https://heritageireland.ie/places-to-visit/hill-of-tara/",
           "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186628-d526324-Reviews-Hill_of_Tara_Temair-County_Meath.html",
-          "routard": null
+          "routard": null,
+          "parking": {
+            "location": "Parking gratuit au centre des visiteurs",
+            "cost": "Gratuit"
+          }
         }
       ],
       "schedule": [

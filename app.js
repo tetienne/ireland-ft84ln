@@ -196,6 +196,8 @@ function renderStop(stop) {
     );
   const linksHtml = links.length ? `<div class="stop-links">${links.join("")}</div>` : "";
 
+  const parkingHtml = stop.parking ? renderParking(stop.parking) : "";
+
   return `
     <li class="day-stop">
       ${photoHtml}
@@ -204,11 +206,23 @@ function renderStop(stop) {
         <div class="stop-info">
           <h4>${stop.alltrails || stop.trailMap ? '<span class="hike-badge"><i class="fa-solid fa-person-hiking"></i> Rando</span> ' : ""}${stop.name}</h4>
           <p>${stop.desc}</p>
+          ${parkingHtml}
           ${linksHtml}
         </div>
       </div>
     </li>
   `;
+}
+
+function renderParking(p) {
+  const loc = p.gmaps ? `<a href="${p.gmaps}" target="_blank">${p.location}</a>` : p.location;
+  const tip = p.tip ? `<span class="parking-tip">${p.tip}</span>` : "";
+  return `
+    <div class="stop-parking">
+      <i class="fa-solid fa-square-parking"></i>
+      <span><strong>${p.cost}</strong> &mdash; ${loc}</span>
+      ${tip}
+    </div>`;
 }
 
 // ─── DAY DETAIL PILLS & PANELS ───
