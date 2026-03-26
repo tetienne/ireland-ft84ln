@@ -57,17 +57,12 @@ function boot(data) {
   }
 }
 
-// Try fetch first, fallback to global TRIP_DATA (set via <script src="data.js">)
-if (typeof TRIP_DATA !== "undefined") {
-  boot(TRIP_DATA);
-} else {
-  fetch("data.json")
-    .then((r) => r.json())
-    .then(boot)
-    .catch(() => {
-      console.error("Cannot load data.json — create data.js with: const TRIP_DATA = { ... }");
-    });
-}
+fetch("data.json")
+  .then((r) => r.json())
+  .then(boot)
+  .catch((err) => {
+    console.error("Cannot load data.json:", err);
+  });
 
 // ─── COMPUTED STATS ───
 function computeStats(data) {

@@ -19,16 +19,16 @@ Voyage en famille (2 adultes + 2 enfants de 5 et 8 ans) en Irlande, cote ouest /
 
 ## Itineraire final v3 (temps OSRM verifies — Connemara d'abord, Lahinch, Birr Castle)
 
-| Jour | Date      | Trajet                                                   | Conduite   | Nuit             |
-| ---- | --------- | -------------------------------------------------------- | ---------- | ---------------- |
-| J1   | Dim 16/08 | Airport → Dublin                                         | **21 min** | Dublin           |
-| J2   | Lun 17/08 | Dublin → Athlone (dej) → Galway                         | **2h35**   | Galway           |
-| J3   | Mar 18/08 | Galway → Roundstone → Dog's Bay → Clifden → Sky Road    | **2h27**   | Clifden          |
-| J4   | Mer 19/08 | Clifden → Kylemore Abbey → Connemara NP → Galway        | **~1h46**  | Galway (2e nuit) |
-| J5   | Jeu 20/08 | Galway → Caherconnell → Poulnabrone → Cliffs → Lahinch  | **1h58**   | Lahinch          |
-| J6   | Ven 21/08 | Lahinch (plage) → Ennis (dej) → Birr Castle             | **2h04**   | Birr             |
-| J7   | Sam 22/08 | Birr → Trim Castle → Hill of Tara → Airport hotel        | **2h34**   | Airport hotel    |
-| J8   | Dim 23/08 | Hotel → Terminal                                         | **5 min**  | —                |
+| Jour | Date      | Trajet                                                 | Conduite   | Nuit             |
+| ---- | --------- | ------------------------------------------------------ | ---------- | ---------------- |
+| J1   | Dim 16/08 | Airport → Dublin                                       | **21 min** | Dublin           |
+| J2   | Lun 17/08 | Dublin → Athlone (dej) → Galway                        | **2h35**   | Galway           |
+| J3   | Mar 18/08 | Galway → Roundstone → Dog's Bay → Clifden → Sky Road   | **2h27**   | Clifden          |
+| J4   | Mer 19/08 | Clifden → Kylemore Abbey → Connemara NP → Galway       | **~1h46**  | Galway (2e nuit) |
+| J5   | Jeu 20/08 | Galway → Caherconnell → Poulnabrone → Cliffs → Lahinch | **1h58**   | Lahinch          |
+| J6   | Ven 21/08 | Lahinch (plage) → Ennis (dej) → Birr Castle            | **2h04**   | Birr             |
+| J7   | Sam 22/08 | Birr → Trim Castle → Hill of Tara → Airport hotel      | **2h34**   | Airport hotel    |
+| J8   | Dim 23/08 | Hotel → Terminal                                       | **5 min**  | —                |
 
 ### Detail des troncons OSRM (minutes)
 
@@ -71,15 +71,13 @@ ireland-trip/
 ├── index.html     ← HTML structure (liens vers CSS/JS/data)
 ├── style.css      ← Tout le CSS (design irlandais vert/or)
 ├── app.js         ← Logique JS (genere road book + carte Leaflet depuis le JSON)
-├── data.json      ← SOURCE DE VERITE : itineraire, stops, POIs, tips, blogs
-└── data.js        ← Copie JS du JSON (pour fonctionner en file:// sans serveur)
+└── data.json      ← SOURCE DE VERITE : itineraire, stops, POIs, tips, blogs
 ```
 
 ### Comment modifier l'itineraire
 
 1. Editer `data.json` (champs `days`, `stops`, `route`, `pois`, `tips`, `blogs`)
-2. Regenerer `data.js` : `npm run sync-data` (aussi execute automatiquement par le pre-commit hook)
-3. Ouvrir `index.html` dans un navigateur (fonctionne en file://)
+2. Lancer `pnpm start` pour visualiser (serveur local)
 
 ### Comment verifier un temps de trajet
 

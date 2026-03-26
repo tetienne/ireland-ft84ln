@@ -1,11 +1,10 @@
-const CACHE_NAME = "ireland-trip-v2";
+const CACHE_NAME = "ireland-trip-v3";
 
 const LOCAL_ASSETS = [
   "./",
   "./index.html",
   "./style.css",
   "./app.js",
-  "./data.js",
   "./data.json",
   "./manifest.json",
 ];
@@ -25,10 +24,10 @@ self.addEventListener("install", (event) => {
         cache.addAll(LOCAL_ASSETS),
         // CDN assets: best-effort (don't block install if one fails)
         ...CDN_ASSETS.map((url) =>
-          cache.add(url).catch(() => console.warn("SW: could not cache", url))
+          cache.add(url).catch(() => console.warn("SW: could not cache", url)),
         ),
-      ])
-    )
+      ]),
+    ),
   );
   self.skipWaiting();
 });
@@ -36,11 +35,11 @@ self.addEventListener("install", (event) => {
 // Activate: clean up old caches
 self.addEventListener("activate", (event) => {
   event.waitUntil(
-    caches.keys().then((keys) =>
-      Promise.all(
-        keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k))
-      )
-    )
+    caches
+      .keys()
+      .then((keys) =>
+        Promise.all(keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k))),
+      ),
   );
   self.clients.claim();
 });
@@ -61,7 +60,7 @@ self.addEventListener("fetch", (event) => {
           }
           return response;
         })
-        .catch(() => caches.match(event.request))
+        .catch(() => caches.match(event.request)),
     );
   } else {
     // CDN: cache-first (versioned URLs don't change)
@@ -75,7 +74,7 @@ self.addEventListener("fetch", (event) => {
           }
           return response;
         });
-      })
+      }),
     );
   }
 });

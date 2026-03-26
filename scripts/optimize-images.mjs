@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 /**
  * Downloads all photo URLs from data.json, converts to WebP,
- * resizes to max 480px wide, and rewrites paths in data.js.
- * Run during CI build — no images stored in the repo.
+ * resizes to max 480px wide, and rewrites paths in data.json.
+ * Run during CI build, no images stored in the repo.
  */
 import { readFile, writeFile, mkdir, stat } from "node:fs/promises";
 import { createHash } from "node:crypto";
@@ -11,7 +11,6 @@ import sharp from "sharp";
 const MAX_WIDTH = 480;
 const OUT_DIR = "img";
 const DATA_JSON = "data.json";
-const DATA_JS = "data.js";
 const USER_AGENT = "IrelandTripSiteBuilder/1.0 (GitHub Actions; contact: github)";
 const DELAY_MS = 1500;
 const MAX_RETRIES = 5;
@@ -84,14 +83,14 @@ async function main() {
     await new Promise((r) => setTimeout(r, DELAY_MS));
   }
 
-  // Rewrite data.js with local paths in a single pass
-  let dataJs = await readFile(DATA_JS, "utf8");
+  // Rewrite data.json with local paths in a single pass
+  let dataStr = await readFile(DATA_JSON, "utf8");
   const escaped = [...urlMap.keys()].map((u) => u.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
   if (escaped.length > 0) {
     const re = new RegExp(escaped.join("|"), "g");
-    dataJs = dataJs.replace(re, (match) => urlMap.get(match));
+    dataStr = dataStr.replace(re, (match) => urlMap.get(match));
   }
-  await writeFile(DATA_JS, dataJs);
+  await writeFile(DATA_JSON, dataStr);
 
   console.log(`\nDone: ${urlMap.size}/${urls.length} images optimized`);
 }
