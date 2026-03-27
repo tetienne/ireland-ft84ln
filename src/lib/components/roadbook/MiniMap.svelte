@@ -28,9 +28,8 @@
     if (day.dayRoute && day.dayRoute.length > 0) {
       const polyline = L.polyline(day.dayRoute, {
         color,
-        weight: 4,
-        opacity: 0.8,
-        dashArray: '8,6'
+        weight: 3,
+        opacity: 0.7
       }).addTo(map);
       bounds.extend(polyline.getBounds());
     }

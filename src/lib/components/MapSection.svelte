@@ -44,8 +44,7 @@
         L.polyline(routesByDay[i], {
           color,
           weight: 4,
-          opacity: 0.8,
-          dashArray: '8,6'
+          opacity: 0.7
         }).addTo(group);
       }
 
@@ -129,15 +128,16 @@
     <h4><i class="fa-solid fa-filter"></i> Filtrer</h4>
     <div id="dayLegend">
       {#each data.days as day, i}
-        <button
-          class="legend-item"
-          class:active={soloIndex === i}
+        <!-- svelte-ignore a11y_click_events_have_key_events -->
+        <!-- svelte-ignore a11y_no_static_element_interactions -->
+        <div
+          class="map-legend-item"
+          class:active={soloIndex === -1 || soloIndex === i}
           onclick={() => toggleDay(i)}
         >
-          <span class="legend-dot" style:background={DAY_COLORS[i]}></span>
-          <span class="legend-line" style:background={DAY_COLORS[i]}></span>
-          J{day.day} — {day.shortLabel}
-        </button>
+          <div class="legend-dot" style:background={DAY_COLORS[i]}></div>
+          <span>J{day.day} {day.shortLabel}</span>
+        </div>
       {/each}
     </div>
   </aside>
