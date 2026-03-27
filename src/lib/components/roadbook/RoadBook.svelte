@@ -1,7 +1,8 @@
 <script>
   import DayCard from './DayCard.svelte';
+  import DayNav from './DayNav.svelte';
 
-  let { days, weatherByDay = new Map() } = $props();
+  let { days, weatherByDay = new Map(), todayDayNum = null } = $props();
 </script>
 
 <section class="roadbook" id="roadbook">
@@ -13,9 +14,7 @@
       <i class="fa-solid fa-print"></i> Imprimer le road book
     </button>
   </header>
-  <nav class="day-nav" id="dayNav" aria-label="Navigation par jour">
-    <!-- DayNav will be rendered here by +page.svelte -->
-  </nav>
+  <DayNav {days} {todayDayNum} />
   <div class="timeline">
     {#each days as day}
       <DayCard {day} weatherHtml={weatherByDay.get(day.day) || ''} />
