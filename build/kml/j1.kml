@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>J1 — Bienvenue a Dublin</name>
+    <Placemark>
+      <name>Temple Bar</name>
+      <description>Quartier emblematique aux facades colorees. Ambiance musicale, pubs traditionnels. Plus sympa pour une balade photo en journee qu'en soiree avec enfants.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://www.lovetemplebar.com/"&gt;Site web&lt;/a&gt; | &lt;a href="https://www.tripadvisor.fr/Attraction_Review-g186605-d188821-Reviews-Temple_Bar-Dublin_County_Dublin.html"&gt;TripAdvisor&lt;/a&gt; | &lt;a href="https://www.routard.com/fr/guide/europe/irlande/dublin/temple-bar"&gt;Routard&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=Temple+Bar+Dublin+Ireland"&gt;Google Maps&lt;/a&gt;</description>
+      <address>Temple Bar, Dublin, Ireland</address>
+    </Placemark>
+    <Placemark>
+      <name>St Stephen's Green</name>
+      <description>Parc victorien avec lac, canards et aire de jeux. Pause parfaite apres le voyage. Aire de jeux avec toboggan a la cathedrale St Patrick juste a cote.&lt;br/&gt;&lt;br/&gt;&lt;a href="https://www.tripadvisor.fr/Attraction_Review-g186605-d189054-Reviews-St_Stephens_Green-Dublin_County_Dublin.html"&gt;TripAdvisor&lt;/a&gt; | &lt;a href="https://www.google.com/maps/search/?api=1&amp;query=St+Stephen's+Green+Dublin+Ireland"&gt;Google Maps&lt;/a&gt;</description>
+      <address>St Stephen's Green, Dublin, Ireland</address>
+    </Placemark>
+    <Placemark>
+      <name>Route J1</name>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>-6.2499,53.4264,0 -6.2628,53.3456,0 -6.2592,53.3381,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark>
+      <name>Nuit a Dublin centre</name>
+      <Point>
+        <coordinates>-6.2592,53.3381,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

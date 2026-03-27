@@ -7,7 +7,8 @@ const config = {
 			fallback: undefined
 		}),
 		prerender: {
-			entries: ['/']
+			entries: ['/'],
+			handleMissingId: 'ignore'
 		}
 	}
 };
