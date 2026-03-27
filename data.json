@@ -520,7 +520,7 @@
       "isoDate": "2026-08-18",
       "routeIcon": "fa-panorama",
       "routeDesc": "Galway → Roundstone → Clifden → Sky Road · ~2h27 de route",
-      "morning": "Depart de Galway vers 9h30. Route scenique (<strong>1h12</strong>) le long de la cote du Connemara vers <a href=\"https://www.google.com/maps/search/?api=1&query=Roundstone+Connemara+Ireland\" target=\"_blank\"><strong>Roundstone</strong></a>, village de pecheurs idyllique (atelier de bodhran). Puis <a href=\"https://www.google.com/maps/search/?api=1&query=Dog's+Bay+Roundstone+Ireland\" target=\"_blank\"><strong>Dog's Bay</strong></a> — plage de sable blanc corallien, eau turquoise (<strong>7 min</strong> de Roundstone). <strong>38 min</strong> de route jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Clifden+Ireland\" target=\"_blank\"><strong>Clifden</strong></a>, capitale du Connemara. Dejeuner a Clifden. <strong>Apres-midi</strong> : <a href=\"https://www.google.com/maps/search/?api=1&query=Sky+Road+Clifden+Ireland\" target=\"_blank\"><strong>Sky Road</strong></a>, boucle scenique de 16 km en voiture (~30-40 min avec arrets photo). Point culminant a 120 m, vues epoustouflantes sur l'ocean et les iles.",
+      "morning": "Depart de Galway vers 9h30. Route scenique (<strong>1h12</strong>) le long de la cote du Connemara vers <a href=\"https://www.google.com/maps/search/?api=1&query=Roundstone+Connemara+Ireland\" target=\"_blank\"><strong>Roundstone</strong></a>, village de pecheurs idyllique (atelier de bodhran). Puis <a href=\"https://www.google.com/maps/search/?api=1&query=Dog's+Bay+Roundstone+Ireland\" target=\"_blank\"><strong>Dog's Bay</strong></a> — plage de sable blanc corallien, eau turquoise (<strong>7 min</strong> de Roundstone). <strong>38 min</strong> de route jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Clifden+Ireland\" target=\"_blank\"><strong>Clifden</strong></a>, capitale du Connemara. Dejeuner a Clifden. <strong>Apres-midi</strong> : balade vers les ruines du <a href=\"https://www.google.com/maps/search/?api=1&query=Clifden+Castle+Ruins+Ireland\" target=\"_blank\"><strong>Clifden Castle</strong></a> (15 min de marche entre moutons et poneys du Connemara, vue sur la baie — les enfants adorent). Puis <a href=\"https://www.google.com/maps/search/?api=1&query=Sky+Road+Clifden+Ireland\" target=\"_blank\"><strong>Sky Road</strong></a>, boucle scenique de 16 km en voiture (~30-40 min avec arrets photo). Point culminant a 120 m, vues epoustouflantes sur l'ocean et les iles.",
       "night": "Nuit a Clifden",
       "nightInfo": "<strong>Ou dormir :</strong> <a href=\"https://www.google.com/maps/search/?api=1&query=Clifden+Ireland\" target=\"_blank\"><strong>Clifden</strong></a>, « capitale du Connemara ». <strong>Faul House B&B</strong> (eleveur de poneys du Connemara, les enfants voient les chevaux !), <strong>Bayview House B&B</strong> (debut Sky Road, vue baie, ideal pour le coucher de soleil), <strong>Atlantic View B&B</strong> (calme, pancakes maison). Formule classique : chambre double + twin communicante.",
       "rainyDay": "<strong>Killary Fjord Boat</strong> depuis Leenane (40 min de Clifden, 90 min de croisiere en bateau couvert sur le seul fjord d'Irlande — les enfants peuvent « piloter », atmospherique sous la pluie, famille ~60 EUR) · <strong>Dan O'Hara's Homestead</strong> (7 km de Clifden, partie musee interieure + AV, tracteur si ca se degage)",
@@ -583,6 +583,22 @@
           }
         },
         {
+          "name": "Clifden Castle",
+          "desc": "Ruines neogothiques du chateau de John D'Arcy (1818), fondateur de Clifden. Balade de 15 min sur un chemin de terre entre moutons, vaches et poneys du Connemara, avec vue sur la baie. Les enfants adorent le cote « chateau en ruines a explorer ». <strong>Ne pas entrer dans les murs</strong> (instables). Prevoir des chaussures impermeables.",
+          "icon": "fa-chess-rook",
+          "iconClass": "castle",
+          "photo": "https://upload.wikimedia.org/wikipedia/commons/7/77/Clifden_Castle_front.jpg",
+          "gmaps": "https://www.google.com/maps/search/?api=1&query=Clifden+Castle+Ruins+Ireland",
+          "web": null,
+          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g211883-d648939-Reviews-Clifden_Castle-Clifden_County_Galway_Western_Ireland.html",
+          "routard": null,
+          "parking": {
+            "location": "Petit parking au debut du chemin (environ 8 places), au debut de la Sky Road",
+            "cost": "Gratuit",
+            "tip": "Peut etre plein en aout — arriver tot ou se garer a Clifden et marcher."
+          }
+        },
+        {
           "name": "Sky Road",
           "desc": "Boucle scenique de 16 km en voiture au depart de Clifden (sens horaire recommande). Point culminant a 120 m avec parking et bancs pique-nique. Vues epoustouflantes sur l'ocean et les iles. Privilegier la Upper Sky Road. <strong>Ideal au coucher du soleil</strong> (vers 17-18h). Route etroite sans trottoir, arrets photo aux viewpoints.",
           "icon": "fa-panorama",
@@ -640,25 +656,31 @@
           "time": "14h30",
           "label": "Balade dans Clifden",
           "icon": "fa-camera",
-          "duration": "45min"
+          "duration": "30min"
         },
         {
-          "time": "15h15",
+          "time": "15h00",
           "label": "Installation B&B",
           "icon": "fa-bed",
           "duration": "30min"
         },
         {
-          "time": "16h30",
+          "time": "16h00",
+          "label": "Clifden Castle Walk (ruines + poneys)",
+          "icon": "fa-chess-rook",
+          "duration": "45min"
+        },
+        {
+          "time": "16h45",
           "label": "Sky Road (boucle panoramique)",
           "icon": "fa-panorama",
           "duration": "1h"
         },
         {
-          "time": "17h30",
+          "time": "17h45",
           "label": "Temps libre, repos",
           "icon": "fa-bed",
-          "duration": "1h"
+          "duration": "45min"
         },
         {
           "time": "18h30",
@@ -683,7 +705,7 @@
           }
         ],
         "total": 107,
-        "notes": "Journee economique : Dog's Bay, Sky Road et Roundstone sont gratuits."
+        "notes": "Journee economique : Dog's Bay, Clifden Castle, Sky Road et Roundstone sont gratuits."
       },
       "dayRoute": [
         [53.2718, -9.0529],
@@ -847,6 +869,17 @@
             "Parking gratuit en haut de la plage",
             "Tour de la presqu'ile possible en 2h a pied (boucle facile)",
             "Eau froide meme en aout, prevoir des serviettes chaudes"
+          ]
+        },
+        {
+          "stop": "Clifden Castle",
+          "icon": "fa-chess-rook",
+          "tips": [
+            "Balade facile de 15 min (1 km) sur chemin de terre — faisable des 5 ans",
+            "Moutons, vaches et poneys Connemara en chemin — appareil photo pret !",
+            "Ne pas laisser les enfants entrer dans les ruines (murs instables)",
+            "Chemin boueux apres la pluie — prevoir des bottes ou chaussures impermeables",
+            "Petit parking (~8 places) au debut de la Sky Road — peut etre plein en aout"
           ]
         },
         {
