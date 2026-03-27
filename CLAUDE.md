@@ -79,6 +79,12 @@ ireland-trip/
 1. Editer `data.json` (champs `days`, `stops`, `route`, `pois`, `tips`, `blogs`)
 2. Lancer `pnpm start` pour visualiser (serveur local)
 
+### Images dans data.json
+
+**Ne jamais inventer ou deviner une URL d'image.** Toujours verifier que l'image existe avant de l'ajouter :
+- Chercher sur Wikimedia Commons (`commons.wikimedia.org`) et copier l'URL reelle
+- Ou utiliser WebFetch pour confirmer que l'URL renvoie bien une image
+
 ### Comment verifier un temps de trajet
 
 Utiliser l'API OSRM (gratuite, pas de cle) :
