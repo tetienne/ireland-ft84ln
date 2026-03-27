@@ -520,7 +520,7 @@
       "isoDate": "2026-08-18",
       "routeIcon": "fa-panorama",
       "routeDesc": "Galway → Roundstone → Clifden → Sky Road · ~2h27 de route",
-      "morning": "Depart de Galway vers 9h30. Route scenique (<strong>1h12</strong>) le long de la cote du Connemara vers <a href=\"https://www.google.com/maps/search/?api=1&query=Roundstone+Connemara+Ireland\" target=\"_blank\"><strong>Roundstone</strong></a>, village de pecheurs idyllique (atelier de bodhran). Puis <a href=\"https://www.google.com/maps/search/?api=1&query=Dog's+Bay+Roundstone+Ireland\" target=\"_blank\"><strong>Dog's Bay</strong></a> — plage de sable blanc corallien, eau turquoise (<strong>7 min</strong> de Roundstone). <strong>38 min</strong> de route jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Clifden+Ireland\" target=\"_blank\"><strong>Clifden</strong></a>, capitale du Connemara. Dejeuner a Clifden. <strong>Apres-midi</strong> : <a href=\"https://www.google.com/maps/search/?api=1&query=Sky+Road+Clifden+Ireland\" target=\"_blank\"><strong>Sky Road</strong></a>, boucle panoramique de 12 km (~30 min). Vues epoustouflantes sur l'ocean et les iles.",
+      "morning": "Depart de Galway vers 9h30. Route scenique (<strong>1h12</strong>) le long de la cote du Connemara vers <a href=\"https://www.google.com/maps/search/?api=1&query=Roundstone+Connemara+Ireland\" target=\"_blank\"><strong>Roundstone</strong></a>, village de pecheurs idyllique (atelier de bodhran). Puis <a href=\"https://www.google.com/maps/search/?api=1&query=Dog's+Bay+Roundstone+Ireland\" target=\"_blank\"><strong>Dog's Bay</strong></a> — plage de sable blanc corallien, eau turquoise (<strong>7 min</strong> de Roundstone). <strong>38 min</strong> de route jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Clifden+Ireland\" target=\"_blank\"><strong>Clifden</strong></a>, capitale du Connemara. Dejeuner a Clifden. <strong>Apres-midi</strong> : <a href=\"https://www.google.com/maps/search/?api=1&query=Sky+Road+Clifden+Ireland\" target=\"_blank\"><strong>Sky Road</strong></a>, boucle scenique de 16 km en voiture (~30-40 min avec arrets photo). Point culminant a 120 m, vues epoustouflantes sur l'ocean et les iles.",
       "night": "Nuit a Clifden",
       "nightInfo": "<strong>Ou dormir :</strong> <a href=\"https://www.google.com/maps/search/?api=1&query=Clifden+Ireland\" target=\"_blank\"><strong>Clifden</strong></a>, « capitale du Connemara ». <strong>Faul House B&B</strong> (eleveur de poneys du Connemara, les enfants voient les chevaux !), <strong>Bayview House B&B</strong> (debut Sky Road, vue baie, ideal pour le coucher de soleil), <strong>Atlantic View B&B</strong> (calme, pancakes maison). Formule classique : chambre double + twin communicante.",
       "rainyDay": "<strong>Killary Fjord Boat</strong> depuis Leenane (40 min de Clifden, 90 min de croisiere en bateau couvert sur le seul fjord d'Irlande — les enfants peuvent « piloter », atmospherique sous la pluie, famille ~60 EUR) · <strong>Dan O'Hara's Homestead</strong> (7 km de Clifden, partie musee interieure + AV, tracteur si ca se degage)",
@@ -584,7 +584,7 @@
         },
         {
           "name": "Sky Road",
-          "desc": "Boucle panoramique de 12 km au-dessus de Clifden. Vues epoustouflantes sur l'ocean et les iles. Privilegier la Upper Sky Road pour les plus belles vues. <strong>Ideal au coucher du soleil</strong> (vers 17-18h). Route etroite, rouler lentement.",
+          "desc": "Boucle scenique de 16 km en voiture au depart de Clifden (sens horaire recommande). Point culminant a 120 m avec parking et bancs pique-nique. Vues epoustouflantes sur l'ocean et les iles. Privilegier la Upper Sky Road. <strong>Ideal au coucher du soleil</strong> (vers 17-18h). Route etroite sans trottoir, arrets photo aux viewpoints.",
           "icon": "fa-panorama",
           "iconClass": "nature",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sky_Road_Clifden.jpg",
@@ -622,40 +622,40 @@
           "time": "11h25",
           "label": "Dog's Bay (plage de sable blanc)",
           "icon": "fa-umbrella-beach",
-          "duration": "1h"
+          "duration": "1h30"
         },
         {
-          "time": "12h25",
+          "time": "12h55",
           "label": "Route vers Clifden",
           "icon": "fa-car",
           "duration": null
         },
         {
-          "time": "13h00",
+          "time": "13h30",
           "label": "Dejeuner a Clifden",
           "icon": "fa-utensils",
           "duration": "1h"
         },
         {
-          "time": "14h00",
+          "time": "14h30",
           "label": "Balade dans Clifden",
           "icon": "fa-camera",
-          "duration": "1h"
+          "duration": "45min"
         },
         {
-          "time": "15h00",
+          "time": "15h15",
           "label": "Installation B&B",
           "icon": "fa-bed",
           "duration": "30min"
         },
         {
-          "time": "16h00",
+          "time": "16h30",
           "label": "Sky Road (boucle panoramique)",
           "icon": "fa-panorama",
           "duration": "1h"
         },
         {
-          "time": "17h00",
+          "time": "17h30",
           "label": "Temps libre, repos",
           "icon": "fa-bed",
           "duration": "1h"
