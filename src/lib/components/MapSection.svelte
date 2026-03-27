@@ -128,12 +128,13 @@
     <h4><i class="fa-solid fa-filter"></i> Filtrer</h4>
     <div id="dayLegend">
       {#each data.days as day, i}
-        <!-- svelte-ignore a11y_click_events_have_key_events -->
-        <!-- svelte-ignore a11y_no_static_element_interactions -->
         <div
           class="map-legend-item"
           class:active={soloIndex === -1 || soloIndex === i}
           onclick={() => toggleDay(i)}
+          onkeydown={(e) => e.key === 'Enter' && toggleDay(i)}
+          role="button"
+          tabindex="0"
         >
           <div class="legend-dot" style:background={DAY_COLORS[i]}></div>
           <span>J{day.day} {day.shortLabel}</span>

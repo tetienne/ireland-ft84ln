@@ -1,25 +1,14 @@
 <script>
   let { blogs } = $props();
 
-  function badgeClass(type) {
-    if (type === 'famille') return 'famille';
-    if (type === 'couple') return 'couple';
-    if (type === 'forum') return 'forum';
-    return 'other';
-  }
+  const BADGES = {
+    famille: { icon: 'fa-child', label: 'Famille' },
+    couple: { icon: 'fa-heart', label: 'Couple' },
+    forum: { icon: 'fa-comments', label: 'Forum' }
+  };
 
-  function badgeIcon(type) {
-    if (type === 'famille') return 'fa-child';
-    if (type === 'couple') return 'fa-heart';
-    if (type === 'forum') return 'fa-comments';
-    return 'fa-users';
-  }
-
-  function badgeLabel(type) {
-    if (type === 'famille') return 'Famille';
-    if (type === 'couple') return 'Couple';
-    if (type === 'forum') return 'Forum';
-    return type;
+  function badge(type) {
+    return BADGES[type] || { icon: 'fa-users', label: type };
   }
 </script>
 
@@ -34,8 +23,8 @@
       <a href={blog.url} target="_blank" class="blog-card">
         <div class="blog-source">{blog.source}</div>
         <div class="blog-title">{blog.title}</div>
-        <span class="blog-badge {badgeClass(blog.type)}">
-          <i class="fa-solid {badgeIcon(blog.type)}"></i> {badgeLabel(blog.type)}
+        <span class="blog-badge {BADGES[blog.type] ? blog.type : 'other'}">
+          <i class="fa-solid {badge(blog.type).icon}"></i> {badge(blog.type).label}
         </span>
       </a>
     {/each}

@@ -4,7 +4,8 @@
 
   $effect(() => {
     const onScroll = () => {
-      scrolled = window.scrollY > 100;
+      const next = window.scrollY > 100;
+      if (next !== scrolled) scrolled = next;
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);

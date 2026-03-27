@@ -1,18 +1,11 @@
 <script>
   import { DAY_COLORS } from '$lib/utils/colors.js';
+  import { scrollToDay } from '$lib/utils/scroll.js';
 
   let { days, todayDayNum = null } = $props();
 
   let activeDayNum = $state(null);
   let navEl;
-
-  function scrollToDay(dayNum) {
-    const card = document.getElementById(`jour-${dayNum}`);
-    if (card) {
-      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      history.replaceState(null, '', `#jour-${dayNum}`);
-    }
-  }
 
   // IntersectionObserver: track active day card
   $effect(() => {
@@ -78,7 +71,8 @@
         return;
       }
       const currentY = window.scrollY;
-      navHidden = currentY > lastScrollY && currentY > 200;
+      const next = currentY > lastScrollY && currentY > 200;
+      if (next !== navHidden) navHidden = next;
       lastScrollY = currentY;
     };
 
@@ -93,7 +87,7 @@
       class="day-nav-pill"
       class:active={activeDayNum === day.day}
       data-day={day.day}
-      onclick={() => scrollToDay(day.day)}
+      onclick={() => scrollToDay(day.day, true)}
     >
       <span class="pill-day">J{day.day}</span>
       <span class="pill-label">{day.shortLabel || ''}</span>

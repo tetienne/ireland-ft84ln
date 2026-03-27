@@ -1,16 +1,12 @@
 <script>
   import { formatDateLong } from '$lib/utils/dates.js';
+  import { scrollToDay } from '$lib/utils/scroll.js';
 
   let { days } = $props();
 
   let totalBudget = $derived(
     days.reduce((sum, day) => sum + (day.budget ? day.budget.total : 0), 0)
   );
-
-  function scrollToDay(dayNum) {
-    const card = document.getElementById(`jour-${dayNum}`);
-    if (card) card.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
 </script>
 
 <section class="dashboard-section" id="dashboard">
