@@ -13,7 +13,7 @@
       <article class="tip-card">
         <div class="tip-icon"><i class="fa-solid {tip.icon}"></i></div>
         <h4>{tip.title}</h4>
-        <p>{tip.text}</p>
+        <p>{@html tip.text}</p>
       </article>
     {/each}
   </div>

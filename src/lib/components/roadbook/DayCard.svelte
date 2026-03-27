@@ -25,7 +25,7 @@
     <div class="day-top">
       <h3 class="day-title">{day.title}</h3>
       <time class="day-date" datetime={day.isoDate}>{formatDateLong(day.isoDate)}</time>
-      <span class="weather-badge">{@html weatherHtml}</span>
+      <span class="weather-badge" class:loaded={weatherHtml}>{@html weatherHtml}</span>
     </div>
     <p class="day-route">
       <i class="fa-solid {day.routeIcon}"></i> {day.routeDesc}
@@ -84,7 +84,7 @@
 
     <!-- Panels -->
     {#if activePanel === 'schedule' && day.schedule}
-      <div class="day-panel" data-panel="schedule">
+      <div class="day-panel open" data-panel="schedule">
         <ul class="schedule-timeline">
           {#each day.schedule as s}
             <li class="schedule-item" class:drive={DRIVE_ICONS.includes(s.icon)}>
@@ -98,7 +98,7 @@
     {/if}
 
     {#if activePanel === 'budget' && day.budget}
-      <div class="day-panel" data-panel="budget">
+      <div class="day-panel open" data-panel="budget">
         <div class="budget-table">
           {#each day.budget.entries as e}
             <div class="budget-row">
@@ -118,13 +118,13 @@
     {/if}
 
     {#if activePanel === 'map' && day.dayRoute}
-      <div class="day-panel" data-panel="map">
+      <div class="day-panel open" data-panel="map">
         <MiniMap {day} />
       </div>
     {/if}
 
     {#if activePanel === 'tips' && day.practicalTips}
-      <div class="day-panel" data-panel="tips">
+      <div class="day-panel open" data-panel="tips">
         {#each day.practicalTips as group}
           <div class="tips-group">
             <div class="tips-group-header"><i class="fa-solid {group.icon}"></i> {group.stop}</div>
