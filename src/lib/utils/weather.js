@@ -19,9 +19,10 @@ function weatherInfo(code) {
 }
 
 function buildWeatherHtml({ daily, useForecast, refYear }) {
+  if (!daily.weather_code?.length) return null;
   const code = daily.weather_code[0];
-  const tMax = Math.round(daily.temperature_2m_max[0]);
-  const tMin = Math.round(daily.temperature_2m_min[0]);
+  const tMax = Math.round(daily.temperature_2m_max?.[0] ?? 0);
+  const tMin = Math.round(daily.temperature_2m_min?.[0] ?? 0);
   const { icon } = weatherInfo(code);
 
   let html = `<i class="fa-solid ${icon}"></i> ${tMin}–${tMax}°C`;
@@ -73,7 +74,7 @@ export function fetchWeather(days, onUpdate) {
     if (cached) {
       const result = JSON.parse(cached);
       const html = buildWeatherHtml(result);
-      seen.get(cacheKey).forEach((d) => results.set(d, html));
+      if (html) seen.get(cacheKey).forEach((d) => results.set(d, html));
       return;
     }
 
@@ -116,6 +117,7 @@ export function fetchWeather(days, onUpdate) {
               /* ignore quota errors */
             }
             const html = buildWeatherHtml(result);
+            if (!html) return;
             seen.get(cacheKey).forEach((d) => results.set(d, html));
             onUpdate(new Map(results));
           }),
