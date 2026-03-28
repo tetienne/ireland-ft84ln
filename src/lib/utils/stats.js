@@ -17,10 +17,17 @@ export function computeStats(data) {
   };
 }
 
-export function computeBudgetTotals(days) {
-  days.forEach((day) => {
+export function withBudgetTotals(days) {
+  return days.map((day) => {
     if (day.budget && day.budget.entries) {
-      day.budget.total = day.budget.entries.reduce((sum, e) => sum + (e.amount || 0), 0);
+      return {
+        ...day,
+        budget: {
+          ...day.budget,
+          total: day.budget.entries.reduce((sum, e) => sum + (e.amount || 0), 0)
+        }
+      };
     }
+    return day;
   });
 }

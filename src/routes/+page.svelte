@@ -1,6 +1,6 @@
 <script>
   import { onMount, tick } from 'svelte';
-  import { computeStats, computeBudgetTotals } from '$lib/utils/stats.js';
+  import { computeStats, withBudgetTotals } from '$lib/utils/stats.js';
   import { getTodayDayNum } from '$lib/utils/dates.js';
   import { fetchWeather } from '$lib/utils/weather.js';
   import { scrollToDay } from '$lib/utils/scroll.js';
@@ -20,8 +20,8 @@
 
   onMount(async () => {
     const res = await fetch('/data.json');
-    data = await res.json();
-    computeBudgetTotals(data.days);
+    const raw = await res.json();
+    data = { ...raw, days: withBudgetTotals(raw.days) };
 
     fetchWeather(data.days, (updated) => {
       weatherByDay = updated;
