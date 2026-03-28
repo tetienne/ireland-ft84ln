@@ -1,13 +1,9 @@
-const CACHE_NAME = "ireland-trip-v3";
+/// <reference types="@sveltejs/kit" />
+import { build, files, version } from "$service-worker";
 
-const LOCAL_ASSETS = [
-  "./",
-  "./index.html",
-  "./style.css",
-  "./app.js",
-  "./data.json",
-  "./manifest.json",
-];
+const CACHE_NAME = `ireland-trip-${version}`;
+
+const LOCAL_ASSETS = [...build, ...files];
 
 const CDN_ASSETS = [
   "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
@@ -19,15 +15,16 @@ const CDN_ASSETS = [
 // Install: pre-cache all assets
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) =>
-      Promise.all([
-        cache.addAll(LOCAL_ASSETS),
-        // CDN assets: best-effort (don't block install if one fails)
-        ...CDN_ASSETS.map((url) =>
-          cache.add(url).catch(() => console.warn("SW: could not cache", url)),
-        ),
-      ]),
-    ),
+    caches
+      .open(CACHE_NAME)
+      .then((cache) =>
+        Promise.all([
+          cache.addAll(LOCAL_ASSETS),
+          ...CDN_ASSETS.map((url) =>
+            cache.add(url).catch(() => console.warn("SW: could not cache", url)),
+          ),
+        ]),
+      ),
   );
   self.skipWaiting();
 });
@@ -44,13 +41,12 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
-// Fetch: network-first for local assets (always fresh), cache-first for CDN
+// Fetch: network-first for local assets, cache-first for CDN
 self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
   const isLocal = url.origin === self.location.origin;
 
   if (isLocal) {
-    // Network-first: try fresh version, fall back to cache (offline)
     event.respondWith(
       fetch(event.request)
         .then((response) => {
@@ -63,7 +59,6 @@ self.addEventListener("fetch", (event) => {
         .catch(() => caches.match(event.request)),
     );
   } else {
-    // CDN: cache-first (versioned URLs don't change)
     event.respondWith(
       caches.match(event.request).then((cached) => {
         if (cached) return cached;

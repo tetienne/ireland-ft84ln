@@ -1,4 +1,7 @@
 *.epub
 .claude/
 node_modules/
-img/
+/img/
+.svelte-kit/
+build/
+.DS_Store

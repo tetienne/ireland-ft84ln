@@ -82,6 +82,7 @@ ireland-trip/
 ### Images dans data.json
 
 **Ne jamais inventer ou deviner une URL d'image.** Toujours verifier que l'image existe avant de l'ajouter :
+
 - Chercher sur Wikimedia Commons (`commons.wikimedia.org`) et copier l'URL reelle
 - Ou utiliser WebFetch pour confirmer que l'URL renvoie bien une image
 
