@@ -1,5 +1,6 @@
 <script>
   import { formatDateLong } from '$lib/utils/dates.js';
+  import { formatDrive, formatDistance } from '$lib/utils/format.js';
   import { DAY_COLORS } from '$lib/utils/colors.js';
   import StopItem from './StopItem.svelte';
   import MiniMap from './MiniMap.svelte';
@@ -51,8 +52,8 @@
 
     <div class="day-footer">
       {#if day.night}<span><i class="fa-solid fa-bed"></i> {day.night}</span>{/if}
-      {#if day.distance}<span><i class="fa-solid fa-car"></i> {day.distance}</span>{/if}
-      {#if day.driveTime}<span><i class="fa-solid fa-clock"></i> {day.driveTime}</span>{/if}
+      {#if day.distanceKm}<span><i class="fa-solid fa-car"></i> {formatDistance(day.distanceKm)}</span>{/if}
+      {#if day.driveMinutes}<span><i class="fa-solid fa-clock"></i> {formatDrive(day.driveMinutes)}</span>{/if}
       {#if day.highlight}<span><i class="fa-solid fa-star"></i> {day.highlight}</span>{/if}
     </div>
 

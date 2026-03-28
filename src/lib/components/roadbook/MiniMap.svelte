@@ -1,6 +1,5 @@
 <script>
   import { onMount } from 'svelte';
-  import { extractCoords } from '$lib/utils/coords.js';
   import { DAY_COLORS } from '$lib/utils/colors.js';
   import { addBaseLayer } from '$lib/utils/map.js';
 
@@ -31,12 +30,11 @@
       bounds.extend(polyline.getBounds());
     }
 
-    // Stop markers
+    // Stop markers — use lat/lng directly
     day.stops.forEach((stop) => {
-      const coords = extractCoords(stop.gmaps);
-      if (coords) {
-        L.marker(coords).addTo(map).bindPopup(`<strong>${stop.name}</strong>`);
-        bounds.extend(coords);
+      if (stop.lat && stop.lng) {
+        L.marker([stop.lat, stop.lng]).addTo(map).bindPopup(`<strong>${stop.name}</strong>`);
+        bounds.extend([stop.lat, stop.lng]);
       }
     });
 

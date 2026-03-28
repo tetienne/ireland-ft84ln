@@ -17,7 +17,9 @@
     {
       "day": 1,
       "shortLabel": "Dublin",
-      "counties": ["Dublin"],
+      "counties": [
+        "Dublin"
+      ],
       "title": "Bienvenue a Dublin",
       "isoDate": "2026-08-16",
       "routeIcon": "fa-plane-arrival",
@@ -25,8 +27,6 @@
       "morning": "Vol Ryanair FR9777, depart 11h10 de Nimes, arrivee <strong>12h40 a Dublin</strong>. Immigration + bagages (~20 min), puis comptoir <strong>NewWay</strong> pour la voiture a 13h. Route directe vers le centre de Dublin (<strong>30 min</strong>). Installation et apres-midi tranquille : balade dans <a href=\"https://www.google.com/maps/search/?api=1&query=Temple+Bar+Dublin+Ireland\" target=\"_blank\"><strong>Temple Bar</strong></a> puis <a href=\"https://www.google.com/maps/search/?api=1&query=St+Stephen's+Green+Dublin+Ireland\" target=\"_blank\"><strong>St Stephen's Green</strong></a> avec les enfants. <em>Option</em> : <a href=\"https://www.google.com/maps/search/?api=1&query=Book+of+Kells+Trinity+College+Dublin+Ireland\" target=\"_blank\"><strong>Book of Kells</strong></a> a Trinity College (manuscrit du IXe siecle + Long Room — billets horodates ~18 EUR/adulte, enfants gratuits, 45 min).",
       "night": "Nuit a Dublin centre",
       "nightInfo": "<strong>Ou dormir :</strong> Eviter Temple Bar (bruyant, cher). Privilegier <a href=\"https://www.google.com/maps/search/?api=1&query=Ballsbridge+Dublin+Ireland\" target=\"_blank\"><strong>Ballsbridge</strong></a> (calme, bus frequents). Nuit de transit : un aparthotel ou B&B suffit. <a href=\"https://www.google.com/maps/search/?api=1&query=Staycity+Aparthotels+Dublin+Ireland\" target=\"_blank\"><strong>Staycity Aparthotels</strong></a> (cuisinette, proche St Patrick's, ~130 EUR), <a href=\"https://www.google.com/maps/search/?api=1&query=Bewleys+Hotel+Ballsbridge+Dublin+Ireland\" target=\"_blank\"><strong>Bewleys Hotel Ballsbridge</strong></a> (chambres familiales, bon rapport qualite/prix), <a href=\"https://www.google.com/maps/search/?api=1&query=Donnybrook+Hall+Dublin+Ireland\" target=\"_blank\"><strong>Donnybrook Hall</strong></a> (victorien, chambres communicantes). Alternative budget : loger a <a href=\"https://www.google.com/maps/search/?api=1&query=Howth+Dublin+Ireland\" target=\"_blank\"><strong>Howth</strong></a> ou <a href=\"https://www.google.com/maps/search/?api=1&query=Dun+Laoghaire+Dublin+Ireland\" target=\"_blank\"><strong>Dun Laoghaire</strong></a> (20-30 min en DART).",
-      "distance": "~15 km",
-      "driveTime": "~30 min",
       "highlight": null,
       "mapCenter": {
         "lat": 53.3498,
@@ -41,16 +41,32 @@
           "icon": "fa-music",
           "iconClass": "culture",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Temple_Bar_street_scenes%2C_Dublin.jpg/960px-Temple_Bar_street_scenes%2C_Dublin.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Temple+Bar+Dublin+Ireland",
-          "web": "https://www.lovetemplebar.com/",
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186605-d188821-Reviews-Temple_Bar-Dublin_County_Dublin.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/dublin/temple-bar",
           "parking": {
             "location": "Q-Park Fleet Street, Fleet St, Dublin 2",
             "cost": "~4 EUR/h",
             "tip": "Temple Bar est pieton. Laisser la voiture a l'hotel et marcher.",
             "gmaps": "https://www.google.com/maps/search/?api=1&query=Q-Park+Fleet+Street+Dublin"
-          }
+          },
+          "lat": 53.3455,
+          "lng": -6.2643,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Temple+Bar+Dublin+Ireland"
+            },
+            {
+              "type": "web",
+              "url": "https://www.lovetemplebar.com/"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g186605-d188821-Reviews-Temple_Bar-Dublin_County_Dublin.html"
+            },
+            {
+              "type": "routard",
+              "url": "https://www.routard.com/fr/guide/europe/irlande/dublin/temple-bar"
+            }
+          ]
         },
         {
           "name": "St Stephen's Green",
@@ -58,15 +74,23 @@
           "icon": "fa-tree",
           "iconClass": "nature",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Dublin_Stephen%27s_Green-44_edit.jpg/960px-Dublin_Stephen%27s_Green-44_edit.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=St+Stephen's+Green+Dublin+Ireland",
-          "web": null,
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186605-d189054-Reviews-St_Stephens_Green-Dublin_County_Dublin.html",
-          "routard": null,
           "parking": {
             "location": "Q-Park sous le Shopping Centre, entree Glover's Alley",
             "cost": "~3 EUR/h",
             "gmaps": "https://www.google.com/maps/search/?api=1&query=Q-Park+St+Stephens+Green+Dublin"
-          }
+          },
+          "lat": 53.3382,
+          "lng": -6.2591,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=St+Stephen's+Green+Dublin+Ireland"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g186605-d189054-Reviews-St_Stephens_Green-Dublin_County_Dublin.html"
+            }
+          ]
         }
       ],
       "schedule": [
@@ -140,28 +164,94 @@
         "notes": "Journee legere, arrivee en milieu de journee. Temple Bar et St Stephen's Green sont gratuits. Dublin Castle ferme mai-dec 2026 (presidence UE). Option : Book of Kells ~36 EUR (2 adultes)."
       },
       "dayRoute": [
-        [53.4273, -6.2478],
-        [53.4277, -6.2463],
-        [53.4305, -6.2453],
-        [53.4312, -6.2423],
-        [53.43, -6.2357],
-        [53.4293, -6.2378],
-        [53.4287, -6.2363],
-        [53.4271, -6.2159],
-        [53.4227, -6.2197],
-        [53.4088, -6.2275],
-        [53.3958, -6.2397],
-        [53.3825, -6.2436],
-        [53.3737, -6.2432],
-        [53.3673, -6.2347],
-        [53.3591, -6.2326],
-        [53.3551, -6.224],
-        [53.3535, -6.2232],
-        [53.3508, -6.2261],
-        [53.3467, -6.2279],
-        [53.3482, -6.25],
-        [53.3469, -6.2591],
-        [53.3498, -6.2604]
+        [
+          53.4273,
+          -6.2478
+        ],
+        [
+          53.4277,
+          -6.2463
+        ],
+        [
+          53.4305,
+          -6.2453
+        ],
+        [
+          53.4312,
+          -6.2423
+        ],
+        [
+          53.43,
+          -6.2357
+        ],
+        [
+          53.4293,
+          -6.2378
+        ],
+        [
+          53.4287,
+          -6.2363
+        ],
+        [
+          53.4271,
+          -6.2159
+        ],
+        [
+          53.4227,
+          -6.2197
+        ],
+        [
+          53.4088,
+          -6.2275
+        ],
+        [
+          53.3958,
+          -6.2397
+        ],
+        [
+          53.3825,
+          -6.2436
+        ],
+        [
+          53.3737,
+          -6.2432
+        ],
+        [
+          53.3673,
+          -6.2347
+        ],
+        [
+          53.3591,
+          -6.2326
+        ],
+        [
+          53.3551,
+          -6.224
+        ],
+        [
+          53.3535,
+          -6.2232
+        ],
+        [
+          53.3508,
+          -6.2261
+        ],
+        [
+          53.3467,
+          -6.2279
+        ],
+        [
+          53.3482,
+          -6.25
+        ],
+        [
+          53.3469,
+          -6.2591
+        ],
+        [
+          53.3498,
+          -6.2604
+        ]
       ],
       "practicalTips": [
         {
@@ -182,12 +272,18 @@
             "Parc ferme a la tombee de la nuit"
           ]
         }
-      ]
+      ],
+      "distanceKm": 15,
+      "driveMinutes": 30
     },
     {
       "day": 2,
       "shortLabel": "Galway",
-      "counties": ["Dublin", "Westmeath", "Galway"],
+      "counties": [
+        "Dublin",
+        "Westmeath",
+        "Galway"
+      ],
       "title": "Cap a l'Ouest — Galway !",
       "isoDate": "2026-08-17",
       "routeIcon": "fa-road",
@@ -196,8 +292,6 @@
       "night": "Nuit a Galway (1ere nuit)",
       "nightInfo": "<strong>Ou dormir :</strong> <a href=\"https://www.google.com/maps/search/?api=1&query=Salthill+Galway+Ireland\" target=\"_blank\"><strong>Salthill</strong></a> fait l'unanimite pour les familles (promenade, plage, parking gratuit en B&B, sortie naturelle vers Connemara/Burren). 2 nuits au meme endroit ! <a href=\"https://www.google.com/maps/search/?api=1&query=Westwinds+Guestlodge+Salthill+Ireland\" target=\"_blank\"><strong>Westwinds Guestlodge</strong></a> (sur la promenade, vue baie, chambres familiales, ~106-130 EUR), <strong>Amber Bay B&B</strong> (reference Routard, vue baie), <strong>St Judes B&B</strong> (4 etoiles, parking). Preciser les 2 nuits non consecutives a la reservation. Restaurants : <a href=\"https://www.google.com/maps/search/?api=1&query=McDonagh's+Galway+Ireland\" target=\"_blank\"><strong>McDonagh's</strong></a> (fish &amp; chips legendaire), <strong>Ard Bia at Nimmos</strong>. Soiree pub avec musique live (Tig Coili, The Crane Bar, enfants acceptes en debut de soiree).",
       "rainyDay": "<strong>Galway City Museum</strong> (gratuit, interactif, bateau suspendu au plafond, 30-45 min) · <strong>Leisureland Salthill</strong> (piscine interieure, toboggan de 65m, piscine pirate pour les petits)",
-      "distance": "~209 km",
-      "driveTime": "~2h34 (2 segments : 1h30 + 1h04)",
       "highlight": null,
       "mapCenter": {
         "lat": 53.2718,
@@ -212,14 +306,26 @@
           "icon": "fa-beer-mug-empty",
           "iconClass": "culture",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Sean%27s_Bar%2C_Athlone%2C_2025.jpg/960px-Sean%27s_Bar%2C_Athlone%2C_2025.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Sean's+Bar+Athlone+Ireland",
-          "web": "https://www.seansbar.ie/",
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g212091-d1580894-Reviews-Sean_s_Bar-Athlone_County_Westmeath.html",
-          "routard": null,
           "parking": {
             "location": "Parking on-street pres du Shannon ou Town Centre car park",
             "cost": "~1.50 EUR/h"
-          }
+          },
+          "lat": 53.4233,
+          "lng": -7.9407,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Sean's+Bar+Athlone+Ireland"
+            },
+            {
+              "type": "web",
+              "url": "https://www.seansbar.ie/"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g212091-d1580894-Reviews-Sean_s_Bar-Athlone_County_Westmeath.html"
+            }
+          ]
         },
         {
           "name": "Burgess Park",
@@ -227,10 +333,14 @@
           "icon": "fa-tree",
           "iconClass": "nature",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b1/BurgessPark.png",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Burgess+Park+Athlone+Ireland",
-          "web": null,
-          "tripadvisor": null,
-          "routard": null
+          "lat": 53.4213,
+          "lng": -7.9376,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Burgess+Park+Athlone+Ireland"
+            }
+          ]
         },
         {
           "name": "Galway Latin Quarter & Shop Street",
@@ -238,16 +348,28 @@
           "icon": "fa-guitar",
           "iconClass": "culture",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Shop_Street%2C_Galway.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Galway+Latin+Quarter+%26+Shop+Street+Galway+Ireland",
-          "web": null,
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186609-d4909613-Reviews-Galway_s_Latin_Quarter-Galway_County_Galway_Western_Ireland.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-galway/galway-gaillimh",
           "parking": {
             "location": "Claddagh Car Park (Spanish Arch) ou Q-Park Eyre Square",
             "cost": "2.50-3.20 EUR/h",
             "tip": "Depuis Salthill, prendre le bus 401/402 (15 min) plutot que la voiture.",
             "gmaps": "https://www.google.com/maps/search/?api=1&query=Claddagh+Car+Park+Galway"
-          }
+          },
+          "lat": 53.2725,
+          "lng": -9.051,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Galway+Latin+Quarter+%26+Shop+Street+Galway+Ireland"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g186609-d4909613-Reviews-Galway_s_Latin_Quarter-Galway_County_Galway_Western_Ireland.html"
+            },
+            {
+              "type": "routard",
+              "url": "https://www.routard.com/fr/guide/europe/irlande/comte-de-galway/galway-gaillimh"
+            }
+          ]
         }
       ],
       "schedule": [
@@ -331,165 +453,642 @@
         "notes": "Sean's Bar est family-friendly en journee. McDonagh's a deux formules : restaurant (plus cher) et take-away (moins cher, meme poisson)."
       },
       "dayRoute": [
-        [53.3498, -6.2604],
-        [53.3523, -6.262],
-        [53.35, -6.2678],
-        [53.351, -6.27],
-        [53.35, -6.2746],
-        [53.3454, -6.2758],
-        [53.3469, -6.2906],
-        [53.3434, -6.3073],
-        [53.3428, -6.32],
-        [53.3451, -6.3325],
-        [53.3449, -6.3451],
-        [53.3494, -6.3505],
-        [53.3505, -6.3561],
-        [53.3528, -6.3595],
-        [53.3567, -6.3802],
-        [53.3556, -6.3969],
-        [53.3587, -6.4112],
-        [53.3589, -6.4193],
-        [53.3581, -6.4236],
-        [53.3518, -6.4374],
-        [53.3508, -6.4476],
-        [53.352, -6.4546],
-        [53.357, -6.4654],
-        [53.3584, -6.4718],
-        [53.3577, -6.5111],
-        [53.3608, -6.5428],
-        [53.366, -6.5717],
-        [53.3673, -6.5934],
-        [53.3817, -6.6558],
-        [53.3869, -6.6682],
-        [53.4019, -6.6898],
-        [53.4053, -6.6978],
-        [53.4082, -6.7095],
-        [53.4121, -6.7614],
-        [53.4106, -6.7746],
-        [53.4053, -6.7942],
-        [53.4041, -6.8195],
-        [53.406, -6.8361],
-        [53.4128, -6.8614],
-        [53.4113, -6.891],
-        [53.4141, -6.9015],
-        [53.4216, -6.9126],
-        [53.4249, -6.9211],
-        [53.4264, -6.9455],
-        [53.4254, -6.9787],
-        [53.4279, -6.988],
-        [53.437, -7.0069],
-        [53.4407, -7.0206],
-        [53.4497, -7.1036],
-        [53.4486, -7.1332],
-        [53.4501, -7.1545],
-        [53.4483, -7.1847],
-        [53.4464, -7.1953],
-        [53.44, -7.2088],
-        [53.427, -7.2288],
-        [53.4168, -7.2592],
-        [53.4041, -7.2867],
-        [53.3989, -7.308],
-        [53.394, -7.3424],
-        [53.3897, -7.3575],
-        [53.3831, -7.3731],
-        [53.3726, -7.3902],
-        [53.3619, -7.4136],
-        [53.3603, -7.4226],
-        [53.3586, -7.4531],
-        [53.3592, -7.473],
-        [53.3582, -7.4916],
-        [53.3601, -7.5117],
-        [53.3636, -7.5245],
-        [53.3711, -7.5385],
-        [53.3817, -7.572],
-        [53.3866, -7.5994],
-        [53.3911, -7.613],
-        [53.3934, -7.6255],
-        [53.3932, -7.64],
-        [53.386, -7.6894],
-        [53.3858, -7.7226],
-        [53.3894, -7.7627],
-        [53.3927, -7.7791],
-        [53.3952, -7.8076],
-        [53.4008, -7.8399],
-        [53.4024, -7.869],
-        [53.4049, -7.8775],
-        [53.4087, -7.8831],
-        [53.4163, -7.8898],
-        [53.4225, -7.8921],
-        [53.4245, -7.8942],
-        [53.4309, -7.9254],
-        [53.4268, -7.9336],
-        [53.4231, -7.9353],
-        [53.4239, -7.9411],
-        [53.4235, -7.9431],
-        [53.4224, -7.9413],
-        [53.4218, -7.9459],
-        [53.4225, -7.949],
-        [53.4262, -7.9519],
-        [53.4249, -7.9578],
-        [53.4283, -7.9615],
-        [53.4258, -7.9659],
-        [53.4264, -7.9676],
-        [53.4242, -7.975],
-        [53.4155, -7.9896],
-        [53.4139, -8.0093],
-        [53.4075, -8.0216],
-        [53.4018, -8.0428],
-        [53.3964, -8.0484],
-        [53.3772, -8.0521],
-        [53.3618, -8.0629],
-        [53.3543, -8.065],
-        [53.3509, -8.0685],
-        [53.3462, -8.0789],
-        [53.3394, -8.1045],
-        [53.3296, -8.1237],
-        [53.3244, -8.1417],
-        [53.3168, -8.1618],
-        [53.3133, -8.1793],
-        [53.3127, -8.1923],
-        [53.3161, -8.2192],
-        [53.3163, -8.2363],
-        [53.3154, -8.245],
-        [53.3066, -8.2831],
-        [53.3082, -8.3063],
-        [53.3076, -8.3185],
-        [53.3035, -8.3352],
-        [53.2933, -8.3568],
-        [53.2898, -8.3827],
-        [53.2824, -8.4107],
-        [53.2814, -8.4358],
-        [53.2854, -8.468],
-        [53.2833, -8.5023],
-        [53.2782, -8.5276],
-        [53.2758, -8.5537],
-        [53.267, -8.5894],
-        [53.2649, -8.612],
-        [53.2651, -8.6254],
-        [53.2694, -8.6499],
-        [53.2701, -8.6673],
-        [53.2763, -8.7201],
-        [53.2824, -8.7492],
-        [53.2919, -8.7722],
-        [53.2958, -8.788],
-        [53.3001, -8.8587],
-        [53.2994, -8.8841],
-        [53.2954, -8.9136],
-        [53.2944, -8.9483],
-        [53.2924, -8.9589],
-        [53.2852, -8.9794],
-        [53.2917, -8.9863],
-        [53.2917, -8.9966],
-        [53.288, -9.0129],
-        [53.2884, -9.0177],
-        [53.2825, -9.0331],
-        [53.271, -9.0464],
-        [53.2716, -9.0495],
-        [53.27, -9.0519],
-        [53.2703, -9.0527],
-        [53.2721, -9.0503],
-        [53.2728, -9.0515],
-        [53.2718, -9.0529]
+        [
+          53.3498,
+          -6.2604
+        ],
+        [
+          53.3523,
+          -6.262
+        ],
+        [
+          53.35,
+          -6.2678
+        ],
+        [
+          53.351,
+          -6.27
+        ],
+        [
+          53.35,
+          -6.2746
+        ],
+        [
+          53.3454,
+          -6.2758
+        ],
+        [
+          53.3469,
+          -6.2906
+        ],
+        [
+          53.3434,
+          -6.3073
+        ],
+        [
+          53.3428,
+          -6.32
+        ],
+        [
+          53.3451,
+          -6.3325
+        ],
+        [
+          53.3449,
+          -6.3451
+        ],
+        [
+          53.3494,
+          -6.3505
+        ],
+        [
+          53.3505,
+          -6.3561
+        ],
+        [
+          53.3528,
+          -6.3595
+        ],
+        [
+          53.3567,
+          -6.3802
+        ],
+        [
+          53.3556,
+          -6.3969
+        ],
+        [
+          53.3587,
+          -6.4112
+        ],
+        [
+          53.3589,
+          -6.4193
+        ],
+        [
+          53.3581,
+          -6.4236
+        ],
+        [
+          53.3518,
+          -6.4374
+        ],
+        [
+          53.3508,
+          -6.4476
+        ],
+        [
+          53.352,
+          -6.4546
+        ],
+        [
+          53.357,
+          -6.4654
+        ],
+        [
+          53.3584,
+          -6.4718
+        ],
+        [
+          53.3577,
+          -6.5111
+        ],
+        [
+          53.3608,
+          -6.5428
+        ],
+        [
+          53.366,
+          -6.5717
+        ],
+        [
+          53.3673,
+          -6.5934
+        ],
+        [
+          53.3817,
+          -6.6558
+        ],
+        [
+          53.3869,
+          -6.6682
+        ],
+        [
+          53.4019,
+          -6.6898
+        ],
+        [
+          53.4053,
+          -6.6978
+        ],
+        [
+          53.4082,
+          -6.7095
+        ],
+        [
+          53.4121,
+          -6.7614
+        ],
+        [
+          53.4106,
+          -6.7746
+        ],
+        [
+          53.4053,
+          -6.7942
+        ],
+        [
+          53.4041,
+          -6.8195
+        ],
+        [
+          53.406,
+          -6.8361
+        ],
+        [
+          53.4128,
+          -6.8614
+        ],
+        [
+          53.4113,
+          -6.891
+        ],
+        [
+          53.4141,
+          -6.9015
+        ],
+        [
+          53.4216,
+          -6.9126
+        ],
+        [
+          53.4249,
+          -6.9211
+        ],
+        [
+          53.4264,
+          -6.9455
+        ],
+        [
+          53.4254,
+          -6.9787
+        ],
+        [
+          53.4279,
+          -6.988
+        ],
+        [
+          53.437,
+          -7.0069
+        ],
+        [
+          53.4407,
+          -7.0206
+        ],
+        [
+          53.4497,
+          -7.1036
+        ],
+        [
+          53.4486,
+          -7.1332
+        ],
+        [
+          53.4501,
+          -7.1545
+        ],
+        [
+          53.4483,
+          -7.1847
+        ],
+        [
+          53.4464,
+          -7.1953
+        ],
+        [
+          53.44,
+          -7.2088
+        ],
+        [
+          53.427,
+          -7.2288
+        ],
+        [
+          53.4168,
+          -7.2592
+        ],
+        [
+          53.4041,
+          -7.2867
+        ],
+        [
+          53.3989,
+          -7.308
+        ],
+        [
+          53.394,
+          -7.3424
+        ],
+        [
+          53.3897,
+          -7.3575
+        ],
+        [
+          53.3831,
+          -7.3731
+        ],
+        [
+          53.3726,
+          -7.3902
+        ],
+        [
+          53.3619,
+          -7.4136
+        ],
+        [
+          53.3603,
+          -7.4226
+        ],
+        [
+          53.3586,
+          -7.4531
+        ],
+        [
+          53.3592,
+          -7.473
+        ],
+        [
+          53.3582,
+          -7.4916
+        ],
+        [
+          53.3601,
+          -7.5117
+        ],
+        [
+          53.3636,
+          -7.5245
+        ],
+        [
+          53.3711,
+          -7.5385
+        ],
+        [
+          53.3817,
+          -7.572
+        ],
+        [
+          53.3866,
+          -7.5994
+        ],
+        [
+          53.3911,
+          -7.613
+        ],
+        [
+          53.3934,
+          -7.6255
+        ],
+        [
+          53.3932,
+          -7.64
+        ],
+        [
+          53.386,
+          -7.6894
+        ],
+        [
+          53.3858,
+          -7.7226
+        ],
+        [
+          53.3894,
+          -7.7627
+        ],
+        [
+          53.3927,
+          -7.7791
+        ],
+        [
+          53.3952,
+          -7.8076
+        ],
+        [
+          53.4008,
+          -7.8399
+        ],
+        [
+          53.4024,
+          -7.869
+        ],
+        [
+          53.4049,
+          -7.8775
+        ],
+        [
+          53.4087,
+          -7.8831
+        ],
+        [
+          53.4163,
+          -7.8898
+        ],
+        [
+          53.4225,
+          -7.8921
+        ],
+        [
+          53.4245,
+          -7.8942
+        ],
+        [
+          53.4309,
+          -7.9254
+        ],
+        [
+          53.4268,
+          -7.9336
+        ],
+        [
+          53.4231,
+          -7.9353
+        ],
+        [
+          53.4239,
+          -7.9411
+        ],
+        [
+          53.4235,
+          -7.9431
+        ],
+        [
+          53.4224,
+          -7.9413
+        ],
+        [
+          53.4218,
+          -7.9459
+        ],
+        [
+          53.4225,
+          -7.949
+        ],
+        [
+          53.4262,
+          -7.9519
+        ],
+        [
+          53.4249,
+          -7.9578
+        ],
+        [
+          53.4283,
+          -7.9615
+        ],
+        [
+          53.4258,
+          -7.9659
+        ],
+        [
+          53.4264,
+          -7.9676
+        ],
+        [
+          53.4242,
+          -7.975
+        ],
+        [
+          53.4155,
+          -7.9896
+        ],
+        [
+          53.4139,
+          -8.0093
+        ],
+        [
+          53.4075,
+          -8.0216
+        ],
+        [
+          53.4018,
+          -8.0428
+        ],
+        [
+          53.3964,
+          -8.0484
+        ],
+        [
+          53.3772,
+          -8.0521
+        ],
+        [
+          53.3618,
+          -8.0629
+        ],
+        [
+          53.3543,
+          -8.065
+        ],
+        [
+          53.3509,
+          -8.0685
+        ],
+        [
+          53.3462,
+          -8.0789
+        ],
+        [
+          53.3394,
+          -8.1045
+        ],
+        [
+          53.3296,
+          -8.1237
+        ],
+        [
+          53.3244,
+          -8.1417
+        ],
+        [
+          53.3168,
+          -8.1618
+        ],
+        [
+          53.3133,
+          -8.1793
+        ],
+        [
+          53.3127,
+          -8.1923
+        ],
+        [
+          53.3161,
+          -8.2192
+        ],
+        [
+          53.3163,
+          -8.2363
+        ],
+        [
+          53.3154,
+          -8.245
+        ],
+        [
+          53.3066,
+          -8.2831
+        ],
+        [
+          53.3082,
+          -8.3063
+        ],
+        [
+          53.3076,
+          -8.3185
+        ],
+        [
+          53.3035,
+          -8.3352
+        ],
+        [
+          53.2933,
+          -8.3568
+        ],
+        [
+          53.2898,
+          -8.3827
+        ],
+        [
+          53.2824,
+          -8.4107
+        ],
+        [
+          53.2814,
+          -8.4358
+        ],
+        [
+          53.2854,
+          -8.468
+        ],
+        [
+          53.2833,
+          -8.5023
+        ],
+        [
+          53.2782,
+          -8.5276
+        ],
+        [
+          53.2758,
+          -8.5537
+        ],
+        [
+          53.267,
+          -8.5894
+        ],
+        [
+          53.2649,
+          -8.612
+        ],
+        [
+          53.2651,
+          -8.6254
+        ],
+        [
+          53.2694,
+          -8.6499
+        ],
+        [
+          53.2701,
+          -8.6673
+        ],
+        [
+          53.2763,
+          -8.7201
+        ],
+        [
+          53.2824,
+          -8.7492
+        ],
+        [
+          53.2919,
+          -8.7722
+        ],
+        [
+          53.2958,
+          -8.788
+        ],
+        [
+          53.3001,
+          -8.8587
+        ],
+        [
+          53.2994,
+          -8.8841
+        ],
+        [
+          53.2954,
+          -8.9136
+        ],
+        [
+          53.2944,
+          -8.9483
+        ],
+        [
+          53.2924,
+          -8.9589
+        ],
+        [
+          53.2852,
+          -8.9794
+        ],
+        [
+          53.2917,
+          -8.9863
+        ],
+        [
+          53.2917,
+          -8.9966
+        ],
+        [
+          53.288,
+          -9.0129
+        ],
+        [
+          53.2884,
+          -9.0177
+        ],
+        [
+          53.2825,
+          -9.0331
+        ],
+        [
+          53.271,
+          -9.0464
+        ],
+        [
+          53.2716,
+          -9.0495
+        ],
+        [
+          53.27,
+          -9.0519
+        ],
+        [
+          53.2703,
+          -9.0527
+        ],
+        [
+          53.2721,
+          -9.0503
+        ],
+        [
+          53.2728,
+          -9.0515
+        ],
+        [
+          53.2718,
+          -9.0529
+        ]
       ],
       "practicalTips": [
         {
@@ -510,12 +1109,16 @@
             "McDonagh's take-away : meme poisson frais, file plus rapide, moins cher que le restaurant"
           ]
         }
-      ]
+      ],
+      "distanceKm": 209,
+      "driveMinutes": 154
     },
     {
       "day": 3,
       "shortLabel": "Connemara",
-      "counties": ["Galway"],
+      "counties": [
+        "Galway"
+      ],
       "title": "Connemara & Sky Road",
       "isoDate": "2026-08-18",
       "routeIcon": "fa-panorama",
@@ -524,8 +1127,6 @@
       "night": "Nuit a Clifden",
       "nightInfo": "<strong>Ou dormir :</strong> <a href=\"https://www.google.com/maps/search/?api=1&query=Clifden+Ireland\" target=\"_blank\"><strong>Clifden</strong></a>, « capitale du Connemara ». <strong>Faul House B&B</strong> (eleveur de poneys du Connemara, les enfants voient les chevaux !), <strong>Bayview House B&B</strong> (debut Sky Road, vue baie, ideal pour le coucher de soleil), <strong>Atlantic View B&B</strong> (calme, pancakes maison). Formule classique : chambre double + twin communicante.",
       "rainyDay": "<strong>Killary Fjord Boat</strong> depuis Leenane (40 min de Clifden, 90 min de croisiere en bateau couvert sur le seul fjord d'Irlande — les enfants peuvent « piloter », atmospherique sous la pluie, famille ~60 EUR) · <strong>Dan O'Hara's Homestead</strong> (7 km de Clifden, partie musee interieure + AV, tracteur si ca se degage)",
-      "distance": "~85 km",
-      "driveTime": "~2h27",
       "highlight": "Journee paysages",
       "mapCenter": {
         "lat": 53.494,
@@ -540,14 +1141,22 @@
           "icon": "fa-palette",
           "iconClass": "culture",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/3/31/Cloch_na_R%C3%B3n_-_geograph.org.uk_-_12397.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Roundstone+Connemara+Ireland",
-          "web": null,
-          "tripadvisor": null,
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron",
           "parking": {
             "location": "Parking gratuit le long du port",
             "cost": "Gratuit"
-          }
+          },
+          "lat": 53.3958,
+          "lng": -10.023,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Roundstone+Connemara+Ireland"
+            },
+            {
+              "type": "routard",
+              "url": "https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron"
+            }
+          ]
         },
         {
           "name": "Dog's Bay & Gurteen Bay",
@@ -555,16 +1164,27 @@
           "icon": "fa-umbrella-beach",
           "iconClass": "beach",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Dog%27s_Bay_Beach%2C_from_the_headland_-_geograph.org.uk_-_1297055.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Dog's+Bay+Roundstone+Ireland",
-          "web": null,
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g551539-d7106495-Reviews-Dog_s_Bay_Beach-Roundstone_County_Galway_Western_Ireland.html",
-          "routard": null,
-          "alltrails": "https://www.alltrails.com/trail/ireland/county-galway/dog-s-bay-beach",
           "parking": {
             "location": "Petit parking au bout d'une route etroite (~10 places)",
             "cost": "Gratuit",
             "tip": "Arrive tot (avant 10h) ou tard (apres 16h) en aout. Si plein, essayer Gurteen Bay a cote."
-          }
+          },
+          "lat": 53.3793,
+          "lng": -10.055,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Dog's+Bay+Roundstone+Ireland"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g551539-d7106495-Reviews-Dog_s_Bay_Beach-Roundstone_County_Galway_Western_Ireland.html"
+            },
+            {
+              "type": "alltrails",
+              "url": "https://www.alltrails.com/trail/ireland/county-galway/dog-s-bay-beach"
+            }
+          ]
         },
         {
           "name": "Clifden",
@@ -572,15 +1192,23 @@
           "icon": "fa-mug-hot",
           "iconClass": "food",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/b/b8/ClifdenOverview.JPG",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Clifden+Ireland",
-          "web": null,
-          "tripadvisor": null,
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan",
           "parking": {
             "location": "Parking gratuit derriere l'Office de Tourisme, ou SuperValu",
             "cost": "Gratuit",
             "gmaps": "https://www.google.com/maps/search/?api=1&query=Tourist+Office+Car+Park+Clifden"
-          }
+          },
+          "lat": 53.488,
+          "lng": -10.0195,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Clifden+Ireland"
+            },
+            {
+              "type": "routard",
+              "url": "https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan"
+            }
+          ]
         },
         {
           "name": "Clifden Castle",
@@ -588,15 +1216,23 @@
           "icon": "fa-chess-rook",
           "iconClass": "castle",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/7/77/Clifden_Castle_front.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Clifden+Castle+Ruins+Ireland",
-          "web": null,
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g211883-d648939-Reviews-Clifden_Castle-Clifden_County_Galway_Western_Ireland.html",
-          "routard": null,
           "parking": {
             "location": "Petit parking au debut du chemin (environ 8 places), au debut de la Sky Road",
             "cost": "Gratuit",
             "tip": "Peut etre plein en aout — arriver tot ou se garer a Clifden et marcher."
-          }
+          },
+          "lat": 53.483,
+          "lng": -10.0275,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Clifden+Castle+Ruins+Ireland"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g211883-d648939-Reviews-Clifden_Castle-Clifden_County_Galway_Western_Ireland.html"
+            }
+          ]
         },
         {
           "name": "Sky Road",
@@ -604,15 +1240,27 @@
           "icon": "fa-panorama",
           "iconClass": "nature",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sky_Road_Clifden.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Sky+Road+Clifden+Ireland",
-          "web": null,
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g211883-d4442921-Reviews-Sky_Road-Clifden_County_Galway_Western_Ireland.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan",
           "parking": {
             "location": "Lay-bys et parking WAW Discovery Point au sommet",
             "cost": "Gratuit",
             "tip": "Route etroite, utiliser les lay-bys. Ne pas s'arreter dans les virages."
-          }
+          },
+          "lat": 53.501,
+          "lng": -10.1015,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Sky+Road+Clifden+Ireland"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g211883-d4442921-Reviews-Sky_Road-Clifden_County_Galway_Western_Ireland.html"
+            },
+            {
+              "type": "routard",
+              "url": "https://www.routard.com/fr/guide/europe/irlande/connemara/clifden-an-clochan"
+            }
+          ]
         }
       ],
       "schedule": [
@@ -708,149 +1356,578 @@
         "notes": "Journee economique : Dog's Bay, Clifden Castle, Sky Road et Roundstone sont gratuits."
       },
       "dayRoute": [
-        [53.2718, -9.0529],
-        [53.2703, -9.0529],
-        [53.2695, -9.0574],
-        [53.2721, -9.0622],
-        [53.2808, -9.0642],
-        [53.2883, -9.0708],
-        [53.2924, -9.0857],
-        [53.3038, -9.1081],
-        [53.3089, -9.1272],
-        [53.3105, -9.1431],
-        [53.3225, -9.1621],
-        [53.3253, -9.1646],
-        [53.335, -9.1672],
-        [53.3423, -9.1737],
-        [53.344, -9.1777],
-        [53.3455, -9.1917],
-        [53.3689, -9.228],
-        [53.3738, -9.2422],
-        [53.3798, -9.2501],
-        [53.387, -9.2462],
-        [53.3919, -9.2486],
-        [53.3959, -9.2557],
-        [53.4002, -9.2703],
-        [53.4031, -9.276],
-        [53.4095, -9.2816],
-        [53.4217, -9.2977],
-        [53.4239, -9.3084],
-        [53.4286, -9.3191],
-        [53.4263, -9.3317],
-        [53.4258, -9.3403],
-        [53.4273, -9.3474],
-        [53.4241, -9.377],
-        [53.4195, -9.3891],
-        [53.4211, -9.3948],
-        [53.4208, -9.3991],
-        [53.4244, -9.408],
-        [53.4246, -9.4156],
-        [53.4285, -9.4222],
-        [53.4336, -9.4372],
-        [53.4404, -9.4486],
-        [53.4407, -9.4567],
-        [53.4434, -9.4661],
-        [53.4506, -9.4789],
-        [53.4509, -9.4876],
-        [53.4533, -9.4963],
-        [53.4533, -9.5222],
-        [53.4551, -9.5291],
-        [53.4559, -9.5408],
-        [53.4552, -9.5517],
-        [53.4513, -9.5715],
-        [53.4525, -9.5838],
-        [53.4572, -9.598],
-        [53.4554, -9.6099],
-        [53.4562, -9.6275],
-        [53.4538, -9.6418],
-        [53.4536, -9.6544],
-        [53.4577, -9.6658],
-        [53.4603, -9.6864],
-        [53.465, -9.6937],
-        [53.4653, -9.7008],
-        [53.4635, -9.7133],
-        [53.4671, -9.7313],
-        [53.4663, -9.7558],
-        [53.4641, -9.7567],
-        [53.4613, -9.7605],
-        [53.4567, -9.7794],
-        [53.4573, -9.7848],
-        [53.4623, -9.7955],
-        [53.4633, -9.8037],
-        [53.4623, -9.8084],
-        [53.4586, -9.8106],
-        [53.4588, -9.8196],
-        [53.4565, -9.8214],
-        [53.4549, -9.8271],
-        [53.4576, -9.8579],
-        [53.4571, -9.8645],
-        [53.4528, -9.8681],
-        [53.451, -9.8719],
-        [53.4453, -9.8782],
-        [53.4429, -9.8771],
-        [53.4424, -9.8724],
-        [53.4398, -9.8685],
-        [53.4359, -9.8711],
-        [53.4359, -9.8844],
-        [53.4342, -9.8938],
-        [53.4302, -9.8935],
-        [53.4277, -9.8951],
-        [53.4155, -9.9171],
-        [53.4096, -9.917],
-        [53.406, -9.9201],
-        [53.3995, -9.9184],
-        [53.3964, -9.919],
-        [53.3963, -9.9208],
-        [53.3959, -9.9198],
-        [53.3953, -9.9211],
-        [53.3935, -9.9207],
-        [53.3837, -9.9493],
-        [53.386, -9.962],
-        [53.3826, -9.9639],
-        [53.3803, -9.962],
-        [53.3818, -9.9639],
-        [53.3856, -9.9631],
-        [53.3853, -9.9716],
-        [53.3865, -9.9751],
-        [53.3912, -9.9784],
-        [53.3927, -9.9826],
-        [53.3926, -9.9923],
-        [53.3955, -10.0049],
-        [53.395, -10.0171],
-        [53.3966, -10.0271],
-        [53.3993, -10.0301],
-        [53.4089, -10.0348],
-        [53.4136, -10.0437],
-        [53.4167, -10.0576],
-        [53.4252, -10.0683],
-        [53.4297, -10.056],
-        [53.4284, -10.0487],
-        [53.4326, -10.03],
-        [53.4317, -10.0159],
-        [53.429, -10.014],
-        [53.4267, -10.0056],
-        [53.4289, -10.0138],
-        [53.4316, -10.0158],
-        [53.4327, -10.0258],
-        [53.4284, -10.0488],
-        [53.4297, -10.0562],
-        [53.4253, -10.0682],
-        [53.4323, -10.076],
-        [53.4429, -10.0624],
-        [53.4499, -10.0599],
-        [53.4559, -10.0522],
-        [53.4583, -10.0382],
-        [53.4611, -10.0313],
-        [53.4617, -10.021],
-        [53.464, -10.0178],
-        [53.4791, -10.0201],
-        [53.4855, -10.0245],
-        [53.4873, -10.019],
-        [53.4891, -10.0287],
-        [53.488, -10.0392],
-        [53.4934, -10.052],
-        [53.4955, -10.0775],
-        [53.5007, -10.0965]
+        [
+          53.2718,
+          -9.0529
+        ],
+        [
+          53.2703,
+          -9.0529
+        ],
+        [
+          53.2695,
+          -9.0574
+        ],
+        [
+          53.2721,
+          -9.0622
+        ],
+        [
+          53.2808,
+          -9.0642
+        ],
+        [
+          53.2883,
+          -9.0708
+        ],
+        [
+          53.2924,
+          -9.0857
+        ],
+        [
+          53.3038,
+          -9.1081
+        ],
+        [
+          53.3089,
+          -9.1272
+        ],
+        [
+          53.3105,
+          -9.1431
+        ],
+        [
+          53.3225,
+          -9.1621
+        ],
+        [
+          53.3253,
+          -9.1646
+        ],
+        [
+          53.335,
+          -9.1672
+        ],
+        [
+          53.3423,
+          -9.1737
+        ],
+        [
+          53.344,
+          -9.1777
+        ],
+        [
+          53.3455,
+          -9.1917
+        ],
+        [
+          53.3689,
+          -9.228
+        ],
+        [
+          53.3738,
+          -9.2422
+        ],
+        [
+          53.3798,
+          -9.2501
+        ],
+        [
+          53.387,
+          -9.2462
+        ],
+        [
+          53.3919,
+          -9.2486
+        ],
+        [
+          53.3959,
+          -9.2557
+        ],
+        [
+          53.4002,
+          -9.2703
+        ],
+        [
+          53.4031,
+          -9.276
+        ],
+        [
+          53.4095,
+          -9.2816
+        ],
+        [
+          53.4217,
+          -9.2977
+        ],
+        [
+          53.4239,
+          -9.3084
+        ],
+        [
+          53.4286,
+          -9.3191
+        ],
+        [
+          53.4263,
+          -9.3317
+        ],
+        [
+          53.4258,
+          -9.3403
+        ],
+        [
+          53.4273,
+          -9.3474
+        ],
+        [
+          53.4241,
+          -9.377
+        ],
+        [
+          53.4195,
+          -9.3891
+        ],
+        [
+          53.4211,
+          -9.3948
+        ],
+        [
+          53.4208,
+          -9.3991
+        ],
+        [
+          53.4244,
+          -9.408
+        ],
+        [
+          53.4246,
+          -9.4156
+        ],
+        [
+          53.4285,
+          -9.4222
+        ],
+        [
+          53.4336,
+          -9.4372
+        ],
+        [
+          53.4404,
+          -9.4486
+        ],
+        [
+          53.4407,
+          -9.4567
+        ],
+        [
+          53.4434,
+          -9.4661
+        ],
+        [
+          53.4506,
+          -9.4789
+        ],
+        [
+          53.4509,
+          -9.4876
+        ],
+        [
+          53.4533,
+          -9.4963
+        ],
+        [
+          53.4533,
+          -9.5222
+        ],
+        [
+          53.4551,
+          -9.5291
+        ],
+        [
+          53.4559,
+          -9.5408
+        ],
+        [
+          53.4552,
+          -9.5517
+        ],
+        [
+          53.4513,
+          -9.5715
+        ],
+        [
+          53.4525,
+          -9.5838
+        ],
+        [
+          53.4572,
+          -9.598
+        ],
+        [
+          53.4554,
+          -9.6099
+        ],
+        [
+          53.4562,
+          -9.6275
+        ],
+        [
+          53.4538,
+          -9.6418
+        ],
+        [
+          53.4536,
+          -9.6544
+        ],
+        [
+          53.4577,
+          -9.6658
+        ],
+        [
+          53.4603,
+          -9.6864
+        ],
+        [
+          53.465,
+          -9.6937
+        ],
+        [
+          53.4653,
+          -9.7008
+        ],
+        [
+          53.4635,
+          -9.7133
+        ],
+        [
+          53.4671,
+          -9.7313
+        ],
+        [
+          53.4663,
+          -9.7558
+        ],
+        [
+          53.4641,
+          -9.7567
+        ],
+        [
+          53.4613,
+          -9.7605
+        ],
+        [
+          53.4567,
+          -9.7794
+        ],
+        [
+          53.4573,
+          -9.7848
+        ],
+        [
+          53.4623,
+          -9.7955
+        ],
+        [
+          53.4633,
+          -9.8037
+        ],
+        [
+          53.4623,
+          -9.8084
+        ],
+        [
+          53.4586,
+          -9.8106
+        ],
+        [
+          53.4588,
+          -9.8196
+        ],
+        [
+          53.4565,
+          -9.8214
+        ],
+        [
+          53.4549,
+          -9.8271
+        ],
+        [
+          53.4576,
+          -9.8579
+        ],
+        [
+          53.4571,
+          -9.8645
+        ],
+        [
+          53.4528,
+          -9.8681
+        ],
+        [
+          53.451,
+          -9.8719
+        ],
+        [
+          53.4453,
+          -9.8782
+        ],
+        [
+          53.4429,
+          -9.8771
+        ],
+        [
+          53.4424,
+          -9.8724
+        ],
+        [
+          53.4398,
+          -9.8685
+        ],
+        [
+          53.4359,
+          -9.8711
+        ],
+        [
+          53.4359,
+          -9.8844
+        ],
+        [
+          53.4342,
+          -9.8938
+        ],
+        [
+          53.4302,
+          -9.8935
+        ],
+        [
+          53.4277,
+          -9.8951
+        ],
+        [
+          53.4155,
+          -9.9171
+        ],
+        [
+          53.4096,
+          -9.917
+        ],
+        [
+          53.406,
+          -9.9201
+        ],
+        [
+          53.3995,
+          -9.9184
+        ],
+        [
+          53.3964,
+          -9.919
+        ],
+        [
+          53.3963,
+          -9.9208
+        ],
+        [
+          53.3959,
+          -9.9198
+        ],
+        [
+          53.3953,
+          -9.9211
+        ],
+        [
+          53.3935,
+          -9.9207
+        ],
+        [
+          53.3837,
+          -9.9493
+        ],
+        [
+          53.386,
+          -9.962
+        ],
+        [
+          53.3826,
+          -9.9639
+        ],
+        [
+          53.3803,
+          -9.962
+        ],
+        [
+          53.3818,
+          -9.9639
+        ],
+        [
+          53.3856,
+          -9.9631
+        ],
+        [
+          53.3853,
+          -9.9716
+        ],
+        [
+          53.3865,
+          -9.9751
+        ],
+        [
+          53.3912,
+          -9.9784
+        ],
+        [
+          53.3927,
+          -9.9826
+        ],
+        [
+          53.3926,
+          -9.9923
+        ],
+        [
+          53.3955,
+          -10.0049
+        ],
+        [
+          53.395,
+          -10.0171
+        ],
+        [
+          53.3966,
+          -10.0271
+        ],
+        [
+          53.3993,
+          -10.0301
+        ],
+        [
+          53.4089,
+          -10.0348
+        ],
+        [
+          53.4136,
+          -10.0437
+        ],
+        [
+          53.4167,
+          -10.0576
+        ],
+        [
+          53.4252,
+          -10.0683
+        ],
+        [
+          53.4297,
+          -10.056
+        ],
+        [
+          53.4284,
+          -10.0487
+        ],
+        [
+          53.4326,
+          -10.03
+        ],
+        [
+          53.4317,
+          -10.0159
+        ],
+        [
+          53.429,
+          -10.014
+        ],
+        [
+          53.4267,
+          -10.0056
+        ],
+        [
+          53.4289,
+          -10.0138
+        ],
+        [
+          53.4316,
+          -10.0158
+        ],
+        [
+          53.4327,
+          -10.0258
+        ],
+        [
+          53.4284,
+          -10.0488
+        ],
+        [
+          53.4297,
+          -10.0562
+        ],
+        [
+          53.4253,
+          -10.0682
+        ],
+        [
+          53.4323,
+          -10.076
+        ],
+        [
+          53.4429,
+          -10.0624
+        ],
+        [
+          53.4499,
+          -10.0599
+        ],
+        [
+          53.4559,
+          -10.0522
+        ],
+        [
+          53.4583,
+          -10.0382
+        ],
+        [
+          53.4611,
+          -10.0313
+        ],
+        [
+          53.4617,
+          -10.021
+        ],
+        [
+          53.464,
+          -10.0178
+        ],
+        [
+          53.4791,
+          -10.0201
+        ],
+        [
+          53.4855,
+          -10.0245
+        ],
+        [
+          53.4873,
+          -10.019
+        ],
+        [
+          53.4891,
+          -10.0287
+        ],
+        [
+          53.488,
+          -10.0392
+        ],
+        [
+          53.4934,
+          -10.052
+        ],
+        [
+          53.4955,
+          -10.0775
+        ],
+        [
+          53.5007,
+          -10.0965
+        ]
       ],
       "practicalTips": [
         {
@@ -892,12 +1969,16 @@
             "Plusieurs points d'arret photo avec vue sur les iles"
           ]
         }
-      ]
+      ],
+      "distanceKm": 85,
+      "driveMinutes": 147
     },
     {
       "day": 4,
       "shortLabel": "Kylemore",
-      "counties": ["Galway"],
+      "counties": [
+        "Galway"
+      ],
       "title": "Kylemore Abbey & Retour Galway",
       "isoDate": "2026-08-19",
       "routeIcon": "fa-mountain-sun",
@@ -906,8 +1987,6 @@
       "night": "Nuit a Galway (2e nuit)",
       "nightInfo": "<strong>Retour au meme logement a Salthill !</strong> Soiree tranquille a <a href=\"https://www.google.com/maps/search/?api=1&query=Salthill+Galway+Ireland\" target=\"_blank\">Salthill</a> ou dans le <a href=\"https://www.google.com/maps/search/?api=1&query=Latin+Quarter+Galway+Ireland\" target=\"_blank\">Latin Quarter</a>. Avantage des 2 nuits : profiter de Galway sans se presser.",
       "rainyDay": "<strong>Atlantaquaria</strong> (bassin tactile, ~1h, famille ~45 EUR) · <strong>Galway City Museum</strong> (gratuit, 30-45 min) · <strong>Leisureland Salthill</strong> (piscine interieure, toboggan de 65m, piscine pirate pour les petits)",
-      "distance": "~80 km",
-      "driveTime": "~1h46",
       "highlight": null,
       "mapCenter": {
         "lat": 53.46,
@@ -922,14 +2001,26 @@
           "icon": "fa-church",
           "iconClass": "monument",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Kylemore_Abbey_2.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Kylemore+Abbey+Ireland",
-          "web": "https://www.kylemoreabbey.com/",
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186609-d214807-Reviews-Kylemore_Abbey_Victorian_Walled_Garden-Galway_County_Galway_Western_Ireland.html",
-          "routard": null,
           "parking": {
             "location": "Grand parking visiteurs sur site",
             "cost": "Gratuit (inclus dans l'entree)"
-          }
+          },
+          "lat": 53.5614,
+          "lng": -9.8891,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Kylemore+Abbey+Ireland"
+            },
+            {
+              "type": "web",
+              "url": "https://www.kylemoreabbey.com/"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g186609-d214807-Reviews-Kylemore_Abbey_Victorian_Walled_Garden-Galway_County_Galway_Western_Ireland.html"
+            }
+          ]
         },
         {
           "name": "Parc National du Connemara / Diamond Hill",
@@ -937,16 +2028,38 @@
           "icon": "fa-mountain-sun",
           "iconClass": "nature",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Connemara_National_Park_Diamond_Hill.jpg/960px-Connemara_National_Park_Diamond_Hill.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Connemara+National+Park+Ireland",
-          "web": "https://www.connemaranationalpark.ie/",
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186609-d546269-Reviews-Connemara_National_Park_Visitor_Centre-Galway_County_Galway_Western_Ireland.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/letterfrack",
-          "alltrails": "https://www.alltrails.com/trail/ireland/county-galway/connemara-and-diamond-hill-loop",
-          "trailMap": "https://www.nationalparks.ie/app/uploads/2022/09/Diamond-Hill-Trails-Map.pdf",
           "parking": {
             "location": "Grand parking au Centre des Visiteurs, Letterfrack",
             "cost": "Gratuit"
-          }
+          },
+          "lat": 53.5538,
+          "lng": -9.944,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Connemara+National+Park+Ireland"
+            },
+            {
+              "type": "web",
+              "url": "https://www.connemaranationalpark.ie/"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g186609-d546269-Reviews-Connemara_National_Park_Visitor_Centre-Galway_County_Galway_Western_Ireland.html"
+            },
+            {
+              "type": "routard",
+              "url": "https://www.routard.com/fr/guide/europe/irlande/connemara/letterfrack"
+            },
+            {
+              "type": "alltrails",
+              "url": "https://www.alltrails.com/trail/ireland/county-galway/connemara-and-diamond-hill-loop"
+            },
+            {
+              "type": "trailMap",
+              "url": "https://www.nationalparks.ie/app/uploads/2022/09/Diamond-Hill-Trails-Map.pdf"
+            }
+          ]
         },
         {
           "name": "Salthill Promenade",
@@ -954,15 +2067,27 @@
           "icon": "fa-person-swimming",
           "iconClass": "beach",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Sea_Divingboard_Salthill_Galway_Ireland_2008.jpg/960px-Sea_Divingboard_Salthill_Galway_Ireland_2008.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Salthill+Promenade+Galway+Ireland",
-          "web": null,
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186609-d215937-Reviews-Salthill_Promenade-Galway_County_Galway_Western_Ireland.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-galway/salthill",
           "parking": {
             "location": "Parkings gratuits aux extremites de la promenade",
             "cost": "Gratuit",
             "tip": "Se remplit vite en aout par beau temps. Depuis l'hebergement Salthill, y aller a pied."
-          }
+          },
+          "lat": 53.2584,
+          "lng": -9.0756,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Salthill+Promenade+Galway+Ireland"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g186609-d215937-Reviews-Salthill_Promenade-Galway_County_Galway_Western_Ireland.html"
+            },
+            {
+              "type": "routard",
+              "url": "https://www.routard.com/fr/guide/europe/irlande/comte-de-galway/salthill"
+            }
+          ]
         },
         {
           "name": "Galway Atlantaquaria",
@@ -970,14 +2095,26 @@
           "icon": "fa-fish",
           "iconClass": "family",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/National_Aquarium_of_Ireland.jpg/960px-National_Aquarium_of_Ireland.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Galway+Atlantaquaria+Ireland",
-          "web": "https://nationalaquarium.ie/",
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186609-d215896-Reviews-Galway_Atlantaquaria-Galway_County_Galway_Western_Ireland.html",
-          "routard": null,
           "parking": {
             "location": "Parking gratuit sur place, Seapoint Promenade",
             "cost": "Gratuit"
-          }
+          },
+          "lat": 53.2568,
+          "lng": -9.0822,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Galway+Atlantaquaria+Ireland"
+            },
+            {
+              "type": "web",
+              "url": "https://nationalaquarium.ie/"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g186609-d215896-Reviews-Galway_Atlantaquaria-Galway_County_Galway_Western_Ireland.html"
+            }
+          ]
         }
       ],
       "schedule": [
@@ -1079,182 +2216,710 @@
         "notes": "Budget Atlantaquaria optionnel (uniquement si pluie). Diamond Hill et Salthill sont gratuits. Sans Atlantaquaria : 145 EUR."
       },
       "dayRoute": [
-        [53.5007, -10.0965],
-        [53.4955, -10.0775],
-        [53.4932, -10.0511],
-        [53.4882, -10.0404],
-        [53.4894, -10.0237],
-        [53.4879, -10.0192],
-        [53.4868, -10.019],
-        [53.4868, -10.0223],
-        [53.4854, -10.0245],
-        [53.4794, -10.0201],
-        [53.4751, -10.02],
-        [53.4724, -10.0184],
-        [53.4707, -10.0191],
-        [53.4662, -10.0172],
-        [53.4639, -10.0181],
-        [53.4618, -10.0206],
-        [53.461, -10.0317],
-        [53.4586, -10.0368],
-        [53.4559, -10.0521],
-        [53.4541, -10.0552],
-        [53.4496, -10.0599],
-        [53.4428, -10.0625],
-        [53.4332, -10.0758],
-        [53.4309, -10.0752],
-        [53.4277, -10.072],
-        [53.4253, -10.0685],
-        [53.4297, -10.056],
-        [53.4284, -10.0487],
-        [53.4326, -10.03],
-        [53.4328, -10.021],
-        [53.4317, -10.0159],
-        [53.429, -10.014],
-        [53.4267, -10.0056],
-        [53.4289, -10.0138],
-        [53.4316, -10.0158],
-        [53.4327, -10.0258],
-        [53.4284, -10.0488],
-        [53.4297, -10.0562],
-        [53.4253, -10.0682],
-        [53.4323, -10.076],
-        [53.4429, -10.0624],
-        [53.4499, -10.0599],
-        [53.4559, -10.0522],
-        [53.4583, -10.0382],
-        [53.4611, -10.0313],
-        [53.4617, -10.021],
-        [53.464, -10.0178],
-        [53.4791, -10.0201],
-        [53.4855, -10.0245],
-        [53.4868, -10.019],
-        [53.4882, -10.0228],
-        [53.491, -10.0194],
-        [53.4939, -10.0268],
-        [53.5011, -10.0251],
-        [53.5045, -10.0368],
-        [53.5083, -10.0375],
-        [53.5093, -10.0402],
-        [53.5108, -10.0407],
-        [53.5139, -10.0361],
-        [53.5165, -10.0409],
-        [53.5194, -10.0412],
-        [53.5231, -10.0482],
-        [53.5276, -10.048],
-        [53.5313, -10.0393],
-        [53.5363, -10.0369],
-        [53.5373, -10.0316],
-        [53.5414, -10.0291],
-        [53.5421, -10.0264],
-        [53.5421, -10.0147],
-        [53.5408, -10.0088],
-        [53.5439, -10.0038],
-        [53.5434, -9.9829],
-        [53.5445, -9.9744],
-        [53.5467, -9.9735],
-        [53.5476, -9.9696],
-        [53.5501, -9.9684],
-        [53.5521, -9.9511],
-        [53.5566, -9.9412],
-        [53.5615, -9.925],
-        [53.5606, -9.9208],
-        [53.5614, -9.9168],
-        [53.5594, -9.9116],
-        [53.5583, -9.8905],
-        [53.5604, -9.8925],
-        [53.5616, -9.8922],
-        [53.5587, -9.8894],
-        [53.5594, -9.9116],
-        [53.5613, -9.9166],
-        [53.5615, -9.925],
-        [53.5536, -9.9483],
-        [53.5517, -9.9454],
-        [53.5541, -9.9476],
-        [53.5615, -9.925],
-        [53.5606, -9.9208],
-        [53.5614, -9.9168],
-        [53.5594, -9.9116],
-        [53.558, -9.8839],
-        [53.5603, -9.8791],
-        [53.5598, -9.8752],
-        [53.5627, -9.8621],
-        [53.5642, -9.8321],
-        [53.5605, -9.8142],
-        [53.5538, -9.8074],
-        [53.5472, -9.7868],
-        [53.5345, -9.7704],
-        [53.5271, -9.7498],
-        [53.5175, -9.7381],
-        [53.5131, -9.7356],
-        [53.5111, -9.7328],
-        [53.5076, -9.7345],
-        [53.5051, -9.7318],
-        [53.5029, -9.7348],
-        [53.4971, -9.7347],
-        [53.4927, -9.7384],
-        [53.4783, -9.7418],
-        [53.4695, -9.7487],
-        [53.4666, -9.7535],
-        [53.467, -9.7293],
-        [53.4635, -9.7131],
-        [53.4653, -9.6952],
-        [53.4602, -9.686],
-        [53.4577, -9.6658],
-        [53.4536, -9.6547],
-        [53.4538, -9.6421],
-        [53.4562, -9.6275],
-        [53.4555, -9.6086],
-        [53.4572, -9.598],
-        [53.4525, -9.5838],
-        [53.4513, -9.5715],
-        [53.4552, -9.5517],
-        [53.4559, -9.5405],
-        [53.4533, -9.5222],
-        [53.4533, -9.4963],
-        [53.4509, -9.4876],
-        [53.4506, -9.4789],
-        [53.4433, -9.4658],
-        [53.4408, -9.4569],
-        [53.4404, -9.4486],
-        [53.4336, -9.4371],
-        [53.4286, -9.4225],
-        [53.4244, -9.4153],
-        [53.4245, -9.4084],
-        [53.4208, -9.3991],
-        [53.4211, -9.3946],
-        [53.4195, -9.3886],
-        [53.4241, -9.377],
-        [53.4273, -9.3479],
-        [53.4258, -9.3403],
-        [53.4263, -9.3317],
-        [53.4285, -9.3188],
-        [53.4239, -9.3085],
-        [53.4217, -9.2977],
-        [53.4095, -9.2816],
-        [53.4031, -9.276],
-        [53.4002, -9.2703],
-        [53.3963, -9.2566],
-        [53.3922, -9.249],
-        [53.3875, -9.2462],
-        [53.3798, -9.2501],
-        [53.3736, -9.2418],
-        [53.3689, -9.228],
-        [53.3455, -9.1917],
-        [53.3428, -9.1742],
-        [53.335, -9.1672],
-        [53.3237, -9.1632],
-        [53.3106, -9.1433],
-        [53.3089, -9.1272],
-        [53.3039, -9.1084],
-        [53.2924, -9.0857],
-        [53.2884, -9.071],
-        [53.2808, -9.0642],
-        [53.2724, -9.0626],
-        [53.2695, -9.0574],
-        [53.2721, -9.0503],
-        [53.2728, -9.0515],
-        [53.2718, -9.0529]
+        [
+          53.5007,
+          -10.0965
+        ],
+        [
+          53.4955,
+          -10.0775
+        ],
+        [
+          53.4932,
+          -10.0511
+        ],
+        [
+          53.4882,
+          -10.0404
+        ],
+        [
+          53.4894,
+          -10.0237
+        ],
+        [
+          53.4879,
+          -10.0192
+        ],
+        [
+          53.4868,
+          -10.019
+        ],
+        [
+          53.4868,
+          -10.0223
+        ],
+        [
+          53.4854,
+          -10.0245
+        ],
+        [
+          53.4794,
+          -10.0201
+        ],
+        [
+          53.4751,
+          -10.02
+        ],
+        [
+          53.4724,
+          -10.0184
+        ],
+        [
+          53.4707,
+          -10.0191
+        ],
+        [
+          53.4662,
+          -10.0172
+        ],
+        [
+          53.4639,
+          -10.0181
+        ],
+        [
+          53.4618,
+          -10.0206
+        ],
+        [
+          53.461,
+          -10.0317
+        ],
+        [
+          53.4586,
+          -10.0368
+        ],
+        [
+          53.4559,
+          -10.0521
+        ],
+        [
+          53.4541,
+          -10.0552
+        ],
+        [
+          53.4496,
+          -10.0599
+        ],
+        [
+          53.4428,
+          -10.0625
+        ],
+        [
+          53.4332,
+          -10.0758
+        ],
+        [
+          53.4309,
+          -10.0752
+        ],
+        [
+          53.4277,
+          -10.072
+        ],
+        [
+          53.4253,
+          -10.0685
+        ],
+        [
+          53.4297,
+          -10.056
+        ],
+        [
+          53.4284,
+          -10.0487
+        ],
+        [
+          53.4326,
+          -10.03
+        ],
+        [
+          53.4328,
+          -10.021
+        ],
+        [
+          53.4317,
+          -10.0159
+        ],
+        [
+          53.429,
+          -10.014
+        ],
+        [
+          53.4267,
+          -10.0056
+        ],
+        [
+          53.4289,
+          -10.0138
+        ],
+        [
+          53.4316,
+          -10.0158
+        ],
+        [
+          53.4327,
+          -10.0258
+        ],
+        [
+          53.4284,
+          -10.0488
+        ],
+        [
+          53.4297,
+          -10.0562
+        ],
+        [
+          53.4253,
+          -10.0682
+        ],
+        [
+          53.4323,
+          -10.076
+        ],
+        [
+          53.4429,
+          -10.0624
+        ],
+        [
+          53.4499,
+          -10.0599
+        ],
+        [
+          53.4559,
+          -10.0522
+        ],
+        [
+          53.4583,
+          -10.0382
+        ],
+        [
+          53.4611,
+          -10.0313
+        ],
+        [
+          53.4617,
+          -10.021
+        ],
+        [
+          53.464,
+          -10.0178
+        ],
+        [
+          53.4791,
+          -10.0201
+        ],
+        [
+          53.4855,
+          -10.0245
+        ],
+        [
+          53.4868,
+          -10.019
+        ],
+        [
+          53.4882,
+          -10.0228
+        ],
+        [
+          53.491,
+          -10.0194
+        ],
+        [
+          53.4939,
+          -10.0268
+        ],
+        [
+          53.5011,
+          -10.0251
+        ],
+        [
+          53.5045,
+          -10.0368
+        ],
+        [
+          53.5083,
+          -10.0375
+        ],
+        [
+          53.5093,
+          -10.0402
+        ],
+        [
+          53.5108,
+          -10.0407
+        ],
+        [
+          53.5139,
+          -10.0361
+        ],
+        [
+          53.5165,
+          -10.0409
+        ],
+        [
+          53.5194,
+          -10.0412
+        ],
+        [
+          53.5231,
+          -10.0482
+        ],
+        [
+          53.5276,
+          -10.048
+        ],
+        [
+          53.5313,
+          -10.0393
+        ],
+        [
+          53.5363,
+          -10.0369
+        ],
+        [
+          53.5373,
+          -10.0316
+        ],
+        [
+          53.5414,
+          -10.0291
+        ],
+        [
+          53.5421,
+          -10.0264
+        ],
+        [
+          53.5421,
+          -10.0147
+        ],
+        [
+          53.5408,
+          -10.0088
+        ],
+        [
+          53.5439,
+          -10.0038
+        ],
+        [
+          53.5434,
+          -9.9829
+        ],
+        [
+          53.5445,
+          -9.9744
+        ],
+        [
+          53.5467,
+          -9.9735
+        ],
+        [
+          53.5476,
+          -9.9696
+        ],
+        [
+          53.5501,
+          -9.9684
+        ],
+        [
+          53.5521,
+          -9.9511
+        ],
+        [
+          53.5566,
+          -9.9412
+        ],
+        [
+          53.5615,
+          -9.925
+        ],
+        [
+          53.5606,
+          -9.9208
+        ],
+        [
+          53.5614,
+          -9.9168
+        ],
+        [
+          53.5594,
+          -9.9116
+        ],
+        [
+          53.5583,
+          -9.8905
+        ],
+        [
+          53.5604,
+          -9.8925
+        ],
+        [
+          53.5616,
+          -9.8922
+        ],
+        [
+          53.5587,
+          -9.8894
+        ],
+        [
+          53.5594,
+          -9.9116
+        ],
+        [
+          53.5613,
+          -9.9166
+        ],
+        [
+          53.5615,
+          -9.925
+        ],
+        [
+          53.5536,
+          -9.9483
+        ],
+        [
+          53.5517,
+          -9.9454
+        ],
+        [
+          53.5541,
+          -9.9476
+        ],
+        [
+          53.5615,
+          -9.925
+        ],
+        [
+          53.5606,
+          -9.9208
+        ],
+        [
+          53.5614,
+          -9.9168
+        ],
+        [
+          53.5594,
+          -9.9116
+        ],
+        [
+          53.558,
+          -9.8839
+        ],
+        [
+          53.5603,
+          -9.8791
+        ],
+        [
+          53.5598,
+          -9.8752
+        ],
+        [
+          53.5627,
+          -9.8621
+        ],
+        [
+          53.5642,
+          -9.8321
+        ],
+        [
+          53.5605,
+          -9.8142
+        ],
+        [
+          53.5538,
+          -9.8074
+        ],
+        [
+          53.5472,
+          -9.7868
+        ],
+        [
+          53.5345,
+          -9.7704
+        ],
+        [
+          53.5271,
+          -9.7498
+        ],
+        [
+          53.5175,
+          -9.7381
+        ],
+        [
+          53.5131,
+          -9.7356
+        ],
+        [
+          53.5111,
+          -9.7328
+        ],
+        [
+          53.5076,
+          -9.7345
+        ],
+        [
+          53.5051,
+          -9.7318
+        ],
+        [
+          53.5029,
+          -9.7348
+        ],
+        [
+          53.4971,
+          -9.7347
+        ],
+        [
+          53.4927,
+          -9.7384
+        ],
+        [
+          53.4783,
+          -9.7418
+        ],
+        [
+          53.4695,
+          -9.7487
+        ],
+        [
+          53.4666,
+          -9.7535
+        ],
+        [
+          53.467,
+          -9.7293
+        ],
+        [
+          53.4635,
+          -9.7131
+        ],
+        [
+          53.4653,
+          -9.6952
+        ],
+        [
+          53.4602,
+          -9.686
+        ],
+        [
+          53.4577,
+          -9.6658
+        ],
+        [
+          53.4536,
+          -9.6547
+        ],
+        [
+          53.4538,
+          -9.6421
+        ],
+        [
+          53.4562,
+          -9.6275
+        ],
+        [
+          53.4555,
+          -9.6086
+        ],
+        [
+          53.4572,
+          -9.598
+        ],
+        [
+          53.4525,
+          -9.5838
+        ],
+        [
+          53.4513,
+          -9.5715
+        ],
+        [
+          53.4552,
+          -9.5517
+        ],
+        [
+          53.4559,
+          -9.5405
+        ],
+        [
+          53.4533,
+          -9.5222
+        ],
+        [
+          53.4533,
+          -9.4963
+        ],
+        [
+          53.4509,
+          -9.4876
+        ],
+        [
+          53.4506,
+          -9.4789
+        ],
+        [
+          53.4433,
+          -9.4658
+        ],
+        [
+          53.4408,
+          -9.4569
+        ],
+        [
+          53.4404,
+          -9.4486
+        ],
+        [
+          53.4336,
+          -9.4371
+        ],
+        [
+          53.4286,
+          -9.4225
+        ],
+        [
+          53.4244,
+          -9.4153
+        ],
+        [
+          53.4245,
+          -9.4084
+        ],
+        [
+          53.4208,
+          -9.3991
+        ],
+        [
+          53.4211,
+          -9.3946
+        ],
+        [
+          53.4195,
+          -9.3886
+        ],
+        [
+          53.4241,
+          -9.377
+        ],
+        [
+          53.4273,
+          -9.3479
+        ],
+        [
+          53.4258,
+          -9.3403
+        ],
+        [
+          53.4263,
+          -9.3317
+        ],
+        [
+          53.4285,
+          -9.3188
+        ],
+        [
+          53.4239,
+          -9.3085
+        ],
+        [
+          53.4217,
+          -9.2977
+        ],
+        [
+          53.4095,
+          -9.2816
+        ],
+        [
+          53.4031,
+          -9.276
+        ],
+        [
+          53.4002,
+          -9.2703
+        ],
+        [
+          53.3963,
+          -9.2566
+        ],
+        [
+          53.3922,
+          -9.249
+        ],
+        [
+          53.3875,
+          -9.2462
+        ],
+        [
+          53.3798,
+          -9.2501
+        ],
+        [
+          53.3736,
+          -9.2418
+        ],
+        [
+          53.3689,
+          -9.228
+        ],
+        [
+          53.3455,
+          -9.1917
+        ],
+        [
+          53.3428,
+          -9.1742
+        ],
+        [
+          53.335,
+          -9.1672
+        ],
+        [
+          53.3237,
+          -9.1632
+        ],
+        [
+          53.3106,
+          -9.1433
+        ],
+        [
+          53.3089,
+          -9.1272
+        ],
+        [
+          53.3039,
+          -9.1084
+        ],
+        [
+          53.2924,
+          -9.0857
+        ],
+        [
+          53.2884,
+          -9.071
+        ],
+        [
+          53.2808,
+          -9.0642
+        ],
+        [
+          53.2724,
+          -9.0626
+        ],
+        [
+          53.2695,
+          -9.0574
+        ],
+        [
+          53.2721,
+          -9.0503
+        ],
+        [
+          53.2728,
+          -9.0515
+        ],
+        [
+          53.2718,
+          -9.0529
+        ]
       ],
       "practicalTips": [
         {
@@ -1286,12 +2951,17 @@
             "Glaces chez Salthill Stores"
           ]
         }
-      ]
+      ],
+      "distanceKm": 80,
+      "driveMinutes": 106
     },
     {
       "day": 5,
       "shortLabel": "Moher",
-      "counties": ["Galway", "Clare"],
+      "counties": [
+        "Galway",
+        "Clare"
+      ],
       "title": "Burren & Falaises de Moher",
       "isoDate": "2026-08-20",
       "routeIcon": "fa-mountain-sun",
@@ -1300,8 +2970,6 @@
       "night": "Nuit a Lahinch",
       "nightInfo": "<strong>Ou dormir :</strong> <a href=\"https://www.google.com/maps/search/?api=1&query=Lahinch+Ireland\" target=\"_blank\"><strong>Lahinch</strong></a>, station balneaire familiale avec grande plage surveillee. <strong>Lahinch Coast Hotel</strong> (face plage, piscine interieure, familles bienvenues), <strong>O'Brien's Hotel</strong> (centre village, chambres familiales), <strong>Vaughan Lodge</strong> (B&B haut de gamme, petit-dejeuner excellent). Aire de jeux a cote de la plage. Section baignade surveillee. Cours de surf possibles des 8 ans pour l'aine.",
       "rainyDay": "<strong>Lahinch Seaworld & Leisure Centre</strong> (piscine interieure avec vue sur la mer) · <strong>Doolin Cave</strong> a 20 min (plus grande stalactite libre d'Europe, visite guidee 45 min, 125 marches — ok des 7-8 ans) · <strong>Aillwee Cave</strong> (grotte + rapaces, famille ~71 EUR)",
-      "distance": "~65 km",
-      "driveTime": "~1h58",
       "highlight": "Journee phare",
       "mapCenter": {
         "lat": 52.97,
@@ -1316,14 +2984,30 @@
           "icon": "fa-dog",
           "iconClass": "nature",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/d/da/Caherconnell_Fort.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Caherconnell+Stone+Fort+Ireland",
-          "web": "https://caherconnell.com/",
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g1645258-d1237930-Reviews-Caherconnell_Stone_Fort_Sheepdog_Demonstrations-Caherconnell_The_Burren_County_C.html",
-          "routard": "https://www.routard.com/guide_voyage_lieu/3409-burren.htm",
           "parking": {
             "location": "Parking visiteurs dedie sur la R480",
             "cost": "Gratuit"
-          }
+          },
+          "lat": 53.04,
+          "lng": -9.0667,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Caherconnell+Stone+Fort+Ireland"
+            },
+            {
+              "type": "web",
+              "url": "https://caherconnell.com/"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g1645258-d1237930-Reviews-Caherconnell_Stone_Fort_Sheepdog_Demonstrations-Caherconnell_The_Burren_County_C.html"
+            },
+            {
+              "type": "routard",
+              "url": "https://www.routard.com/guide_voyage_lieu/3409-burren.htm"
+            }
+          ]
         },
         {
           "name": "Poulnabrone Dolmen",
@@ -1331,14 +3015,26 @@
           "icon": "fa-landmark",
           "iconClass": "monument",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/7/75/Paulnabrone.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Poulnabrone+Dolmen+Ireland",
-          "web": null,
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186595-d526251-Reviews-Poulnabrone_Dolmen-County_Clare.html",
-          "routard": "https://www.routard.com/guide_voyage_lieu/3409-burren.htm",
           "parking": {
             "location": "Parking dedie, signale depuis la R480 (250m a pied)",
             "cost": "Gratuit"
-          }
+          },
+          "lat": 53.0486,
+          "lng": -9.14,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Poulnabrone+Dolmen+Ireland"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g186595-d526251-Reviews-Poulnabrone_Dolmen-County_Clare.html"
+            },
+            {
+              "type": "routard",
+              "url": "https://www.routard.com/guide_voyage_lieu/3409-burren.htm"
+            }
+          ]
         },
         {
           "name": "Cliffs of Moher",
@@ -1346,18 +3042,40 @@
           "icon": "fa-mountain-sun",
           "iconClass": "nature",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Cliffs-Of-Moher-OBriens-From-South.JPG",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Cliffs+of+Moher+Ireland",
-          "web": "https://www.cliffsofmoher.ie/",
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g1184916-d214806-Reviews-Cliffs_of_Moher-Liscannor_County_Clare.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/falaises-de-moher-cliffs-of-moher",
-          "alltrails": "https://www.alltrails.com/trail/ireland/county-clare/cliffs-of-moher-hag-s-head",
-          "trailMap": "https://www.sportireland.ie/sites/default/files/media/document/2020-05/cliffs-of-moher-coastal-walk-map.pdf",
           "parking": {
             "location": "Parking officiel au Visitor Centre (reserver en ligne !)",
             "cost": "7 EUR/adulte en ligne, enfants gratuits",
             "tip": "Alternative : parking fermier 800m avant (dir. Liscannor), 2-5 EUR/vehicule en cash. Avec enfants, le centre officiel est plus sur (chemins clotures).",
             "gmaps": "https://www.google.com/maps/search/?api=1&query=Cliffs+of+Moher+Visitor+Centre+Parking"
-          }
+          },
+          "lat": 52.9715,
+          "lng": -9.4309,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Cliffs+of+Moher+Ireland"
+            },
+            {
+              "type": "web",
+              "url": "https://www.cliffsofmoher.ie/"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g1184916-d214806-Reviews-Cliffs_of_Moher-Liscannor_County_Clare.html"
+            },
+            {
+              "type": "routard",
+              "url": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/falaises-de-moher-cliffs-of-moher"
+            },
+            {
+              "type": "alltrails",
+              "url": "https://www.alltrails.com/trail/ireland/county-clare/cliffs-of-moher-hag-s-head"
+            },
+            {
+              "type": "trailMap",
+              "url": "https://www.sportireland.ie/sites/default/files/media/document/2020-05/cliffs-of-moher-coastal-walk-map.pdf"
+            }
+          ]
         },
         {
           "name": "Lahinch Beach",
@@ -1365,15 +3083,27 @@
           "icon": "fa-water",
           "iconClass": "beach",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lahinch_Beach%2C_March_2012.JPG",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Lahinch+Beach+Ireland",
-          "web": null,
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g212533-d3458853-Reviews-Lahinch_Beach-Lahinch_County_Clare.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/lahinch-an-leacht",
           "parking": {
             "location": "Pay-and-display sur la promenade ou parking gratuit au sud",
             "cost": "~2 EUR/h (promenade)",
             "tip": "Se remplit vite en aout. Si logement a Lahinch, y aller a pied."
-          }
+          },
+          "lat": 52.934,
+          "lng": -9.347,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Lahinch+Beach+Ireland"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g212533-d3458853-Reviews-Lahinch_Beach-Lahinch_County_Clare.html"
+            },
+            {
+              "type": "routard",
+              "url": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/lahinch-an-leacht"
+            }
+          ]
         }
       ],
       "schedule": [
@@ -1471,123 +3201,474 @@
         "notes": "Parking fermier 800m avant les Cliffs (direction Liscannor) a 2-5 EUR/vehicule au lieu de 10 EUR/adulte au parking officiel (ou 7 EUR en ligne, enfants gratuits). Economie de 10-25 EUR pour une famille."
       },
       "dayRoute": [
-        [53.2718, -9.0529],
-        [53.2704, -9.0529],
-        [53.2726, -9.0495],
-        [53.2713, -9.049],
-        [53.2709, -9.0466],
-        [53.2827, -9.0329],
-        [53.2884, -9.0176],
-        [53.289, -9.0147],
-        [53.288, -9.0128],
-        [53.2923, -8.9913],
-        [53.2918, -8.9861],
-        [53.2794, -8.9726],
-        [53.2773, -8.9269],
-        [53.275, -8.921],
-        [53.2719, -8.9177],
-        [53.2641, -8.9227],
-        [53.2604, -8.9212],
-        [53.2528, -8.9061],
-        [53.2463, -8.8989],
-        [53.2363, -8.8823],
-        [53.2277, -8.8803],
-        [53.2177, -8.8725],
-        [53.2127, -8.871],
-        [53.2079, -8.8675],
-        [53.1973, -8.8889],
-        [53.1917, -8.8955],
-        [53.1871, -8.908],
-        [53.1773, -8.9172],
-        [53.1726, -8.9191],
-        [53.1589, -8.9193],
-        [53.1534, -8.9177],
-        [53.1467, -8.9188],
-        [53.1408, -8.9269],
-        [53.1388, -8.9371],
-        [53.1384, -8.9489],
-        [53.1443, -8.984],
-        [53.1425, -8.9913],
-        [53.139, -9.0262],
-        [53.1314, -9.0361],
-        [53.1285, -9.045],
-        [53.1241, -9.0509],
-        [53.1189, -9.0622],
-        [53.1113, -9.0692],
-        [53.1062, -9.0711],
-        [53.0956, -9.0675],
-        [53.0931, -9.0679],
-        [53.0881, -9.0704],
-        [53.0847, -9.074],
-        [53.0805, -9.0746],
-        [53.0733, -9.0824],
-        [53.0685, -9.0834],
-        [53.0648, -9.0874],
-        [53.0626, -9.0877],
-        [53.0588, -9.0851],
-        [53.0521, -9.0835],
-        [53.0461, -9.0763],
-        [53.0402, -9.0756],
-        [53.0294, -9.0773],
-        [53.0204, -9.0894],
-        [53.0177, -9.0972],
-        [53.0128, -9.1051],
-        [53.0066, -9.1276],
-        [53.0141, -9.1302],
-        [53.0162, -9.1189],
-        [53.0146, -9.1305],
-        [53.0254, -9.1359],
-        [53.0288, -9.1363],
-        [53.0311, -9.1347],
-        [53.0326, -9.1368],
-        [53.0384, -9.1353],
-        [53.0476, -9.1415],
-        [53.0483, -9.1385],
-        [53.0476, -9.1415],
-        [53.0517, -9.1454],
-        [53.05, -9.1472],
-        [53.0459, -9.164],
-        [53.0406, -9.17],
-        [53.0414, -9.1777],
-        [53.0381, -9.1905],
-        [53.0403, -9.1986],
-        [53.0282, -9.2153],
-        [53.0232, -9.2153],
-        [53.02, -9.2184],
-        [53.0119, -9.2226],
-        [53.0159, -9.2327],
-        [53.0211, -9.2566],
-        [53.0237, -9.2616],
-        [53.0216, -9.2731],
-        [53.0248, -9.2847],
-        [53.0249, -9.2905],
-        [53.022, -9.3053],
-        [53.0141, -9.3283],
-        [53.0127, -9.3416],
-        [53.0077, -9.3542],
-        [53.0071, -9.3606],
-        [53.0031, -9.3736],
-        [52.9926, -9.402],
-        [52.9881, -9.407],
-        [52.9838, -9.4172],
-        [52.9798, -9.4226],
-        [52.9784, -9.4205],
-        [52.9703, -9.4246],
-        [52.9715, -9.4259],
-        [52.9714, -9.4248],
-        [52.9679, -9.4256],
-        [52.9542, -9.4206],
-        [52.9486, -9.4253],
-        [52.9431, -9.4238],
-        [52.9429, -9.408],
-        [52.9406, -9.4035],
-        [52.9383, -9.3928],
-        [52.9388, -9.3888],
-        [52.9444, -9.3762],
-        [52.9445, -9.364],
-        [52.9479, -9.3542],
-        [52.9457, -9.3513],
-        [52.9368, -9.3453]
+        [
+          53.2718,
+          -9.0529
+        ],
+        [
+          53.2704,
+          -9.0529
+        ],
+        [
+          53.2726,
+          -9.0495
+        ],
+        [
+          53.2713,
+          -9.049
+        ],
+        [
+          53.2709,
+          -9.0466
+        ],
+        [
+          53.2827,
+          -9.0329
+        ],
+        [
+          53.2884,
+          -9.0176
+        ],
+        [
+          53.289,
+          -9.0147
+        ],
+        [
+          53.288,
+          -9.0128
+        ],
+        [
+          53.2923,
+          -8.9913
+        ],
+        [
+          53.2918,
+          -8.9861
+        ],
+        [
+          53.2794,
+          -8.9726
+        ],
+        [
+          53.2773,
+          -8.9269
+        ],
+        [
+          53.275,
+          -8.921
+        ],
+        [
+          53.2719,
+          -8.9177
+        ],
+        [
+          53.2641,
+          -8.9227
+        ],
+        [
+          53.2604,
+          -8.9212
+        ],
+        [
+          53.2528,
+          -8.9061
+        ],
+        [
+          53.2463,
+          -8.8989
+        ],
+        [
+          53.2363,
+          -8.8823
+        ],
+        [
+          53.2277,
+          -8.8803
+        ],
+        [
+          53.2177,
+          -8.8725
+        ],
+        [
+          53.2127,
+          -8.871
+        ],
+        [
+          53.2079,
+          -8.8675
+        ],
+        [
+          53.1973,
+          -8.8889
+        ],
+        [
+          53.1917,
+          -8.8955
+        ],
+        [
+          53.1871,
+          -8.908
+        ],
+        [
+          53.1773,
+          -8.9172
+        ],
+        [
+          53.1726,
+          -8.9191
+        ],
+        [
+          53.1589,
+          -8.9193
+        ],
+        [
+          53.1534,
+          -8.9177
+        ],
+        [
+          53.1467,
+          -8.9188
+        ],
+        [
+          53.1408,
+          -8.9269
+        ],
+        [
+          53.1388,
+          -8.9371
+        ],
+        [
+          53.1384,
+          -8.9489
+        ],
+        [
+          53.1443,
+          -8.984
+        ],
+        [
+          53.1425,
+          -8.9913
+        ],
+        [
+          53.139,
+          -9.0262
+        ],
+        [
+          53.1314,
+          -9.0361
+        ],
+        [
+          53.1285,
+          -9.045
+        ],
+        [
+          53.1241,
+          -9.0509
+        ],
+        [
+          53.1189,
+          -9.0622
+        ],
+        [
+          53.1113,
+          -9.0692
+        ],
+        [
+          53.1062,
+          -9.0711
+        ],
+        [
+          53.0956,
+          -9.0675
+        ],
+        [
+          53.0931,
+          -9.0679
+        ],
+        [
+          53.0881,
+          -9.0704
+        ],
+        [
+          53.0847,
+          -9.074
+        ],
+        [
+          53.0805,
+          -9.0746
+        ],
+        [
+          53.0733,
+          -9.0824
+        ],
+        [
+          53.0685,
+          -9.0834
+        ],
+        [
+          53.0648,
+          -9.0874
+        ],
+        [
+          53.0626,
+          -9.0877
+        ],
+        [
+          53.0588,
+          -9.0851
+        ],
+        [
+          53.0521,
+          -9.0835
+        ],
+        [
+          53.0461,
+          -9.0763
+        ],
+        [
+          53.0402,
+          -9.0756
+        ],
+        [
+          53.0294,
+          -9.0773
+        ],
+        [
+          53.0204,
+          -9.0894
+        ],
+        [
+          53.0177,
+          -9.0972
+        ],
+        [
+          53.0128,
+          -9.1051
+        ],
+        [
+          53.0066,
+          -9.1276
+        ],
+        [
+          53.0141,
+          -9.1302
+        ],
+        [
+          53.0162,
+          -9.1189
+        ],
+        [
+          53.0146,
+          -9.1305
+        ],
+        [
+          53.0254,
+          -9.1359
+        ],
+        [
+          53.0288,
+          -9.1363
+        ],
+        [
+          53.0311,
+          -9.1347
+        ],
+        [
+          53.0326,
+          -9.1368
+        ],
+        [
+          53.0384,
+          -9.1353
+        ],
+        [
+          53.0476,
+          -9.1415
+        ],
+        [
+          53.0483,
+          -9.1385
+        ],
+        [
+          53.0476,
+          -9.1415
+        ],
+        [
+          53.0517,
+          -9.1454
+        ],
+        [
+          53.05,
+          -9.1472
+        ],
+        [
+          53.0459,
+          -9.164
+        ],
+        [
+          53.0406,
+          -9.17
+        ],
+        [
+          53.0414,
+          -9.1777
+        ],
+        [
+          53.0381,
+          -9.1905
+        ],
+        [
+          53.0403,
+          -9.1986
+        ],
+        [
+          53.0282,
+          -9.2153
+        ],
+        [
+          53.0232,
+          -9.2153
+        ],
+        [
+          53.02,
+          -9.2184
+        ],
+        [
+          53.0119,
+          -9.2226
+        ],
+        [
+          53.0159,
+          -9.2327
+        ],
+        [
+          53.0211,
+          -9.2566
+        ],
+        [
+          53.0237,
+          -9.2616
+        ],
+        [
+          53.0216,
+          -9.2731
+        ],
+        [
+          53.0248,
+          -9.2847
+        ],
+        [
+          53.0249,
+          -9.2905
+        ],
+        [
+          53.022,
+          -9.3053
+        ],
+        [
+          53.0141,
+          -9.3283
+        ],
+        [
+          53.0127,
+          -9.3416
+        ],
+        [
+          53.0077,
+          -9.3542
+        ],
+        [
+          53.0071,
+          -9.3606
+        ],
+        [
+          53.0031,
+          -9.3736
+        ],
+        [
+          52.9926,
+          -9.402
+        ],
+        [
+          52.9881,
+          -9.407
+        ],
+        [
+          52.9838,
+          -9.4172
+        ],
+        [
+          52.9798,
+          -9.4226
+        ],
+        [
+          52.9784,
+          -9.4205
+        ],
+        [
+          52.9703,
+          -9.4246
+        ],
+        [
+          52.9715,
+          -9.4259
+        ],
+        [
+          52.9714,
+          -9.4248
+        ],
+        [
+          52.9679,
+          -9.4256
+        ],
+        [
+          52.9542,
+          -9.4206
+        ],
+        [
+          52.9486,
+          -9.4253
+        ],
+        [
+          52.9431,
+          -9.4238
+        ],
+        [
+          52.9429,
+          -9.408
+        ],
+        [
+          52.9406,
+          -9.4035
+        ],
+        [
+          52.9383,
+          -9.3928
+        ],
+        [
+          52.9388,
+          -9.3888
+        ],
+        [
+          52.9444,
+          -9.3762
+        ],
+        [
+          52.9445,
+          -9.364
+        ],
+        [
+          52.9479,
+          -9.3542
+        ],
+        [
+          52.9457,
+          -9.3513
+        ],
+        [
+          52.9368,
+          -9.3453
+        ]
       ],
       "practicalTips": [
         {
@@ -1629,12 +3710,17 @@
             "Fish & chips sur place"
           ]
         }
-      ]
+      ],
+      "distanceKm": 65,
+      "driveMinutes": 118
     },
     {
       "day": 6,
       "shortLabel": "Birr",
-      "counties": ["Clare", "Offaly"],
+      "counties": [
+        "Clare",
+        "Offaly"
+      ],
       "title": "Plage & Birr Castle",
       "isoDate": "2026-08-21",
       "routeIcon": "fa-chess-rook",
@@ -1643,8 +3729,6 @@
       "night": "Nuit a Birr",
       "nightInfo": "<strong>Ou dormir :</strong> <a href=\"https://www.google.com/maps/search/?api=1&query=Birr+Ireland\" target=\"_blank\"><strong>Birr</strong></a>, charmante ville georgienne dans les Midlands. <strong>Townsend House B&B</strong> (maison georgienne, excellent petit-dejeuner, ~90-120 EUR), <strong>The Maltings B&B</strong> (pres du chateau, familial), <strong>County Arms Hotel</strong> (hotel classique, parking gratuit, restaurant). Birr est calme et agreable pour une soiree de transition avant la derniere journee.",
       "rainyDay": "<strong>Birr Castle Science Centre</strong> (couvert, interactif, le Grand Telescope est visible meme sous la pluie) · Le Treehouse Playground est utilisable sauf par forte pluie",
-      "distance": "~147 km",
-      "driveTime": "~2h04",
       "highlight": null,
       "mapCenter": {
         "lat": 53.0914,
@@ -1659,14 +3743,26 @@
           "icon": "fa-umbrella-beach",
           "iconClass": "beach",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Lahinch_Beach%2C_March_2012.JPG",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Lahinch+Beach+Ireland",
-          "web": null,
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g212533-d3458853-Reviews-Lahinch_Beach-Lahinch_County_Clare.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/lahinch-an-leacht",
           "parking": {
             "location": "Pay-and-display sur la promenade ou parking gratuit au sud",
             "cost": "~2 EUR/h (promenade)"
-          }
+          },
+          "lat": 52.934,
+          "lng": -9.347,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Lahinch+Beach+Ireland"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g212533-d3458853-Reviews-Lahinch_Beach-Lahinch_County_Clare.html"
+            },
+            {
+              "type": "routard",
+              "url": "https://www.routard.com/fr/guide/europe/irlande/comte-de-clare/lahinch-an-leacht"
+            }
+          ]
         },
         {
           "name": "Ennis",
@@ -1674,15 +3770,23 @@
           "icon": "fa-utensils",
           "iconClass": "food",
           "photo": null,
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Ennis+Ireland",
-          "web": null,
-          "tripadvisor": "https://www.tripadvisor.fr/Tourism-g186583-Ennis_County_Clare-Vacations.html",
-          "routard": null,
           "parking": {
             "location": "Parking Abbey Street ou Temple Gate Hotel",
             "cost": "~1-2 EUR/h",
             "gmaps": "https://www.google.com/maps/search/?api=1&query=Abbey+Street+Car+Park+Ennis"
-          }
+          },
+          "lat": 52.8432,
+          "lng": -8.9862,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Ennis+Ireland"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Tourism-g186583-Ennis_County_Clare-Vacations.html"
+            }
+          ]
         },
         {
           "name": "Birr Castle Demesne",
@@ -1690,15 +3794,27 @@
           "icon": "fa-chess-rook",
           "iconClass": "castle",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/6/61/Birr_Castle%2C_Offaly.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Birr+Castle+Demesne+Ireland",
-          "web": "https://birrcastle.com/",
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186594-d214826-Reviews-Birr_Castle_Demesne-Birr_County_Offaly.html",
-          "routard": null,
           "parking": {
             "location": "Marian Hall car park, en face de l'entree sur Rosse Row",
             "cost": "1 EUR/2h",
             "gmaps": "https://www.google.com/maps/search/?api=1&query=Marian+Hall+Car+Park+Birr"
-          }
+          },
+          "lat": 53.0984,
+          "lng": -7.9131,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Birr+Castle+Demesne+Ireland"
+            },
+            {
+              "type": "web",
+              "url": "https://birrcastle.com/"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g186594-d214826-Reviews-Birr_Castle_Demesne-Birr_County_Offaly.html"
+            }
+          ]
         }
       ],
       "schedule": [
@@ -1780,158 +3896,614 @@
         "notes": "Birr Castle ferme a 18h en ete. Arriver avant 15h30 pour profiter du domaine. Le Treehouse Playground est inclus dans l'entree."
       },
       "dayRoute": [
-        [52.9368, -9.3453],
-        [52.9336, -9.3443],
-        [52.9387, -9.3156],
-        [52.938, -9.3102],
-        [52.9396, -9.2982],
-        [52.9378, -9.2897],
-        [52.9284, -9.2722],
-        [52.9248, -9.2552],
-        [52.9182, -9.2401],
-        [52.9162, -9.2376],
-        [52.912, -9.2355],
-        [52.8999, -9.208],
-        [52.894, -9.2038],
-        [52.8922, -9.1972],
-        [52.8899, -9.194],
-        [52.8829, -9.19],
-        [52.8812, -9.1793],
-        [52.871, -9.1675],
-        [52.8678, -9.1584],
-        [52.8671, -9.1494],
-        [52.862, -9.1255],
-        [52.864, -9.1133],
-        [52.8611, -9.1033],
-        [52.8613, -9.094],
-        [52.8646, -9.0802],
-        [52.8642, -9.0766],
-        [52.8665, -9.0701],
-        [52.8658, -9.0652],
-        [52.8668, -9.0592],
-        [52.8631, -9.0503],
-        [52.8666, -9.038],
-        [52.8664, -9.0286],
-        [52.8642, -9.0219],
-        [52.8598, -9.0186],
-        [52.8538, -9.0103],
-        [52.8506, -9.0026],
-        [52.8481, -8.9895],
-        [52.843, -8.9877],
-        [52.8413, -8.9841],
-        [52.8396, -8.9835],
-        [52.8429, -8.9784],
-        [52.8433, -8.982],
-        [52.8429, -8.9784],
-        [52.8398, -8.9817],
-        [52.8396, -8.9835],
-        [52.8253, -8.9776],
-        [52.8276, -8.9368],
-        [52.8239, -8.9381],
-        [52.8143, -8.9353],
-        [52.7991, -8.9231],
-        [52.7943, -8.9209],
-        [52.7814, -8.9216],
-        [52.7715, -8.9171],
-        [52.764, -8.9179],
-        [52.7601, -8.9163],
-        [52.757, -8.9128],
-        [52.7495, -8.8987],
-        [52.7345, -8.8889],
-        [52.7294, -8.8825],
-        [52.7257, -8.8736],
-        [52.7235, -8.8631],
-        [52.7183, -8.853],
-        [52.7157, -8.8402],
-        [52.7013, -8.8322],
-        [52.6973, -8.828],
-        [52.6947, -8.8195],
-        [52.6952, -8.8067],
-        [52.6932, -8.7886],
-        [52.6929, -8.7722],
-        [52.6942, -8.7607],
-        [52.6889, -8.7422],
-        [52.6882, -8.7323],
-        [52.6825, -8.7147],
-        [52.6783, -8.7074],
-        [52.6744, -8.7028],
-        [52.6648, -8.6977],
-        [52.6615, -8.6946],
-        [52.6506, -8.6799],
-        [52.6441, -8.6671],
-        [52.6434, -8.6454],
-        [52.6386, -8.5908],
-        [52.644, -8.5685],
-        [52.6519, -8.5565],
-        [52.6579, -8.5427],
-        [52.6628, -8.5202],
-        [52.6665, -8.5163],
-        [52.6736, -8.5157],
-        [52.6765, -8.5141],
-        [52.6839, -8.5013],
-        [52.6942, -8.4965],
-        [52.7009, -8.4874],
-        [52.7207, -8.4702],
-        [52.7324, -8.4565],
-        [52.7485, -8.429],
-        [52.7639, -8.3942],
-        [52.7807, -8.3735],
-        [52.7851, -8.366],
-        [52.7903, -8.3515],
-        [52.7943, -8.3333],
-        [52.7998, -8.3218],
-        [52.8057, -8.3153],
-        [52.8243, -8.302],
-        [52.8381, -8.2837],
-        [52.8423, -8.2731],
-        [52.8456, -8.2538],
-        [52.8548, -8.236],
-        [52.8601, -8.239],
-        [52.8633, -8.2387],
-        [52.8751, -8.2271],
-        [52.8778, -8.2143],
-        [52.8777, -8.2024],
-        [52.8914, -8.1889],
-        [52.8996, -8.1868],
-        [52.9087, -8.1815],
-        [52.9161, -8.1753],
-        [52.9211, -8.1734],
-        [52.9279, -8.1668],
-        [52.9396, -8.15],
-        [52.9546, -8.1398],
-        [52.9592, -8.1337],
-        [52.962, -8.1331],
-        [52.9657, -8.1348],
-        [52.9705, -8.135],
-        [52.9804, -8.1305],
-        [52.989, -8.1324],
-        [52.9932, -8.1279],
-        [52.9976, -8.127],
-        [52.9989, -8.1213],
-        [52.9978, -8.1177],
-        [52.9995, -8.1155],
-        [53.0011, -8.1082],
-        [53.0001, -8.1022],
-        [53.001, -8.0829],
-        [53.0063, -8.0719],
-        [53.0079, -8.0543],
-        [53.0153, -8.0336],
-        [53.0197, -8.0282],
-        [53.0237, -8.027],
-        [53.0256, -8.0248],
-        [53.0328, -8.0117],
-        [53.036, -7.9983],
-        [53.0429, -7.9955],
-        [53.0487, -7.9912],
-        [53.0621, -7.9743],
-        [53.0698, -7.9479],
-        [53.0737, -7.9423],
-        [53.0771, -7.9398],
-        [53.0817, -7.9323],
-        [53.0827, -7.9209],
-        [53.0849, -7.915],
-        [53.0878, -7.9167],
-        [53.0913, -7.9135]
+        [
+          52.9368,
+          -9.3453
+        ],
+        [
+          52.9336,
+          -9.3443
+        ],
+        [
+          52.9387,
+          -9.3156
+        ],
+        [
+          52.938,
+          -9.3102
+        ],
+        [
+          52.9396,
+          -9.2982
+        ],
+        [
+          52.9378,
+          -9.2897
+        ],
+        [
+          52.9284,
+          -9.2722
+        ],
+        [
+          52.9248,
+          -9.2552
+        ],
+        [
+          52.9182,
+          -9.2401
+        ],
+        [
+          52.9162,
+          -9.2376
+        ],
+        [
+          52.912,
+          -9.2355
+        ],
+        [
+          52.8999,
+          -9.208
+        ],
+        [
+          52.894,
+          -9.2038
+        ],
+        [
+          52.8922,
+          -9.1972
+        ],
+        [
+          52.8899,
+          -9.194
+        ],
+        [
+          52.8829,
+          -9.19
+        ],
+        [
+          52.8812,
+          -9.1793
+        ],
+        [
+          52.871,
+          -9.1675
+        ],
+        [
+          52.8678,
+          -9.1584
+        ],
+        [
+          52.8671,
+          -9.1494
+        ],
+        [
+          52.862,
+          -9.1255
+        ],
+        [
+          52.864,
+          -9.1133
+        ],
+        [
+          52.8611,
+          -9.1033
+        ],
+        [
+          52.8613,
+          -9.094
+        ],
+        [
+          52.8646,
+          -9.0802
+        ],
+        [
+          52.8642,
+          -9.0766
+        ],
+        [
+          52.8665,
+          -9.0701
+        ],
+        [
+          52.8658,
+          -9.0652
+        ],
+        [
+          52.8668,
+          -9.0592
+        ],
+        [
+          52.8631,
+          -9.0503
+        ],
+        [
+          52.8666,
+          -9.038
+        ],
+        [
+          52.8664,
+          -9.0286
+        ],
+        [
+          52.8642,
+          -9.0219
+        ],
+        [
+          52.8598,
+          -9.0186
+        ],
+        [
+          52.8538,
+          -9.0103
+        ],
+        [
+          52.8506,
+          -9.0026
+        ],
+        [
+          52.8481,
+          -8.9895
+        ],
+        [
+          52.843,
+          -8.9877
+        ],
+        [
+          52.8413,
+          -8.9841
+        ],
+        [
+          52.8396,
+          -8.9835
+        ],
+        [
+          52.8429,
+          -8.9784
+        ],
+        [
+          52.8433,
+          -8.982
+        ],
+        [
+          52.8429,
+          -8.9784
+        ],
+        [
+          52.8398,
+          -8.9817
+        ],
+        [
+          52.8396,
+          -8.9835
+        ],
+        [
+          52.8253,
+          -8.9776
+        ],
+        [
+          52.8276,
+          -8.9368
+        ],
+        [
+          52.8239,
+          -8.9381
+        ],
+        [
+          52.8143,
+          -8.9353
+        ],
+        [
+          52.7991,
+          -8.9231
+        ],
+        [
+          52.7943,
+          -8.9209
+        ],
+        [
+          52.7814,
+          -8.9216
+        ],
+        [
+          52.7715,
+          -8.9171
+        ],
+        [
+          52.764,
+          -8.9179
+        ],
+        [
+          52.7601,
+          -8.9163
+        ],
+        [
+          52.757,
+          -8.9128
+        ],
+        [
+          52.7495,
+          -8.8987
+        ],
+        [
+          52.7345,
+          -8.8889
+        ],
+        [
+          52.7294,
+          -8.8825
+        ],
+        [
+          52.7257,
+          -8.8736
+        ],
+        [
+          52.7235,
+          -8.8631
+        ],
+        [
+          52.7183,
+          -8.853
+        ],
+        [
+          52.7157,
+          -8.8402
+        ],
+        [
+          52.7013,
+          -8.8322
+        ],
+        [
+          52.6973,
+          -8.828
+        ],
+        [
+          52.6947,
+          -8.8195
+        ],
+        [
+          52.6952,
+          -8.8067
+        ],
+        [
+          52.6932,
+          -8.7886
+        ],
+        [
+          52.6929,
+          -8.7722
+        ],
+        [
+          52.6942,
+          -8.7607
+        ],
+        [
+          52.6889,
+          -8.7422
+        ],
+        [
+          52.6882,
+          -8.7323
+        ],
+        [
+          52.6825,
+          -8.7147
+        ],
+        [
+          52.6783,
+          -8.7074
+        ],
+        [
+          52.6744,
+          -8.7028
+        ],
+        [
+          52.6648,
+          -8.6977
+        ],
+        [
+          52.6615,
+          -8.6946
+        ],
+        [
+          52.6506,
+          -8.6799
+        ],
+        [
+          52.6441,
+          -8.6671
+        ],
+        [
+          52.6434,
+          -8.6454
+        ],
+        [
+          52.6386,
+          -8.5908
+        ],
+        [
+          52.644,
+          -8.5685
+        ],
+        [
+          52.6519,
+          -8.5565
+        ],
+        [
+          52.6579,
+          -8.5427
+        ],
+        [
+          52.6628,
+          -8.5202
+        ],
+        [
+          52.6665,
+          -8.5163
+        ],
+        [
+          52.6736,
+          -8.5157
+        ],
+        [
+          52.6765,
+          -8.5141
+        ],
+        [
+          52.6839,
+          -8.5013
+        ],
+        [
+          52.6942,
+          -8.4965
+        ],
+        [
+          52.7009,
+          -8.4874
+        ],
+        [
+          52.7207,
+          -8.4702
+        ],
+        [
+          52.7324,
+          -8.4565
+        ],
+        [
+          52.7485,
+          -8.429
+        ],
+        [
+          52.7639,
+          -8.3942
+        ],
+        [
+          52.7807,
+          -8.3735
+        ],
+        [
+          52.7851,
+          -8.366
+        ],
+        [
+          52.7903,
+          -8.3515
+        ],
+        [
+          52.7943,
+          -8.3333
+        ],
+        [
+          52.7998,
+          -8.3218
+        ],
+        [
+          52.8057,
+          -8.3153
+        ],
+        [
+          52.8243,
+          -8.302
+        ],
+        [
+          52.8381,
+          -8.2837
+        ],
+        [
+          52.8423,
+          -8.2731
+        ],
+        [
+          52.8456,
+          -8.2538
+        ],
+        [
+          52.8548,
+          -8.236
+        ],
+        [
+          52.8601,
+          -8.239
+        ],
+        [
+          52.8633,
+          -8.2387
+        ],
+        [
+          52.8751,
+          -8.2271
+        ],
+        [
+          52.8778,
+          -8.2143
+        ],
+        [
+          52.8777,
+          -8.2024
+        ],
+        [
+          52.8914,
+          -8.1889
+        ],
+        [
+          52.8996,
+          -8.1868
+        ],
+        [
+          52.9087,
+          -8.1815
+        ],
+        [
+          52.9161,
+          -8.1753
+        ],
+        [
+          52.9211,
+          -8.1734
+        ],
+        [
+          52.9279,
+          -8.1668
+        ],
+        [
+          52.9396,
+          -8.15
+        ],
+        [
+          52.9546,
+          -8.1398
+        ],
+        [
+          52.9592,
+          -8.1337
+        ],
+        [
+          52.962,
+          -8.1331
+        ],
+        [
+          52.9657,
+          -8.1348
+        ],
+        [
+          52.9705,
+          -8.135
+        ],
+        [
+          52.9804,
+          -8.1305
+        ],
+        [
+          52.989,
+          -8.1324
+        ],
+        [
+          52.9932,
+          -8.1279
+        ],
+        [
+          52.9976,
+          -8.127
+        ],
+        [
+          52.9989,
+          -8.1213
+        ],
+        [
+          52.9978,
+          -8.1177
+        ],
+        [
+          52.9995,
+          -8.1155
+        ],
+        [
+          53.0011,
+          -8.1082
+        ],
+        [
+          53.0001,
+          -8.1022
+        ],
+        [
+          53.001,
+          -8.0829
+        ],
+        [
+          53.0063,
+          -8.0719
+        ],
+        [
+          53.0079,
+          -8.0543
+        ],
+        [
+          53.0153,
+          -8.0336
+        ],
+        [
+          53.0197,
+          -8.0282
+        ],
+        [
+          53.0237,
+          -8.027
+        ],
+        [
+          53.0256,
+          -8.0248
+        ],
+        [
+          53.0328,
+          -8.0117
+        ],
+        [
+          53.036,
+          -7.9983
+        ],
+        [
+          53.0429,
+          -7.9955
+        ],
+        [
+          53.0487,
+          -7.9912
+        ],
+        [
+          53.0621,
+          -7.9743
+        ],
+        [
+          53.0698,
+          -7.9479
+        ],
+        [
+          53.0737,
+          -7.9423
+        ],
+        [
+          53.0771,
+          -7.9398
+        ],
+        [
+          53.0817,
+          -7.9323
+        ],
+        [
+          53.0827,
+          -7.9209
+        ],
+        [
+          53.0849,
+          -7.915
+        ],
+        [
+          53.0878,
+          -7.9167
+        ],
+        [
+          53.0913,
+          -7.9135
+        ]
       ],
       "practicalTips": [
         {
@@ -1961,12 +4533,18 @@
             "Fermeture a 18h en ete, arriver tot pour en profiter"
           ]
         }
-      ]
+      ],
+      "distanceKm": 147,
+      "driveMinutes": 124
     },
     {
       "day": 7,
       "shortLabel": "Trim",
-      "counties": ["Offaly", "Meath", "Dublin"],
+      "counties": [
+        "Offaly",
+        "Meath",
+        "Dublin"
+      ],
       "title": "Chateaux & colline sacree",
       "isoDate": "2026-08-22",
       "routeIcon": "fa-chess-rook",
@@ -1974,8 +4552,6 @@
       "morning": "Depart de Birr vers 9h. Derniere visite au domaine si le temps le permet. <strong>1h31</strong> de route jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Trim+Castle+Ireland\" target=\"_blank\"><strong>Trim Castle</strong></a>, le plus grand chateau normand d'Irlande (decor de Braveheart !). Visite du donjon et des remparts (1h). Dejeuner a Trim. Puis <strong>21 min</strong> jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Hill+of+Tara+Ireland\" target=\"_blank\"><strong>Hill of Tara</strong></a>, colline sacree des Hauts Rois d'Irlande — vue sur 40% de l'ile, Pierre du Destin (45 min). Puis <strong>42 min</strong> vers l'hotel de l'aeroport.",
       "night": "Nuit hotel aeroport Dublin",
       "nightInfo": "<strong>Ou dormir :</strong> <a href=\"https://www.google.com/maps/search/?api=1&query=Maldron+Hotel+Dublin+Airport+Ireland\" target=\"_blank\"><strong>Maldron Hotel Dublin Airport</strong></a> (dans l'enceinte, 267m des terminaux, accessible a pied, navette gratuite des 4h, ~120-180 EUR). Alternatives : <strong>Radisson Blu</strong> (petit-dej \"Grab &amp; Run\" pour vols matinaux), <strong>Carlton Hotel</strong> (formule Park &amp; Fly). <strong>Astuce :</strong> rendre la voiture NewWay le soir du 22 pour eliminer le stress du matin (confirmer les horaires matinaux de NewWay au +353 1 844 4199). Preparez valises et passeports ce soir. <strong>Reveil a 5h00</strong>.",
-      "distance": "~155 km",
-      "driveTime": "~2h34",
       "highlight": null,
       "mapCenter": {
         "lat": 53.5455,
@@ -1990,16 +4566,35 @@
           "icon": "fa-chess-rook",
           "iconClass": "castle",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Trim_Castle_6.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Trim+Castle+Ireland",
-          "web": "https://heritageireland.ie/places-to-visit/trim-castle/",
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g644237-d525404-Reviews-Trim_Castle-Trim_County_Meath.html",
-          "routard": "https://www.routard.com/fr/guide/europe/irlande/environs-de-dublin/trim-castle",
-          "alltrails": "https://www.alltrails.com/trail/ireland/county-meath/trim-castle-to-priory-of-st-john-the-baptist",
           "parking": {
             "location": "Tower View Car Park (le plus proche, vue sur le donjon)",
             "cost": "~2 EUR/jour",
             "gmaps": "https://www.google.com/maps/search/?api=1&query=Tower+View+Car+Park+Trim"
-          }
+          },
+          "lat": 53.5447,
+          "lng": -6.7878,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Trim+Castle+Ireland"
+            },
+            {
+              "type": "web",
+              "url": "https://heritageireland.ie/places-to-visit/trim-castle/"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g644237-d525404-Reviews-Trim_Castle-Trim_County_Meath.html"
+            },
+            {
+              "type": "routard",
+              "url": "https://www.routard.com/fr/guide/europe/irlande/environs-de-dublin/trim-castle"
+            },
+            {
+              "type": "alltrails",
+              "url": "https://www.alltrails.com/trail/ireland/county-meath/trim-castle-to-priory-of-st-john-the-baptist"
+            }
+          ]
         },
         {
           "name": "Hill of Tara",
@@ -2007,14 +4602,26 @@
           "icon": "fa-crown",
           "iconClass": "monument",
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/County_Meath_-_Hill_of_Tara_-_20180222160412.jpg/960px-County_Meath_-_Hill_of_Tara_-_20180222160412.jpg",
-          "gmaps": "https://www.google.com/maps/search/?api=1&query=Hill+of+Tara+Ireland",
-          "web": "https://heritageireland.ie/places-to-visit/hill-of-tara/",
-          "tripadvisor": "https://www.tripadvisor.fr/Attraction_Review-g186628-d526324-Reviews-Hill_of_Tara_Temair-County_Meath.html",
-          "routard": null,
           "parking": {
             "location": "Parking gratuit au centre des visiteurs",
             "cost": "Gratuit"
-          }
+          },
+          "lat": 53.5789,
+          "lng": -6.6114,
+          "links": [
+            {
+              "type": "gmaps",
+              "url": "https://www.google.com/maps/search/?api=1&query=Hill+of+Tara+Ireland"
+            },
+            {
+              "type": "web",
+              "url": "https://heritageireland.ie/places-to-visit/hill-of-tara/"
+            },
+            {
+              "type": "tripadvisor",
+              "url": "https://www.tripadvisor.fr/Attraction_Review-g186628-d526324-Reviews-Hill_of_Tara_Temair-County_Meath.html"
+            }
+          ]
         }
       ],
       "schedule": [
@@ -2118,156 +4725,606 @@
         "notes": "Heritage Card (40 EUR/adulte) rentable si vous visitez aussi d'autres sites Heritage Ireland. Trim Castle seul : pas rentable."
       },
       "dayRoute": [
-        [53.0913, -7.9135],
-        [53.0921, -7.9141],
-        [53.0934, -7.9127],
-        [53.0965, -7.9139],
-        [53.0964, -7.9107],
-        [53.1028, -7.907],
-        [53.1206, -7.8867],
-        [53.1224, -7.884],
-        [53.125, -7.8736],
-        [53.1322, -7.8581],
-        [53.1481, -7.8423],
-        [53.1586, -7.8238],
-        [53.1666, -7.7781],
-        [53.1689, -7.7509],
-        [53.1762, -7.7304],
-        [53.1768, -7.7231],
-        [53.1814, -7.71],
-        [53.1982, -7.6798],
-        [53.2022, -7.6672],
-        [53.2168, -7.6462],
-        [53.2269, -7.6204],
-        [53.2439, -7.5702],
-        [53.2534, -7.5574],
-        [53.2559, -7.5413],
-        [53.2541, -7.5203],
-        [53.2525, -7.5185],
-        [53.2511, -7.5124],
-        [53.2522, -7.5001],
-        [53.2515, -7.4902],
-        [53.254, -7.479],
-        [53.2583, -7.4681],
-        [53.2675, -7.4626],
-        [53.2775, -7.4675],
-        [53.282, -7.472],
-        [53.2879, -7.4843],
-        [53.295, -7.4824],
-        [53.2996, -7.4848],
-        [53.3151, -7.509],
-        [53.3173, -7.5108],
-        [53.3313, -7.5119],
-        [53.3381, -7.5081],
-        [53.354, -7.4959],
-        [53.3593, -7.4953],
-        [53.3584, -7.4893],
-        [53.3587, -7.4535],
-        [53.3604, -7.4226],
-        [53.362, -7.4136],
-        [53.3731, -7.3895],
-        [53.3835, -7.3726],
-        [53.3912, -7.3534],
-        [53.3946, -7.34],
-        [53.3993, -7.3064],
-        [53.4055, -7.2831],
-        [53.4169, -7.2593],
-        [53.4274, -7.2284],
-        [53.4417, -7.2061],
-        [53.4475, -7.1912],
-        [53.4502, -7.1542],
-        [53.449, -7.1268],
-        [53.4499, -7.1234],
-        [53.4527, -7.1239],
-        [53.4531, -7.1194],
-        [53.4547, -7.1171],
-        [53.4529, -7.1116],
-        [53.4524, -7.0957],
-        [53.4509, -7.0913],
-        [53.4516, -7.078],
-        [53.4493, -7.0597],
-        [53.4522, -7.0265],
-        [53.4489, -7.0126],
-        [53.4394, -6.9983],
-        [53.4364, -6.9899],
-        [53.4427, -6.9804],
-        [53.4509, -6.9609],
-        [53.4517, -6.9557],
-        [53.4505, -6.9527],
-        [53.4544, -6.94],
-        [53.4549, -6.9247],
-        [53.4747, -6.9044],
-        [53.4851, -6.8906],
-        [53.4913, -6.868],
-        [53.4948, -6.8599],
-        [53.5075, -6.8505],
-        [53.5215, -6.8238],
-        [53.5267, -6.8171],
-        [53.5413, -6.8056],
-        [53.5473, -6.7943],
-        [53.5447, -6.7911],
-        [53.5472, -6.794],
-        [53.5488, -6.7876],
-        [53.5522, -6.7868],
-        [53.5554, -6.7822],
-        [53.5583, -6.7819],
-        [53.5609, -6.7699],
-        [53.57, -6.7478],
-        [53.5735, -6.7277],
-        [53.5856, -6.7108],
-        [53.5852, -6.7071],
-        [53.5819, -6.7039],
-        [53.5802, -6.6969],
-        [53.5913, -6.6855],
-        [53.5928, -6.682],
-        [53.5942, -6.6569],
-        [53.5985, -6.6412],
-        [53.5955, -6.6372],
-        [53.5916, -6.6352],
-        [53.5916, -6.625],
-        [53.5821, -6.6104],
-        [53.58, -6.6089],
-        [53.5721, -6.6092],
-        [53.5647, -6.6067],
-        [53.5623, -6.6075],
-        [53.5483, -6.5974],
-        [53.5433, -6.5951],
-        [53.5497, -6.5723],
-        [53.5367, -6.5637],
-        [53.5304, -6.558],
-        [53.5259, -6.556],
-        [53.522, -6.5513],
-        [53.5137, -6.5571],
-        [53.51, -6.5563],
-        [53.5077, -6.5595],
-        [53.5056, -6.5583],
-        [53.5009, -6.5515],
-        [53.4926, -6.5332],
-        [53.4873, -6.5266],
-        [53.4795, -6.5204],
-        [53.4638, -6.5018],
-        [53.4544, -6.4831],
-        [53.4499, -6.4771],
-        [53.4436, -6.4714],
-        [53.4277, -6.4634],
-        [53.4157, -6.4486],
-        [53.4126, -6.443],
-        [53.4044, -6.4053],
-        [53.3861, -6.3701],
-        [53.3846, -6.3625],
-        [53.3888, -6.354],
-        [53.4052, -6.3092],
-        [53.4075, -6.298],
-        [53.4096, -6.2669],
-        [53.4119, -6.2654],
-        [53.4167, -6.2659],
-        [53.4183, -6.263],
-        [53.419, -6.2578],
-        [53.4176, -6.2386],
-        [53.4229, -6.2308],
-        [53.4244, -6.2338],
-        [53.423, -6.2354],
-        [53.4273, -6.2478]
+        [
+          53.0913,
+          -7.9135
+        ],
+        [
+          53.0921,
+          -7.9141
+        ],
+        [
+          53.0934,
+          -7.9127
+        ],
+        [
+          53.0965,
+          -7.9139
+        ],
+        [
+          53.0964,
+          -7.9107
+        ],
+        [
+          53.1028,
+          -7.907
+        ],
+        [
+          53.1206,
+          -7.8867
+        ],
+        [
+          53.1224,
+          -7.884
+        ],
+        [
+          53.125,
+          -7.8736
+        ],
+        [
+          53.1322,
+          -7.8581
+        ],
+        [
+          53.1481,
+          -7.8423
+        ],
+        [
+          53.1586,
+          -7.8238
+        ],
+        [
+          53.1666,
+          -7.7781
+        ],
+        [
+          53.1689,
+          -7.7509
+        ],
+        [
+          53.1762,
+          -7.7304
+        ],
+        [
+          53.1768,
+          -7.7231
+        ],
+        [
+          53.1814,
+          -7.71
+        ],
+        [
+          53.1982,
+          -7.6798
+        ],
+        [
+          53.2022,
+          -7.6672
+        ],
+        [
+          53.2168,
+          -7.6462
+        ],
+        [
+          53.2269,
+          -7.6204
+        ],
+        [
+          53.2439,
+          -7.5702
+        ],
+        [
+          53.2534,
+          -7.5574
+        ],
+        [
+          53.2559,
+          -7.5413
+        ],
+        [
+          53.2541,
+          -7.5203
+        ],
+        [
+          53.2525,
+          -7.5185
+        ],
+        [
+          53.2511,
+          -7.5124
+        ],
+        [
+          53.2522,
+          -7.5001
+        ],
+        [
+          53.2515,
+          -7.4902
+        ],
+        [
+          53.254,
+          -7.479
+        ],
+        [
+          53.2583,
+          -7.4681
+        ],
+        [
+          53.2675,
+          -7.4626
+        ],
+        [
+          53.2775,
+          -7.4675
+        ],
+        [
+          53.282,
+          -7.472
+        ],
+        [
+          53.2879,
+          -7.4843
+        ],
+        [
+          53.295,
+          -7.4824
+        ],
+        [
+          53.2996,
+          -7.4848
+        ],
+        [
+          53.3151,
+          -7.509
+        ],
+        [
+          53.3173,
+          -7.5108
+        ],
+        [
+          53.3313,
+          -7.5119
+        ],
+        [
+          53.3381,
+          -7.5081
+        ],
+        [
+          53.354,
+          -7.4959
+        ],
+        [
+          53.3593,
+          -7.4953
+        ],
+        [
+          53.3584,
+          -7.4893
+        ],
+        [
+          53.3587,
+          -7.4535
+        ],
+        [
+          53.3604,
+          -7.4226
+        ],
+        [
+          53.362,
+          -7.4136
+        ],
+        [
+          53.3731,
+          -7.3895
+        ],
+        [
+          53.3835,
+          -7.3726
+        ],
+        [
+          53.3912,
+          -7.3534
+        ],
+        [
+          53.3946,
+          -7.34
+        ],
+        [
+          53.3993,
+          -7.3064
+        ],
+        [
+          53.4055,
+          -7.2831
+        ],
+        [
+          53.4169,
+          -7.2593
+        ],
+        [
+          53.4274,
+          -7.2284
+        ],
+        [
+          53.4417,
+          -7.2061
+        ],
+        [
+          53.4475,
+          -7.1912
+        ],
+        [
+          53.4502,
+          -7.1542
+        ],
+        [
+          53.449,
+          -7.1268
+        ],
+        [
+          53.4499,
+          -7.1234
+        ],
+        [
+          53.4527,
+          -7.1239
+        ],
+        [
+          53.4531,
+          -7.1194
+        ],
+        [
+          53.4547,
+          -7.1171
+        ],
+        [
+          53.4529,
+          -7.1116
+        ],
+        [
+          53.4524,
+          -7.0957
+        ],
+        [
+          53.4509,
+          -7.0913
+        ],
+        [
+          53.4516,
+          -7.078
+        ],
+        [
+          53.4493,
+          -7.0597
+        ],
+        [
+          53.4522,
+          -7.0265
+        ],
+        [
+          53.4489,
+          -7.0126
+        ],
+        [
+          53.4394,
+          -6.9983
+        ],
+        [
+          53.4364,
+          -6.9899
+        ],
+        [
+          53.4427,
+          -6.9804
+        ],
+        [
+          53.4509,
+          -6.9609
+        ],
+        [
+          53.4517,
+          -6.9557
+        ],
+        [
+          53.4505,
+          -6.9527
+        ],
+        [
+          53.4544,
+          -6.94
+        ],
+        [
+          53.4549,
+          -6.9247
+        ],
+        [
+          53.4747,
+          -6.9044
+        ],
+        [
+          53.4851,
+          -6.8906
+        ],
+        [
+          53.4913,
+          -6.868
+        ],
+        [
+          53.4948,
+          -6.8599
+        ],
+        [
+          53.5075,
+          -6.8505
+        ],
+        [
+          53.5215,
+          -6.8238
+        ],
+        [
+          53.5267,
+          -6.8171
+        ],
+        [
+          53.5413,
+          -6.8056
+        ],
+        [
+          53.5473,
+          -6.7943
+        ],
+        [
+          53.5447,
+          -6.7911
+        ],
+        [
+          53.5472,
+          -6.794
+        ],
+        [
+          53.5488,
+          -6.7876
+        ],
+        [
+          53.5522,
+          -6.7868
+        ],
+        [
+          53.5554,
+          -6.7822
+        ],
+        [
+          53.5583,
+          -6.7819
+        ],
+        [
+          53.5609,
+          -6.7699
+        ],
+        [
+          53.57,
+          -6.7478
+        ],
+        [
+          53.5735,
+          -6.7277
+        ],
+        [
+          53.5856,
+          -6.7108
+        ],
+        [
+          53.5852,
+          -6.7071
+        ],
+        [
+          53.5819,
+          -6.7039
+        ],
+        [
+          53.5802,
+          -6.6969
+        ],
+        [
+          53.5913,
+          -6.6855
+        ],
+        [
+          53.5928,
+          -6.682
+        ],
+        [
+          53.5942,
+          -6.6569
+        ],
+        [
+          53.5985,
+          -6.6412
+        ],
+        [
+          53.5955,
+          -6.6372
+        ],
+        [
+          53.5916,
+          -6.6352
+        ],
+        [
+          53.5916,
+          -6.625
+        ],
+        [
+          53.5821,
+          -6.6104
+        ],
+        [
+          53.58,
+          -6.6089
+        ],
+        [
+          53.5721,
+          -6.6092
+        ],
+        [
+          53.5647,
+          -6.6067
+        ],
+        [
+          53.5623,
+          -6.6075
+        ],
+        [
+          53.5483,
+          -6.5974
+        ],
+        [
+          53.5433,
+          -6.5951
+        ],
+        [
+          53.5497,
+          -6.5723
+        ],
+        [
+          53.5367,
+          -6.5637
+        ],
+        [
+          53.5304,
+          -6.558
+        ],
+        [
+          53.5259,
+          -6.556
+        ],
+        [
+          53.522,
+          -6.5513
+        ],
+        [
+          53.5137,
+          -6.5571
+        ],
+        [
+          53.51,
+          -6.5563
+        ],
+        [
+          53.5077,
+          -6.5595
+        ],
+        [
+          53.5056,
+          -6.5583
+        ],
+        [
+          53.5009,
+          -6.5515
+        ],
+        [
+          53.4926,
+          -6.5332
+        ],
+        [
+          53.4873,
+          -6.5266
+        ],
+        [
+          53.4795,
+          -6.5204
+        ],
+        [
+          53.4638,
+          -6.5018
+        ],
+        [
+          53.4544,
+          -6.4831
+        ],
+        [
+          53.4499,
+          -6.4771
+        ],
+        [
+          53.4436,
+          -6.4714
+        ],
+        [
+          53.4277,
+          -6.4634
+        ],
+        [
+          53.4157,
+          -6.4486
+        ],
+        [
+          53.4126,
+          -6.443
+        ],
+        [
+          53.4044,
+          -6.4053
+        ],
+        [
+          53.3861,
+          -6.3701
+        ],
+        [
+          53.3846,
+          -6.3625
+        ],
+        [
+          53.3888,
+          -6.354
+        ],
+        [
+          53.4052,
+          -6.3092
+        ],
+        [
+          53.4075,
+          -6.298
+        ],
+        [
+          53.4096,
+          -6.2669
+        ],
+        [
+          53.4119,
+          -6.2654
+        ],
+        [
+          53.4167,
+          -6.2659
+        ],
+        [
+          53.4183,
+          -6.263
+        ],
+        [
+          53.419,
+          -6.2578
+        ],
+        [
+          53.4176,
+          -6.2386
+        ],
+        [
+          53.4229,
+          -6.2308
+        ],
+        [
+          53.4244,
+          -6.2338
+        ],
+        [
+          53.423,
+          -6.2354
+        ],
+        [
+          53.4273,
+          -6.2478
+        ]
       ],
       "practicalTips": [
         {
@@ -2300,12 +5357,16 @@
             "Commander le petit-dejeuner en chambre la veille si depart tres tot"
           ]
         }
-      ]
+      ],
+      "distanceKm": 155,
+      "driveMinutes": 154
     },
     {
       "day": 8,
       "shortLabel": "Retour",
-      "counties": ["Dublin"],
+      "counties": [
+        "Dublin"
+      ],
       "title": "Retour vers Nimes",
       "isoDate": "2026-08-23",
       "routeIcon": "fa-plane-departure",
@@ -2313,8 +5374,6 @@
       "morning": "Reveil <strong>5h00</strong>. Hotel → terminal en 5-10 min (passage couvert si Crowne Plaza). Restitution voiture <strong>NewWay</strong>. Enregistrement et securite. <strong>Arrivee a Nimes a 10h30</strong> — slan abhaile !",
       "night": null,
       "nightInfo": null,
-      "distance": null,
-      "driveTime": "5 min",
       "highlight": null,
       "mapCenter": {
         "lat": 53.4264,
@@ -2329,10 +5388,9 @@
           "icon": "fa-plane",
           "iconClass": "city",
           "photo": null,
-          "gmaps": null,
-          "web": null,
-          "tripadvisor": null,
-          "routard": null
+          "lat": 53.4273,
+          "lng": -6.2478,
+          "links": []
         }
       ],
       "schedule": [
@@ -2389,7 +5447,12 @@
         "total": 20,
         "notes": "Verifier si le petit-dejeuner est inclus dans la nuit d'hotel. Sinon, prevoir des provisions la veille."
       },
-      "dayRoute": [[53.4264, -6.2499]],
+      "dayRoute": [
+        [
+          53.4264,
+          -6.2499
+        ]
+      ],
       "practicalTips": [
         {
           "stop": "Vol Dublin - Nimes",
@@ -2402,944 +5465,10 @@
             "Prevoir de quoi occuper les enfants dans l'avion (cahiers, tablette)"
           ]
         }
-      ]
+      ],
+      "distanceKm": null,
+      "driveMinutes": 5
     }
-  ],
-  "routesByDay": [
-    [
-      [53.4273, -6.2478],
-      [53.4277, -6.2463],
-      [53.4305, -6.2453],
-      [53.4312, -6.2423],
-      [53.43, -6.2357],
-      [53.4293, -6.2378],
-      [53.4287, -6.2363],
-      [53.4271, -6.2159],
-      [53.4227, -6.2197],
-      [53.4088, -6.2275],
-      [53.3958, -6.2397],
-      [53.3825, -6.2436],
-      [53.3737, -6.2432],
-      [53.3673, -6.2347],
-      [53.3591, -6.2326],
-      [53.3551, -6.224],
-      [53.3535, -6.2232],
-      [53.3508, -6.2261],
-      [53.3467, -6.2279],
-      [53.3482, -6.25],
-      [53.3469, -6.2591],
-      [53.3498, -6.2604]
-    ],
-    [
-      [53.3498, -6.2604],
-      [53.3523, -6.262],
-      [53.35, -6.2678],
-      [53.351, -6.27],
-      [53.35, -6.2746],
-      [53.3454, -6.2758],
-      [53.3469, -6.2906],
-      [53.3434, -6.3073],
-      [53.3428, -6.32],
-      [53.3451, -6.3325],
-      [53.3449, -6.3451],
-      [53.3494, -6.3505],
-      [53.3505, -6.3561],
-      [53.3528, -6.3595],
-      [53.3567, -6.3802],
-      [53.3556, -6.3969],
-      [53.3587, -6.4112],
-      [53.3589, -6.4193],
-      [53.3581, -6.4236],
-      [53.3518, -6.4374],
-      [53.3508, -6.4476],
-      [53.352, -6.4546],
-      [53.357, -6.4654],
-      [53.3584, -6.4718],
-      [53.3577, -6.5111],
-      [53.3608, -6.5428],
-      [53.366, -6.5717],
-      [53.3673, -6.5934],
-      [53.3817, -6.6558],
-      [53.3869, -6.6682],
-      [53.4019, -6.6898],
-      [53.4053, -6.6978],
-      [53.4082, -6.7095],
-      [53.4121, -6.7614],
-      [53.4106, -6.7746],
-      [53.4053, -6.7942],
-      [53.4041, -6.8195],
-      [53.406, -6.8361],
-      [53.4128, -6.8614],
-      [53.4113, -6.891],
-      [53.4141, -6.9015],
-      [53.4216, -6.9126],
-      [53.4249, -6.9211],
-      [53.4264, -6.9455],
-      [53.4254, -6.9787],
-      [53.4279, -6.988],
-      [53.437, -7.0069],
-      [53.4407, -7.0206],
-      [53.4497, -7.1036],
-      [53.4486, -7.1332],
-      [53.4501, -7.1545],
-      [53.4483, -7.1847],
-      [53.4464, -7.1953],
-      [53.44, -7.2088],
-      [53.427, -7.2288],
-      [53.4168, -7.2592],
-      [53.4041, -7.2867],
-      [53.3989, -7.308],
-      [53.394, -7.3424],
-      [53.3897, -7.3575],
-      [53.3831, -7.3731],
-      [53.3726, -7.3902],
-      [53.3619, -7.4136],
-      [53.3603, -7.4226],
-      [53.3586, -7.4531],
-      [53.3592, -7.473],
-      [53.3582, -7.4916],
-      [53.3601, -7.5117],
-      [53.3636, -7.5245],
-      [53.3711, -7.5385],
-      [53.3817, -7.572],
-      [53.3866, -7.5994],
-      [53.3911, -7.613],
-      [53.3934, -7.6255],
-      [53.3932, -7.64],
-      [53.386, -7.6894],
-      [53.3858, -7.7226],
-      [53.3894, -7.7627],
-      [53.3927, -7.7791],
-      [53.3952, -7.8076],
-      [53.4008, -7.8399],
-      [53.4024, -7.869],
-      [53.4049, -7.8775],
-      [53.4087, -7.8831],
-      [53.4163, -7.8898],
-      [53.4225, -7.8921],
-      [53.4245, -7.8942],
-      [53.4309, -7.9254],
-      [53.4268, -7.9336],
-      [53.4231, -7.9353],
-      [53.4239, -7.9411],
-      [53.4235, -7.9431],
-      [53.4224, -7.9413],
-      [53.4218, -7.9459],
-      [53.4225, -7.949],
-      [53.4262, -7.9519],
-      [53.4249, -7.9578],
-      [53.4283, -7.9615],
-      [53.4258, -7.9659],
-      [53.4264, -7.9676],
-      [53.4242, -7.975],
-      [53.4155, -7.9896],
-      [53.4139, -8.0093],
-      [53.4075, -8.0216],
-      [53.4018, -8.0428],
-      [53.3964, -8.0484],
-      [53.3772, -8.0521],
-      [53.3618, -8.0629],
-      [53.3543, -8.065],
-      [53.3509, -8.0685],
-      [53.3462, -8.0789],
-      [53.3394, -8.1045],
-      [53.3296, -8.1237],
-      [53.3244, -8.1417],
-      [53.3168, -8.1618],
-      [53.3133, -8.1793],
-      [53.3127, -8.1923],
-      [53.3161, -8.2192],
-      [53.3163, -8.2363],
-      [53.3154, -8.245],
-      [53.3066, -8.2831],
-      [53.3082, -8.3063],
-      [53.3076, -8.3185],
-      [53.3035, -8.3352],
-      [53.2933, -8.3568],
-      [53.2898, -8.3827],
-      [53.2824, -8.4107],
-      [53.2814, -8.4358],
-      [53.2854, -8.468],
-      [53.2833, -8.5023],
-      [53.2782, -8.5276],
-      [53.2758, -8.5537],
-      [53.267, -8.5894],
-      [53.2649, -8.612],
-      [53.2651, -8.6254],
-      [53.2694, -8.6499],
-      [53.2701, -8.6673],
-      [53.2763, -8.7201],
-      [53.2824, -8.7492],
-      [53.2919, -8.7722],
-      [53.2958, -8.788],
-      [53.3001, -8.8587],
-      [53.2994, -8.8841],
-      [53.2954, -8.9136],
-      [53.2944, -8.9483],
-      [53.2924, -8.9589],
-      [53.2852, -8.9794],
-      [53.2917, -8.9863],
-      [53.2917, -8.9966],
-      [53.288, -9.0129],
-      [53.2884, -9.0177],
-      [53.2825, -9.0331],
-      [53.271, -9.0464],
-      [53.2716, -9.0495],
-      [53.27, -9.0519],
-      [53.2703, -9.0527],
-      [53.2721, -9.0503],
-      [53.2728, -9.0515],
-      [53.2718, -9.0529]
-    ],
-    [
-      [53.2718, -9.0529],
-      [53.2703, -9.0529],
-      [53.2695, -9.0574],
-      [53.2721, -9.0622],
-      [53.2808, -9.0642],
-      [53.2883, -9.0708],
-      [53.2924, -9.0857],
-      [53.3038, -9.1081],
-      [53.3089, -9.1272],
-      [53.3105, -9.1431],
-      [53.3225, -9.1621],
-      [53.3253, -9.1646],
-      [53.335, -9.1672],
-      [53.3423, -9.1737],
-      [53.344, -9.1777],
-      [53.3455, -9.1917],
-      [53.3689, -9.228],
-      [53.3738, -9.2422],
-      [53.3798, -9.2501],
-      [53.387, -9.2462],
-      [53.3919, -9.2486],
-      [53.3959, -9.2557],
-      [53.4002, -9.2703],
-      [53.4031, -9.276],
-      [53.4095, -9.2816],
-      [53.4217, -9.2977],
-      [53.4239, -9.3084],
-      [53.4286, -9.3191],
-      [53.4263, -9.3317],
-      [53.4258, -9.3403],
-      [53.4273, -9.3474],
-      [53.4241, -9.377],
-      [53.4195, -9.3891],
-      [53.4211, -9.3948],
-      [53.4208, -9.3991],
-      [53.4244, -9.408],
-      [53.4246, -9.4156],
-      [53.4285, -9.4222],
-      [53.4336, -9.4372],
-      [53.4404, -9.4486],
-      [53.4407, -9.4567],
-      [53.4434, -9.4661],
-      [53.4506, -9.4789],
-      [53.4509, -9.4876],
-      [53.4533, -9.4963],
-      [53.4533, -9.5222],
-      [53.4551, -9.5291],
-      [53.4559, -9.5408],
-      [53.4552, -9.5517],
-      [53.4513, -9.5715],
-      [53.4525, -9.5838],
-      [53.4572, -9.598],
-      [53.4554, -9.6099],
-      [53.4562, -9.6275],
-      [53.4538, -9.6418],
-      [53.4536, -9.6544],
-      [53.4577, -9.6658],
-      [53.4603, -9.6864],
-      [53.465, -9.6937],
-      [53.4653, -9.7008],
-      [53.4635, -9.7133],
-      [53.4671, -9.7313],
-      [53.4663, -9.7558],
-      [53.4641, -9.7567],
-      [53.4613, -9.7605],
-      [53.4567, -9.7794],
-      [53.4573, -9.7848],
-      [53.4623, -9.7955],
-      [53.4633, -9.8037],
-      [53.4623, -9.8084],
-      [53.4586, -9.8106],
-      [53.4588, -9.8196],
-      [53.4565, -9.8214],
-      [53.4549, -9.8271],
-      [53.4576, -9.8579],
-      [53.4571, -9.8645],
-      [53.4528, -9.8681],
-      [53.451, -9.8719],
-      [53.4453, -9.8782],
-      [53.4429, -9.8771],
-      [53.4424, -9.8724],
-      [53.4398, -9.8685],
-      [53.4359, -9.8711],
-      [53.4359, -9.8844],
-      [53.4342, -9.8938],
-      [53.4302, -9.8935],
-      [53.4277, -9.8951],
-      [53.4155, -9.9171],
-      [53.4096, -9.917],
-      [53.406, -9.9201],
-      [53.3995, -9.9184],
-      [53.3964, -9.919],
-      [53.3963, -9.9208],
-      [53.3959, -9.9198],
-      [53.3953, -9.9211],
-      [53.3935, -9.9207],
-      [53.3837, -9.9493],
-      [53.386, -9.962],
-      [53.3826, -9.9639],
-      [53.3803, -9.962],
-      [53.3818, -9.9639],
-      [53.3856, -9.9631],
-      [53.3853, -9.9716],
-      [53.3865, -9.9751],
-      [53.3912, -9.9784],
-      [53.3927, -9.9826],
-      [53.3926, -9.9923],
-      [53.3955, -10.0049],
-      [53.395, -10.0171],
-      [53.3966, -10.0271],
-      [53.3993, -10.0301],
-      [53.4089, -10.0348],
-      [53.4136, -10.0437],
-      [53.4167, -10.0576],
-      [53.4252, -10.0683],
-      [53.4297, -10.056],
-      [53.4284, -10.0487],
-      [53.4326, -10.03],
-      [53.4317, -10.0159],
-      [53.429, -10.014],
-      [53.4267, -10.0056],
-      [53.4289, -10.0138],
-      [53.4316, -10.0158],
-      [53.4327, -10.0258],
-      [53.4284, -10.0488],
-      [53.4297, -10.0562],
-      [53.4253, -10.0682],
-      [53.4323, -10.076],
-      [53.4429, -10.0624],
-      [53.4499, -10.0599],
-      [53.4559, -10.0522],
-      [53.4583, -10.0382],
-      [53.4611, -10.0313],
-      [53.4617, -10.021],
-      [53.464, -10.0178],
-      [53.4791, -10.0201],
-      [53.4855, -10.0245],
-      [53.4873, -10.019],
-      [53.4891, -10.0287],
-      [53.488, -10.0392],
-      [53.4934, -10.052],
-      [53.4955, -10.0775],
-      [53.5007, -10.0965]
-    ],
-    [
-      [53.5007, -10.0965],
-      [53.4955, -10.0775],
-      [53.4932, -10.0511],
-      [53.4882, -10.0404],
-      [53.4894, -10.0237],
-      [53.4879, -10.0192],
-      [53.4868, -10.019],
-      [53.4868, -10.0223],
-      [53.4854, -10.0245],
-      [53.4794, -10.0201],
-      [53.4751, -10.02],
-      [53.4724, -10.0184],
-      [53.4707, -10.0191],
-      [53.4662, -10.0172],
-      [53.4639, -10.0181],
-      [53.4618, -10.0206],
-      [53.461, -10.0317],
-      [53.4586, -10.0368],
-      [53.4559, -10.0521],
-      [53.4541, -10.0552],
-      [53.4496, -10.0599],
-      [53.4428, -10.0625],
-      [53.4332, -10.0758],
-      [53.4309, -10.0752],
-      [53.4277, -10.072],
-      [53.4253, -10.0685],
-      [53.4297, -10.056],
-      [53.4284, -10.0487],
-      [53.4326, -10.03],
-      [53.4328, -10.021],
-      [53.4317, -10.0159],
-      [53.429, -10.014],
-      [53.4267, -10.0056],
-      [53.4289, -10.0138],
-      [53.4316, -10.0158],
-      [53.4327, -10.0258],
-      [53.4284, -10.0488],
-      [53.4297, -10.0562],
-      [53.4253, -10.0682],
-      [53.4323, -10.076],
-      [53.4429, -10.0624],
-      [53.4499, -10.0599],
-      [53.4559, -10.0522],
-      [53.4583, -10.0382],
-      [53.4611, -10.0313],
-      [53.4617, -10.021],
-      [53.464, -10.0178],
-      [53.4791, -10.0201],
-      [53.4855, -10.0245],
-      [53.4868, -10.019],
-      [53.4882, -10.0228],
-      [53.491, -10.0194],
-      [53.4939, -10.0268],
-      [53.5011, -10.0251],
-      [53.5045, -10.0368],
-      [53.5083, -10.0375],
-      [53.5093, -10.0402],
-      [53.5108, -10.0407],
-      [53.5139, -10.0361],
-      [53.5165, -10.0409],
-      [53.5194, -10.0412],
-      [53.5231, -10.0482],
-      [53.5276, -10.048],
-      [53.5313, -10.0393],
-      [53.5363, -10.0369],
-      [53.5373, -10.0316],
-      [53.5414, -10.0291],
-      [53.5421, -10.0264],
-      [53.5421, -10.0147],
-      [53.5408, -10.0088],
-      [53.5439, -10.0038],
-      [53.5434, -9.9829],
-      [53.5445, -9.9744],
-      [53.5467, -9.9735],
-      [53.5476, -9.9696],
-      [53.5501, -9.9684],
-      [53.5521, -9.9511],
-      [53.5566, -9.9412],
-      [53.5615, -9.925],
-      [53.5606, -9.9208],
-      [53.5614, -9.9168],
-      [53.5594, -9.9116],
-      [53.5583, -9.8905],
-      [53.5604, -9.8925],
-      [53.5616, -9.8922],
-      [53.5587, -9.8894],
-      [53.5594, -9.9116],
-      [53.5613, -9.9166],
-      [53.5615, -9.925],
-      [53.5536, -9.9483],
-      [53.5517, -9.9454],
-      [53.5541, -9.9476],
-      [53.5615, -9.925],
-      [53.5606, -9.9208],
-      [53.5614, -9.9168],
-      [53.5594, -9.9116],
-      [53.558, -9.8839],
-      [53.5603, -9.8791],
-      [53.5598, -9.8752],
-      [53.5627, -9.8621],
-      [53.5642, -9.8321],
-      [53.5605, -9.8142],
-      [53.5538, -9.8074],
-      [53.5472, -9.7868],
-      [53.5345, -9.7704],
-      [53.5271, -9.7498],
-      [53.5175, -9.7381],
-      [53.5131, -9.7356],
-      [53.5111, -9.7328],
-      [53.5076, -9.7345],
-      [53.5051, -9.7318],
-      [53.5029, -9.7348],
-      [53.4971, -9.7347],
-      [53.4927, -9.7384],
-      [53.4783, -9.7418],
-      [53.4695, -9.7487],
-      [53.4666, -9.7535],
-      [53.467, -9.7293],
-      [53.4635, -9.7131],
-      [53.4653, -9.6952],
-      [53.4602, -9.686],
-      [53.4577, -9.6658],
-      [53.4536, -9.6547],
-      [53.4538, -9.6421],
-      [53.4562, -9.6275],
-      [53.4555, -9.6086],
-      [53.4572, -9.598],
-      [53.4525, -9.5838],
-      [53.4513, -9.5715],
-      [53.4552, -9.5517],
-      [53.4559, -9.5405],
-      [53.4533, -9.5222],
-      [53.4533, -9.4963],
-      [53.4509, -9.4876],
-      [53.4506, -9.4789],
-      [53.4433, -9.4658],
-      [53.4408, -9.4569],
-      [53.4404, -9.4486],
-      [53.4336, -9.4371],
-      [53.4286, -9.4225],
-      [53.4244, -9.4153],
-      [53.4245, -9.4084],
-      [53.4208, -9.3991],
-      [53.4211, -9.3946],
-      [53.4195, -9.3886],
-      [53.4241, -9.377],
-      [53.4273, -9.3479],
-      [53.4258, -9.3403],
-      [53.4263, -9.3317],
-      [53.4285, -9.3188],
-      [53.4239, -9.3085],
-      [53.4217, -9.2977],
-      [53.4095, -9.2816],
-      [53.4031, -9.276],
-      [53.4002, -9.2703],
-      [53.3963, -9.2566],
-      [53.3922, -9.249],
-      [53.3875, -9.2462],
-      [53.3798, -9.2501],
-      [53.3736, -9.2418],
-      [53.3689, -9.228],
-      [53.3455, -9.1917],
-      [53.3428, -9.1742],
-      [53.335, -9.1672],
-      [53.3237, -9.1632],
-      [53.3106, -9.1433],
-      [53.3089, -9.1272],
-      [53.3039, -9.1084],
-      [53.2924, -9.0857],
-      [53.2884, -9.071],
-      [53.2808, -9.0642],
-      [53.2724, -9.0626],
-      [53.2695, -9.0574],
-      [53.2721, -9.0503],
-      [53.2728, -9.0515],
-      [53.2718, -9.0529]
-    ],
-    [
-      [53.2718, -9.0529],
-      [53.2704, -9.0529],
-      [53.2726, -9.0495],
-      [53.2713, -9.049],
-      [53.2709, -9.0466],
-      [53.2827, -9.0329],
-      [53.2884, -9.0176],
-      [53.289, -9.0147],
-      [53.288, -9.0128],
-      [53.2923, -8.9913],
-      [53.2918, -8.9861],
-      [53.2794, -8.9726],
-      [53.2773, -8.9269],
-      [53.275, -8.921],
-      [53.2719, -8.9177],
-      [53.2641, -8.9227],
-      [53.2604, -8.9212],
-      [53.2528, -8.9061],
-      [53.2463, -8.8989],
-      [53.2363, -8.8823],
-      [53.2277, -8.8803],
-      [53.2177, -8.8725],
-      [53.2127, -8.871],
-      [53.2079, -8.8675],
-      [53.1973, -8.8889],
-      [53.1917, -8.8955],
-      [53.1871, -8.908],
-      [53.1773, -8.9172],
-      [53.1726, -8.9191],
-      [53.1589, -8.9193],
-      [53.1534, -8.9177],
-      [53.1467, -8.9188],
-      [53.1408, -8.9269],
-      [53.1388, -8.9371],
-      [53.1384, -8.9489],
-      [53.1443, -8.984],
-      [53.1425, -8.9913],
-      [53.139, -9.0262],
-      [53.1314, -9.0361],
-      [53.1285, -9.045],
-      [53.1241, -9.0509],
-      [53.1189, -9.0622],
-      [53.1113, -9.0692],
-      [53.1062, -9.0711],
-      [53.0956, -9.0675],
-      [53.0931, -9.0679],
-      [53.0881, -9.0704],
-      [53.0847, -9.074],
-      [53.0805, -9.0746],
-      [53.0733, -9.0824],
-      [53.0685, -9.0834],
-      [53.0648, -9.0874],
-      [53.0626, -9.0877],
-      [53.0588, -9.0851],
-      [53.0521, -9.0835],
-      [53.0461, -9.0763],
-      [53.0402, -9.0756],
-      [53.0294, -9.0773],
-      [53.0204, -9.0894],
-      [53.0177, -9.0972],
-      [53.0128, -9.1051],
-      [53.0066, -9.1276],
-      [53.0141, -9.1302],
-      [53.0162, -9.1189],
-      [53.0146, -9.1305],
-      [53.0254, -9.1359],
-      [53.0288, -9.1363],
-      [53.0311, -9.1347],
-      [53.0326, -9.1368],
-      [53.0384, -9.1353],
-      [53.0476, -9.1415],
-      [53.0483, -9.1385],
-      [53.0476, -9.1415],
-      [53.0517, -9.1454],
-      [53.05, -9.1472],
-      [53.0459, -9.164],
-      [53.0406, -9.17],
-      [53.0414, -9.1777],
-      [53.0381, -9.1905],
-      [53.0403, -9.1986],
-      [53.0282, -9.2153],
-      [53.0232, -9.2153],
-      [53.02, -9.2184],
-      [53.0119, -9.2226],
-      [53.0159, -9.2327],
-      [53.0211, -9.2566],
-      [53.0237, -9.2616],
-      [53.0216, -9.2731],
-      [53.0248, -9.2847],
-      [53.0249, -9.2905],
-      [53.022, -9.3053],
-      [53.0141, -9.3283],
-      [53.0127, -9.3416],
-      [53.0077, -9.3542],
-      [53.0071, -9.3606],
-      [53.0031, -9.3736],
-      [52.9926, -9.402],
-      [52.9881, -9.407],
-      [52.9838, -9.4172],
-      [52.9798, -9.4226],
-      [52.9784, -9.4205],
-      [52.9703, -9.4246],
-      [52.9715, -9.4259],
-      [52.9714, -9.4248],
-      [52.9679, -9.4256],
-      [52.9542, -9.4206],
-      [52.9486, -9.4253],
-      [52.9431, -9.4238],
-      [52.9429, -9.408],
-      [52.9406, -9.4035],
-      [52.9383, -9.3928],
-      [52.9388, -9.3888],
-      [52.9444, -9.3762],
-      [52.9445, -9.364],
-      [52.9479, -9.3542],
-      [52.9457, -9.3513],
-      [52.9368, -9.3453]
-    ],
-    [
-      [52.9368, -9.3453],
-      [52.9336, -9.3443],
-      [52.9387, -9.3156],
-      [52.938, -9.3102],
-      [52.9396, -9.2982],
-      [52.9378, -9.2897],
-      [52.9284, -9.2722],
-      [52.9248, -9.2552],
-      [52.9182, -9.2401],
-      [52.9162, -9.2376],
-      [52.912, -9.2355],
-      [52.8999, -9.208],
-      [52.894, -9.2038],
-      [52.8922, -9.1972],
-      [52.8899, -9.194],
-      [52.8829, -9.19],
-      [52.8812, -9.1793],
-      [52.871, -9.1675],
-      [52.8678, -9.1584],
-      [52.8671, -9.1494],
-      [52.862, -9.1255],
-      [52.864, -9.1133],
-      [52.8611, -9.1033],
-      [52.8613, -9.094],
-      [52.8646, -9.0802],
-      [52.8642, -9.0766],
-      [52.8665, -9.0701],
-      [52.8658, -9.0652],
-      [52.8668, -9.0592],
-      [52.8631, -9.0503],
-      [52.8666, -9.038],
-      [52.8664, -9.0286],
-      [52.8642, -9.0219],
-      [52.8598, -9.0186],
-      [52.8538, -9.0103],
-      [52.8506, -9.0026],
-      [52.8481, -8.9895],
-      [52.843, -8.9877],
-      [52.8413, -8.9841],
-      [52.8396, -8.9835],
-      [52.8429, -8.9784],
-      [52.8433, -8.982],
-      [52.8429, -8.9784],
-      [52.8398, -8.9817],
-      [52.8396, -8.9835],
-      [52.8253, -8.9776],
-      [52.8276, -8.9368],
-      [52.8239, -8.9381],
-      [52.8143, -8.9353],
-      [52.7991, -8.9231],
-      [52.7943, -8.9209],
-      [52.7814, -8.9216],
-      [52.7715, -8.9171],
-      [52.764, -8.9179],
-      [52.7601, -8.9163],
-      [52.757, -8.9128],
-      [52.7495, -8.8987],
-      [52.7345, -8.8889],
-      [52.7294, -8.8825],
-      [52.7257, -8.8736],
-      [52.7235, -8.8631],
-      [52.7183, -8.853],
-      [52.7157, -8.8402],
-      [52.7013, -8.8322],
-      [52.6973, -8.828],
-      [52.6947, -8.8195],
-      [52.6952, -8.8067],
-      [52.6932, -8.7886],
-      [52.6929, -8.7722],
-      [52.6942, -8.7607],
-      [52.6889, -8.7422],
-      [52.6882, -8.7323],
-      [52.6825, -8.7147],
-      [52.6783, -8.7074],
-      [52.6744, -8.7028],
-      [52.6648, -8.6977],
-      [52.6615, -8.6946],
-      [52.6506, -8.6799],
-      [52.6441, -8.6671],
-      [52.6434, -8.6454],
-      [52.6386, -8.5908],
-      [52.644, -8.5685],
-      [52.6519, -8.5565],
-      [52.6579, -8.5427],
-      [52.6628, -8.5202],
-      [52.6665, -8.5163],
-      [52.6736, -8.5157],
-      [52.6765, -8.5141],
-      [52.6839, -8.5013],
-      [52.6942, -8.4965],
-      [52.7009, -8.4874],
-      [52.7207, -8.4702],
-      [52.7324, -8.4565],
-      [52.7485, -8.429],
-      [52.7639, -8.3942],
-      [52.7807, -8.3735],
-      [52.7851, -8.366],
-      [52.7903, -8.3515],
-      [52.7943, -8.3333],
-      [52.7998, -8.3218],
-      [52.8057, -8.3153],
-      [52.8243, -8.302],
-      [52.8381, -8.2837],
-      [52.8423, -8.2731],
-      [52.8456, -8.2538],
-      [52.8548, -8.236],
-      [52.8601, -8.239],
-      [52.8633, -8.2387],
-      [52.8751, -8.2271],
-      [52.8778, -8.2143],
-      [52.8777, -8.2024],
-      [52.8914, -8.1889],
-      [52.8996, -8.1868],
-      [52.9087, -8.1815],
-      [52.9161, -8.1753],
-      [52.9211, -8.1734],
-      [52.9279, -8.1668],
-      [52.9396, -8.15],
-      [52.9546, -8.1398],
-      [52.9592, -8.1337],
-      [52.962, -8.1331],
-      [52.9657, -8.1348],
-      [52.9705, -8.135],
-      [52.9804, -8.1305],
-      [52.989, -8.1324],
-      [52.9932, -8.1279],
-      [52.9976, -8.127],
-      [52.9989, -8.1213],
-      [52.9978, -8.1177],
-      [52.9995, -8.1155],
-      [53.0011, -8.1082],
-      [53.0001, -8.1022],
-      [53.001, -8.0829],
-      [53.0063, -8.0719],
-      [53.0079, -8.0543],
-      [53.0153, -8.0336],
-      [53.0197, -8.0282],
-      [53.0237, -8.027],
-      [53.0256, -8.0248],
-      [53.0328, -8.0117],
-      [53.036, -7.9983],
-      [53.0429, -7.9955],
-      [53.0487, -7.9912],
-      [53.0621, -7.9743],
-      [53.0698, -7.9479],
-      [53.0737, -7.9423],
-      [53.0771, -7.9398],
-      [53.0817, -7.9323],
-      [53.0827, -7.9209],
-      [53.0849, -7.915],
-      [53.0878, -7.9167],
-      [53.0913, -7.9135]
-    ],
-    [
-      [53.0913, -7.9135],
-      [53.0921, -7.9141],
-      [53.0934, -7.9127],
-      [53.0965, -7.9139],
-      [53.0964, -7.9107],
-      [53.1028, -7.907],
-      [53.1206, -7.8867],
-      [53.1224, -7.884],
-      [53.125, -7.8736],
-      [53.1322, -7.8581],
-      [53.1481, -7.8423],
-      [53.1586, -7.8238],
-      [53.1666, -7.7781],
-      [53.1689, -7.7509],
-      [53.1762, -7.7304],
-      [53.1768, -7.7231],
-      [53.1814, -7.71],
-      [53.1982, -7.6798],
-      [53.2022, -7.6672],
-      [53.2168, -7.6462],
-      [53.2269, -7.6204],
-      [53.2439, -7.5702],
-      [53.2534, -7.5574],
-      [53.2559, -7.5413],
-      [53.2541, -7.5203],
-      [53.2525, -7.5185],
-      [53.2511, -7.5124],
-      [53.2522, -7.5001],
-      [53.2515, -7.4902],
-      [53.254, -7.479],
-      [53.2583, -7.4681],
-      [53.2675, -7.4626],
-      [53.2775, -7.4675],
-      [53.282, -7.472],
-      [53.2879, -7.4843],
-      [53.295, -7.4824],
-      [53.2996, -7.4848],
-      [53.3151, -7.509],
-      [53.3173, -7.5108],
-      [53.3313, -7.5119],
-      [53.3381, -7.5081],
-      [53.354, -7.4959],
-      [53.3593, -7.4953],
-      [53.3584, -7.4893],
-      [53.3587, -7.4535],
-      [53.3604, -7.4226],
-      [53.362, -7.4136],
-      [53.3731, -7.3895],
-      [53.3835, -7.3726],
-      [53.3912, -7.3534],
-      [53.3946, -7.34],
-      [53.3993, -7.3064],
-      [53.4055, -7.2831],
-      [53.4169, -7.2593],
-      [53.4274, -7.2284],
-      [53.4417, -7.2061],
-      [53.4475, -7.1912],
-      [53.4502, -7.1542],
-      [53.449, -7.1268],
-      [53.4499, -7.1234],
-      [53.4527, -7.1239],
-      [53.4531, -7.1194],
-      [53.4547, -7.1171],
-      [53.4529, -7.1116],
-      [53.4524, -7.0957],
-      [53.4509, -7.0913],
-      [53.4516, -7.078],
-      [53.4493, -7.0597],
-      [53.4522, -7.0265],
-      [53.4489, -7.0126],
-      [53.4394, -6.9983],
-      [53.4364, -6.9899],
-      [53.4427, -6.9804],
-      [53.4509, -6.9609],
-      [53.4517, -6.9557],
-      [53.4505, -6.9527],
-      [53.4544, -6.94],
-      [53.4549, -6.9247],
-      [53.4747, -6.9044],
-      [53.4851, -6.8906],
-      [53.4913, -6.868],
-      [53.4948, -6.8599],
-      [53.5075, -6.8505],
-      [53.5215, -6.8238],
-      [53.5267, -6.8171],
-      [53.5413, -6.8056],
-      [53.5473, -6.7943],
-      [53.5447, -6.7911],
-      [53.5472, -6.794],
-      [53.5488, -6.7876],
-      [53.5522, -6.7868],
-      [53.5554, -6.7822],
-      [53.5583, -6.7819],
-      [53.5609, -6.7699],
-      [53.57, -6.7478],
-      [53.5735, -6.7277],
-      [53.5856, -6.7108],
-      [53.5852, -6.7071],
-      [53.5819, -6.7039],
-      [53.5802, -6.6969],
-      [53.5913, -6.6855],
-      [53.5928, -6.682],
-      [53.5942, -6.6569],
-      [53.5985, -6.6412],
-      [53.5955, -6.6372],
-      [53.5916, -6.6352],
-      [53.5916, -6.625],
-      [53.5821, -6.6104],
-      [53.58, -6.6089],
-      [53.5721, -6.6092],
-      [53.5647, -6.6067],
-      [53.5623, -6.6075],
-      [53.5483, -6.5974],
-      [53.5433, -6.5951],
-      [53.5497, -6.5723],
-      [53.5367, -6.5637],
-      [53.5304, -6.558],
-      [53.5259, -6.556],
-      [53.522, -6.5513],
-      [53.5137, -6.5571],
-      [53.51, -6.5563],
-      [53.5077, -6.5595],
-      [53.5056, -6.5583],
-      [53.5009, -6.5515],
-      [53.4926, -6.5332],
-      [53.4873, -6.5266],
-      [53.4795, -6.5204],
-      [53.4638, -6.5018],
-      [53.4544, -6.4831],
-      [53.4499, -6.4771],
-      [53.4436, -6.4714],
-      [53.4277, -6.4634],
-      [53.4157, -6.4486],
-      [53.4126, -6.443],
-      [53.4044, -6.4053],
-      [53.3861, -6.3701],
-      [53.3846, -6.3625],
-      [53.3888, -6.354],
-      [53.4052, -6.3092],
-      [53.4075, -6.298],
-      [53.4096, -6.2669],
-      [53.4119, -6.2654],
-      [53.4167, -6.2659],
-      [53.4183, -6.263],
-      [53.419, -6.2578],
-      [53.4176, -6.2386],
-      [53.4229, -6.2308],
-      [53.4244, -6.2338],
-      [53.423, -6.2354],
-      [53.4273, -6.2478]
-    ],
-    [[53.4264, -6.2499]]
   ],
   "pois": {
     "castles": [

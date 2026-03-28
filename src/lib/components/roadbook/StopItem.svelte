@@ -1,10 +1,18 @@
 <script>
-  import { extractCoords } from '$lib/utils/coords.js';
+  import { gmapsUrl, wazeUrl, walkUrl } from '$lib/utils/coords.js';
 
   let { stop } = $props();
 
-  let coords = $derived(extractCoords(stop.gmaps));
-  let hasHike = $derived(stop.alltrails || stop.trailMap);
+  let hasHike = $derived(stop.links.some((l) => l.type === 'alltrails' || l.type === 'trailMap'));
+
+  const LINK_META = {
+    gmaps: { icon: 'fa-map-pin', label: 'Maps', class: 'link-map' },
+    web: { icon: 'fa-globe', label: 'Site officiel', class: 'link-web' },
+    tripadvisor: { icon: 'fa-star', label: 'TripAdvisor', class: 'link-ta' },
+    routard: { icon: 'fa-book-open', label: 'Routard', class: 'link-routard' },
+    alltrails: { icon: 'fa-person-hiking', label: 'AllTrails', class: 'link-trail' },
+    trailMap: { icon: 'fa-map', label: 'Carte rando', class: 'link-trail' }
+  };
 </script>
 
 <li class="day-stop">
@@ -38,29 +46,17 @@
         </div>
       {/if}
 
-      {#if stop.gmaps || stop.web || stop.tripadvisor || stop.routard || stop.alltrails || stop.trailMap}
+      {#if stop.links.length > 0 || stop.lat}
         <div class="stop-links">
-          {#if stop.gmaps}
-            <a href={stop.gmaps} target="_blank" class="link-map"><i class="fa-solid fa-map-pin"></i> Maps</a>
-          {/if}
-          {#if coords}
-            <a href="https://waze.com/ul?ll={coords[0]},{coords[1]}&navigate=yes" target="_blank" class="link-waze"><i class="fa-solid fa-car"></i> Waze</a>
-            <a href="https://www.google.com/maps/dir/?api=1&destination={coords[0]},{coords[1]}&travelmode=walking" target="_blank" class="link-walk"><i class="fa-solid fa-person-walking"></i> A pied</a>
-          {/if}
-          {#if stop.web}
-            <a href={stop.web} target="_blank" class="link-web"><i class="fa-solid fa-globe"></i> Site officiel</a>
-          {/if}
-          {#if stop.tripadvisor}
-            <a href={stop.tripadvisor} target="_blank" class="link-ta"><i class="fa-solid fa-star"></i> TripAdvisor</a>
-          {/if}
-          {#if stop.routard}
-            <a href={stop.routard} target="_blank" class="link-routard"><i class="fa-solid fa-book-open"></i> Routard</a>
-          {/if}
-          {#if stop.alltrails}
-            <a href={stop.alltrails} target="_blank" class="link-trail"><i class="fa-solid fa-person-hiking"></i> AllTrails</a>
-          {/if}
-          {#if stop.trailMap}
-            <a href={stop.trailMap} target="_blank" class="link-trail"><i class="fa-solid fa-map"></i> Carte rando</a>
+          {#each stop.links as link (link.type)}
+            {@const meta = LINK_META[link.type]}
+            {#if meta}
+              <a href={link.url} target="_blank" class={meta.class}><i class="fa-solid {meta.icon}"></i> {meta.label}</a>
+            {/if}
+          {/each}
+          {#if stop.lat}
+            <a href={wazeUrl(stop.lat, stop.lng)} target="_blank" class="link-waze"><i class="fa-solid fa-car"></i> Waze</a>
+            <a href={walkUrl(stop.lat, stop.lng)} target="_blank" class="link-walk"><i class="fa-solid fa-person-walking"></i> A pied</a>
           {/if}
         </div>
       {/if}
