@@ -56,7 +56,7 @@
               <a href={link.url} target="_blank" class={meta.class}><i class="fa-solid {meta.icon}"></i> {meta.label}</a>
             {/if}
           {/each}
-          {#if stop.lat}
+          {#if stop.lat && stop.lng}
             <a href={wazeUrl(stop.lat, stop.lng)} target="_blank" class="link-waze"><i class="fa-solid fa-car"></i> Waze</a>
             <a href={walkUrl(stop.lat, stop.lng)} target="_blank" class="link-walk"><i class="fa-solid fa-person-walking"></i> A pied</a>
           {/if}
