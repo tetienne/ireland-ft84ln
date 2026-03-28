@@ -1,19 +1,19 @@
-import { parseIsoDate } from './dates.js';
+import { parseIsoDate } from "./dates.js";
 
 const WEATHER_TABLE = [
-  { max: 1, icon: 'fa-sun', label: 'Ensoleillé' },
-  { max: 3, icon: 'fa-cloud-sun', label: 'Nuageux' },
-  { max: 48, icon: 'fa-cloud', label: 'Couvert' },
-  { max: 67, icon: 'fa-cloud-rain', label: 'Pluie' },
-  { max: 77, icon: 'fa-snowflake', label: 'Neige' },
-  { max: 82, icon: 'fa-cloud-showers-heavy', label: 'Averses' }
+  { max: 1, icon: "fa-sun", label: "Ensoleillé" },
+  { max: 3, icon: "fa-cloud-sun", label: "Nuageux" },
+  { max: 48, icon: "fa-cloud", label: "Couvert" },
+  { max: 67, icon: "fa-cloud-rain", label: "Pluie" },
+  { max: 77, icon: "fa-snowflake", label: "Neige" },
+  { max: 82, icon: "fa-cloud-showers-heavy", label: "Averses" },
 ];
 
 function weatherInfo(code) {
   return (
     WEATHER_TABLE.find((e) => code <= e.max) || {
-      icon: 'fa-cloud-bolt',
-      label: 'Orage'
+      icon: "fa-cloud-bolt",
+      label: "Orage",
     }
   );
 }
@@ -45,7 +45,7 @@ export function fetchWeather(days, onUpdate) {
       day: d.day,
       date: d.isoDate,
       lat: d.mapCenter.lat,
-      lng: d.mapCenter.lng
+      lng: d.mapCenter.lng,
     }));
 
   const now = new Date();
@@ -118,11 +118,11 @@ export function fetchWeather(days, onUpdate) {
             const html = buildWeatherHtml(result);
             seen.get(cacheKey).forEach((d) => results.set(d, html));
             onUpdate(new Map(results));
-          })
-      )
+          }),
+      ),
     )
       .then(() => fetchBatch(i + BATCH_SIZE))
-      .catch((err) => console.warn('Weather fetch failed:', err));
+      .catch((err) => console.warn("Weather fetch failed:", err));
   }
   fetchBatch(0);
 }

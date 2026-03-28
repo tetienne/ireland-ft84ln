@@ -27,7 +27,7 @@ export default defineConfig(
         "svelte/no-navigation-without-resolve": "off",
       },
     },
-],
+  ],
   prettier,
   svelte.configs.prettier,
 );
