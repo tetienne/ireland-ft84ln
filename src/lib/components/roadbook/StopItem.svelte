@@ -38,7 +38,7 @@
         </div>
       {/if}
 
-      {#if stop.gmaps || coords || stop.web || stop.tripadvisor || stop.routard || stop.alltrails || stop.trailMap}
+      {#if stop.gmaps || stop.web || stop.tripadvisor || stop.routard || stop.alltrails || stop.trailMap}
         <div class="stop-links">
           {#if stop.gmaps}
             <a href={stop.gmaps} target="_blank" class="link-map"><i class="fa-solid fa-map-pin"></i> Maps</a>

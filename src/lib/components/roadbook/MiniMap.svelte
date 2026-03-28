@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import { extractCoords } from '$lib/utils/coords.js';
   import { DAY_COLORS } from '$lib/utils/colors.js';
+  import { addBaseLayer } from '$lib/utils/map.js';
 
   let { day } = $props();
 
@@ -15,11 +16,7 @@
       scrollWheelZoom: false
     });
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>',
-      subdomains: 'abcd',
-      maxZoom: 19
-    }).addTo(map);
+    addBaseLayer(L, map);
 
     const color = DAY_COLORS[day.day - 1];
     const bounds = L.latLngBounds();

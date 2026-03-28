@@ -20,11 +20,12 @@
   </header>
   <div class="blogs-grid">
     {#each blogs as blog}
+      {@const b = badge(blog.type)}
       <a href={blog.url} target="_blank" class="blog-card">
         <div class="blog-source">{blog.source}</div>
         <div class="blog-title">{blog.title}</div>
         <span class="blog-badge {BADGES[blog.type] ? blog.type : 'other'}">
-          <i class="fa-solid {badge(blog.type).icon}"></i> {badge(blog.type).label}
+          <i class="fa-solid {b.icon}"></i> {b.label}
         </span>
       </a>
     {/each}

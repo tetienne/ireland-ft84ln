@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { DAY_COLORS } from '$lib/utils/colors.js';
+  import { addBaseLayer } from '$lib/utils/map.js';
 
   let { data } = $props();
 
@@ -14,12 +15,7 @@
 
     map = L.map(mapEl, { zoomControl: false, scrollWheelZoom: true }).setView([53.1, -8.5], 7.5);
     L.control.zoom({ position: 'topright' }).addTo(map);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
-      subdomains: 'abcd',
-      maxZoom: 19
-    }).addTo(map);
+    addBaseLayer(L, map);
 
     const routesByDay = data.routesByDay || (data.route ? [data.route] : []);
 
