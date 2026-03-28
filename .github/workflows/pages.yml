@@ -29,16 +29,6 @@ jobs:
           version: 10
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-      - name: Cache optimized images
-        uses: actions/cache@v4
-        with:
-          path: static/img
-          key: images-${{ hashFiles('static/data.json', 'scripts/optimize-images.mjs') }}
-          restore-keys: images-
-      - name: Optimize images
-        run: |
-          pnpm add --save-dev sharp
-          node scripts/optimize-images.mjs
       - name: Build
         run: pnpm build
       - uses: actions/configure-pages@v5
