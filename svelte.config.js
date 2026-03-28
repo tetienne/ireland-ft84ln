@@ -6,6 +6,9 @@ const config = {
     adapter: adapter({
       fallback: undefined,
     }),
+    paths: {
+      base: process.env.NODE_ENV === "production" ? "/ireland-ft84ln" : "",
+    },
     prerender: {
       entries: ["/"],
       handleMissingId: "ignore",

@@ -4,6 +4,7 @@
   import { getTodayDayNum } from '$lib/utils/dates.js';
   import { fetchWeather } from '$lib/utils/weather.js';
   import { scrollToDay } from '$lib/utils/scroll.js';
+  import { base } from '$app/paths';
   import Hero from '$lib/components/Hero.svelte';
   import MapSection from '$lib/components/MapSection.svelte';
   import RoadBook from '$lib/components/roadbook/RoadBook.svelte';
@@ -19,7 +20,7 @@
   let todayDayNum = $derived(data ? getTodayDayNum(data.days) : null);
 
   onMount(async () => {
-    const res = await fetch('/data.json');
+    const res = await fetch(`${base}/data.json`);
     const raw = await res.json();
     data = { ...raw, days: withBudgetTotals(raw.days) };
 
