@@ -27,12 +27,7 @@ export default defineConfig(
         "svelte/no-navigation-without-resolve": "off",
       },
     },
-    {
-      // Legacy file, will be removed after migration merge
-      files: ["app.js"],
-      rules: { "no-undef": "off" },
-    },
-  ],
+],
   prettier,
   svelte.configs.prettier,
 );
