@@ -24,24 +24,26 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
       - name: Cache optimized images
         uses: actions/cache@v4
         with:
-          path: img
-          key: images-${{ hashFiles('data.json', 'scripts/optimize-images.mjs') }}
+          path: static/img
+          key: images-${{ hashFiles('static/data.json', 'scripts/optimize-images.mjs') }}
           restore-keys: images-
       - name: Optimize images
         run: |
-          npm install --no-save sharp
+          pnpm add --save-dev sharp
           node scripts/optimize-images.mjs
-      - name: Minify CSS and JS
-        run: |
-          npx --yes csso-cli style.css -o style.css
-          npx --yes terser app.js -o app.js -c -m
-          npx --yes terser sw.js -o sw.js -c -m
+      - name: Build
+        run: pnpm build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: build
       - id: deployment
         uses: actions/deploy-pages@v4

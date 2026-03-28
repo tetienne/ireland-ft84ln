@@ -9,8 +9,8 @@ import { createHash } from "node:crypto";
 import sharp from "sharp";
 
 const MAX_WIDTH = 480;
-const OUT_DIR = "img";
-const DATA_JSON = "data.json";
+const OUT_DIR = "static/img";
+const DATA_JSON = "static/data.json";
 const USER_AGENT = "IrelandTripSiteBuilder/1.0 (GitHub Actions; contact: github)";
 const DELAY_MS = 1500;
 const MAX_RETRIES = 5;
