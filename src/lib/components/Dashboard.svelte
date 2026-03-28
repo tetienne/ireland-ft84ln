@@ -1,5 +1,6 @@
 <script>
   import { formatDateLong } from '$lib/utils/dates.js';
+  import { formatDrive } from '$lib/utils/format.js';
   import { scrollToDay } from '$lib/utils/scroll.js';
 
   let { days } = $props();
@@ -30,7 +31,7 @@
             <td>{formatDateLong(day.isoDate)}</td>
             <td>{day.routeDesc}</td>
             <td>{day.night || '-'}</td>
-            <td>{day.driveTime || '-'}</td>
+            <td>{day.driveMinutes ? formatDrive(day.driveMinutes) : '-'}</td>
             <td>{day.budget ? `${day.budget.total} €` : '-'}</td>
             <td>
               {#if day.highlight}
@@ -57,7 +58,7 @@
           <div class="dash-card-title">{day.title}</div>
           <div class="dash-card-meta">
             {#if day.night}<span><i class="fa-solid fa-bed"></i> {day.night}</span>{/if}
-            {#if day.driveTime}<span><i class="fa-solid fa-clock"></i> {day.driveTime}</span>{/if}
+            {#if day.driveMinutes}<span><i class="fa-solid fa-clock"></i> {formatDrive(day.driveMinutes)}</span>{/if}
             {#if day.budget}<span><i class="fa-solid fa-coins"></i> {day.budget.total} €</span>{/if}
           </div>
         </div>

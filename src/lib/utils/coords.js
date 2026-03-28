@@ -1,5 +1,7 @@
-export function extractCoords(gmapsUrl) {
-  if (!gmapsUrl) return null;
-  const match = gmapsUrl.match(/q=([-\d.]+),([-\d.]+)/);
-  return match ? [parseFloat(match[1]), parseFloat(match[2])] : null;
+export function wazeUrl(lat, lng) {
+  return `https://waze.com/ul?ll=${lat},${lng}&navigate=yes`;
+}
+
+export function walkUrl(lat, lng) {
+  return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}&travelmode=walking`;
 }

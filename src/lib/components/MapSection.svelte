@@ -17,8 +17,6 @@
     L.control.zoom({ position: 'topright' }).addTo(map);
     addBaseLayer(L, map);
 
-    const routesByDay = data.routesByDay || (data.route ? [data.route] : []);
-
     // Day markers + polylines
     data.days.forEach((d, i) => {
       const group = L.layerGroup();
@@ -36,8 +34,8 @@
         .bindPopup(`${imgHtml}<strong>J${d.day} — ${d.title}</strong><br>${d.mapDesc || ''}`)
         .addTo(group);
 
-      if (routesByDay[i] && routesByDay[i].length > 0) {
-        L.polyline(routesByDay[i], {
+      if (d.dayRoute && d.dayRoute.length > 0) {
+        L.polyline(d.dayRoute, {
           color,
           weight: 4,
           opacity: 0.7
