@@ -30,11 +30,11 @@
       bounds.extend(polyline.getBounds());
     }
 
-    // Stop markers — use lat/lng directly
     day.stops.forEach((stop) => {
       if (stop.lat && stop.lng) {
-        L.marker([stop.lat, stop.lng]).addTo(map).bindPopup(`<strong>${stop.name}</strong>`);
-        bounds.extend([stop.lat, stop.lng]);
+        const pos = [stop.lat, stop.lng];
+        L.marker(pos).addTo(map).bindPopup(`<strong>${stop.name}</strong>`);
+        bounds.extend(pos);
       }
     });
 

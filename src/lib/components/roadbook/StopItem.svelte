@@ -1,10 +1,4 @@
-<script>
-  import { gmapsUrl, wazeUrl, walkUrl } from '$lib/utils/coords.js';
-
-  let { stop } = $props();
-
-  let hasHike = $derived(stop.links.some((l) => l.type === 'alltrails' || l.type === 'trailMap'));
-
+<script module>
   const LINK_META = {
     gmaps: { icon: 'fa-map-pin', label: 'Maps', class: 'link-map' },
     web: { icon: 'fa-globe', label: 'Site officiel', class: 'link-web' },
@@ -13,6 +7,14 @@
     alltrails: { icon: 'fa-person-hiking', label: 'AllTrails', class: 'link-trail' },
     trailMap: { icon: 'fa-map', label: 'Carte rando', class: 'link-trail' }
   };
+</script>
+
+<script>
+  import { wazeUrl, walkUrl } from '$lib/utils/coords.js';
+
+  let { stop } = $props();
+
+  let hasHike = $derived(stop.links.some((l) => l.type === 'alltrails' || l.type === 'trailMap'));
 </script>
 
 <li class="day-stop">
