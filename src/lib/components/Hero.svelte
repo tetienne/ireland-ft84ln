@@ -31,7 +31,7 @@
     <p class="hero-subtitle">Wild Atlantic Way en famille</p>
     <div class="hero-divider"></div>
     <div class="hero-meta">
-      {#each metaItems as item}
+      {#each metaItems as item (item.l)}
         <div class="hero-meta-item">
           <span class="value">{item.v}</span>
           <span class="label">{item.l}</span>

@@ -36,7 +36,7 @@
     {/if}
 
     <ul class="day-stops">
-      {#each day.stops as stop}
+      {#each day.stops as stop (stop.name)}
         <StopItem {stop} />
       {/each}
     </ul>
@@ -86,7 +86,7 @@
     {#if activePanel === 'schedule' && day.schedule}
       <div class="day-panel open" data-panel="schedule">
         <ul class="schedule-timeline">
-          {#each day.schedule as s}
+          {#each day.schedule as s (s.time)}
             <li class="schedule-item" class:drive={DRIVE_ICONS.includes(s.icon)}>
               <span class="schedule-time">{s.time}</span>
               <span class="schedule-label"><i class="fa-solid {s.icon}"></i> {s.label}</span>
@@ -100,7 +100,7 @@
     {#if activePanel === 'budget' && day.budget}
       <div class="day-panel open" data-panel="budget">
         <div class="budget-table">
-          {#each day.budget.entries as e}
+          {#each day.budget.entries as e (e.label)}
             <div class="budget-row">
               <span>{e.label}</span>
               <span class="budget-amount">{e.amount} &euro;</span>
@@ -125,11 +125,11 @@
 
     {#if activePanel === 'tips' && day.practicalTips}
       <div class="day-panel open" data-panel="tips">
-        {#each day.practicalTips as group}
+        {#each day.practicalTips as group (group.stop)}
           <div class="tips-group">
             <div class="tips-group-header"><i class="fa-solid {group.icon}"></i> {group.stop}</div>
             <ul>
-              {#each group.tips as tip}
+              {#each group.tips as tip, i (i)}
                 <li>{@html tip}</li>
               {/each}
             </ul>

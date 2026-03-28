@@ -17,7 +17,7 @@
     <div class="stop-icon {stop.iconClass}"><i class="fa-solid {stop.icon}"></i></div>
     <div class="stop-info">
       <h4>
-        {#if hasHike}<span class="hike-badge"><i class="fa-solid fa-person-hiking"></i> Rando</span>{' '}{/if}{stop.name}
+        {#if hasHike}<span class="hike-badge"><i class="fa-solid fa-person-hiking"></i> Rando</span> {/if}{stop.name}
       </h4>
       <p>{@html stop.desc}</p>
 

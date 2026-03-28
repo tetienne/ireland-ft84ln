@@ -1,5 +1,4 @@
 <script>
-  import { DAY_COLORS } from '$lib/utils/colors.js';
   import { scrollToDay } from '$lib/utils/scroll.js';
 
   let { days, todayDayNum = null } = $props();
@@ -9,6 +8,7 @@
 
   // IntersectionObserver: track active day card
   $effect(() => {
+    // eslint-disable-next-line svelte/prefer-svelte-reactivity -- not reactive state, local to observer
     const visibleCards = new Map();
     const targetLine = 100;
 
@@ -82,7 +82,7 @@
 </script>
 
 <nav class="day-nav" id="dayNav" class:nav-hidden={navHidden} aria-label="Navigation par jour" bind:this={navEl}>
-  {#each days as day}
+  {#each days as day (day.day)}
     <button
       class="day-nav-pill"
       class:active={activeDayNum === day.day}

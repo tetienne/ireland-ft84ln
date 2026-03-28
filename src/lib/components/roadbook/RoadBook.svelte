@@ -16,7 +16,7 @@
   </header>
   <DayNav {days} {todayDayNum} />
   <div class="timeline">
-    {#each days as day}
+    {#each days as day (day.day)}
       <DayCard {day} weatherHtml={weatherByDay.get(day.day) || ''} />
     {/each}
   </div>

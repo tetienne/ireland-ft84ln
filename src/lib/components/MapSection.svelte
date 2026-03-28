@@ -123,7 +123,7 @@
   <aside class="map-legend" aria-label="Filtres de la carte">
     <h4><i class="fa-solid fa-filter"></i> Filtrer</h4>
     <div id="dayLegend">
-      {#each data.days as day, i}
+      {#each data.days as day, i (day.day)}
         <div
           class="map-legend-item"
           class:active={soloIndex === -1 || soloIndex === i}

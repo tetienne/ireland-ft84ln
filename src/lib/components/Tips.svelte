@@ -9,7 +9,7 @@
     <div class="line"></div>
   </header>
   <div class="tips-grid">
-    {#each tips as tip}
+    {#each tips as tip (tip.title)}
       <article class="tip-card">
         <div class="tip-icon"><i class="fa-solid {tip.icon}"></i></div>
         <h4>{tip.title}</h4>

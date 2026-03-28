@@ -17,10 +17,20 @@ export default defineConfig(
     {
       languageOptions: { globals: { ...globals.browser, ...globals.node } },
     },
-
     {
       files: ["**/*.svelte", "**/*.svelte.js"],
       languageOptions: { parserOptions: { svelteConfig } },
+      rules: {
+        // data.json content is trusted — {@html} is safe
+        "svelte/no-at-html-tags": "off",
+        // External links with target="_blank" are intentional
+        "svelte/no-navigation-without-resolve": "off",
+      },
+    },
+    {
+      // Legacy file, will be removed after migration merge
+      files: ["app.js"],
+      rules: { "no-undef": "off" },
     },
   ],
   prettier,

@@ -24,7 +24,7 @@
         </tr>
       </thead>
       <tbody>
-        {#each days as day}
+        {#each days as day (day.day)}
           <tr data-scroll-day={day.day} onclick={() => scrollToDay(day.day)}>
             <td class="dash-day">J{day.day}</td>
             <td>{formatDateLong(day.isoDate)}</td>
@@ -51,7 +51,7 @@
 
     <!-- Mobile cards -->
     <div class="dashboard-cards">
-      {#each days as day}
+      {#each days as day (day.day)}
         <div class="dash-card" data-scroll-day={day.day} onclick={() => scrollToDay(day.day)} onkeydown={(e) => e.key === 'Enter' && scrollToDay(day.day)} role="button" tabindex="0">
           <div class="dash-card-day">J{day.day}</div>
           <div class="dash-card-title">{day.title}</div>

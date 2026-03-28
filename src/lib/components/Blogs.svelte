@@ -19,7 +19,7 @@
     <div class="line"></div>
   </header>
   <div class="blogs-grid">
-    {#each blogs as blog}
+    {#each blogs as blog (blog.url)}
       {@const b = badge(blog.type)}
       <a href={blog.url} target="_blank" class="blog-card">
         <div class="blog-source">{blog.source}</div>
