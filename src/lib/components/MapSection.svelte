@@ -12,6 +12,16 @@
   let dayLayerGroups: L.LayerGroup[] = [];
   let soloIndex = $state(-1);
 
+  const DEFAULT_POI_CONFIG: Record<string, { color: string; icon: string }> = {
+    castles: { color: '#c86432', icon: 'fa-chess-rook' },
+    monasteries: { color: '#7a5a6a', icon: 'fa-place-of-worship' },
+    nature: { color: '#5a8a3a', icon: 'fa-mountain-sun' },
+    beaches: { color: '#2a5a8c', icon: 'fa-umbrella-beach' },
+    towns: { color: '#e8b84a', icon: 'fa-city' },
+    museums: { color: '#3a2f28', icon: 'fa-museum' },
+    panoramas: { color: '#2d7a4a', icon: 'fa-binoculars' }
+  };
+
   onMount(() => {
     (async () => {
       const L = (await import('leaflet')).default;
@@ -49,17 +59,7 @@
         dayLayerGroups.push(group);
       });
 
-      // POIs
-      const defaultPoiConfig: Record<string, { color: string; icon: string }> = {
-        castles: { color: '#c86432', icon: 'fa-chess-rook' },
-        monasteries: { color: '#7a5a6a', icon: 'fa-place-of-worship' },
-        nature: { color: '#5a8a3a', icon: 'fa-mountain-sun' },
-        beaches: { color: '#2a5a8c', icon: 'fa-umbrella-beach' },
-        towns: { color: '#e8b84a', icon: 'fa-city' },
-        museums: { color: '#3a2f28', icon: 'fa-museum' },
-        panoramas: { color: '#2d7a4a', icon: 'fa-binoculars' }
-      };
-      const poiConfig = { ...defaultPoiConfig, ...(data.poiConfig || {}) };
+      const poiConfig = { ...DEFAULT_POI_CONFIG, ...(data.poiConfig || {}) };
 
       if (data.pois) {
         Object.entries(data.pois).forEach(([type, pois]) => {

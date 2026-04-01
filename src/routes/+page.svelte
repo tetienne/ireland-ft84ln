@@ -17,6 +17,8 @@
   let data: TripData | null = $state(null);
   let weatherByDay: Map<number, string> = $state(new Map());
 
+  // Combined into one $derived to work around svelte-check narrowing bug
+  // where sequential $derived calls on the same nullable state cause 'never' inference
   let computed = $derived.by(() => {
     if (!data) return { stats: null, todayDayNum: null };
     return { stats: computeStats(data), todayDayNum: getTodayDayNum(data.days) };

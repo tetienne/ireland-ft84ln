@@ -23,30 +23,27 @@
       addBaseLayer(L, map);
 
       const color = DAY_COLORS[day.day - 1];
-      const allCoords: L.LatLngTuple[] = [];
+      const bounds = L.latLngBounds([]);
 
-      // Route polyline
       if (day.dayRoute && day.dayRoute.length > 0) {
         const polyline = L.polyline(day.dayRoute, {
           color,
           weight: 3,
           opacity: 0.7
         }).addTo(map);
-        const routeBounds = polyline.getBounds();
-        allCoords.push([routeBounds.getSouthWest().lat, routeBounds.getSouthWest().lng]);
-        allCoords.push([routeBounds.getNorthEast().lat, routeBounds.getNorthEast().lng]);
+        bounds.extend(polyline.getBounds());
       }
 
       day.stops.forEach((stop) => {
         if (stop.lat && stop.lng) {
           const pos: L.LatLngTuple = [stop.lat, stop.lng];
           L.marker(pos).addTo(map!).bindPopup(`<strong>${stop.name}</strong>`);
-          allCoords.push(pos);
+          bounds.extend(pos);
         }
       });
 
-      if (allCoords.length > 0) {
-        map.fitBounds(L.latLngBounds(allCoords), { padding: [30, 30] });
+      if (bounds.isValid()) {
+        map.fitBounds(bounds, { padding: [30, 30] });
       } else if (day.mapCenter) {
         map.setView([day.mapCenter.lat, day.mapCenter.lng], 12);
       }
