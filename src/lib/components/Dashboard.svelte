@@ -1,9 +1,10 @@
-<script>
-  import { formatDateLong } from '$lib/utils/dates.js';
-  import { formatDrive } from '$lib/utils/format.js';
-  import { scrollToDay } from '$lib/utils/scroll.js';
+<script lang="ts">
+  import { formatDateLong } from '$lib/utils/dates';
+  import { formatDrive } from '$lib/utils/format';
+  import { scrollToDay } from '$lib/utils/scroll';
+  import type { Day } from '$lib/types';
 
-  let { days } = $props();
+  let { days }: { days: Day[] } = $props();
 
   let totalBudget = $derived(
     days.reduce((sum, day) => sum + (day.budget ? day.budget.total : 0), 0)

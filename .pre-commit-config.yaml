@@ -13,10 +13,10 @@ repos:
         name: Prettier
         entry: npx prettier --write --ignore-unknown
         language: system
-        types_or: [javascript, css, html, json, markdown]
+        types_or: [javascript, ts, css, html, json, markdown]
 
       - id: eslint
         name: ESLint
         entry: npx eslint --fix
         language: system
-        types: [javascript]
+        types_or: [javascript, ts]

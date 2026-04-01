@@ -1,17 +1,18 @@
-<script>
-  import { formatDateLong } from '$lib/utils/dates.js';
-  import { formatDrive, formatDistance } from '$lib/utils/format.js';
-  import { DAY_COLORS } from '$lib/utils/colors.js';
+<script lang="ts">
+  import { formatDateLong } from '$lib/utils/dates';
+  import { formatDrive, formatDistance } from '$lib/utils/format';
+  import { DAY_COLORS } from '$lib/utils/colors';
   import StopItem from './StopItem.svelte';
   import MiniMap from './MiniMap.svelte';
+  import type { Day } from '$lib/types';
 
-  let { day, weatherHtml = '' } = $props();
+  let { day, weatherHtml = '' }: { day: Day; weatherHtml?: string } = $props();
 
-  let activePanel = $state(null);
+  let activePanel: string | null = $state(null);
 
   let color = $derived(DAY_COLORS[day.day - 1]);
 
-  function togglePanel(panel) {
+  function togglePanel(panel: string): void {
     activePanel = activePanel === panel ? null : panel;
   }
 

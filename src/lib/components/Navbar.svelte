@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   let scrolled = $state(false);
   let menuOpen = $state(false);
 

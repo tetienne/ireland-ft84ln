@@ -1,5 +1,5 @@
-<script module>
-  const LINK_META = {
+<script module lang="ts">
+  const LINK_META: Record<string, { icon: string; label: string; class: string }> = {
     gmaps: { icon: 'fa-map-pin', label: 'Maps', class: 'link-map' },
     web: { icon: 'fa-globe', label: 'Site officiel', class: 'link-web' },
     tripadvisor: { icon: 'fa-star', label: 'TripAdvisor', class: 'link-ta' },
@@ -9,10 +9,11 @@
   };
 </script>
 
-<script>
-  import { wazeUrl, walkUrl } from '$lib/utils/coords.js';
+<script lang="ts">
+  import { wazeUrl, walkUrl } from '$lib/utils/coords';
+  import type { Stop } from '$lib/types';
 
-  let { stop } = $props();
+  let { stop }: { stop: Stop } = $props();
 
   let hasHike = $derived(stop.links.some((l) => l.type === 'alltrails' || l.type === 'trailMap'));
 </script>

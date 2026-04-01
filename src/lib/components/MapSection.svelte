@@ -1,98 +1,103 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
-  import { DAY_COLORS } from '$lib/utils/colors.js';
-  import { addBaseLayer } from '$lib/utils/map.js';
+  import { DAY_COLORS } from '$lib/utils/colors';
+  import { addBaseLayer } from '$lib/utils/map';
+  import type { TripData } from '$lib/types';
+  import type L from 'leaflet';
 
-  let { data } = $props();
+  let { data }: { data: TripData } = $props();
 
-  let mapEl;
-  let map;
-  let dayLayerGroups = [];
+  let mapEl: HTMLDivElement;
+  let map: L.Map;
+  let dayLayerGroups: L.LayerGroup[] = [];
   let soloIndex = $state(-1);
 
-  onMount(async () => {
-    const L = (await import('leaflet')).default;
+  onMount(() => {
+    (async () => {
+      const L = (await import('leaflet')).default;
 
-    map = L.map(mapEl, { zoomControl: false, scrollWheelZoom: true }).setView([53.1, -8.5], 7.5);
-    L.control.zoom({ position: 'topright' }).addTo(map);
-    addBaseLayer(L, map);
+      map = L.map(mapEl, { zoomControl: false, scrollWheelZoom: true }).setView([53.1, -8.5], 7.5);
+      L.control.zoom({ position: 'topright' }).addTo(map);
+      addBaseLayer(L, map);
 
-    // Day markers + polylines
-    data.days.forEach((d, i) => {
-      const group = L.layerGroup();
-      const color = DAY_COLORS[i];
+      // Day markers + polylines
+      data.days.forEach((d, i) => {
+        const group = L.layerGroup();
+        const color = DAY_COLORS[i];
 
-      const icon = L.divIcon({
-        className: 'day-marker',
-        html: `<div class="day-marker-inner" style="background:${color}">${d.day}</div>`,
-        iconSize: [36, 36],
-        iconAnchor: [18, 18]
+        const icon = L.divIcon({
+          className: 'day-marker',
+          html: `<div class="day-marker-inner" style="background:${color}">${d.day}</div>`,
+          iconSize: [36, 36],
+          iconAnchor: [18, 18]
+        });
+
+        const imgHtml = d.mapImg ? `<img src="${d.mapImg}" alt="${d.title}">` : '';
+        L.marker([d.mapCenter.lat, d.mapCenter.lng], { icon })
+          .bindPopup(`${imgHtml}<strong>J${d.day} — ${d.title}</strong><br>${d.mapDesc || ''}`)
+          .addTo(group);
+
+        if (d.dayRoute && d.dayRoute.length > 0) {
+          L.polyline(d.dayRoute, {
+            color,
+            weight: 4,
+            opacity: 0.7
+          }).addTo(group);
+        }
+
+        group.addTo(map);
+        dayLayerGroups.push(group);
       });
 
-      const imgHtml = d.mapImg ? `<img src="${d.mapImg}" alt="${d.title}">` : '';
-      L.marker([d.mapCenter.lat, d.mapCenter.lng], { icon })
-        .bindPopup(`${imgHtml}<strong>J${d.day} — ${d.title}</strong><br>${d.mapDesc || ''}`)
-        .addTo(group);
+      // POIs
+      const defaultPoiConfig: Record<string, { color: string; icon: string }> = {
+        castles: { color: '#c86432', icon: 'fa-chess-rook' },
+        monasteries: { color: '#7a5a6a', icon: 'fa-place-of-worship' },
+        nature: { color: '#5a8a3a', icon: 'fa-mountain-sun' },
+        beaches: { color: '#2a5a8c', icon: 'fa-umbrella-beach' },
+        towns: { color: '#e8b84a', icon: 'fa-city' },
+        museums: { color: '#3a2f28', icon: 'fa-museum' },
+        panoramas: { color: '#2d7a4a', icon: 'fa-binoculars' }
+      };
+      const poiConfig = { ...defaultPoiConfig, ...(data.poiConfig || {}) };
 
-      if (d.dayRoute && d.dayRoute.length > 0) {
-        L.polyline(d.dayRoute, {
-          color,
-          weight: 4,
-          opacity: 0.7
-        }).addTo(group);
+      if (data.pois) {
+        Object.entries(data.pois).forEach(([type, pois]) => {
+          const cfg = poiConfig[type] || { color: '#888', icon: 'fa-circle' };
+          pois.forEach((poi) => {
+            const poiIcon = L.divIcon({
+              className: 'poi-marker',
+              html: `<div class="poi-marker-inner" style="background:${cfg.color}"><i class="fa-solid ${cfg.icon}"></i></div>`,
+              iconSize: [28, 28],
+              iconAnchor: [14, 14]
+            });
+            const links: string[] = [];
+            if (poi.gmaps)
+              links.push(`<a href="${poi.gmaps}" target="_blank">Google Maps</a>`);
+            if (poi.web)
+              links.push(`<a href="${poi.web}" target="_blank">Site web</a>`);
+            const linksHtml = links.length ? `<br>${links.join(' · ')}` : '';
+            L.marker([poi.lat, poi.lng], { icon: poiIcon })
+              .bindPopup(`<strong>${poi.name}</strong>${poi.desc ? `<br>${poi.desc}` : ''}${linksHtml}`)
+              .addTo(map);
+          });
+        });
       }
 
-      group.addTo(map);
-      dayLayerGroups.push(group);
-    });
-
-    // POIs
-    const defaultPoiConfig = {
-      castles: { color: '#c86432', icon: 'fa-chess-rook' },
-      monasteries: { color: '#7a5a6a', icon: 'fa-place-of-worship' },
-      nature: { color: '#5a8a3a', icon: 'fa-mountain-sun' },
-      beaches: { color: '#2a5a8c', icon: 'fa-umbrella-beach' },
-      towns: { color: '#e8b84a', icon: 'fa-city' },
-      museums: { color: '#3a2f28', icon: 'fa-museum' },
-      panoramas: { color: '#2d7a4a', icon: 'fa-binoculars' }
-    };
-    const poiConfig = { ...defaultPoiConfig, ...(data.poiConfig || {}) };
-
-    if (data.pois) {
-      Object.entries(data.pois).forEach(([type, pois]) => {
-        const cfg = poiConfig[type] || { color: '#888', icon: 'fa-circle' };
-        pois.forEach((poi) => {
-          const poiIcon = L.divIcon({
-            className: 'poi-marker',
-            html: `<div class="poi-marker-inner" style="background:${cfg.color}"><i class="fa-solid ${cfg.icon}"></i></div>`,
-            iconSize: [28, 28],
-            iconAnchor: [14, 14]
-          });
-          const links = [];
-          if (poi.gmaps)
-            links.push(`<a href="${poi.gmaps}" target="_blank">Google Maps</a>`);
-          if (poi.web)
-            links.push(`<a href="${poi.web}" target="_blank">Site web</a>`);
-          const linksHtml = links.length ? `<br>${links.join(' · ')}` : '';
-          L.marker([poi.lat, poi.lng], { icon: poiIcon })
-            .bindPopup(`<strong>${poi.name}</strong>${poi.desc ? `<br>${poi.desc}` : ''}${linksHtml}`)
-            .addTo(map);
-        });
-      });
-    }
-
-    // Fit bounds
-    const bounds = L.latLngBounds(data.days.map((d) => [d.mapCenter.lat, d.mapCenter.lng]));
-    if (bounds.isValid()) {
-      map.fitBounds(bounds, { padding: [40, 40] });
-    }
+      // Fit bounds
+      const coords: L.LatLngTuple[] = data.days.map((d) => [d.mapCenter.lat, d.mapCenter.lng]);
+      const bounds = L.latLngBounds(coords);
+      if (bounds.isValid()) {
+        map.fitBounds(bounds, { padding: [40, 40] });
+      }
+    })();
 
     return () => {
-      map.remove();
+      map?.remove();
     };
   });
 
-  function toggleDay(index) {
+  function toggleDay(index: number): void {
     if (!map) return;
     if (soloIndex === index) {
       // Show all

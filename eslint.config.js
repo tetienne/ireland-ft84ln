@@ -2,6 +2,7 @@ import prettier from "eslint-config-prettier";
 import path from "node:path";
 import { includeIgnoreFile } from "@eslint/compat";
 import js from "@eslint/js";
+import tseslint from "typescript-eslint";
 import svelte from "eslint-plugin-svelte";
 import { defineConfig } from "eslint/config";
 import globals from "globals";
@@ -13,13 +14,19 @@ export default defineConfig(
   [
     includeIgnoreFile(gitignorePath),
     js.configs.recommended,
+    ...tseslint.configs.recommended,
     svelte.configs.recommended,
     {
       languageOptions: { globals: { ...globals.browser, ...globals.node } },
     },
     {
-      files: ["**/*.svelte", "**/*.svelte.js"],
-      languageOptions: { parserOptions: { svelteConfig } },
+      files: ["**/*.svelte", "**/*.svelte.ts", "**/*.svelte.js"],
+      languageOptions: {
+        parserOptions: {
+          svelteConfig,
+          parser: tseslint.parser,
+        },
+      },
       rules: {
         // data.json content is trusted — {@html} is safe
         "svelte/no-at-html-tags": "off",

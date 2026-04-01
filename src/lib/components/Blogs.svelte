@@ -1,13 +1,15 @@
-<script>
-  let { blogs } = $props();
+<script lang="ts">
+  import type { Blog } from '$lib/types';
 
-  const BADGES = {
+  let { blogs }: { blogs: Blog[] } = $props();
+
+  const BADGES: Record<string, { icon: string; label: string }> = {
     famille: { icon: 'fa-child', label: 'Famille' },
     couple: { icon: 'fa-heart', label: 'Couple' },
     forum: { icon: 'fa-comments', label: 'Forum' }
   };
 
-  function badge(type) {
+  function badge(type: string): { icon: string; label: string } {
     return BADGES[type] || { icon: 'fa-users', label: type };
   }
 </script>

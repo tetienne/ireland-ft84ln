@@ -1,8 +1,9 @@
-<script>
+<script lang="ts">
   import DayCard from './DayCard.svelte';
   import DayNav from './DayNav.svelte';
+  import type { Day } from '$lib/types';
 
-  let { days, weatherByDay = new Map(), todayDayNum = null } = $props();
+  let { days, weatherByDay = new Map(), todayDayNum = null }: { days: Day[]; weatherByDay?: Map<number, string>; todayDayNum?: number | null } = $props();
 </script>
 
 <section class="roadbook" id="roadbook">

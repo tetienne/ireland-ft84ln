@@ -1,5 +1,7 @@
-<script>
-  let { tips } = $props();
+<script lang="ts">
+  import type { Tip } from '$lib/types';
+
+  let { tips }: { tips: Tip[] } = $props();
 </script>
 
 <section class="tips-section" id="tips">

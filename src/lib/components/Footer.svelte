@@ -1,7 +1,8 @@
-<script>
-  import { formatPeriod } from '$lib/utils/dates.js';
+<script lang="ts">
+  import { formatPeriod } from '$lib/utils/dates';
+  import type { Trip } from '$lib/types';
 
-  let { trip } = $props();
+  let { trip }: { trip: Trip } = $props();
 </script>
 
 <footer class="site-footer">

@@ -1,7 +1,8 @@
-<script>
-  import { formatPeriod } from '$lib/utils/dates.js';
+<script lang="ts">
+  import { formatPeriod } from '$lib/utils/dates';
+  import type { Trip, ComputedStats } from '$lib/types';
 
-  let { trip, stats } = $props();
+  let { trip, stats }: { trip: Trip; stats: ComputedStats } = $props();
 
   const celticSvg = `<svg viewBox="0 0 100 100" fill="none" stroke="rgba(200,148,46,0.8)" stroke-width="1.5">
     <path d="M10,90 Q10,10 90,10" />

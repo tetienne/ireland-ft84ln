@@ -1,15 +1,16 @@
-<script>
-  import { scrollToDay } from '$lib/utils/scroll.js';
+<script lang="ts">
+  import { scrollToDay } from '$lib/utils/scroll';
+  import type { Day } from '$lib/types';
 
-  let { days, todayDayNum = null } = $props();
+  let { days, todayDayNum = null }: { days: Day[]; todayDayNum?: number | null } = $props();
 
-  let activeDayNum = $state(null);
-  let navEl;
+  let activeDayNum: number | null = $state(null);
+  let navEl: HTMLElement;
 
   // IntersectionObserver: track active day card
   $effect(() => {
     // eslint-disable-next-line svelte/prefer-svelte-reactivity -- not reactive state, local to observer
-    const visibleCards = new Map();
+    const visibleCards = new Map<Element, boolean>();
     const targetLine = 100;
 
     const observer = new IntersectionObserver(
@@ -18,7 +19,7 @@
           visibleCards.set(entry.target, entry.isIntersecting);
         });
 
-        let best = null;
+        let best: Element | null = null;
         let bestDist = Infinity;
         visibleCards.forEach((visible, card) => {
           if (!visible) return;
@@ -30,7 +31,7 @@
         });
 
         if (best) {
-          const dayNum = parseInt(best.dataset.day);
+          const dayNum = parseInt((best as HTMLElement).dataset.day!);
           activeDayNum = dayNum;
           history.replaceState(null, '', `#jour-${dayNum}`);
 

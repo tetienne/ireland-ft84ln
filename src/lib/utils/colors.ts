@@ -1,4 +1,4 @@
-export const DAY_COLORS = [
+export const DAY_COLORS: readonly string[] = [
   "#1a5632",
   "#1a3a5c",
   "#2a9d8f",
