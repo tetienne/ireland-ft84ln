@@ -63,21 +63,66 @@ J7: Birr→Trim(91) + Trim→Tara(21) + Tara→Airport(42)
 - Newgrange : si J7 on fait Birr→Trim→Newgrange→Airport au lieu de Trim→Tara
 - Iles d'Aran : ferry depuis Doolin ou Rossaveal si une journee se libere
 
-## Structure du site web
+## Stack technique
+
+SvelteKit 5 (Svelte 5 runes) + TypeScript strict + Vite, deploye en statique sur GitHub Pages.
+
+### Structure du projet
 
 ```
 ireland-trip/
-├── CLAUDE.md      ← Ce fichier
-├── index.html     ← HTML structure (liens vers CSS/JS/data)
-├── style.css      ← Tout le CSS (design irlandais vert/or)
-├── app.js         ← Logique JS (genere road book + carte Leaflet depuis le JSON)
-└── data.json      ← SOURCE DE VERITE : itineraire, stops, POIs, tips, blogs
+├── CLAUDE.md                ← Ce fichier
+├── data.json                ← SOURCE DE VERITE : itineraire, stops, POIs, tips, blogs
+├── tsconfig.json            ← TypeScript strict, extends .svelte-kit/tsconfig.json
+├── svelte.config.js         ← adapter-static, prerender, base path
+├── vite.config.js           ← SvelteKit + Vite
+├── eslint.config.js         ← ESLint flat config + typescript-eslint + svelte
+├── src/
+│   ├── app.css              ← CSS global (design irlandais vert/or)
+│   ├── service-worker.ts    ← PWA : cache local + CDN (Leaflet, Font Awesome)
+│   ├── lib/
+│   │   ├── types.ts         ← Interfaces partagees (Day, Stop, TripData, RawDay...)
+│   │   ├── utils/           ← Fonctions utilitaires TypeScript
+│   │   │   ├── stats.ts     ← computeStats, normalizeDay (liens, distances, budget)
+│   │   │   ├── weather.ts   ← Open-Meteo API (forecast ou archive)
+│   │   │   ├── dates.ts     ← Parsing/formatage dates FR
+│   │   │   ├── format.ts    ← Formatage durees/distances
+│   │   │   ├── map.ts       ← Config tile layer CartoDB Voyager
+│   │   │   ├── scroll.ts    ← Scroll smooth vers un jour
+│   │   │   ├── coords.ts    ← Generateurs URL Waze/Google Maps
+│   │   │   └── colors.ts    ← Palette couleurs par jour
+│   │   └── components/      ← Composants Svelte 5 (lang="ts", $props/$state/$derived)
+│   │       ├── Hero.svelte, MapSection.svelte, Dashboard.svelte
+│   │       ├── Tips.svelte, Blogs.svelte, Navbar.svelte, Footer.svelte
+│   │       └── roadbook/    ← RoadBook, DayCard, DayNav, StopItem, MiniMap
+│   └── routes/
+│       ├── +page.ts         ← prerender = true
+│       ├── +page.svelte     ← Charge data.json, normalise, orchestre les composants
+│       └── +layout.svelte   ← Navbar + slot
+└── .github/workflows/pages.yml ← CI : type-check + lint + build + deploy
 ```
+
+### Normalisation des donnees (data.json -> types TS)
+
+`data.json` est la source de verite mais contient des champs bruts. La fonction `normalizeDay()` dans `stats.ts` transforme chaque `RawDay` en `Day` :
+
+- **stops** : champs plats (`gmaps`, `web`, `tripadvisor`...) -> tableau `links: StopLink[]`
+- **distanceKm** : parse depuis `distance` (ex: `"~85 km"` -> `85`)
+- **driveMinutes** : parse depuis `driveTime` (ex: `"~2h27"` -> `147`)
+- **budget.total** : calcule depuis `budget.entries`
+
+### Commandes
+
+- `pnpm dev` : serveur de dev local
+- `pnpm check` : type-check (svelte-check + TypeScript strict)
+- `pnpm lint` : ESLint (JS + TS + Svelte)
+- `pnpm build` : build statique dans `build/`
+- `pnpm preview` : preview du build
 
 ### Comment modifier l'itineraire
 
 1. Editer `data.json` (champs `days`, `stops`, `route`, `pois`, `tips`, `blogs`)
-2. Lancer `pnpm start` pour visualiser (serveur local)
+2. Lancer `pnpm dev` pour visualiser
 
 ### Images dans data.json
 
