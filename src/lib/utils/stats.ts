@@ -13,23 +13,6 @@ export function computeStats(data: TripData): ComputedStats {
   };
 }
 
-function parseDistanceKm(distance: string | null): number | undefined {
-  if (!distance) return undefined;
-  const match = distance.match(/(\d+)/);
-  return match ? parseInt(match[1], 10) : undefined;
-}
-
-function parseDriveMinutes(driveTime: string | null): number | undefined {
-  if (!driveTime) return undefined;
-  const hm = driveTime.match(/(\d+)h(\d+)/);
-  if (hm) return parseInt(hm[1], 10) * 60 + parseInt(hm[2], 10);
-  const hOnly = driveTime.match(/(\d+)h\b/);
-  if (hOnly) return parseInt(hOnly[1], 10) * 60;
-  const mOnly = driveTime.match(/(\d+)\s*min/);
-  if (mOnly) return parseInt(mOnly[1], 10);
-  return undefined;
-}
-
 const LINK_FIELDS = ["gmaps", "web", "tripadvisor", "routard", "alltrails", "trailMap"] as const;
 
 function normalizeStopLinks(stop: RawStop): Stop {
@@ -63,8 +46,6 @@ export function normalizeDay(raw: RawDay): Day {
 
   return {
     ...raw,
-    distanceKm: parseDistanceKm(raw.distance),
-    driveMinutes: parseDriveMinutes(raw.driveTime),
     stops: raw.stops.map((s) => normalizeStopLinks(s)),
     budget,
   };

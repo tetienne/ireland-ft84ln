@@ -62,10 +62,8 @@ export interface Day {
   morning: string | null;
   night: string | null;
   nightInfo: string | null;
-  distance: string | null;
-  distanceKm?: number;
-  driveTime: string | null;
-  driveMinutes?: number;
+  distanceKm: number | null;
+  driveMinutes: number | null;
   highlight: string | null;
   mapCenter: LatLng;
   mapImg: string | null;
@@ -140,7 +138,7 @@ export interface ComputedStats {
 }
 
 /** Raw day shape from data.json before normalization. */
-export interface RawDay extends Omit<Day, "stops" | "distanceKm" | "driveMinutes" | "budget"> {
+export interface RawDay extends Omit<Day, "stops" | "budget"> {
   stops: RawStop[];
   budget?: Omit<Budget, "total"> & { total?: number };
 }
