@@ -13,6 +13,7 @@
   let soloIndex = $state(-1);
 
   const DEFAULT_POI_CONFIG: Record<string, { color: string; icon: string }> = {
+    nights: { color: '#4a3f6b', icon: 'fa-bed' },
     castles: { color: '#c86432', icon: 'fa-chess-rook' },
     monasteries: { color: '#7a5a6a', icon: 'fa-place-of-worship' },
     nature: { color: '#5a8a3a', icon: 'fa-mountain-sun' },
