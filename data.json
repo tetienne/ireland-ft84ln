@@ -25,7 +25,7 @@
       "morning": "Vol Ryanair FR9777, depart 11h10 de Nimes, arrivee <strong>12h40 a Dublin</strong>. Immigration + bagages (~20 min), puis comptoir <strong>NewWay</strong> pour la voiture a 13h. Route directe vers le centre de Dublin (<strong>30 min</strong>). Installation et apres-midi tranquille : balade dans <a href=\"https://www.google.com/maps/search/?api=1&query=Temple+Bar+Dublin+Ireland\" target=\"_blank\"><strong>Temple Bar</strong></a> puis <a href=\"https://www.google.com/maps/search/?api=1&query=St+Stephen's+Green+Dublin+Ireland\" target=\"_blank\"><strong>St Stephen's Green</strong></a> avec les enfants. <em>Option</em> : <a href=\"https://www.google.com/maps/search/?api=1&query=Book+of+Kells+Trinity+College+Dublin+Ireland\" target=\"_blank\"><strong>Book of Kells</strong></a> a Trinity College (manuscrit du IXe siecle + Long Room — billets horodates ~18 EUR/adulte, enfants gratuits, 45 min).",
       "night": "Nuit a Clondalkin (sud Dublin)",
       "nightInfo": "Nuit de transit pres de Dublin. Soiree tranquille apres le voyage.",
-      "distance": "~15 km",
+      "distance": "~25 km",
       "driveTime": "~30 min",
       "highlight": null,
       "mapCenter": {
@@ -191,13 +191,13 @@
       "title": "Cap a l'Ouest — Galway !",
       "isoDate": "2026-08-17",
       "routeIcon": "fa-road",
-      "routeDesc": "Dublin → Galway (via Belvedere House) · 2h43 de route",
-      "morning": "Depart de Dublin vers 9h30 apres un bon Irish Breakfast. <strong>1h07</strong> de M4 jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Belvedere+House+Gardens+Park+Mullingar\" target=\"_blank\"><strong>Belvedere House, Gardens &amp; Park</strong></a> (Mullingar) : quatre aires de jeux dont une tyrolienne de 30 m, Fairy Garden, jardin clos victorien et la Jealous Wall, la plus grande folie d'Irlande. Dejeuner au Lakeside Cafe au bord du Lough Ennell. Puis <strong>1h36</strong> de M6 jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Galway+Ireland\" target=\"_blank\"><strong>Galway</strong></a>. Arrivee vers 15h10. Fin de journee a pied dans le <a href=\"https://www.google.com/maps/search/?api=1&query=Latin+Quarter+Galway+Ireland\" target=\"_blank\"><strong>Latin Quarter</strong></a> : musiciens de rue, facades colorees, ambiance festive. Les enfants adorent <a href=\"https://www.google.com/maps/search/?api=1&query=Shop+Street+Galway+Ireland\" target=\"_blank\">Shop Street</a>.",
+      "routeDesc": "Dublin → Galway (via Belvedere House) · 2h45 de route",
+      "morning": "Depart de Dublin vers 9h30 apres un bon Irish Breakfast. <strong>1h00</strong> de M4 jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Belvedere+House+Gardens+Park+Mullingar\" target=\"_blank\"><strong>Belvedere House, Gardens &amp; Park</strong></a> (Mullingar) : quatre aires de jeux dont une tyrolienne de 30 m, Fairy Garden, jardin clos victorien et la Jealous Wall, la plus grande folie d'Irlande. Dejeuner au Lakeside Cafe au bord du Lough Ennell. Puis <strong>1h40</strong> de M6 jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Galway+Ireland\" target=\"_blank\"><strong>Galway</strong></a>. Arrivee vers 15h10. Fin de journee a pied dans le <a href=\"https://www.google.com/maps/search/?api=1&query=Latin+Quarter+Galway+Ireland\" target=\"_blank\"><strong>Latin Quarter</strong></a> : musiciens de rue, facades colorees, ambiance festive. Les enfants adorent <a href=\"https://www.google.com/maps/search/?api=1&query=Shop+Street+Galway+Ireland\" target=\"_blank\">Shop Street</a>.",
       "night": "Nuit a Furbo (cote de Galway)",
-      "nightInfo": "B&amp;B sur la cote, vue sur Galway Bay. Galway centre a <strong>23 min</strong> (15 km par la R336). Diner a <a href=\"https://www.google.com/maps/search/?api=1&query=McDonagh's+Galway+Ireland\" target=\"_blank\"><strong>McDonagh's</strong></a> cote Fish &amp; Chip Bar (lun-sam 12h-22h, sans reservation) : y etre a 17h30 pour eviter la file. Repli pizza : <strong>The Dough Bros</strong> (Middle Street). Ard Bia at Nimmos ne sert pas le soir le lundi, et Cava Bodega est ferme le lundi.",
+      "nightInfo": "B&amp;B sur la cote, vue sur Galway Bay. Galway centre a <strong>~20 min</strong> (13 km par la R336). Diner a <a href=\"https://www.google.com/maps/search/?api=1&query=McDonagh's+Galway+Ireland\" target=\"_blank\"><strong>McDonagh's</strong></a> cote Fish &amp; Chip Bar (lun-sam 12h-22h, sans reservation) : y etre a 17h30 pour eviter la file. Repli pizza : <strong>The Dough Bros</strong> (Middle Street). Ard Bia at Nimmos ne sert pas de diner le lundi (mar-dim 18h-21h).",
       "rainyDay": "<strong>Galway City Museum</strong> (gratuit, interactif, bateau suspendu au plafond, 30-45 min) · <strong>Leisureland Salthill</strong> (piscine interieure, toboggan de 65m, piscine pirate pour les petits)",
-      "distance": "~223 km",
-      "driveTime": "~2h43 (2 segments : 1h07 + 1h36)",
+      "distance": "~225 km",
+      "driveTime": "~2h45 (2 segments : 1h00 + 1h40)",
       "highlight": null,
       "mapCenter": {
         "lat": 53.2718,
@@ -298,7 +298,7 @@
           "time": "19h30",
           "label": "Route vers le B&B a Furbo",
           "icon": "fa-car",
-          "duration": "23min"
+          "duration": "20min"
         }
       ],
       "budget": {
@@ -321,7 +321,7 @@
           }
         ],
         "total": 128,
-        "notes": "Belvedere : adulte 9 EUR, enfant gratuit, parking gratuit. Lakeside Cafe ouvert 9h30-15h30 en semaine. McDonagh's a deux formules : restaurant (plus cher) et Fish & Chip Bar (moins cher, meme poisson, pas de reservation)."
+        "notes": "Belvedere : adulte 9 EUR, enfant gratuit, parking gratuit. McDonagh's a deux formules : restaurant (plus cher) et Fish & Chip Bar (moins cher, meme poisson, pas de reservation)."
       },
       "dayRoute": [
         [53.3498, -6.2604],
@@ -497,10 +497,10 @@
           "stop": "Belvedere House, Gardens & Park",
           "icon": "fa-tree",
           "tips": [
-            "Adulte 9 EUR, enfant gratuit, parking gratuit — pas de creneau a reserver",
+            "Adulte 9 EUR, enfant gratuit, parking gratuit — billet par creneau horaire, mais capacite illimitee",
             "Audioguide en francais inclus dans le billet",
             "Interieur de la maison ferme pour travaux : tout se passe dehors, prevoir des impermeables",
-            "Lakeside Cafe ouvert 9h30-15h30 du lundi au vendredi, accessible sans billet",
+            "Parc ouvert 9h30-20h en aout, derniere admission une heure avant la fermeture",
             "Chemins en tarmac autour du lac (poussette OK), terre et gravier dans le bois du haut"
           ]
         },
