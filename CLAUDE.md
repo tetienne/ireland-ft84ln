@@ -14,22 +14,22 @@ Voyage en famille (2 adultes + 2 enfants de 5 et 8 ans) en Irlande, cote ouest /
 - **Max ~2h de conduite par jour** (tolerance ~2h15-2h30 si trajet coupe en segments < 1h15)
   - Exception assumee J2 : 2h45 avec un segment de 1h40, le detour par Belvedere House valant les 20 min de rallonge sur un trajet 100 % autoroutier
 - **Derniere nuit obligatoirement < 30 min de l'aeroport** (hotel type Crowne Plaza Dublin Airport)
-- **Arrivee aeroport J8 a 5h30** (reveil ~5h00)
+- **Enregistrement J8 a 5h10**, deux heures avant le vol (reveil ~3h45, depart de Balbriggan 4h15, terminal 4h50 : 23 km de M1, ce n'est pas un hotel de terminal)
 - Pas de fermes pedagogiques (on a les memes en France)
 - Privilegier les experiences **typiquement irlandaises**
 
 ## Itineraire final v3 (temps OSRM verifies — Connemara d'abord, Lahinch, Birr Castle)
 
-| Jour | Date      | Trajet                                                 | Conduite   | Nuit         |
-| ---- | --------- | ------------------------------------------------------ | ---------- | ------------ |
-| J1   | Dim 16/08 | Airport → Clondalkin (sud Dublin)                      | **24 min** | Clondalkin   |
-| J2   | Lun 17/08 | Clondalkin → Belvedere House (dej) → Galway            | **2h45**   | Furbo        |
-| J3   | Mar 18/08 | Galway → Roundstone → Dog's Bay → Clifden → Sky Road   | **2h27**   | Ballynahinch |
-| J4   | Mer 19/08 | Clifden → Kylemore Abbey → Connemara NP → Galway       | **~1h46**  | Athenry      |
-| J5   | Jeu 20/08 | Galway → Caherconnell → Poulnabrone → Cliffs → Lahinch | **1h58**   | Ennistymon   |
-| J6   | Ven 21/08 | Lahinch (plage) → Ennis (dej) → Birr Castle            | **2h04**   | Banagher     |
-| J7   | Sam 22/08 | Birr → Trim Castle → Hill of Tara → Airport hotel      | **2h34**   | Balbriggan   |
-| J8   | Dim 23/08 | Hotel → Terminal                                       | **5 min**  | —            |
+| Jour | Date      | Trajet                                                 | Conduite    | Nuit         |
+| ---- | --------- | ------------------------------------------------------ | ----------- | ------------ |
+| J1   | Dim 16/08 | Airport → Clondalkin (sud Dublin)                      | **24 min**  | Clondalkin   |
+| J2   | Lun 17/08 | Clondalkin → Belvedere House (dej) → Galway            | **2h45**    | Furbo        |
+| J3   | Mar 18/08 | Galway → Roundstone → Dog's Bay → Clifden → Sky Road   | **2h27**    | Ballynahinch |
+| J4   | Mer 19/08 | Clifden → Kylemore Abbey → Connemara NP → Galway       | **~1h46**   | Athenry      |
+| J5   | Jeu 20/08 | Galway → Caherconnell → Poulnabrone → Cliffs → Lahinch | **1h58**    | Ennistymon   |
+| J6   | Ven 21/08 | Lahinch (plage) → Ennis (dej) → Birr Castle            | **2h04**    | Banagher     |
+| J7   | Sam 22/08 | Birr → Trim Castle → Hill of Tara → Balbriggan         | **2h34**    | Balbriggan   |
+| J8   | Dim 23/08 | Balbriggan → Terminal (M1, 23 km)                      | **~20 min** | —            |
 
 ### Detail des troncons OSRM (minutes)
 
@@ -58,7 +58,7 @@ Secteurs reellement reserves, alignes sur `static/data.json`. Sept logements dis
 4. Athenry, est de Galway (croisement M6/M18)
 5. Ennistymon, pres de Lahinch
 6. Banagher, pres de Birr
-7. Balbriggan, nord Dublin — 24 min de l'aeroport
+7. Balbriggan, nord Dublin — ~20 min de l'aeroport (23 km de M1)
 
 ### Sites visites
 
