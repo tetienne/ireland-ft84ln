@@ -23,12 +23,12 @@ Voyage en famille (2 adultes + 2 enfants de 5 et 8 ans) en Irlande, cote ouest /
 | Jour | Date      | Trajet                                                 | Conduite   | Nuit             |
 | ---- | --------- | ------------------------------------------------------ | ---------- | ---------------- |
 | J1   | Dim 16/08 | Airport → Clondalkin (sud Dublin)                      | **24 min** | Clondalkin       |
-| J2   | Lun 17/08 | Clondalkin → Belvedere House (dej) → Galway            | **2h45**   | Galway           |
-| J3   | Mar 18/08 | Galway → Roundstone → Dog's Bay → Clifden → Sky Road   | **2h27**   | Clifden          |
-| J4   | Mer 19/08 | Clifden → Kylemore Abbey → Connemara NP → Galway       | **~1h46**  | Galway (2e nuit) |
-| J5   | Jeu 20/08 | Galway → Caherconnell → Poulnabrone → Cliffs → Lahinch | **1h58**   | Lahinch          |
-| J6   | Ven 21/08 | Lahinch (plage) → Ennis (dej) → Birr Castle            | **2h04**   | Birr             |
-| J7   | Sam 22/08 | Birr → Trim Castle → Hill of Tara → Airport hotel      | **2h34**   | Airport hotel    |
+| J2   | Lun 17/08 | Clondalkin → Belvedere House (dej) → Galway            | **2h45**   | Furbo            |
+| J3   | Mar 18/08 | Galway → Roundstone → Dog's Bay → Clifden → Sky Road   | **2h27**   | Ballynahinch     |
+| J4   | Mer 19/08 | Clifden → Kylemore Abbey → Connemara NP → Galway       | **~1h46**  | Athenry          |
+| J5   | Jeu 20/08 | Galway → Caherconnell → Poulnabrone → Cliffs → Lahinch | **1h58**   | Ennistymon       |
+| J6   | Ven 21/08 | Lahinch (plage) → Ennis (dej) → Birr Castle            | **2h04**   | Banagher         |
+| J7   | Sam 22/08 | Birr → Trim Castle → Hill of Tara → Airport hotel      | **2h34**   | Balbriggan       |
 | J8   | Dim 23/08 | Hotel → Terminal                                       | **5 min**  | —                |
 
 ### Detail des troncons OSRM (minutes)
@@ -43,15 +43,22 @@ J6: Lahinch→Ennis(32) + Ennis→Birr(92)
 J7: Birr→Trim(91) + Trim→Tara(21) + Tara→Airport(42)
 ```
 
+Seuls J1 et J2 sont mesures depuis le secteur d'hebergement reel. J3 a J7 partent
+encore de la ville-etape (Galway, Clifden, Lahinch, Birr) alors qu'on dort a Furbo,
+Ballynahinch, Athenry, Ennistymon et Banagher : ces totaux sont donc sous-estimes
+et restent a recalculer.
+
 ### Nuits (7 au total)
 
-1. Clondalkin, sud Dublin (1 nuit)
-2. Galway (1ere nuit) — meme logement que nuit 4
-3. Clifden (1 nuit)
-4. Galway (2e nuit) — retour au meme logement
-5. Lahinch (1 nuit)
-6. Birr (1 nuit)
-7. Hotel aeroport Dublin (1 nuit)
+Secteurs reellement reserves, alignes sur `data.json`. Sept logements distincts : aucune nuit ne se repete, il faut refaire les valises chaque matin.
+
+1. Clondalkin, sud Dublin
+2. Furbo, cote de Galway
+3. Ballynahinch, Connemara
+4. Athenry, est de Galway (croisement M6/M18)
+5. Ennistymon, pres de Lahinch
+6. Banagher, pres de Birr
+7. Balbriggan, nord Dublin — 24 min de l'aeroport
 
 ### Sites visites
 
