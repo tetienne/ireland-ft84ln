@@ -2020,7 +2020,7 @@
       "routeDesc": "Birr → Trim Castle → Hill of Tara → Airport · 2h34 de route",
       "morning": "Depart de Birr vers 9h. Derniere visite au domaine si le temps le permet. <strong>1h31</strong> de route jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Trim+Castle+Ireland\" target=\"_blank\"><strong>Trim Castle</strong></a>, le plus grand chateau normand d'Irlande (decor de Braveheart !). Visite du donjon et des remparts (1h). Dejeuner a Trim. Puis <strong>21 min</strong> jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Hill+of+Tara+Ireland\" target=\"_blank\"><strong>Hill of Tara</strong></a>, colline sacree des Hauts Rois d'Irlande — vue sur 40% de l'ile, Pierre du Destin (45 min). Puis <strong>42 min</strong> vers l'hotel de l'aeroport.",
       "night": "Nuit a Balbriggan (nord Dublin)",
-      "nightInfo": "Hebergement a ~30 min de l'aeroport. <strong>Astuce :</strong> rendre la voiture NewWay le soir du 22 pour eliminer le stress du matin (confirmer les horaires matinaux de NewWay au +353 1 844 4199). Preparez valises et passeports ce soir. <strong>Depart ~5h00</strong> pour etre a l'aeroport a 5h30.",
+      "nightInfo": "Hebergement a <strong>~20 min</strong> de l'aeroport (23 km par la M1). Garder la voiture : la rendre la veille laisserait sans transport a 23 km du terminal. Chargez les valises dans le coffre ce soir et sortez les passeports. <strong>Depart 4h15</strong> pour etre au terminal a 4h50 et a l'enregistrement des 5h10, deux heures avant le vol. Confirmer l'heure d'ouverture matinale du comptoir NewWay au +353 1 844 4199, et demander si la restitution se fait a l'aeroport ou sur un site deporte avec navette.",
       "distanceKm": 155,
       "driveMinutes": 154,
       "highlight": null,
@@ -2125,7 +2125,7 @@
         },
         {
           "time": "17h00",
-          "label": "Preparation valises et passeports",
+          "label": "Valises bouclees et chargees dans le coffre",
           "icon": "fa-suitcase",
           "duration": "45min"
         },
@@ -2136,8 +2136,8 @@
           "duration": "1h"
         },
         {
-          "time": "19h30",
-          "label": "Coucher tot (reveil 5h00 !)",
+          "time": "19h00",
+          "label": "Coucher tot (reveil 3h45 !)",
           "icon": "fa-bed",
           "duration": null
         }
@@ -2161,7 +2161,7 @@
             "amount": 25
           },
           {
-            "label": "Hotel aeroport (type Maldron)",
+            "label": "Hotel a Balbriggan",
             "amount": 150
           }
         ],
@@ -2342,11 +2342,11 @@
           ]
         },
         {
-          "stop": "Hotel aeroport",
+          "stop": "Hotel a Balbriggan",
           "icon": "fa-bed",
           "tips": [
-            "Maldron Hotel : 267m du terminal, accessible a pied",
-            "Preparer valises et passeports ce soir (reveil a 5h00)",
+            "23 km de l'aeroport par la M1, ~20 min de route : ce n'est pas un hotel de terminal",
+            "Valises chargees dans le coffre ce soir, passeports a portee (reveil a 3h45)",
             "Verifier si l'hotel a une piscine pour occuper les enfants",
             "Commander le petit-dejeuner en chambre la veille si depart tres tot"
           ]
@@ -2361,11 +2361,11 @@
       "isoDate": "2026-08-23",
       "routeIcon": "fa-plane-departure",
       "routeDesc": "Dublin → Nimes · Vol FR9776",
-      "morning": "Reveil <strong>5h00</strong>. Hotel → terminal en 5-10 min (passage couvert si Crowne Plaza). Restitution voiture <strong>NewWay</strong>. Enregistrement et securite. <strong>Arrivee a Nimes a 10h30</strong> — slan abhaile !",
+      "morning": "Reveil <strong>3h45</strong>, depart de Balbriggan a <strong>4h15</strong> : 23 km de M1 jusqu'a l'aeroport, soit ~20 min. Restitution de la voiture <strong>NewWay</strong> vers 4h35, terminal a <strong>4h50</strong>, enregistrement des 5h10 — deux heures avant le vol. <strong>Arrivee a Nimes a 10h30</strong> — slan abhaile !",
       "night": null,
       "nightInfo": null,
-      "distanceKm": null,
-      "driveMinutes": 5,
+      "distanceKm": 23,
+      "driveMinutes": 20,
       "highlight": null,
       "mapCenter": {
         "lat": 53.4264,
@@ -2390,25 +2390,31 @@
       ],
       "schedule": [
         {
-          "time": "5h00",
+          "time": "3h45",
           "label": "Reveil",
           "icon": "fa-bed",
           "duration": null
         },
         {
-          "time": "5h15",
-          "label": "Hotel - Terminal (passage couvert)",
+          "time": "4h15",
+          "label": "Depart de Balbriggan (M1, 23 km)",
           "icon": "fa-car",
-          "duration": "10min"
+          "duration": "20min"
         },
         {
-          "time": "5h30",
+          "time": "4h35",
           "label": "Restitution voiture NewWay",
           "icon": "fa-car",
           "duration": "15min"
         },
         {
-          "time": "5h45",
+          "time": "4h50",
+          "label": "Rejoindre le terminal",
+          "icon": "fa-person-walking-luggage",
+          "duration": "20min"
+        },
+        {
+          "time": "5h10",
           "label": "Enregistrement et securite",
           "icon": "fa-plane-departure",
           "duration": "45min"
@@ -2448,8 +2454,10 @@
           "stop": "Vol Dublin - Nimes",
           "icon": "fa-plane",
           "tips": [
-            "Crowne Plaza : passage couvert vers le Terminal 1, pas besoin de navette",
+            "Depart de l'hotel a 4h15 : 23 km de M1, pas de navette ni de passage couvert",
+            "Faire le plein la veille au soir, aucune station ouverte a 4h15",
             "Restitution NewWay : rendre la voiture plein fait, garder le recu",
+            "Confirmer par telephone si NewWay rend a l'aeroport ou sur un site deporte : une navette ajoute 15 min",
             "Arriver au terminal 2h avant le vol (5h10 au plus tard)",
             "Ryanair : respecter les dimensions bagages cabine pour eviter les frais",
             "Prevoir de quoi occuper les enfants dans l'avion (cahiers, tablette)"
