@@ -2467,6 +2467,64 @@
     }
   ],
   "pois": {
+    "nights": [
+      {
+        "name": "Nuit 1 — Clondalkin",
+        "desc": "Sud de Dublin, nuit de transit apres l'arrivee. 24 min de l'aeroport.",
+        "lat": 53.322,
+        "lng": -6.3943,
+        "web": null,
+        "gmaps": "https://www.google.com/maps/search/?api=1&query=Clondalkin+Dublin+Ireland"
+      },
+      {
+        "name": "Nuit 2 — Furbo",
+        "desc": "Cote de Galway, vue sur la baie. Galway centre a ~20 min par la R336.",
+        "lat": 53.2489,
+        "lng": -9.2079,
+        "web": null,
+        "gmaps": "https://www.google.com/maps/search/?api=1&query=Na+Forbacha+Furbo+County+Galway+Ireland"
+      },
+      {
+        "name": "Nuit 3 — Ballynahinch",
+        "desc": "Coeur du Connemara, au sud-est de Clifden.",
+        "lat": 53.4602,
+        "lng": -9.8625,
+        "web": null,
+        "gmaps": "https://www.google.com/maps/search/?api=1&query=Ballynahinch+Recess+County+Galway+Ireland"
+      },
+      {
+        "name": "Nuit 4 — Athenry",
+        "desc": "Est de Galway, au croisement M6/M18 : depart direct vers le Burren sans traverser la ville.",
+        "lat": 53.3015,
+        "lng": -8.7486,
+        "web": null,
+        "gmaps": "https://www.google.com/maps/search/?api=1&query=Athenry+County+Galway+Ireland"
+      },
+      {
+        "name": "Nuit 5 — Ennistymon",
+        "desc": "Petite ville du Clare a quelques minutes de Lahinch et de ses plages.",
+        "lat": 52.9401,
+        "lng": -9.2934,
+        "web": null,
+        "gmaps": "https://www.google.com/maps/search/?api=1&query=Ennistymon+County+Clare+Ireland"
+      },
+      {
+        "name": "Nuit 6 — Banagher",
+        "desc": "Sur le Shannon, a une quinzaine de minutes de Birr Castle.",
+        "lat": 53.1899,
+        "lng": -7.9869,
+        "web": null,
+        "gmaps": "https://www.google.com/maps/search/?api=1&query=Banagher+County+Offaly+Ireland"
+      },
+      {
+        "name": "Nuit 7 — Balbriggan",
+        "desc": "Nord de Dublin, 23 km de l'aeroport par la M1 (~20 min). Depart 4h30 le dernier matin.",
+        "lat": 53.6119,
+        "lng": -6.1823,
+        "web": null,
+        "gmaps": "https://www.google.com/maps/search/?api=1&query=Balbriggan+County+Dublin+Ireland"
+      }
+    ],
     "castles": [
       {
         "name": "Malahide Castle",
@@ -3384,6 +3442,10 @@
     }
   ],
   "poiConfig": {
+    "nights": {
+      "color": "#4a3f6b",
+      "icon": "fa-bed"
+    },
     "castles": {
       "color": "#c86432",
       "icon": "fa-chess-rook"
