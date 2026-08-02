@@ -50,7 +50,7 @@ et restent a recalculer.
 
 ### Nuits (7 au total)
 
-Secteurs reellement reserves, alignes sur `data.json`. Sept logements distincts : aucune nuit ne se repete, il faut refaire les valises chaque matin.
+Secteurs reellement reserves, alignes sur `static/data.json`. Sept logements distincts : aucune nuit ne se repete, il faut refaire les valises chaque matin.
 
 1. Clondalkin, sud Dublin
 2. Furbo, cote de Galway
@@ -80,7 +80,6 @@ SvelteKit 5 (Svelte 5 runes) + TypeScript strict + Vite, deploye en statique sur
 ```
 ireland-trip/
 ├── CLAUDE.md                ← Ce fichier
-├── data.json                ← SOURCE DE VERITE : itineraire, stops, POIs, tips, blogs
 ├── tsconfig.json            ← TypeScript strict, extends .svelte-kit/tsconfig.json
 ├── svelte.config.js         ← adapter-static, prerender, base path
 ├── vite.config.js           ← SvelteKit + Vite
@@ -91,7 +90,7 @@ ireland-trip/
 │   ├── lib/
 │   │   ├── types.ts         ← Interfaces partagees (Day, Stop, TripData, RawDay...)
 │   │   ├── utils/           ← Fonctions utilitaires TypeScript
-│   │   │   ├── stats.ts     ← computeStats, normalizeDay (liens, distances, budget)
+│   │   │   ├── stats.ts     ← computeStats, normalizeDay (liens, budget)
 │   │   │   ├── weather.ts   ← Open-Meteo API (forecast ou archive)
 │   │   │   ├── dates.ts     ← Parsing/formatage dates FR
 │   │   │   ├── format.ts    ← Formatage durees/distances
@@ -107,17 +106,21 @@ ireland-trip/
 │       ├── +page.ts         ← prerender = true
 │       ├── +page.svelte     ← Charge data.json, normalise, orchestre les composants
 │       └── +layout.svelte   ← Navbar + slot
+├── static/
+│   ├── data.json            ← SOURCE DE VERITE : itineraire, stops, POIs, tips, blogs
+│   ├── img/, kml/           ← Assets servis tels quels
+│   └── manifest.json        ← PWA
 └── .github/workflows/pages.yml ← CI : type-check + lint + build + deploy
 ```
 
-### Normalisation des donnees (data.json -> types TS)
+### Normalisation des donnees (static/data.json -> types TS)
 
-`data.json` est la source de verite mais contient des champs bruts. La fonction `normalizeDay()` dans `stats.ts` transforme chaque `RawDay` en `Day` :
+Le fichier est servi tel quel par adapter-static et charge en runtime via `fetch(\`${base}/data.json\`)`. `normalizeDay()` dans `stats.ts` transforme chaque `RawDay` en `Day` :
 
 - **stops** : champs plats (`gmaps`, `web`, `tripadvisor`...) -> tableau `links: StopLink[]`
-- **distanceKm** : parse depuis `distance` (ex: `"~85 km"` -> `85`)
-- **driveMinutes** : parse depuis `driveTime` (ex: `"~2h27"` -> `147`)
 - **budget.total** : calcule depuis `budget.entries`
+
+`distanceKm` et `driveMinutes` sont stockes en numerique dans le JSON, sans parsing runtime (une duree comme `2h45 (1h00 + 1h40)` n'est pas parsable de facon fiable).
 
 ### Commandes
 
@@ -129,10 +132,10 @@ ireland-trip/
 
 ### Comment modifier l'itineraire
 
-1. Editer `data.json` (champs `days`, `stops`, `route`, `pois`, `tips`, `blogs`)
+1. Editer `static/data.json` (champs `days`, `stops`, `dayRoute`, `pois`, `tips`, `blogs`)
 2. Lancer `pnpm dev` pour visualiser
 
-### Images dans data.json
+### Images dans static/data.json
 
 **Ne jamais inventer ou deviner une URL d'image.** Toujours verifier que l'image existe avant de l'ajouter :
 

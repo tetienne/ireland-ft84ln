@@ -123,7 +123,6 @@ export interface Blog {
 export interface TripData {
   trip: Trip;
   days: Day[];
-  routesByDay?: [number, number][][];
   pois?: Record<string, Poi[]>;
   poiConfig?: Record<string, PoiConfig>;
   tips?: Tip[];
