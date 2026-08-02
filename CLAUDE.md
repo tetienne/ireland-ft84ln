@@ -12,6 +12,7 @@ Voyage en famille (2 adultes + 2 enfants de 5 et 8 ans) en Irlande, cote ouest /
 ## Contraintes strictes
 
 - **Max ~2h de conduite par jour** (tolerance ~2h15-2h30 si trajet coupe en segments < 1h15)
+  - Exception assumee J2 : 2h45 avec un segment de 1h40, le detour par Belvedere House valant les 20 min de rallonge sur un trajet 100 % autoroutier
 - **Derniere nuit obligatoirement < 30 min de l'aeroport** (hotel type Crowne Plaza Dublin Airport)
 - **Arrivee aeroport J8 a 5h30** (reveil ~5h00)
 - Pas de fermes pedagogiques (on a les memes en France)
