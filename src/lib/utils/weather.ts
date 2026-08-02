@@ -18,9 +18,9 @@ const WEATHER_TABLE: WeatherRow[] = [
 ];
 
 interface WeatherDaily {
-  weather_code: number[];
-  temperature_2m_max: number[];
-  temperature_2m_min: number[];
+  weather_code?: number[];
+  temperature_2m_max?: number[];
+  temperature_2m_min?: number[];
   precipitation_probability_max?: (number | null)[];
   precipitation_sum?: number[];
 }
@@ -41,10 +41,14 @@ function weatherInfo(code: number): WeatherRow {
   );
 }
 
-function buildWeatherHtml({ daily, useForecast, refYear }: WeatherResult): string {
-  const code = daily.weather_code[0];
-  const tMax = Math.round(daily.temperature_2m_max[0]);
-  const tMin = Math.round(daily.temperature_2m_min[0]);
+function buildWeatherHtml({ daily, useForecast, refYear }: WeatherResult): string | null {
+  const code = daily.weather_code?.[0];
+  const rawMax = daily.temperature_2m_max?.[0];
+  const rawMin = daily.temperature_2m_min?.[0];
+  if (code == null || rawMax == null || rawMin == null) return null;
+
+  const tMax = Math.round(rawMax);
+  const tMin = Math.round(rawMin);
   const { icon } = weatherInfo(code);
 
   let html = `<i class="fa-solid ${icon}"></i> ${tMin}\u2013${tMax}\u00b0C`;
@@ -99,7 +103,7 @@ export function fetchWeather(days: Day[], onUpdate: (updated: Map<number, string
     if (cached) {
       const result: WeatherResult = JSON.parse(cached);
       const html = buildWeatherHtml(result);
-      seen.get(cacheKey)!.forEach((d) => results.set(d, html));
+      if (html) seen.get(cacheKey)!.forEach((d) => results.set(d, html));
       return;
     }
 
@@ -140,6 +144,7 @@ export function fetchWeather(days: Day[], onUpdate: (updated: Map<number, string
               /* ignore quota errors */
             }
             const html = buildWeatherHtml(result);
+            if (!html) return;
             seen.get(cacheKey)!.forEach((d) => results.set(d, html));
             onUpdate(new Map(results));
           }),
