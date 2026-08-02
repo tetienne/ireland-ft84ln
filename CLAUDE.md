@@ -20,16 +20,16 @@ Voyage en famille (2 adultes + 2 enfants de 5 et 8 ans) en Irlande, cote ouest /
 
 ## Itineraire final v3 (temps OSRM verifies — Connemara d'abord, Lahinch, Birr Castle)
 
-| Jour | Date      | Trajet                                                 | Conduite   | Nuit             |
-| ---- | --------- | ------------------------------------------------------ | ---------- | ---------------- |
-| J1   | Dim 16/08 | Airport → Clondalkin (sud Dublin)                      | **24 min** | Clondalkin       |
-| J2   | Lun 17/08 | Clondalkin → Belvedere House (dej) → Galway            | **2h45**   | Furbo            |
-| J3   | Mar 18/08 | Galway → Roundstone → Dog's Bay → Clifden → Sky Road   | **2h27**   | Ballynahinch     |
-| J4   | Mer 19/08 | Clifden → Kylemore Abbey → Connemara NP → Galway       | **~1h46**  | Athenry          |
-| J5   | Jeu 20/08 | Galway → Caherconnell → Poulnabrone → Cliffs → Lahinch | **1h58**   | Ennistymon       |
-| J6   | Ven 21/08 | Lahinch (plage) → Ennis (dej) → Birr Castle            | **2h04**   | Banagher         |
-| J7   | Sam 22/08 | Birr → Trim Castle → Hill of Tara → Airport hotel      | **2h34**   | Balbriggan       |
-| J8   | Dim 23/08 | Hotel → Terminal                                       | **5 min**  | —                |
+| Jour | Date      | Trajet                                                 | Conduite   | Nuit         |
+| ---- | --------- | ------------------------------------------------------ | ---------- | ------------ |
+| J1   | Dim 16/08 | Airport → Clondalkin (sud Dublin)                      | **24 min** | Clondalkin   |
+| J2   | Lun 17/08 | Clondalkin → Belvedere House (dej) → Galway            | **2h45**   | Furbo        |
+| J3   | Mar 18/08 | Galway → Roundstone → Dog's Bay → Clifden → Sky Road   | **2h27**   | Ballynahinch |
+| J4   | Mer 19/08 | Clifden → Kylemore Abbey → Connemara NP → Galway       | **~1h46**  | Athenry      |
+| J5   | Jeu 20/08 | Galway → Caherconnell → Poulnabrone → Cliffs → Lahinch | **1h58**   | Ennistymon   |
+| J6   | Ven 21/08 | Lahinch (plage) → Ennis (dej) → Birr Castle            | **2h04**   | Banagher     |
+| J7   | Sam 22/08 | Birr → Trim Castle → Hill of Tara → Airport hotel      | **2h34**   | Balbriggan   |
+| J8   | Dim 23/08 | Hotel → Terminal                                       | **5 min**  | —            |
 
 ### Detail des troncons OSRM (minutes)
 
@@ -115,7 +115,7 @@ ireland-trip/
 
 ### Normalisation des donnees (static/data.json -> types TS)
 
-Le fichier est servi tel quel par adapter-static et charge en runtime via `fetch(\`${base}/data.json\`)`. `normalizeDay()` dans `stats.ts` transforme chaque `RawDay` en `Day` :
+Le fichier est servi tel quel par adapter-static et charge en runtime via `fetch(\`${base}/data.json\`)`. `normalizeDay()`dans`stats.ts`transforme chaque`RawDay`en`Day` :
 
 - **stops** : champs plats (`gmaps`, `web`, `tripadvisor`...) -> tableau `links: StopLink[]`
 - **budget.total** : calcule depuis `budget.entries`
