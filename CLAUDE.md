@@ -12,6 +12,7 @@ Voyage en famille (2 adultes + 2 enfants de 5 et 8 ans) en Irlande, cote ouest /
 ## Contraintes strictes
 
 - **Max ~2h de conduite par jour** (tolerance ~2h15-2h30 si trajet coupe en segments < 1h15)
+  - Exception assumee J2 : 2h45 avec un segment de 1h40, le detour par Belvedere House valant les 20 min de rallonge sur un trajet 100 % autoroutier
 - **Derniere nuit obligatoirement < 30 min de l'aeroport** (hotel type Crowne Plaza Dublin Airport)
 - **Arrivee aeroport J8 a 5h30** (reveil ~5h00)
 - Pas de fermes pedagogiques (on a les memes en France)
@@ -21,8 +22,8 @@ Voyage en famille (2 adultes + 2 enfants de 5 et 8 ans) en Irlande, cote ouest /
 
 | Jour | Date      | Trajet                                                 | Conduite   | Nuit             |
 | ---- | --------- | ------------------------------------------------------ | ---------- | ---------------- |
-| J1   | Dim 16/08 | Airport → Dublin                                       | **21 min** | Dublin           |
-| J2   | Lun 17/08 | Dublin → Athlone (dej) → Galway                        | **2h35**   | Galway           |
+| J1   | Dim 16/08 | Airport → Clondalkin (sud Dublin)                      | **24 min** | Clondalkin       |
+| J2   | Lun 17/08 | Clondalkin → Belvedere House (dej) → Galway            | **2h45**   | Galway           |
 | J3   | Mar 18/08 | Galway → Roundstone → Dog's Bay → Clifden → Sky Road   | **2h27**   | Clifden          |
 | J4   | Mer 19/08 | Clifden → Kylemore Abbey → Connemara NP → Galway       | **~1h46**  | Galway (2e nuit) |
 | J5   | Jeu 20/08 | Galway → Caherconnell → Poulnabrone → Cliffs → Lahinch | **1h58**   | Lahinch          |
@@ -33,8 +34,8 @@ Voyage en famille (2 adultes + 2 enfants de 5 et 8 ans) en Irlande, cote ouest /
 ### Detail des troncons OSRM (minutes)
 
 ```
-J1: Airport→Dublin(21)
-J2: Dublin→Athlone(92) + Athlone→Galway(63) — autoroute M6, dejeuner a Athlone
+J1: Airport→Clondalkin(24)
+J2: Clondalkin→Belvedere(60) + Belvedere→Galway(100) — M4 puis M6, dejeuner a Belvedere House
 J3: Galway→Roundstone(72) + Roundstone→Dog'sBay(7) + Dog'sBay→Clifden(38) + SkyRoad(~30)
 J4: Clifden→Kylemore(20) + Kylemore→ConNP(5) + ConNP→Galway(~75)
 J5: Galway→Caherconnell(66) + Caherconnell→Poulnabrone(8) + Poulnabrone→Cliffs(32) + Cliffs→Lahinch(12)
@@ -44,7 +45,7 @@ J7: Birr→Trim(91) + Trim→Tara(21) + Tara→Airport(42)
 
 ### Nuits (7 au total)
 
-1. Dublin centre (1 nuit)
+1. Clondalkin, sud Dublin (1 nuit)
 2. Galway (1ere nuit) — meme logement que nuit 4
 3. Clifden (1 nuit)
 4. Galway (2e nuit) — retour au meme logement
