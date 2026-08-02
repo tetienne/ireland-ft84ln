@@ -12,25 +12,27 @@ Voyage en famille (2 adultes + 2 enfants de 5 et 8 ans) en Irlande, cote ouest /
 ## Contraintes strictes
 
 - **Max ~2h de conduite par jour** (tolerance ~2h15-2h30 si trajet coupe en segments < 1h15)
-- **Derniere nuit obligatoirement < 30 min de l'aeroport** (hotel type Crowne Plaza Dublin Airport)
-- **Arrivee aeroport J8 a 5h30** (reveil ~5h00)
+- **Derniere nuit obligatoirement < 30 min de l'aeroport** (reserve : Balbriggan, ~30 min — pas de passage couvert)
+- **Arrivee aeroport J8 a 5h30** → depart 4h55, **reveil 4h30** (et non 5h00 : il y a 30 min de route)
 - Pas de fermes pedagogiques (on a les memes en France)
 - Privilegier les experiences **typiquement irlandaises**
 
-## Itineraire final v3 (temps OSRM verifies — Connemara d'abord, Lahinch, Birr Castle)
+## Itineraire final v4 (ordonne par horaires d'ouverture et creneaux creux)
 
-| Jour | Date      | Trajet                                                 | Conduite   | Nuit             |
-| ---- | --------- | ------------------------------------------------------ | ---------- | ---------------- |
-| J1   | Dim 16/08 | Airport → Dublin                                       | **21 min** | Dublin           |
-| J2   | Lun 17/08 | Dublin → Athlone (dej) → Galway                        | **2h35**   | Galway           |
-| J3   | Mar 18/08 | Galway → Roundstone → Dog's Bay → Clifden → Sky Road   | **2h27**   | Clifden          |
-| J4   | Mer 19/08 | Clifden → Kylemore Abbey → Connemara NP → Galway       | **~1h46**  | Galway (2e nuit) |
-| J5   | Jeu 20/08 | Galway → Caherconnell → Poulnabrone → Cliffs → Lahinch | **1h58**   | Lahinch          |
-| J6   | Ven 21/08 | Lahinch (plage) → Ennis (dej) → Birr Castle            | **2h04**   | Birr             |
-| J7   | Sam 22/08 | Birr → Trim Castle → Hill of Tara → Airport hotel      | **2h34**   | Airport hotel    |
-| J8   | Dim 23/08 | Hotel → Terminal                                       | **5 min**  | —                |
+| Jour | Date      | Trajet                                                                | Conduite   | Nuit         |
+| ---- | --------- | --------------------------------------------------------------------- | ---------- | ------------ |
+| J1   | Dim 16/08 | Airport → Clondalkin, puis **Luas** vers le centre                    | **30 min** | Clondalkin   |
+| J2   | Lun 17/08 | Dublin → Athlone (aire de jeux puis dej) → Galway → Furbo             | **~2h58**  | Furbo        |
+| J3   | Mar 18/08 | Furbo → **Dog's Bay avant 10h** → Roundstone → Clifden → Sky Road 17h | **~2h50**  | Ballynahinch |
+| J4   | Mer 19/08 | Ballynahinch → **Kylemore 10h** → **Connemara NP 14h30** → Athenry    | **~2h30**  | Athenry      |
+| J5   | Jeu 20/08 | Athenry → Caherconnell → Poulnabrone → Lahinch → **Cliffs 18h45**     | **~2h45**  | Ennistymon   |
+| J6   | Ven 21/08 | Lahinch (plage 9h) → Ennis (dej) → **Birr Castle 14h50**              | **~2h25**  | Banagher     |
+| J7   | Sam 22/08 | Banagher → **Trim Castle 10h** → Hill of Tara → nord Dublin           | **~2h45**  | Balbriggan   |
+| J8   | Dim 23/08 | Reveil 4h30 → Terminal                                                | **30 min** | —            |
 
-### Detail des troncons OSRM (minutes)
+Les temps sont desormais **porte-a-porte** (logements reels compris, aller-retours du soir inclus), la ou la v3 ne comptait que les troncons entre villes-etapes. Les journees a 2h30-2h50 depassent la cible de 2h : en J3 et J5 une bonne partie est de la route panoramique (Sky Road, aller-retour du soir aux falaises), pas du transit.
+
+### Detail des troncons OSRM v3 (minutes, entre villes-etapes uniquement)
 
 ```
 J1: Airport→Dublin(21)
@@ -42,15 +44,38 @@ J6: Lahinch→Ennis(32) + Ennis→Birr(92)
 J7: Birr→Trim(91) + Trim→Tara(21) + Tara→Airport(42)
 ```
 
-### Nuits (7 au total)
+### Nuits reellement reservees (7 au total)
 
-1. Dublin centre (1 nuit)
-2. Galway (1ere nuit) — meme logement que nuit 4
-3. Clifden (1 nuit)
-4. Galway (2e nuit) — retour au meme logement
-5. Lahinch (1 nuit)
-6. Birr (1 nuit)
-7. Hotel aeroport Dublin (1 nuit)
+1. Clondalkin (sud-ouest Dublin)
+2. Furbo (cote, ouest de Galway)
+3. Ballynahinch (Connemara, entre Roundstone et Clifden)
+4. Athenry (est de Galway, croisement M6/M18)
+5. Ennistymon (2 km de Lahinch)
+6. Banagher (~10 min de Birr, bord du Shannon)
+7. Balbriggan (nord Dublin, ~30 min de l'aeroport)
+
+Ces logements ne sont pas dans les villes-etapes du tableau ci-dessus : les temps de conduite reels de chaque journee sont un peu superieurs aux troncons OSRM listes.
+
+### Horaires verifies (aout 2026) et creneaux anti-foule
+
+| Site                        | Horaires aout                 | Creneau optimal          | Pourquoi                                             |
+| --------------------------- | ----------------------------- | ------------------------ | ---------------------------------------------------- |
+| Dog's Bay                   | acces libre                   | **avant 10h**            | ~10 places de parking, plein des 10h en juillet-aout |
+| Kylemore Abbey              | 10h-18h (dern. entree 17h)    | **10h pile**             | Les cars arrivent des 11h et saturent jusqu'a 14h    |
+| Connemara NP / Diamond Hill | acces libre                   | **apres 14h**            | Parking 20-30 places, sature 10h-14h                 |
+| Caherconnell                | 10h-17h (dern. visite 16h30)  | matinee, demo reservee   | Demonstrations a reserver en ligne                   |
+| Cliffs of Moher             | 8h-21h                        | **apres 18h** (ou 8h-9h) | Bondees 11h-16h : c'est le pire creneau              |
+| Birr Castle                 | 9h-18h (**dern. entree 17h**) | arriver avant 15h        | 3h de domaine + Treehouse, sinon on court            |
+| Trim Castle (donjon)        | ouverture 10h                 | **10h pile**             | Visites non reservables, complet les samedis d'aout  |
+| Hill of Tara                | site libre, centre 10h-17h    | milieu d'apres-midi      | Gratuit, rotation rapide du petit parking            |
+| Galway Atlantaquaria        | 9h-18h (dern. entree 17h)     | J2 si pluie              | Impossible a caser le J4 : on arrive apres 17h       |
+| Book of Kells               | dim. 9h30-17h                 | 1er creneau              | Billets horodates, complets plusieurs jours avant    |
+
+**Reservations obligatoires** : Kylemore, Caherconnell (demo), Cliffs of Moher (creneau en ligne ~7 EUR/adulte au lieu de ~12 EUR sur place), Book of Kells. **Trim Castle ne se reserve pas** : billets du donjon sur place, premier arrive premier servi.
+
+**Heritage Card : inutile ici.** 40 EUR/adulte alors que le seul site OPW payant du parcours est Trim Castle (famille ~13 EUR) ; Hill of Tara est gratuit.
+
+**Parking Dublin J1** : ne pas rentrer la voiture dans le centre un dimanche. Red Cow Luas Park & Ride (4 EUR/24 h, ticket Luas valide obligatoire) + ligne rouge, ~25 min.
 
 ### Sites visites
 
@@ -72,7 +97,7 @@ SvelteKit 5 (Svelte 5 runes) + TypeScript strict + Vite, deploye en statique sur
 ```
 ireland-trip/
 ├── CLAUDE.md                ← Ce fichier
-├── data.json                ← SOURCE DE VERITE : itineraire, stops, POIs, tips, blogs
+├── static/data.json         ← SOURCE DE VERITE : itineraire, stops, POIs, tips, blogs
 ├── tsconfig.json            ← TypeScript strict, extends .svelte-kit/tsconfig.json
 ├── svelte.config.js         ← adapter-static, prerender, base path
 ├── vite.config.js           ← SvelteKit + Vite
@@ -102,14 +127,15 @@ ireland-trip/
 └── .github/workflows/pages.yml ← CI : type-check + lint + build + deploy
 ```
 
-### Normalisation des donnees (data.json -> types TS)
+### Normalisation des donnees (static/data.json -> types TS)
 
-`data.json` est la source de verite mais contient des champs bruts. La fonction `normalizeDay()` dans `stats.ts` transforme chaque `RawDay` en `Day` :
+`static/data.json` est le fichier reellement servi (`fetch(`${base}/data.json`)` dans `+page.svelte`) : c'est **la** source de verite. Il ne doit pas etre duplique a la racine — un doublon `./data.json` a existe jusqu'en aout 2026 et a diverge silencieusement (des corrections editees a la racine ne sont jamais arrivees sur le site).
+
+La fonction `normalizeDay()` dans `stats.ts` transforme chaque `RawDay` en `Day` :
 
 - **stops** : champs plats (`gmaps`, `web`, `tripadvisor`...) -> tableau `links: StopLink[]`
-- **distanceKm** : parse depuis `distance` (ex: `"~85 km"` -> `85`)
-- **driveMinutes** : parse depuis `driveTime` (ex: `"~2h27"` -> `147`)
 - **budget.total** : calcule depuis `budget.entries`
+- `distanceKm` et `driveMinutes` sont deja numeriques dans le JSON
 
 ### Commandes
 
@@ -121,7 +147,7 @@ ireland-trip/
 
 ### Comment modifier l'itineraire
 
-1. Editer `data.json` (champs `days`, `stops`, `route`, `pois`, `tips`, `blogs`)
+1. Editer `static/data.json` (champs `days`, `stops`, `schedule`, `practicalTips`, `pois`, `tips`, `blogs`)
 2. Lancer `pnpm dev` pour visualiser
 
 ### Images dans data.json
@@ -174,28 +200,28 @@ Le resultat contient `duration` (secondes) et `distance` (metres).
 
 ## Conseils cles issus des forums et TripAdvisor
 
-- **Cliffs of Moher** : parking officiel 8 EUR/pers (!). Parking fermier 800m avant (dir. Liscannor) = 2 EUR/vehicule. Arriver apres 16h. Coupe-vent obligatoire. Zone balisee avec enfants.
-- **Caherconnell Fort** : famille ~28 EUR (fort + demo chiens de berger). 4.9/5 TripAdvisor. Les enfants caressent les border collies et agneaux.
+- **Cliffs of Moher** : ouvert 8h-21h en aout, bondees 11h-16h. Creneau horodate en ligne ~7 EUR/adulte (~12 EUR sur place), enfants < 12 ans gratuits. Parking fermier cote Liscannor 2-5 EUR, mais certaines fermes facturent desormais ~5 EUR/personne et le sentier n'est pas cloture. **Y aller apres 18h** (ou des 8h). Coupe-vent obligatoire.
+- **Caherconnell Fort** : ouvert 10h-17h en juillet-aout (derniere visite 16h30). Famille ~28 EUR (fort + demo chiens de berger) — **reserver le creneau de demo en ligne**. 4.9/5 TripAdvisor. Les enfants caressent les border collies et agneaux.
 - **Sky Road** : Upper Sky Road = meilleures vues. Ideal au coucher du soleil (17-18h). Route etroite.
 - **Dog's Bay** : sable blanc corallien, eau turquoise. Tour de la presqu'ile 2h a pied.
-- **Trim Castle** : famille ~10 EUR. Visite guidee donjon 45 min obligatoire. Brochure FR.
-- **Hill of Tara** : gratuit (Heritage Card). Les enfants adorent devaler les collines. 30-45 min.
+- **Trim Castle** : famille ~13 EUR. Visite guidee du donjon (45 min) obligatoire et **non reservable** — billets sur place, premier arrive premier servi, complet les jours charges de juillet-aout. Ouverture 10h : y etre a l'ouverture. Enceinte et remparts gratuits pour patienter. Brochure FR.
+- **Hill of Tara** : entierement gratuit, parking gratuit (pas besoin de Heritage Card). Centre d'interpretation mai-septembre 10h-17h. Les enfants adorent devaler les collines. 45 min a 1h.
 - **Atlantaquaria** : bassins a hauteur d'enfant, bassin tactile. ~1h de visite.
 - **Connemara NP / Diamond Hill** : 3 sentiers (1,5 km facile → 3,8 km sommet). Gratuit.
-- **Kylemore Abbey** : arriver tot (cars des 10h). Jardins victoriens + eglise gothique miniature. Famille ~45 EUR.
+- **Kylemore Abbey** : ouvre a **10h00** (derniere entree 17h) — y etre a l'ouverture, les cars arrivent des 11h et saturent jusqu'a 14h. Billets a reserver en ligne en aout. Jardins victoriens (navette) + eglise gothique miniature. Famille ~45 EUR.
 - **Lahinch Beach** : aire de jeux a cote, section baignade surveillee, cours surf des 8 ans.
-- **Birr Castle Demesne** : Treehouse Playground (enorme), Grand Telescope, I Spy Science Trail. Famille ~30 EUR. Ferme 18h.
+- **Birr Castle Demesne** : Treehouse Playground (enorme), Grand Telescope, I Spy Science Trail. Famille ~30 EUR. Ouvert des 9h, ferme 18h, **derniere entree 17h** : arriver avant 15h. Visites guidees de l'interieur lun-sam en mai-aout, sur reservation.
 - **Galway** : 2-3h de visite suffisent. McDonagh's = fish & chips legendaire. Salthill Promenade + kicker la plaque.
 
 ## Tarifs verifies (2025-2026)
 
-- Heritage Card : 40 EUR/adulte, enfants < 12 ans gratuit
-- Cliffs of Moher : 8 EUR/pers parking officiel (ou 2 EUR/vehicule parking fermier)
+- Heritage Card : 40 EUR/adulte — **non rentable sur cet itineraire** (seul Trim Castle est payant)
+- Cliffs of Moher : ~7 EUR/adulte en creneau horodate en ligne, ~12 EUR sur place, enfants < 12 ans gratuits (parking fermier 2-5 EUR, parfois par personne)
 - Caherconnell Fort + demo : famille ~28 EUR
 - Kylemore Abbey : famille 45 EUR
 - Newgrange : famille 48 EUR (Heritage Card acceptee)
-- Trim Castle : famille ~10 EUR
+- Trim Castle : famille ~13 EUR (non reservable)
 - Connemara National Park : gratuit
-- Hill of Tara : gratuit (Heritage Card)
+- Hill of Tara : gratuit
 - Atlantaquaria : ~15 EUR/adulte, reduction enfants
 - Birr Castle Demesne : famille ~30 EUR

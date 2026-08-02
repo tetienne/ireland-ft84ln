@@ -24,9 +24,9 @@
       "isoDate": "2026-08-16",
       "routeIcon": "fa-plane-arrival",
       "routeDesc": "Arrivee Nimes → Dublin · Vol FR9777",
-      "morning": "Vol Ryanair FR9777, depart 11h10 de Nimes, arrivee <strong>12h40 a Dublin</strong>. Immigration + bagages (~20 min), puis comptoir <strong>NewWay</strong> pour la voiture a 13h. Route directe vers le centre de Dublin (<strong>30 min</strong>). Installation et apres-midi tranquille : balade dans <a href=\"https://www.google.com/maps/search/?api=1&query=Temple+Bar+Dublin+Ireland\" target=\"_blank\"><strong>Temple Bar</strong></a> puis <a href=\"https://www.google.com/maps/search/?api=1&query=St+Stephen's+Green+Dublin+Ireland\" target=\"_blank\"><strong>St Stephen's Green</strong></a> avec les enfants. <em>Option</em> : <a href=\"https://www.google.com/maps/search/?api=1&query=Book+of+Kells+Trinity+College+Dublin+Ireland\" target=\"_blank\"><strong>Book of Kells</strong></a> a Trinity College (manuscrit du IXe siecle + Long Room — billets horodates ~18 EUR/adulte, enfants gratuits, 45 min).",
-      "night": "Nuit a Dublin centre",
-      "nightInfo": "<strong>Ou dormir :</strong> Eviter Temple Bar (bruyant, cher). Privilegier <a href=\"https://www.google.com/maps/search/?api=1&query=Ballsbridge+Dublin+Ireland\" target=\"_blank\"><strong>Ballsbridge</strong></a> (calme, bus frequents). Nuit de transit : un aparthotel ou B&B suffit. <a href=\"https://www.google.com/maps/search/?api=1&query=Staycity+Aparthotels+Dublin+Ireland\" target=\"_blank\"><strong>Staycity Aparthotels</strong></a> (cuisinette, proche St Patrick's, ~130 EUR), <a href=\"https://www.google.com/maps/search/?api=1&query=Bewleys+Hotel+Ballsbridge+Dublin+Ireland\" target=\"_blank\"><strong>Bewleys Hotel Ballsbridge</strong></a> (chambres familiales, bon rapport qualite/prix), <a href=\"https://www.google.com/maps/search/?api=1&query=Donnybrook+Hall+Dublin+Ireland\" target=\"_blank\"><strong>Donnybrook Hall</strong></a> (victorien, chambres communicantes). Alternative budget : loger a <a href=\"https://www.google.com/maps/search/?api=1&query=Howth+Dublin+Ireland\" target=\"_blank\"><strong>Howth</strong></a> ou <a href=\"https://www.google.com/maps/search/?api=1&query=Dun+Laoghaire+Dublin+Ireland\" target=\"_blank\"><strong>Dun Laoghaire</strong></a> (20-30 min en DART).",
+      "morning": "Vol Ryanair FR9777, depart 11h10 de Nimes, arrivee <strong>12h40 a Dublin</strong>. Immigration + bagages (~20 min), puis comptoir <strong>NewWay</strong> pour la voiture a 13h. <strong>On ne rentre pas la voiture dans Dublin</strong> : un dimanche d'aout, le centre est sature et les parkings du centre tournent a ~4 EUR/h. On depose les bagages a Clondalkin, puis <a href=\"https://www.google.com/maps/search/?api=1&query=Red+Cow+Luas+Park+and+Ride+Dublin\" target=\"_blank\"><strong>Red Cow Luas Park &amp; Ride</strong></a> (4 EUR/24 h, ticket Luas valide obligatoire) et <strong>Luas ligne rouge</strong> jusqu'au centre en ~25 min. Balade dans <a href=\"https://www.google.com/maps/search/?api=1&query=Temple+Bar+Dublin+Ireland\" target=\"_blank\"><strong>Temple Bar</strong></a> en fin d'apres-midi (avant l'affluence du soir) puis <a href=\"https://www.google.com/maps/search/?api=1&query=St+Stephen's+Green+Dublin+Ireland\" target=\"_blank\"><strong>St Stephen's Green</strong></a>. <em>Option</em> : <a href=\"https://www.google.com/maps/search/?api=1&query=Book+of+Kells+Trinity+College+Dublin+Ireland\" target=\"_blank\"><strong>Book of Kells</strong></a> — dimanche 9h30-17h, <strong>billets horodates a reserver plusieurs jours a l'avance</strong> en aout (sinon complet). Sans reservation, on laisse tomber.",
+      "night": "Nuit a Clondalkin (sud Dublin)",
+      "nightInfo": "Nuit de transit pres de Dublin. Soiree tranquille apres le voyage.",
       "highlight": null,
       "mapCenter": {
         "lat": 53.3498,
@@ -103,7 +103,7 @@
         {
           "time": "12h40",
           "label": "Arrivee Dublin, immigration + bagages",
-          "icon": "fa-plane-arrival",
+          "icon": "fa-suitcase-rolling",
           "duration": "20min"
         },
         {
@@ -113,40 +113,58 @@
           "duration": "30min"
         },
         {
-          "time": "13h30",
-          "label": "Route vers Dublin centre",
+          "time": "13h40",
+          "label": "Route vers Clondalkin (hors centre)",
           "icon": "fa-car",
-          "duration": "30min"
+          "duration": "25min"
         },
         {
-          "time": "14h00",
-          "label": "Installation hotel / B&B",
+          "time": "14h10",
+          "label": "Depot des bagages, on laisse la voiture",
           "icon": "fa-bed",
           "duration": "30min"
         },
         {
-          "time": "14h30",
-          "label": "Balade Temple Bar",
+          "time": "14h45",
+          "label": "Red Cow Luas Park & Ride (4 EUR/24h)",
+          "icon": "fa-parking",
+          "duration": "15min"
+        },
+        {
+          "time": "15h05",
+          "label": "Luas ligne rouge vers le centre",
+          "icon": "fa-train",
+          "duration": "25min"
+        },
+        {
+          "time": "15h35",
+          "label": "Balade Temple Bar (avant la cohue du soir)",
           "icon": "fa-music",
           "duration": "1h"
         },
         {
-          "time": "15h30",
-          "label": "St Stephen's Green (aire de jeux)",
+          "time": "16h35",
+          "label": "St Stephen's Green (aire de jeux, canards)",
           "icon": "fa-tree",
-          "duration": "1h30"
+          "duration": "1h15"
         },
         {
-          "time": "17h00",
-          "label": "Retour hotel, repos",
-          "icon": "fa-bed",
-          "duration": "1h"
-        },
-        {
-          "time": "18h30",
+          "time": "18h00",
           "label": "Diner en ville",
           "icon": "fa-utensils",
           "duration": "1h"
+        },
+        {
+          "time": "19h15",
+          "label": "Retour Luas + voiture",
+          "icon": "fa-train",
+          "duration": "45min"
+        },
+        {
+          "time": "20h15",
+          "label": "Arrivee au logement, coucher",
+          "icon": "fa-bed",
+          "duration": null
         }
       ],
       "budget": {
@@ -258,9 +276,10 @@
           "stop": "Temple Bar",
           "icon": "fa-music",
           "tips": [
-            "Plus agreable en journee avec les enfants (artistes de rue, facades colorees)",
+            "Y aller entre 15h et 18h : les artistes de rue sont la, les groupes de soiree pas encore",
             "Le soir c'est tres anime et bruyant, pas ideal pour les petits",
-            "Eviter les restaurants touristiques de Temple Bar, souvent chers et moyens"
+            "Eviter les restaurants touristiques de Temple Bar, souvent chers et moyens",
+            "Zone pietonne : la voiture ne sert a rien, le Luas depose a 5 min a pied (Jervis / Abbey Street)"
           ]
         },
         {
@@ -271,9 +290,19 @@
             "Canards sur le lac, les enfants adorent",
             "Parc ferme a la tombee de la nuit"
           ]
+        },
+        {
+          "stop": "Transport a Dublin",
+          "icon": "fa-circle-info",
+          "tips": [
+            "Red Cow Luas Park & Ride : 4 EUR/24 h, il FAUT un ticket Luas valide le jour ou on stationne (sinon sabot, 80 EUR)",
+            "Luas ligne rouge Red Cow → Abbey Street : ~25 min, un tram toutes les 10-15 min le dimanche",
+            "Parking en centre-ville : ~4 EUR/h + tourner pour trouver une place un dimanche d'aout — a eviter",
+            "Book of Kells : billets horodates, les creneaux d'aout partent plusieurs jours a l'avance. Le 1er creneau du matin est le plus calme"
+          ]
         }
       ],
-      "distanceKm": 15,
+      "distanceKm": 25,
       "driveMinutes": 30
     },
     {
@@ -288,10 +317,10 @@
       "isoDate": "2026-08-17",
       "routeIcon": "fa-road",
       "routeDesc": "Dublin → Galway (via Athlone) · 2h34 de route",
-      "morning": "Depart de Dublin vers 9h30 apres un bon Irish Breakfast. <strong>1h30</strong> d'autoroute M6 jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Athlone+Ireland\" target=\"_blank\"><strong>Athlone</strong></a> pour un dejeuner au bord du Shannon (<a href=\"https://www.google.com/maps/search/?api=1&query=Sean's+Bar+Athlone+Ireland\" target=\"_blank\">Sean's Bar</a>, plus vieux pub d'Irlande !). Balade digestive au Burgess Park (aire de jeux). Puis <strong>1h04</strong> de M6 jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Galway+Ireland\" target=\"_blank\"><strong>Galway</strong></a>. Arrivee vers 15h. Fin de journee a pied dans le <a href=\"https://www.google.com/maps/search/?api=1&query=Latin+Quarter+Galway+Ireland\" target=\"_blank\"><strong>Latin Quarter</strong></a> : musiciens de rue, facades colorees, ambiance festive. Les enfants adorent <a href=\"https://www.google.com/maps/search/?api=1&query=Shop+Street+Galway+Ireland\" target=\"_blank\">Shop Street</a>.",
-      "night": "Nuit a Galway (1ere nuit)",
-      "nightInfo": "<strong>Ou dormir :</strong> <a href=\"https://www.google.com/maps/search/?api=1&query=Salthill+Galway+Ireland\" target=\"_blank\"><strong>Salthill</strong></a> fait l'unanimite pour les familles (promenade, plage, parking gratuit en B&B, sortie naturelle vers Connemara/Burren). 2 nuits au meme endroit ! <a href=\"https://www.google.com/maps/search/?api=1&query=Westwinds+Guestlodge+Salthill+Ireland\" target=\"_blank\"><strong>Westwinds Guestlodge</strong></a> (sur la promenade, vue baie, chambres familiales, ~106-130 EUR), <strong>Amber Bay B&B</strong> (reference Routard, vue baie), <strong>St Judes B&B</strong> (4 etoiles, parking). Preciser les 2 nuits non consecutives a la reservation. Restaurants : <a href=\"https://www.google.com/maps/search/?api=1&query=McDonagh's+Galway+Ireland\" target=\"_blank\"><strong>McDonagh's</strong></a> (fish &amp; chips legendaire), <strong>Ard Bia at Nimmos</strong>. Soiree pub avec musique live (Tig Coili, The Crane Bar, enfants acceptes en debut de soiree).",
-      "rainyDay": "<strong>Galway City Museum</strong> (gratuit, interactif, bateau suspendu au plafond, 30-45 min) · <strong>Leisureland Salthill</strong> (piscine interieure, toboggan de 65m, piscine pirate pour les petits)",
+      "morning": "Depart vers 9h30 apres un bon Irish Breakfast (on part vers l'ouest, donc a contre-courant des bouchons du lundi matin sur le M50). 1h30 d'autoroute M6 jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Athlone+Ireland\" target=\"_blank\"><strong>Athlone</strong></a>. <strong>On inverse l'ordre</strong> : aire de jeux du Burgess Park d'abord, puis dejeuner vers 12h au <a href=\"https://www.google.com/maps/search/?api=1&query=Sean's+Bar+Athlone+Ireland\" target=\"_blank\"><strong>Sean's Bar</strong></a> (plus vieux pub d'Irlande) — arriver avant le coup de feu de 13h, le pub est minuscule. Puis 1h04 de M6 jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Galway+Ireland\" target=\"_blank\"><strong>Galway</strong></a>. Arrivee vers 14h : on visite Galway <strong>avant</strong> de filer au logement de Furbo, pour ne pas faire l'aller-retour. Latin Quarter, Shop Street, Spanish Arch a pied.",
+      "night": "Nuit a Furbo (cote de Galway)",
+      "nightInfo": "B&amp;B sur la cote, vue sur Galway Bay. Galway centre a ~10 min pour le diner : <a href=\"https://www.google.com/maps/search/?api=1&query=McDonagh's+Galway+Ireland\" target=\"_blank\"><strong>McDonagh's</strong></a> (fish &amp; chips legendaire), <strong>Ard Bia at Nimmos</strong>.",
+      "rainyDay": "<strong>Galway Atlantaquaria</strong> a Salthill (9h-18h en aout, derniere entree 17h — c'est ici qu'il faut le caser, pas le J4 ou l'on arrive trop tard) &middot; <strong>Galway City Museum</strong> (gratuit, interactif, bateau suspendu au plafond, 30-45 min) &middot; <strong>Leisureland Salthill</strong> (piscine interieure, toboggan de 65 m, piscine pirate pour les petits)",
       "highlight": null,
       "mapCenter": {
         "lat": 53.2718,
@@ -351,7 +380,7 @@
           "parking": {
             "location": "Claddagh Car Park (Spanish Arch) ou Q-Park Eyre Square",
             "cost": "2.50-3.20 EUR/h",
-            "tip": "Depuis Salthill, prendre le bus 401/402 (15 min) plutot que la voiture.",
+            "tip": "Parking Claddagh Quay (Spanish Arch) = le plus proche du Latin Quarter. Le Park & Ride universitaire est ferme l'ete. Depuis Furbo/Salthill, bus 401/402.",
             "gmaps": "https://www.google.com/maps/search/?api=1&query=Claddagh+Car+Park+Galway"
           },
           "lat": 53.2725,
@@ -381,57 +410,57 @@
         },
         {
           "time": "11h00",
-          "label": "Arrivee Athlone, dejeuner Sean's Bar",
-          "icon": "fa-utensils",
-          "duration": "1h"
+          "label": "Arrivee Athlone, Burgess Park (aire de jeux)",
+          "icon": "fa-tree",
+          "duration": "45min"
         },
         {
           "time": "12h00",
-          "label": "Balade Burgess Park (aire de jeux)",
-          "icon": "fa-tree",
-          "duration": "30min"
+          "label": "Dejeuner Sean's Bar (avant la ruee de 13h)",
+          "icon": "fa-beer",
+          "duration": "1h"
         },
         {
-          "time": "12h30",
+          "time": "13h05",
           "label": "Route Athlone - Galway (M6)",
           "icon": "fa-car",
           "duration": null
         },
         {
-          "time": "13h35",
-          "label": "Arrivee Galway, installation",
-          "icon": "fa-bed",
-          "duration": "30min"
+          "time": "14h10",
+          "label": "Arrivee Galway, parking Claddagh / Spanish Arch",
+          "icon": "fa-parking",
+          "duration": "15min"
         },
         {
-          "time": "14h15",
+          "time": "14h30",
           "label": "Balade Latin Quarter & Shop Street",
           "icon": "fa-guitar",
           "duration": "1h30"
         },
         {
-          "time": "15h45",
+          "time": "16h00",
           "label": "Spanish Arch & Long Walk",
-          "icon": "fa-camera",
+          "icon": "fa-archway",
           "duration": "45min"
         },
         {
-          "time": "16h30",
-          "label": "Temps libre, repos",
+          "time": "17h15",
+          "label": "Diner chez McDonagh's (avant la file de 18h)",
+          "icon": "fa-fish",
+          "duration": "1h"
+        },
+        {
+          "time": "18h30",
+          "label": "Route vers le logement de Furbo",
+          "icon": "fa-car",
+          "duration": "25min"
+        },
+        {
+          "time": "19h00",
+          "label": "Installation, soiree tranquille",
           "icon": "fa-bed",
-          "duration": "1h30"
-        },
-        {
-          "time": "18h00",
-          "label": "Diner chez McDonagh's",
-          "icon": "fa-utensils",
-          "duration": "1h"
-        },
-        {
-          "time": "19h30",
-          "label": "Balade digestive dans Galway",
-          "icon": "fa-camera",
-          "duration": "1h"
+          "duration": null
         }
       ],
       "budget": {
@@ -1095,23 +1124,26 @@
           "stop": "Sean's Bar, Athlone",
           "icon": "fa-beer-mug-empty",
           "tips": [
-            "Plus vieux pub d'Irlande (900 ap. J.-C.), interessant meme pour un dejeuner rapide",
-            "Family-friendly en journee, menu enfants disponible",
-            "Parking gratuit a proximite dans le centre d'Athlone"
+            "Plus vieux pub d'Irlande (900 ap. J.-C.) — tres petit, il se remplit d'un coup vers 13h",
+            "Enfants bienvenus jusqu'a 19h ; la cuisine vient du restaurant My Melody a cote, un serveur passe prendre la commande",
+            "Y aller vers 12h : le pub est encore calme et on repart avant l'affluence",
+            "Parking : Town Centre car park ou le long du Shannon, ~1,50 EUR/h"
           ]
         },
         {
           "stop": "Galway Latin Quarter & Shop Street",
           "icon": "fa-guitar",
           "tips": [
+            "Le Park & Ride de l'universite NE FONCTIONNE PAS l'ete (arret jusqu'au 7 septembre) — ne pas compter dessus",
+            "Se garer au parking Claddagh Quay / Spanish Arch : le plus proche du Latin Quarter, 2,50-3,20 EUR/h",
+            "Alternative gratuite : stationnement le long de Grattan Road / Salthill puis bus 401 ou 402 (15 min)",
             "Shop Street est pietonne, les enfants peuvent se promener librement",
-            "Musiciens de rue surtout l'apres-midi et en debut de soiree",
-            "McDonagh's take-away : meme poisson frais, file plus rapide, moins cher que le restaurant"
+            "McDonagh's : la file commence vers 18h. Manger a 17h15, ou prendre le comptoir take-away (meme poisson, moins cher)"
           ]
         }
       ],
-      "distanceKm": 209,
-      "driveMinutes": 154
+      "distanceKm": 230,
+      "driveMinutes": 178
     },
     {
       "day": 3,
@@ -1122,10 +1154,10 @@
       "title": "Connemara & Sky Road",
       "isoDate": "2026-08-18",
       "routeIcon": "fa-panorama",
-      "routeDesc": "Galway → Roundstone → Clifden → Sky Road · ~2h27 de route",
-      "morning": "Depart de Galway vers 9h30. Route scenique (<strong>1h12</strong>) le long de la cote du Connemara vers <a href=\"https://www.google.com/maps/search/?api=1&query=Roundstone+Connemara+Ireland\" target=\"_blank\"><strong>Roundstone</strong></a>, village de pecheurs idyllique (atelier de bodhran). Puis <a href=\"https://www.google.com/maps/search/?api=1&query=Dog's+Bay+Roundstone+Ireland\" target=\"_blank\"><strong>Dog's Bay</strong></a> — plage de sable blanc corallien, eau turquoise (<strong>7 min</strong> de Roundstone). <strong>38 min</strong> de route jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Clifden+Ireland\" target=\"_blank\"><strong>Clifden</strong></a>, capitale du Connemara. Dejeuner a Clifden. <strong>Apres-midi</strong> : balade vers les ruines du <a href=\"https://www.google.com/maps/search/?api=1&query=Clifden+Castle+Ruins+Ireland\" target=\"_blank\"><strong>Clifden Castle</strong></a> (15 min de marche entre moutons et poneys du Connemara, vue sur la baie — les enfants adorent). Puis <a href=\"https://www.google.com/maps/search/?api=1&query=Sky+Road+Clifden+Ireland\" target=\"_blank\"><strong>Sky Road</strong></a>, boucle scenique de 16 km en voiture (~30-40 min avec arrets photo). Point culminant a 120 m, vues epoustouflantes sur l'ocean et les iles.",
-      "night": "Nuit a Clifden",
-      "nightInfo": "<strong>Ou dormir :</strong> <a href=\"https://www.google.com/maps/search/?api=1&query=Clifden+Ireland\" target=\"_blank\"><strong>Clifden</strong></a>, « capitale du Connemara ». <strong>Faul House B&B</strong> (eleveur de poneys du Connemara, les enfants voient les chevaux !), <strong>Bayview House B&B</strong> (debut Sky Road, vue baie, ideal pour le coucher de soleil), <strong>Atlantic View B&B</strong> (calme, pancakes maison). Formule classique : chambre double + twin communicante.",
+      "routeDesc": "Furbo → Dog's Bay → Roundstone → Clifden → Sky Road · ~2h50 dont 35 min de Sky Road panoramique",
+      "morning": "<strong>Depart tot : 8h15.</strong> C'est le jour ou l'horaire compte le plus. Le parking de <a href=\"https://www.google.com/maps/search/?api=1&query=Dog's+Bay+Roundstone+Ireland\" target=\"_blank\"><strong>Dog's Bay</strong></a> ne fait qu'une dizaine de places et il est plein des 10h en juillet-aout : <strong>on y va en premier</strong>, on traverse Roundstone sans s'arreter et on revient au village apres. Plage de sable blanc corallien, eau turquoise, ~1h30 sur place. Retour a <a href=\"https://www.google.com/maps/search/?api=1&query=Roundstone+Ireland\" target=\"_blank\"><strong>Roundstone</strong></a> vers 11h15 (port, atelier de bodhran, parking gratuit et jamais sature). Dejeuner a <a href=\"https://www.google.com/maps/search/?api=1&query=Clifden+Ireland\" target=\"_blank\"><strong>Clifden</strong></a> vers 13h. Apres-midi : <strong>Clifden Castle</strong> vers 15h30 (le mini-parking de 8 places se libere quand les cars repartent) puis <strong>Sky Road</strong> a partir de 17h — lumiere rasante, cars partis, lay-bys libres.",
+      "night": "Nuit a Ballynahinch (Connemara)",
+      "nightInfo": "Hostel au coeur du Connemara, entre Roundstone et Clifden. Cadre sauvage au pied des Twelve Bens.",
       "rainyDay": "<strong>Killary Fjord Boat</strong> depuis Leenane (40 min de Clifden, 90 min de croisiere en bateau couvert sur le seul fjord d'Irlande — les enfants peuvent « piloter », atmospherique sous la pluie, famille ~60 EUR) · <strong>Dan O'Hara's Homestead</strong> (7 km de Clifden, partie musee interieure + AV, tracteur si ca se degage)",
       "highlight": "Journee paysages",
       "mapCenter": {
@@ -1133,7 +1165,7 @@
         "lng": -10.093
       },
       "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Sky_Road_Clifden.jpg",
-      "mapDesc": "Roundstone, Dog's Bay, Clifden, Sky Road",
+      "mapDesc": "Dog's Bay des l'ouverture, Roundstone, Clifden, Sky Road au coucher",
       "stops": [
         {
           "name": "Roundstone",
@@ -1167,7 +1199,7 @@
           "parking": {
             "location": "Petit parking au bout d'une route etroite (~10 places)",
             "cost": "Gratuit",
-            "tip": "Arrive tot (avant 10h) ou tard (apres 16h) en aout. Si plein, essayer Gurteen Bay a cote."
+            "tip": "~10 places seulement, plein des 10h en juillet-aout. Arriver avant 10h. Si plein : parking de Gurteen Bay (plus grand) puis platelage a travers l'isthme."
           },
           "lat": 53.3793,
           "lng": -10.055,
@@ -1265,76 +1297,76 @@
       ],
       "schedule": [
         {
+          "time": "8h15",
+          "label": "Depart de Furbo (on traverse Roundstone sans s'arreter)",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
           "time": "9h30",
-          "label": "Depart Galway, route vers Roundstone",
-          "icon": "fa-car",
-          "duration": null
-        },
-        {
-          "time": "10h45",
-          "label": "Arret Roundstone (village, atelier bodhran)",
-          "icon": "fa-palette",
-          "duration": "30min"
-        },
-        {
-          "time": "11h15",
-          "label": "Route vers Dog's Bay",
-          "icon": "fa-car",
-          "duration": null
-        },
-        {
-          "time": "11h25",
-          "label": "Dog's Bay (plage de sable blanc)",
-          "icon": "fa-umbrella-beach",
+          "label": "Dog's Bay — avant 10h, sinon parking plein",
+          "icon": "fa-water",
           "duration": "1h30"
         },
         {
-          "time": "12h55",
+          "time": "11h05",
+          "label": "Route retour vers Roundstone",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "11h15",
+          "label": "Roundstone (port, atelier de bodhran)",
+          "icon": "fa-drum",
+          "duration": "1h"
+        },
+        {
+          "time": "12h15",
+          "label": "Route vers Ballynahinch (sur le chemin de Clifden)",
+          "icon": "fa-car",
+          "duration": null
+        },
+        {
+          "time": "12h30",
+          "label": "Depot des bagages au logement",
+          "icon": "fa-bed",
+          "duration": "30min"
+        },
+        {
+          "time": "13h05",
           "label": "Route vers Clifden",
           "icon": "fa-car",
           "duration": null
         },
         {
-          "time": "13h30",
-          "label": "Dejeuner a Clifden",
+          "time": "13h25",
+          "label": "Dejeuner et balade a Clifden",
           "icon": "fa-utensils",
-          "duration": "1h"
+          "duration": "2h"
         },
         {
-          "time": "14h30",
-          "label": "Balade dans Clifden",
-          "icon": "fa-camera",
-          "duration": "30min"
-        },
-        {
-          "time": "15h00",
-          "label": "Installation B&B",
-          "icon": "fa-bed",
-          "duration": "30min"
-        },
-        {
-          "time": "16h00",
+          "time": "15h30",
           "label": "Clifden Castle Walk (ruines + poneys)",
           "icon": "fa-chess-rook",
-          "duration": "45min"
-        },
-        {
-          "time": "16h45",
-          "label": "Sky Road (boucle panoramique)",
-          "icon": "fa-panorama",
           "duration": "1h"
         },
         {
-          "time": "17h45",
-          "label": "Temps libre, repos",
-          "icon": "fa-bed",
-          "duration": "45min"
+          "time": "17h00",
+          "label": "Sky Road, sens horaire, lumiere du soir",
+          "icon": "fa-road",
+          "duration": "1h30"
         },
         {
-          "time": "18h30",
+          "time": "18h45",
           "label": "Diner a Clifden",
           "icon": "fa-utensils",
-          "duration": "1h"
+          "duration": "1h15"
+        },
+        {
+          "time": "20h00",
+          "label": "Retour au logement (20 min)",
+          "icon": "fa-car",
+          "duration": null
         }
       ],
       "budget": {
@@ -1934,17 +1966,19 @@
           "stop": "Roundstone",
           "icon": "fa-palette",
           "tips": [
+            "Parking gratuit le long du port, jamais sature — a faire au retour de Dog's Bay, sans stress d'horaire",
             "Atelier de bodhran de Malachy Kearns : visite rapide et gratuite",
-            "Petit port photogenique, ideal pour une pause"
+            "Petit port photogenique, ideal pour une pause dejeuner-gouter"
           ]
         },
         {
           "stop": "Dog's Bay & Gurteen Bay",
           "icon": "fa-umbrella-beach",
           "tips": [
+            "LE point de tension du voyage : parking minuscule (~10 places), plein des 10h en juillet-aout",
+            "Y etre avant 10h. Si c'est deja plein : se garer au parking de Gurteen Bay (plus grand) et traverser l'isthme par le platelage",
             "Sable blanc corallien, parmi les plus belles plages d'Irlande",
-            "Parking gratuit en haut de la plage",
-            "Tour de la presqu'ile possible en 2h a pied (boucle facile)",
+            "Aucun service sur place : pique-nique, eau et serviettes dans le coffre",
             "Eau froide meme en aout, prevoir des serviettes chaudes"
           ]
         },
@@ -1953,25 +1987,25 @@
           "icon": "fa-chess-rook",
           "tips": [
             "Balade facile de 15 min (1 km) sur chemin de terre — faisable des 5 ans",
+            "Mini-parking de ~8 places au debut de la Sky Road : plein entre 11h et 15h en aout",
+            "Y aller apres 15h30 (les cars sont repartis) ou se garer gratuitement derriere l'office de tourisme de Clifden et marcher",
             "Moutons, vaches et poneys Connemara en chemin — appareil photo pret !",
-            "Ne pas laisser les enfants entrer dans les ruines (murs instables)",
-            "Chemin boueux apres la pluie — prevoir des bottes ou chaussures impermeables",
-            "Petit parking (~8 places) au debut de la Sky Road — peut etre plein en aout"
+            "Ne pas laisser les enfants entrer dans les ruines (murs instables)"
           ]
         },
         {
           "stop": "Sky Road",
           "icon": "fa-panorama",
           "tips": [
+            "A faire en fin de journee (17h-18h30) : les cars de Galway sont repartis et les lay-bys sont libres",
+            "Rouler dans le sens horaire : on garde le vide cote passager et les lay-bys panoramiques a gauche",
             "Prendre la Upper Sky Road pour les plus belles vues",
-            "Ideal au coucher du soleil (vers 17-18h en aout)",
-            "Route etroite : rouler lentement et se ranger pour laisser passer",
-            "Plusieurs points d'arret photo avec vue sur les iles"
+            "Route etroite : rouler lentement, se ranger pour laisser passer, ne jamais s'arreter dans un virage"
           ]
         }
       ],
-      "distanceKm": 85,
-      "driveMinutes": 147
+      "distanceKm": 130,
+      "driveMinutes": 185
     },
     {
       "day": 4,
@@ -1982,10 +2016,10 @@
       "title": "Kylemore Abbey & Retour Galway",
       "isoDate": "2026-08-19",
       "routeIcon": "fa-mountain-sun",
-      "routeDesc": "Clifden → Kylemore → Connemara NP → Galway · ~1h46 de route",
-      "morning": "Depart de Clifden vers 9h00. <strong>20 min</strong> jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Kylemore+Abbey+Ireland\" target=\"_blank\"><strong>Kylemore Abbey</strong></a>, abbaye benedictine du XIXe siecle au bord d'un lac — jardins victoriens, eglise gothique miniature, la photo carte postale du Connemara (1h30 de visite). Puis <strong>5 min</strong> jusqu'au <a href=\"https://www.google.com/maps/search/?api=1&query=Connemara+National+Park+Ireland\" target=\"_blank\"><strong>Parc National du Connemara</strong></a> a Letterfrack : sentier <a href=\"https://www.google.com/maps/search/?api=1&query=Diamond+Hill+Connemara+Ireland\" target=\"_blank\">Diamond Hill</a> (Lower : 3 km, faisable des 5-6 ans, vue a 360°). Dejeuner a Letterfrack ou pique-nique. <strong>Apres-midi</strong> : route vers Galway (<strong>~1h15</strong>). Retrouver le meme B&B a <a href=\"https://www.google.com/maps/search/?api=1&query=Salthill+Galway+Ireland\" target=\"_blank\"><strong>Salthill</strong></a>. Promenade du front de mer et « kicker la plaque ». Option : <a href=\"https://www.google.com/maps/search/?api=1&query=Galway+Atlantaquaria+Ireland\" target=\"_blank\"><strong>Atlantaquaria</strong></a> si la meteo est maussade.",
-      "night": "Nuit a Galway (2e nuit)",
-      "nightInfo": "<strong>Retour au meme logement a Salthill !</strong> Soiree tranquille a <a href=\"https://www.google.com/maps/search/?api=1&query=Salthill+Galway+Ireland\" target=\"_blank\">Salthill</a> ou dans le <a href=\"https://www.google.com/maps/search/?api=1&query=Latin+Quarter+Galway+Ireland\" target=\"_blank\">Latin Quarter</a>. Avantage des 2 nuits : profiter de Galway sans se presser.",
+      "routeDesc": "Ballynahinch → Kylemore → Connemara NP → Salthill → Athenry · ~2h30 (sauter Salthill fait gagner ~25 min)",
+      "morning": "<strong>Kylemore ouvre a 10h00</strong> (derniere entree 17h) : on part de Ballynahinch a 9h20 pour etre au portail pile a l'ouverture. La premiere heure est de loin la plus calme — <strong>les cars arrivent a partir de 11h</strong>. Billets a reserver en ligne (obligatoire de fait en aout). Abbaye, jardins victoriens (navette), eglise gothique miniature : ~2h. Dejeuner sur place ou a Letterfrack. <strong>On decale volontairement le Parc National du Connemara a 14h30</strong> : son parking ne fait que 20-30 places et il est sature de 10h a 14h en aout — a 14h30 les randonneurs du matin sont redescendus et les places se liberent. Sentier Sruffaunboy (1,5 km, platelage) ou Lower Diamond Hill (3 km). Puis route vers Galway, arret a Salthill pour « kicker la plaque », et nuit a Athenry.",
+      "night": "Nuit a Athenry (est de Galway)",
+      "nightInfo": "Hotel au croisement M6/M18, ideal pour filer vers le Burren le lendemain sans traverser Galway. Soiree tranquille dans la petite ville medievale d'<a href=\"https://www.google.com/maps/search/?api=1&query=Athenry+Ireland\" target=\"_blank\">Athenry</a>.",
       "rainyDay": "<strong>Atlantaquaria</strong> (bassin tactile, ~1h, famille ~45 EUR) · <strong>Galway City Museum</strong> (gratuit, 30-45 min) · <strong>Leisureland Salthill</strong> (piscine interieure, toboggan de 65m, piscine pirate pour les petits)",
       "highlight": null,
       "mapCenter": {
@@ -2003,7 +2037,8 @@
           "photo": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Kylemore_Abbey_2.jpg",
           "parking": {
             "location": "Grand parking visiteurs sur site",
-            "cost": "Gratuit (inclus dans l'entree)"
+            "cost": "Gratuit (inclus dans l'entree)",
+            "tip": "Grand parking gratuit, mais chaotique entre 11h et 15h. Arriver a l'ouverture (10h) regle le probleme."
           },
           "lat": 53.5614,
           "lng": -9.8891,
@@ -2030,7 +2065,8 @@
           "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Connemara_National_Park_Diamond_Hill.jpg/960px-Connemara_National_Park_Diamond_Hill.jpg",
           "parking": {
             "location": "Grand parking au Centre des Visiteurs, Letterfrack",
-            "cost": "Gratuit"
+            "cost": "Gratuit",
+            "tip": "20-30 places, sature de 10h a 14h en aout. Arriver apres 14h : les randonneurs du matin liberent les places."
           },
           "lat": 53.5538,
           "lng": -9.944,
@@ -2119,68 +2155,62 @@
       ],
       "schedule": [
         {
-          "time": "9h00",
-          "label": "Depart de Clifden vers Kylemore",
+          "time": "9h20",
+          "label": "Depart de Ballynahinch",
           "icon": "fa-car",
           "duration": null
         },
         {
-          "time": "9h20",
-          "label": "Kylemore Abbey (visite abbaye + jardins)",
+          "time": "10h00",
+          "label": "Kylemore Abbey — a l'ouverture, avant les cars de 11h",
           "icon": "fa-church",
-          "duration": "1h30"
+          "duration": "2h15"
         },
         {
-          "time": "10h50",
+          "time": "12h15",
+          "label": "Dejeuner (cafe de Kylemore ou Letterfrack)",
+          "icon": "fa-utensils",
+          "duration": "1h15"
+        },
+        {
+          "time": "13h30",
+          "label": "Temps libre / lac de Kylemore",
+          "icon": "fa-camera",
+          "duration": "45min"
+        },
+        {
+          "time": "14h20",
           "label": "Route vers Connemara National Park",
           "icon": "fa-car",
           "duration": null
         },
         {
-          "time": "11h00",
-          "label": "Diamond Hill (sentier Lower, 3 km)",
-          "icon": "fa-mountain-sun",
-          "duration": "1h30"
+          "time": "14h30",
+          "label": "Diamond Hill — le parking se libere apres 14h",
+          "icon": "fa-mountain",
+          "duration": "1h45"
         },
         {
-          "time": "12h30",
-          "label": "Dejeuner a Letterfrack",
-          "icon": "fa-utensils",
-          "duration": "1h"
-        },
-        {
-          "time": "13h30",
+          "time": "16h15",
           "label": "Route vers Galway",
           "icon": "fa-car",
           "duration": null
         },
         {
-          "time": "14h45",
-          "label": "Arrivee Galway, installation Salthill",
-          "icon": "fa-bed",
-          "duration": "30min"
-        },
-        {
-          "time": "15h15",
+          "time": "17h30",
           "label": "Salthill Promenade (kicker la plaque !)",
-          "icon": "fa-person-swimming",
-          "duration": "1h15"
+          "icon": "fa-water",
+          "duration": "45min"
         },
         {
-          "time": "16h30",
-          "label": "Atlantaquaria (optionnel, si pluie)",
-          "icon": "fa-fish",
-          "duration": "1h"
+          "time": "18h20",
+          "label": "Route vers Athenry",
+          "icon": "fa-car",
+          "duration": "35min"
         },
         {
-          "time": "18h00",
-          "label": "Temps libre, repos",
-          "icon": "fa-bed",
-          "duration": "30min"
-        },
-        {
-          "time": "18h30",
-          "label": "Diner a Galway",
+          "time": "19h00",
+          "label": "Arrivee Athenry, diner",
           "icon": "fa-utensils",
           "duration": "1h"
         }
@@ -2926,20 +2956,23 @@
           "stop": "Kylemore Abbey",
           "icon": "fa-church",
           "tips": [
-            "Arriver tot pour eviter les groupes de touristes (cars des 10h)",
-            "Les jardins victoriens sont a 10 min a pied de l'abbaye (navette disponible)",
-            "L'eglise gothique miniature est le point photo incontournable",
-            "Poussette difficile sur certains chemins, prevoir porte-bebe si besoin"
+            "Ouverture 10h00, derniere entree 17h — arriver a 10h pile : c'est le creneau le plus calme de la journee",
+            "Les cars de tour operateurs arrivent a partir de 11h et saturent l'abbaye jusqu'a 14h",
+            "Reserver les billets en ligne : en juin-aout le site se remplit et le parking devient chaotique",
+            "Les jardins victoriens sont a 10 min a pied de l'abbaye (navette gratuite disponible)",
+            "L'eglise gothique miniature est le point photo incontournable"
           ]
         },
         {
           "stop": "Parc National du Connemara / Diamond Hill",
           "icon": "fa-mountain-sun",
           "tips": [
+            "Parking de 20-30 places seulement, sature de 10h a 14h en aout (sinon il faut se garer le long de la route d'acces)",
+            "Creneau ideal : apres 14h, quand les randonneurs du matin redescendent",
             "Sentier Sruffaunboy (1,5 km, platelage bois) : faisable avec un enfant de 5 ans",
             "Lower Diamond Hill (3 km) : faisable des 5-6 ans avec pauses",
-            "Upper Diamond Hill (sommet 442m) : plutot pour le 8 ans, 2h A/R",
-            "Gratuit, parking gratuit aussi"
+            "Upper Diamond Hill (sommet 442 m) : plutot pour le 8 ans, 2h A/R — trop long pour ce creneau",
+            "Entree et parking gratuits"
           ]
         },
         {
@@ -2947,13 +2980,14 @@
           "icon": "fa-person-swimming",
           "tips": [
             "Tradition locale : kicker la plaque au bout de la promenade",
+            "Parkings gratuits aux extremites — ils se vident en fin d'apres-midi",
             "Promenade de 2 km, plongeoir de Blackrock pour les plus courageux",
-            "Glaces chez Salthill Stores"
+            "Atlantaquaria : derniere entree 17h, donc impossible a caser ce jour-la — le garder pour le J2 en cas de pluie"
           ]
         }
       ],
-      "distanceKm": 80,
-      "driveMinutes": 106
+      "distanceKm": 120,
+      "driveMinutes": 150
     },
     {
       "day": 5,
@@ -2965,10 +2999,10 @@
       "title": "Burren & Falaises de Moher",
       "isoDate": "2026-08-20",
       "routeIcon": "fa-mountain-sun",
-      "routeDesc": "Galway → Burren → Cliffs of Moher → Lahinch · ~1h58 de route",
-      "morning": "Depart de Galway vers 9h00. <strong>1h06</strong> jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Caherconnell+Stone+Fort+Ireland\" target=\"_blank\"><strong>Caherconnell</strong></a> dans le Burren. Fort en pierre millenaire + demonstration de chiens de berger (1h30 sur place). Puis <strong>8 min</strong> vers le <a href=\"https://www.google.com/maps/search/?api=1&query=Poulnabrone+Dolmen+Ireland\" target=\"_blank\"><strong>Poulnabrone Dolmen</strong></a> — arret photo au milieu du paysage lunaire. Dejeuner pique-nique dans le Burren. <strong>~32 min</strong> jusqu'aux <a href=\"https://www.google.com/maps/search/?api=1&query=Cliffs+of+Moher+Ireland\" target=\"_blank\"><strong>Cliffs of Moher</strong></a>. Balade le long des falaises. Puis <strong>12 min</strong> jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Lahinch+Beach+Ireland\" target=\"_blank\"><strong>Lahinch</strong></a> pour la nuit.",
-      "night": "Nuit a Lahinch",
-      "nightInfo": "<strong>Ou dormir :</strong> <a href=\"https://www.google.com/maps/search/?api=1&query=Lahinch+Ireland\" target=\"_blank\"><strong>Lahinch</strong></a>, station balneaire familiale avec grande plage surveillee. <strong>Lahinch Coast Hotel</strong> (face plage, piscine interieure, familles bienvenues), <strong>O'Brien's Hotel</strong> (centre village, chambres familiales), <strong>Vaughan Lodge</strong> (B&B haut de gamme, petit-dejeuner excellent). Aire de jeux a cote de la plage. Section baignade surveillee. Cours de surf possibles des 8 ans pour l'aine.",
+      "routeDesc": "Athenry → Burren → Lahinch → Cliffs of Moher au coucher · ~2h45 (dont l'aller-retour du soir aux falaises, 2 x 18 min)",
+      "morning": "<strong>La grosse optimisation de la semaine.</strong> Les Cliffs of Moher sont ouvertes <strong>8h-21h en aout</strong> et saturees de <strong>11h a 16h</strong> — le plan initial y arrivait a 13h45, c'est-a-dire au pire moment (parking officiel plein, file au Visitor Centre). On les bascule donc <strong>en fin de journee</strong>. Matinee dans le Burren : depart 9h15, <a href=\"https://www.google.com/maps/search/?api=1&query=Caherconnell+Stone+Fort+Ireland\" target=\"_blank\"><strong>Caherconnell</strong></a> (ouvre a 10h, 10h-17h en juillet-aout — <strong>reserver le creneau de demonstration de chiens de berger en ligne</strong>), puis <a href=\"https://www.google.com/maps/search/?api=1&query=Poulnabrone+Dolmen+Ireland\" target=\"_blank\"><strong>Poulnabrone</strong></a> et pique-nique. Installation a Lahinch/Ennistymon vers 14h45, <strong>plage l'apres-midi</strong>, diner tot, et <a href=\"https://www.google.com/maps/search/?api=1&query=Cliffs+of+Moher+Ireland\" target=\"_blank\"><strong>Cliffs of Moher vers 18h45</strong></a> : parking qui se vide, plus de file, lumiere rasante et macareux. <em>Plan B si la soiree est bouchee</em> : y aller le lendemain a 8h15 (15 min depuis Ennistymon, on est quasiment seuls a l'ouverture).",
+      "night": "Nuit a Ennistymon (pres de Lahinch)",
+      "nightInfo": "Logement entier avec cuisine, a 2 km de <a href=\"https://www.google.com/maps/search/?api=1&query=Lahinch+Ireland\" target=\"_blank\"><strong>Lahinch</strong></a>. Plage de Lahinch a 3 min en voiture : aire de jeux, section baignade surveillee, cours de surf possibles des 8 ans pour l'aine.",
       "rainyDay": "<strong>Lahinch Seaworld & Leisure Centre</strong> (piscine interieure avec vue sur la mer) · <strong>Doolin Cave</strong> a 20 min (plus grande stalactite libre d'Europe, visite guidee 45 min, 125 marches — ok des 7-8 ans) · <strong>Aillwee Cave</strong> (grotte + rapaces, famille ~71 EUR)",
       "highlight": "Journee phare",
       "mapCenter": {
@@ -2976,7 +3010,7 @@
         "lng": -9.35
       },
       "mapImg": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Cliffs-Of-Moher-OBriens-From-South.JPG",
-      "mapDesc": "Caherconnell, Poulnabrone, Cliffs of Moher, Lahinch",
+      "mapDesc": "Caherconnell, Poulnabrone, Lahinch, Cliffs of Moher en soiree",
       "stops": [
         {
           "name": "Caherconnell Fort & chiens de berger",
@@ -3044,8 +3078,8 @@
           "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Cliffs-Of-Moher-OBriens-From-South.JPG",
           "parking": {
             "location": "Parking officiel au Visitor Centre (reserver en ligne !)",
-            "cost": "7 EUR/adulte en ligne, enfants gratuits",
-            "tip": "Alternative : parking fermier 800m avant (dir. Liscannor), 2-5 EUR/vehicule en cash. Avec enfants, le centre officiel est plus sur (chemins clotures).",
+            "cost": "~7 EUR/adulte en ligne (~12 EUR sur place), enfants < 12 ans gratuits",
+            "tip": "Reserver un creneau en ligne : moins cher et pas de file. Arriver apres 18h (ou avant 9h) : le parking se vide. Alternative : parking fermier cote Liscannor, 2-5 EUR — mais sentier non cloture, moins rassurant avec un enfant de 5 ans.",
             "gmaps": "https://www.google.com/maps/search/?api=1&query=Cliffs+of+Moher+Visitor+Centre+Parking"
           },
           "lat": 52.9715,
@@ -3108,70 +3142,70 @@
       ],
       "schedule": [
         {
-          "time": "9h00",
-          "label": "Depart de Galway",
+          "time": "9h15",
+          "label": "Depart d'Athenry",
           "icon": "fa-car",
           "duration": null
         },
         {
-          "time": "10h06",
-          "label": "Caherconnell Fort + demo chiens de berger",
+          "time": "10h30",
+          "label": "Caherconnell Fort + demo chiens de berger (reservee)",
           "icon": "fa-dog",
-          "duration": "1h30"
+          "duration": "2h"
         },
         {
-          "time": "11h36",
+          "time": "12h30",
           "label": "Route vers Poulnabrone",
           "icon": "fa-car",
           "duration": null
         },
         {
-          "time": "11h45",
+          "time": "12h40",
           "label": "Poulnabrone Dolmen (arret photo)",
           "icon": "fa-landmark",
-          "duration": "20min"
+          "duration": "30min"
         },
         {
-          "time": "12h15",
+          "time": "13h10",
           "label": "Pique-nique dans le Burren",
           "icon": "fa-utensils",
-          "duration": "1h"
+          "duration": "50min"
         },
         {
-          "time": "13h15",
-          "label": "Route vers les Cliffs",
+          "time": "14h00",
+          "label": "Route vers Lahinch / Ennistymon",
           "icon": "fa-car",
           "duration": null
         },
         {
-          "time": "13h45",
-          "label": "Cliffs of Moher (balade le long des falaises)",
-          "icon": "fa-mountain-sun",
-          "duration": "1h30"
-        },
-        {
-          "time": "15h15",
-          "label": "Route vers Lahinch",
-          "icon": "fa-car",
-          "duration": null
-        },
-        {
-          "time": "15h30",
-          "label": "Installation a Lahinch",
+          "time": "14h45",
+          "label": "Installation au logement",
           "icon": "fa-bed",
           "duration": "30min"
         },
         {
-          "time": "16h00",
-          "label": "Plage de Lahinch (baignade, jeux)",
-          "icon": "fa-umbrella-beach",
+          "time": "15h15",
+          "label": "Plage de Lahinch (baignade, jeux, aire de jeux)",
+          "icon": "fa-water",
+          "duration": "1h45"
+        },
+        {
+          "time": "17h15",
+          "label": "Diner tot a Lahinch",
+          "icon": "fa-utensils",
+          "duration": "1h15"
+        },
+        {
+          "time": "18h45",
+          "label": "Cliffs of Moher — parking vide, lumiere du soir",
+          "icon": "fa-mountain-sun",
           "duration": "1h30"
         },
         {
-          "time": "18h00",
-          "label": "Diner a Lahinch",
-          "icon": "fa-utensils",
-          "duration": "1h"
+          "time": "20h30",
+          "label": "Retour au logement",
+          "icon": "fa-car",
+          "duration": "20min"
         }
       ],
       "budget": {
@@ -3675,9 +3709,10 @@
           "stop": "Caherconnell Fort & chiens de berger",
           "icon": "fa-dog",
           "tips": [
-            "Demonstrations regulieres — arriver pour le debut d'un creneau",
+            "Ouvert 10h-17h en juillet-aout, derniere visite 30 min avant la fermeture",
+            "RESERVER le creneau de demonstration en ligne : plusieurs par jour en haute saison, elles se remplissent",
+            "Visites guidees du fort a 10h15, 12h00, 13h30 et 14h15 (visite libre possible a tout moment) — a reconfirmer sur leur site",
             "Les enfants peuvent caresser les border collies et les agneaux apres le show",
-            "Fort en pierre de ~1000 ans, exceptionnellement bien conserve",
             "4.9/5 sur TripAdvisor — unanimement adore par les familles"
           ]
         },
@@ -3685,34 +3720,36 @@
           "stop": "Poulnabrone Dolmen",
           "icon": "fa-landmark",
           "tips": [
-            "Acces libre et gratuit, petit parking a cote",
-            "Sol irregulier : bonnes chaussures recommandees",
-            "Arret rapide (15-20 min suffisent)"
+            "Acces libre et gratuit, mais le petit parking sature entre 11h et 16h",
+            "Arret rapide (20-30 min suffisent) : si le parking est plein, faire un tour et repasser 10 min apres",
+            "Sol karstique irregulier : bonnes chaussures recommandees"
           ]
         },
         {
           "stop": "Cliffs of Moher",
           "icon": "fa-mountain-sun",
           "tips": [
-            "Parking fermier 800m avant (dir. Liscannor) : 2 EUR/vehicule",
-            "Coupe-vent indispensable, meme en aout",
-            "Rester dans la zone balisee avec les enfants (pas de barriere par endroits)",
-            "Macareux visibles en aout pres de O'Brien's Tower"
+            "Ouvert 8h-21h en aout. Affluence maximale de 11h a 16h — le creneau a fuir",
+            "Deux bons creneaux : apres 18h (lumiere rasante, parking qui se vide) ou des 8h le matin",
+            "Billet horodate en ligne ~7 EUR/adulte (enfants < 12 ans gratuits) contre ~12 EUR sur place : reserver",
+            "Parking fermier cote Liscannor (Guerin's Path) : 2 a 5 EUR — attention, certaines fermes facturent desormais ~5 EUR/personne, ce n'est plus systematiquement l'affaire du siecle",
+            "Avec un enfant de 5 ans, le Visitor Centre officiel reste plus sur : chemins clotures, contrairement au sentier cote Liscannor",
+            "Coupe-vent indispensable, meme en aout. Macareux visibles pres de O'Brien's Tower"
           ]
         },
         {
           "stop": "Lahinch Beach",
           "icon": "fa-water",
           "tips": [
-            "Section baignade surveillee separee de la zone surf",
-            "Aire de jeux juste a cote de la plage",
+            "On la fait l'apres-midi pendant que les Cliffs sont bondees — inversion gagnante",
+            "Section baignade surveillee separee de la zone surf, aire de jeux juste a cote",
             "Cours de surf possibles des 8 ans (reserver la veille)",
-            "Fish & chips sur place"
+            "Parking promenade ~2 EUR/h, il se remplit vite : parking gratuit au sud en secours"
           ]
         }
       ],
-      "distanceKm": 65,
-      "driveMinutes": 118
+      "distanceKm": 115,
+      "driveMinutes": 165
     },
     {
       "day": 6,
@@ -3725,9 +3762,9 @@
       "isoDate": "2026-08-21",
       "routeIcon": "fa-chess-rook",
       "routeDesc": "Lahinch → Ennis → Birr Castle · ~2h04 de route",
-      "morning": "<strong>Matin tranquille</strong> a <a href=\"https://www.google.com/maps/search/?api=1&query=Lahinch+Beach+Ireland\" target=\"_blank\">Lahinch</a> : derniere seance plage, baignade, jeux. Depart vers 11h30. <strong>32 min</strong> jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Ennis+Ireland\" target=\"_blank\"><strong>Ennis</strong></a>, jolie ville medievale, pour le dejeuner. Balade dans les ruelles colorees. Puis <strong>1h32</strong> de route vers <a href=\"https://www.google.com/maps/search/?api=1&query=Birr+Castle+Demesne+Ireland\" target=\"_blank\"><strong>Birr Castle</strong></a>. Arrivee vers 15h. Apres-midi au domaine : <strong>Treehouse Playground</strong> (enorme aire de jeux en bois), <strong>I Spy Science Trail</strong> (parcours scientifique), le <strong>Grand Telescope</strong> (plus grand telescope historique du monde), jardins et lac. Les enfants vont adorer !",
-      "night": "Nuit a Birr",
-      "nightInfo": "<strong>Ou dormir :</strong> <a href=\"https://www.google.com/maps/search/?api=1&query=Birr+Ireland\" target=\"_blank\"><strong>Birr</strong></a>, charmante ville georgienne dans les Midlands. <strong>Townsend House B&B</strong> (maison georgienne, excellent petit-dejeuner, ~90-120 EUR), <strong>The Maltings B&B</strong> (pres du chateau, familial), <strong>County Arms Hotel</strong> (hotel classique, parking gratuit, restaurant). Birr est calme et agreable pour une soiree de transition avant la derniere journee.",
+      "morning": "<strong>On part 1h plus tot qu'initialement prevu</strong> pour gagner du temps a Birr Castle (fermeture 18h, <strong>derniere entree 17h</strong> — arriver a 15h30 ne laissait que 2h30). Matin plage a Lahinch de 9h a 10h30, puis 32 min jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Ennis+Ireland\" target=\"_blank\"><strong>Ennis</strong></a> pour une balade dans les ruelles medievales et le dejeuner. Depart 13h15, <strong>1h32</strong> jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Birr+Castle+Demesne+Ireland\" target=\"_blank\"><strong>Birr Castle</strong></a> : arrivee 14h50, soit <strong>3h sur place</strong> au lieu de 2h30. Treehouse Playground (enorme), I Spy Science Trail, le Grand Telescope, jardins et lac. <em>Si les Cliffs sont tombees a l'eau la veille</em> : les faire ici, a 8h15, et decaler la plage.",
+      "night": "Nuit a Banagher (pres de Birr)",
+      "nightInfo": "B&amp;B au bord du Shannon, a ~10 min de <a href=\"https://www.google.com/maps/search/?api=1&query=Birr+Ireland\" target=\"_blank\"><strong>Birr</strong></a>. Soiree tranquille avant la derniere journee.",
       "rainyDay": "<strong>Birr Castle Science Centre</strong> (couvert, interactif, le Grand Telescope est visible meme sous la pluie) · Le Treehouse Playground est utilisable sauf par forte pluie",
       "highlight": null,
       "mapCenter": {
@@ -3819,56 +3856,56 @@
       ],
       "schedule": [
         {
-          "time": "9h30",
-          "label": "Plage de Lahinch (baignade, jeux)",
-          "icon": "fa-umbrella-beach",
+          "time": "9h00",
+          "label": "Plage de Lahinch (derniere baignade)",
+          "icon": "fa-water",
           "duration": "1h30"
         },
         {
-          "time": "11h00",
+          "time": "10h30",
           "label": "Preparation depart",
-          "icon": "fa-bed",
-          "duration": "30min"
+          "icon": "fa-suitcase",
+          "duration": "15min"
         },
         {
-          "time": "11h30",
+          "time": "10h45",
           "label": "Route vers Ennis",
           "icon": "fa-car",
           "duration": null
         },
         {
+          "time": "11h20",
+          "label": "Balade dans Ennis (ville medievale)",
+          "icon": "fa-store",
+          "duration": "40min"
+        },
+        {
           "time": "12h00",
           "label": "Dejeuner a Ennis",
           "icon": "fa-utensils",
-          "duration": "1h"
+          "duration": "1h15"
         },
         {
-          "time": "13h00",
-          "label": "Balade dans Ennis",
-          "icon": "fa-camera",
-          "duration": "30min"
-        },
-        {
-          "time": "13h30",
+          "time": "13h15",
           "label": "Route vers Birr",
           "icon": "fa-car",
           "duration": null
         },
         {
-          "time": "15h00",
-          "label": "Arrivee Birr, installation",
-          "icon": "fa-bed",
-          "duration": "30min"
+          "time": "14h50",
+          "label": "Birr Castle — 3h sur place (derniere entree 17h)",
+          "icon": "fa-tree",
+          "duration": "3h"
         },
         {
-          "time": "15h30",
-          "label": "Birr Castle (Treehouse, telescope, jardins)",
-          "icon": "fa-chess-rook",
-          "duration": "2h30"
+          "time": "18h00",
+          "label": "Route vers Banagher",
+          "icon": "fa-car",
+          "duration": "15min"
         },
         {
           "time": "18h30",
-          "label": "Diner a Birr",
+          "label": "Installation, diner",
           "icon": "fa-utensils",
           "duration": "1h"
         }
@@ -4519,23 +4556,24 @@
           "icon": "fa-utensils",
           "tips": [
             "Jolie ville medievale, agreable pour une pause dejeuner",
-            "Parking facile dans le centre"
+            "Parking Abbey Street ou Temple Gate, ~1-2 EUR/h — pas de tension en aout"
           ]
         },
         {
           "stop": "Birr Castle Demesne",
           "icon": "fa-chess-rook",
           "tips": [
+            "Ouvert des 9h, fermeture 18h, DERNIERE ENTREE 17h : arriver avant 15h est le vrai enjeu de la journee",
             "Le Treehouse Playground est ENORME, prevoir au moins 1h pour les enfants",
             "I Spy Science Trail : parcours interactif parfait pour les 5-8 ans",
-            "Le Grand Telescope est impressionnant meme pour les petits",
+            "Les visites guidees de l'interieur du chateau tournent du lundi au samedi en mai-aout et se reservent a l'avance (optionnel)",
             "Jardins magnifiques, sentiers accessibles aux poussettes",
-            "Fermeture a 18h en ete, arriver tot pour en profiter"
+            "Parking Marian Hall en face de l'entree, 1 EUR/2h — sans souci meme en aout"
           ]
         }
       ],
-      "distanceKm": 147,
-      "driveMinutes": 124
+      "distanceKm": 165,
+      "driveMinutes": 145
     },
     {
       "day": 7,
@@ -4548,10 +4586,10 @@
       "title": "Chateaux & colline sacree",
       "isoDate": "2026-08-22",
       "routeIcon": "fa-chess-rook",
-      "routeDesc": "Birr → Trim Castle → Hill of Tara → Airport · 2h34 de route",
-      "morning": "Depart de Birr vers 9h. Derniere visite au domaine si le temps le permet. <strong>1h31</strong> de route jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Trim+Castle+Ireland\" target=\"_blank\"><strong>Trim Castle</strong></a>, le plus grand chateau normand d'Irlande (decor de Braveheart !). Visite du donjon et des remparts (1h). Dejeuner a Trim. Puis <strong>21 min</strong> jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Hill+of+Tara+Ireland\" target=\"_blank\"><strong>Hill of Tara</strong></a>, colline sacree des Hauts Rois d'Irlande — vue sur 40% de l'ile, Pierre du Destin (45 min). Puis <strong>42 min</strong> vers l'hotel de l'aeroport.",
-      "night": "Nuit hotel aeroport Dublin",
-      "nightInfo": "<strong>Ou dormir :</strong> <a href=\"https://www.google.com/maps/search/?api=1&query=Maldron+Hotel+Dublin+Airport+Ireland\" target=\"_blank\"><strong>Maldron Hotel Dublin Airport</strong></a> (dans l'enceinte, 267m des terminaux, accessible a pied, navette gratuite des 4h, ~120-180 EUR). Alternatives : <strong>Radisson Blu</strong> (petit-dej \"Grab &amp; Run\" pour vols matinaux), <strong>Carlton Hotel</strong> (formule Park &amp; Fly). <strong>Astuce :</strong> rendre la voiture NewWay le soir du 22 pour eliminer le stress du matin (confirmer les horaires matinaux de NewWay au +353 1 844 4199). Preparez valises et passeports ce soir. <strong>Reveil a 5h00</strong>.",
+      "routeDesc": "Banagher → Trim Castle → Hill of Tara → nord de Dublin · ~2h45 de route",
+      "morning": "<strong>Samedi 22 aout = le pire jour de la semaine pour Trim Castle.</strong> Les visites guidees du donjon <strong>ne se reservent pas</strong> : billets a l'unite, sur place, premier arrive premier servi, et elles affichent complet les jours d'affluence en juillet-aout. On part donc de Banagher a <strong>8h20</strong> pour etre a <a href=\"https://www.google.com/maps/search/?api=1&query=Trim+Castle+Ireland\" target=\"_blank\"><strong>Trim</strong></a> a l'ouverture (10h), prendre les billets du premier creneau disponible, et occuper l'attente avec les remparts et la promenade le long de la Boyne (gratuits). Dejeuner a Trim, puis 21 min jusqu'a <a href=\"https://www.google.com/maps/search/?api=1&query=Hill+of+Tara+Ireland\" target=\"_blank\"><strong>Hill of Tara</strong></a> vers 14h — site ouvert, gratuit, parking gratuit avec une bonne rotation en milieu d'apres-midi. Puis 45 min vers le logement au nord de Dublin.",
+      "night": "Nuit a Balbriggan (nord Dublin)",
+      "nightInfo": "Hebergement a ~30 min de l'aeroport. <strong>Astuce :</strong> rendre la voiture NewWay le soir du 22 pour eliminer le stress du matin (confirmer les horaires matinaux de NewWay au +353 1 844 4199). Preparez valises et passeports ce soir. <strong>Depart ~5h00</strong> pour etre a l'aeroport a 5h30.",
       "highlight": null,
       "mapCenter": {
         "lat": 53.5455,
@@ -4626,74 +4664,74 @@
       ],
       "schedule": [
         {
-          "time": "9h00",
-          "label": "Depart de Birr",
+          "time": "8h20",
+          "label": "Depart de Banagher",
           "icon": "fa-car",
           "duration": null
         },
         {
-          "time": "10h30",
-          "label": "Trim Castle (visite guidee donjon)",
+          "time": "10h00",
+          "label": "Trim Castle — a l'ouverture, billets donjon des l'arrivee",
           "icon": "fa-chess-rook",
-          "duration": "1h"
+          "duration": "15min"
         },
         {
-          "time": "11h30",
-          "label": "Balade remparts et jardins de Trim",
-          "icon": "fa-camera",
-          "duration": "30min"
+          "time": "10h15",
+          "label": "Remparts et bord de Boyne en attendant le creneau",
+          "icon": "fa-person-walking",
+          "duration": "45min"
+        },
+        {
+          "time": "11h00",
+          "label": "Visite guidee du donjon (45 min)",
+          "icon": "fa-torii-gate",
+          "duration": "45min"
         },
         {
           "time": "12h00",
           "label": "Dejeuner a Trim",
           "icon": "fa-utensils",
-          "duration": "1h"
+          "duration": "1h15"
         },
         {
-          "time": "13h00",
+          "time": "13h20",
           "label": "Route vers Hill of Tara",
           "icon": "fa-car",
           "duration": null
         },
         {
-          "time": "13h20",
+          "time": "13h45",
           "label": "Hill of Tara (colline sacree, Pierre du Destin)",
-          "icon": "fa-crown",
-          "duration": "45min"
-        },
-        {
-          "time": "14h05",
-          "label": "Route vers hotel aeroport",
-          "icon": "fa-car",
-          "duration": null
-        },
-        {
-          "time": "14h50",
-          "label": "Arrivee hotel aeroport, installation",
-          "icon": "fa-bed",
-          "duration": "30min"
-        },
-        {
-          "time": "15h20",
-          "label": "Piscine hotel (si disponible)",
-          "icon": "fa-person-swimming",
-          "duration": "1h30"
-        },
-        {
-          "time": "17h00",
-          "label": "Preparation valises et passeports",
-          "icon": "fa-suitcase",
-          "duration": "45min"
-        },
-        {
-          "time": "18h00",
-          "label": "Diner a l'hotel ou environs",
-          "icon": "fa-utensils",
+          "icon": "fa-monument",
           "duration": "1h"
         },
         {
-          "time": "19h30",
-          "label": "Coucher tot (reveil 5h00 !)",
+          "time": "14h50",
+          "label": "Route vers le logement (nord de Dublin)",
+          "icon": "fa-car",
+          "duration": "45min"
+        },
+        {
+          "time": "15h45",
+          "label": "Installation, temps calme",
+          "icon": "fa-bed",
+          "duration": "1h30"
+        },
+        {
+          "time": "17h30",
+          "label": "Restitution de la voiture NewWay (a confirmer)",
+          "icon": "fa-key",
+          "duration": "45min"
+        },
+        {
+          "time": "18h30",
+          "label": "Diner + preparation valises et passeports",
+          "icon": "fa-suitcase",
+          "duration": "1h30"
+        },
+        {
+          "time": "20h00",
+          "label": "Coucher tot (reveil 4h30 !)",
           "icon": "fa-bed",
           "duration": null
         }
@@ -5331,9 +5369,11 @@
           "stop": "Trim Castle",
           "icon": "fa-chess-rook",
           "tips": [
-            "Visite guidee du donjon obligatoire (45 min), depart toutes les heures",
-            "Brochure en francais disponible a l'accueil",
-            "Jardins et enceinte exterieure gratuits, belle balade le long de la Boyne",
+            "Visite du donjon UNIQUEMENT en visite guidee, billets non reservables : sur place, premier arrive premier servi",
+            "Les creneaux affichent complet les jours charges de juillet-aout — et le 22 aout est un samedi",
+            "Etre la a l'ouverture (10h), prendre les billets tout de suite, quitte a attendre le creneau dehors",
+            "Enceinte exterieure, remparts et bord de Boyne : gratuits et sans billet, parfaits pour patienter",
+            "Tarif famille ~13 EUR. Brochure en francais disponible a l'accueil",
             "Decor de Braveheart : les enfants adorent l'anecdote"
           ]
         },
@@ -5341,10 +5381,11 @@
           "stop": "Hill of Tara",
           "icon": "fa-crown",
           "tips": [
-            "Gratuit (Heritage Card acceptee pour le centre d'interpretation)",
+            "Site ouvert et GRATUIT, parking gratuit — pas besoin de Heritage Card",
+            "Centre d'interpretation ouvert de mai a septembre, 10h-17h, guides sur place",
+            "Le petit parking se remplit, mais la rotation est rapide (visites de 45 min)",
             "Les enfants adorent devaler les collines en courant",
-            "Vue sur 40% de l'Irlande par temps clair",
-            "30-45 min suffisent"
+            "Vue sur 40% de l'Irlande par temps clair — 45 min a 1h suffisent"
           ]
         },
         {
@@ -5356,10 +5397,20 @@
             "Verifier si l'hotel a une piscine pour occuper les enfants",
             "Commander le petit-dejeuner en chambre la veille si depart tres tot"
           ]
+        },
+        {
+          "stop": "Logement dernier soir",
+          "icon": "fa-circle-info",
+          "tips": [
+            "Le logement est a ~30 min de l'aeroport (pas de passage couvert) : compter 4h30 de reveil, pas 5h00",
+            "Rendre la voiture NewWay le samedi soir supprime tout le stress du dimanche matin — confirmer les horaires au +353 1 844 4199",
+            "Si la voiture est rendue la veille, prevoir un taxi reserve pour 4h55",
+            "Preparer valises et passeports ce soir"
+          ]
         }
       ],
-      "distanceKm": 155,
-      "driveMinutes": 154
+      "distanceKm": 175,
+      "driveMinutes": 165
     },
     {
       "day": 8,
@@ -5371,7 +5422,7 @@
       "isoDate": "2026-08-23",
       "routeIcon": "fa-plane-departure",
       "routeDesc": "Dublin → Nimes · Vol FR9776",
-      "morning": "Reveil <strong>5h00</strong>. Hotel → terminal en 5-10 min (passage couvert si Crowne Plaza). Restitution voiture <strong>NewWay</strong>. Enregistrement et securite. <strong>Arrivee a Nimes a 10h30</strong> — slan abhaile !",
+      "morning": "<strong>Reveil 4h30</strong> (et non 5h00) : le logement est a ~30 min de l'aeroport, sans passage couvert. Depart 4h55, arrivee au terminal vers 5h25. Restitution de la voiture NewWay si elle n'a pas ete rendue la veille. Enregistrement et securite. Arrivee a Nimes a 10h30 — <em>slan abhaile</em> !",
       "night": null,
       "nightInfo": null,
       "highlight": null,
@@ -5395,34 +5446,34 @@
       ],
       "schedule": [
         {
-          "time": "5h00",
+          "time": "4h30",
           "label": "Reveil",
-          "icon": "fa-bed",
+          "icon": "fa-bell",
           "duration": null
         },
         {
-          "time": "5h15",
-          "label": "Hotel - Terminal (passage couvert)",
+          "time": "4h55",
+          "label": "Depart vers l'aeroport (~30 min)",
           "icon": "fa-car",
-          "duration": "10min"
+          "duration": "30min"
         },
         {
-          "time": "5h30",
-          "label": "Restitution voiture NewWay",
-          "icon": "fa-car",
-          "duration": "15min"
+          "time": "5h25",
+          "label": "Arrivee terminal (restitution NewWay si non rendue la veille)",
+          "icon": "fa-key",
+          "duration": "20min"
         },
         {
-          "time": "5h45",
+          "time": "5h50",
           "label": "Enregistrement et securite",
-          "icon": "fa-plane-departure",
+          "icon": "fa-passport",
           "duration": "45min"
         },
         {
-          "time": "6h30",
+          "time": "6h35",
           "label": "Attente en zone d'embarquement",
-          "icon": "fa-clock",
-          "duration": "30min"
+          "icon": "fa-chair",
+          "duration": "25min"
         },
         {
           "time": "7h10",
@@ -5458,16 +5509,16 @@
           "stop": "Vol Dublin - Nimes",
           "icon": "fa-plane",
           "tips": [
-            "Crowne Plaza : passage couvert vers le Terminal 1, pas besoin de navette",
-            "Restitution NewWay : rendre la voiture plein fait, garder le recu",
+            "Logement a ~30 min du terminal : reveil 4h30, depart 4h55 pour etre a l'aeroport a 5h30",
+            "Restitution NewWay : rendre la voiture plein fait, garder le recu. La rendre la veille au soir simplifie tout",
             "Arriver au terminal 2h avant le vol (5h10 au plus tard)",
             "Ryanair : respecter les dimensions bagages cabine pour eviter les frais",
             "Prevoir de quoi occuper les enfants dans l'avion (cahiers, tablette)"
           ]
         }
       ],
-      "distanceKm": null,
-      "driveMinutes": 5
+      "distanceKm": 30,
+      "driveMinutes": 30
     }
   ],
   "pois": {
@@ -6191,7 +6242,7 @@
     {
       "icon": "fa-ticket",
       "title": "Heritage Card",
-      "text": "La <strong>Heritage Card</strong> (40 EUR/adulte, enfants < 12 ans gratuits) donne acces illimite a 40+ sites : Trim Castle, Clonmacnoise, Newgrange... Rentable des 3 visites."
+      "text": "<strong>Inutile sur cet itineraire.</strong> La Heritage Card coute 40 EUR/adulte (80 EUR pour deux) et le seul site OPW payant du parcours est <strong>Trim Castle</strong> (famille ~13 EUR). Hill of Tara, le Connemara NP et le Burren sont gratuits. On economise ~67 EUR en payant a l'entree."
     },
     {
       "icon": "fa-mobile-screen",
@@ -6206,12 +6257,12 @@
     {
       "icon": "fa-mountain",
       "title": "Sites gratuits",
-      "text": "Connemara NP, Hill of Tara, Burren : <strong>gratuits</strong>. Cliffs of Moher : 15 EUR/adulte (enfants < 12 gratuits). Trim Castle : famille 13 EUR."
+      "text": "Connemara NP, Hill of Tara, Burren, Poulnabrone, Dog's Bay, Sky Road, Clifden Castle : <strong>gratuits</strong>. Cliffs of Moher : ~7 EUR/adulte en ligne (~12 EUR sur place), enfants < 12 ans gratuits. Trim Castle : famille ~13 EUR."
     },
     {
       "icon": "fa-clock",
       "title": "Horaires & affluence",
-      "text": "Sites ferment a <strong>17h</strong>. Cliffs of Moher : arriver en <strong>fin de journee</strong> pour eviter la foule. Newgrange : reserver <strong>30 jours a l'avance</strong>."
+      "text": "<strong>Cliffs of Moher</strong> 8h-21h, bondees de 11h a 16h → y aller <strong>apres 18h</strong>. <strong>Kylemore</strong> ouvre a 10h, les cars arrivent a 11h → etre au portail a l'ouverture. <strong>Connemara NP</strong> : parking sature 10h-14h → y aller apres 14h. <strong>Dog's Bay</strong> : ~10 places, plein des 10h → y etre avant. <strong>Birr Castle</strong> et <strong>Caherconnell</strong> : derniere entree 17h."
     },
     {
       "icon": "fa-utensils",
@@ -6227,6 +6278,11 @@
       "icon": "fa-wifi",
       "title": "Connectivite mobile",
       "text": "<strong>4G correcte</strong> partout sauf zones isolees du Connemara. Free Mobile fonctionne en <strong>roaming EU</strong> sans surcout. Pensez a telecharger les <strong>cartes hors-ligne</strong> (Google Maps) avant de partir."
+    },
+    {
+      "icon": "fa-ticket",
+      "title": "A reserver des maintenant",
+      "text": "<strong>Kylemore Abbey</strong> (billets en ligne, obligatoire de fait en aout) &middot; <strong>Caherconnell</strong> (creneau de demonstration de chiens de berger) &middot; <strong>Cliffs of Moher</strong> (creneau horodate en ligne, ~7 EUR/adulte au lieu de ~12 EUR) &middot; <strong>Book of Kells</strong> si on le fait (creneaux d'aout complets plusieurs jours a l'avance). <strong>Trim Castle ne se reserve pas</strong> : billets du donjon sur place, premier arrive premier servi — d'ou le depart a 8h20 le samedi."
     }
   ],
   "blogs": [
