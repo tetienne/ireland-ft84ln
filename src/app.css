@@ -1937,9 +1937,7 @@ body {
   .rainy-day,
   .print-btn,
   .hero-scroll,
-  .weather-badge,
-  .day-narrative.night-info,
-  .day-footer span:has(.fa-bed) {
+  .weather-badge {
     display: none !important;
   }
 
@@ -2081,7 +2079,8 @@ body {
   }
 
   /* Morning narrative */
-  .day-narrative.morning {
+  .day-narrative.morning,
+  .day-narrative.night-info {
     font-size: 8.5pt !important;
     color: #444 !important;
     margin: 0.2rem 0 !important;
