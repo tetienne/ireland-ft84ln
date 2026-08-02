@@ -59,12 +59,24 @@ Chaîne réaliste pour un vol à 07h10 :
 06h40  porte
 ```
 
-C'est le seul point de la semaine où se tromper coûte un vol. **À confirmer auprès de
-NewWay (+353 1 844 4199)** : dépôt tenu à 05h15 un dimanche ? fréquence de la navette à
-cette heure ? procédure de dépôt de clés hors horaires ? Si le dépôt n'ouvre pas si tôt,
-toute la matinée est à revoir — et rendre la voiture la veille au soir n'est pas une
-solution ici, contrairement à ce que suggère la note J7 : depuis Balbriggan il faudrait un
-taxi à 04h45 pour l'aéroport, cher et à réserver.
+**Ce qui est établi sur NewWay** : ils ont des comptoirs dans les halls d'arrivée des
+terminaux 1 et 2, mais la voiture elle-même est sur un parking déporté partagé avec
+Avis/Budget, desservi par une navette qui passe « toutes les quelques minutes ». Les avis
+clients confirment le schéma comptoir → navette → parking, et NewWay précise que la remise
+au terminal *ne peut plus être garantie* (places attribuées par l'autorité aéroportuaire).
+Il faut donc bien compter la navette dans le timing.
+
+**Ce qui reste à confirmer** : les horaires d'ouverture du comptoir NewWay à l'aéroport
+restent introuvables (leur agence de Dublin centre est en 9h00–18h00, mais ce n'est pas
+celle-là). Contexte encourageant : la quasi-totalité des loueurs de Dublin Airport ouvrent à
+**05h00**, et Avis — dont NewWay partage le parking — ouvre à 05h00 avec un dépôt de clés
+sécurisé 24h/24. Un retour vers 05h15–05h20 est donc plausible, mais **à faire confirmer par
+NewWay (+353 1 844 4199)** : comptoir tenu à 05h15 un dimanche ? navette à cette heure ?
+procédure de dépôt de clés hors horaires ?
+
+Si le dépôt n'ouvre pas si tôt, toute la matinée est à revoir — et rendre la voiture la
+veille au soir n'est pas une solution ici, contrairement à ce que suggère la note J7 :
+depuis Balbriggan il faudrait un taxi à 04h45 pour l'aéroport, cher et à réserver.
 
 ---
 
@@ -183,21 +195,33 @@ poste le plus sacrifiable de la semaine si les enfants fatiguent.
   septembre 2024. La ligne « Parking Cliffs of Moher (fermier) — 2 EUR » du budget est
   caduque : le billet officiel, qui inclut le parking, est désormais la seule entrée en
   voiture.
-- Caherconnell : ouvert 10h00–17h00 en juillet/août, visites du fort à 10h15, 12h00, 13h30
-  et 14h15, dernière visite 30 min avant la fermeture. Réservation vivement conseillée —
-  le site se réserve en moyenne 37 jours à l'avance.
+
+**Caherconnell : les créneaux sont confirmés, et le planning actuel tombe juste.** Le site
+est ouvert 10h00–17h00 en juillet/août et vend des billets joints « fort + démo » :
+
+| Billet | Déroulé                                   |
+| ------ | ----------------------------------------- |
+| 10h15  | visite guidée du fort, puis démo à 11h10  |
+| 11h10  | démo, puis visite guidée du fort à 12h00  |
+| 13h30  | visite guidée du fort, puis démo à 14h10  |
+| 14h10  | démo, puis visite guidée du fort          |
+
+L'ensemble dure ~90 min, et la démo se déroule sous un espace couvert (donc insensible à la
+météo). Le créneau de 10h15 correspond presque exactement au « 10h06 → 11h36 » déjà prévu :
+sur ce point le planning actuel est bon, il suffit de **réserver le billet 10h15 en ligne**
+(le site se réserve en moyenne 37 jours à l'avance).
 
 **Alternative — inverser la journée.**
 
 ```
 08h45  départ Athenry
-09h50  Poulnabrone (avant la vague de cars) — 20 min suffisent
-10h15  Caherconnell : visite du fort + démo chiens de berger + agneaux (~1h30–2h)
-12h30  pique-nique dans le Burren ou déjeuner à Ennistymon
+09h45  Poulnabrone (avant la vague de cars) — 20 min suffisent
+10h10  Caherconnell, billet joint 10h15 : fort à 10h15 puis démo à 11h10 (~1h30)
+11h45  déjeuner : pique-nique dans le Burren ou Ennistymon
 14h00  check-in Ennistymon
 14h30  plage de Lahinch — la partie la plus chaude de la journée, baignade surveillée,
        aire de jeux à côté → 17h00
-17h30  Cliffs of Moher, créneau tardif réservé : cars partis, tarif plus bas, falaises
+17h30  Cliffs of Moher, créneau off-peak réservé : cars partis, tarif réduit, falaises
        orientées ouest donc lumière optimale, site ouvert jusqu'à 21h00
 20h00  dîner à Lahinch
 ```
@@ -205,16 +229,18 @@ poste le plus sacrifiable de la semaine si les enfants fatiguent.
 Lahinch↔Cliffs fait ~12 min dans chaque sens : l'aller-retour coûte 25 min pour un gain
 d'affluence énorme.
 
-**Deux corrections de budget** : les moins de 12 ans sont gratuits aux Cliffs — c'est 2
-adultes qui paient, pas 4 personnes. Et le parking à 2 € est à remplacer par le billet
-officiel horodaté, à réserver en ligne (moins cher qu'au guichet).
+**Correction de budget — tarifs Cliffs of Moher 2026 confirmés :**
 
-**À vérifier vous-mêmes** : l'horaire exact des démonstrations de chiens de berger. Le site
-de Caherconnell est inaccessible depuis cet environnement (bloqué par la politique réseau),
-et les sources tierces se contredisent — certaines annoncent une démo unique à 14h00,
-d'autres plusieurs par jour en haute saison. **Réservez d'abord un créneau de démo, puis
-construisez la journée autour**, et non l'inverse : le planning actuel suppose une démo
-disponible dès 10h06, ce qui n'est pas garanti.
+| Créneau                              | Adulte en ligne |
+| ------------------------------------ | --------------- |
+| Peak, 11h00–16h00                    | 12 €            |
+| Off-peak, avant 11h00 ou après 16h00 | **8 €**         |
+| Au guichet le jour même              | 15 €            |
+
+Les moins de 12 ans sont **gratuits** (jusqu'à 4 enfants par adulte) : les deux enfants ne
+paient pas. Donc le créneau de 13h45 actuellement prévu coûte 2 × 12 = **24 €**, contre
+2 × 8 = **16 €** à 17h30 — moins cher *et* sans la foule. La ligne « 2 EUR » du budget est à
+remplacer par 16 €.
 
 ### J6 — Ven 21/08 · Ennistymon → Lahinch → Ennis → Banagher
 
@@ -237,8 +263,12 @@ J6 fait doublon.
 
 Le domaine ouvre à 09h00 : il n'y a aucune raison d'y arriver en fin d'après-midi.
 
-**À vérifier** : le Treehouse Playground a été fermé un temps, avec une réouverture
-attendue en 2026. C'est la raison principale de venir — un appel avant de compter dessus.
+**Bonne nouvelle, le Treehouse est confirmé ouvert.** Après 18 mois de travaux, la plus
+haute cabane perchée d'Irlande a été officiellement rouverte à Birr Castle en 2026, avec une
+tour supplémentaire, un toboggan tube et des aires de jeu agrandies. **Réserve** : elle est
+annoncée pour les **enfants de 6 ans et plus** — l'aîné de 8 ans est dans la cible, la
+petite de 5 ans risque d'être limitée aux autres aires du domaine. À intégrer dans les
+attentes avant d'en faire l'argument de vente de la journée.
 
 ### J7 — Sam 22/08 · Banagher → Trim → Hill of Tara → Balbriggan
 
@@ -290,21 +320,42 @@ na Bóinne (Newgrange), qui n'est pas au programme.
 2. Caherconnell — autour d'un horaire de démo confirmé (se réserve ~37 jours à l'avance)
 3. Kylemore Abbey — pour éviter la file du guichet à l'ouverture
 
-**Impossible à vérifier depuis cet environnement** (politique réseau : `caherconnell.com`,
-`cliffsofmoher.ie`, `heritageireland.ie`, `discoverireland.ie` et l'API OSRM renvoient tous
-403) :
+**Il reste un seul point non résolu : les horaires du comptoir NewWay à l'aéroport** (voir
+J8). Toutes les autres inconnues ont été levées : créneaux de Caherconnell, réouverture du
+Treehouse de Birr, tarification horaire des Cliffs.
 
-- les horaires exacts des démonstrations de chiens de berger à Caherconnell
-- les horaires du dépôt NewWay et de sa navette au petit matin
-- l'état d'ouverture du Treehouse Playground de Birr en 2026
-- **les temps de conduite des trajets modifiés** : les durées OSRM déjà enregistrées dans
-  `data.json` restent valables, mais les nouveaux segments proposés ici (aller-retours
-  Ballynahinch↔Clifden et Lahinch↔Cliffs, étapes vers Athenry et Balbriggan) sont des
-  estimations géographiques, pas des mesures OSRM. À revérifier avec la commande de
-  `CLAUDE.md` avant d'arbitrer.
+### Les trajets de `data.json` sont bien calés sur les mauvais hôtels — vérifié
 
-**Cohérence de `data.json` à reprendre**, indépendamment de l'affluence : les durées de
-conduite proviennent de l'itinéraire v3 (nuits à Galway / Clifden / Lahinch / Birr) alors
-que les hôtels réservés sont Furbo, Ballynahinch, Athenry, Ennistymon, Banagher et
-Balbriggan. Plusieurs journées sont donc sous-estimées de 15 à 30 minutes, et les conseils
-J7/J8 décrivent encore un hôtel aéroport.
+L'API OSRM est inaccessible depuis cet environnement, mais les tracés `routesByDay` déjà
+enregistrés dans `data.json` sont des géométries OSRM : il suffit de comparer leurs
+extrémités aux coordonnées des hôtels. Résultat :
+
+| Jour | Départ du tracé | Arrivée du tracé | Hôtel réellement réservé |
+| ---- | --------------- | ---------------- | ------------------------ |
+| J1   | Aéroport        | Dublin centre    | Clondalkin               |
+| J2   | Dublin centre   | Galway           | **Furbo**                |
+| J3   | Galway          | Clifden          | **Ballynahinch**         |
+| J4   | Clifden         | Galway           | **Athenry**              |
+| J5   | Galway          | Lahinch          | **Ennistymon**           |
+| J6   | Lahinch         | Birr             | **Banagher**             |
+| J7   | Birr            | Aéroport         | **Balbriggan**           |
+
+Les tracés suivent donc l'itinéraire v3 de `CLAUDE.md`, pas les hôtels réservés. Les
+distances annoncées sont d'ailleurs incohérentes avec leur propre géométrie :
+
+| Jour | `distance` annoncée | Longueur réelle du tracé |
+| ---- | ------------------- | ------------------------ |
+| J3   | ~85 km              | **115 km**               |
+| J4   | ~80 km              | **139 km**               |
+| J5   | ~65 km              | **96 km**                |
+| J7   | ~155 km             | **167 km**               |
+
+(J1, J2 et J6 sont cohérents.) Les temps de conduite affichés sont donc sous-estimés sur
+plusieurs journées, avant même de compter le détour vers l'hôtel réel. À recalculer avec la
+commande OSRM de `CLAUDE.md` dès que le réseau le permet.
+
+Les horaires proposés dans ce document reposent sur ces mêmes tracés plus des estimations
+géographiques pour les segments nouveaux (Ballynahinch↔Clifden, Lahinch↔Cliffs, liaisons
+vers Athenry et Balbriggan). Un seul de ces segments a pu être recoupé : Ballynahinch Castle
+annonce **~30 min jusqu'à Kylemore Abbey** sur son propre site, ce qui valide le départ à
+09h20 pour une entrée à 10h00 au J4.
