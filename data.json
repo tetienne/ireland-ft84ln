@@ -549,6 +549,7 @@
           "web": null,
           "tripadvisor": null,
           "routard": "https://www.routard.com/fr/guide/europe/irlande/connemara/roundstone-cloch-na-ron",
+          "alltrails": "https://www.alltrails.com/fr/explore/trail/ireland/county-galway/errisbeg-mountain",
           "parking": {
             "location": "Parking gratuit le long du port",
             "cost": "Gratuit"
@@ -863,7 +864,8 @@
           "icon": "fa-palette",
           "tips": [
             "Atelier de bodhran de Malachy Kearns : visite rapide et gratuite",
-            "Petit port photogenique, ideal pour une pause"
+            "Petit port photogenique, ideal pour une pause",
+            "Option si on est motive : montee d'Errisbeg (300 m, ~2h A/R, terrain tourbeux), panorama sur les Twelve Bens et les deux plages. Trop long pour un enfant de 5 ans en plus du reste de la journee"
           ]
         },
         {
